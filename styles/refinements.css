@@ -1,2 +1,7 @@
 @media(min-width:721px){.hero-map .hub-av{top:68%}}
 @media(max-width:720px){.hero h1{font-size:calc((100vw - 60px)/5.8)}}
+.hero-map .map-hub b{font-size:14px;line-height:1.35;letter-spacing:.01em}
+.hero-map .hub-sc b{font-size:12px;letter-spacing:0}
+.plugin-badges{min-width:0}
+.plugin-badge{white-space:nowrap}
+.card-bottom{gap:10px}
