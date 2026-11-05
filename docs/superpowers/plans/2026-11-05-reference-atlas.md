@@ -32,10 +32,19 @@ library, GitHub Actions/Pages, Aside CLI browser verification.
 
 ## Tasks
 
-- [ ] Extract semantic-crosscheck sources; reconcile with the audited agentic-vault inventory.
-- [ ] Write failing identity/merge/checker tests, implement one registry pipeline and CLI.
-- [ ] Build the extreme visual hero, catalog/detail/filter views and duplicate-check UI.
-- [ ] Build hashed assets/version identity and GitHub Actions Pages deployment.
-- [ ] Run tests, independent data/code review, and actual Aside local acceptance checks.
-- [ ] Publish the concrete reviewed site; cross-check published artifacts/behavior.
-- [ ] Connect persistent research guidance to the registry, save evidence, commit owned work.
+- [x] Extract semantic-crosscheck sources; reconcile with the audited agentic-vault inventory.
+- [x] Write failing identity/merge/checker tests, implement one registry pipeline and CLI.
+- [x] Build the extreme visual hero, catalog/detail/filter views and duplicate-check UI.
+- [x] Build hashed assets/version identity and GitHub Actions Pages deployment.
+- [x] Run tests, independent data/code review, and actual Aside local acceptance checks.
+- [x] Publish the concrete reviewed site; cross-check published artifacts/behavior.
+- [x] Connect persistent research guidance to the registry, save evidence, commit owned work.
+
+## Verified release
+
+- Build `206d3aeb59426f4c`; 102 distinct records and 165 pinned public citations.
+- Node 50/50 and Python 19/19; separate source/evidence/asset and visual review.
+- Actual Aside browser checks: local 14, public 14, built A/B update/rollback 9.
+- The published-registry CLI distinguishes known identifiers and repository aliases
+  from tentative names, registry misses and invalid inputs.
+- Live: https://technoetic.github.io/reference-atlas/
