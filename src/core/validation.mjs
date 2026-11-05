@@ -6,7 +6,7 @@ export function validateCatalog(catalog){
   if(typeof snapshots!=='object'||Array.isArray(snapshots))fail();
   for(const source of catalog.sources){
     if(!source||typeof source.id!=='string'||!source.id.trim()||ids.has(source.id))fail();ids.add(source.id);
-    if(!['paper','project','format','research-name'].includes(source.kind)||typeof source.title!=='string'||!source.title.trim())fail();
+    if(!['paper','project','article','format','research-name'].includes(source.kind)||typeof source.title!=='string'||!source.title.trim())fail();
     if(source.year!==null&&source.year!==undefined&&(!Number.isInteger(source.year)||source.year<1000||source.year>3000))fail();
     for(const field of ['tags','aliases'])if(!Array.isArray(source[field])||source[field].some(x=>typeof x!=='string'))fail();
     if(source.url!==null&&source.url!==undefined&&(!/^https?:\/\//i.test(source.url)||!canonicalKey(source.url)?.canonicalUrl))fail();

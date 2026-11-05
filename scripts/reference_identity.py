@@ -77,7 +77,7 @@ def validate_catalog(catalog):
         if not isinstance(source,dict) or not isinstance(source.get('id'),str) or not source['id'].strip() or source['id'] in ids:
             raise ValueError('Missing or duplicate source identity')
         ids.add(source['id'])
-        if source.get('kind') not in {'paper','project','format','research-name'} or not isinstance(source.get('title'),str) or not source['title'].strip():
+        if source.get('kind') not in {'paper','project','article','format','research-name'} or not isinstance(source.get('title'),str) or not source['title'].strip():
             raise ValueError('Invalid source kind or title')
         if source.get('year') is not None and (type(source['year']) is not int or not 1000<=source['year']<=3000):raise ValueError('Invalid source year')
         for field in ['tags','aliases']:

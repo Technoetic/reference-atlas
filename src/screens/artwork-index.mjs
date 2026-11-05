@@ -1,5 +1,7 @@
 // One explicitly generated artwork per source; never substitute a topic image.
 export const artworkIndex = Object.freeze({
+  "url:https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit": Object.freeze({key: "card-103", src: new URL("../../media/cards/card-103.webp", import.meta.url).href, label: "ENTERPRISE DATA GOVERNANCE", word: "ENTERPRISE DATA GOVERNANCE"}),
+  "github:nvidia/auto-ontology": Object.freeze({key: "card-104", src: new URL("../../media/cards/card-104.webp", import.meta.url).href, label: "EXPLICIT SEMANTIC CONTRACT", word: "EXPLICIT SEMANTIC CONTRACT"}),
   "github:googlecloudplatform/open-knowledge-format": Object.freeze({key: "card-001", src: new URL("../../media/cards/card-001.webp", import.meta.url).href, label: "PORTABLE KNOWLEDGE CAPSULE", word: "PORTABLE KNOWLEDGE CAPSULE"}),
   "url:https://www.w3.org/TR/shacl": Object.freeze({key: "card-002", src: new URL("../../media/cards/card-002.webp", import.meta.url).href, label: "SHAPE VALIDATION SIEVE", word: "SHAPE VALIDATION SIEVE"}),
   "arxiv:2502.12110": Object.freeze({key: "card-003", src: new URL("../../media/cards/card-003.webp", import.meta.url).href, label: "GROWING LINKED MEMORY", word: "GROWING LINKED MEMORY"}),

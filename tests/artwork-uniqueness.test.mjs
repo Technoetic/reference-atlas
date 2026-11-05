@@ -5,6 +5,27 @@ import {createHash} from 'node:crypto';
 import {sourceArtwork,artworkCover} from '../src/screens/art.mjs';
 
 const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
+const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-prompts.json',import.meta.url),'utf8'));
+
+test('artwork provenance assigns each generated file and exact prompt to its source',async()=>{
+  assert.equal(manifest.count,manifest.assets.length);
+  assert.equal(new Set(manifest.assets.map(asset=>asset.sourceId)).size,manifest.assets.length);
+  const hashes=[];
+  for(const asset of manifest.assets){
+    const expected=new URL(`../${asset.output}`,import.meta.url);
+    assert.equal(sourceArtwork({id:asset.sourceId}).src,expected.href);
+    const bytes=await readFile(expected),digest=createHash('sha256').update(bytes).digest('hex');
+    assert.equal(digest,asset.sha256);
+    assert.equal(bytes.length,asset.bytes);
+    assert.ok(asset.prompt.trim());
+    hashes.push(digest);
+    if(catalog.snapshots['agentic-vault'].version==='v0.41.0'){
+      assert.ok(asset.generationEvidenceUrls.length);
+      assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
+    }
+  }
+  assert.equal(new Set(hashes).size,manifest.assets.length);
+});
 
 test('every recorded source has its own dedicated artwork URL',()=>{
   const images=catalog.sources.map(source=>sourceArtwork(source).src);

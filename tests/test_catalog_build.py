@@ -37,4 +37,18 @@ class MergeTests(unittest.TestCase):
         a=source('agentic-vault');a['uses'][0]['evidence']=[]
         with self.assertRaises(ValueError):merge_sources([a])
 
+    def test_official_article_and_its_related_project_stay_separate(self):
+        article=source('agentic-vault','url:https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit','NVIDIA Agent Toolkit article')
+        article.update(kind='article',url='https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/')
+        article['uses'][0]['role']='background'
+        project=source('agentic-vault','github:nvidia/auto-ontology','Auto Ontology')
+        project.update(kind='project',url='https://github.com/NVIDIA/auto-ontology')
+        merged=merge_sources([article,project])
+        counts=metrics(merged)
+        self.assertEqual(len(merged),2)
+        self.assertEqual(counts['article'],1)
+        self.assertEqual(counts['project'],1)
+        self.assertEqual(counts['format'],0)
+        self.assertEqual(counts['citations'],2)
+
 if __name__=='__main__':unittest.main()

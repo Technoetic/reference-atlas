@@ -8,7 +8,7 @@ and Technoetic/semantic-crosscheck. Public GitHub Pages only. No Sites hosting.
 - Browser work uses Aside CLI only, preceded by
   `powershell -NoProfile -ExecutionPolicy Bypass -File D:/NS/00-meta/scripts/aside-up.ps1`.
   No Playwright package, browser or script.
-- Preserve distinctions: paper, project, format, unresolved name; direct reference
+- Preserve distinctions: paper, project, official article, format, unresolved name; direct reference
   versus background. A reference is not a claim of copied code or reproduced results.
 - Every catalog entry must have a stable canonical identity and at least one public
   repository citation. Normalize paper versions and repository paths; keep aliases.

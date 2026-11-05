@@ -8,7 +8,7 @@ from reference_identity import validate_catalog
 ROOT=Path(__file__).resolve().parents[1]
 
 def metrics(sources):
-    result={kind:sum(source['kind']==kind for source in sources) for kind in ['paper','project','format','research-name']}
+    result={kind:sum(source['kind']==kind for source in sources) for kind in ['paper','project','article','format','research-name']}
     result['total']=len(sources)
     result['shared']=sum(len({use['plugin'] for use in source['uses']})>1 for source in sources)
     result['citations']=sum(len(use['evidence']) for source in sources for use in source['uses'])

@@ -90,13 +90,13 @@ test('media directory symlinks cannot bring outside files into the public asset 
 test('one full catalog of dedicated images survives the next deployment',async t=>{
   const root=await fixture(t);
   await mkdir(path.join(root,'media/cards'));
-  for(let index=1;index<=102;index++)await writeFile(path.join(root,'media/cards',`card-${index}.webp`),Buffer.concat([raster,Buffer.from(String(index))]));
+  for(let index=1;index<=104;index++)await writeFile(path.join(root,'media/cards',`card-${index}.webp`),Buffer.concat([raster,Buffer.from(String(index))]));
   const first=await build(root);
   assert.ok(first.currentAssets.length>100);
   await writeFile(path.join(root,'src/app.mjs'),"export {art,pixel} from './screens/art.mjs';\n// next application release\n");
   const second=await build(root);
   assert.equal(second.retainedAssets.length,first.currentAssets.length);
-  const retained=`assets/media/cards/card-102.${first.buildId}.webp`;
+  const retained=`assets/media/cards/card-104.${first.buildId}.webp`;
   assert.ok(second.retainedAssets.includes(retained));
-  assert.deepEqual(await readFile(path.join(root,'dist',retained)),Buffer.concat([raster,Buffer.from('102')]));
+  assert.deepEqual(await readFile(path.join(root,'dist',retained)),Buffer.concat([raster,Buffer.from('104')]));
 });

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {canonicalKey} from '../src/core/identity.mjs';
 import {findMatches,filterSources} from '../src/core/catalog.mjs';
+import {catalogStats,kindLabel,kindKorean,sourceCard} from '../src/screens/util.mjs';
 
 const cases=JSON.parse(await readFile(new URL('./fixtures/identity-cases.json',import.meta.url),'utf8'));
 for(const item of cases)test(`identity: ${item.input}`,()=>assert.equal(canonicalKey(item.input)?.key??null,item.key));
@@ -16,3 +17,21 @@ test('case-insensitive text search and plugin filters compose',()=>assert.deepEq
 test('year descending keeps unknown dates last',()=>assert.deepEqual(filterSources(catalog,{sort:'year-desc'}).map(x=>x.year),[2025,2024,null]));
 test('year ascending also keeps unknown dates last',()=>assert.deepEqual(filterSources(catalog,{sort:'year-asc'}).map(x=>x.year),[2024,2025,null]));
 test('filtering does not mutate the source array',()=>{const old=JSON.stringify(catalog);filterSources(catalog,{sort:'title'});assert.equal(JSON.stringify(catalog),old)});
+
+const article={...record('url:https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit','NVIDIA Agent Toolkit article',2026,['agentic-vault']),kind:'article',url:'https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/'};
+const project={...record('github:nvidia/auto-ontology','Auto Ontology',null,['agentic-vault']),kind:'project',url:'https://github.com/NVIDIA/auto-ontology'};
+test('article and repository URLs resolve to their own records without an alias merge',()=>{
+  const sources={sources:[article,project]};
+  assert.deepEqual(findMatches(sources,article.url).matches.map(source=>source.id),[article.id]);
+  assert.deepEqual(findMatches(sources,project.url+'/tree/2a24f5d34ef6b6e168a7f22d308504d3ab36a198').matches.map(source=>source.id),[project.id]);
+  assert.equal(canonicalKey(article.url).kind,'reference');
+  assert.deepEqual(filterSources(sources,{kind:'article',plugin:'agentic-vault'}).map(source=>source.id),[article.id]);
+});
+test('article counts never inflate papers or projects and remain visible by plugin',()=>{
+  const sources={sources:[...catalog.sources,article,project]};
+  assert.deepEqual(catalogStats(sources),{total:5,papers:3,projects:1,articles:1,names:0,shared:1});
+  assert.deepEqual(catalogStats(sources,'semantic-crosscheck'),{total:2,papers:2,projects:0,articles:0,names:0,shared:1});
+  assert.equal(kindLabel('article'),'ARTICLE');
+  assert.equal(kindKorean('article'),'기사');
+  assert.match(sourceCard(article),/>ARTICLE</);
+});

@@ -1,6 +1,6 @@
 # REFERENCE ATLAS
 
-**Built on research.** A visual, source-bound map of the papers and public projects
+**Built on research.** A visual, source-bound map of the papers, public projects and official articles
 referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
 [Semantic Crosscheck](https://github.com/Technoetic/semantic-crosscheck).
 
@@ -20,7 +20,8 @@ The catalog is a snapshot of published citations. A reference is not a claim of
 copied code, a runtime dependency or reproduced benchmark results. Unidentified
 research names and background references remain visible as separate categories.
 The year shown for an arXiv identifier is a registration-year hint, not necessarily
-the final journal publication year. Public formats are labeled separately.
+the final journal publication year. Official articles and public formats are labeled separately;
+an article never inflates paper or project counts.
 
 ## Check before recommending a source again
 
@@ -70,6 +71,15 @@ custom server headers or a service worker.
 4. Rebuild, test and independently review the source/evidence differences.
 5. Push the reviewed change; GitHub Actions verifies and publishes GitHub Pages.
 
+For the NVIDIA-inspired v0.41.0 update, the offline helper
+`scripts/update_ontology_references.py --plugin-root <plugin-checkout> --commit <public-sha> --tag v0.41.0`
+prepares a dry-run from exact release-tag Git blobs. Independently verify the public
+tag/commit first, then add `--apply` and run the normal catalog build and tests.
+It preserves prior citation excerpts, resolves shifted physical lines by exact
+unique matches, and records the article separately from the Auto Ontology project.
+These are earlier research references reused for a new application, not claims
+of newly discovered research, NVIDIA code adoption or reproduced performance.
+
 The registry is not a live literature index. New versions and new uses may warrant
 review after explicitly stating their difference from the prior reference.
 
@@ -80,6 +90,10 @@ Card artwork was generated with the built-in image generation tool. The
 concept, exact prompt and evidence; [media/cards](media/cards/) contains the
 optimized dedicated WebP files. These are editorial concept
 illustrations, not figures reproduced from the cited papers.
+The active manifest preserves generation-time `generationEvidenceUrls` separately
+from `currentEvidenceUrls`; the legacy `evidenceUrls` field follows the latter.
+Updating a citation snapshot changes neither original image prompts nor image bytes.
+Full-resolution generation originals stay outside the public asset graph.
 
 The first artwork iteration is preserved in [the archive](docs/artwork-v1-media/).
 

@@ -15,6 +15,8 @@
   {"input":"https://github.com/Google-Research/Harness3/issues/1","key":"github:google-research/harness3"},
   {"input":"https://github.com/login","key":null},
   {"input":"https://secret@github.com/owner/repo","key":null},
+  {"input":"https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/?utm_source=test#overview","key":"url:https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit"},
+  {"input":"https://github.com/NVIDIA/auto-ontology/tree/2a24f5d34ef6b6e168a7f22d308504d3ab36a198","key":"github:nvidia/auto-ontology"},
   {"input":"https://example.org/reference#section","key":"url:https://example.org/reference"},
   {"input":"https://example.org:abc/reference","key":null},
   {"input":"A-MEM: Agentic Memory","key":"name:a mem agentic memory"},

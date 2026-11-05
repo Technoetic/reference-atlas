@@ -3,7 +3,7 @@
 ## Intent
 
 A visually assertive, Korean-first public catalog of the papers and public
-projects referenced by two plugins. Publish to
+projects and official articles referenced by two plugins. Publish to
 `https://technoetic.github.io/reference-atlas/`. Future improvement research must
 check the registry before describing a source as newly referenced.
 
@@ -23,7 +23,8 @@ Never invent statistics, citations, adoption levels or publication years.
 
 `data/catalog.json`: `{schemaVersion:1, updatedAt, snapshots, sources:[]}`.
 Each source: `{id,kind,title,url,year,tags,keys,aliases,uses,note?}`.
-Kinds: `paper`, `project`, `format`, `research-name`. A use has
+Kinds: `paper`, `project`, `article`, `format`, `research-name`. Official articles
+have their own facet and counts; they do not inflate paper/project/format totals. A use has
 `{plugin,role,evidence:[{file,line,url,excerpt}]}`; plugin is `agentic-vault` or
 `semantic-crosscheck`, role is `reference`, `background`, or `unresolved`.
 Evidence URLs pin the source plugin commit. `year` may be null. An arXiv-derived
@@ -33,6 +34,13 @@ Canonical keys: `arxiv:YYMM.NNNNN`, `doi:lowercase`,
 `github:owner/repo`, `name:normalized name`, `url:normalized URL`.
 Cross-plugin duplicates merge into one source with multiple uses. Name-only
 research remains visibly unresolved and does not inflate identified-paper counts.
+An article URL and a repository identity stay distinct even when the article
+discusses that project; a shared topic is not evidence of an identity alias.
+
+Artwork remains one separately generated raster per source. Active provenance
+retains `generationEvidenceUrls` as generation-time history, and exposes
+`currentEvidenceUrls` plus legacy `evidenceUrls` for the current citation snapshot.
+Snapshot updates do not rewrite original prompts or regenerate prior images.
 
 `src/core/identity.mjs` exports `canonicalKey(input)` returning
 `{key,kind,canonicalUrl}` or null. `src/core/catalog.mjs` exports

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every catalog source has a separately generated conceptual image; no topic-image reuse. Unresolved research names depict only their recorded context.",
-  "count": 102,
+  "count": 104,
   "assets": [
     {
       "index": 1,
@@ -20,7 +20,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L207",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L195",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L207",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
@@ -43,6 +55,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
       ]
     },
     {
@@ -61,8 +79,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L17"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L17"
       ]
     },
     {
@@ -81,7 +107,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1094"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1094"
       ]
     },
     {
@@ -100,6 +132,15 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L675",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1099",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1364",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/lesson-proposals.md#L76",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L79",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.29.0.md#L6",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/v0.29.0.md#L12"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L646",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1067",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1332",
@@ -107,6 +148,15 @@
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L79",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.29.0.md#L6",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.29.0.md#L12"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L675",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1099",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1364",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/lesson-proposals.md#L76",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L79",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.29.0.md#L6",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/v0.29.0.md#L12"
       ]
     },
     {
@@ -128,6 +178,16 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
       ]
     },
     {
@@ -146,7 +206,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-accounting.md#L132"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L132"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-accounting.md#L132"
       ]
     },
     {
@@ -165,7 +231,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L458"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L458"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L458"
       ]
     },
     {
@@ -186,6 +258,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
       ]
     },
     {
@@ -204,8 +284,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1362",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.8.3.md#L5"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1330",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.8.3.md#L5"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1362",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.8.3.md#L5"
       ]
     },
     {
@@ -224,7 +312,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-revocation.md#L134"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L134"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-revocation.md#L134"
       ]
     },
     {
@@ -243,8 +337,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L423",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.32.0.md#L10"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L423",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L10"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L423",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.32.0.md#L10"
       ]
     },
     {
@@ -265,6 +367,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
       ]
     },
     {
@@ -283,7 +393,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-accounting.md#L131"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L131"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-accounting.md#L131"
       ]
     },
     {
@@ -303,6 +419,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
       ]
     },
     {
@@ -321,7 +443,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L147"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L147"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L147"
       ]
     },
     {
@@ -340,7 +468,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evidence.md#L200"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evidence.md#L200"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evidence.md#L200"
       ]
     },
     {
@@ -359,9 +493,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L160",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L160",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L160",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62"
       ]
     },
     {
@@ -380,7 +524,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L19"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L19"
       ]
     },
     {
@@ -399,7 +549,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456"
       ]
     },
     {
@@ -418,8 +574,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L617",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1092"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L617",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1092"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L617",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1092"
       ]
     },
     {
@@ -438,7 +602,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1084"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1084"
       ]
     },
     {
@@ -457,7 +627,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1084"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1084"
       ]
     },
     {
@@ -476,9 +652,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L454",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L21"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L454",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L21"
       ]
     },
     {
@@ -497,7 +683,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-revocation.md#L136"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L136"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-revocation.md#L136"
       ]
     },
     {
@@ -516,7 +708,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L454"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L454"
       ]
     },
     {
@@ -535,7 +733,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L23"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L23"
       ]
     },
     {
@@ -554,7 +758,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L65"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L65"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L65"
       ]
     },
     {
@@ -573,7 +783,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L148"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L148"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L148"
       ]
     },
     {
@@ -592,8 +808,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L22"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L22"
       ]
     },
     {
@@ -612,7 +836,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L461"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L461"
       ]
     },
     {
@@ -631,7 +861,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L455"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L455"
       ]
     },
     {
@@ -650,7 +886,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L66"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L66"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L66"
       ]
     },
     {
@@ -669,7 +911,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L152"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L152"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L152"
       ]
     },
     {
@@ -688,6 +936,12 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
       ]
     },
@@ -709,6 +963,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
       ]
     },
     {
@@ -727,7 +989,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1086"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1086"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1086"
       ]
     },
     {
@@ -746,8 +1014,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L164",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L165"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L164",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L165"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L164",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L165"
       ]
     },
     {
@@ -766,10 +1042,22 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L112",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1085",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.23.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/render-matched-20261017.md#L8"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L112",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1085",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.23.0.md#L44",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/render-matched-20261017.md#L8"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L112",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1085",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.23.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/render-matched-20261017.md#L8"
       ]
     },
     {
@@ -788,6 +1076,12 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
       ]
     },
@@ -809,6 +1103,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
       ]
     },
     {
@@ -828,6 +1130,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
       ]
     },
     {
@@ -846,7 +1154,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-assembly.md#L144"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-assembly.md#L144"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-assembly.md#L144"
       ]
     },
     {
@@ -865,9 +1179,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/release-integrity.md#L487",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.26.0.md#L209",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/v0.26.0.md#L249"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/release-integrity.md#L487",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.26.0.md#L209",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.26.0.md#L249"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/release-integrity.md#L487",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.26.0.md#L209",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/verification/v0.26.0.md#L249"
       ]
     },
     {
@@ -886,9 +1210,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L513",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1090",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.32.0.md#L11"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L513",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1090",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L11"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L513",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1090",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.32.0.md#L11"
       ]
     },
     {
@@ -908,6 +1242,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
       ]
     },
     {
@@ -926,7 +1266,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L18"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L18"
       ]
     },
     {
@@ -945,7 +1291,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1087"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1087"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1087"
       ]
     },
     {
@@ -964,7 +1316,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1088"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1088"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1088"
       ]
     },
     {
@@ -983,8 +1341,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L616",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1091"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L616",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1091"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L616",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1091"
       ]
     },
     {
@@ -1003,7 +1369,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L461"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L461"
       ]
     },
     {
@@ -1022,7 +1394,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-stage-evaluation.md#L5"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-stage-evaluation.md#L5"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-stage-evaluation.md#L5"
       ]
     },
     {
@@ -1041,6 +1419,18 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
@@ -1065,6 +1455,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
       ]
     },
     {
@@ -1085,6 +1483,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
       ]
     },
     {
@@ -1103,7 +1509,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L776"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L776"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L776"
       ]
     },
     {
@@ -1122,7 +1534,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L20"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L20"
       ]
     },
     {
@@ -1141,7 +1559,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L18"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L18"
       ]
     },
     {
@@ -1160,7 +1584,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L113"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L113"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L113"
       ]
     },
     {
@@ -1179,8 +1609,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L798",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1095"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L798",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1095"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L798",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1095"
       ]
     },
     {
@@ -1199,8 +1637,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L22"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L22"
       ]
     },
     {
@@ -1219,7 +1665,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1094"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1094"
       ]
     },
     {
@@ -1238,7 +1690,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L20"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L20"
       ]
     },
     {
@@ -1257,9 +1715,19 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L74",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L459",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L462"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L74",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L459",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L462"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L74",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L459",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L462"
       ]
     },
     {
@@ -1278,7 +1746,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L457"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L457"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L457"
       ]
     },
     {
@@ -1297,8 +1771,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L162",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L162",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/improvement-experiments.md#L162",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63"
       ]
     },
     {
@@ -1317,8 +1799,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.40.0.md#L64",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/skill-routing-evaluation.md#L203"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.40.0.md#L64",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/skill-routing-evaluation.md#L203"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.40.0.md#L64",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/skill-routing-evaluation.md#L203"
       ]
     },
     {
@@ -1337,7 +1827,15 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1093",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1093",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1093",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
       ]
     },
@@ -1357,8 +1855,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/model-korean-memory.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.38.0.md#L27"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.0.md#L27"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/model-korean-memory.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.38.0.md#L27"
       ]
     },
     {
@@ -1377,8 +1883,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L274",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L274",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L274",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456"
       ]
     },
     {
@@ -1397,7 +1911,15 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L208",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L196",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L208",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
       ]
     },
@@ -1417,7 +1939,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L25"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L25"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L25"
       ]
     },
     {
@@ -1437,6 +1965,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
       ]
     },
     {
@@ -1455,8 +1989,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L936",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1096"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L936",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1096"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L936",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1096"
       ]
     },
     {
@@ -1475,10 +2017,22 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L259",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L260",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L261",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L262"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L259",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L260",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L261",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L262"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L259",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L260",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L261",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L262"
       ]
     },
     {
@@ -1497,11 +2051,25 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1363",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L16"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1331",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L15",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L16"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1363",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/moai-diagnostics.md#L16"
       ]
     },
     {
@@ -1520,7 +2088,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1361"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1329"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1361"
       ]
     },
     {
@@ -1539,7 +2113,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1360"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1328"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1360"
       ]
     },
     {
@@ -1558,7 +2138,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L19"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L19"
       ]
     },
     {
@@ -1577,6 +2163,12 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
       ]
     },
@@ -1597,6 +2189,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
       ]
     },
     {
@@ -1616,6 +2214,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
       ]
     },
     {
@@ -1634,7 +2238,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.38.1.md#L15"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.1.md#L15"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.38.1.md#L15"
       ]
     },
     {
@@ -1653,7 +2263,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/reliability.md#L256"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/reliability.md#L256"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/reliability.md#L256"
       ]
     },
     {
@@ -1672,7 +2288,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L455"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L455"
       ]
     },
     {
@@ -1691,7 +2313,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L68"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L68"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-lifecycle.md#L68"
       ]
     },
     {
@@ -1710,6 +2338,14 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
       ]
@@ -1731,6 +2367,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
       ]
     },
     {
@@ -1749,7 +2391,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L154"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L154"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/tower-reliability.md#L154"
       ]
     },
     {
@@ -1768,8 +2416,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L866",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L874"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L866",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L874"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L866",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/hardening.md#L874"
       ]
     },
     {
@@ -1788,7 +2444,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1354"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1322"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1354"
       ]
     },
     {
@@ -1807,8 +2469,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L24"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L24"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/evaluation-stability.md#L456",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L24"
       ]
     },
     {
@@ -1829,6 +2499,14 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
       ]
     },
     {
@@ -1847,8 +2525,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L17"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L17"
       ]
     },
     {
@@ -1867,8 +2553,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L21"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L21"
       ]
     },
     {
@@ -1887,7 +2581,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L23"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-patterns.md#L23"
       ]
     },
     {
@@ -1906,6 +2606,12 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
+      ],
+      "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
       ]
     },
@@ -1926,6 +2632,12 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
       ]
     },
     {
@@ -1944,7 +2656,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/knowledge-evolution.md#L7"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/knowledge-evolution.md#L7"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/knowledge-evolution.md#L7"
       ]
     },
     {
@@ -1963,8 +2681,16 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-formation.md#L29",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-formation.md#L67"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L29",
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L67"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-formation.md#L29",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-formation.md#L67"
       ]
     },
     {
@@ -1983,7 +2709,13 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1357"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1325"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L1357"
       ]
     },
     {
@@ -2002,8 +2734,69 @@
         640
       ],
       "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/model-korean-memory.md#L50"
+      ],
+      "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/model-korean-memory.md#L50"
+      ]
+    },
+    {
+      "index": 103,
+      "sourceId": "url:https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit",
+      "title": "NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data",
+      "kind": "article",
+      "label": "ENTERPRISE DATA GOVERNANCE",
+      "factualConcept": "Official NVIDIA article used as enterprise-platform context for grounding agents in company data. Distinct data sources, platform layers and review/governance gates illustrate background context; no benchmark, code-adoption or automatic-trust claim.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one dedicated editorial research-source card cover for the NVIDIA Agent Toolkit article, separate from an Auto Ontology project card.\nPrimary request: an original conceptual enterprise data and governance architecture sculpture, showing several heterogeneous enterprise data stores grounded into an agent-facing toolkit through explicit governance gates. This illustrates the article's contextual platform theme only; do not depict benchmark evidence or a reproduced product interface.\nScene/backdrop: premium photoreal CGI editorial still life on a near-black olive backdrop #10130f, with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver.\nSubject: three distinctive low architectural data-store forms—a layered file archive, a gridded database block, and a faceted knowledge structure—stand at the base of a broad terraced enterprise platform. Thin luminous data channels rise from them through two transparent guarded frames and a suspended governance lattice toward a single precise agent-tool interface at the summit. Different layers stay visibly distinct while connected. A separate small lavender inspection lens at one gate suggests review rather than automatic trust.\nComposition/framing: landscape 3:2, central 80 percent focal composition, oblique architectural perspective, broad horizontal stack and strong silhouette readable as a small thumbnail; leave breathing room around the sculpture. It must look compositionally different from a term/relation contract board.\nLighting/mood: sophisticated soft architectural lighting, restrained metallic reflections, clear readable channels and physically plausible polished materials.\nText: none.\nConstraints: no words, letters, numbers, labels, logos, NVIDIA logo, slogans, watermark, UI screenshot, people, portraits, faces, generic brain, performance charts, scores or implied benchmark results. Original conceptual illustration, not a copied scientific or corporate diagram.",
+      "output": "media/cards/card-103.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33"
+      ],
+      "sha256": "5e5a4008792d7c94558bcc305fbac2a67c8bc187b0e170048e18b7c331d0bb14",
+      "bytes": 63054,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33"
+      ]
+    },
+    {
+      "index": 104,
+      "sourceId": "github:nvidia/auto-ontology",
+      "title": "NVIDIA Auto Ontology",
+      "kind": "project",
+      "label": "EXPLICIT SEMANTIC CONTRACT",
+      "factualConcept": "NVIDIA Auto Ontology is a pinned conceptual reference for explicit terms, curated semantic lookup and visible coverage gaps. Typed endpoint forms, a directed relation and an empty definition socket symbolize authored definitions and missing information held open, not adopted code, benchmark results or verified semantic truth.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one dedicated editorial research-source card cover for the NVIDIA Auto Ontology open-source project, separate from the enterprise platform article card.\nPrimary request: an original sculptural semantic contract diagram: explicit typed terms, directional relations and required definition slots in a curated ontology. It illustrates a design reference, without implying the project's code was adopted or its benchmarks reproduced.\nScene/backdrop: premium photoreal CGI editorial still life, near-black olive backdrop #10130f; acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver materials.\nSubject: a low, wide precision contract board lies on a graphite drafting surface. Two visually distinct typed term blocks—a small silver cube seated in a square recess and a lavender glass sphere seated in a round recess—are connected by one raised lime directional arrow rail. A transparent domain/range stencil bridges only those matching shaped endpoints. In a separate orderly row below the relation, five deep definition-slot sockets contain four precisely fitted metallic inserts and one deliberately empty socket. A removable clear inspection lens and a slim source-bound document tab sit beside the board. The empty slot represents missing definition information held open, never a fabricated match.\nComposition/framing: landscape 3:2, close oblique view from above, focal geometry within the central 80 percent, generous negative space, easy thumbnail readability. Make this a flat asymmetric semantic drafting board with two large term forms and a single directional relation, visually distinct from a tall enterprise stack or governance tower.\nLighting/mood: sophisticated architectural rim lighting and clean soft shadows, tactile machined edges, restrained clear glass and physically plausible reflections.\nText: none.\nConstraints: no words, letters, numbers, labels, company logos, NVIDIA logo, slogans, watermark, UI screenshots, portraits, people, faces, generic brains, performance charts, benchmark scores or reproduced scientific figures. Do not imply automatic semantic truth, universal coverage or adopted NVIDIA code.",
+      "output": "media/cards/card-104.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L182",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34"
+      ],
+      "sha256": "11577615128bd607c62d2160f72603a1365e45e041a5694c909a8a91be7505bd",
+      "bytes": 66460,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/NVIDIA/auto-ontology/tree/2a24f5d34ef6b6e168a7f22d308504d3ab36a198"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L182",
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34"
       ]
     }
-  ]
+  ],
+  "evidencePolicy": "generationEvidenceUrls preserve the public source URLs recorded when each image was generated. currentEvidenceUrls and the legacy evidenceUrls field follow the current citation snapshot. Repinning citations does not regenerate artwork or change original prompts."
 }
