@@ -1,0 +1,2009 @@
+{
+  "schemaVersion": 1,
+  "generationMode": "built-in image_gen",
+  "policy": "Every catalog source has a separately generated conceptual image; no topic-image reuse. Unresolved research names depict only their recorded context.",
+  "count": 102,
+  "assets": [
+    {
+      "index": 1,
+      "sourceId": "github:googlecloudplatform/open-knowledge-format",
+      "title": "Open Knowledge Format (OKF)",
+      "kind": "format",
+      "label": "PORTABLE KNOWLEDGE CAPSULE",
+      "factualConcept": "OKF 0.2 metadata bundles exchange a limited verification-contract profile across both plugins.",
+      "prompt": "Use case: stylized-concept. Premium editorial 3D artwork for Open Knowledge Format, visualizing portable structured knowledge metadata: a beautiful transparent rectangular shipping capsule is opened in midair; inside, an ordered miniature constellation of small linked lavender crystalline fact tiles is held by a precise lime frame, with one matching tile smoothly docking into a second capsule. Oblique macro product photography, floating on a near-black olive #10130f seamless studio backdrop. Lime #d3fc70 and lavender #c3b0f6 highlights, smoked glass, brushed dark metal, luminous fine connectors. Landscape 3:2, bold central composition within central80%, strong silhouette readable as a card thumbnail. No text, numbers, lettering, logos, UI, watermark, people. This is abstract symbolic cover artwork, not a paper figure.",
+      "output": "media/cards/card-001.webp",
+      "sha256": "8cf5fa31d2c998985917f5fbc68c4da5079199e837b735316d6e7dfb064833a3",
+      "bytes": 67036,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L195",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ]
+    },
+    {
+      "index": 2,
+      "sourceId": "url:https://www.w3.org/TR/shacl",
+      "title": "SHACL Validation Report Contract",
+      "kind": "format",
+      "label": "SHAPE VALIDATION SIEVE",
+      "factualConcept": "SHACL validation report contract informs boundary checks between stored results and live validation reports.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial cover for SHACL validation-report contract: an upright precision-cut smoked-glass stencil with three geometric apertures is testing a small linked cluster of crystalline nodes. Two correctly shaped lavender nodes fit exactly through apertures, while one mismatched angular node is held gently at the boundary by a lime wireframe outline. A neat row of tiny result tokens collects below, without any written marks. Front three-quarter low camera, architectural minimalism, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6. Dramatic edge light, glass and anodized metal, central80% subject, landscape3:2. No text, logos, numbers, people, watermark. Symbolic illustration, not a technical figure.",
+      "output": "media/cards/card-002.webp",
+      "sha256": "cd9dfadac551021340a116a8c243e5efe83c72f2f076464a2ef7582d3c65a242",
+      "bytes": 46626,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
+      ]
+    },
+    {
+      "index": 3,
+      "sourceId": "arxiv:2502.12110",
+      "title": "A-MEM 논문",
+      "kind": "paper",
+      "label": "GROWING LINKED MEMORY",
+      "factualConcept": "A-MEM inspires proposing links between new memories and existing notes while preserving provenance; the local helper does not implement semantic memory evolution.",
+      "prompt": "Use case: stylized-concept. A unique high-end 3D editorial sculpture for A-MEM: a single translucent lavender memory card descends toward a crescent-shaped grove of older smoked-glass note slabs; two delicate luminous lime filaments extend from the arriving card to specifically related slabs, while each slab has a tiny embedded pearl recording provenance. Sculptural curved composition, close low-angle camera, elegant spatial depth, dark olive #10130f seamless background, lime #d3fc70 and lavender #c3b0f6 only with neutral glass. Landscape3:2, clear focal sculpture central80%, rich materials and soft cinematic light. No words, numbers, logos, UI, people or watermark. Abstract concept artwork, not a scientific diagram.",
+      "output": "media/cards/card-003.webp",
+      "sha256": "3f443d1b1b33e790e323251093a652dc55ca80d668172246a0847f072176ab33",
+      "bytes": 38732,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17"
+      ]
+    },
+    {
+      "index": 4,
+      "sourceId": "arxiv:2406.13352",
+      "title": "AgentDojo",
+      "kind": "paper",
+      "label": "DUAL OUTCOME TEST ARENA",
+      "factualConcept": "AgentDojo informs independently evaluating legitimate task outcomes and attacker objectives as separate postconditions.",
+      "prompt": "Use case: stylized-concept. Premium 3D editorial art for AgentDojo, an adversarial agent test arena: a compact dark metallic maze on a circular platform has a small luminous lavender navigator sphere. Its intended route reaches a smooth lime destination socket, while a separate violet deceptive side corridor ends behind a suspended glass safety barrier. Two independent mechanical measuring arches observe the two endpoints rather than combining their outcomes. Dramatic overhead isometric camera, refined industrial miniature, near-black olive #10130f stage, lime #d3fc70 and lavender #c3b0f6 edge lighting. Landscape3:2, central80% readable silhouette. No text, letters, logos, scores, people, robots with faces, or watermark; abstract symbolic editorial cover.",
+      "output": "media/cards/card-004.webp",
+      "sha256": "f8513817c7ce5f8b4a33e7e5d631824bf2e160d2f03290a5f343f0f2b7c6f496",
+      "bytes": 66972,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094"
+      ]
+    },
+    {
+      "index": 5,
+      "sourceId": "arxiv:2610.23317",
+      "title": "AgentOnto",
+      "kind": "paper",
+      "label": "CHANGE AND PRESERVE GATE",
+      "factualConcept": "AgentOnto informs checking both requested corrections and preserved content, alongside response and silent semantic error rates.",
+      "prompt": "Use case: stylized-concept. Unique 3D editorial cover for AgentOnto: a sculptural double gate holds two large transparent document-like slabs, without writing. One slab has a precisely replaced lavender geometric inset glowing lime at its corrected seam; the adjacent slab remains perfectly intact inside a protective clear frame. Beneath them a tiny hidden crack is revealed by a narrow lime inspection beam, symbolizing silent errors being checked rather than assumed absent. Symmetric frontal architectural composition with shallow depth, luxurious smoked glass and ceramic, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6. Landscape3:2 central80%, bold simple thumbnail. No text, numbers, logos, UI, watermark or people.",
+      "output": "media/cards/card-005.webp",
+      "sha256": "7fd3dfeb18253d43dc204a8c34d674ce4295c9bc65dcb985acfa8d34a4cbc4cb",
+      "bytes": 44462,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L646",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1067",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1332",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/lesson-proposals.md#L76",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L79",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.29.0.md#L6",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.29.0.md#L12"
+      ]
+    },
+    {
+      "index": 6,
+      "sourceId": "arxiv:2307.00417",
+      "title": "Aggregation Consistency Errors in Semantic Layers and How to Avoid Them",
+      "kind": "paper",
+      "label": "BALANCED AGGREGATE CHANNELS",
+      "factualConcept": "Aggregation-consistency research informs additive checks for sum and count measures in semantic layers.",
+      "prompt": "Use case: stylized-concept. Premium distinctive 3D editorial illustration of aggregation consistency: three stepped lavender glass channels each contain a different number of identical lime beads; all channels pour into one wide transparent basin beside an exact balanced stack of those same beads. A fine mechanical balance bridge compares the divided groups with their combined total, expressing conserved sums and counts without arithmetic labels. Sweeping diagonal macro composition, near-black olive #10130f studio, lime #d3fc70 and lavender #c3b0f6, liquid-clear glass, satin dark metal, controlled cinematic glow. Landscape3:2 central80%, highly readable. No text, numbers, logos, people or watermark. Symbolic artwork, not a chart.",
+      "output": "media/cards/card-006.webp",
+      "sha256": "3554bb2773332f029d1998a590a7fc027d91a1809a02705a12849dbb2a8432f5",
+      "bytes": 50232,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
+      ]
+    },
+    {
+      "index": 7,
+      "sourceId": "arxiv:2609.26457",
+      "title": "AIDE²",
+      "kind": "paper",
+      "label": "CONTROLLED IMPROVEMENT EXPERIMENT",
+      "factualConcept": "AIDE2 is cited for evaluation conditions for improvement experiments, without importing its code or model.",
+      "prompt": "Use case: stylized-concept. Unique premium editorial 3D sculpture for controlled AI improvement experiments: two parallel laboratory tracks on a long dark monolithic bench carry a baseline lavender faceted component and a slightly revised lime-edged component, each passing through identical transparent measuring rings under exactly matched lighting. A small crystal record plate sits at the end of each track; no written information. Strong horizontal perspective, sophisticated scientific instrument aesthetic, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, polished ceramic and optical glass. Landscape3:2 central80%, one unmistakable matched-comparison silhouette. No text, numbers, logos, UI, people or watermark. Symbolic cover, not reproduced research apparatus.",
+      "output": "media/cards/card-007.webp",
+      "sha256": "a3cc713b3b8f60aafed970923ce7f5ae30f7bb58d552456b1315a59265f631bb",
+      "bytes": 49940,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L132"
+      ]
+    },
+    {
+      "index": 8,
+      "sourceId": "arxiv:2101.09077",
+      "title": "An Empirical Study of Flaky Tests in Python",
+      "kind": "paper",
+      "label": "INTERMITTENT TEST PENDULUM",
+      "factualConcept": "Flaky-test research informs observing intermittent failures with rerun counts and an upper limit.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial artwork for flaky tests: a large delicate lavender pendulum swings over a sequence of seven identical smoked-glass test sockets, most lighting lime while one flickers dim violet despite identical physical shape. A solid metallic stop at the end of the rail visibly limits the repeated trials. Capture motion as a subtle elegant light arc rather than blur, close side-angle studio photography, black olive #10130f, luminous lime #d3fc70 and lavender #c3b0f6, optical glass and dark brushed titanium. Landscape3:2 subject central80%, strong readable thumbnail. No text, digits, logos, screen, people or watermark. Symbolic test instability, not a performance claim.",
+      "output": "media/cards/card-008.webp",
+      "sha256": "2125facf0506a1db59e4892f7027319c25939e0f0058c0945ed4d0ee0fd92bf9",
+      "bytes": 39938,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L458"
+      ]
+    },
+    {
+      "index": 9,
+      "sourceId": "name:an evaluation of exhaustive testing for data structures",
+      "title": "An Evaluation of Exhaustive Testing for Data Structures",
+      "kind": "paper",
+      "label": "BOUNDED STRUCTURE CABINET",
+      "factualConcept": "Exhaustive-testing research is referenced for checking bounded small data structures, not proving arbitrary real-world correctness.",
+      "prompt": "Use case: stylized-concept. Premium 3D editorial cover for exhaustive testing of small data structures: an open elegant specimen cabinet contains a precisely organized finite collection of tiny glass branching trees and linked loops, every compartment occupied by a distinctly shaped specimen. One sweeping lime inspection ribbon travels across all compartments and stops clearly at the cabinet edge. Top-down oblique composition, lavender translucent structures with dark metal dividers, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 lighting. Landscape3:2, cabinet entirely inside central80%, crisp material detail readable thumbnail. No text, numbers, labels, logos, people or watermark. Conceptual artwork representing bounded enumeration.",
+      "output": "media/cards/card-009.webp",
+      "sha256": "088369f050ae7aac7019295a0ec15b08c92f6d4bc12655d09b2d0ee9c953e85f",
+      "bytes": 96174,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
+      ]
+    },
+    {
+      "index": 10,
+      "sourceId": "arxiv:2608.27454",
+      "title": "arXiv 2608.27454",
+      "kind": "paper",
+      "label": "PERSISTENT WIKI REVERSIBLE SKILL",
+      "factualConcept": "WikiSkill inspires a persistent wiki layer, retained rejected drafts and reversible skill promotion followed by observation.",
+      "prompt": "Use case: stylized-concept. Highly distinctive luxury 3D editorial sculpture for WikiSkill: a heavy permanent lavender-glass archive tower anchors the left side; a lightweight lime-edged skill tile glides along an elevated reversible curved rail above it, with a clear observation lens at the promotion point and a return path curving back. Several intact rejected draft tiles are neatly preserved in a lower drawer, not discarded. Architectural side cutaway with elegant physical storytelling, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, frosted glass and satin metal. Landscape3:2 central80%, clear silhouette. No words, numbers, arrows, logos, UI, people or watermark. Abstract cover artwork.",
+      "output": "media/cards/card-010.webp",
+      "sha256": "85122fcf7b5f902af8d728acd69cfe88c8526666a597d5f109941bbe59dbe0ac",
+      "bytes": 60664,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1330",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.8.3.md#L5"
+      ]
+    },
+    {
+      "index": 11,
+      "sourceId": "arxiv:2610.18052",
+      "title": "Bemula",
+      "kind": "paper",
+      "label": "PAIRED MEMORY CONTROLS",
+      "factualConcept": "Bemula motivates paired stored-target controls in memory revocation checks.",
+      "prompt": "Use case: stylized-concept. Unique premium 3D editorial image for paired memory revocation controls: two matching clear memory vault cylinders stand on a split pedestal. In one cylinder a single target lavender crystal is being lifted out by a delicate lime inspection loop, leaving a visible precise empty socket; in the other the matching target crystal remains locked in place as an unchanged comparison control. Neighboring crystals stay intact in both cylinders. Intimate macro three-quarter view, near-black olive #10130f seamless studio, lime #d3fc70 and lavender #c3b0f6, glass reflections and dark ceramic. Landscape3:2 central80%, no text, names, numbers, logos, people or watermark. Symbolic recorded use, no invented model abilities.",
+      "output": "media/cards/card-011.webp",
+      "sha256": "f625e64a8e56f1825efaef792dbcf1b7cf4137637f4486a637e57417dbfdcb37",
+      "bytes": 71008,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L134"
+      ]
+    },
+    {
+      "index": 12,
+      "sourceId": "arxiv:2005.04118",
+      "title": "CheckList",
+      "kind": "paper",
+      "label": "INVARIANT AND DIRECTIONAL TESTS",
+      "factualConcept": "CheckList informs invariance tests and directional expectation tests, including metamorphic period normalization checks.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial art for CheckList behavioral testing: a luxurious divided testing instrument has two clearly different physical lanes. In the upper lane two differently textured lavender tokens pass through a transformation ring and settle at the same height, showing invariant outcome. In the lower lane a progressively narrowed set of glass rings guides lime beads into a predictably descending stepped arrangement, showing directional expectation. Carefully arranged physical objects, no charts or written labels. Near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, satin ceramic and clear glass, oblique close camera. Landscape3:2 central80%, bold readable forms. No text, numbers, logos, UI, people or watermark.",
+      "output": "media/cards/card-012.webp",
+      "sha256": "1e739b37933ee159c91c0ff0b307ef2bc1fd83c9ce4d94bf90ead30e084ec3ff",
+      "bytes": 54816,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L423",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L10"
+      ]
+    },
+    {
+      "index": 13,
+      "sourceId": "arxiv:1411.6704",
+      "title": "Data Generation for Testing and Grading SQL Queries (XData)",
+      "kind": "paper",
+      "label": "QUERY DISTINGUISHING SPECIMEN",
+      "factualConcept": "XData informs bounded scalar test-data generation for distinguishing SQL query behavior.",
+      "prompt": "Use case: stylized-concept. Premium editorial 3D cover for XData SQL test-data generation: a tiny jewel-like table specimen, formed from a small grid of transparent cells containing a few carefully placed lime and lavender beads, is held between two large dark branching query funnels. The same tiny specimen falls into both funnels but emerges as visibly different arrangements on two small output trays, revealing a hidden query difference with minimal data. Dynamic close isometric composition, no written query or grid labels, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, polished black ceramic and optical glass. Landscape3:2 focal central80%, crisp thumbnail silhouette. No text, digits, logos, people or watermark.",
+      "output": "media/cards/card-013.webp",
+      "sha256": "cda6dc200e014717e4e24f9b6f72a4aa95d1799862b427b6e3ac65f8a2f3617e",
+      "bytes": 44542,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
+      ]
+    },
+    {
+      "index": 14,
+      "sourceId": "arxiv:2505.22954",
+      "title": "DGM v3",
+      "kind": "paper",
+      "label": "EVOLUTION SEARCH ACCOUNTABILITY",
+      "factualConcept": "DGM v3 informs guarding evaluation loopholes and accounting for exploration costs, including discarded attempts.",
+      "prompt": "Use case: stylized-concept. Distinct high-end 3D editorial sculpture for Darwin Godel Machine design inspiration: a branching coral-like tree of metallic experiment arms grows from one stable base. Each branch ends in a different lavender geometric prototype; only one reaches a carefully sealed lime inspection ring, while every rejected branch still holds a small dark cost bead rather than vanishing. A tempting short bypass tunnel visibly ends at a closed transparent wall. Dramatic low-angle sculptural composition, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6, titanium and frosted glass. Landscape3:2 central80%, no words, numbers, logos, UI, people or watermark. Conceptual accountability art, no performance claims.",
+      "output": "media/cards/card-014.webp",
+      "sha256": "d6b7441afb8cf6d298b1a0dc66e217b0049778d3de54b3a234e93f86e11f3ebd",
+      "bytes": 54706,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L131"
+      ]
+    },
+    {
+      "index": 15,
+      "sourceId": "doi:10.1007/s10601-015-9183-0",
+      "title": "Fast, flexible MUS enumeration",
+      "kind": "paper",
+      "label": "MINIMAL CONTRADICTION KNOTS",
+      "factualConcept": "MUS enumeration is a design reference for explanations based on minimal unsatisfiable subsets.",
+      "prompt": "Use case: stylized-concept. Unique premium 3D editorial cover for minimal unsatisfiable subset enumeration: a suspended intricate knot of six translucent lavender constraint ribbons surrounds a small trapped glass sphere. Two separate minimal sets of three lime-lit ribbon junctions are gently isolated into small open display rings beneath the knot, explaining the specific tiny conflicts within the larger tangle. Elegant macro sculpture with tangible material, near-black olive #10130f studio, lime #d3fc70 and lavender #c3b0f6, soft cinematic rim light, no diagram arrows. Landscape3:2 all important objects central80%, strong tactile thumbnail. No text, digits, logos, mathematical symbols, people or watermark.",
+      "output": "media/cards/card-015.webp",
+      "sha256": "ee529c9bf7027f21450dccd9f937615eeb22ca7700915b0e9117a170fa455eb7",
+      "bytes": 50122,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
+      ]
+    },
+    {
+      "index": 16,
+      "sourceId": "arxiv:2511.03506",
+      "title": "HaluMem",
+      "kind": "paper",
+      "label": "MEMORY HALLUCINATION CHECKPOINTS",
+      "factualConcept": "HaluMem measures memory hallucinations separately at extraction, update, and question-answer stages.",
+      "prompt": "Use case: stylized-concept. Premium 3D editorial illustration for HaluMem: three large spaced optical lenses along a curved dark bench inspect a traveling lavender memory crystal at extraction, update and answer stages. At the middle lens a ghostlike duplicate crystal reflection is exposed by a narrow lime beam and separated from the solid original; each lens retains a distinct small specimen on its own tray. Strong cinematic side perspective, clear physical three-stage story without labels, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, precision optics and dark brushed metal. Landscape3:2 central80%, no text, numbers, logos, UI, people, heads or watermark. Symbolic stage-specific checking.",
+      "output": "media/cards/card-016.webp",
+      "sha256": "7d06d322711ae33c764cb0c58a7f31e3e358355271d20ae7478f2ab1f9f5f256",
+      "bytes": 68396,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L147"
+      ]
+    },
+    {
+      "index": 17,
+      "sourceId": "arxiv:2609.01481",
+      "title": "Harness-of-Harness (HoH)",
+      "kind": "paper",
+      "label": "VERSION BOUND EVIDENCE LOOM",
+      "factualConcept": "HoH informs connecting artifact versions and verification-evidence status while keeping the existing harness and model fixed.",
+      "prompt": "Use case: stylized-concept. Highly distinctive premium 3D editorial cover for Harness-of-Harness: a heavy stationary dark architectural frame holds three floating artifact slabs at different depths; each slab is tethered by a taut lime thread to its own matching lavender glass evidence seal on an orderly lower rail. One artifact slab has shifted slightly, its old tether becoming visibly disconnected while other pairings stay intact. A physical evidence loom, not a computer dashboard. Near-black olive #10130f backdrop, lime #d3fc70 and lavender #c3b0f6, smoked glass, graphite metal, controlled studio highlights. Landscape3:2 central80%, no text, letters, numbers, logos, people or watermark.",
+      "output": "media/cards/card-017.webp",
+      "sha256": "ea3fb7771cf8cfca46dd4b806d0854eff74372b17cf74db40df72317758d8c32",
+      "bytes": 53524,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evidence.md#L200"
+      ]
+    },
+    {
+      "index": 18,
+      "sourceId": "arxiv:2610.14224",
+      "title": "Harness² 논문 §2",
+      "kind": "paper",
+      "label": "GENERAL SPECIALIST SYNTHESIS",
+      "factualConcept": "Harness2 inspires comparing and composing general versus specialized candidates while separating modification effect from lessons.",
+      "prompt": "Use case: stylized-concept. Unique luxury 3D editorial sculpture for Harness squared: a broad smooth lavender universal tool-piece approaches from the left and a precise lime faceted specialized piece approaches from the right, meeting in a beautiful central interlocking glass joint. Below this synthesis, two clearly separated shallow dishes preserve a solid changed component and a delicate transparent lesson imprint; a small empty socket remains intentionally empty instead of inventing an entry. Sweeping balanced horizontal composition, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, milled ceramic, optical glass and satin metal. Landscape3:2 subject central80%, no written labels, text, numbers, logos, UI, people or watermark.",
+      "output": "media/cards/card-018.webp",
+      "sha256": "624bfc25635748c4077ff9ddd102d7f61094a9892cc9974278a92be494fd009a",
+      "bytes": 41750,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L160",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62"
+      ]
+    },
+    {
+      "index": 19,
+      "sourceId": "arxiv:2502.14802",
+      "title": "HippoRAG 2 논문",
+      "kind": "paper",
+      "label": "TWO HOP EVIDENCE BRIDGE",
+      "factualConcept": "HippoRAG2 inspires expanding retrieval through linked evidence; the local implementation traverses unique-file wikilinks up to two hops and returns paths and hashes.",
+      "prompt": "Use case: stylized-concept. Premium 3D editorial cover for HippoRAG2 linked evidence retrieval: a bright lime query pearl launches a graceful path across exactly two suspended arched bridges, first to a lavender glass document island then to a second related island, with a few quieter peripheral islands in the distance. Each visited island contains a small sealed evidence crystal and the traversed path remains luminous and visible. Spacious sculptural landscape rather than generic network web, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, frosted quartz and graphite stone, low panoramic camera. Landscape3:2 focal central80%, no text, numbers, labels, logos, UI, people or watermark.",
+      "output": "media/cards/card-019.webp",
+      "sha256": "e1abc2a810e8f39e83877c9d372b9274467364dbd19684cf15141cfdb70cbf93",
+      "bytes": 63388,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19"
+      ]
+    },
+    {
+      "index": 20,
+      "sourceId": "doi:10.23287/kjdh.2024.1.1.6",
+      "title": "Kiwi",
+      "kind": "paper",
+      "label": "INDEPENDENT RETRIEVAL COMPARATOR",
+      "factualConcept": "Kiwi is cited as an optional search comparison baseline alongside qmd.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial sculpture for an optional search comparison baseline named Kiwi: a long lavender glass search key composed of small aligned segments is placed on a precision comparison balance; on the opposite pan, a matching set of lime-edged retrieved document fragments forms a neatly stacked fan. Behind it a separate dark unselected comparison rail remains visible, emphasizing optional controlled comparison rather than a claimed winner. Calm macro studio composition with a strong asymmetrical fan silhouette, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, optical glass and satin black metal. Landscape3:2 central80%. No fruit, birds, names, letters, numbers, logos, UI, people or watermark. Abstract research-use artwork.",
+      "output": "media/cards/card-020.webp",
+      "sha256": "7b61643937bbab16b7ca9e79c7587efbcd44aa4dd1d34d0f849b80282675e656",
+      "bytes": 37596,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456"
+      ]
+    },
+    {
+      "index": 21,
+      "sourceId": "arxiv:2110.01052",
+      "title": "Learn then Test",
+      "kind": "paper",
+      "label": "SEQUENTIAL RISK TESTING GATE",
+      "factualConcept": "Learn then Test informs fixed-sequence hypothesis tests and binomial-tail p-values for a calibrated no-answer threshold.",
+      "prompt": "Use case: stylized-concept. Unique high-end 3D editorial image for Learn then Test: a row of four thin transparent vertical gates forms a disciplined ascending staircase. A lavender candidate sphere advances gate by gate, each gate measured by a precise lime illuminated threshold bar; one lower gate remains firmly shut and a small blank answer cup stays empty behind it, depicting deliberate abstention when a test does not pass. A separate quiet training mold rests outside the testing staircase. Dramatic diagonal perspective, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, glass and brushed titanium. Landscape3:2 central80%, no text, probability numbers, symbols, logos, charts, people or watermark.",
+      "output": "media/cards/card-021.webp",
+      "sha256": "da9b67d25612b5f014795c4b7bc1db01d04bc1567feef85fec7dd1810428be96",
+      "bytes": 40116,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L617",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1092"
+      ]
+    },
+    {
+      "index": 22,
+      "sourceId": "arxiv:2603.12572",
+      "title": "LMEB",
+      "kind": "paper",
+      "label": "RETRIEVAL ANSWER SEPARATION",
+      "factualConcept": "LMEB informs evaluating retrieval separately from answering, including updates, time and abstention.",
+      "prompt": "Use case: stylized-concept. Premium 3D editorial cover for LMEB memory evaluation: a large sculptural fork divides a memory-testing bench into two distinct areas. On the left, an optical claw selects one evidence crystal from a compact lavender archive comb; on the right, an independent transparent answer vessel receives only a single lime bead through a narrow bridge. A visibly empty second vessel is deliberately reserved for unanswered cases. Emphasize the physical gap between retrieving evidence and forming an answer. Architectural close-up, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6, smoked glass and black ceramic. Landscape3:2 central80%, no text, digits, logos, UI, people or watermark.",
+      "output": "media/cards/card-022.webp",
+      "sha256": "958bac19f9914f4bd80d7b5a76a731b688582344c69d6c5f1f084cf27663f7c6",
+      "bytes": 47524,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084"
+      ]
+    },
+    {
+      "index": 23,
+      "sourceId": "arxiv:2410.10813",
+      "title": "LongMemEval",
+      "kind": "paper",
+      "label": "LONG TEMPORAL MEMORY RIBBON",
+      "factualConcept": "LongMemEval informs long-term memory tests that distinguish retrieval and answering, updates over time and deliberate no-answer behavior.",
+      "prompt": "Use case: stylized-concept. Distinct luxurious 3D editorial art for LongMemEval: a long translucent lavender memory ribbon curls from the distant upper background into a dramatic foreground spiral, holding small crystalline event markers along its length. At one point an older marker is gently superseded by a brighter lime marker connected by a tiny clear hinge; at the foreground an inspection lens follows the correct event path while a separate answer socket remains empty where no supporting marker exists. Elegant temporal storytelling, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, supple glass and satin graphite. Landscape3:2 center80%, no text, clocks with numbers, logos, people, UI or watermark.",
+      "output": "media/cards/card-023.webp",
+      "sha256": "29ee9a5eaada965f9ee4e262555a5c0543a76366821e8d789deec55795a2638d",
+      "bytes": 60622,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084"
+      ]
+    },
+    {
+      "index": 24,
+      "sourceId": "arxiv:2605.12493",
+      "title": "LongMemEval-V2 논문",
+      "kind": "paper",
+      "label": "MEMORY SCENARIO PRISM",
+      "factualConcept": "LongMemEval-V2 informs separating changed facts, work procedures, incorrect premises and unavailable answers in evaluation scenarios.",
+      "prompt": "Use case: stylized-concept. Unique premium editorial 3D sculpture for LongMemEval-V2: a large open faceted prism is divided into four visibly distinct chambers. One chamber holds a lavender crystal being replaced by a lime crystal, one holds a short ordered stair of procedural glass tiles, one holds a tilted false foundation block revealed by a clear inspection beam, and the last holds an intentionally empty jewel socket. A single fine lime viewing ray inspects all four without mixing them. Museum-quality oblique cutaway, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, black ceramic and optical quartz. Landscape3:2 central80%, bold coherent thumbnail. No text, letters, numbers, labels, logos, UI, people or watermark.",
+      "output": "media/cards/card-024.webp",
+      "sha256": "0008a1c0e775118bcac67ef96f8ebb929749e9a40e82c8e6601d53a04c872ed7",
+      "bytes": 73008,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21"
+      ]
+    },
+    {
+      "index": 25,
+      "sourceId": "arxiv:2604.20006",
+      "title": "Memora",
+      "kind": "paper",
+      "label": "FORBIDDEN MEMORY EXPOSURE",
+      "factualConcept": "Memora motivates inspecting forbidden-memory use during memory revocation checks.",
+      "prompt": "Use case: stylized-concept. Unique premium 3D editorial cover for Memora forbidden-memory inspection: an elegant closed smoked-glass archive drawer contains a single lavender crystal wrapped by a delicate opaque dark band. A thin unauthorized filament tries to escape from that crystal toward a small decision wheel, but a bright lime inspection slit reveals and intercepts the filament before it reaches the wheel. Other clear unbound crystals remain accessible in an adjacent open drawer. Quiet dramatic macro lighting, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, satin dark metal and optical glass. Landscape3:2 important objects central80%, no text, numbers, lock icons, logos, UI, people or watermark. Symbolic documented evaluation idea.",
+      "output": "media/cards/card-025.webp",
+      "sha256": "470cf928c8d9ab56abd4e90fba94f4a50f29b02d57c42e053b94eff218b2e3fc",
+      "bytes": 57294,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L136"
+      ]
+    },
+    {
+      "index": 26,
+      "sourceId": "arxiv:2507.05257",
+      "title": "MemoryAgentBench",
+      "kind": "paper",
+      "label": "STATE VERSUS MEMORY USE",
+      "factualConcept": "MemoryAgentBench informs separately testing state changes and actual use of stored memory.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial sculpture for MemoryAgentBench: a sophisticated mechanical test bench holds a lavender memory cartridge above a steering assembly. One lime dial records the cartridge physically changing, while a completely separate transparent linkage traces whether that cartridge actually turns a small trajectory wheel below. The two channels are visibly independent, with an illuminated gap where a changed cartridge may fail to influence behavior. Close three-quarter industrial product photograph, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, polished graphite, frosted quartz. Landscape3:2 central80%, no written labels, digits, logos, dashboards, people or watermark.",
+      "output": "media/cards/card-026.webp",
+      "sha256": "6ff8c8d815b9596f8245f315532b07d7c2b283a4611cda061c811992a541884f",
+      "bytes": 55672,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454"
+      ]
+    },
+    {
+      "index": 27,
+      "sourceId": "arxiv:2602.16313",
+      "title": "MemoryArena 논문",
+      "kind": "paper",
+      "label": "CROSS SESSION ACTION CHAIN",
+      "factualConcept": "MemoryArena informs evaluating whether memories from multiple sessions affect the next action, using preconditions and postconditions.",
+      "prompt": "Use case: stylized-concept. Unique premium 3D editorial art for MemoryArena: three separate curved session platforms float at rising heights, each preserving one translucent lavender memory tile. Their fine lime threads converge on a final branching action rail, where a small metallic navigator sphere takes the branch unlocked by those earlier tiles. A clear physical precondition latch before the fork and a distinct outcome socket after it make the transition visible. Wide sculptural arena perspective with generous dark space, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, graphite stone and glass. Landscape3:2 central80%, no text, digits, logos, generic humanoid robots, people, UI or watermark.",
+      "output": "media/cards/card-027.webp",
+      "sha256": "341e4577521fe1a7db7a8cdafc14d41211a06b1e1fe9dc25bc2bee4a8f01c155",
+      "bytes": 46420,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23"
+      ]
+    },
+    {
+      "index": 28,
+      "sourceId": "arxiv:2607.27080",
+      "title": "MemSecBench",
+      "kind": "paper",
+      "label": "SELECTIVE MEMORY REPAIR",
+      "factualConcept": "MemSecBench informs persistence-to-consequence-to-selective-repair evaluation questions for memory lifecycle controls.",
+      "prompt": "Use case: stylized-concept. Distinct premium editorial 3D image for MemSecBench memory lifecycle: a small suspended honeycomb of lavender glass memory cells has one dark fractured cell whose fine trail leads to a misaligned consequence tile. A precision lime-tipped repair tool replaces only the damaged cell with a clear one while every healthy neighboring cell remains lit and intact. Show a single selective repair, not wiping the whole structure. Intimate tilted macro composition, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, exquisite frosted glass, black ceramic and satin metal. Landscape3:2 central80%, no text, numerals, icons, logos, people or watermark. Conceptual illustration, no security guarantee.",
+      "output": "media/cards/card-028.webp",
+      "sha256": "010887517f0825105796097f1211be0642edd0e02c319232bd3d1658ba29cc3d",
+      "bytes": 52620,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L65"
+      ]
+    },
+    {
+      "index": 29,
+      "sourceId": "arxiv:2607.27834",
+      "title": "MemTxn",
+      "kind": "paper",
+      "label": "SOURCE BACKED UPDATE BRIDGE",
+      "factualConcept": "MemTxn informs checking whether a memory update is supported by its source at the update boundary.",
+      "prompt": "Use case: stylized-concept. Unique luxurious 3D editorial cover for MemTxn source-backed updates: a large pale lavender source slab and a smaller new memory tile face each other across a narrow dark ravine. A single exact lime crystalline support beam spans the gap and fits matching notches in both objects, allowing the update tile to settle onto a protected pedestal. A second unsupported tile hovers at the edge but cannot cross. Strong close architectural composition, near-black olive #10130f backdrop, lime #d3fc70 and lavender #c3b0f6, optical glass and brushed graphite metal, crisp controlled rim lighting. Landscape3:2 central80%, no text, check marks, numbers, logos, UI, people or watermark.",
+      "output": "media/cards/card-029.webp",
+      "sha256": "f38e94028a2450cddbd6c496cafcd97ac1aeb6ae0f87f28967d0f86d03079255",
+      "bytes": 70740,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L148"
+      ]
+    },
+    {
+      "index": 30,
+      "sourceId": "arxiv:2503.03704",
+      "title": "MINJA 논문",
+      "kind": "paper",
+      "label": "PERSISTENT CONTAMINATION ROUTE",
+      "factualConcept": "MINJA informs examining how polluted persistent memories can influence later judgments; local fixtures check contaminated-source exposure rather than reproducing the original attack.",
+      "prompt": "Use case: stylized-concept. Distinct premium 3D editorial sculpture for MINJA persistent memory contamination: a clear vertical memory reservoir stores mostly luminous lavender pearls, but one dark spiky inclusion sits among them. A fine shadowy vein travels from that stored inclusion through a transparent winding channel toward a later decision prism; midway, a lime source-inspection lens and thin policy barrier expose and block the polluted path while the clean lavender stream continues through a separate channel. Cinematic angled cutaway, near-black olive #10130f, lime #d3fc70 and lavender #c3b0f6, smoked glass and polished black ceramic. Landscape3:2 focal central80%, no text, code, numbers, logos, UI, people or watermark. Symbolic research cover, not instructions or a claimed reproduced attack.",
+      "output": "media/cards/card-030.webp",
+      "sha256": "008e35961cc9a6794ff7b7a9496185656d43c540ef00c485f519c6e45f552f95",
+      "bytes": 72772,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22"
+      ]
+    },
+    {
+      "index": 31,
+      "sourceId": "arxiv:2606.01926",
+      "title": "Mitigating Bias in Locally Constrained Decoding",
+      "kind": "paper",
+      "label": "DECODE WITHOUT DISTORTION",
+      "factualConcept": "Locally constrained decoding can distort the output distribution; the cited use separates schema validity from correctness.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. An asymmetric fan of fine silver channels carrying luminous particles meets a precisely slotted transparent decoding stencil. Some channels are blocked by the mask; a separate elegant counterbalance redistributes the remaining flow without merely widening a pipe. Show the contrast between restricted valid paths and balanced probabilities through physical geometry, without numbers or text.",
+      "output": "media/cards/card-031.webp",
+      "sha256": "0947d40f6d4620bc1a4365c43416d85169a5b9075718f438c3b3e8efb0a84460",
+      "bytes": 73978,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461"
+      ]
+    },
+    {
+      "index": 32,
+      "sourceId": "arxiv:2601.05366",
+      "title": "MLCL",
+      "kind": "paper",
+      "label": "MULTILINGUAL TOOL CALLS",
+      "factualConcept": "MLCL is cited for separating language-specific failures of tool arguments, without claiming reproduced Korean results.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. Three distinctly shaped translucent argument cassettes arrive on parallel silver rails toward one machined tool-call socket. One capsule docks precisely, one is rotated out of alignment, and one has a subtly incompatible connector. A floating diagnostic glass lens highlights the three different fitting outcomes. No alphabets or actual language labels.",
+      "output": "media/cards/card-032.webp",
+      "sha256": "f467fa7770504bf8dfef324a4124b7b0064208465974e1b257dc7b2b457e9b9d",
+      "bytes": 69270,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455"
+      ]
+    },
+    {
+      "index": 33,
+      "sourceId": "arxiv:2606.04329",
+      "title": "MPBench",
+      "kind": "paper",
+      "label": "MEMORY CONSEQUENCES",
+      "factualConcept": "MPBench is cited in the memory-lifecycle evaluation context alongside persistence, consequences, and selective repair.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A long elevated archival ribbon carries a sequence of transparent memory tiles through several distinct time stations. One earlier damaged tile casts a misaligned shadow onto a later station; a tiny isolated repair tool replaces just that tile while the remainder of the timeline stays intact. Depict a precise physical memory-evaluation metaphor, not an asserted benchmark architecture.",
+      "output": "media/cards/card-033.webp",
+      "sha256": "409c7035b35fb98d85a62f9b8b2d42d6a8f22d46ca7bc283ec48d4495111ea52",
+      "bytes": 70314,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L66"
+      ]
+    },
+    {
+      "index": 34,
+      "sourceId": "arxiv:2407.09435",
+      "title": "MUSCLE",
+      "kind": "paper",
+      "label": "NEGATIVE FLIPS",
+      "factualConcept": "MUSCLE is cited for negative flips: previously correct outcomes becoming incorrect after a model change.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. Two matched rows of finely balanced metallic domino-like result tiles stand on parallel plinths representing a baseline and a revision. In the front row a previously upright luminous lime tile has tipped into a lavender crack while most neighboring tiles remain upright. A thin glass comparison bridge aligns corresponding positions. Focus on detecting the newly damaged correct result, not muscular anatomy.",
+      "output": "media/cards/card-034.webp",
+      "sha256": "c49c400bbfddfece616842dffde6c25f42a72016ce5225f7ae5ee0d81bc7d373",
+      "bytes": 49682,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L152"
+      ]
+    },
+    {
+      "index": 35,
+      "sourceId": "arxiv:2007.08292",
+      "title": "NoREC",
+      "kind": "paper",
+      "label": "NON-OPTIMIZING COUNT ORACLE",
+      "factualConcept": "NoREC is referenced as a count oracle: compare predicate counts with a non-optimizing reference formulation, rather than claiming all business semantics are correct.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: NoREC. Factual concept to represent: NoREC is referenced as a count oracle: compare predicate counts with a non-optimizing reference formulation, rather than claiming all business semantics are correct. Specific unique scene and composition: A unique two-route counting machine receives the same row-shaped crystal tokens. An elaborate fast curved shortcut pipe on one side has many optimizer gears; a deliberately plain transparent straight reference channel on the other counts each matching bead individually. Their outputs collect in two clear graduated vessels at a central comparison caliper, one subtly differs to reveal an optimizer bug. Low frontal industrial-science view, count comparison is the focal point. No numerals or writing.",
+      "output": "media/cards/card-035.webp",
+      "sha256": "b413e1f4a082e3fae5545034468dc006b7f39638ef6cb4a4c157929686391898",
+      "bytes": 97836,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
+      ]
+    },
+    {
+      "index": 36,
+      "sourceId": "arxiv:2504.06542",
+      "title": "Polygon",
+      "kind": "paper",
+      "label": "DISTINGUISHING INPUT",
+      "factualConcept": "Polygon is cited for generating inputs that distinguish original and deliberately changed SQL; this represents a counterexample, not a universal proof.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Polygon. Factual concept to represent: Polygon is cited for generating inputs that distinguish original and deliberately changed SQL; this represents a counterexample, not a universal proof. Specific unique scene and composition: A small faceted crystal wedge is being inserted into a unique split mechanical testing apparatus: two near-identical curved sieves receive the same tiny constellation of data beads, but the wedge makes one sieve release a lime sphere while the other releases a lavender tetrahedron. Low diagonal macro view, counterexample wedge sharply in foreground; asymmetrical fork of the two machines recedes into darkness.",
+      "output": "media/cards/card-036.webp",
+      "sha256": "6d2660f33be7c15de6ac830369405391386d05db448196174bc81665951f54c4",
+      "bytes": 59626,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
+      ]
+    },
+    {
+      "index": 37,
+      "sourceId": "arxiv:2503.01747",
+      "title": "Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "kind": "paper",
+      "label": "SMALL SAMPLE UNCERTAINTY",
+      "factualConcept": "The cited position warns against relying on central-limit approximations for LLM evaluations with too few data points.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints. Factual concept to represent: The cited position warns against relying on central-limit approximations for LLM evaluations with too few data points. Specific unique scene and composition: Seven irregular luminous sample pebbles sit on a delicate suspended weighing pan. Around that tiny sample, a huge translucent uncertainty envelope is broad and lopsided, pushing against an unrealistically narrow perfect bell-shaped glass shell that has visibly cracked. Close eye-level scientific still life, hovering envelope dominates the upper frame; no graph axes, no statistics written out.",
+      "output": "media/cards/card-037.webp",
+      "sha256": "6debfb9ce2f4e72692cc9c30201e9afe1df4d0a1ef5099f7bfe679769cb0e8a2",
+      "bytes": 53602,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1086"
+      ]
+    },
+    {
+      "index": 38,
+      "sourceId": "arxiv:2311.18807",
+      "title": "Pre-registration for Predictive Modeling",
+      "kind": "paper",
+      "label": "PLAN BEFORE RESULTS",
+      "factualConcept": "Pre-registration records a time-stamped evaluation plan before results, keeping planned and later choices distinguishable.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Pre-registration for Predictive Modeling. Factual concept to represent: Pre-registration records a time-stamped evaluation plan before results, keeping planned and later choices distinguishable. Specific unique scene and composition: A pristine folded blueprint made of blank embossed geometric paths is sealed inside a transparent lime-edged capsule with an unbroken metal latch. Beyond a vertical frosted glass divider, unpredictable small dice-like experimental blocks are only beginning to tumble. Top-down architectural flat lay with the sealed plan on a circular pedestal and future observations scattered in a separate crescent; no numerals on any block.",
+      "output": "media/cards/card-038.webp",
+      "sha256": "672dc5f36bfa406526237717742b8c61ac3763534dd14acd8688c22f841b00c4",
+      "bytes": 74806,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L164",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L165"
+      ]
+    },
+    {
+      "index": 39,
+      "sourceId": "arxiv:2607.16019",
+      "title": "Presentation, Not Mechanism",
+      "kind": "paper",
+      "label": "MATCHED PRESENTATION",
+      "factualConcept": "The cited matched-presentation control separates the effect of temporal selection mechanism from differences in rendered presentation.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Presentation, Not Mechanism. Factual concept to represent: The cited matched-presentation control separates the effect of temporal selection mechanism from differences in rendered presentation. Specific unique scene and composition: Two absolutely identical clear display vitrines have the same outer silhouette, lighting and front-facing arrangement of blank memory tiles. Cutaway glass reveals a tiny temporal filter gear operating inside one and a bypass bridge inside the other. A single perfectly straight calibration bar aligns their exteriors. Frontal symmetrical laboratory diptych, interior mechanism illuminated; presentation held equal, mechanism contrasted.",
+      "output": "media/cards/card-039.webp",
+      "sha256": "687ff6374e57e10c2d1a1c7b02f7a945a33dc5c3935c18145d1d024d30bd37fd",
+      "bytes": 51072,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L112",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1085",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.23.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/render-matched-20261017.md#L8"
+      ]
+    },
+    {
+      "index": 40,
+      "sourceId": "url:https://repository.upenn.edu/handle/20.500.14332/8764",
+      "title": "Provenance Semirings",
+      "kind": "paper",
+      "label": "DATA LINEAGE ALGEBRA",
+      "factualConcept": "Provenance Semirings motivates tracking how source contributions combine across alternative paths and joined dependencies.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Provenance Semirings. Factual concept to represent: Provenance Semirings motivates tracking how source contributions combine across alternative paths and joined dependencies. Specific unique scene and composition: A beautiful physical lineage sculpture: three separate luminous source marbles feed braided transparent tubes. Some tubes are arranged in serial bead chains, while two alternative branches reunite into one clear result vessel. The result contains an intricate layered filament tracing every contributing route back to its own source. Three-quarter overhead view of an organic branching river in glass, no letters or mathematical symbols.",
+      "output": "media/cards/card-040.webp",
+      "sha256": "ba2fafe10608e6363c12b97253adb2bce77e65bfe7a414bab019a4c7b19d94dd",
+      "bytes": 84248,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
+      ]
+    },
+    {
+      "index": 41,
+      "sourceId": "url:https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer",
+      "title": "Qex: Symbolic SQL Query Explorer",
+      "kind": "paper",
+      "label": "BOUNDED QUERY EXPLORER",
+      "factualConcept": "Qex is cited for bounded constraint-model generation of typed database inputs.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Qex: Symbolic SQL Query Explorer. Factual concept to represent: Qex is cited for bounded constraint-model generation of typed database inputs. Specific unique scene and composition: A finite jewel-like checkerboard tray floats inside a thick transparent boundary frame. Each socket has a distinct geometric type; a precision search probe lifts a small connected arrangement of matching key-and-lock crystals from the tray while incompatible pieces remain outside. Angled overhead view, tiny legal database model sharply illuminated in the middle, surrounding possibility grid recedes into shadow.",
+      "output": "media/cards/card-041.webp",
+      "sha256": "beaa387719596de70c15a6e9c9aa82043f765d075b4f4cee51495319257997bc",
+      "bytes": 94868,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
+      ]
+    },
+    {
+      "index": 42,
+      "sourceId": "arxiv:2407.17941",
+      "title": "RDFGraphGen",
+      "kind": "paper",
+      "label": "GENERATED RDF TRIPLES",
+      "factualConcept": "RDFGraphGen is cited in the design of synthetic graph witnesses; the image shows generation of linked triples rather than adoption of its implementation.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: RDFGraphGen. Factual concept to represent: RDFGraphGen is cited in the design of synthetic graph witnesses; the image shows generation of linked triples rather than adoption of its implementation. Specific unique scene and composition: A delicate glass extrusion nozzle constructs an RDF-like lattice one triple at a time: each unit consists of two different solid nodes joined by a uniquely shaped thin connector, with completed triples branching into a suspended three-dimensional trellis. Side-on close view catches one fresh triple still hovering beneath the nozzle. Skeletal airy structure, handcrafted glass and dark brushed metal, no labels.",
+      "output": "media/cards/card-042.webp",
+      "sha256": "f25e844d9584d8bb146d6e421c3a85b5a055bd03f65d4b0c3cec234a264a0eb5",
+      "bytes": 65184,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
+      ]
+    },
+    {
+      "index": 43,
+      "sourceId": "arxiv:2606.01435",
+      "title": "Reliable Post-Retrieval Assembly",
+      "kind": "paper",
+      "label": "RETRIEVAL THEN ASSEMBLY",
+      "factualConcept": "Reliable Post-Retrieval Assembly is cited for separating semantic candidate extraction from version selection.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Reliable Post-Retrieval Assembly. Factual concept to represent: Reliable Post-Retrieval Assembly is cited for separating semantic candidate extraction from version selection. Specific unique scene and composition: An elevated two-stage bridge over a dark void. The first stage gently separates many translucent retrieved shards into three semantically matching trays. A separate second stage has a rotating chronological ring that selects one correctly fitting version and places a single coherent crystal block on the final pedestal. Isometric wide composition with distinct left and right stages and a visible gap between their responsibilities.",
+      "output": "media/cards/card-043.webp",
+      "sha256": "d1a6a950a679c427763ff1457e6f7f9b1111c21c45adfcc75bb16b55724028a9",
+      "bytes": 64920,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-assembly.md#L144"
+      ]
+    },
+    {
+      "index": 44,
+      "sourceId": "arxiv:2608.18180",
+      "title": "Reproducibility is Not Enough",
+      "kind": "paper",
+      "label": "REBUILDABLE EVIDENCE",
+      "factualConcept": "The cited work highlights missing source commits and build metadata as obstacles to verifiable rebuilding.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Reproducibility is Not Enough. Factual concept to represent: The cited work highlights missing source commits and build metadata as obstacles to verifiable rebuilding. Specific unique scene and composition: An intricate miniature rebuild machine sits incomplete in an open archival case. Most engineered components are present, but one source-shaped keystone and a small clock gear are conspicuously absent, leaving precise empty sockets. A ghostly transparent finished artifact hovers above the incomplete assembly, unreachable until the missing evidence is restored. Dramatic low-angle cutaway, tactile metal, blank archival tabs without writing.",
+      "output": "media/cards/card-044.webp",
+      "sha256": "8da64815849fa996e8d5385784cbfc2ef01c1c30b21a146965abfb49c52f3ce7",
+      "bytes": 99564,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/release-integrity.md#L487",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.26.0.md#L209",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.26.0.md#L249"
+      ]
+    },
+    {
+      "index": 45,
+      "sourceId": "arxiv:2610.05348",
+      "title": "Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses",
+      "kind": "paper",
+      "label": "RETRIEVAL REFUSAL TWINS",
+      "factualConcept": "The recorded experiment compares matched questions with and without their answer-containing sources, including refusal behavior.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses. Factual concept to represent: The recorded experiment compares matched questions with and without their answer-containing sources, including refusal behavior. Specific unique scene and composition: Two matching telescopic retrieval probes extend into twin circular archive wells. One well contains the exact glowing answer crystal in a fitted niche; the other has that niche cleanly removed and a calm opaque shutter closed over the empty space. A common question-shaped light ring feeds both probes. High oblique composition, paired presence-versus-absence experiment, no robot faces, no warning text.",
+      "output": "media/cards/card-045.webp",
+      "sha256": "1c95b23d64f9f2de2605bc8f3c338aaac432394e233705c24db3256847be4f8d",
+      "bytes": 72340,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L513",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1090",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L11"
+      ]
+    },
+    {
+      "index": 46,
+      "sourceId": "arxiv:2609.05944",
+      "title": "sheval",
+      "kind": "paper",
+      "label": "INDEPENDENT SHACL CORPUS",
+      "factualConcept": "sheval is recorded as an architectural reference for an independent SHACL test corpus, with no implementation adoption claim.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: sheval. Factual concept to represent: sheval is recorded as an architectural reference for an independent SHACL test corpus, with no implementation adoption claim. Specific unique scene and composition: An optical test bench holds a row of deliberately varied tiny node-and-edge specimens under independent shaped calibration gauges. One specimen neatly fits its reference silhouette, another has a dangling unmatched edge and is placed in a separate lavender inspection cradle. Macro panorama across the specimens, expected shapes are physically separate from the measured specimens, polished museum-science editorial style.",
+      "output": "media/cards/card-046.webp",
+      "sha256": "301c3ed4a1c7435aff8cc8cd480771a54b26f0f1bfe2f69c036ce52f7d059b41",
+      "bytes": 75028,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
+      ]
+    },
+    {
+      "index": 47,
+      "sourceId": "arxiv:2601.02553",
+      "title": "SimpleMem 논문",
+      "kind": "paper",
+      "label": "ATOMIC FACT MEMORY",
+      "factualConcept": "SimpleMem is cited for self-contained fact units, exact duplicate merging and query-conditioned selection.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: SimpleMem 논문. Factual concept to represent: SimpleMem is cited for self-contained fact units, exact duplicate merging and query-conditioned selection. Specific unique scene and composition: A sculptural semantic compression press takes a long folded translucent ribbon carrying many repeated geometric impressions and produces a few independent solid fact crystals. Identical duplicate crystals fuse exactly into one, while a small key-shaped query lens picks only two relevant crystals into a clean output tray. Tall diagonal composition with the compression mechanism dominant and the independent fact units crystal-clear.",
+      "output": "media/cards/card-047.webp",
+      "sha256": "43e56943b0607d2e8f0c68634716c926bc09da1c541859d05b2632cdea5e5e4a",
+      "bytes": 66320,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18"
+      ]
+    },
+    {
+      "index": 48,
+      "sourceId": "arxiv:1905.11096",
+      "title": "Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors",
+      "kind": "paper",
+      "label": "THREE TESTING ERRORS",
+      "factualConcept": "The cited information-retrieval significance study examines false positives, false negatives and wrong-direction errors.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors. Factual concept to represent: The cited information-retrieval significance study examines false positives, false negatives and wrong-direction errors. Specific unique scene and composition: Three different delicate scientific instruments share one sculpted three-lobed base: an empty aperture falsely lights a glowing ring, a second contains a real tiny target hidden behind an unlit shutter, a third has a tilted directional balance pointing opposite its underlying weighted beads. Each instrument has a different silhouette. Overhead three-quarter view, precise physical metaphors for three error modes, no chart labels.",
+      "output": "media/cards/card-048.webp",
+      "sha256": "6e082a9cbc0b95b04a08411fb22396e821d7ecfb98ee821b0f2a301063a09d8d",
+      "bytes": 63606,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1087"
+      ]
+    },
+    {
+      "index": 49,
+      "sourceId": "doi:10.1186/s13643-020-01521-4",
+      "title": "Statistical stopping criteria for automated screening in systematic reviews",
+      "kind": "paper",
+      "label": "WHEN SCREENING CAN STOP",
+      "factualConcept": "The cited stopping criteria use random samples from remaining documents and a statistical stopping rule.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Statistical stopping criteria for automated screening in systematic reviews. Factual concept to represent: The cited stopping criteria use random samples from remaining documents and a statistical stopping rule. Specific unique scene and composition: A vast orderly fan of blank archival sheets curves into a dark transparent urn. A sampling arm draws a genuinely scattered handful of sheets into a small clear inspection basket; a calibrated translucent threshold gate stands beyond the basket and remains cautiously half open. Bird-eye circular composition around the urn, emphasize sampled remainder rather than exhaustive reading, no numbers or writing.",
+      "output": "media/cards/card-049.webp",
+      "sha256": "bf8f14f3e7f154096a440c0f104b95641dad4b647c2907ae1f8a6b66fd320a13",
+      "bytes": 72378,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1088"
+      ]
+    },
+    {
+      "index": 50,
+      "sourceId": "arxiv:2104.08279",
+      "title": "Testing for Outliers with Conformal p-values",
+      "kind": "paper",
+      "label": "CALIBRATED OUTLIER",
+      "factualConcept": "The cited conformal method ranks observations against a calibration set and applies a p-value threshold to detect outliers.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Testing for Outliers with Conformal p-values. Factual concept to represent: The cited conformal method ranks observations against a calibration set and applies a p-value threshold to detect outliers. Specific unique scene and composition: A staircase of carefully ordered glass beads forms a calibration distribution inside a horizontal display case. One anomalous jagged crystal sits alone beyond the far tail, separated by a thin lavender threshold membrane; its lime reflection continues along the ordered beads, making rank comparison legible. Very low panoramic macro view across the staircase, no axes or numerals.",
+      "output": "media/cards/card-050.webp",
+      "sha256": "656c0fe7827d1ce122fdc719b30c5e17af84c9231c531f395973ea9c9647574f",
+      "bytes": 47854,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L616",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1091"
+      ]
+    },
+    {
+      "index": 51,
+      "sourceId": "arxiv:2605.26128",
+      "title": "The Constraint Tax",
+      "kind": "paper",
+      "label": "VALID SHAPE WRONG VALUE",
+      "factualConcept": "The Constraint Tax is cited for distinguishing schema validity from correctness and warning that constrained decoding can distort outputs.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: The Constraint Tax. Factual concept to represent: The Constraint Tax is cited for distinguishing schema validity from correctness and warning that constrained decoding can distort outputs. Specific unique scene and composition: A rigid precision rectangular mold squeezes a broad fluid stream of many possible crystal forms into an immaculate standardized clear casing. The casing fits the outer gauge perfectly, yet inside it a visibly broken gear is trapped. Nearby a separate correctness probe examines that inner gear instead of the casing. Strong diagonal close-up, polished output shape contrasted with wrong internal content, no text.",
+      "output": "media/cards/card-051.webp",
+      "sha256": "e5c2310e971d27ffc0b2a9b6bcaba228cd02ba566dc61071ec0fd02887edc650",
+      "bytes": 102546,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461"
+      ]
+    },
+    {
+      "index": 52,
+      "sourceId": "arxiv:2608.30177",
+      "title": "Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge)",
+      "kind": "paper",
+      "label": "MEMORY STAGE TRADEOFFS",
+      "factualConcept": "MemGauge is cited for stage-wise contrasts and matched clean versus poisoned memory conditions, separating utility and risk.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge). Factual concept to represent: MemGauge is cited for stage-wise contrasts and matched clean versus poisoned memory conditions, separating utility and risk. Specific unique scene and composition: Two matched miniature process tracks climb four terraced memory stages side by side. One carries clean lime luminous beads, the other carries matching beads with a spreading lavender inclusion. At each terrace a different small mechanical balance measures usable output against contamination without merging those quantities. Wide high isometric scene, four-stage terraced architecture, no scores or numerals.",
+      "output": "media/cards/card-052.webp",
+      "sha256": "831fd90cb12f49205100ec43db3e9eecf356c3d487009664d94372444d4119be",
+      "bytes": 102896,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-stage-evaluation.md#L5"
+      ]
+    },
+    {
+      "index": 53,
+      "sourceId": "arxiv:2109.11216",
+      "title": "Union and Intersection of all Justifications",
+      "kind": "paper",
+      "label": "SHARED JUSTIFICATION CORE",
+      "factualConcept": "The cited criterion studies union and intersection of explanations, including whether every minimal explanation requires a retained axiom group.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Union and Intersection of all Justifications. Factual concept to represent: The cited criterion studies union and intersection of explanations, including whether every minimal explanation requires a retained axiom group. Specific unique scene and composition: Three distinct transparent scaffold loops support one hovering crystal conclusion. The loops differ around their edges but all pass through the same two bright central support pins. Peripheral supports are ghosted to show alternative explanations, while removing the shared pin would visibly release the conclusion. Close frontal perspective, interlocking architectural rings and precise joints, no formulas.",
+      "output": "media/cards/card-053.webp",
+      "sha256": "d8771dcc88bc653fecfee0da3748a43799faae95743dc7832502b2ef6e6ec012",
+      "bytes": 72914,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
+      ]
+    },
+    {
+      "index": 54,
+      "sourceId": "doi:10.1145/3649849",
+      "title": "VeriEQL",
+      "kind": "paper",
+      "label": "INTEGRITY BOUNDED SQL",
+      "factualConcept": "VeriEQL is cited for integrity-constrained bounded SQL checking; finite checks are not presented as global equivalence proofs.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: VeriEQL. Factual concept to represent: VeriEQL is cited for integrity-constrained bounded SQL checking; finite checks are not presented as global equivalence proofs. Specific unique scene and composition: Two different small query-shaped optical assemblies sit above the same finite miniature database world enclosed in a clear glass box. Primary-key-like interlocking links constrain the rows inside. Each optical assembly projects its result onto one side of a central comparison balance. Balanced tabletop composition contained unmistakably inside a finite box, no infinity symbols, no text.",
+      "output": "media/cards/card-054.webp",
+      "sha256": "ca6d36b46e6339d4760f120bea0044b5d33b8270f26be2d9485475c6336043fa",
+      "bytes": 57700,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
+      ]
+    },
+    {
+      "index": 55,
+      "sourceId": "doi:10.1145/3586049",
+      "title": "Vulcan (2023)",
+      "kind": "paper",
+      "label": "STRUCTURED REDUCTION",
+      "factualConcept": "Vulcan is cited for structured reduction: reduce a failing case while preserving the relevant mismatch and dependency structure.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Vulcan (2023). Factual concept to represent: Vulcan is cited for structured reduction: reduce a failing case while preserving the relevant mismatch and dependency structure. Specific unique scene and composition: A large branching geometric crystal specimen is suspended above a stepped reduction basin. Layers of redundant connected branches peel away as coherent groups, leaving a tiny angular core that still contains the same bright fault spark. Curved dependency bridges stay intact around the core. Side-cutaway macro view, discarded pieces trail downward, preserved failing core sharply focused.",
+      "output": "media/cards/card-055.webp",
+      "sha256": "823aa0f8a84b819d074e81ba2c0da55f668053a20a91492016466a664071997f",
+      "bytes": 91834,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
+      ]
+    },
+    {
+      "index": 56,
+      "sourceId": "usenix:security25/li-yeting",
+      "title": "VULCANBOOST",
+      "kind": "paper",
+      "label": "SAFE REGEX REPAIR",
+      "factualConcept": "VULCANBOOST supplies a conceptual distinction between test-passing ReDoS-free repair and equivalent ReDoS-free repair.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: VULCANBOOST. Factual concept to represent: VULCANBOOST supplies a conceptual distinction between test-passing ReDoS-free repair and equivalent ReDoS-free repair. Specific unique scene and composition: A dense coiled metallic thread labyrinth almost knots itself into an endless backtracking tangle. A precision repair bridge straightens one dangerous loop into a smooth protected channel, while the same set of uniquely shaped input beads and matching output beads sit in parallel comparison trays. Dynamic close oblique view of the repaired loop, visibly same accepted shapes, no code or symbols.",
+      "output": "media/cards/card-056.webp",
+      "sha256": "149be647ef52eb0904f94d2ae72327866290b743345b53ee0ae9e6a7d9425c9f",
+      "bytes": 88682,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L776"
+      ]
+    },
+    {
+      "index": 57,
+      "sourceId": "arxiv:2501.13956",
+      "title": "Zep 논문",
+      "kind": "paper",
+      "label": "FACTS THROUGH TIME",
+      "factualConcept": "Zep is cited for fact validity intervals, provenance and querying knowledge as of a past time.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Zep 논문. Factual concept to represent: Zep is cited for fact validity intervals, provenance and querying knowledge as of a past time. Specific unique scene and composition: A deep translucent memory monolith has archaeological glass layers. Within each layer a different version of the same factual crystal has a clear horizontal lifespan bar; a thin movable observation plane slices precisely through one past layer, revealing only the valid crystal at that moment. Dramatic cross-section composition, stratified glass in near-black space, no dates or text.",
+      "output": "media/cards/card-057.webp",
+      "sha256": "185fe8400a8acc84ffc0882cf1e39a73da267dc4dc44c141efc223e5ae715473",
+      "bytes": 84442,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20"
+      ]
+    },
+    {
+      "index": 58,
+      "sourceId": "github:aiming-lab/simplemem",
+      "title": "aiming-lab/SimpleMem",
+      "kind": "project",
+      "label": "VERIFIABLE MEMORY UNITS",
+      "factualConcept": "The SimpleMem project is recorded for standalone fact units, exact deduplication and question selection with source-bound compilation in the host design.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: aiming-lab/SimpleMem. Factual concept to represent: The SimpleMem project is recorded for standalone fact units, exact deduplication and question selection with source-bound compilation in the host design. Specific unique scene and composition: A modular memory workbench has several separate polished fact cartridges. Each cartridge is tethered by a thin optical filament to its own blank source slate below; two identical cartridges lock together into one exact duplicate-free unit. A removable question-shaped selector comb lifts the relevant units only. Overhead horizontal product-engineering composition, concrete component separation, no writing or logos.",
+      "output": "media/cards/card-058.webp",
+      "sha256": "b5da29da57962c397f489eef9f34d44c923a69e253bdf7c6511839c7e90c80a2",
+      "bytes": 65630,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18"
+      ]
+    },
+    {
+      "index": 59,
+      "sourceId": "github:apache/lucene",
+      "title": "Apache Lucene",
+      "kind": "project",
+      "label": "TOKENIZATION TRADEOFF",
+      "factualConcept": "Lucene is a background example comparing tokenization granularity, retrieval quality and index-size cost.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Apache Lucene. Factual concept to represent: Lucene is a background example comparing tokenization granularity, retrieval quality and index-size cost. Specific unique scene and composition: Three transparent indexing combs cut the same long abstract segmented language ribbon at different granularities: single tiny pieces, overlapping pairs, and longer coherent shaped chunks. Each output fills a different-sized crystal archive drawer, with a search lens comparing the matches. Panoramic side view, overlapping pair structure visible, no real letters, no performance numbers.",
+      "output": "media/cards/card-059.webp",
+      "sha256": "4103cbbf44252515c53fa66dcd53303763ab9571b7495fc7316be5331677eddc",
+      "bytes": 80180,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L113"
+      ]
+    },
+    {
+      "index": 60,
+      "sourceId": "github:ar9av/obsidian-wiki",
+      "title": "Ar9av/obsidian-wiki",
+      "kind": "project",
+      "label": "GOLD NOTE RETRIEVAL",
+      "factualConcept": "The Obsidian-wiki evaluation reference uses hand-labeled expected notes, paths or slugs and retrieval rank thresholds.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: Ar9av/obsidian-wiki. Factual concept to represent: The Obsidian-wiki evaluation reference uses hand-labeled expected notes, paths or slugs and retrieval rank thresholds. Specific unique scene and composition: An isometric miniature archive of small upright notebooks is connected by thin route rails. One precisely marked but unlettered golden-lime reference key points to the expected notebook drawer; retrieved notebooks stand on a descending ranking staircase nearby, one matching the key exactly. An evaluation caliper measures the matching notebook position. Museum-diorama view, no readable words or logos.",
+      "output": "media/cards/card-060.webp",
+      "sha256": "efb7f0c42be861f6bdbfa57087d9b8474ec8f3465767e558801370765d54c2be",
+      "bytes": 80236,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L798",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1095"
+      ]
+    },
+    {
+      "index": 61,
+      "sourceId": "github:dsh3n77/minja",
+      "title": "dsh3n77/MINJA",
+      "kind": "project",
+      "label": "PERSISTENT MEMORY POISON",
+      "factualConcept": "MINJA is cited for the risk that contamination stored in memory influences later tasks; this scene is conceptual, not an attack reproduction.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: dsh3n77/MINJA. Factual concept to represent: MINJA is cited for the risk that contamination stored in memory influences later tasks; this scene is conceptual, not an attack reproduction. Specific unique scene and composition: A single lavender droplet is sealed inside one clear persistent-memory capsule in a long wall of clean lime capsules. Fine optical channels carry the droplet residue into several later decision prisms far to the right, showing delayed contamination rather than an immediate explosion. Long diagonal depth composition with the initial capsule huge in foreground and later tasks receding, no malicious text.",
+      "output": "media/cards/card-061.webp",
+      "sha256": "4ba1bdf2e0c8f3e65bfa3e2e30456e269b6819689f94e89b5691beae7bbf737a",
+      "bytes": 74740,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22"
+      ]
+    },
+    {
+      "index": 62,
+      "sourceId": "github:ethz-spylab/agentdojo",
+      "title": "ethz-spylab/agentdojo",
+      "kind": "project",
+      "label": "TASK AND ATTACK GOALS",
+      "factualConcept": "AgentDojo is cited for evaluating legitimate task outcomes separately from adversarial goals.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: ethz-spylab/agentdojo. Factual concept to represent: AgentDojo is cited for evaluating legitimate task outcomes separately from adversarial goals. Specific unique scene and composition: A sculptural tabletop obstacle course routes a small luminous work parcel toward its legitimate fitted destination. A separate lavender magnetic side branch tries to divert it into an unrelated receptacle, but two independent outcome gauges inspect the correct destination and the diversion separately. Sweeping S-shaped low-angle route, abstract nonhuman task machinery, no cybersecurity logos or text.",
+      "output": "media/cards/card-062.webp",
+      "sha256": "a122fb6f0a45962792b3ebc7ce76cb7106fdfd471eb55c0381e36233a444e84b",
+      "bytes": 60932,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094"
+      ]
+    },
+    {
+      "index": 63,
+      "sourceId": "github:getzep/graphiti",
+      "title": "getzep/graphiti",
+      "kind": "project",
+      "label": "TEMPORAL KNOWLEDGE GRAPH",
+      "factualConcept": "Graphiti is cited for facts with validity intervals, provenance and as-of views of connected knowledge.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: getzep/graphiti. Factual concept to represent: Graphiti is cited for facts with validity intervals, provenance and as-of views of connected knowledge. Specific unique scene and composition: A broad suspended spatial knowledge graph has dozens of fine edges enclosed in transparent temporal sleeves of different lengths. A thin vertical time plane passes through the network and lights only the node connections active at that slice; inactive historical edges remain faint behind it. Wide side-on spatial composition, kinetic mobile-like sculpture, very different from a layered memory block, no text.",
+      "output": "media/cards/card-063.webp",
+      "sha256": "fe70ed8e7891efb8b495c0feb060ecb46e3c629e0b199e409425c0e87b5dcb13",
+      "bytes": 45858,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20"
+      ]
+    },
+    {
+      "index": 64,
+      "sourceId": "github:ggml-org/llama.cpp",
+      "title": "ggml-org/llama.cpp",
+      "kind": "project",
+      "label": "INFERENCE CACHE CONDITIONS",
+      "factualConcept": "llama.cpp server documentation is cited for prompt-cache reuse, slots and batch-related reproducibility conditions.",
+      "prompt": "Use case: stylized-concept. Asset: one distinct source-specific research card illustration. Create a premium, intricate CGI science-editorial concept sculpture, 3:2 landscape. Cohesive palette: near-black olive #10130f background, luminous lime #d3fc70 and subtle lavender #c3b0f6 accents, frosted glass, graphite ceramic and finely machined dark metal. Cinematic studio lighting, tactile realism, beautiful controlled depth of field. Keep all meaningful objects inside central 80 percent for card cropping. This is a conceptual visual explanation, not a reproduction of a paper figure. No text, no letters, no digits, no logos, no people, no watermark. Source context: ggml-org/llama.cpp. Factual concept to represent: llama.cpp server documentation is cited for prompt-cache reuse, slots and batch-related reproducibility conditions. Specific unique scene and composition: A compact matte-black inference chip is connected to a translucent cylindrical key-value cache reservoir and several separate batch lanes. Rearranging loads in the lanes causes two almost identical luminous output waveforms to diverge slightly at the far end; a separate small slot chamber visibly holds reused cache segments. Extreme macro hardware scene with clear physical separation of cache, slots and batching, no brand icon.",
+      "output": "media/cards/card-064.webp",
+      "sha256": "4d4088b16367aef49ab53e01a937a2344f00b890739960b7923bec5d2c85d091",
+      "bytes": 77450,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L74",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L459",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L462"
+      ]
+    },
+    {
+      "index": 65,
+      "sourceId": "github:git/git",
+      "title": "git/git",
+      "kind": "project",
+      "label": "VERSIONS & OPEN HANDLES",
+      "factualConcept": "Git is referenced for Windows file renaming blocked by an open handle and bounded retries.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A beautifully machined folder-shaped graphite capsule sits on a branching version rail. A polished silver clamp still holds its edge, preventing it from moving into the adjacent renamed slot. Three restrained ghost-position rings show bounded retries; a separate released capsule follows the open branch. Precise tactile engineering, no Git logo, labels or generic network graph.",
+      "output": "media/cards/card-065.webp",
+      "sha256": "5ebddb1198f879faa9353a301cbd01da382e7557fe2cff2dab21d3ab2737a1a1",
+      "bytes": 41048,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L457"
+      ]
+    },
+    {
+      "index": 66,
+      "sourceId": "github:google-research/harness2",
+      "title": "google-research/harness2",
+      "kind": "project",
+      "label": "EXPERIMENT SELECTION",
+      "factualConcept": "Harness2 is referenced for experiment candidate pools and selection, with baseline/abstention boundaries noted separately.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A circular precision experiment carousel holds several visibly different modular candidate instruments. A narrow luminous selection beam lifts a single tested module onto a raised pedestal, while an untouched baseline block remains on its own separate reference plinth. Elegant miniature research apparatus, distinct from a leaderboard, no numbers or screens.",
+      "output": "media/cards/card-066.webp",
+      "sha256": "b6e932f1e13c9dae59d11ac5c75fdaf6c4833ca97d5da2e22d7868cdc418b7b6",
+      "bytes": 62434,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L162",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63"
+      ]
+    },
+    {
+      "index": 67,
+      "sourceId": "github:google/skill-reach",
+      "title": "google/skill-reach",
+      "kind": "project",
+      "label": "SKILL TRIGGERS & COLLISIONS",
+      "factualConcept": "Skill-reach evaluates skill triggering and collision detection.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A sculptural routing switchboard contains several differently shaped tool sockets. One exact-match lime key travels along a clean magnetic guide to its matching socket, while two neighboring lavender guides intersect in a visibly ambiguous collision before reaching their sockets. Separate a clear trigger match from overlapping activation paths, no text, no person or robot.",
+      "output": "media/cards/card-067.webp",
+      "sha256": "bd3b1d14f0abf01f569e8b9e33e1be26f67e5d2321b8e8d4fa080a506e847621",
+      "bytes": 61196,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.40.0.md#L64",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/skill-routing-evaluation.md#L203"
+      ]
+    },
+    {
+      "index": 68,
+      "sourceId": "github:hypothesisworks/hypothesis",
+      "title": "HypothesisWorks/hypothesis",
+      "kind": "project",
+      "label": "MINIMAL COUNTEREXAMPLES",
+      "factualConcept": "Hypothesis is referenced for generated stateful operation sequences and shrinking failures to smaller counterexamples.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A dramatic sequence of three transparent test chambers shows a complex tangled assembly of silver pieces reduced to a smaller assembly and finally to just three tiny pieces surrounding the same small fractured lavender core. A thin lime invariant thread passes through all three chambers so the failure persists while unnecessary structure disappears. Strong left-to-right reduction silhouette, no charts or text.",
+      "output": "media/cards/card-068.webp",
+      "sha256": "12a5ce1703d0b36687faebe01c8e53643dbd4376f070246341e4526bad56d893",
+      "bytes": 64824,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1093",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
+      ]
+    },
+    {
+      "index": 69,
+      "sourceId": "github:ukgovernmentbeis/inspect_ai",
+      "title": "Inspect AI",
+      "kind": "project",
+      "label": "EVALUATION SEPARATION",
+      "factualConcept": "Inspect AI is referenced for separating evaluation data, solving, and scoring.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Inspect AI is referenced for separating evaluation data, solving, and scoring.\nScene: Three physically separate precision-instrument stations on a stepped bench: a tray of test specimens at left, a mechanical solver chamber in the middle, and an independent optical scoring gauge at right. Specimens pass through narrow transparent transfer rails; the scoring gauge cannot touch or rewrite the original specimen tray. Show clear separation of data, solution, and judgement.",
+      "output": "media/cards/card-069.webp",
+      "sha256": "de4bab12eaa0c0e9a077592629ba65def5a85da6456288b162060d3edadc76d0",
+      "bytes": 56772,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.0.md#L27"
+      ]
+    },
+    {
+      "index": 70,
+      "sourceId": "github:bab2min/kiwipiepy",
+      "title": "Kiwi / kiwipiepy",
+      "kind": "project",
+      "label": "KOREAN SEARCH COMPARATOR",
+      "factualConcept": "Kiwi / kiwipiepy is referenced as an optional search comparator; use a word-segmentation/search metaphor without claiming measured improvement.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Kiwi / kiwipiepy is referenced as an optional search comparator; use a word-segmentation/search metaphor without claiming measured improvement.\nScene: A long blank embossed ceramic ribbon is precisely separated at natural joints into small interlocking morpheme-like tiles by a fine comb. The tiles arrange into a compact search index rack, and a lavender optical prism selects matching tile shapes. Absolutely no actual letters or symbols on the tiles. Close isometric view, crisp articulated mechanical detail.",
+      "output": "media/cards/card-070.webp",
+      "sha256": "8dbdee9320cda5557c9c80d9a9f576a71506943958c110627c5bc018c0278673",
+      "bytes": 76128,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L274",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456"
+      ]
+    },
+    {
+      "index": 71,
+      "sourceId": "github:langchain-ai/openwiki",
+      "title": "langchain-ai/openwiki",
+      "kind": "project",
+      "label": "KNOWLEDGE CONTRACTS",
+      "factualConcept": "OpenWiki is referenced in connection with authored business definitions, expectation contracts, metadata exchange, and version transitions.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: OpenWiki is referenced in connection with authored business definitions, expectation contracts, metadata exchange, and version transitions.\nScene: An open mechanical folio unfolds into several distinct hinged definition pages. Fine citation threads connect page corner anchors to a rigid transparent contract frame, while a second version of one page slides into alignment above the first. The central focus is an inspectable definition-to-contract bridge, not a generic neural network.",
+      "output": "media/cards/card-071.webp",
+      "sha256": "9e6d846cc8158e3c7cd7fdd613076d70d30b992ccf13c467aa1c8a3171a87177",
+      "bytes": 75720,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L196",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+      ]
+    },
+    {
+      "index": 72,
+      "sourceId": "github:letta-ai/letta-code",
+      "title": "letta-ai/letta-code",
+      "kind": "project",
+      "label": "PERSISTENT LESSONS",
+      "factualConcept": "Letta Code is referenced for file-based persistent memory and observing later effects of lessons.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Letta Code is referenced for file-based persistent memory and observing later effects of lessons.\nScene: A physical archive drawer feeds a looping translucent filmstrip of successive work sessions. One durable lesson card is carried intact between sessions, and small observational lenses inspect its downstream effects at separate points. Place one lavender side branch for an unintended effect. No automatic self-modification: the lesson remains in a clearly bounded review tray.",
+      "output": "media/cards/card-072.webp",
+      "sha256": "28441a4c8c6596e32573fe7791b71aa0e78a5069ff45d2642b3298858bbd1d99",
+      "bytes": 69860,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L25"
+      ]
+    },
+    {
+      "index": 73,
+      "sourceId": "github:liffiton/marco",
+      "title": "MARCO",
+      "kind": "project",
+      "label": "MINIMAL CONFLICTS",
+      "factualConcept": "MARCO is an algorithm/design reference for MUS enumeration and OWL inconsistency explanations.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: MARCO is an algorithm/design reference for MUS enumeration and OWL inconsistency explanations.\nScene: A floating lattice of interlocking constraint bands contains several small jammed intersections. A precision separator lifts one smallest conflict cluster onto a tiny isolated pedestal while the remaining lattice stays visible. Multiple alternative small clusters are laid out in a shallow fan, emphasizing enumeration of minimal conflicting subsets. No letters, no math glyphs.",
+      "output": "media/cards/card-073.webp",
+      "sha256": "0b210bdc4b2f854dffd27086c19c0a38590bef999b72c82da05613f863802aa7",
+      "bytes": 61380,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
+      ]
+    },
+    {
+      "index": 74,
+      "sourceId": "github:mempalace/mempalace",
+      "title": "MemPalace/mempalace",
+      "kind": "project",
+      "label": "HELD OUT DISCIPLINE",
+      "factualConcept": "MemPalace reporting discipline distinguishes development adjustments from untouched held-out evaluation.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: MemPalace reporting discipline distinguishes development adjustments from untouched held-out evaluation.\nScene: A miniature architectural memory palace cutaway with a small illuminated open workshop room and a much larger sealed glass evaluation wing. A deliberate solid partition separates them. The workshop contains a few movable specimen tiles; the sealed wing holds a dense untouched arrangement. A narrow one-way observation window communicates disciplined separation, not test leakage.",
+      "output": "media/cards/card-074.webp",
+      "sha256": "8563f51ff00e66919d7ef0166b7aec5e97f046be43b5a7d1787f87023c16881f",
+      "bytes": 81128,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L936",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1096"
+      ]
+    },
+    {
+      "index": 75,
+      "sourceId": "github:moatai-io/towersource",
+      "title": "moatai-io/towersource",
+      "kind": "project",
+      "label": "EXECUTION CHECKPOINTS",
+      "factualConcept": "Tower source is referenced for repeated action evaluation, execution ledger, recovery preview, and connection diagnostics.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Tower source is referenced for repeated action evaluation, execution ledger, recovery preview, and connection diagnostics.\nScene: A tall but compact machine of four staggered checkpoint platforms. A single action capsule travels along a repeatable rail; each platform records a thin receipt wafer. One side track previews a reversible recovery back to an earlier checkpoint, while a diagnostic cable visibly tests a detached connector. Emphasize executable traces and safe preview through distinct machinery.",
+      "output": "media/cards/card-075.webp",
+      "sha256": "94cf7ca2e07adc4441a7ac99cb8b1b34b2968903a76e727d8896a0cd742399bf",
+      "bytes": 68866,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L259",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L260",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L261",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L262"
+      ]
+    },
+    {
+      "index": 76,
+      "sourceId": "github:modu-ai/moai-adk",
+      "title": "modu-ai/moai-adk",
+      "kind": "project",
+      "label": "INSTRUCTION DIAGNOSTICS",
+      "factualConcept": "MoAI-ADK is referenced for instruction-size diagnosis, source-preserving memory fold previews, and requirements-to-verification coverage.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: MoAI-ADK is referenced for instruction-size diagnosis, source-preserving memory fold previews, and requirements-to-verification coverage.\nScene: An accordion of original instruction sheets passes under a calibrated volume-measuring arch. A compact folded index appears beside it while the translucent originals remain intact behind. Below, fine threads connect a set of requirement pegs to separate verification sockets, with one visibly unmatched socket. Compose as a clean scientific diagnostic still life.",
+      "output": "media/cards/card-076.webp",
+      "sha256": "81b987ba627e1179c841ec84b057c9abbab927090c791db54078397e4016195d",
+      "bytes": 62040,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1331",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L16"
+      ]
+    },
+    {
+      "index": 77,
+      "sourceId": "github:nousresearch/hermes-agent",
+      "title": "NousResearch/hermes-agent",
+      "kind": "project",
+      "label": "CURATED SKILL LOOP",
+      "factualConcept": "Hermes agent is referenced for selective capture, inbox refinement, and a bounded self-improvement skill loop.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Hermes agent is referenced for selective capture, inbox refinement, and a bounded self-improvement skill loop.\nScene: A selective sieve catches a few luminous memory beads from a stream into an inbox tray. The selected beads move through a review aperture into three successive lesson-loop segments. The loop stops at a clearly closed transparent approval gate before a durable skill module. No human figure or hand; mechanical curation, not autonomous unbounded evolution.",
+      "output": "media/cards/card-077.webp",
+      "sha256": "ca243552bac7032466ac67bb22faa2cbb9c517097208a27928371dbe7c503fd3",
+      "bytes": 60192,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1329"
+      ]
+    },
+    {
+      "index": 78,
+      "sourceId": "github:openclaw/openclaw",
+      "title": "openclaw/openclaw",
+      "kind": "project",
+      "label": "ALWAYS ON CHANNEL",
+      "factualConcept": "OpenClaw is referenced for a persistent daemon, messaging availability, and scheduled initiation.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: OpenClaw is referenced for a persistent daemon, messaging availability, and scheduled initiation.\nScene: A compact always-on clockwork engine suspended inside a continuous pulse halo. An unnumbered timer disk triggers one outgoing envelope-shaped message capsule along a single luminous channel. Several subdued docking sockets suggest extensibility while only one channel is actively connected. Make the core look like dependable background infrastructure, not a robot character.",
+      "output": "media/cards/card-078.webp",
+      "sha256": "a65cbbca05fba365a8941b81f54ee1356f429bf0052738501a4d123f276eff41",
+      "bytes": 53414,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1328"
+      ]
+    },
+    {
+      "index": 79,
+      "sourceId": "github:osu-nlp-group/hipporag",
+      "title": "OSU-NLP-Group/HippoRAG",
+      "kind": "project",
+      "label": "CONNECTED EVIDENCE",
+      "factualConcept": "HippoRAG is referenced for expanding a query toward connected evidence; the local adaptation traverses bounded links.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: HippoRAG is referenced for expanding a query toward connected evidence; the local adaptation traverses bounded links.\nScene: A bright query seed on a small island illuminates two successive arched bridges to neighboring evidence islands. Each bridge has clearly separate anchor points, and linked document prisms light up only within the bounded reach. Distant islands remain dark beyond a visible gap. Elevated panoramic composition with strong path topology rather than a central orb network.",
+      "output": "media/cards/card-079.webp",
+      "sha256": "e411b1d00811d2f5b32119621b5ec84c2c3ea23a07fa6245972828407c4171e9",
+      "bytes": 95116,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19"
+      ]
+    },
+    {
+      "index": 80,
+      "sourceId": "github:matthewhorridge/owlexplanation",
+      "title": "OWL Explanation",
+      "kind": "project",
+      "label": "EXPLAIN THE CONFLICT",
+      "factualConcept": "OWL Explanation is an algorithm/design reference for extracting explanations.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: OWL Explanation is an algorithm/design reference for extracting explanations.\nScene: A dense transparent ontological crystal encloses a visibly tangled contradictory knot. A cutaway window reveals the knot's few contributing strands, which are pulled out intact onto an adjacent clear explanation tray. The larger crystal stays mostly quiet; the tiny extracted causal bundle becomes the focal point. No owl bird, no logos, no text.",
+      "output": "media/cards/card-080.webp",
+      "sha256": "d77c2164eac1c7d43121e14bb71c7065a0d5ab611fb4fef0cde971f43ac41ee1",
+      "bytes": 65828,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
+      ]
+    },
+    {
+      "index": 81,
+      "sourceId": "github:uw-pluverse/perses",
+      "title": "Perses",
+      "kind": "project",
+      "label": "STRUCTURE PRESERVING REDUCTION",
+      "factualConcept": "Perses is referenced for reducing structured counterexamples while preserving the relevant failure.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Perses is referenced for reducing structured counterexamples while preserving the relevant failure.\nScene: A large branching syntax-like scaffold enters a precise reduction clamp. Nonessential outer branches fall away as neat inert fragments, leaving a much smaller valid branching skeleton with the same single luminous fault bead preserved. Side-by-side before-and-after structure connected by a narrow reduction aperture; keep the key branch geometry legible at thumbnail size.",
+      "output": "media/cards/card-081.webp",
+      "sha256": "5bb5e943e75cfcdf503d5a961fdb0647107c8e8c87355468ff2d587060f32744",
+      "bytes": 44002,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
+      ]
+    },
+    {
+      "index": 82,
+      "sourceId": "github:pierresenellart/provsql",
+      "title": "ProvSQL",
+      "kind": "project",
+      "label": "TRACE DATA ORIGINS",
+      "factualConcept": "ProvSQL is mentioned only as a future research direction involving provenance and ordered-query contracts.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: ProvSQL is mentioned only as a future research direction involving provenance and ordered-query contracts.\nScene: A small row of physical data wafers feeds a transparent provenance loom. Distinct ancestry threads remain attached as a single output wafer emerges, so its contributing sources can be traced back. An unfinished docking bridge beside the loom signals future exploration. Show a specific lineage mechanism metaphor, without implying adoption in the plugin.",
+      "output": "media/cards/card-082.webp",
+      "sha256": "5440a0702886059b4a39bb0159835a1e1222e81a70cd09c20d45b8f1aac53da7",
+      "bytes": 72574,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ]
+    },
+    {
+      "index": 83,
+      "sourceId": "github:python/cpython",
+      "title": "python/cpython",
+      "kind": "project",
+      "label": "PRECISE TIME SOURCE",
+      "factualConcept": "CPython's Windows time implementation is cited; illustrate a precision time-source mechanism.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: CPython's Windows time implementation is cited; illustrate a precision time-source mechanism.\nScene: A cutaway precision chronometer built from a quartz resonator, a fine high-frequency tick comb, and a stable mechanical counter drum with blank faces. Two measurement rails converge on a single clearly sampled instant. Scientific hardware still life with restrained reflections, no numerals, clock numbers, snake logo, or computer UI.",
+      "output": "media/cards/card-083.webp",
+      "sha256": "984ab227366a3cb434a335dd33cd5d4c491e124a88afda2f0718ff04e64dce38",
+      "bytes": 53638,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.1.md#L15"
+      ]
+    },
+    {
+      "index": 84,
+      "sourceId": "github:ryoppippi/ccusage",
+      "title": "ryoppippi/ccusage",
+      "kind": "project",
+      "label": "USAGE EVENT PARSING",
+      "factualConcept": "ccusage is referenced for the approach to parsing Claude usage records, not copied dependencies.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: ccusage is referenced for the approach to parsing Claude usage records, not copied dependencies.\nScene: Thin translucent event receipts descend through a parsing funnel into distinct measured token compartments. Their quantities accumulate into a tidy layered usage meter while the original receipt trail remains visible beside a narrow ledger spine. Use physical counting beads and blank wafers, not currency, text, charts with labels, or branded icons.",
+      "output": "media/cards/card-084.webp",
+      "sha256": "7d57fcb75266f053b40abcb424c3ac2f202f6d57f226ef63ae7bf998f12344cd",
+      "bytes": 70452,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/reliability.md#L256"
+      ]
+    },
+    {
+      "index": 85,
+      "sourceId": "github:shishirpatil/gorilla",
+      "title": "ShishirPatil/gorilla",
+      "kind": "project",
+      "label": "TOOL ARGUMENT TRIALS",
+      "factualConcept": "Gorilla/BFCL is referenced as a framework for distinguishing tool-argument failures across language contexts.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Gorilla/BFCL is referenced as a framework for distinguishing tool-argument failures across language contexts.\nScene: Several differently shaped language-like input ribbons approach a common precision tool connector. A testing jig compares their argument plugs against exact port shapes: two fit cleanly, one is rotated or missing a pin and stops short. Show the failure located at the connector boundary, with all components clearly separated. No animal gorilla or language text.",
+      "output": "media/cards/card-085.webp",
+      "sha256": "982f288440ef40d9eaec1208eb62e70d9ba8bfb2e0ffc00e75f37204678c5e68",
+      "bytes": 56418,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455"
+      ]
+    },
+    {
+      "index": 86,
+      "sourceId": "github:solomoon313/agentmemorybench",
+      "title": "solomoon313/AgentMemoryBench",
+      "kind": "project",
+      "label": "REPAIR MEMORY ACTIONS",
+      "factualConcept": "AgentMemoryBench Repair is a reference in the memory-lifecycle discussion.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: AgentMemoryBench Repair is a reference in the memory-lifecycle discussion.\nScene: A memory-bearing bridge between two action platforms has one broken modular segment. A compact repair gantry replaces exactly that segment using a preserved memory cartridge, and a test capsule safely crosses the repaired join. Retain the old failed segment on an evidence tray. Low diagonal composition, visible repair causality rather than a generic memory sphere.",
+      "output": "media/cards/card-086.webp",
+      "sha256": "1bda9bd783b4aa30ba7c3c1e897c5b6c9603cb655083fca2099184f46411061f",
+      "bytes": 68754,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L68"
+      ]
+    },
+    {
+      "index": 87,
+      "sourceId": "github:sqlancer/sqlancer",
+      "title": "SQLancer",
+      "kind": "project",
+      "label": "THREE WAY QUERY PARTITION",
+      "factualConcept": "SQLancer is referenced for TLP partition checks and counterexample/reduction design; source code was not adopted.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: SQLancer is referenced for TLP partition checks and counterexample/reduction design; source code was not adopted.\nScene: A set of identical database row tiles splits into exactly three physically distinct channels: matching, nonmatching, and indeterminate. The channels curve around separate transparent basins and recombine into the same complete row stack at the end. One small mismatch wafer beside a comparator makes the testing purpose visible. No labels, SQL text, numbers, or generic server towers.",
+      "output": "media/cards/card-087.webp",
+      "sha256": "3c90a5df15b5a4dea2b2ca38eb26e7f2bfef6ef0b04c5a19cdd6573160cbd713",
+      "bytes": 52332,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
+      ]
+    },
+    {
+      "index": 88,
+      "sourceId": "github:tobymao/sqlglot",
+      "title": "SQLGlot",
+      "kind": "project",
+      "label": "QUERY STRUCTURE RESEARCH",
+      "factualConcept": "SQLGlot is only a future research direction in this catalog; illustrate query structure transformation as conceptual artwork.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: SQLGlot is only a future research direction in this catalog; illustrate query structure transformation as conceptual artwork.\nScene: Three distinctly shaped blank query surfaces fold into a shared branching syntax skeleton inside an open conversion prism. The surfaces differ in geometry but preserve the same underlying relation of branches. Place an unfinished exploratory platform behind the prism to indicate research direction. No text, no SQL characters, no implementation claims.",
+      "output": "media/cards/card-088.webp",
+      "sha256": "089138d13d2918f291d2bd6ffc9ff1d1e93d8ff1887e657fd8e0764dd5f143fd",
+      "bytes": 54144,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+      ]
+    },
+    {
+      "index": 89,
+      "sourceId": "github:swe-bench/swe-bench",
+      "title": "SWE-bench/SWE-bench",
+      "kind": "project",
+      "label": "PATCH AND PRESERVE",
+      "factualConcept": "SWE-bench is referenced for FAIL_TO_PASS and PASS_TO_PASS scoring definitions.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: SWE-bench is referenced for FAIL_TO_PASS and PASS_TO_PASS scoring definitions.\nScene: Two parallel mechanical test tracks run across a low bench. On the first, a missing bridge tile is repaired by a luminous patch and a test bead now crosses; the second track stays intact throughout and its beads continue unharmed. A clear shared verification gate checks both tracks. Strong before/after logic with no letters or checkmark glyphs.",
+      "output": "media/cards/card-089.webp",
+      "sha256": "adf65cd29ea389262c6587b1bdf2d52102e6dcd9bae716e89ae09761e961e1e0",
+      "bytes": 46048,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L154"
+      ]
+    },
+    {
+      "index": 90,
+      "sourceId": "github:syncthing/syncthing",
+      "title": "Syncthing",
+      "kind": "project",
+      "label": "SAFE SYNCHRONIZATION",
+      "factualConcept": "Syncthing is referenced for conflict copies and writing a temporary copy before moving it into place.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Syncthing is referenced for conflict copies and writing a temporary copy before moving it into place.\nScene: Two facing document cabinets hold diverging versions of one file wafer. Both versions remain in separate conflict slots. In the center, a transparent temporary drawer finishes receiving a complete copy before a hinged rail moves it into the destination cabinet. Use two contrasting wafer edge patterns to make preserved conflicts and safe temporary writes unmistakable.",
+      "output": "media/cards/card-090.webp",
+      "sha256": "b3f49572e1b78d82045690ca155942c88c05f96f2b78038aec81d60b85131f15",
+      "bytes": 53412,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L866",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L874"
+      ]
+    },
+    {
+      "index": 91,
+      "sourceId": "github:technoetic/harness107",
+      "title": "Technoetic/harness107",
+      "kind": "project",
+      "label": "EXECUTION HARNESS",
+      "factualConcept": "Harness107 is the execution-harness sibling of Agentic Vault's memory harness; README/reporting practices are shared.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Harness107 is the execution-harness sibling of Agentic Vault's memory harness; README/reporting practices are shared.\nScene: An articulated execution harness suspends several interchangeable tool modules over a precise task rail. Completed tool actions drop durable receipt wafers into a separate adjacent memory archive, connected by a narrow bridge but physically distinct. The execution rig is the main subject, with no central AI brain, no people, and no typography.",
+      "output": "media/cards/card-091.webp",
+      "sha256": "d807d271e76423a8ff52b64f091ab6101c7533489cca00b4896eaaa53c84e253",
+      "bytes": 67752,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1322"
+      ]
+    },
+    {
+      "index": 92,
+      "sourceId": "github:tobi/qmd",
+      "title": "tobi/qmd",
+      "kind": "project",
+      "label": "RANKED RETRIEVAL FUSION",
+      "factualConcept": "qmd is referenced for BM25, result fusion, optional external semantic search, and re-reading original sources.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: qmd is referenced for BM25, result fusion, optional external semantic search, and re-reading original sources.\nScene: Three staggered ranked document staircases converge through a reciprocal weaving turntable into one ordered output stack. Different source paths are visibly retained as edge colors on the output wafers. A separate sidecar optical reader reopens one original document beside the fused stack. Strong top-down oblique composition, no text or ranking numerals.",
+      "output": "media/cards/card-092.webp",
+      "sha256": "812827848606fe4927a85746d61848810e7499a6d1db95f7c555c4dca79e45bb",
+      "bytes": 64700,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L24"
+      ]
+    },
+    {
+      "index": 93,
+      "sourceId": "github:w3c/data-shapes",
+      "title": "W3C SHACL Test Suite",
+      "kind": "project",
+      "label": "EXPECTED SHAPE REPORTS",
+      "factualConcept": "W3C SHACL Test Suite is an optional externally fetched corpus for comparing expected validation reports; it is not bundled.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: W3C SHACL Test Suite is an optional externally fetched corpus for comparing expected validation reports; it is not bundled.\nScene: A tray of diverse small graph specimens passes beneath a set of rigid shape stencils. Beside it, a separate sealed reference tray holds corresponding expected report tokens; a balanced optical comparator aligns observed and expected shapes. One specimen fails a geometric slot clearly. No text, no W3C logo, no invented benchmark scores.",
+      "output": "media/cards/card-093.webp",
+      "sha256": "28b7eca14f5772fabb0c4037a1c46062d786b1a7736dae6e32a7e7b6444f6e8c",
+      "bytes": 64170,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
+      ]
+    },
+    {
+      "index": 94,
+      "sourceId": "github:wujiangxu/a-mem-sys",
+      "title": "WujiangXu/A-mem-sys",
+      "kind": "project",
+      "label": "EVOLVING NOTE LINKS",
+      "factualConcept": "A-mem-sys is the official system reference for proposals connecting new and existing notes while preserving sources.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: A-mem-sys is the official system reference for proposals connecting new and existing notes while preserving sources.\nScene: An open file cabinet of individual blank note cards has tiny provenance anchors along its card edges. A new lavender card enters from above, and movable lime link arms propose several precise new connections to existing cards; old anchors remain visible. Show editable hinges and inspectable connection proposals, not the generic spiral memory artwork used elsewhere.",
+      "output": "media/cards/card-094.webp",
+      "sha256": "267563c84172bc1301d657e92e886f1870f603ebee3c2d59664f64c3188a58e6",
+      "bytes": 60480,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17"
+      ]
+    },
+    {
+      "index": 95,
+      "sourceId": "github:xiaowu0162/longmemeval-v2",
+      "title": "xiaowu0162/LongMemEval-V2",
+      "kind": "project",
+      "label": "MEMORY STATE TESTS",
+      "factualConcept": "LongMemEval-V2 is referenced for changed states, procedures, environmental cautions, faulty premises, and no-answer distinctions.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: LongMemEval-V2 is referenced for changed states, procedures, environmental cautions, faulty premises, and no-answer distinctions.\nScene: A sequence of four distinct miniature test chambers shares one persistent memory rail. One chamber changes a fact-state tile, the second contains a procedural path, the third exposes a broken premise beneath an otherwise convincing shell, and the fourth deliberately has an empty answer socket. Keep each chamber visually different and the memory rail continuous; no numbers or text.",
+      "output": "media/cards/card-095.webp",
+      "sha256": "80f845420ca9d153e8869c0dfba8645e8e7bccfb038a16a805e1b6e788dd86ec",
+      "bytes": 61648,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21"
+      ]
+    },
+    {
+      "index": 96,
+      "sourceId": "github:zexuehe/memoryarena",
+      "title": "ZexueHe/MemoryArena",
+      "kind": "project",
+      "label": "MEMORY TO ACTION",
+      "factualConcept": "MemoryArena is referenced for evaluating whether memories across sessions affect later actions using state preconditions and postconditions.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: MemoryArena is referenced for evaluating whether memories across sessions affect later actions using state preconditions and postconditions.\nScene: Three separate session rooms are connected by a memory baton conduit. At the final room, a compact nonhuman mechanical arm selects a changed route because the baton supplies a missing state key; before-and-after shape locks on the route visibly align. Emphasize memory changing an action, not mere retrieval. No humanoid robot, no people.",
+      "output": "media/cards/card-096.webp",
+      "sha256": "ad497563af4c09d03d03b097caf083d28e77a02ef6fa2cee9ff5e526c6f9cb14",
+      "bytes": 54994,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23"
+      ]
+    },
+    {
+      "index": 97,
+      "sourceId": "name:dqp",
+      "title": "DQP",
+      "kind": "research-name",
+      "label": "UNIDENTIFIED QUERY CANDIDATE",
+      "factualConcept": "DQP is an unresolved named future research candidate; no specific paper, repository, algorithm, or adoption is identified.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: DQP is an unresolved named future research candidate; no specific paper, repository, algorithm, or adoption is identified.\nScene: An established query-comparison workbench has two completed test lanes in the foreground. A third unfinished research bridge leads to an empty transparent specimen holder, its identity deliberately unresolved. Use a reserved docking outline and disconnected evidence thread to communicate a candidate awaiting identification. Do not illustrate a claimed DQP algorithm, acronym, or technical feature.",
+      "output": "media/cards/card-097.webp",
+      "sha256": "6c46ba3ac6818940d0d341f0f5965338d0be441bb7b252d48e267b33967e8522",
+      "bytes": 53342,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
+      ]
+    },
+    {
+      "index": 98,
+      "sourceId": "name:gungnir mc",
+      "title": "Gungnir / MC",
+      "kind": "research-name",
+      "label": "RESEARCH SCOPE BOUNDARY",
+      "factualConcept": "Gungnir / MC is only an unresolved name for broader research outside the current authorized change.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific research-library card cover. Landscape 3:2. Premium scientific editorial CGI, near-black olive #10130f background, lime #d3fc70 and lavender #c3b0f6 accents, smoked glass and satin dark metal, crisp rim lighting, physically grounded reflections, generous breathing room. This must be a distinct composition with concrete source-specific objects/relations, not a reused category illustration or recolor. Central 80% contains the full focal subject so 16:10 thumbnail cropping is safe. No people, faces, hands, typography, letters, numbers, mathematical glyphs, brand logos, watermark, or UI screenshots. One polished still image only.\nSource-grounded concept: Gungnir / MC is only an unresolved name for broader research outside the current authorized change.\nScene: A precise verified mechanism stands inside a clear circular scope boundary. Beyond the boundary are two distinct empty research docking frames connected only by faint incomplete guide rails, leaving their mechanisms unknown. A single physical boundary gate remains closed. No spear, mythical weapon, model-checker machine, letters, or invented named capability.",
+      "output": "media/cards/card-098.webp",
+      "sha256": "e1dc2bffd42fbbf6fd77f84ffcde73c7d835dc82a87dd175dd94dbc220754f1d",
+      "bytes": 46066,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
+      ]
+    },
+    {
+      "index": 99,
+      "sourceId": "name:ledger",
+      "title": "LEDGER",
+      "kind": "research-name",
+      "label": "KNOWLEDGE OVER TIME",
+      "factualConcept": "LEDGER is a name-only unresolved research record, cited for longitudinal evaluation and knowledge evolution; no official benchmark reproduction is claimed.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A fan of five transparent ledger leaves is arranged along a single long horizontal time rail. A small lime fact capsule persists across the leaves while one lavender correction tab changes its position in later leaves. A restrained incomplete silver indexing frame in the backdrop suggests an archival record still being identified. Illustrate only the recorded longitudinal-evaluation context, not an invented official benchmark system.",
+      "output": "media/cards/card-099.webp",
+      "sha256": "b951306ae3bd0cd465d59d0e46178d1f03e3e213c2a1eb1a73e7ddbbba8297bc",
+      "bytes": 40356,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/knowledge-evolution.md#L7"
+      ]
+    },
+    {
+      "index": 100,
+      "sourceId": "name:memform",
+      "title": "MemForm",
+      "kind": "research-name",
+      "label": "FORMING A MEMORY",
+      "factualConcept": "MemForm is a name-only unresolved record cited for synthetic memory-formation evaluation cases, not an official benchmark reproduction.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A precise open archival mould receives a few loose glass fragments and compresses them into one layered lime memory wafer. Beside the mould, two small blank sample trays hold contrasting synthetic formation cases, one coherent and one incomplete. Delicate lavender pressure plates, a tangible material transformation, not a brain or a generic memory spiral. Only a conceptual memory-formation evaluation scene.",
+      "output": "media/cards/card-100.webp",
+      "sha256": "bee3a3e41a4cac87c783fb5472ff2395867573ecd33071e36265306a5c9e9ed0",
+      "bytes": 81496,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L29",
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L67"
+      ]
+    },
+    {
+      "index": 101,
+      "sourceId": "name:memgpt",
+      "title": "MemGPT",
+      "kind": "research-name",
+      "label": "TIERED AGENT MEMORY",
+      "factualConcept": "The MemGPT name is cited for OS-inspired tiered memory: hot cache, session handoff, and persistent vault storage; its exact paper ID is unresolved in this registry.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A striking cutaway tower has three clearly distinct memory tiers: a tiny bright lime crystal cache at the top, a medium lavender session cartridge suspended in the middle, and a broad heavy graphite archival disk drawer at the base. Thin silver elevators shuttle a small capsule between levels. Architectural hierarchy and different capacities must be unmistakable; no text, logos, actual computer UI or brain.",
+      "output": "media/cards/card-101.webp",
+      "sha256": "3c9520a6eab0f248f02f762b06607cc02d32f33b2edd369e4028333ba415d133",
+      "bytes": 55404,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1325"
+      ]
+    },
+    {
+      "index": 102,
+      "sourceId": "name:nomiracl",
+      "title": "NoMIRACL",
+      "kind": "research-name",
+      "label": "MEMORY EVALUATION CONTEXT",
+      "factualConcept": "NoMIRACL remains a name-only unresolved record in this registry, referenced in memory-evaluation context. Do not assert an identified paper architecture or benchmark result.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated research-source card cover, not a topic image. Premium photoreal CGI editorial still life with exact material detail and sophisticated architectural lighting. Landscape3:2, central80percent focal composition and clean silhouette readable as a small thumbnail. Cohesive near-black olive backdrop #10130f with acid-lime #d3fc70, lavender #c3b0f6, graphite and polished silver. Use the following specific physical arrangement as the central subject. No words, letters, numbers, logos, watermark, UI screenshot, people, faces or generic brain. This is an original conceptual illustration of the documented research idea, not a reproduced scientific figure. A luminous query prism rests opposite an incomplete ring-shaped archive through a narrow inspection lens. Several possible memory samples lie in separate transparent trays; one empty socket remains deliberately unfilled rather than being forced into a match. A subtle incomplete silver cataloguing bracket suggests the reference identity is still unresolved. A calm, distinctive editorial sculpture of evaluating evidence and holding an uncertain match open, without fabricated scores or text.",
+      "output": "media/cards/card-102.webp",
+      "sha256": "aaf2cd0b6b56099c0d677cfb5ec2d0e636d47c5f7fe23d4bc0a6b83c752d5626",
+      "bytes": 61438,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50"
+      ]
+    }
+  ]
+}

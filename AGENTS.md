@@ -13,6 +13,11 @@ and Technoetic/semantic-crosscheck. Public GitHub Pages only. No Sites hosting.
 - Every catalog entry must have a stable canonical identity and at least one public
   repository citation. Normalize paper versions and repository paths; keep aliases.
 - Unknown lookup means not found in this snapshot, never proof of novelty.
+- Each catalog source must have its own separately generated artwork. Do not
+  reuse topic images across cards or treat renamed copies as unique. Verify
+  source-ID assignments, image URLs, actual file hashes, and visual concepts.
+  A future source without commissioned artwork uses a text fallback rather than
+  borrowing another source's image.
 - Keep JS responsibilities separated, CSS tokens/base/components, async load/error
   states, query-based URLs/history, and safe detection of changed builds in open tabs.
 - User explicitly authorized creating the site and publishing it to GitHub Pages.

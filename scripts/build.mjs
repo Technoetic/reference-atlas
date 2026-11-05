@@ -53,7 +53,7 @@ if(process.env.RETAIN_BASE_URL){
 }else{try{previous=JSON.parse(await readFile(path.join(dist,'deployment-manifest.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}}
 const retainedAssets=[];
 if(previous){
-  if(!Array.isArray(previous.currentAssets)||previous.currentAssets.length>100||!previous.files)throw new Error('Invalid retention manifest');
+  if(!Array.isArray(previous.currentAssets)||previous.currentAssets.length>256||!previous.files)throw new Error('Invalid retention manifest');
   for(const rel of previous.currentAssets){
     if(!/^assets\/[A-Za-z0-9_./-]+$/.test(rel)||rel.split('/').includes('..')||!previous.files[rel])throw new Error('Invalid retained path');
     if(currentAssets.includes(rel))continue;

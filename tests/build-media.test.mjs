@@ -86,3 +86,17 @@ test('media directory symlinks cannot bring outside files into the public asset 
   await symlink(path.join(root,'outside'),path.join(root,'media/external'),process.platform==='win32'?'junction':'dir');
   await assert.rejects(build(root),/Symbolic links are not allowed in media/);
 });
+
+test('one full catalog of dedicated images survives the next deployment',async t=>{
+  const root=await fixture(t);
+  await mkdir(path.join(root,'media/cards'));
+  for(let index=1;index<=102;index++)await writeFile(path.join(root,'media/cards',`card-${index}.webp`),Buffer.concat([raster,Buffer.from(String(index))]));
+  const first=await build(root);
+  assert.ok(first.currentAssets.length>100);
+  await writeFile(path.join(root,'src/app.mjs'),"export {art,pixel} from './screens/art.mjs';\n// next application release\n");
+  const second=await build(root);
+  assert.equal(second.retainedAssets.length,first.currentAssets.length);
+  const retained=`assets/media/cards/card-102.${first.buildId}.webp`;
+  assert.ok(second.retainedAssets.includes(retained));
+  assert.deepEqual(await readFile(path.join(root,'dist',retained)),Buffer.concat([raster,Buffer.from('102')]));
+});

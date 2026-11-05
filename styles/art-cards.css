@@ -101,7 +101,7 @@
   font-family: var(--mono);
 }
 
-.art-fallback b { font-size: clamp(17px, 2vw, 28px); letter-spacing: -.04em; }
+.art-fallback b { max-width: 80%; padding: 12px; text-align: center; overflow-wrap: anywhere; font-size: clamp(17px, 2vw, 28px); letter-spacing: -.04em; }
 .art-fallback i { font-size: 37px; font-style: normal; font-weight: 400; }
 .is-art-fallback .art-fallback { display: flex; }
 .artwork-knowledge,
