@@ -1,0 +1,3722 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-05T07:11:17.328731+00:00",
+  "snapshots": {
+    "agentic-vault": {
+      "name": "Agentic Vault",
+      "version": "v0.40.1",
+      "commit": "c485fe1f848c47e96bc3542ccc52b831670e1ed4",
+      "url": "https://github.com/Technoetic/agentic-vault/tree/c485fe1f848c47e96bc3542ccc52b831670e1ed4"
+    },
+    "semantic-crosscheck": {
+      "name": "Semantic Crosscheck",
+      "version": "v0.19.1",
+      "commit": "c7f4bc0f1f863b24971544f95453e42aac68963e",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/tree/c7f4bc0f1f863b24971544f95453e42aac68963e"
+    }
+  },
+  "method": {
+    "identity": "arXiv/DOI/公開 repo identities normalized; explicit aliases retained; title similarity is not identity proof.",
+    "scope": "공개 저장소의 논문·설계/평가/구현 참고·배경 사례. 실행·CI 도구만 쓰는 의존성은 제외합니다.",
+    "year": "arXiv 식별자 연도 또는 문서에 확인된 연도입니다. 정식 출판 연도와 다를 수 있습니다.",
+    "absence": "목록에 없다는 사실은 새로운 연구나 미검토 자료라는 증거가 아닙니다.",
+    "delta": "기존 자료의 새 버전·새 적용 목적은 이전 참고 기록과의 차이를 남기고 다시 검토할 수 있습니다."
+  },
+  "identityResolutions": {
+    "checkedAt": "2026-11-05T07:35:00.556458+00:00",
+    "method": "Public GitHub repository metadata; only verified transferred/renamed identities added as aliases.",
+    "renames": [
+      {
+        "from": "github:ryoppippi/ccusage",
+        "to": "github:ccusage/ccusage",
+        "url": "https://github.com/ccusage/ccusage"
+      },
+      {
+        "from": "github:technoetic/harness107",
+        "to": "github:technoetic/harness14",
+        "url": "https://github.com/Technoetic/harness14"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "github:googlecloudplatform/open-knowledge-format",
+      "kind": "format",
+      "title": "Open Knowledge Format (OKF)",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "지식 그래프"
+      ],
+      "keys": [
+        "github:googlecloudplatform/open-knowledge-format"
+      ],
+      "aliases": [
+        "GoogleCloudPlatform/open-knowledge-format",
+        "OKF",
+        "Open Knowledge Format",
+        "open-knowledge-format"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 195,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L195",
+              "excerpt": "[OKF 사양](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/SPEC.md)과"
+            }
+          ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/okf.md",
+              "line": 44,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
+              "excerpt": "is `sxc-verification-contract-metadata/v1`; OKF version is the string `0.2`."
+            },
+            {
+              "file": "docs/releases/v0.15.0.md",
+              "line": 31,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
+              "excerpt": "local inputs. The bundle uses OKF 0.2 and custom type `SXC Verification Contract`."
+            },
+            {
+              "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
+              "line": 3,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "url:https://www.w3.org/TR/shacl",
+      "kind": "format",
+      "title": "SHACL Validation Report Contract",
+      "url": "https://www.w3.org/TR/shacl/#validation-report",
+      "year": null,
+      "tags": [
+        "지식 그래프"
+      ],
+      "keys": [
+        "url:https://www.w3.org/TR/shacl"
+      ],
+      "aliases": [
+        "SHACL",
+        "SHACL validation report",
+        "W3C SHACL"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 41,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41",
+              "excerpt": "refer to the [SHACL report contract](https://www.w3.org/TR/shacl/#validation-report)"
+            }
+          ]
+        }
+      ],
+      "note": "저장 결과와 실시간 SHACL 보고서 경계 검사의 규격 참고입니다. 모든 SHACL 의미나 엔진 동등성을 인증하지 않습니다."
+    },
+    {
+      "id": "arxiv:2502.12110",
+      "kind": "paper",
+      "title": "A-MEM 논문",
+      "url": "https://arxiv.org/abs/2502.12110",
+      "year": 2025,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "arxiv:2502.12110"
+      ],
+      "aliases": [
+        "A-MEM 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/link-proposals.md",
+              "line": 68,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
+              "excerpt": "- [A-MEM 논문](https://arxiv.org/abs/2502.12110)과 [공식 시스템 구현](https://github.com/WujiangXu/A-mem-sys): 관련 노트와 연결 변경안을 제안하는 아이디어를 참고했다. 이번 helper는 어휘 후보를 반환하며 자동 기억 진화·의미 검색은 포함하지 않는다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 17,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17",
+              "excerpt": "| [A-MEM 논문](https://arxiv.org/abs/2502.12110), [공식 시스템](https://github.com/WujiangXu/A-mem-sys) | 새 기억과 기존 노트의 연결을 검토하고 출처를 보존 | `vault_links.py`의 해시·diff 제안, `vault_memory.py`의 구조화 단위  | 연결·인용·해시 동작 테스트 통과. 의미 관계/기억 진화"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2406.13352",
+      "kind": "paper",
+      "title": "AgentDojo",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "year": 2024,
+      "tags": [
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2406.13352"
+      ],
+      "aliases": [
+        "AgentDojo"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1094,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094",
+              "excerpt": "- [AgentDojo](https://arxiv.org/abs/2406.13352), [공식 코드](https://github.com/ethz-spylab/agentdojo): 정상 업무와 공격 목표를 독립 사후 조건으로 평가하는 방법 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2610.23317",
+      "kind": "paper",
+      "title": "AgentOnto",
+      "url": "https://arxiv.org/abs/2610.23317",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2610.23317"
+      ],
+      "aliases": [
+        "AgentOnto"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 646,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L646",
+              "excerpt": "AgentOnto (arXiv 2610.23317): `evaluate_korean_memory.py --answer-rates` reports the response rate,"
+            },
+            {
+              "file": "README.md",
+              "line": 1067,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1067",
+              "excerpt": "v0.30.0의 [평가기 식별·개선 비용 근거](docs/improvement-accounting.md)(선택한 평가기 코드·설정 스냅샷 연결, 실패·버린 시도까지 합산하는 비용 근거, 미측정 값 `null`)와 v0.29.0의 선택형 응답률·조용한 오류율(`--answer-rates`)·회수 성공률 하한(`--success-bounds`)·`preserve-check`를 유지한다. 평가기를"
+            },
+            {
+              "file": "README.md",
+              "line": 1332,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1332",
+              "excerpt": "| [AgentOnto](https://arxiv.org/abs/2610.23317) | 갱신 관문(정정·유지 검사)과 '조용한 의미 오류' 지표의 **설계 원리만** — v0.29.0에 더한 선택형 제안 유지 문구 확인(`preserve-check`, 등장 횟수 대조), 한국어 평가의 응답률·조용한 오류율(`--answer-rates`), 회수 성공률 하한(`--success-bounds`"
+            },
+            {
+              "file": "docs/lesson-proposals.md",
+              "line": 76,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/lesson-proposals.md#L76",
+              "excerpt": "- 바뀌어야 할 것(정정)과 그대로여야 할 것(유지)을 함께 선언하는 방식은 AgentOnto(arXiv 2610.23317)의 갱신"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 79,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L79",
+              "excerpt": "- 설계 원리는 AgentOnto(arXiv 2610.23317)의 '조용한 의미 오류' 지표와 응답률 병기에서 가져왔다. 그 논문의"
+            },
+            {
+              "file": "docs/releases/v0.29.0.md",
+              "line": 6,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.29.0.md#L6",
+              "excerpt": "[AgentOnto](https://arxiv.org/abs/2610.23317)(arXiv 2610.23317)의 갱신 관문(정정·유지 검사)과"
+            },
+            {
+              "file": "docs/verification/v0.29.0.md",
+              "line": 12,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.29.0.md#L12",
+              "excerpt": "principles come from AgentOnto (arXiv 2610.23317); none of its numbers is used as evidence."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2307.00417",
+      "kind": "paper",
+      "title": "Aggregation Consistency Errors in Semantic Layers and How to Avoid Them",
+      "url": "https://arxiv.org/abs/2307.00417",
+      "year": 2023,
+      "tags": [
+        "평가·테스트",
+        "지식 그래프"
+      ],
+      "keys": [
+        "arxiv:2307.00417"
+      ],
+      "aliases": [
+        "Aggregation Consistency Errors in Semantic Layers",
+        "HILDA 2023"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/design.md",
+              "line": 680,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
+              "excerpt": "arXiv 2307.00417). An `additive` test exists for every sum/count measure (each configuration measure with `agg`"
+            },
+            {
+              "file": "CHANGELOG.md",
+              "line": 503,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
+              "excerpt": "applicable (aggregation-consistency errors, HILDA 2023, arXiv 2307.00417)."
+            },
+            {
+              "file": "docs/releases/v0.4.0.md",
+              "line": 30,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30",
+              "excerpt": "method follows [Aggregation Consistency Errors in Semantic Layers](https://arxiv.org/abs/2307.00417)"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2609.26457",
+      "kind": "paper",
+      "title": "AIDE²",
+      "url": "https://arxiv.org/abs/2609.26457",
+      "year": 2026,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2609.26457"
+      ],
+      "aliases": [
+        "AIDE²"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/improvement-accounting.md",
+              "line": 132,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L132",
+              "excerpt": "[AIDE²](https://arxiv.org/pdf/2609.26457v1)의 개선 실험 평가 조건. 코드·모델을 가져온 것은 아니다."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2101.09077",
+      "kind": "paper",
+      "title": "An Empirical Study of Flaky Tests in Python",
+      "url": "https://arxiv.org/abs/2101.09077",
+      "year": 2021,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2101.09077"
+      ],
+      "aliases": [
+        "An Empirical Study of Flaky Tests in Python"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 458,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L458",
+              "excerpt": "- [An Empirical Study of Flaky Tests in Python](https://arxiv.org/abs/2101.09077)(Gruber 등, ICST 2021), [DeleteFileW](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-deletefilew): 재실행 횟수와 상한으로 간헐 실"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "name:an evaluation of exhaustive testing for data structures",
+      "kind": "paper",
+      "title": "An Evaluation of Exhaustive Testing for Data Structures",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
+      "year": 2003,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "name:an evaluation of exhaustive testing for data structures"
+      ],
+      "aliases": [
+        "An Evaluation of Exhaustive Testing for Data Structures",
+        "Marinov, Andoni, Daniliuc, Khurshid and Rinard"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/design.md",
+              "line": 984,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
+              "excerpt": "follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of Exhaustive Testing for Data Structures\""
+            },
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 305,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305",
+              "excerpt": "correctness on real data. The method follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of"
+            }
+          ]
+        }
+      ],
+      "note": "원문 URL은 저장소에 없으며, 저자·제목·2003년 기술보고서 서지정보로 식별했습니다. 링크는 해당 인용 위치입니다."
+    },
+    {
+      "id": "arxiv:2608.27454",
+      "kind": "paper",
+      "title": "arXiv 2608.27454",
+      "url": "https://arxiv.org/abs/2608.27454",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2608.27454"
+      ],
+      "aliases": [
+        "arXiv 2608.27454"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1330,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1330",
+              "excerpt": "| [WikiSkill](https://arxiv.org/abs/2608.27454) (Google Research) | 스킬 진화의 **영속 위키 계층**과 승격 게이팅 — v0.8.3이 3건 흡수: index 서술 규격(\"설명만 읽고 열지 말지 결정\") · 기각 초안 전문 보존 · 승격 후 관찰 검증→확정/롤백(\"스킬은 가역, 위키는 영속\" 비대칭) |"
+            },
+            {
+              "file": "docs/releases/v0.8.3.md",
+              "line": 5,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.8.3.md#L5",
+              "excerpt": "v0.8.3은 WikiSkill 논문([arXiv 2608.27454](https://arxiv.org/abs/2608.27454), Google Research — 이 플러그인과 같은 Karpathy LLM Wiki 계보의 스킬 진화 프레임워크)에서 3건을 흡수한 릴리스다. 전부 마크다운 계약(템플릿·커맨드·rules) 변경이며 Python 코드·훅은 건드리지 않는다. 흡수 판정은 후보별 "
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2610.18052",
+      "kind": "paper",
+      "title": "Bemula",
+      "url": "https://arxiv.org/abs/2610.18052",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2610.18052"
+      ],
+      "aliases": [
+        "Bemula"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-revocation.md",
+              "line": 134,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L134",
+              "excerpt": "[Bemula](https://arxiv.org/abs/2610.18052) motivates paired stored-target controls,"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2005.04118",
+      "kind": "paper",
+      "title": "CheckList",
+      "url": "https://arxiv.org/abs/2005.04118",
+      "year": 2020,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2005.04118"
+      ],
+      "aliases": [
+        "CheckList"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/hardening.md",
+              "line": 423,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L423",
+              "excerpt": "방법은 [CheckList](https://aclanthology.org/2020.acl-main.442/)(Ribeiro·Wu·Guestrin·Singh, ACL 2020, arXiv 2005.04118) §2.2·§2.3의 불변 시험(INV)과 방향 기대 시험(DIR)에서 빌렸다."
+            },
+            {
+              "file": "docs/releases/v0.32.0.md",
+              "line": 10,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L10",
+              "excerpt": "- **기간 정규화의 변성 시험과 보류·회복(`--normalize-periods`, 선택):** 새 `tests/test_vault_period_metamorphic.py`는 작은 낱말 목록의 데카르트 곱(`itertools.product`)으로 만든 14,775개 사례로 관계 아홉 개를 본다. DIR(방향 기대)은 좁히는 말, 기간 앞의 영문 수식어, 구분 기호 뒤의 기간 단위 항목, 두"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:1411.6704",
+      "kind": "paper",
+      "title": "Data Generation for Testing and Grading SQL Queries (XData)",
+      "url": "https://arxiv.org/abs/1411.6704",
+      "year": 2014,
+      "tags": [
+        "평가·테스트",
+        "SQL"
+      ],
+      "keys": [
+        "arxiv:1411.6704"
+      ],
+      "aliases": [
+        "XData",
+        "Data Generation for Testing and Grading SQL Queries"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 37,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
+              "excerpt": "informed by [Data Generation for Testing and Grading SQL Queries (XData)](https://arxiv.org/abs/1411.6704)."
+            },
+            {
+              "file": "docs/boundary-schema.md",
+              "line": 108,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108",
+              "excerpt": "[XData](https://arxiv.org/abs/1411.6704) and implements only the bounded scalar"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2505.22954",
+      "kind": "paper",
+      "title": "DGM v3",
+      "url": "https://arxiv.org/abs/2505.22954",
+      "year": 2025,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2505.22954"
+      ],
+      "aliases": [
+        "DGM v3"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/improvement-accounting.md",
+              "line": 131,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-accounting.md#L131",
+              "excerpt": "설계 참고: [DGM v3](https://arxiv.org/pdf/2505.22954v3)의 평가 우회 사례와 탐색 비용,"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "doi:10.1007/s10601-015-9183-0",
+      "kind": "paper",
+      "title": "Fast, flexible MUS enumeration",
+      "url": "https://doi.org/10.1007/s10601-015-9183-0",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "doi:10.1007/s10601-015-9183-0"
+      ],
+      "aliases": [
+        "Fast, flexible MUS enumeration",
+        "MUS enumeration"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/owl-explanations.md",
+              "line": 142,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142",
+              "excerpt": "Design references: [Fast, flexible MUS enumeration](https://doi.org/10.1007/s10601-015-9183-0),"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다."
+    },
+    {
+      "id": "arxiv:2511.03506",
+      "kind": "paper",
+      "title": "HaluMem",
+      "url": "https://arxiv.org/abs/2511.03506",
+      "year": 2025,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "arxiv:2511.03506"
+      ],
+      "aliases": [
+        "HaluMem"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/hardening.md",
+              "line": 147,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L147",
+              "excerpt": "방법은 [HaluMem](https://arxiv.org/abs/2511.03506)(기억 환각을 추출·갱신·질의응답 단계별로 측정)과"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2609.01481",
+      "kind": "paper",
+      "title": "Harness-of-Harness (HoH)",
+      "url": "https://arxiv.org/abs/2609.01481",
+      "year": 2026,
+      "tags": [
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2609.01481"
+      ],
+      "aliases": [
+        "Harness-of-Harness (HoH)",
+        "HoH"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evidence.md",
+              "line": 200,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evidence.md#L200",
+              "excerpt": "설계 참고: [Harness-of-Harness (HoH)](https://arxiv.org/abs/2609.01481)의"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2610.14224",
+      "kind": "paper",
+      "title": "Harness² 논문 §2",
+      "url": "https://arxiv.org/abs/2610.14224",
+      "year": 2026,
+      "tags": [
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2610.14224"
+      ],
+      "aliases": [
+        "Harness² 논문 §2"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/improvement-experiments.md",
+              "line": 160,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L160",
+              "excerpt": "[Harness² 논문 §2](https://arxiv.org/html/2610.14224v1#S2)의 일반/특화 후보 대비와 합성, [Appendix H](https://arxiv.org/html/2610.14224v1#A8)의 수정 효과·교훈 분리와 NO_ENTRY를 참고해 기존 AV 구조로 구현했다. 원 프로젝트 코드·런타임·벤치마크를 복사하거나 논문의 점수를 가져오지 않는다."
+            },
+            {
+              "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
+              "line": 61,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
+              "excerpt": "- https://arxiv.org/html/2610.14224v1#S2"
+            },
+            {
+              "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
+              "line": 62,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62",
+              "excerpt": "- https://arxiv.org/html/2610.14224v1#A8"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2502.14802",
+      "kind": "paper",
+      "title": "HippoRAG 2 논문",
+      "url": "https://arxiv.org/abs/2502.14802",
+      "year": 2025,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "arxiv:2502.14802"
+      ],
+      "aliases": [
+        "HippoRAG 2 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 19,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19",
+              "excerpt": "| [HippoRAG 2 논문](https://arxiv.org/abs/2502.14802), [공식 코드](https://github.com/OSU-NLP-Group/HippoRAG) | 질의에서 연결된 근거로 범위를 확장 | 실제 파일명이 유일한 위키링크를 최대 2단계 순회하고 경로·해시를 반환; PPR·엔티티 모델은 별도  | 2단계 연결 fixture 통과. 합성 전체 검색 재현율 7"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "doi:10.23287/kjdh.2024.1.1.6",
+      "kind": "paper",
+      "title": "Kiwi",
+      "url": "https://doi.org/10.23287/KJDH.2024.1.1.6",
+      "year": 2024,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "doi:10.23287/kjdh.2024.1.1.6"
+      ],
+      "aliases": [
+        "Kiwi"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 456,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456",
+              "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2110.01052",
+      "kind": "paper",
+      "title": "Learn then Test",
+      "url": "https://arxiv.org/abs/2110.01052",
+      "year": 2021,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2110.01052"
+      ],
+      "aliases": [
+        "Learn then Test"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 617,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L617",
+              "excerpt": "Ann. Statist. 51(1), 2023)의 분할 conformal p-value와 [Learn then Test](https://arxiv.org/abs/2110.01052)"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1092,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1092",
+              "excerpt": "- [Learn then Test](https://arxiv.org/abs/2110.01052) (Angelopoulos·Bates·Candès·Jordan·Lei, arXiv v5 2022-09-29): 위험 통제를 다중 가설 검정으로 바꾸는 틀에서 fixed-sequence 검정과 정확한 이항 꼬리 p-value를 [답 없음 보정 문턱](#답-없음-보정-문턱)의 `calibration_c"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2603.12572",
+      "kind": "paper",
+      "title": "LMEB",
+      "url": "https://arxiv.org/abs/2603.12572",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2603.12572"
+      ],
+      "aliases": [
+        "LMEB"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1084,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084",
+              "excerpt": "- [LMEB](https://arxiv.org/abs/2603.12572), [LongMemEval](https://arxiv.org/abs/2410.10813): 검색과 답변을 분리하고 갱신·시간·답변 보류를 평가하는 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2410.10813",
+      "kind": "paper",
+      "title": "LongMemEval",
+      "url": "https://arxiv.org/abs/2410.10813",
+      "year": 2024,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2410.10813"
+      ],
+      "aliases": [
+        "LongMemEval"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1084,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1084",
+              "excerpt": "- [LMEB](https://arxiv.org/abs/2603.12572), [LongMemEval](https://arxiv.org/abs/2410.10813): 검색과 답변을 분리하고 갱신·시간·답변 보류를 평가하는 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2605.12493",
+      "kind": "paper",
+      "title": "LongMemEval-V2 논문",
+      "url": "https://arxiv.org/abs/2605.12493",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2605.12493"
+      ],
+      "aliases": [
+        "LongMemEval-V2 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 454,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454",
+              "excerpt": "- [LongMemEval-V2](https://arxiv.org/abs/2605.12493), [MemoryAgentBench](https://arxiv.org/abs/2507.05257): 상태 변화와 실제 기억 사용을 분리하는 평가 설계 참고."
+            },
+            {
+              "file": "docs/link-proposals.md",
+              "line": 69,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
+              "excerpt": "- [LongMemEval-V2 논문](https://arxiv.org/abs/2605.12493)과 [공식 구현](https://github.com/xiaowu0162/LongMemEval-V2): 상태 변화·업무 절차·환경 주의점·잘못된 전제를 구분하는 평가 관점을 참고했다. 데이터셋과 논문 성능 수치는 가져오지 않았다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 21,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21",
+              "excerpt": "| [LongMemEval V2](https://arxiv.org/abs/2605.12493), [공식 코드](https://github.com/xiaowu0162/LongMemEval-V2) | 변경 사실·절차·전제 오류·정답 없음의 구분 | 경험 fixture와 고급 fixture의 질의별·시나리오별 검색/노출 평가  | 기존16/경험16/고급16질문 평가 실행. 출처 검색·노출만 측정;"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2604.20006",
+      "kind": "paper",
+      "title": "Memora",
+      "url": "https://arxiv.org/abs/2604.20006",
+      "year": 2026,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "arxiv:2604.20006"
+      ],
+      "aliases": [
+        "Memora"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-revocation.md",
+              "line": 136,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-revocation.md#L136",
+              "excerpt": "[Memora](https://arxiv.org/abs/2604.20006) motivates inspecting forbidden-memory use"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2507.05257",
+      "kind": "paper",
+      "title": "MemoryAgentBench",
+      "url": "https://arxiv.org/abs/2507.05257",
+      "year": 2025,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2507.05257"
+      ],
+      "aliases": [
+        "MemoryAgentBench"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 454,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L454",
+              "excerpt": "- [LongMemEval-V2](https://arxiv.org/abs/2605.12493), [MemoryAgentBench](https://arxiv.org/abs/2507.05257): 상태 변화와 실제 기억 사용을 분리하는 평가 설계 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2602.16313",
+      "kind": "paper",
+      "title": "MemoryArena 논문",
+      "url": "https://arxiv.org/abs/2602.16313",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2602.16313"
+      ],
+      "aliases": [
+        "MemoryArena 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 23,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23",
+              "excerpt": "| [MemoryArena 논문](https://arxiv.org/abs/2602.16313), [공식 코드](https://github.com/ZexueHe/MemoryArena) | 여러 세션의 기억이 실제 다음 행동에 영향을 주는지 평가 | 상태 전제·사후 조건으로 채점하는 `evaluate_memory_workflows.py`; 원 벤치마크 재현은 아님  | 같은 로컬 Qwen 모델/"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2607.27080",
+      "kind": "paper",
+      "title": "MemSecBench",
+      "url": "https://arxiv.org/abs/2607.27080",
+      "year": 2026,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2607.27080"
+      ],
+      "aliases": [
+        "MemSecBench"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-lifecycle.md",
+              "line": 65,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L65",
+              "excerpt": "The design borrows evaluation questions from [MemSecBench](https://arxiv.org/abs/2607.27080)"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2607.27834",
+      "kind": "paper",
+      "title": "MemTxn",
+      "url": "https://arxiv.org/abs/2607.27834",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2607.27834"
+      ],
+      "aliases": [
+        "MemTxn"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/hardening.md",
+              "line": 148,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L148",
+              "excerpt": "[MemTxn](https://arxiv.org/abs/2607.27834)(갱신이 원천에 의해 뒷받침되는지 보는 경계)을 참고했다."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2503.03704",
+      "kind": "paper",
+      "title": "MINJA 논문",
+      "url": "https://arxiv.org/abs/2503.03704",
+      "year": 2025,
+      "tags": [
+        "메모리·검색",
+        "보안·안전"
+      ],
+      "keys": [
+        "arxiv:2503.03704"
+      ],
+      "aliases": [
+        "MINJA 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/link-proposals.md",
+              "line": 70,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
+              "excerpt": "- [MINJA 논문](https://arxiv.org/abs/2503.03704)과 [공식 구현](https://github.com/dsh3n77/MINJA): 지속 기억을 통해 후속 판단이 오염될 위험을 참고했다. 이번 합성 fixture는 오염된 출처의 검색 노출만 측정하며 원래 공격을 재현하거나 공격 성공률을 측정하지 않는다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 22,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22",
+              "excerpt": "| [MINJA 논문](https://arxiv.org/abs/2503.03704), [공식 코드](https://github.com/dsh3n77/MINJA) | 저장된 오염이 후속 작업으로 전파되는 경로 점검 | 오염 근거 노출 측정, 원문 재조회·정책 검사, 합성 실행기의 금지 행동 차단과 철회 후 잔류 검사  | 합성 실행기의 금지 행동 차단·실제 출처 철회 후 잔류0 확인. 실제 공"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2606.01926",
+      "kind": "paper",
+      "title": "Mitigating Bias in Locally Constrained Decoding",
+      "url": "https://arxiv.org/abs/2606.01926",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2606.01926"
+      ],
+      "aliases": [
+        "Mitigating Bias in Locally Constrained Decoding"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 461,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461",
+              "excerpt": "- [The Constraint Tax](https://arxiv.org/abs/2605.26128), [Mitigating Bias in Locally Constrained Decoding](https://arxiv.org/abs/2606.01926): 스키마 유효·정답·실행 정확도·'유효하지만 틀림'을 따로 세는 짝 비교 설계와, 문자열 값 마스킹이 분포를 왜곡할 수 있다는 경고의 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2601.05366",
+      "kind": "paper",
+      "title": "MLCL",
+      "url": "https://arxiv.org/abs/2601.05366",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2601.05366"
+      ],
+      "aliases": [
+        "MLCL"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 455,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455",
+              "excerpt": "- [MLCL](https://arxiv.org/abs/2601.05366), [BFCL](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard): 언어별 도구 인자 실패를 가르는 실험 틀. MLCL의 한국어 검증을 재현한 것은 아니다."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2606.04329",
+      "kind": "paper",
+      "title": "MPBench",
+      "url": "https://arxiv.org/abs/2606.04329",
+      "year": 2026,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2606.04329"
+      ],
+      "aliases": [
+        "MPBench"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-lifecycle.md",
+              "line": 66,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L66",
+              "excerpt": "(persistence→consequence→selective repair), [MPBench](https://arxiv.org/abs/2606.04329)"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2407.09435",
+      "kind": "paper",
+      "title": "MUSCLE",
+      "url": "https://arxiv.org/abs/2407.09435",
+      "year": 2024,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2407.09435"
+      ],
+      "aliases": [
+        "MUSCLE"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 152,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L152",
+              "excerpt": "출처: [MUSCLE](https://arxiv.org/abs/2407.09435) §3.1의 음의 뒤집힘(NF)과 NFR 정의(분모는 전체"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2007.08292",
+      "kind": "paper",
+      "title": "NoREC",
+      "url": "https://arxiv.org/abs/2007.08292",
+      "year": 2020,
+      "tags": [
+        "SQL"
+      ],
+      "keys": [
+        "arxiv:2007.08292"
+      ],
+      "aliases": [
+        "NoREC"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/tlp.md",
+              "line": 47,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47",
+              "excerpt": "[NoREC (ESEC/FSE 2020)](https://arxiv.org/abs/2007.08292). Materializing the"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2504.06542",
+      "kind": "paper",
+      "title": "Polygon",
+      "url": "https://arxiv.org/abs/2504.06542",
+      "year": 2025,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2504.06542"
+      ],
+      "aliases": [
+        "Polygon"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 20,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
+              "excerpt": "[Polygon](https://arxiv.org/abs/2504.06542) and"
+            },
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 185,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185",
+              "excerpt": "from [Polygon](https://arxiv.org/abs/2504.06542); no solver or third-party source is bundled."
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2503.01747",
+      "kind": "paper",
+      "title": "Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "url": "https://arxiv.org/abs/2503.01747",
+      "year": 2025,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2503.01747"
+      ],
+      "aliases": [
+        "Position",
+        "Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1086,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1086",
+              "excerpt": "- [Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints](https://arxiv.org/abs/2503.01747) (Bowyer·Aitchison·Ivanova, ICML 2025 Spotlight Position, arXiv v3 2025-05-28): 작은 N에서 CLT 구간이 불확실성을 "
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2311.18807",
+      "kind": "paper",
+      "title": "Pre-registration for Predictive Modeling",
+      "url": "https://arxiv.org/abs/2311.18807",
+      "year": 2023,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2311.18807"
+      ],
+      "aliases": [
+        "Pre-registration for Predictive Modeling"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/improvement-experiments.md",
+              "line": 164,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L164",
+              "excerpt": "선택형 `--receipt-order`는 [Pre-registration for Predictive Modeling](https://arxiv.org/abs/2311.18807)"
+            },
+            {
+              "file": "docs/improvement-experiments.md",
+              "line": 165,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L165",
+              "excerpt": "(Hofman 외, arXiv 2311.18807 v1, 2023-11-30)의 사전 등록 원칙, 곧 시각이 찍힌 계획으로 미리 정한 것과"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2607.16019",
+      "kind": "paper",
+      "title": "Presentation, Not Mechanism",
+      "url": "https://arxiv.org/abs/2607.16019",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2607.16019"
+      ],
+      "aliases": [
+        "Presentation, Not Mechanism"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 112,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L112",
+              "excerpt": "실제 제외 기전의 몫인지 따로 잰다. [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019)의"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1085,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1085",
+              "excerpt": "- [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019) (Jiang 외, arXiv v1 2026-07-17): 표시 방식을 고정한 대조군으로 시간 유효성 기전의 몫을 분리하는 방법 참고. 코드나 데이터는 사용하지 않았다."
+            },
+            {
+              "file": "docs/releases/v0.23.0.md",
+              "line": 44,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.23.0.md#L44",
+              "excerpt": "논문([arXiv 2607.16019](https://arxiv.org/abs/2607.16019))의 질문 2,907개, 겉보기 이득 +0.182, 기전 잔차"
+            },
+            {
+              "file": "docs/verification/render-matched-20261017.md",
+              "line": 8,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/render-matched-20261017.md#L8",
+              "excerpt": "The control follows [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019)"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "url:https://repository.upenn.edu/handle/20.500.14332/8764",
+      "kind": "paper",
+      "title": "Provenance Semirings",
+      "url": "https://repository.upenn.edu/handle/20.500.14332/8764",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "url:https://repository.upenn.edu/handle/20.500.14332/8764"
+      ],
+      "aliases": [
+        "Provenance Semirings"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 19,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19",
+              "excerpt": "[Provenance Semirings](https://repository.upenn.edu/handle/20.500.14332/8764),"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다."
+    },
+    {
+      "id": "url:https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer",
+      "kind": "paper",
+      "title": "Qex: Symbolic SQL Query Explorer",
+      "url": "https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/",
+      "year": null,
+      "tags": [
+        "SQL"
+      ],
+      "keys": [
+        "url:https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer"
+      ],
+      "aliases": [
+        "Qex",
+        "Symbolic SQL Query Explorer"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 57,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
+              "excerpt": "constraint-model principle of [Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/)"
+            },
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 153,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153",
+              "excerpt": "[Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/);"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다."
+    },
+    {
+      "id": "arxiv:2407.17941",
+      "kind": "paper",
+      "title": "RDFGraphGen",
+      "url": "https://arxiv.org/abs/2407.17941",
+      "year": 2024,
+      "tags": [
+        "지식 그래프"
+      ],
+      "keys": [
+        "arxiv:2407.17941"
+      ],
+      "aliases": [
+        "RDFGraphGen"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 21,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21",
+              "excerpt": "[RDFGraphGen](https://arxiv.org/abs/2407.17941). No source from these projects is copied or bundled;"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2606.01435",
+      "kind": "paper",
+      "title": "Reliable Post-Retrieval Assembly",
+      "url": "https://arxiv.org/abs/2606.01435",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2606.01435"
+      ],
+      "aliases": [
+        "Reliable Post-Retrieval Assembly"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-assembly.md",
+              "line": 144,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-assembly.md#L144",
+              "excerpt": "[Reliable Post-Retrieval Assembly](https://arxiv.org/abs/2606.01435)의 의미 후보 추출과"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2608.18180",
+      "kind": "paper",
+      "title": "Reproducibility is Not Enough",
+      "url": "https://arxiv.org/abs/2608.18180",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2608.18180"
+      ],
+      "aliases": [
+        "Reproducibility is Not Enough"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/release-integrity.md",
+              "line": 487,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/release-integrity.md#L487",
+              "excerpt": "- [Reproducibility is Not Enough](https://arxiv.org/abs/2608.18180)(Solarin 외, 2026-08): 재빌드 검증을 주로 막는 것이"
+            },
+            {
+              "file": "docs/releases/v0.26.0.md",
+              "line": 209,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.26.0.md#L209",
+              "excerpt": "- 새로 인용한 외부 자료(Gruber 등 ICST 2021, Reproducible Builds의 Archive metadata, arXiv 2608.18180, 키 가명화"
+            },
+            {
+              "file": "docs/verification/v0.26.0.md",
+              "line": 249,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/verification/v0.26.0.md#L249",
+              "excerpt": "development (Gruber et al. ICST 2021, Reproducible Builds archive metadata, arXiv 2608.18180, the ENISA"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2610.05348",
+      "kind": "paper",
+      "title": "Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses",
+      "url": "https://arxiv.org/abs/2610.05348",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2610.05348"
+      ],
+      "aliases": [
+        "Search Engines Never Say No",
+        "Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 513,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L513",
+              "excerpt": "- 프로토콜: [Search Engines Never Say No](https://arxiv.org/abs/2610.05348)의 쌍둥이 실험을 따른다. 논문은 질문마다"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1090,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1090",
+              "excerpt": "- [Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses](https://arxiv.org/abs/2610.05348) (Chandradevan·Ghosh·Selvendran, arXiv v1 2026-10-04, cs.IR, CC BY 4.0): 골드 제거 쌍둥이와 '거짓 거부 예산을 고정한"
+            },
+            {
+              "file": "docs/releases/v0.32.0.md",
+              "line": 11,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.32.0.md#L11",
+              "excerpt": "- **답 없음 쌍둥이와 행 토큰 정렬(`scripts/evaluate_recall.py`, 선택):** 저장소 평가 도구의 새 `--gold-removal-twins`는 inspected가 아닌 답 있는 문항마다 그 답을 담은 노트(`expected_paths`, `relevance` 등급이 0보다 큰 모든 경로, 정규화한 `required_claims` 문장이 든 노트)를 뺀 볼트에서 같"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2609.05944",
+      "kind": "paper",
+      "title": "sheval",
+      "url": "https://arxiv.org/abs/2609.05944",
+      "year": 2026,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2609.05944"
+      ],
+      "aliases": [
+        "sheval"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 27,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27",
+              "excerpt": "[sheval](https://arxiv.org/abs/2609.05944v2) as an architectural reference only. Its repository's code"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "arxiv:2601.02553",
+      "kind": "paper",
+      "title": "SimpleMem 논문",
+      "url": "https://arxiv.org/abs/2601.02553",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2601.02553"
+      ],
+      "aliases": [
+        "SimpleMem 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 18,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18",
+              "excerpt": "| [SimpleMem 논문](https://arxiv.org/abs/2601.02553), [공식 코드](https://github.com/aiming-lab/SimpleMem) | 독립적으로 이해할 수 있는 사실 단위, 정확한 중복 병합, 질문에 따른 선택 | 출처 인용을 검증하는 `compile_units()`; 의미 해석·대명사 해소는 호스트가 명시적으로 작성  | 단위·중복·조건·잠"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:1905.11096",
+      "kind": "paper",
+      "title": "Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors",
+      "url": "https://arxiv.org/abs/1905.11096",
+      "year": 2019,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:1905.11096"
+      ],
+      "aliases": [
+        "Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1087,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1087",
+              "excerpt": "- [Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors](https://arxiv.org/abs/1905.11096) (Urbano·Lima·Hanjalic, SIGIR 2019, arXiv v2 2019-06-05): 부호를 무"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "doi:10.1186/s13643-020-01521-4",
+      "kind": "paper",
+      "title": "Statistical stopping criteria for automated screening in systematic reviews",
+      "url": "https://doi.org/10.1186/s13643-020-01521-4",
+      "year": 2020,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "doi:10.1186/s13643-020-01521-4"
+      ],
+      "aliases": [
+        "Statistical stopping criteria for automated screening in systematic reviews"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1088,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1088",
+              "excerpt": "- [Statistical stopping criteria for automated screening in systematic reviews](https://doi.org/10.1186/s13643-020-01521-4) (Callaghan·Müller-Hansen, Systematic Reviews 9:273, 2020, CC BY 4.0): 남은 문서의 무작위 표본과 초기하 검정(식 7·"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2104.08279",
+      "kind": "paper",
+      "title": "Testing for Outliers with Conformal p-values",
+      "url": "https://arxiv.org/abs/2104.08279",
+      "year": 2021,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "arxiv:2104.08279"
+      ],
+      "aliases": [
+        "Testing for Outliers with Conformal p-values"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 616,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L616",
+              "excerpt": "- 근거: [Testing for Outliers with Conformal p-values](https://arxiv.org/abs/2104.08279)(Bates·Candès·Lei·Romano·Sesia,"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1091,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1091",
+              "excerpt": "- [Testing for Outliers with Conformal p-values](https://arxiv.org/abs/2104.08279) (Bates·Candès·Lei·Romano·Sesia, Ann. Statist. 51(1):149–178, 2023, arXiv v3 2022-05-25): 식 (3)의 분할 conformal p-value와 그 p ≤ α에 해당하는 문턱 규칙"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2605.26128",
+      "kind": "paper",
+      "title": "The Constraint Tax",
+      "url": "https://arxiv.org/abs/2605.26128",
+      "year": 2026,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2605.26128"
+      ],
+      "aliases": [
+        "The Constraint Tax"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 461,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L461",
+              "excerpt": "- [The Constraint Tax](https://arxiv.org/abs/2605.26128), [Mitigating Bias in Locally Constrained Decoding](https://arxiv.org/abs/2606.01926): 스키마 유효·정답·실행 정확도·'유효하지만 틀림'을 따로 세는 짝 비교 설계와, 문자열 값 마스킹이 분포를 왜곡할 수 있다는 경고의 참고."
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2608.30177",
+      "kind": "paper",
+      "title": "Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge)",
+      "url": "https://arxiv.org/abs/2608.30177",
+      "year": 2026,
+      "tags": [
+        "메모리·검색",
+        "보안·안전",
+        "에이전트"
+      ],
+      "keys": [
+        "arxiv:2608.30177"
+      ],
+      "aliases": [
+        "MemGauge",
+        "Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge)"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-stage-evaluation.md",
+              "line": 5,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-stage-evaluation.md#L5",
+              "excerpt": "The experimental design borrows the principles of stage-wise contrasts and matched clean/poisoned conditions from Zang et al., [Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge)](https://arx"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2109.11216",
+      "kind": "paper",
+      "title": "Union and Intersection of all Justifications",
+      "url": "https://arxiv.org/abs/2109.11216",
+      "year": 2021,
+      "tags": [
+        "지식 그래프"
+      ],
+      "keys": [
+        "arxiv:2109.11216"
+      ],
+      "aliases": [
+        "Union and Intersection of all Justifications"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 30,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
+              "excerpt": "[Union and Intersection of all Justifications](https://arxiv.org/abs/2109.11216); no code from that work is used"
+            },
+            {
+              "file": "docs/owl-explanations.md",
+              "line": 32,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
+              "excerpt": "Justifications](https://arxiv.org/abs/2109.11216), ESWC 2022, applied here to generated axiom groups over fixed"
+            },
+            {
+              "file": "CHANGELOG.md",
+              "line": 222,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
+              "excerpt": "- `reason --explain-inconsistency` reports `uniqueness` (`unique`, `not_unique` or `not_proven`) for a completed subset-minimal explanation. One extra same-HermiT check per retained group removes only that group from the"
+            },
+            {
+              "file": "docs/releases/v0.14.0.md",
+              "line": 13,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13",
+              "excerpt": "- **Uniqueness of OWL explanations.** A completed subset-minimal explanation from `reason --explain-inconsistency` reports `uniqueness`. One extra same-HermiT check per retained group removes only that group from the ful"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+    },
+    {
+      "id": "doi:10.1145/3649849",
+      "kind": "paper",
+      "title": "VeriEQL",
+      "url": "https://doi.org/10.1145/3649849",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "doi:10.1145/3649849"
+      ],
+      "aliases": [
+        "VeriEQL"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 95,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
+              "excerpt": "[VeriEQL](https://doi.org/10.1145/3649849). No VeriEQL source is copied or bundled; its"
+            },
+            {
+              "file": "docs/releases/v0.3.0.md",
+              "line": 111,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111",
+              "excerpt": "The integrity-domain method is informed by [VeriEQL](https://doi.org/10.1145/3649849); no CC BY-NC-SA"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다."
+    },
+    {
+      "id": "doi:10.1145/3586049",
+      "kind": "paper",
+      "title": "Vulcan (2023)",
+      "url": "https://doi.org/10.1145/3586049",
+      "year": 2023,
+      "tags": [
+        "보안·안전"
+      ],
+      "keys": [
+        "doi:10.1145/3586049"
+      ],
+      "aliases": [
+        "Vulcan"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 55,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
+              "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
+            },
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 152,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152",
+              "excerpt": "This original implementation draws on [Vulcan](https://doi.org/10.1145/3586049) and"
+            }
+          ]
+        }
+      ],
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다."
+    },
+    {
+      "id": "usenix:security25/li-yeting",
+      "kind": "paper",
+      "title": "VULCANBOOST",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/li-yeting",
+      "year": 2025,
+      "tags": [
+        "보안·안전"
+      ],
+      "keys": [
+        "url:https://www.usenix.org/conference/usenixsecurity25/presentation/li-yeting"
+      ],
+      "aliases": [
+        "VULCANBOOST"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/hardening.md",
+              "line": 776,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L776",
+              "excerpt": "atomic group·possessive quantifier(\"Added in version 3.11\"). [VULCANBOOST](https://www.usenix.org/conference/usenixsecurity25/presentation/li-yeting)"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "arxiv:2501.13956",
+      "kind": "paper",
+      "title": "Zep 논문",
+      "url": "https://arxiv.org/abs/2501.13956",
+      "year": 2025,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "arxiv:2501.13956"
+      ],
+      "aliases": [
+        "Zep 논문"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 20,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20",
+              "excerpt": "| [Zep 논문](https://arxiv.org/abs/2501.13956), [Graphiti](https://github.com/getzep/graphiti) | 사실의 유효 기간과 출처, 과거 시점 조회 | `valid_from`·`valid_until`·`checked_at`·`superseded_by`와 `--as-of`; Graphiti DB나 완전한 이중 시간 DB는 사용하지"
+            }
+          ]
+        }
+      ],
+      "note": "인용된 연구·평가 원리의 참고 기록입니다. 원 코드 도입이나 벤치마크 재현을 뜻하지 않습니다. arXiv 연도는 식별자의 등록 연도 기준입니다."
+    },
+    {
+      "id": "github:aiming-lab/simplemem",
+      "kind": "project",
+      "title": "aiming-lab/SimpleMem",
+      "url": "https://github.com/aiming-lab/SimpleMem",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:aiming-lab/simplemem"
+      ],
+      "aliases": [
+        "SimpleMem",
+        "aiming-lab/SimpleMem"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 18,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L18",
+              "excerpt": "| [SimpleMem 논문](https://arxiv.org/abs/2601.02553), [공식 코드](https://github.com/aiming-lab/SimpleMem) | 독립적으로 이해할 수 있는 사실 단위, 정확한 중복 병합, 질문에 따른 선택 | 출처 인용을 검증하는 `compile_units()`; 의미 해석·대명사 해소는 호스트가 명시적으로 작성  | 단위·중복·조건·잠"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:apache/lucene",
+      "kind": "project",
+      "title": "Apache Lucene",
+      "url": "https://github.com/apache/lucene",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:apache/lucene",
+        "url:https://issues.apache.org/jira/browse/LUCENE-8231"
+      ],
+      "aliases": [
+        "Lucene"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "background",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 113,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L113",
+              "excerpt": "Apache Lucene [LUCENE-8231](https://issues.apache.org/jira/browse/LUCENE-8231)(2018, HANTEC)"
+            }
+          ]
+        }
+      ],
+      "note": "검색 방식의 절충을 설명하는 배경 사례입니다. 원 구현을 가져왔다는 뜻이 아닙니다."
+    },
+    {
+      "id": "github:ar9av/obsidian-wiki",
+      "kind": "project",
+      "title": "Ar9av/obsidian-wiki",
+      "url": "https://github.com/Ar9av/obsidian-wiki",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:ar9av/obsidian-wiki"
+      ],
+      "aliases": [
+        "Ar9av/obsidian-wiki",
+        "obsidian-wiki"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 798,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L798",
+              "excerpt": "- [obsidian-wiki의 평가](https://github.com/Ar9av/obsidian-wiki/blob/main/obsidian_wiki/evaluate.py)는 경로,"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1095,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1095",
+              "excerpt": "- [obsidian-wiki `evaluate.py`](https://github.com/Ar9av/obsidian-wiki/blob/main/obsidian_wiki/evaluate.py) (MIT): 볼트마다 손으로 라벨한 골드셋(`_meta/eval.jsonl`), 경로나 파일 이름 슬러그로 기대 노트를 맞추는 방식, recall@k·MRR 최소 기준 검사를 참고했다. 코드는 사용하지"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:dsh3n77/minja",
+      "kind": "project",
+      "title": "dsh3n77/MINJA",
+      "url": "https://github.com/dsh3n77/MINJA",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "보안·안전"
+      ],
+      "keys": [
+        "github:dsh3n77/minja"
+      ],
+      "aliases": [
+        "MINJA",
+        "dsh3n77/MINJA"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/link-proposals.md",
+              "line": 70,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L70",
+              "excerpt": "- [MINJA 논문](https://arxiv.org/abs/2503.03704)과 [공식 구현](https://github.com/dsh3n77/MINJA): 지속 기억을 통해 후속 판단이 오염될 위험을 참고했다. 이번 합성 fixture는 오염된 출처의 검색 노출만 측정하며 원래 공격을 재현하거나 공격 성공률을 측정하지 않는다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 22,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L22",
+              "excerpt": "| [MINJA 논문](https://arxiv.org/abs/2503.03704), [공식 코드](https://github.com/dsh3n77/MINJA) | 저장된 오염이 후속 작업으로 전파되는 경로 점검 | 오염 근거 노출 측정, 원문 재조회·정책 검사, 합성 실행기의 금지 행동 차단과 철회 후 잔류 검사  | 합성 실행기의 금지 행동 차단·실제 출처 철회 후 잔류0 확인. 실제 공"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:ethz-spylab/agentdojo",
+      "kind": "project",
+      "title": "ethz-spylab/agentdojo",
+      "url": "https://github.com/ethz-spylab/agentdojo",
+      "year": null,
+      "tags": [
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "github:ethz-spylab/agentdojo"
+      ],
+      "aliases": [
+        "agentdojo",
+        "ethz-spylab/agentdojo"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1094,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1094",
+              "excerpt": "- [AgentDojo](https://arxiv.org/abs/2406.13352), [공식 코드](https://github.com/ethz-spylab/agentdojo): 정상 업무와 공격 목표를 독립 사후 조건으로 평가하는 방법 참고."
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:getzep/graphiti",
+      "kind": "project",
+      "title": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:getzep/graphiti"
+      ],
+      "aliases": [
+        "getzep/graphiti",
+        "graphiti"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 20,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L20",
+              "excerpt": "| [Zep 논문](https://arxiv.org/abs/2501.13956), [Graphiti](https://github.com/getzep/graphiti) | 사실의 유효 기간과 출처, 과거 시점 조회 | `valid_from`·`valid_until`·`checked_at`·`superseded_by`와 `--as-of`; Graphiti DB나 완전한 이중 시간 DB는 사용하지"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:ggml-org/llama.cpp",
+      "kind": "project",
+      "title": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:ggml-org/llama.cpp"
+      ],
+      "aliases": [
+        "ggml-org/llama.cpp",
+        "llama.cpp"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 74,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L74",
+              "excerpt": "- [llama.cpp 서버 README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)(2026-10-19 열람)는"
+            },
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 459,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L459",
+              "excerpt": "- [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/), [llama.cpp 서버 README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md):"
+            },
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 462,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L462",
+              "excerpt": "- [JSON Schema Regular Expressions](https://json-schema.org/understanding-json-schema/reference/regular_expressions), [llama.cpp b10729](https://github.com/ggml-org/llama.cpp/tree/b10729): `pattern`이 ECMA-262 문법이고 이식 가능한"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:git/git",
+      "kind": "project",
+      "title": "git/git",
+      "url": "https://github.com/git/git",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:git/git"
+      ],
+      "aliases": [
+        "git",
+        "git/git"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 457,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L457",
+              "excerpt": "- [Git의 Windows rename 수정](https://github.com/git/git/commit/391bceae4350): 열린 핸들 때문에 교체가 거부되는 원인과 제한된 재시도의 참고."
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:google-research/harness2",
+      "kind": "project",
+      "title": "google-research/harness2",
+      "url": "https://github.com/google-research/harness2",
+      "year": null,
+      "tags": [
+        "에이전트"
+      ],
+      "keys": [
+        "github:google-research/harness2"
+      ],
+      "aliases": [
+        "google-research/harness2",
+        "harness2"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/improvement-experiments.md",
+              "line": 162,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/improvement-experiments.md#L162",
+              "excerpt": "공개 Harness²의 [선택 풀](https://github.com/google-research/harness2/blob/1cfe254e8d25b15f37048c3730134686abe60335/harness2/core/selection.py#L93-L111)은 기본 실행 결과와 보류를 제외한다. 이 구현은 기본안 유지와 보류를 명시하고 기존 AV의 비교 경계를 따른다. 온라인 자율 개선·"
+            },
+            {
+              "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
+              "line": 63,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63",
+              "excerpt": "- https://github.com/google-research/harness2/blob/1cfe254e8d25b15f37048c3730134686abe60335/harness2/core/selection.py#L93-L111"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:google/skill-reach",
+      "kind": "project",
+      "title": "google/skill-reach",
+      "url": "https://github.com/google/skill-reach",
+      "year": null,
+      "tags": [
+        "에이전트"
+      ],
+      "keys": [
+        "github:google/skill-reach"
+      ],
+      "aliases": [
+        "google/skill-reach",
+        "skill-reach"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.40.0.md",
+              "line": 64,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.40.0.md#L64",
+              "excerpt": "[google/skill-reach at `6cc80dd9f7fc3771f088b3ae5941651db5c11938`](https://github.com/google/skill-reach/tree/6cc80dd9f7fc3771f088b3ae5941651db5c11938),"
+            },
+            {
+              "file": "docs/skill-routing-evaluation.md",
+              "line": 203,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/skill-routing-evaluation.md#L203",
+              "excerpt": "[google/skill-reach at `6cc80dd9f7fc3771f088b3ae5941651db5c11938`](https://github.com/google/skill-reach/tree/6cc80dd9f7fc3771f088b3ae5941651db5c11938),"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:hypothesisworks/hypothesis",
+      "kind": "project",
+      "title": "HypothesisWorks/hypothesis",
+      "url": "https://github.com/HypothesisWorks/hypothesis",
+      "year": null,
+      "tags": [
+        "신뢰성",
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:hypothesisworks/hypothesis"
+      ],
+      "aliases": [
+        "Hypothesis",
+        "hypothesis"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1093,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1093",
+              "excerpt": "- [Hypothesis 상태 기반 검사](https://hypothesis.readthedocs.io/en/latest/stateful.html): 작업 순서 생성과 실패 축소. 개발 패키지 라이선스는 [upstream LICENSE](https://github.com/HypothesisWorks/hypothesis/blob/master/LICENSE.txt)를 따른다."
+            }
+          ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 255,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255",
+              "excerpt": "[Hypothesis](https://github.com/HypothesisWorks/hypothesis), and the counterexample/reduction approach"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:ukgovernmentbeis/inspect_ai",
+      "kind": "project",
+      "title": "Inspect AI",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:ukgovernmentbeis/inspect_ai"
+      ],
+      "aliases": [
+        "Inspect AI"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/model-korean-memory.md",
+              "line": 50,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50",
+              "excerpt": "on memory evaluation, including MemGauge and NoMIRACL, and Inspect's separation"
+            },
+            {
+              "file": "docs/releases/v0.38.0.md",
+              "line": 27,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.0.md#L27",
+              "excerpt": "라이브러리만 사용한다. Inspect AI의 데이터/풀이/채점 분리는 설계 참고이며"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:bab2min/kiwipiepy",
+      "kind": "project",
+      "title": "Kiwi / kiwipiepy",
+      "url": "https://github.com/bab2min/kiwipiepy",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:bab2min/kiwi",
+        "github:bab2min/kiwipiepy"
+      ],
+      "aliases": [
+        " kiwipiepy",
+        "Kiwi / kiwipiepy"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 274,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L274",
+              "excerpt": "`kiwipiepy==0.24.0`, qmd에는 `@tobilu/qmd@2.8.3`을 설치해 이번 관측을 재현할 수 있다."
+            },
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 456,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456",
+              "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:langchain-ai/openwiki",
+      "kind": "project",
+      "title": "langchain-ai/openwiki",
+      "url": "https://github.com/langchain-ai/openwiki",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "지식 그래프"
+      ],
+      "keys": [
+        "github:langchain-ai/openwiki"
+      ],
+      "aliases": [
+        "OpenWiki",
+        "openwiki"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 196,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L196",
+              "excerpt": "[OpenWiki](https://github.com/langchain-ai/openwiki/tree/7bb583d664f2d1c2484fa44b9d591f6103ca8166)의"
+            }
+          ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
+              "line": 3,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:letta-ai/letta-code",
+      "kind": "project",
+      "title": "letta-ai/letta-code",
+      "url": "https://github.com/letta-ai/letta-code",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:letta-ai/letta-code"
+      ],
+      "aliases": [
+        "letta-ai/letta-code",
+        "letta-code"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 25,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L25",
+              "excerpt": "| [Letta Code](https://github.com/letta-ai/letta-code) | 파일 기반 지속 기억과 교훈의 후속 효과 추적 | 기존 승인된 교훈 제안에 적용 가능성·성공·재발·역효과 관측 추가; 자동 승격 없음  | 관측34테스트·현재 근거/분모/동시 기록 검증. 교훈의 실제 재발 감소 효과 미측정; Letta 서버 불필요 |"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:liffiton/marco",
+      "kind": "project",
+      "title": "MARCO",
+      "url": "https://github.com/liffiton/MARCO",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:liffiton/marco"
+      ],
+      "aliases": [
+        "MARCO"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/owl-explanations.md",
+              "line": 143,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143",
+              "excerpt": "[MARCO](https://github.com/liffiton/MARCO), and"
+            }
+          ]
+        }
+      ],
+      "note": "OWL 불일치 설명과 MUS 열거의 알고리즘·설계 참고입니다."
+    },
+    {
+      "id": "github:mempalace/mempalace",
+      "kind": "project",
+      "title": "MemPalace/mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "year": null,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:mempalace/mempalace"
+      ],
+      "aliases": [
+        "MemPalace/mempalace",
+        "mempalace"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 936,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L936",
+              "excerpt": "- 운영 규율은 [MemPalace](https://github.com/MemPalace/mempalace)의 보고 방식을 빌렸다. 실패 분석과 조정은 dev에서만"
+            },
+            {
+              "file": "docs/memory-evaluation.md",
+              "line": 1096,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1096",
+              "excerpt": "- [MemPalace](https://github.com/MemPalace/mempalace) (MIT): dev 50문항으로 조정하고 보지 않은 held-out 450문항의 98.4%를 따로 내세우며, 틀린 답을 살펴 얻은 마지막 0.6%는 'teaching to the test'로 표시해 헤드라인에 쓰지 않는 보고 규율을 참고했다. 수치는 README의 자가 보고(2026-10-19 확"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:moatai-io/towersource",
+      "kind": "project",
+      "title": "moatai-io/towersource",
+      "url": "https://github.com/moatai-io/towersource",
+      "year": null,
+      "tags": [
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "github:moatai-io/towersource"
+      ],
+      "aliases": [
+        "moatai-io/towersource",
+        "towersource"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 259,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L259",
+              "excerpt": "[반복 행동 평가](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/harness/harness-eval-runner.ts),"
+            },
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 260,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L260",
+              "excerpt": "[실행 대장](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/agent-turn/side-effect-tool-wrapper.ts),"
+            },
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 261,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L261",
+              "excerpt": "[복구 미리보기](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/agent-turn/file-checkpoint.ts),"
+            },
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 262,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L262",
+              "excerpt": "[연결 진단](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/scripts/provider-doctor.ts)"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:modu-ai/moai-adk",
+      "kind": "project",
+      "title": "modu-ai/moai-adk",
+      "url": "https://github.com/modu-ai/moai-adk",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:modu-ai/moai-adk"
+      ],
+      "aliases": [
+        "moai-adk",
+        "modu-ai/moai-adk"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1331,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1331",
+              "excerpt": "| [MoAI-ADK](https://github.com/modu-ai/moai-adk/tree/2aab5f797b75983e132af451da68f69e3426557b) | v0.21.0: 전체 지침의 정적 분량 진단·완료 인덱스 원문 보존 미리보기·명시한 요구별 검증 누락 확인. 기존 Doctor/기억/근거 도구에 맞춰 Python 표준 라이브러리로 구현했으며 upstream Go 코드는"
+            },
+            {
+              "file": "docs/moai-diagnostics.md",
+              "line": 14,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
+              "excerpt": "| 지침 분량 관측 | [instructions_loaded.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/hook/instructions_loaded.go), [rule-loading-budget.md](https://github.com/modu-ai/moai-adk/"
+            },
+            {
+              "file": "docs/moai-diagnostics.md",
+              "line": 14,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L14",
+              "excerpt": "| 지침 분량 관측 | [instructions_loaded.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/hook/instructions_loaded.go), [rule-loading-budget.md](https://github.com/modu-ai/moai-adk/"
+            },
+            {
+              "file": "docs/moai-diagnostics.md",
+              "line": 15,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L15",
+              "excerpt": "| 원문 보존 정리 | [memory_fold.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/cli/memory_fold.go) | 명시적 완료 항목과 해시를 검증하는 미리보기; 적용 없음 |"
+            },
+            {
+              "file": "docs/moai-diagnostics.md",
+              "line": 16,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/moai-diagnostics.md#L16",
+              "excerpt": "| 요구·검증 연결 | [lint_coverage_sibling.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/spec/lint_coverage_sibling.go) | 기존 evidence/run 완전성 패턴을 일반 작업의 선언된 요구·검사에 적용 |"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:nousresearch/hermes-agent",
+      "kind": "project",
+      "title": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "year": null,
+      "tags": [
+        "에이전트"
+      ],
+      "keys": [
+        "github:nousresearch/hermes-agent"
+      ],
+      "aliases": [
+        "NousResearch/hermes-agent",
+        "hermes-agent"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1329,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1329",
+              "excerpt": "| [hermes-agent](https://github.com/NousResearch/hermes-agent) (Nous Research) | 에이전트 **선별** 메모리 사상(캡처→인박스→사람 있는 세션 정제)과 **자기개선 스킬 루프** — 후자는 `lessons.md` 대장 + 반복 3회 승격 제안으로 파일 기반 흡수(자동 승격 없음, v0.4.0) |"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:openclaw/openclaw",
+      "kind": "project",
+      "title": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:openclaw/openclaw"
+      ],
+      "aliases": [
+        "openclaw",
+        "openclaw/openclaw"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1328,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1328",
+              "excerpt": "| [OpenClaw](https://github.com/openclaw/openclaw) | 🤖 Jarvis 계층의 \"몸통\" 사상 — 메신저 편재성·상시 데몬·cron 선발화. 우리는 채널 20종 대신 **1채널 최소판**으로 흡수하고 몸통 인프라 재발명은 의도적으로 포기 |"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:osu-nlp-group/hipporag",
+      "kind": "project",
+      "title": "OSU-NLP-Group/HippoRAG",
+      "url": "https://github.com/OSU-NLP-Group/HippoRAG",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:osu-nlp-group/hipporag"
+      ],
+      "aliases": [
+        "HippoRAG",
+        "OSU-NLP-Group/HippoRAG"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 19,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L19",
+              "excerpt": "| [HippoRAG 2 논문](https://arxiv.org/abs/2502.14802), [공식 코드](https://github.com/OSU-NLP-Group/HippoRAG) | 질의에서 연결된 근거로 범위를 확장 | 실제 파일명이 유일한 위키링크를 최대 2단계 순회하고 경로·해시를 반환; PPR·엔티티 모델은 별도  | 2단계 연결 fixture 통과. 합성 전체 검색 재현율 7"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:matthewhorridge/owlexplanation",
+      "kind": "project",
+      "title": "OWL Explanation",
+      "url": "https://github.com/matthewhorridge/owlexplanation",
+      "year": null,
+      "tags": [
+        "지식 그래프"
+      ],
+      "keys": [
+        "github:matthewhorridge/owlexplanation"
+      ],
+      "aliases": [
+        "OWL Explanation",
+        "owlexplanation"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/owl-explanations.md",
+              "line": 144,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144",
+              "excerpt": "[OWL Explanation](https://github.com/matthewhorridge/owlexplanation). These are algorithm/design references;"
+            }
+          ]
+        }
+      ],
+      "note": "설명 추출의 알고리즘·설계 참고이며 외부 Java 라이브러리를 이 확장에 번들하지 않았습니다."
+    },
+    {
+      "id": "github:uw-pluverse/perses",
+      "kind": "project",
+      "title": "Perses",
+      "url": "https://github.com/uw-pluverse/perses",
+      "year": null,
+      "tags": [
+        "보안·안전"
+      ],
+      "keys": [
+        "github:uw-pluverse/perses"
+      ],
+      "aliases": [
+        "Perses"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 55,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
+              "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
+            }
+          ]
+        }
+      ],
+      "note": "구조화 반례 축소의 참고 프로젝트입니다. GPL-3.0 원 코드를 복사하거나 번들하지 않았습니다."
+    },
+    {
+      "id": "github:pierresenellart/provsql",
+      "kind": "project",
+      "title": "ProvSQL",
+      "url": "https://github.com/PierreSenellart/provsql",
+      "year": null,
+      "tags": [
+        "지식 그래프",
+        "SQL"
+      ],
+      "keys": [
+        "github:pierresenellart/provsql"
+      ],
+      "aliases": [
+        "ProvSQL"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "background",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.19.1.md",
+              "line": 121,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121",
+              "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
+            }
+          ]
+        }
+      ],
+      "note": "출처·순서 계약의 후속 연구 방향으로만 언급돼 있습니다. 현재 구현이나 의존성 도입으로 집계하지 않습니다."
+    },
+    {
+      "id": "github:python/cpython",
+      "kind": "project",
+      "title": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:python/cpython"
+      ],
+      "aliases": [
+        "cpython",
+        "python/cpython"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.38.1.md",
+              "line": 15,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/releases/v0.38.1.md#L15",
+              "excerpt": "[CPython 3.10의 Windows 구현](https://github.com/python/cpython/blob/3.10/Python/pytime.c#L882)은"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:ryoppippi/ccusage",
+      "kind": "project",
+      "title": "ryoppippi/ccusage",
+      "url": "https://github.com/ryoppippi/ccusage",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:ccusage/ccusage",
+        "github:ryoppippi/ccusage"
+      ],
+      "aliases": [
+        "ccusage",
+        "ccusage/ccusage",
+        "ryoppippi/ccusage"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/reliability.md",
+              "line": 256,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/reliability.md#L256",
+              "excerpt": "[ccusage](https://github.com/ryoppippi/ccusage)(MIT)의 Claude 사용량 파서에서 방식만 빌렸다. 코드와 의존성은"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:shishirpatil/gorilla",
+      "kind": "project",
+      "title": "ShishirPatil/gorilla",
+      "url": "https://github.com/ShishirPatil/gorilla",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:shishirpatil/gorilla"
+      ],
+      "aliases": [
+        "ShishirPatil/gorilla",
+        "gorilla"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 455,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L455",
+              "excerpt": "- [MLCL](https://arxiv.org/abs/2601.05366), [BFCL](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard): 언어별 도구 인자 실패를 가르는 실험 틀. MLCL의 한국어 검증을 재현한 것은 아니다."
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:solomoon313/agentmemorybench",
+      "kind": "project",
+      "title": "solomoon313/AgentMemoryBench",
+      "url": "https://github.com/solomoon313/AgentMemoryBench",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트",
+        "에이전트"
+      ],
+      "keys": [
+        "github:solomoon313/agentmemorybench"
+      ],
+      "aliases": [
+        "AgentMemoryBench",
+        "solomoon313/AgentMemoryBench"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-lifecycle.md",
+              "line": 68,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-lifecycle.md#L68",
+              "excerpt": "[AgentMemoryBench Repair](https://github.com/solomoon313/AgentMemoryBench)"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:sqlancer/sqlancer",
+      "kind": "project",
+      "title": "SQLancer",
+      "url": "https://github.com/sqlancer/sqlancer",
+      "year": null,
+      "tags": [
+        "SQL"
+      ],
+      "keys": [
+        "github:sqlancer/sqlancer"
+      ],
+      "aliases": [
+        "SQLancer",
+        "TLP"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 25,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
+              "excerpt": "[SQLancer](https://github.com/sqlancer/sqlancer), whose project is MIT-licensed. No SQLancer source is"
+            },
+            {
+              "file": "docs/mutation-coverage.md",
+              "line": 54,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54",
+              "excerpt": "prior art: [SQLancer](https://github.com/sqlancer/sqlancer). No SQLancer dependency or comparator is"
+            }
+          ]
+        }
+      ],
+      "note": "TLP 분할 검사와 반례·축소 방법의 설계 참고입니다. SQLancer 코드를 도입한 것은 아닙니다."
+    },
+    {
+      "id": "github:tobymao/sqlglot",
+      "kind": "project",
+      "title": "SQLGlot",
+      "url": "https://github.com/tobymao/sqlglot",
+      "year": null,
+      "tags": [
+        "지식 그래프",
+        "SQL"
+      ],
+      "keys": [
+        "github:tobymao/sqlglot"
+      ],
+      "aliases": [
+        "SQLGlot"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "background",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.19.1.md",
+              "line": 121,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121",
+              "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
+            }
+          ]
+        }
+      ],
+      "note": "후속 연구 방향으로만 언급돼 있습니다. 현재 기능 구현이나 의존성 도입으로 집계하지 않습니다."
+    },
+    {
+      "id": "github:swe-bench/swe-bench",
+      "kind": "project",
+      "title": "SWE-bench/SWE-bench",
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "year": null,
+      "tags": [
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:swe-bench/swe-bench"
+      ],
+      "aliases": [
+        "SWE-bench",
+        "SWE-bench/SWE-bench"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/tower-reliability.md",
+              "line": 154,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/tower-reliability.md#L154",
+              "excerpt": "FAIL_TO_PASS·PASS_TO_PASS 정의, [SWE-bench](https://github.com/SWE-bench/SWE-bench) 채점 코드"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:syncthing/syncthing",
+      "kind": "project",
+      "title": "Syncthing",
+      "url": "https://github.com/syncthing/syncthing",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "github:syncthing/syncthing",
+        "url:https://docs.syncthing.net/users/syncing.html"
+      ],
+      "aliases": [
+        "Syncthing"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/hardening.md",
+              "line": 866,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L866",
+              "excerpt": "| `sync-conflict-copy` (`syncthing-conflict`) | `<filename>.sync-conflict-<date>-<time>-<modifiedBy>.<ext>` | [Syncthing: Understanding Synchronization](https://docs.syncthing.net/users/syncing.html) \"Conflicting Changes"
+            },
+            {
+              "file": "docs/hardening.md",
+              "line": 874,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/hardening.md#L874",
+              "excerpt": "- 같은 문서에 따르면 Syncthing은 대상 파일에 직접 쓰지 않고 임시 사본에 쓴 뒤 옮긴다. 복사·동기화 중 오류가 나면 임시 파일이"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:technoetic/harness107",
+      "kind": "project",
+      "title": "Technoetic/harness107",
+      "url": "https://github.com/Technoetic/harness107",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "에이전트"
+      ],
+      "keys": [
+        "github:technoetic/harness107",
+        "github:technoetic/harness14"
+      ],
+      "aliases": [
+        "Technoetic/harness107",
+        "Technoetic/harness14",
+        "harness107",
+        "technoetic/harness107"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1322,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1322",
+              "excerpt": "| [**Technoetic/harness107**](https://github.com/Technoetic/harness107) | **자매 레포** — harness107이 \"실행\"의 하네스라면 agentic-vault는 \"기억\"의 하네스. README 형식과 정직성 섹션 관행 공유 |"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:tobi/qmd",
+      "kind": "project",
+      "title": "tobi/qmd",
+      "url": "https://github.com/tobi/qmd",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:tobi/qmd"
+      ],
+      "aliases": [
+        "qmd",
+        "tobi/qmd"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/evaluation-stability.md",
+              "line": 456,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/evaluation-stability.md#L456",
+              "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 24,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L24",
+              "excerpt": "| [qmd 공식 코드](https://github.com/tobi/qmd) | BM25·검색 결과 결합과 선택형 외부 의미 검색 | `lexical`/`bm25`/`hybrid`, RRF, `import_qmd_candidates.py`와 원문을 다시 읽는 sidecar 입력  | BM25/RRF/원문 재조회·어댑터20테스트 검증. qmd 실제 임베딩/재순위 모델 미설치·효과 미측정; 외부"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:w3c/data-shapes",
+      "kind": "project",
+      "title": "W3C SHACL Test Suite",
+      "url": "https://github.com/w3c/data-shapes",
+      "year": null,
+      "tags": [
+        "평가·테스트",
+        "지식 그래프"
+      ],
+      "keys": [
+        "github:w3c/data-shapes"
+      ],
+      "aliases": [
+        "W3C SHACL Test Suite",
+        "data-shapes"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 144,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
+              "excerpt": "| [W3C SHACL test suite](https://github.com/w3c/data-shapes) (`data-shapes-test-suite/tests/core`) | commit `1dfcd9f30cab70ac02b049611eeba451fa1308e7` | W3C Software and Document License | Expected reports for `shacl-cor"
+            },
+            {
+              "file": "docs/shacl-corpus.md",
+              "line": 104,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104",
+              "excerpt": "[w3c/data-shapes](https://github.com/w3c/data-shapes) that contains"
+            }
+          ]
+        }
+      ],
+      "note": "별도로 내려받은 공식 테스트 코퍼스의 기대 보고서를 비교하는 선택형 평가 참고 자료입니다. 코퍼스는 번들하지 않습니다."
+    },
+    {
+      "id": "github:wujiangxu/a-mem-sys",
+      "kind": "project",
+      "title": "WujiangXu/A-mem-sys",
+      "url": "https://github.com/WujiangXu/A-mem-sys",
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "github:wujiangxu/a-mem-sys"
+      ],
+      "aliases": [
+        "A-mem-sys",
+        "WujiangXu/A-mem-sys"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/link-proposals.md",
+              "line": 68,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L68",
+              "excerpt": "- [A-MEM 논문](https://arxiv.org/abs/2502.12110)과 [공식 시스템 구현](https://github.com/WujiangXu/A-mem-sys): 관련 노트와 연결 변경안을 제안하는 아이디어를 참고했다. 이번 helper는 어휘 후보를 반환하며 자동 기억 진화·의미 검색은 포함하지 않는다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 17,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L17",
+              "excerpt": "| [A-MEM 논문](https://arxiv.org/abs/2502.12110), [공식 시스템](https://github.com/WujiangXu/A-mem-sys) | 새 기억과 기존 노트의 연결을 검토하고 출처를 보존 | `vault_links.py`의 해시·diff 제안, `vault_memory.py`의 구조화 단위  | 연결·인용·해시 동작 테스트 통과. 의미 관계/기억 진화"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:xiaowu0162/longmemeval-v2",
+      "kind": "project",
+      "title": "xiaowu0162/LongMemEval-V2",
+      "url": "https://github.com/xiaowu0162/LongMemEval-V2",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:xiaowu0162/longmemeval-v2"
+      ],
+      "aliases": [
+        "LongMemEval-V2",
+        "xiaowu0162/LongMemEval-V2"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/link-proposals.md",
+              "line": 69,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/link-proposals.md#L69",
+              "excerpt": "- [LongMemEval-V2 논문](https://arxiv.org/abs/2605.12493)과 [공식 구현](https://github.com/xiaowu0162/LongMemEval-V2): 상태 변화·업무 절차·환경 주의점·잘못된 전제를 구분하는 평가 관점을 참고했다. 데이터셋과 논문 성능 수치는 가져오지 않았다."
+            },
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 21,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L21",
+              "excerpt": "| [LongMemEval V2](https://arxiv.org/abs/2605.12493), [공식 코드](https://github.com/xiaowu0162/LongMemEval-V2) | 변경 사실·절차·전제 오류·정답 없음의 구분 | 경험 fixture와 고급 fixture의 질의별·시나리오별 검색/노출 평가  | 기존16/경험16/고급16질문 평가 실행. 출처 검색·노출만 측정;"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "github:zexuehe/memoryarena",
+      "kind": "project",
+      "title": "ZexueHe/MemoryArena",
+      "url": "https://github.com/ZexueHe/MemoryArena",
+      "year": null,
+      "tags": [
+        "메모리·검색",
+        "평가·테스트"
+      ],
+      "keys": [
+        "github:zexuehe/memoryarena"
+      ],
+      "aliases": [
+        "MemoryArena",
+        "ZexueHe/MemoryArena"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/memory-patterns.md",
+              "line": 23,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-patterns.md#L23",
+              "excerpt": "| [MemoryArena 논문](https://arxiv.org/abs/2602.16313), [공식 코드](https://github.com/ZexueHe/MemoryArena) | 여러 세션의 기억이 실제 다음 행동에 영향을 주는지 평가 | 상태 전제·사후 조건으로 채점하는 `evaluate_memory_workflows.py`; 원 벤치마크 재현은 아님  | 같은 로컬 Qwen 모델/"
+            }
+          ]
+        }
+      ],
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다."
+    },
+    {
+      "id": "name:dqp",
+      "kind": "research-name",
+      "title": "DQP",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
+      "year": null,
+      "tags": [
+        "지식 그래프",
+        "SQL"
+      ],
+      "keys": [
+        "name:dqp"
+      ],
+      "aliases": [
+        "DQP"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "docs/superpowers/specs/2026-10-25-verification-hardening.md",
+              "line": 22,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
+              "excerpt": "The selected approach extends existing comparison and TLP mechanisms. A separate NoREC stage would duplicate standalone dispatch and replay machinery. A third SHACL engine and DQP are later research candidates rather tha"
+            }
+          ]
+        }
+      ],
+      "note": "이름만 남은 후속 연구 후보입니다. 특정 논문·저장소의 식별자는 공개 문서에서 확인되지 않아 미식별로 보존했습니다."
+    },
+    {
+      "id": "name:gungnir mc",
+      "kind": "research-name",
+      "title": "Gungnir / MC",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
+      "year": null,
+      "tags": [
+        "신뢰성"
+      ],
+      "keys": [
+        "name:gungnir mc"
+      ],
+      "aliases": [
+        "Gungnir/MC",
+        "Gungnir"
+      ],
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "docs/superpowers/plans/2026-11-03-response-witness-hardening.md",
+              "line": 18,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
+              "excerpt": "- User authorization covers this first research bundle and necessary local verification/integration. Broader Gungnir/MC, new reasoners, deployment, releases and active installations are outside this change."
+            }
+          ]
+        }
+      ],
+      "note": "계획에서 더 넓은 연구 범위로만 언급한 이름입니다. 구체 논문·저장소와 현재 도입 여부를 추정하지 않습니다."
+    },
+    {
+      "id": "name:ledger",
+      "kind": "research-name",
+      "title": "LEDGER",
+      "url": null,
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "name:ledger"
+      ],
+      "aliases": [
+        "LEDGER"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "docs/knowledge-evolution.md",
+              "line": 7,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/knowledge-evolution.md#L7",
+              "excerpt": "This small fixture is inspired by longitudinal evaluation such as LEDGER; it does not reproduce that benchmark, infer facts from natural language, establish evaluator completeness, or measure coverage beyond its authored"
+            }
+          ]
+        }
+      ],
+      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
+    },
+    {
+      "id": "name:memform",
+      "kind": "research-name",
+      "title": "MemForm",
+      "url": null,
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "name:memform"
+      ],
+      "aliases": [
+        "MemForm"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "docs/memory-formation.md",
+              "line": 29,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L29",
+              "excerpt": "MemForm-inspired synthetic cases; they are not official benchmark cases."
+            },
+            {
+              "file": "docs/memory-formation.md",
+              "line": 67,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-formation.md#L67",
+              "excerpt": "an official MemForm reproduction. The bounded control is an evaluation-only"
+            }
+          ]
+        }
+      ],
+      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
+    },
+    {
+      "id": "name:memgpt",
+      "kind": "research-name",
+      "title": "MemGPT",
+      "url": null,
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "name:memgpt"
+      ],
+      "aliases": [
+        "MemGPT"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "README.md",
+              "line": 1325,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L1325",
+              "excerpt": "| MemGPT · A-MEM | OS 메모리 계층을 본뜬 티어드 메모리 — hot(캐시) → handoff(세션) → 볼트(디스크) |"
+            }
+          ]
+        }
+      ],
+      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
+    },
+    {
+      "id": "name:nomiracl",
+      "kind": "research-name",
+      "title": "NoMIRACL",
+      "url": null,
+      "year": null,
+      "tags": [
+        "메모리·검색"
+      ],
+      "keys": [
+        "name:nomiracl"
+      ],
+      "aliases": [
+        "NoMIRACL"
+      ],
+      "uses": [
+        {
+          "plugin": "agentic-vault",
+          "role": "unresolved",
+          "evidence": [
+            {
+              "file": "docs/model-korean-memory.md",
+              "line": 50,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/model-korean-memory.md#L50",
+              "excerpt": "on memory evaluation, including MemGauge and NoMIRACL, and Inspect's separation"
+            }
+          ]
+        }
+      ],
+      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
+    }
+  ],
+  "counts": {
+    "paper": 55,
+    "project": 39,
+    "format": 2,
+    "research-name": 6,
+    "total": 102,
+    "shared": 3,
+    "citations": 165
+  },
+  "countsByPlugin": {
+    "agentic-vault": {
+      "paper": 42,
+      "project": 32,
+      "format": 1,
+      "research-name": 4,
+      "total": 79,
+      "shared": 3,
+      "citations": 124
+    },
+    "semantic-crosscheck": {
+      "paper": 13,
+      "project": 9,
+      "format": 2,
+      "research-name": 2,
+      "total": 26,
+      "shared": 3,
+      "citations": 41
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="build-id" content="__BUILD_ID__">
+  <meta name="description" content="Agentic Vault와 Semantic Crosscheck를 만든 연구의 연결망. 논문과 오픈소스의 출처를 탐색하고, 다음 참고 자료의 중복 여부를 확인하세요.">
+  <meta name="theme-color" content="#10130f">
+  <title>REFERENCE ATLAS — Built on research.</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로 가기</a>
+  <header class="site-header">
+    <a class="brand" href="?view=atlas" data-nav aria-label="Reference Atlas 홈"><span class="brand-mark" aria-hidden="true">r<span>↗</span></span><span>REFERENCE<br><b>ATLAS</b></span></a>
+    <nav class="main-nav" aria-label="주요 메뉴"><a href="?view=atlas" data-nav data-view="atlas">연구 지도</a><a href="?view=sources" data-nav data-view="sources">출처 탐색</a></nav>
+    <a class="header-check" href="?view=check" data-nav data-view="check">기존 참조 확인 <span aria-hidden="true">↗</span></a>
+  </header>
+  <div id="version-notice" class="version-notice" hidden role="status"></div>
+  <main id="main" tabindex="-1"><div class="loading-screen"><span class="loading-orbit" aria-hidden="true"></span><p>연구의 연결망을 펼치는 중입니다.</p></div></main>
+  <footer class="site-footer"><div class="footer-brand">GOOD IDEAS.<br><span>TRACEABLE ROOTS.</span></div><div class="footer-notes"><p>참조의 흔적을 남기고,<br>같은 발견을 반복하지 않기 위해.</p><p>공개 저장소의 인용을 정리한 스냅샷입니다.<br>참조는 코드 도입이나 벤치마크 재현을 뜻하지 않습니다.</p><div class="footer-links"><a href="https://github.com/Technoetic/agentic-vault" target="_blank" rel="noopener noreferrer">Agentic Vault ↗</a><a href="https://github.com/Technoetic/semantic-crosscheck" target="_blank" rel="noopener noreferrer">Semantic Crosscheck ↗</a><a href="./data/catalog.json" download>JSON ↓</a><a href="./data/catalog.csv" download>CSV ↓</a></div><p class="snapshot-label" id="snapshot-label">공개 출처 · 로컬 중복 확인 · GitHub Pages</p></div></footer>
+  <noscript><p class="noscript">출처 탐색 기능에는 JavaScript가 필요합니다. <a href="./data/catalog.json">공개 출처 JSON</a>을 직접 확인할 수 있습니다.</p></noscript>
+  <script type="module" src="./src/app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+dist/
+.build-temp/
+test-results/
+__pycache__/
+*.pyc
+.env
+.env.*
+node_modules/
