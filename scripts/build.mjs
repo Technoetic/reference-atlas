@@ -1,5 +1,5 @@
 import {createHash} from 'node:crypto';
-import {readFile,writeFile,readdir,mkdir,rm,rename,stat} from 'node:fs/promises';
+import {readFile,writeFile,readdir,mkdir,rm,rename,lstat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {calculateBuildIdentity} from './build-identity.mjs';
@@ -9,13 +9,15 @@ const dist=path.join(root,'dist'),stage=path.join(root,'.build-temp');
 function owned(target){const rel=path.relative(root,path.resolve(target));if(!rel||rel.startsWith('..')||path.isAbsolute(rel))throw new Error('Unsafe build path');}
 owned(dist);owned(stage);
 const sha=data=>createHash('sha256').update(data).digest('hex');
-async function files(dir){const result=[];for(const entry of await readdir(dir,{withFileTypes:true})){const full=path.join(dir,entry.name);if(entry.isDirectory())result.push(...await files(full));else result.push(full);}return result;}
+async function files(dir,{media=false}={}){const result=[];for(const entry of await readdir(dir,{withFileTypes:true})){const full=path.join(dir,entry.name);if(media&&entry.isSymbolicLink())throw new Error('Symbolic links are not allowed in media');if(entry.isDirectory())result.push(...await files(full,{media}));else result.push(full);}return result;}
+async function rasterFiles(){const dir=path.join(root,'media');let info;try{info=await lstat(dir);}catch(error){if(error.code==='ENOENT')return [];throw error;}if(info.isSymbolicLink())throw new Error('Symbolic links are not allowed in media');if(!info.isDirectory())throw new Error('Media must be a directory');return(await files(dir,{media:true})).filter(file=>/\.(webp|png)$/i.test(file)).sort();}
 const sources=[...(await files(path.join(root,'src'))).filter(file=>file.endsWith('.mjs')&&!file.endsWith('.test.mjs')), ...(await files(path.join(root,'styles'))).filter(file=>file.endsWith('.css'))].sort();
 const html=(await readFile(path.join(root,'index.html'),'utf8')).replace(/\r\n?/g,'\n');
 const contents=new Map(await Promise.all(sources.map(async file=>[file,(await readFile(file,'utf8')).replace(/\r\n?/g,'\n')])));
-const buildId=calculateBuildIdentity(html,[...contents].map(([file,text])=>[path.relative(root,file),text]));
-const assetPath=file=>'assets/'+path.relative(root,file).replaceAll(path.sep,'/').replace(/\.(mjs|css)$/,`.${buildId}.$1`);
-const paths=new Map(sources.map(file=>[file,assetPath(file)]));
+const images=new Map(await Promise.all((await rasterFiles()).map(async file=>{if((await lstat(file)).size>2*1024*1024)throw new Error('Raster asset exceeds 2 MiB');const bytes=await readFile(file);if(bytes.length>2*1024*1024)throw new Error('Raster asset exceeds 2 MiB');return[file,bytes];})));
+const buildId=calculateBuildIdentity(html,[...[...contents].map(([file,text])=>[path.relative(root,file),text]),...[...images].map(([file,bytes])=>[path.relative(root,file),sha(bytes)])]);
+const assetPath=file=>'assets/'+path.relative(root,file).replaceAll(path.sep,'/').replace(/\.(mjs|css|webp|png)$/i,`.${buildId}.$1`);
+const paths=new Map([...sources,...images.keys()].map(file=>[file,assetPath(file)]));
 function rewrite(file,text){
   const remap=specifier=>{
     if(!specifier.startsWith('.'))return specifier;
@@ -24,12 +26,13 @@ function rewrite(file,text){
     let relative=path.posix.relative(path.posix.dirname(paths.get(file)),paths.get(target));
     if(!relative.startsWith('.'))relative='./'+relative;return relative;
   };
-  if(file.endsWith('.mjs'))return text.replace(/(from\s+['"]|import\s*['"]|import\(\s*['"])(\.{1,2}\/[^'"]+)(['"])/g,(_all,a,b,c)=>a+remap(b)+c);
+  if(file.endsWith('.mjs'))return text.replace(/(from\s+['"]|import\s*['"]|import\(\s*['"])(\.{1,2}\/[^'"]+)(['"])/g,(_all,a,b,c)=>a+remap(b)+c).replace(/(new\s+URL\s*\(\s*['"])(\.{1,2}\/[^'"]+)(['"]\s*,\s*import\.meta\.url\s*\))/g,(_all,a,b,c)=>a+remap(b)+c);
   return text.replace(/(@import\s+['"])([^'"]+)(['"])/g,(_all,a,b,c)=>a+remap(b)+c);
 }
 await rm(stage,{recursive:true,force:true});await mkdir(stage,{recursive:true});
 const currentAssets=[];
 for(const[file,text]of contents){const rel=paths.get(file),target=path.join(stage,rel);owned(target);await mkdir(path.dirname(target),{recursive:true});await writeFile(target,rewrite(file,text));currentAssets.push(rel);}
+for(const[file,bytes]of images){const rel=paths.get(file),target=path.join(stage,rel);owned(target);await mkdir(path.dirname(target),{recursive:true});await writeFile(target,bytes);currentAssets.push(rel);}
 let output=html.replaceAll('__BUILD_ID__',buildId);
 for(const[original,built]of paths)output=output.replaceAll('./'+path.relative(root,original).replaceAll(path.sep,'/'),'./'+built);
 await writeFile(path.join(stage,'index.html'),output);

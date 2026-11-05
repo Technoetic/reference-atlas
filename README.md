@@ -9,6 +9,8 @@ referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
 ## Explore
 
 - A data-driven constellation, with one node per recorded source and actual plugin links.
+- Eight original conceptual cover artworks, including a dedicated A-MEM image,
+  turn the source cards and details into a visual research gallery.
 - Search, plugin/type facets, chronological/title ordering, and pinned citation details.
 - Local duplicate-reference checks for arXiv, DOI, GitHub repositories and names.
 - Downloadable [JSON](data/catalog.json) and [CSV](data/catalog.csv) registries.
@@ -72,6 +74,11 @@ The registry is not a live literature index. New versions and new uses may warra
 review after explicitly stating their difference from the prior reference.
 
 ## License
+
+Card artwork was generated with the built-in image generation tool. The
+[prompt set](docs/card-artwork-prompts.json) records the art direction and
+[media](media/) contains the optimized WebP files. These are editorial concept
+illustrations, not figures reproduced from the cited papers.
 
 MIT for this site's original code. Source titles and citation metadata identify
 their respective authors/projects; follow each upstream's license for its code or text.
