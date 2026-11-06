@@ -104,4 +104,9 @@ export const artworkIndex = Object.freeze({
   "name:memform": Object.freeze({key: "card-100", src: new URL("../../media/cards/card-100.webp", import.meta.url).href, label: "FORMING A MEMORY", word: "FORMING A MEMORY"}),
   "name:memgpt": Object.freeze({key: "card-101", src: new URL("../../media/cards/card-101.webp", import.meta.url).href, label: "TIERED AGENT MEMORY", word: "TIERED AGENT MEMORY"}),
   "name:nomiracl": Object.freeze({key: "card-102", src: new URL("../../media/cards/card-102.webp", import.meta.url).href, label: "MEMORY EVALUATION CONTEXT", word: "MEMORY EVALUATION CONTEXT"}),
+  "url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai": Object.freeze({key: "card-105", src: new URL("../../media/cards/card-105.webp", import.meta.url).href, label: "CRASH CONSISTENCY", word: "CRASH CONSISTENCY"}),
+  "github:madthanu/alice": Object.freeze({key: "card-106", src: new URL("../../media/cards/card-106.webp", import.meta.url).href, label: "CRASH STATE EXPLORATION", word: "CRASH STATE EXPLORATION"}),
+  "github:treeverse/dvc": Object.freeze({key: "card-107", src: new URL("../../media/cards/card-107.webp", import.meta.url).href, label: "VERSIONED DEPENDENCY GRAPH", word: "VERSIONED DEPENDENCY GRAPH"}),
+  "arxiv:2407.12784": Object.freeze({key: "card-108", src: new URL("../../media/cards/card-108.webp", import.meta.url).href, label: "POISONED MEMORY RETRIEVAL", word: "POISONED MEMORY RETRIEVAL"}),
+  "github:ai-secure/agentpoison": Object.freeze({key: "card-109", src: new URL("../../media/cards/card-109.webp", import.meta.url).href, label: "CONTROLLED MEMORY TESTBED", word: "CONTROLLED MEMORY TESTBED"}),
 });

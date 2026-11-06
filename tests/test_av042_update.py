@@ -64,6 +64,11 @@ class AV042Tests(unittest.TestCase):
         # apply too. New-reference idempotence is checked separately above;
         # truncated stored excerpts cannot reconstruct full new URL lines.
         registry['sources']=[s for s in registry['sources'] if s['id'] not in NEW_IDS]
+        # This fixture reconstructs the pre-v0.42.0 snapshot. Later artwork
+        # commissions for these new sources belong to the current snapshot,
+        # not to the historical citation remapping exercised here.
+        art['assets']=[a for a in art['assets'] if a['sourceId'] not in NEW_IDS]
+        art['count']=len(art['assets'])
         # Synthetic exact-blob reader built from committed excerpts; no fake public
         # registry is written and no local unpublished plugin tree is required.
         texts={file:[] for file in FILES};prior=[]

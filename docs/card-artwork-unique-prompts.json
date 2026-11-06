@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every catalog source has a separately generated conceptual image; no topic-image reuse. Unresolved research names depict only their recorded context.",
-  "count": 104,
+  "count": 109,
   "assets": [
     {
       "index": 1,
@@ -2803,6 +2803,145 @@
         "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.41.0.md#L34",
         "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/semantic-preflight.md#L179",
         "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L47"
+      ]
+    },
+    {
+      "index": 105,
+      "sourceId": "url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai",
+      "title": "All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications",
+      "kind": "paper",
+      "label": "CRASH CONSISTENCY",
+      "factualConcept": "Application writes can persist differently across file systems after a crash; durability and ordering must be reasoned about rather than assumed.",
+      "prompt": "Use case: stylized-concept. Asset type: a dedicated landscape 3:2 editorial artwork for the research card All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications (OSDI 2014). Create a premium photorealistic 3D conceptual sculpture of three separate smoked-glass storage towers on a dark precision-machined base. A single flowing ribbon of lavender glass data tiles has been interrupted abruptly in midair, with one glowing amber fracture at the interruption. The three towers preserve visibly different subsets of the tiles: one retains a complete lower layer, one has a missing middle tile, another contains a partially inserted tile. In the foreground a small lime-edged physical journal strip records the intended sequence as ordered neutral geometric tokens. Make the contrast between one intended write sequence and several persisted states immediately readable as a thumbnail. This is conceptual cover art about crash consistency, not a measured scientific figure and not a claim of atomic recovery. Oblique architectural macro viewpoint, sophisticated dark olive #10130f seamless studio background, brushed graphite, smoked glass, lavender #c3b0f6, lime #d3fc70, restrained amber at the interruption. Dramatic soft rim light, tactile materials, central subject inside central 80 percent. No text, letters, numbers, logos, interface screens, people, watermark or collage.",
+      "output": "media/cards/card-105.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L45"
+      ],
+      "sha256": "0ee84ed566baaff77480fdbd5fb496206881769a256daa26342d8be80dc7dd8f",
+      "bytes": 55800,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L45"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L45"
+      ]
+    },
+    {
+      "index": 106,
+      "sourceId": "github:madthanu/alice",
+      "title": "ALICE",
+      "kind": "project",
+      "label": "CRASH STATE EXPLORATION",
+      "factualConcept": "ALICE examines application persistence behavior by exploring and checking possible storage crash states; this artwork depicts a testing tool, not the paper's file-system comparison.",
+      "prompt": "Use case: stylized-concept. Asset type: a unique landscape 3:2 research-project card cover for ALICE, the application-level crash-consistency testing tool. Render an exquisite miniature forensic test instrument: a circular brushed-metal observation stage supports five distinct tiny transparent storage-state trays arranged like a fan. Each tray holds the same small configuration of glass blocks, but with a different block missing or displaced, representing possible crash states. A large suspended precision optical inspection ring casts a lavender cone onto one tray, while thin lime tracks connect the trays back to a small central application model. One inconsistent tray has a restrained amber boundary. The focal shape is the sculptural inspection ring and fan of alternate states, clearly distinct from a row of storage towers or generic server art. No Alice-in-Wonderland imagery; ALICE is a software research tool. Symbolic editorial artwork, not reproduced experiment results. High-end macro product photography, near-black olive #10130f background, graphite metal, smoked glass, lavender #c3b0f6 and lime #d3fc70 luminous accents, subtle amber only for the inconsistent state. All key forms within central 80 percent, strong card-thumbnail silhouette. No text, lettering, digits, logos, people, UI screenshots, watermark or collage.",
+      "output": "media/cards/card-106.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L46",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/recoverable-bundles.md#L62"
+      ],
+      "sha256": "c68b8174a0fbced26777ac8fec1dd3446b72d7f9cd3bce7c960e1a2ef2dfc4d6",
+      "bytes": 78956,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/madthanu/alice/tree/6afda210b96baa2b0b277505d72742420ba89b68",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L46",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/recoverable-bundles.md#L62"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L46",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/recoverable-bundles.md#L62"
+      ]
+    },
+    {
+      "index": 107,
+      "sourceId": "github:treeverse/dvc",
+      "title": "DVC",
+      "kind": "project",
+      "label": "VERSIONED DEPENDENCY GRAPH",
+      "factualConcept": "DVC tracks versioned data and declared pipeline dependencies. The plugin references declared dependency traversal for review planning, without implementing DVC's execution or cache.",
+      "prompt": "Use case: stylized-concept. Asset type: a separately generated landscape 3:2 editorial project card artwork for DVC, data version control and declared pipeline dependencies. Build a striking physical dependency-graph sculpture: a broad transparent glass data cartridge at the upper left is connected by precise luminous lime tracks to two intermediate square graphite platforms, which each feed smaller lavender crystal result platforms at different depths. One revised layer of the original data cartridge is lifted slightly above its earlier layer; an amber pulse travels only along the connected downstream paths, leaving one separate unconnected platform unlit. A restrained silver revision fork in the base visually distinguishes two versions. Communicate versioned data and dependency propagation rather than a generic database cylinder or a continuous neural network. Conceptual cover art, not a screenshot, benchmark or promise of automatic computation in Agentic Vault. Elegant overhead three-quarter perspective with balanced negative space, near-black olive #10130f studio backdrop, brushed metal, optical smoked glass, lavender #c3b0f6 and lime #d3fc70, tiny amber change signal. Strong central composition readable at small card size, all essential geometry within central 80 percent. No text, letters, numbers, brand logos, people, watermark, literal UI or collage.",
+      "output": "media/cards/card-107.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/review-planning.md#L35"
+      ],
+      "sha256": "be853a1eacb695fed935a7689c86d47efbd0d920bd5e4fd83da961aec5824342",
+      "bytes": 42194,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/treeverse/dvc/tree/1c06f9860af61d3947adafac99d8206f713dbfdd",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/review-planning.md#L35"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/review-planning.md#L35"
+      ]
+    },
+    {
+      "index": 108,
+      "sourceId": "arxiv:2407.12784",
+      "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "kind": "paper",
+      "label": "POISONED MEMORY RETRIEVAL",
+      "factualConcept": "The AgentPoison paper studies poisoning persistent memory or knowledge bases so retrieved material steers an agent toward undesirable actions; no attack-rate claim or algorithm reproduction is implied.",
+      "prompt": "Use case: stylized-concept. Asset type: unique landscape 3:2 conceptual cover for the AgentPoison research paper, Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases. Visualize poisoned retrieval as an elegant sculptural memory archive: a curved upright shelf of pristine translucent lavender memory slats has one distinctly amber-coral slat slipped subtly into its middle. A narrow luminous lime retrieval beam selects that amber slat and then bends toward an off-course amber geometric action target, while an untouched neutral target remains nearby. The visually important event is one planted memory redirecting the retrieval-to-action route. Make it sophisticated and intelligible, not sensational; no hacker figures, skulls, weapons, poison bottle or padlock cliches. This is symbolic threat-model artwork, not an illustration of measured success rates or model training. Tight cinematic three-quarter view of the curved archive, near-black olive #10130f background, optical smoked glass, brushed graphite, lavender #c3b0f6, lime #d3fc70, isolated warm amber-coral contamination. Luxurious editorial macro lighting, essential forms in central 80 percent, readable on a small card. No text, lettering, digits, logos, charts, UI, watermark, people or collage.",
+      "output": "media/cards/card-108.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L53"
+      ],
+      "sha256": "e67433ed63fa4b4cfaf40d234a21afe847b51a35b1bb4bbfbecb7ef99f86d719",
+      "bytes": 45222,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://arxiv.org/abs/2407.12784",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L53"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L53"
+      ]
+    },
+    {
+      "index": 109,
+      "sourceId": "github:ai-secure/agentpoison",
+      "title": "AgentPoison",
+      "kind": "project",
+      "label": "CONTROLLED MEMORY TESTBED",
+      "factualConcept": "The AgentPoison repository is a research implementation reference for adversarial memory/knowledge experiments. The plugin uses only a bounded synthetic conceptual application, not the upstream algorithm or reproduced results.",
+      "prompt": "Use case: stylized-concept. Asset type: a separately generated landscape 3:2 project card artwork for the AI-secure AgentPoison research implementation. Depict a controlled memory-security experimentation workbench rather than the paper's curved archive: a beautiful horizontal precision-machined instrument holds two rectangular removable transparent memory cartridges in parallel test slots. The first cartridge contains an orderly row of lavender memory tiles; a slender robotic laboratory probe introduces a single amber-coral tile into the second cartridge. Two separate fine lime conduits lead from the cartridges to small physical geometric action-output tokens behind a transparent observation shield, making the paired baseline and contaminated test routes visually distinct. Include a subtle rotary parameter dial with no markings, conveying a configurable research testbed. This is conceptual cover art, not a screenshot, claim of benchmark reproduction, demonstrated defense, or verified model success. Wide low oblique camera, near-black olive #10130f seamless studio background, brushed graphite, clear and smoked glass, lavender #c3b0f6 and lime #d3fc70, restrained amber-coral on the introduced tile. Strong horizontal instrument silhouette, focal components central 80 percent, luxurious product-render lighting and negative space. No text, letters, numbers, logos, people, charts, watermark, collage, skulls or weapons.",
+      "output": "media/cards/card-109.webp",
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L54",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/generated-memory-lifecycle.md#L33"
+      ],
+      "sha256": "fca492c94a8d728358c1826b7aca859836d166c9acc2c017d4d35aacc538cf44",
+      "bytes": 41040,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/AI-secure/AgentPoison/tree/7b02e28f5e477052bd16c778fef7c1f78f7c9d7c",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L54",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/generated-memory-lifecycle.md#L33"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/releases/v0.42.0.md#L54",
+        "https://github.com/Technoetic/agentic-vault/blob/10a4db1d07d4a897b9661549a5e95fa893c9d974/docs/generated-memory-lifecycle.md#L33"
       ]
     }
   ],

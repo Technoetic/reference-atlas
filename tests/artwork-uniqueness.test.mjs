@@ -6,7 +6,7 @@ import {sourceArtwork,artworkCover} from '../src/screens/art.mjs';
 
 const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
 const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-prompts.json',import.meta.url),'utf8'));
-const uncommissioned=new Set([
+const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
 ]);
@@ -31,23 +31,16 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('commissioned sources have dedicated images; explicit uncommissioned sources render text fallback',()=>{
+test('all current catalog sources have separately commissioned images',()=>{
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(art.src)images.push(art.src);
-    else{
-      assert.ok(uncommissioned.has(source.id),'Unexpected missing commissioned artwork');
-      for(const detail of [false,true]){
-        const html=artworkCover(source,{detail});
-        assert.ok(html.includes('is-art-fallback'));
-        assert.ok(html.includes('REFERENCE'));
-        assert.ok(!html.includes('<img'));
-      }
-    }
+    assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
+    images.push(art.src);
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
+  assert.equal(images.length,catalog.sources.length);
 });
 
 test('dedicated card images have different actual file contents',async()=>{
@@ -61,16 +54,21 @@ test('dedicated card images have different actual file contents',async()=>{
   assert.equal(new Set(hashes).size,illustrated.length,'A renamed copy of another image is still shared artwork');
 });
 
-test('each of the five uncommissioned canonical references renders actual card and detail fallback',()=>{
-  for(const id of uncommissioned){
-    assert.equal(sourceArtwork({id}).src,null);
+test('the five newly commissioned references render their own card and detail images',()=>{
+  const urls=new Set();
+  for(const id of newlyCommissioned){
+    const art=sourceArtwork({id});
+    assert.ok(art.src);
+    urls.add(art.src);
     for(const detail of [false,true]){
-      const html=artworkCover({id,title:'Uncommissioned <reference>'},{detail});
+      const html=artworkCover({id,title:'Commissioned <reference>'},{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
-      assert.ok(html.includes('is-art-fallback'));
-      assert.ok(!html.includes('<img'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(art.src));
     }
   }
+  assert.equal(urls.size,newlyCommissioned.size);
 });
 
 test('an unillustrated future source never silently borrows another source image',()=>{
