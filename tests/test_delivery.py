@@ -5,6 +5,13 @@ import unittest
 from urllib.parse import urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
+# AV paper, project+format, article, catalog sources, catalog citations.
+EXPECTED_COVERAGE={
+    ('v0.40.1','v0.19.1'):(42,33,0,102,165),
+    ('v0.41.0','v0.19.1'):(42,34,1,104,169),
+    ('v0.41.0','v0.20.0'):(42,34,1,104,173),
+    ('v0.42.0','v0.20.0'):(44,37,1,109,181),
+}
 
 class DeliveryTests(unittest.TestCase):
     def test_workflow_actions_are_full_immutable_commits(self):
@@ -16,19 +23,25 @@ class DeliveryTests(unittest.TestCase):
     def test_registry_counts_have_not_lost_pinned_plugin_coverage(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
         self.assertEqual(catalog['counts']['total'],len(catalog['sources']))
-        self.assertEqual(catalog['countsByPlugin']['agentic-vault']['paper'],42)
         versions=tuple(catalog['snapshots'][plugin]['version'] for plugin in ('agentic-vault','semantic-crosscheck'))
-        expected={('v0.40.1','v0.19.1'):(33,0,102,165),
-                  ('v0.41.0','v0.19.1'):(34,1,104,169),
-                  ('v0.41.0','v0.20.0'):(34,1,104,173)}[versions]
-        self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[0])
-        self.assertEqual(catalog['countsByPlugin']['agentic-vault'].get('article',0),expected[1])
-        self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[2:])
+        expected=EXPECTED_COVERAGE[versions]
+        self.assertEqual(catalog['countsByPlugin']['agentic-vault']['paper'],expected[0])
+        self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[1])
+        self.assertEqual(catalog['countsByPlugin']['agentic-vault'].get('article',0),expected[2])
+        self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[3:])
         self.assertEqual(catalog['countsByPlugin']['semantic-crosscheck']['paper'],13)
         sxc=catalog['countsByPlugin']['semantic-crosscheck']
         self.assertEqual((sxc['total'],sxc['citations']), (28,45) if versions[1]=='v0.20.0' else (26,41))
         self.assertEqual(catalog['counts']['shared'],5 if versions[1]=='v0.20.0' else 3)
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
+
+    def test_v042_coverage_adds_two_papers_three_projects_and_eight_citations_without_rewriting_history(self):
+        self.assertEqual(EXPECTED_COVERAGE[('v0.40.1','v0.19.1')],(42,33,0,102,165))
+        self.assertEqual(EXPECTED_COVERAGE[('v0.41.0','v0.19.1')],(42,34,1,104,169))
+        prior=EXPECTED_COVERAGE[('v0.41.0','v0.20.0')]
+        self.assertEqual(prior,(42,34,1,104,173))
+        revised=EXPECTED_COVERAGE[('v0.42.0','v0.20.0')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(2,3,0,5,8))
 
     def test_every_source_has_public_commit_bound_evidence(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
