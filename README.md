@@ -80,6 +80,17 @@ unique matches, and records the article separately from the Auto Ontology projec
 These are earlier research references reused for a new application, not claims
 of newly discovered research, NVIDIA code adoption or reproduced performance.
 
+For the semantic-crosscheck v0.20.0 tag snapshot, use
+`scripts/update_sxc_preflight_references.py --plugin-root <plugin-checkout> --commit <public-sha> --tag v0.20.0`.
+This separate dry-run helper repins every prior SXC citation against exact Git
+blobs and adds SXC cited uses to the two existing NVIDIA sources. Add `--apply`
+only after reviewing the dry run. It preserves all source identities, prior
+agentic-vault uses, artwork bytes, original prompts and generation-time evidence;
+only current citation provenance advances. The newer Auto Ontology pin records
+packaging/version changes, not a newly established semantic capability.
+Public source/tag availability and formal release status are separate checks;
+verify both before publishing the prepared Atlas snapshot through GitHub Pages.
+
 The registry is not a live literature index. New versions and new uses may warrant
 review after explicitly stating their difference from the prior reference.
 

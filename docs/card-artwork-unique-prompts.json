@@ -21,9 +21,9 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L207",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/okf.md#L44",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.15.0.md#L31",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L195",
@@ -33,9 +33,9 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L207",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/okf.md#L44",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.15.0.md#L31",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/okf.md#L44",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.15.0.md#L31",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
       ]
     },
     {
@@ -54,13 +54,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L41"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L41"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L41"
       ]
     },
     {
@@ -175,9 +175,9 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/design.md#L686",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/CHANGELOG.md#L525",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.4.0.md#L30"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
@@ -185,9 +185,9 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L680",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L503",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.4.0.md#L30"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/design.md#L686",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/CHANGELOG.md#L525",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.4.0.md#L30"
       ]
     },
     {
@@ -256,16 +256,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/design.md#L990",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L305"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/design.md#L984",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L305"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/design.md#L990",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L305"
       ]
     },
     {
@@ -365,16 +365,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L37",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/boundary-schema.md#L108"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/boundary-schema.md#L108"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L37",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/boundary-schema.md#L108"
       ]
     },
     {
@@ -418,13 +418,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L142"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L142"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L142"
       ]
     },
     {
@@ -936,13 +936,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/tlp.md#L47"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/tlp.md#L47"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/tlp.md#L47"
       ]
     },
     {
@@ -961,16 +961,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L20",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L185"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L20",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L185"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L20",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L185"
       ]
     },
     {
@@ -1076,13 +1076,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L19"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L19"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L19"
       ]
     },
     {
@@ -1101,16 +1101,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L73",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L153"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L57",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L153"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L73",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L153"
       ]
     },
     {
@@ -1129,13 +1129,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L21"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L21"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L21"
       ]
     },
     {
@@ -1241,13 +1241,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L27"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L27"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L27"
       ]
     },
     {
@@ -1419,10 +1419,10 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L30",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L32",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/CHANGELOG.md#L244",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.14.0.md#L13"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
@@ -1431,10 +1431,10 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L30",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L32",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/CHANGELOG.md#L222",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.14.0.md#L13"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L30",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L32",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/CHANGELOG.md#L244",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.14.0.md#L13"
       ]
     },
     {
@@ -1453,16 +1453,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L95",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.3.0.md#L111"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L95",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.3.0.md#L111"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L95",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.3.0.md#L111"
       ]
     },
     {
@@ -1481,16 +1481,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L71",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L152"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L152"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L71",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L152"
       ]
     },
     {
@@ -1828,7 +1828,7 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1093",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L255"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/docs/memory-evaluation.md#L1093",
@@ -1836,7 +1836,7 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/memory-evaluation.md#L1093",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/skills/semantic-crosscheck/references/counterexamples.md#L255"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/skills/semantic-crosscheck/references/counterexamples.md#L255"
       ]
     },
     {
@@ -1912,7 +1912,7 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L208",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/c485fe1f848c47e96bc3542ccc52b831670e1ed4/README.md#L196",
@@ -1920,7 +1920,7 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/README.md#L208",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3"
       ]
     },
     {
@@ -1964,13 +1964,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L143"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L143"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L143"
       ]
     },
     {
@@ -2163,13 +2163,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L144"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/owl-explanations.md#L144"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/owl-explanations.md#L144"
       ]
     },
     {
@@ -2188,13 +2188,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L71"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L55"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L71"
       ]
     },
     {
@@ -2213,13 +2213,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.19.1.md#L121"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.19.1.md#L121"
       ]
     },
     {
@@ -2338,16 +2338,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L25",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/mutation-coverage.md#L54"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/mutation-coverage.md#L54"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L25",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/mutation-coverage.md#L54"
       ]
     },
     {
@@ -2366,13 +2366,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.19.1.md#L121"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/releases/v0.19.1.md#L121"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/releases/v0.19.1.md#L121"
       ]
     },
     {
@@ -2497,16 +2497,16 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L160",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/shacl-corpus.md#L104"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L144",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/shacl-corpus.md#L104"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L160",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/shacl-corpus.md#L104"
       ]
     },
     {
@@ -2606,13 +2606,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22"
       ]
     },
     {
@@ -2631,13 +2631,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18"
       ]
     },
     {
@@ -2754,7 +2754,9 @@
       "output": "media/cards/card-103.webp",
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L181",
-        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33"
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/semantic-preflight.md#L178",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L46"
       ],
       "sha256": "5e5a4008792d7c94558bcc305fbac2a67c8bc187b0e170048e18b7c331d0bb14",
       "bytes": 63054,
@@ -2767,7 +2769,9 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L181",
-        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33"
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L33",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/semantic-preflight.md#L178",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L46"
       ]
     },
     {
@@ -2781,7 +2785,9 @@
       "output": "media/cards/card-104.webp",
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L182",
-        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34"
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/semantic-preflight.md#L179",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L47"
       ],
       "sha256": "11577615128bd607c62d2160f72603a1365e45e041a5694c909a8a91be7505bd",
       "bytes": 66460,
@@ -2794,7 +2800,9 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/ontology-contracts.md#L182",
-        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34"
+        "https://github.com/Technoetic/agentic-vault/blob/913b02f9ff08bac6adf4d924e491b606b5283c57/docs/releases/v0.41.0.md#L34",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/docs/semantic-preflight.md#L179",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/d95691c8d120bca66073aa8bef623d19ef3e23e9/THIRD_PARTY.md#L47"
       ]
     }
   ],

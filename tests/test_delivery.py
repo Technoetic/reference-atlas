@@ -17,12 +17,17 @@ class DeliveryTests(unittest.TestCase):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
         self.assertEqual(catalog['counts']['total'],len(catalog['sources']))
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['paper'],42)
-        version=catalog['snapshots']['agentic-vault']['version']
-        expected={'v0.40.1':(33,0,102,165),'v0.41.0':(34,1,104,169)}[version]
+        versions=tuple(catalog['snapshots'][plugin]['version'] for plugin in ('agentic-vault','semantic-crosscheck'))
+        expected={('v0.40.1','v0.19.1'):(33,0,102,165),
+                  ('v0.41.0','v0.19.1'):(34,1,104,169),
+                  ('v0.41.0','v0.20.0'):(34,1,104,173)}[versions]
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[0])
         self.assertEqual(catalog['countsByPlugin']['agentic-vault'].get('article',0),expected[1])
         self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[2:])
         self.assertEqual(catalog['countsByPlugin']['semantic-crosscheck']['paper'],13)
+        sxc=catalog['countsByPlugin']['semantic-crosscheck']
+        self.assertEqual((sxc['total'],sxc['citations']), (28,45) if versions[1]=='v0.20.0' else (26,41))
+        self.assertEqual(catalog['counts']['shared'],5 if versions[1]=='v0.20.0' else 3)
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
     def test_every_source_has_public_commit_bound_evidence(self):
