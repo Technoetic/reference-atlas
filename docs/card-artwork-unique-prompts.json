@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 109,
+  "count": 131,
   "assets": [
     {
       "index": 1,
@@ -2958,6 +2958,629 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.42.0.md#L54",
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/generated-memory-lifecycle.md#L33"
+      ]
+    },
+    {
+      "index": 110,
+      "sourceId": "url:https://code.claude.com/docs/en/hooks",
+      "title": "Claude Code hooks reference",
+      "kind": "article",
+      "label": "NEXT DECISION DELIVERY",
+      "factualConcept": "Hooks can deliver additionalContext only after a tool call has already been issued, so the hint informs the next decision rather than modifying that call.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Claude Code hooks reference. A horizontal two-station mechanical call conveyor. At the left station, a transparent sealed capsule has already passed a narrow emission gate and continues on its committed track. A small lavender cue token arrives too late for that capsule, travels on a separate elevated lime rail, and docks into an open decision cradle farther ahead. Clearly separate the completed call from the future decision, with visible one-way timing and no rewind arrow. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-110.webp",
+      "sha256": "1511db0852e276d6a4d1fea4644acb933c85037907e5a559b002735efa6e9e6e",
+      "bytes": 33074,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L396",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L134",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L318"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L396",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L134",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L318"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L396",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L134",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L318"
+      ]
+    },
+    {
+      "index": 111,
+      "sourceId": "url:https://code.claude.com/docs/en/plugins/cli-reference",
+      "title": "Claude Code plugin CLI reference",
+      "kind": "article",
+      "label": "SCOPED CONFIGURATION LAYERS",
+      "factualConcept": "The recorded use reports each configuration value with its scope and compares these with the host merged enabled state.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Claude Code plugin CLI reference. Build a vertical physical configuration instrument from three nested smoked-glass trays at distinct heights, each holding differently shaped lavender and lime setting pegs. Their separate scope boundaries remain visible. A transparent prism beside the trays receives a thin line from each level and produces one merged physical toggle specimen, positioned alongside rather than replacing the original pegs. Show scoped inputs and a comparison value without implying that a hidden configuration layer has been changed. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-111.webp",
+      "sha256": "e4ee5e4d87c629e091d7debf420036611a120a710417ef0a14d55e8fe56b04a3",
+      "bytes": 40646,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L400",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/reliability.md#L333"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L400",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/reliability.md#L333"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L400",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/reliability.md#L333"
+      ]
+    },
+    {
+      "index": 112,
+      "sourceId": "url:https://code.claude.com/docs/en/worktrees",
+      "title": "Claude Code worktrees documentation",
+      "kind": "article",
+      "label": "SHARED ROOT ISOLATED WORK",
+      "factualConcept": "The worktree documentation supplies the default location and structural facts used by the worktree guard.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Claude Code worktrees documentation. Depict a precision-machined central repository hub with a clearly shared silver core and three outward radial work platforms. Each platform holds its own small lavender construction, separated by low transparent glass partitions, while lime rails connect all three to the same central root. One platform is foregrounded inside a transparent boundary frame to suggest checking the actual working location. Make the branching workspace geometry the subject, avoiding folders, terminal windows or a generic tree illustration. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-112.webp",
+      "sha256": "f418ad40925245cf33f43a8b48f5d9d80153ef75c5a5ca958364d4e2f62bccb3",
+      "bytes": 32614,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L376",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L982"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L376",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L982"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L376",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L982"
+      ]
+    },
+    {
+      "index": 113,
+      "sourceId": "url:https://factory.com/news/evaluating-compression",
+      "title": "Evaluating Context Compression for AI Agents",
+      "kind": "article",
+      "label": "FOUR CONTINUATION PROBES",
+      "factualConcept": "A vendor article informs recall, artifact, continuation and decision probe kinds for an offline handoff-fold evaluator; its model-answer scoring is not reproduced.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Evaluating Context Compression for AI Agents. An elegant laboratory carousel holds a compact translucent context core at its center and four materially different probe stations around it: a small retrieved memory bead, a tiny preserved geometric artifact, a partly completed path, and a balanced fork-shaped decision object. Four narrow lavender beams inspect these objects after they emerge from a lime compression aperture. Emphasize different things an evaluation can inspect, with no scores, rising bars, winner badge or claim that the compressed core passed. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-113.webp",
+      "sha256": "cd0c75b3ddc9f2705525bc1fb5b165994a2da1c94c2a7208821077971be3771d",
+      "bytes": 50780,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L342",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L119"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L342",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L119"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L342",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L119"
+      ]
+    },
+    {
+      "index": 114,
+      "sourceId": "arxiv:2610.31778",
+      "title": "Benchmarks Are Surprisingly Compaction-Friendly",
+      "kind": "paper",
+      "label": "SINGULAR CONSTRAINT LOSS",
+      "factualConcept": "The abstract notes that constraints found nowhere else can be lost under compaction; it does not establish that text reinjection improves outcomes.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Benchmarks Are Surprisingly Compaction-Friendly. Show an asymmetric translucent mosaic passing through a narrow mechanical compression frame. Several ordinary lavender shapes appear redundantly in the mosaic and survive in a smaller compressed arrangement, but one unique amber-edged boundary piece has no duplicate and falls into a shallow gap beside the exit. Its matching empty socket is clearly visible in the smaller arrangement. Focus on loss of the single nonredundant constraint, without rescue hands, reinjection loops or a triumphant complete result. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-114.webp",
+      "sha256": "d1fe620d2d931cc51e5a17ebdf2853708195311e17db837e90d0d108f3461ec9",
+      "bytes": 53388,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L370",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L850"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L370",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L850"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L370",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L850"
+      ]
+    },
+    {
+      "index": 115,
+      "sourceId": "arxiv:2607.20972",
+      "title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+      "kind": "paper",
+      "label": "CUE AT POINT OF ACTION",
+      "factualConcept": "A cue-anchored working-memory paper informs path and command cues; the current use separates hint and guard, budgets each call and handles quoted text.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents. Construct a slender physical dispatch mechanism: an extensive lavender memory archive sits well behind the action point, while one tiny matching geometric cue is selected and delivered along a narrow lime bridge to the exact junction where a tool-shaped capsule will choose a route. A small rigid transparent guard wall stands beside a softer floating cue halo, visibly different functions. Keep the delivery channel deliberately narrow and the rest of the archive distant, so timely bounded delivery dominates storage volume. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-115.webp",
+      "sha256": "d27751417d7941d1eebb08353326e8dfd1c8d58e38d9f067d57119fcfdf3b3ce",
+      "bytes": 36112,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L410",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L136"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L410",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L136"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L410",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L136"
+      ]
+    },
+    {
+      "index": 116,
+      "sourceId": "arxiv:2607.19865",
+      "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+      "kind": "paper",
+      "label": "DOCUMENT MUTATION CHECK",
+      "factualConcept": "DocOps informs mutation-based verifier evaluation; its task-specific figures and human audit are not reproduced here.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations. A sculptural row of translucent glass document slabs rests on an editorial inspection bench. One slab is lifted from the row and a single lavender geometric inset is intentionally displaced, creating a controlled mutation. Two fine lime scanning arms compare that slab against an untouched reference slab on a separate mount; a small mismatched fragment remains visible between them. The scene should communicate deliberate fault injection to examine a checker, without printed pages, checkmarks, benchmark scores or a claim that every fault was detected. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-116.webp",
+      "sha256": "1f8575d5c18b21c467dd0c0bc8576bfb610ca0d0b559c3809f64cb356f972378",
+      "bytes": 39232,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L357",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L112"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L357",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L112"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L357",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L112"
+      ]
+    },
+    {
+      "index": 117,
+      "sourceId": "arxiv:2606.22528",
+      "title": "Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents",
+      "kind": "paper",
+      "label": "ERODING SAFETY BOUNDARY",
+      "factualConcept": "Previously read Governance Decay motivates a constraint probe for detecting safety constraints lost during context compaction.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents. Create a descending sequence of four suspended glass context chambers, each smaller than the previous one, arranged diagonally into depth. The first chamber contains a lavender information core enclosed by a continuous thin lime boundary cage. Across subsequent chambers the core remains visually rich while sections of the enclosing cage become progressively thinner, then leave a conspicuous open gap. Place the missing boundary segment nearby as a faint detached fragment. Convey unnoticed constraint erosion, not guaranteed prevention or successful restoration. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-117.webp",
+      "sha256": "fb37da860389068c58f39bb0c5687a98b8340d5bfc46aeb5af372d212d307e98",
+      "bytes": 55870,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L404"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L404"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L404"
+      ]
+    },
+    {
+      "index": 118,
+      "sourceId": "url:https://papers.voltropy.com/LCM",
+      "title": "LCM: Lossless Context Management",
+      "kind": "paper",
+      "label": "DERIVED SUMMARY CACHE",
+      "factualConcept": "LCM informs summaries as derived cache, a no-op threshold and deterministic fallback; the original LCM source remains untouched.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for LCM: Lossless Context Management. Depict a broad intact transparent source spool resting safely on a lower platform, with a narrow optical extraction beam producing a much smaller detachable lavender summary capsule above it. The source spool remains visibly continuous and uncut. A calibrated but unmarked lime threshold gate sits before the extraction path, with an idle bypass lane and a simple mechanical fallback chute. The composition should make original material and replaceable derived summary unmistakably different objects, without implying deletion or an unlimited compression ratio. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-118.webp",
+      "sha256": "20076e19730ad0d166a6ede7c0654564773dcce63c33d13ce2de70aa7e70f33a",
+      "bytes": 46784,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L338",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L338",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L338",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ]
+    },
+    {
+      "index": 119,
+      "sourceId": "arxiv:2610.30571",
+      "title": "Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix",
+      "kind": "paper",
+      "label": "OBSERVED FACTS OVER STALE MAP",
+      "factualConcept": "The paper informs following observed behavior and reporting each inconsistency; extension to factual statements in rule files is the plugin application.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix. Place an old translucent lavender blueprint-like geometric plate upright behind a current graphite mechanical assembly. The plate depicts a route that is visibly offset from the assembly actual physical path, with no writing. A precise lime observation beam traces the real assembly and highlights two individual mismatch points using small floating amber brackets. The stale plate remains visible as evidence rather than being obeyed or destroyed. Emphasize concrete observation and separately reported inconsistencies, avoiding an all-purpose truth icon or automated repair. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-119.webp",
+      "sha256": "cc798dcecb49956568b3f6225847753203e4c51fb2596d6f1bad414dc334c89b",
+      "bytes": 43836,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L365",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L862"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L365",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L862"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L365",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L862"
+      ]
+    },
+    {
+      "index": 120,
+      "sourceId": "github:gastownhall/beads",
+      "title": "Beads",
+      "kind": "project",
+      "label": "ANALYZE SUMMARIZE APPLY",
+      "factualConcept": "Beads v1.3.4 contributes the analyze, host-summary and apply sequence; Beads discards its original while the plugin preserves every byte.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Beads. An oblique three-stage compaction workbench processes a chain of discrete lavender beads. First, a magnifying glass-like optical ring inspects the chain; second, a deliberately open central cradle holds a smaller manually arranged summary cluster; third, a mechanical press applies that cluster to a compact output rail. A separate shallow spent-material tray beyond the final stage contains displaced original beads, making upstream replacement visible. Keep the three steps physically distinct; do not depict byte-preserving archival storage or copy the LCM spool composition. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-120.webp",
+      "sha256": "8c15db54792ca91efadd68946d520267e94d0f09df3fe3b8c573c353dc701a80",
+      "bytes": 47196,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L388",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L118"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L388",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L118"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L388",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L118"
+      ]
+    },
+    {
+      "index": 121,
+      "sourceId": "github:phenomnomnominal/betterer",
+      "title": "Betterer",
+      "kind": "project",
+      "label": "REGRESSION ONLY RATCHET",
+      "factualConcept": "Betterer informs a check that fails only on deterioration; this use compares against HEAD and does not maintain an upstream result file.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Betterer. Design a striking horizontal ratchet instrument with a fixed silver baseline collar and a graphite measurement carriage. Lavender blocks on a stepped track show an existing imperfect state; the mechanism permits a lime pointer to move toward a smaller block but a physical pawl catches any movement toward a larger new block. The baseline remains stationary, making relative deterioration rather than absolute perfection the subject. No numerical scale, printed metric, perfect clean slate or celebration; the retained baseline may still contain visible irregularities. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-121.webp",
+      "sha256": "ef48f21d1b7b53f711c8b1ba08fd7d4d8c9ba97d4d23c69f5e523649cadeaf9d",
+      "bytes": 31396,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L351",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L93"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L351",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L93"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L351",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L93"
+      ]
+    },
+    {
+      "index": 122,
+      "sourceId": "github:logpai/drain3",
+      "title": "Drain3",
+      "kind": "project",
+      "label": "MASKING LOSES IDENTITY",
+      "factualConcept": "Drain3 masking was examined and rejected because it would remove entry numbers that carry the strongest signal; nothing was adopted.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Drain3. A split laboratory comparison specimen shows a row of distinct lavender identity tokens, each identifiable by a different small geometric notch. A detached smoked-glass masking stencil at one side would cover precisely those notches and leave the tokens looking identical; beneath it, a few obscured token silhouettes demonstrate the lost signal. Keep the masking device physically unplugged from the main lime path and parked on a separate rejected-option tray. Show why masking is unsuitable here, never successful integration, adoption, or a functioning production pipeline. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-122.webp",
+      "sha256": "af7bd595758b7cdadec335f029bbc3adbca35a2db72b0983fb365c8f5c0e3754",
+      "bytes": 27054,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L354",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/lesson-recurrence.md#L91",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L142"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L354",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/lesson-recurrence.md#L91",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L142"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L354",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/lesson-recurrence.md#L91",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L142"
+      ]
+    },
+    {
+      "index": 123,
+      "sourceId": "github:joeblackwaslike/lessons-learned",
+      "title": "lessons-learned",
+      "kind": "project",
+      "label": "BOUNDED HINT AND GUARD",
+      "factualConcept": "The lessons-learned project informs hint/guard separation, per-call budget and quoted-text handling; upstream budgets and regular-expression patterns differ.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for lessons-learned. Build a compact lesson-delivery desk with small lavender lesson tiles stored in a shallow drawer. A narrow mechanical budget aperture admits only a few tiles toward a fork: one branch ends in a floating transparent suggestion vane, the other in a solid graphite stop plate. A tiny tile enclosed inside an additional clear quotation capsule remains on a separate neutral shelf instead of activating the stop plate. Emphasize three distinct physical properties: bounded delivery, advisory versus blocking paths, and quoted material kept inert. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-123.webp",
+      "sha256": "e2306930616086e30d21e6509b0a5331cfc5e1b14e2d941021f37a392b233976",
+      "bytes": 37212,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L411",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L138"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L411",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L138"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L411",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/lesson-cues/guide.md#L138"
+      ]
+    },
+    {
+      "index": 124,
+      "sourceId": "github:martian-engineering/lossless-claw",
+      "title": "lossless-claw",
+      "kind": "project",
+      "label": "REBUILDABLE MEMORY LAYERS",
+      "factualConcept": "The lossless-claw v1.2.0 implementation is a separate reference beside LCM for the same handoff-fold concepts.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for lossless-claw. Show a precision archival mechanism with two articulated graphite arms lifting a thin translucent summary layer above a broad bed of intact lavender source tiles. A fine lime alignment grid maps the lifted layer back to the undisturbed originals, making it visibly derived and rebuildable. One arm holds a small spare summary plate ready for replacement, while the source bed remains protected beneath a clear shield. Use an open rectangular workbench silhouette, distinct from the LCM circular source spool and threshold apparatus. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-124.webp",
+      "sha256": "d807402a9fe51898bdea7477059a84538f321ce43c9b79988021384b91940ba1",
+      "bytes": 47814,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L339",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L339",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L339",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/handoff-fold.md#L117"
+      ]
+    },
+    {
+      "index": 125,
+      "sourceId": "github:manuelschipper/nah",
+      "title": "nah",
+      "kind": "project",
+      "label": "PARALLEL HOOK EXAMPLE",
+      "factualConcept": "nah v1.7.0 is a background example at the same hook layer, with no implementation taken from it.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for nah. Compose two adjacent independent physical hook inspection devices on separate graphite pedestals. Each receives its own small transparent action capsule; the nearer device unfolds the capsule into a sequence of abstract geometric effect pieces under an optical glass hood. The second pedestal stays slightly behind, connected only by a thin neutral comparison sightline, never by a material transfer bridge. A narrow gap clearly separates both mechanisms. Depict a neighboring architectural example, without code transfer, endorsement, approval stamp or a claim of adopted protection. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-125.webp",
+      "sha256": "2901361a7b1c7062d6b7eecf36b883f5ff2e371d2e278613a136aeaa1882755a",
+      "bytes": 36168,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L374",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L205"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L374",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L205"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L374",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/assets/adapters/deny-guard/guide.md#L205"
+      ],
+      "refinementPrompts": [
+        "Use case: precise-object-edit. Remove only the unrelated architectural building model and trees at far right, replacing that area with the existing seamless near-black olive studio background and floor. Keep both independent hook inspection pedestals, abstract effect sequence, capsules, thin neutral comparison sightline, lighting, camera, materials and composition unchanged. Keep the narrow gap between pedestals and no material transfer bridge. No text, numbers, logos, watermark or added objects."
+      ]
+    },
+    {
+      "index": 126,
+      "sourceId": "github:prometheus/prometheus",
+      "title": "Prometheus",
+      "kind": "project",
+      "label": "LINEAR CAPACITY ESTIMATE",
+      "factualConcept": "Prometheus predict_linear informs the form of a linear capacity estimate; no code or data is copied.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Prometheus. Depict a beautiful physical forecasting instrument: five small lavender sample beads rest at increasing heights along a straight brushed-metal rail, while a thin lime rod extends that observed slope toward a suspended transparent capacity ceiling. The future extension is lighter and more translucent than the observed rail, communicating an estimate rather than certainty. A small amber meeting point sits near the ceiling without a numeric date or axis. Keep the linear construction obvious and sparse, avoiding dashboards, charts, exponential curves or guaranteed predictions. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-126.webp",
+      "sha256": "55ae8895da18463fcfa0769ccca29ee4a38452b3a1625e7b329d91e5dccb2963",
+      "bytes": 27560,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L349",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L59"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L349",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L59"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L349",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/capacity.md#L59"
+      ],
+      "refinementPrompts": [
+        "Use case: precise-object-edit. Correct only the physical forecasting rail and its extension. The brushed-metal observed rail carrying exactly five lavender sample beads and the thin translucent lime forecast rod must form ONE perfectly straight collinear line in the image plane, with no kink or slope change where the rod begins. Adjust the observed rail and bead positions slightly to align with the existing amber ceiling meeting point. Keep the observed part solid brushed metal, the future extension lighter and more translucent, and the amber point near the transparent ceiling. Keep all other sculptural supports, background, lighting and materials unchanged. No text, numerals, logos, axes, charts or watermark.",
+        "Use case: precise-object-edit. Make a single precise alignment correction: keep the solid silver sample rail and its five lavender beads exactly as they are. Move the amber ceiling bead to the right, near the ceiling's right edge, and redraw the thin translucent lime forecast rod from the rail's upper tip to that bead so it follows the SAME straight diagonal direction as the solid sample rail. The rail and rod must appear as one straight line without changing angle. Place the amber bead wherever the unbent extension of the silver rail intersects the transparent ceiling, approximately near the right support. No other changes, no extra objects, no text or markings."
+      ]
+    },
+    {
+      "index": 127,
+      "sourceId": "url:https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html",
+      "title": "reprotest",
+      "kind": "project",
+      "label": "CONTROL VARIATION BLAME",
+      "factualConcept": "The reprotest 0.7.33 manual informs control, variation and blame run ordering with shuffled cumulative blame; no GPL code is used.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for reprotest. A three-lane reproducibility workbench begins with one pristine control specimen, then a row of the same specimen under different removable lavender environment sleeves. At the final lane, several sleeves are stacked in a deliberately shuffled physical order while a fine lime probe isolates one contrasting sleeve from the combination. The output objects are compared side by side for matching geometry. Make controlled variation and cumulative attribution visible through material arrangement, with no operating-system logos, printed run labels, code fragments or claim of complete causal certainty. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-127.webp",
+      "sha256": "aa1aba98ff3aef7ad81274592b526ebeaedade1f211414acdcd05d9464016444",
+      "bytes": 60940,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L360",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L166"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L360",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L166"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L360",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/verifier-fidelity.md#L166"
+      ]
+    },
+    {
+      "index": 128,
+      "sourceId": "github:sourcegraph/sourcegraph-public-snapshot",
+      "title": "Sourcegraph public snapshot",
+      "kind": "project",
+      "label": "EXPLICIT SEARCH SKIPPED",
+      "factualConcept": "The archived Sourcegraph Skipped type informs separating not-searched scope from searched-and-absent results; structural concepts only.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Sourcegraph public snapshot. Create a physical three-compartment search cabinet. A lime optical scanner has inspected the first transparent compartment and found one lavender specimen. It has inspected the second compartment and revealed an unmistakably empty but fully illuminated interior. The third compartment remains behind a closed smoked-glass shutter with the scanner rail visibly stopping before it. The critical contrast is illuminated emptiness versus a visibly unexamined space. Use a vertical cabinet architecture, and avoid depicting the unopened compartment as empty or showing an exhaustive-search success seal. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-128.webp",
+      "sha256": "25905436f52637ca21488bc5fe54094ade50eb4a9ab2df313c5eb116f28f9144",
+      "bytes": 20860,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L345",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L133"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L345",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L133"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L345",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L133"
+      ]
+    },
+    {
+      "index": 129,
+      "sourceId": "github:wenjing95/stale-docs-data",
+      "title": "stale-docs-data",
+      "kind": "project",
+      "label": "PAIRED STALE RULE SPECIMENS",
+      "factualConcept": "This is the separate data repository for the stale-instruction-file study, not another copy of the paper card.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for stale-docs-data. Depict a careful dataset specimen drawer holding several matched pairs of small glass plates. In each pair, one lavender plate carries an outdated abstract path and the neighboring silver plate carries the current path, with tiny geometric mismatch tabs between them. One pair is pulled forward on a shallow laboratory tray for direct comparison, while the remaining pairs stay neatly indexed by position alone. Present curated paired evidence rather than an acting software agent; no blueprint wall, repair beam, visible writing, dataset counts or claim of reproduced study results. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-129.webp",
+      "sha256": "67b516073d5bac0a5e100945838a490ad53adcb848e3702ea1f6ad46bab2c7dd",
+      "bytes": 48824,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L366",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L863"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L366",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L863"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L366",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/hardening.md#L863"
+      ]
+    },
+    {
+      "index": 130,
+      "sourceId": "github:python-trio/trio",
+      "title": "Trio",
+      "kind": "project",
+      "label": "EVENT ORDER MOCK CLOCK",
+      "factualConcept": "Trio MockClock informs replacing a wall-clock bound in one test with event-order assertions; Trio is not a dependency.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Trio. A refined mechanical event sequencer suspends four lavender event beads on a straight lime guide rail, separated by silver gates that open in a clear ordered progression. Beside the rail sits an unmarked transparent clock disc whose central hand is held stationary by a small graphite clamp. One event gate advances while the clock remains still, making logical ordering independent of elapsed wall time. Use a clean horizontal silhouette, no numerals, stopwatch markings, speed streaks or promise that concurrency itself has disappeared. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-130.webp",
+      "sha256": "eedff9a0d29b1e4fe9a4e54640469d22d022fcd0505fd77dc71e0aee213329c1",
+      "bytes": 26872,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L381"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L381"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L381"
+      ]
+    },
+    {
+      "index": 131,
+      "sourceId": "github:sourcegraph/zoekt",
+      "title": "Zoekt",
+      "kind": "project",
+      "label": "EXAMINED SCOPE ACCOUNTING",
+      "factualConcept": "Zoekt Stats informs reporting search coverage separately from searched-but-absent results.",
+      "prompt": "Use case: stylized-concept. Generate a unique landscape 3:2 editorial concept illustration for Zoekt. Construct a low circular search-survey instrument from segmented graphite sectors. A lime scanning arm has traversed only part of the ring, leaving inspected sectors transparently illuminated and untouched sectors behind darker glass covers. Small lavender return beads appear in some inspected sectors, while another inspected sector is clearly empty but equally lit. Beside the ring, a compact physical tally rack separates coverage tokens from returned-object tokens without numbers. Make coverage accounting the subject, distinct from the Sourcegraph cabinet and its closed vertical shutter. Use a near-black olive #10130f seamless studio background, lime #d3fc70 and lavender #c3b0f6 accents, smoked optical glass, brushed graphite and restrained silver. Premium physical product-render lighting, cinematic depth and crisp materials, readable at thumbnail size. Keep every essential form inside the central 80 percent with balanced negative space. Render one coherent sculptural scene. No text, lettering, numbers, logos, labels, charts, interface, people or watermark. This is symbolic editorial artwork, not a reproduced figure, screenshot or claim of measured performance.",
+      "output": "media/cards/card-131.webp",
+      "sha256": "1b9609799b20ae3f42f2cb15301934e80a47b037d143e5fa87e38d56aca02f67",
+      "bytes": 37620,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L347",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L138"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L347",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L138"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L347",
+        "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L138"
       ]
     }
   ],

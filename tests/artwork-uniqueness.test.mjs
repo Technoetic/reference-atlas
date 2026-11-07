@@ -10,15 +10,30 @@ const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
 ]);
-const uncommissioned=new Set([
-  'url:https://papers.voltropy.com/LCM','github:martian-engineering/lossless-claw',
-  'url:https://factory.com/news/evaluating-compression','github:sourcegraph/sourcegraph-public-snapshot',
-  'github:sourcegraph/zoekt','github:prometheus/prometheus','github:phenomnomnominal/betterer','github:logpai/drain3',
-  'arxiv:2607.19865','url:https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html','arxiv:2610.30571',
-  'github:wenjing95/stale-docs-data','arxiv:2610.31778','github:manuelschipper/nah',
-  'url:https://code.claude.com/docs/en/worktrees','github:python-trio/trio','github:gastownhall/beads',
-  'url:https://code.claude.com/docs/en/hooks','url:https://code.claude.com/docs/en/plugins/cli-reference',
-  'arxiv:2606.22528','arxiv:2607.20972','github:joeblackwaslike/lessons-learned'
+const uncommissioned=new Set();
+const newReleaseCommissioned=new Set([
+  "url:https://code.claude.com/docs/en/hooks",
+  "url:https://code.claude.com/docs/en/plugins/cli-reference",
+  "url:https://code.claude.com/docs/en/worktrees",
+  "url:https://factory.com/news/evaluating-compression",
+  "arxiv:2610.31778",
+  "arxiv:2607.20972",
+  "arxiv:2607.19865",
+  "arxiv:2606.22528",
+  "url:https://papers.voltropy.com/LCM",
+  "arxiv:2610.30571",
+  "github:gastownhall/beads",
+  "github:phenomnomnominal/betterer",
+  "github:logpai/drain3",
+  "github:joeblackwaslike/lessons-learned",
+  "github:martian-engineering/lossless-claw",
+  "github:manuelschipper/nah",
+  "github:prometheus/prometheus",
+  "url:https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html",
+  "github:sourcegraph/sourcegraph-public-snapshot",
+  "github:wenjing95/stale-docs-data",
+  "github:python-trio/trio",
+  "github:sourcegraph/zoekt"
 ]);
 
 test('artwork provenance assigns each generated file and exact prompt to its source',async()=>{
@@ -41,7 +56,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('commissioned sources have dedicated images; explicit uncommissioned sources render text fallback',()=>{
+test('all catalog sources have dedicated images; future sources retain explicit text fallback',()=>{
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
@@ -89,17 +104,23 @@ test('the five newly commissioned references render their own card and detail im
   assert.equal(urls.size,newlyCommissioned.size);
 });
 
-test('each uncommissioned v0.43.0 reference renders its card and detail text fallback',()=>{
-  for(const id of uncommissioned){
+test('each commissioned v0.43.0 reference renders its dedicated card and detail image',()=>{
+  assert.equal(newReleaseCommissioned.size,22);
+  const urls=new Set();
+  for(const id of newReleaseCommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Unknown listed source: ${id}`);
-    assert.equal(sourceArtwork({id}).src,null);
+    const art=sourceArtwork({id});
+    assert.ok(art.src);
+    urls.add(art.src);
     for(const detail of [false,true]){
-      const html=artworkCover({id,title:'Uncommissioned <reference>'},{detail});
+      const html=artworkCover({id,title:'Commissioned <reference>'},{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
-      assert.ok(html.includes('is-art-fallback'));
-      assert.ok(!html.includes('<img'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(art.src));
     }
   }
+  assert.equal(urls.size,22);
 });
 
 test('an unillustrated future source never silently borrows another source image',()=>{
