@@ -10,6 +10,16 @@ const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
 ]);
+const uncommissioned=new Set([
+  'url:https://papers.voltropy.com/LCM','github:martian-engineering/lossless-claw',
+  'url:https://factory.com/news/evaluating-compression','github:sourcegraph/sourcegraph-public-snapshot',
+  'github:sourcegraph/zoekt','github:prometheus/prometheus','github:phenomnomnominal/betterer','github:logpai/drain3',
+  'arxiv:2607.19865','url:https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html','arxiv:2610.30571',
+  'github:wenjing95/stale-docs-data','arxiv:2610.31778','github:manuelschipper/nah',
+  'url:https://code.claude.com/docs/en/worktrees','github:python-trio/trio','github:gastownhall/beads',
+  'url:https://code.claude.com/docs/en/hooks','url:https://code.claude.com/docs/en/plugins/cli-reference',
+  'arxiv:2606.22528','arxiv:2607.20972','github:joeblackwaslike/lessons-learned'
+]);
 
 test('artwork provenance assigns each generated file and exact prompt to its source',async()=>{
   assert.equal(manifest.count,manifest.assets.length);
@@ -23,7 +33,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0'].includes(catalog.snapshots['agentic-vault'].version)){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -31,16 +41,24 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all current catalog sources have separately commissioned images',()=>{
+test('commissioned sources have dedicated images; explicit uncommissioned sources render text fallback',()=>{
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
-    images.push(art.src);
+    if(art.src)images.push(art.src);
+    else{
+      assert.ok(uncommissioned.has(source.id),`Missing commissioned artwork: ${source.id}`);
+      for(const detail of [false,true]){
+        const html=artworkCover(source,{detail});
+        assert.ok(html.includes('is-art-fallback'));
+        assert.ok(html.includes('REFERENCE'));
+        assert.ok(!html.includes('<img'));
+      }
+    }
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+uncommissioned.size,catalog.sources.length);
 });
 
 test('dedicated card images have different actual file contents',async()=>{
@@ -69,6 +87,19 @@ test('the five newly commissioned references render their own card and detail im
     }
   }
   assert.equal(urls.size,newlyCommissioned.size);
+});
+
+test('each uncommissioned v0.43.0 reference renders its card and detail text fallback',()=>{
+  for(const id of uncommissioned){
+    assert.ok(catalog.sources.some(source=>source.id===id),`Unknown listed source: ${id}`);
+    assert.equal(sourceArtwork({id}).src,null);
+    for(const detail of [false,true]){
+      const html=artworkCover({id,title:'Uncommissioned <reference>'},{detail});
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img'));
+    }
+  }
 });
 
 test('an unillustrated future source never silently borrows another source image',()=>{
