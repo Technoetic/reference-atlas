@@ -12,7 +12,6 @@ referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
 - A separately generated conceptual artwork for every source card and detail,
   with source-specific motifs and one-to-one source/image verification.
 - Search, plugin/type facets, chronological/title ordering, and pinned citation details.
-- Local duplicate-reference checks for arXiv, DOI, GitHub repositories and names.
 - Downloadable [JSON](data/catalog.json) and [CSV](data/catalog.csv) registries.
 - A responsive, reduced-motion-aware interface; no framework, CDN or runtime dependency.
 
@@ -54,11 +53,15 @@ python -m http.server 8080 --directory dist
 are reproducible outputs. Every cited use pins a public plugin commit, file and
 line. New records or identity aliases need evidence review before publication.
 Query-based views work directly on GitHub Pages, including refresh and history.
+The public interface focuses on the research map and source library. Legacy
+`?view=check` links replace their history entry with `?view=sources`, preserving
+filters and source-detail parameters. The standalone duplicate-check CLI above
+continues to use the same public registry.
 
 The build hashes the source asset graph, embeds its identity in the entry HTML,
 and emits `version.json` and an SHA-256 deployment manifest. A changed build is
-applied on the next clean navigation; a candidate-list draft is protected until
-explicitly cleared. One prior asset graph is retained to support cached entry HTML.
+applied on the next navigation to the intended map or source URL. The interface
+has no editable drafts. One prior asset graph is retained to support cached entry HTML.
 The Pages host controls HTTP cache headers, so the client uses fresh version
 requests and build-specific assets/document navigations rather than relying on
 custom server headers or a service worker.

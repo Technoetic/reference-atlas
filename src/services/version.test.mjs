@@ -18,7 +18,7 @@ test('loaded identity stays A until a clean target navigation receives B', async
 test('rollback is a changed identity and not a chronological comparison', async () => {
   let destination;
   const service = new VersionService({ baseURL, loadedBuild: 'B', fetcher: async () => response('A'), navigate: url => { destination = url; } });
-  assert.equal((await service.transition('?view=check')).mode, 'document'); assert.equal(new URL(destination).searchParams.get('_build'), 'A');
+  assert.equal((await service.transition('?view=atlas')).mode, 'document'); assert.equal(new URL(destination).searchParams.get('_build'), 'A');
 });
 
 test('pending update protects a draft until explicitly cleared', async () => {
@@ -52,7 +52,7 @@ test('a superseded target cannot trigger a full-document transition', async () =
 test('an unchanged identity performs internal navigation without a reload', async () => {
   const navigations = [];
   const service = new VersionService({ baseURL, loadedBuild: 'A', fetcher: async () => response('A'), navigate: url => navigations.push(url) });
-  assert.equal((await service.transition('?view=check')).mode, 'internal'); assert.deepEqual(navigations, []);
+  assert.equal((await service.transition('?view=atlas')).mode, 'internal'); assert.deepEqual(navigations, []);
 });
 
 test('a hanging version request is bounded and does not trap navigation', async () => {
