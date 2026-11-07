@@ -1,4 +1,4 @@
-# Reference Atlas — source map and duplicate-reference check
+# Reference Atlas — research map and source library
 
 ## Intent
 
@@ -14,9 +14,12 @@ constellation drawn from the real catalog. Two central plugin nodes connect to
 their cited sources; shared references have two connections. Lime/lavender accents,
 responsive typography, restrained lower sections, reduced-motion support.
 
-The application has query-addressed views `?view=atlas`, `?view=sources`, and
-`?view=check`. Search, plugin/type facets, title/year sort, source-detail evidence,
-downloadable registry, and local candidate lookup. Counts come from the catalog.
+The application has query-addressed views `?view=atlas` and `?view=sources`.
+Search, plugin/type facets, title/year sort, source-detail evidence, and
+downloadable registry remain available. Legacy `?view=check` links resolve to
+the source library using `replaceState`, preserving filters, source details,
+build parameters and fragments. They do not create an extra history entry.
+There is no browser candidate-check form or check navigation. Counts come from the catalog.
 Never invent statistics, citations, adoption levels or publication years.
 
 ## Data contract
@@ -54,10 +57,12 @@ Plugin and kind filter `all` means no restriction; plugin `shared` means both.
 Catalog snapshots are published sources, not a live citation index. Do not treat
 code dependencies/CI tooling as research inspirations. Preserve background and
 unresolved items separately. Preserve source aliases and decision explanations.
-Lookup runs locally and never sends pasted candidates to an API. An existing paper
-may be reviewed again for a new version or question if its delta is stated.
+The standalone CLI lookup runs locally and never sends candidates to an API.
+An existing paper may be reviewed again for a new version or question if its delta is stated.
 
-The site, JSON/CSV downloads and Python duplicate-check CLI share one registry.
+The research map, source library, JSON/CSV downloads and Python duplicate-check
+CLI share one registry. Removing the browser check feature does not remove
+canonical identities, aliases, registry data, or the research duplicate-check policy.
 NS workspace instructions and handoff will link this public registry for future
 research; source plugin code and release versions remain unchanged.
 
@@ -67,6 +72,8 @@ Buildless source, Node standard-library content-hashed asset builder, Python
 standard-library registry tools. No framework/CDN/runtime dependencies.
 GitHub Actions builds/tests and deploys Pages. Browser verification uses Aside.
 Meaningful tests cover identity normalization, false duplicate collisions,
-cross-plugin merge/evidence, query/filter behavior, failed loading, and update
-transitions preserving a draft. Verify actual published HTML, asset graph, JSON,
-deep links, missing asset 404, and duplicate examples.
+cross-plugin merge/evidence, query/filter behavior, legacy-route canonicalization,
+and build-update transitions. The version service retains generic draft protection
+for future editable screens; the current public screens are read-only. Verify actual
+published HTML, asset graph, JSON, deep links, history, missing asset 404, and
+standalone CLI duplicate examples.
