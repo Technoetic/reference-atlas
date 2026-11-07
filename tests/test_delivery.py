@@ -11,6 +11,7 @@ EXPECTED_COVERAGE={
     ('v0.41.0','v0.19.1'):(42,34,1,104,169),
     ('v0.41.0','v0.20.0'):(42,34,1,104,173),
     ('v0.42.0','v0.20.0'):(44,37,1,109,181),
+    ('v0.43.0','v0.20.0'):(50,49,5,131,233),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -42,6 +43,12 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(prior,(42,34,1,104,173))
         revised=EXPECTED_COVERAGE[('v0.42.0','v0.20.0')]
         self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(2,3,0,5,8))
+
+    def test_v043_coverage_adds_22_cards_and_52_citations_without_rewriting_history(self):
+        prior=EXPECTED_COVERAGE[('v0.42.0','v0.20.0')]
+        self.assertEqual(prior,(44,37,1,109,181))
+        revised=EXPECTED_COVERAGE[('v0.43.0','v0.20.0')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(6,12,4,22,52))
 
     def test_every_source_has_public_commit_bound_evidence(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))

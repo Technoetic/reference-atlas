@@ -9,8 +9,9 @@ referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
 ## Explore
 
 - A data-driven constellation, with one node per recorded source and actual plugin links.
-- A separately generated conceptual artwork for every source card and detail,
-  with source-specific motifs and one-to-one source/image verification.
+- Separately generated conceptual artwork on source cards and details, with
+  source-specific motifs and one-to-one source/image verification. A source
+  without commissioned artwork shows a text fallback instead of another source's image.
 - Search, plugin/type facets, chronological/title ordering, and pinned citation details.
 - Downloadable [JSON](data/catalog.json) and [CSV](data/catalog.csv) registries.
 - A responsive, reduced-motion-aware interface; no framework, CDN or runtime dependency.
