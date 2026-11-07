@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
-  "policy": "Every catalog source has a separately generated conceptual image; no topic-image reuse. Unresolved research names depict only their recorded context.",
+  "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
   "count": 109,
   "assets": [
     {

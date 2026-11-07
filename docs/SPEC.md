@@ -40,7 +40,8 @@ research remains visibly unresolved and does not inflate identified-paper counts
 An article URL and a repository identity stay distinct even when the article
 discusses that project; a shared topic is not evidence of an identity alias.
 
-Artwork remains one separately generated raster per source. Active provenance
+Artwork remains one separately generated raster per commissioned source; a
+source without commissioned artwork uses a text fallback. Active provenance
 retains `generationEvidenceUrls` as generation-time history, and exposes
 `currentEvidenceUrls` plus legacy `evidenceUrls` for the current citation snapshot.
 Snapshot updates do not rewrite original prompts or regenerate prior images.
