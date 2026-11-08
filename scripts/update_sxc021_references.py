@@ -98,9 +98,12 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
             if spec['id'] in identity_keys and source['id'] != spec['id']:
                 raise ValueError(f'New canonical identity already belongs to {source["id"]}')
     image_ids = [asset['sourceId'] for asset in artwork['assets']]
+    commissioned_ids = set(image_ids)
+    known_ids = set(old_by_id)
     if (artwork['count'] != len(image_ids) or len(set(image_ids)) != len(image_ids)
-            or set(image_ids) != set(old_by_id) - present_new):
-        raise ValueError('Every prior source needs its exact artwork assignment; six new sources use text fallback')
+            or not commissioned_ids <= known_ids
+            or not known_ids - present_new <= commissioned_ids):
+        raise ValueError('Artwork needs unique known source IDs and every prior source assignment')
     for asset in artwork['assets']:
         prior_urls = [row['url'] for use in old_by_id[asset['sourceId']]['uses'] for row in use['evidence']]
         if (asset.get('evidenceUrls') != prior_urls or asset.get('currentEvidenceUrls') != prior_urls
@@ -184,7 +187,8 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
                'remappedLines': moved_count, 'addedCitations': added_count,
                'addedSourceIds': sorted(NEW_IDS - present_new),
                'counts': metrics(merged), 'artworkCount': images['count'],
-               'textFallbackSourceIds': sorted(NEW_IDS), 'snapshot': revised['snapshots'][PLUGIN]}
+               'textFallbackSourceIds': sorted(set(by_id) - commissioned_ids),
+               'snapshot': revised['snapshots'][PLUGIN]}
     return revised, images, summary
 
 

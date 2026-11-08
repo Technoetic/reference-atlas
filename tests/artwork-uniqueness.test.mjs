@@ -10,7 +10,7 @@ const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
 ]);
-const uncommissioned=new Set([
+const sxc021Commissioned=new Set([
   'github:datacontract/datacontract-cli',
   'github:bitol-io/open-data-contract-standard',
   'github:pganalyze/libpg_query',
@@ -64,23 +64,49 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 });
 
 test('all catalog sources have dedicated images; future sources retain explicit text fallback',()=>{
+  assert.equal(manifest.count,137);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(art.src)images.push(art.src);
-    else{
-      assert.ok(uncommissioned.has(source.id),`Missing commissioned artwork: ${source.id}`);
-      for(const detail of [false,true]){
-        const html=artworkCover(source,{detail});
-        assert.ok(html.includes('is-art-fallback'));
-        assert.ok(html.includes('REFERENCE'));
-        assert.ok(!html.includes('<img'));
-      }
-    }
+    assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
+    images.push(art.src);
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+uncommissioned.size,catalog.sources.length);
+  assert.equal(images.length,catalog.sources.length);
+});
+
+test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{
+  const expectedCards=[
+    ['github:datacontract/datacontract-cli','132'],
+    ['github:bitol-io/open-data-contract-standard','133'],
+    ['github:pganalyze/libpg_query','134'],
+    ['github:lelit/pglast','135'],
+    ['arxiv:2504.12058','136'],
+    ['github:pierresenellart/provenance-lean','137']
+  ];
+  assert.equal(sxc021Commissioned.size,6);
+  for(const [id,index] of expectedCards){
+    assert.ok(sxc021Commissioned.has(id));
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.ok(source);
+    const expected=new URL(`../media/cards/card-${index}.webp`,import.meta.url).href;
+    assert.equal(sourceArtwork({id}).src,expected);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.equal(record.output,`media/cards/card-${index}.webp`);
+    assert.deepEqual(record.dimensions,[960,640]);
+    const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
+    assert.deepEqual(record.evidenceUrls,citations);
+    assert.deepEqual(record.currentEvidenceUrls,citations);
+    assert.deepEqual(record.generationEvidenceUrls,citations);
+    for(const detail of [false,true]){
+      const html=artworkCover({id,title:'Commissioned <reference>'},{detail});
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
 });
 
 test('dedicated card images have different actual file contents',async()=>{

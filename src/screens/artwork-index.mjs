@@ -131,4 +131,10 @@ export const artworkIndex = Object.freeze({
   "github:wenjing95/stale-docs-data": Object.freeze({key: "card-129", src: new URL("../../media/cards/card-129.webp", import.meta.url).href, label: "PAIRED STALE RULE SPECIMENS", word: "PAIRED STALE RULE SPECIMENS"}),
   "github:python-trio/trio": Object.freeze({key: "card-130", src: new URL("../../media/cards/card-130.webp", import.meta.url).href, label: "EVENT ORDER MOCK CLOCK", word: "EVENT ORDER MOCK CLOCK"}),
   "github:sourcegraph/zoekt": Object.freeze({key: "card-131", src: new URL("../../media/cards/card-131.webp", import.meta.url).href, label: "EXAMINED SCOPE ACCOUNTING", word: "EXAMINED SCOPE ACCOUNTING"}),
+  "github:datacontract/datacontract-cli": Object.freeze({key: "card-132", src: new URL("../../media/cards/card-132.webp", import.meta.url).href, label: "PAIRED CONTRACT REPORT CAPTURE", word: "PAIRED CONTRACT REPORT CAPTURE"}),
+  "github:bitol-io/open-data-contract-standard": Object.freeze({key: "card-133", src: new URL("../../media/cards/card-133.webp", import.meta.url).href, label: "AUTHORED DECLARATION LAYERS", word: "AUTHORED DECLARATION LAYERS"}),
+  "github:pganalyze/libpg_query": Object.freeze({key: "card-134", src: new URL("../../media/cards/card-134.webp", import.meta.url).href, label: "POSTGRESQL GRAMMAR CORE", word: "POSTGRESQL GRAMMAR CORE"}),
+  "github:lelit/pglast": Object.freeze({key: "card-135", src: new URL("../../media/cards/card-135.webp", import.meta.url).href, label: "EXPLICIT PARSER ADAPTER", word: "EXPLICIT PARSER ADAPTER"}),
+  "arxiv:2504.12058": Object.freeze({key: "card-136", src: new URL("../../media/cards/card-136.webp", import.meta.url).href, label: "FINITE PROVENANCE SPECIMENS", word: "FINITE PROVENANCE SPECIMENS"}),
+  "github:pierresenellart/provenance-lean": Object.freeze({key: "card-137", src: new URL("../../media/cards/card-137.webp", import.meta.url).href, label: "ANNOTATION SUPPORT BOUNDARY", word: "ANNOTATION SUPPORT BOUNDARY"}),
 });

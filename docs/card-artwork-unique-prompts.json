@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 131,
+  "count": 137,
   "assets": [
     {
       "index": 1,
@@ -3581,6 +3581,177 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L347",
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/recall-scope.md#L138"
+      ]
+    },
+    {
+      "index": 132,
+      "sourceId": "github:datacontract/datacontract-cli",
+      "title": "Data Contract CLI",
+      "kind": "project",
+      "label": "PAIRED CONTRACT REPORT CAPTURE",
+      "factualConcept": "The previously observed Data Contract CLI informs the authored contract-to-report evidence boundary; no external contract engine is installed or bundled.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas. A premium physically rendered miniature research instrument, photographed like a high-end product on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6). Macro isometric three-quarter view, realistic material details, controlled soft light and subtle glow. Central object fills the central 80% and reads clearly at thumbnail size, generous clean edges. One distinctive coherent scene. Absolutely no text, letters, numbers, logos, watermark, people, screens, labels, or generic floating icon cloud. This is a new original image, not an edit or a recolored reuse.\nSource to illustrate, context only: Data Contract CLI, a command-line tool for linting authored data contracts and running declared quality checks. Depict a compact graphite inspection carriage with a vertically inserted frosted contract sheet containing geometric rule apertures, no writing. A tiny aligned tray of lime data beads passes beneath a lavender optical inspection slit. A small separate embossed receipt tile emerges from a side slot only after the contract and specimen tray align. One unmatched specimen rests off the path, clearly distinct from the accepted aligned set. Convey explicit authored rules plus execution/check results, not automatic business truth. Avoid a generic document icon, an architectural declaration stack, a branching parser tree, or a glowing approval badge.",
+      "output": "media/cards/card-132.webp",
+      "sha256": "613b323dd886aa899f6d49cfe826c6c9f2baa8746abd7b9a92ae8c5a2f24c74b",
+      "bytes": 62032,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L4",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L63"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L4",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L63"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L4",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L63"
+      ]
+    },
+    {
+      "index": 133,
+      "sourceId": "github:bitol-io/open-data-contract-standard",
+      "title": "Open Data Contract Standard (ODCS)",
+      "kind": "format",
+      "label": "AUTHORED DECLARATION LAYERS",
+      "factualConcept": "ODCS is a format reference for explicit authored contract/report declarations; this does not claim full ODCS import/export compatibility.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas. A premium physically rendered miniature research instrument, photographed like a high-end product on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6). Macro isometric three-quarter view, realistic material details, controlled soft light and subtle glow. Central object fills the central 80% and reads clearly at thumbnail size, generous clean edges. One distinctive coherent scene. Absolutely no text, letters, numbers, logos, watermark, people, screens, labels, or generic floating icon cloud. This is a new original image, not an edit or a recolored reuse.\nSource to illustrate, context only: Open Data Contract Standard, an open structured format for explicit data-contract declarations. Depict a carefully engineered architectural stack of four separated translucent declaration plates hovering millimeters apart above a square graphite base. Each plate has a unique orderly pattern of geometric apertures and matching keyed edge slots; precise silver guide pins align the authored layers into a shared inspectable structure. Thin lime and lavender edges reveal separate layers and standardized fit. The central stack is the hero, with two small compatible connector blocks fitted at opposing edges. Convey an explicit common specification, not a running command-line machine or automatic validation success. No book/folio, no ribbon conveyor, no parser tree.",
+      "output": "media/cards/card-133.webp",
+      "sha256": "7aa0fc3e45e236db282344a63ef2ff88cc6099bb7f94c223e2af3f7cda20f272",
+      "bytes": 66420,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L5",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L65"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L5",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L65"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/contract-report.md#L5",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L65"
+      ]
+    },
+    {
+      "index": 134,
+      "sourceId": "github:pganalyze/libpg_query",
+      "title": "libpg_query",
+      "kind": "project",
+      "label": "POSTGRESQL GRAMMAR CORE",
+      "factualConcept": "The opt-in structural diagnostic uses the actual PostgreSQL parser through separately installed pglast; structural agreement does not establish SQL semantic equivalence.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas. A premium physically rendered miniature research instrument, photographed like a high-end product on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6). Macro isometric three-quarter view, realistic material details, controlled soft light and subtle glow. Central object fills the central 80% and reads clearly at thumbnail size, generous clean edges. One distinctive coherent scene. Absolutely no text, letters, numbers, logos, watermark, people, screens, labels, or generic floating icon cloud. This is a new original image, not an edit or a recolored reuse.\nSource to illustrate, context only: libpg_query, the real PostgreSQL parser exposed outside the database server. Depict one compact cylindrical grammar drum in clean cutaway. A short ribbon of discrete geometric token wafers enters a narrow slot at the lower left; inside the transparent cutaway, those separate pieces are assembled into one precise rigid three-level branching syntax tree, emerging on a small support at upper right. Show a clear input-to-structured-tree transformation contained in the instrument. The tree is made of lime translucent nodes and slim silver branches with one restrained lavender node. No database query execution, no table-result output, no translator prism, no universal equivalence stamp, no loose network cloud.",
+      "output": "media/cards/card-134.webp",
+      "sha256": "8541bc1ac98b61ac52972f57a28d5c174c7f4676f55096a2b92fff349dff8f88",
+      "bytes": 66512,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L35",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L72"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L35",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L72"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L35",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L72"
+      ]
+    },
+    {
+      "index": 135,
+      "sourceId": "github:lelit/pglast",
+      "title": "pglast",
+      "kind": "project",
+      "label": "EXPLICIT PARSER ADAPTER",
+      "factualConcept": "pglast 7.22 is a separately installed optional binding for PostgreSQL 17 parsing; missing or incompatible bindings cannot pass and do not gain report authority.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas.\nSource to illustrate, context only: pglast, the optional Python binding around the real PostgreSQL parser, with an explicitly matched version. New original image, not a recolor or edit.\nCreate a premium physically rendered miniature adapter assembly on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6). Macro isometric product photography, realistic materials and controlled soft lighting. Central object fills the central 80%, generous clean edges.\nThe hero is an exploded split adapter collar suspended just above a keyed capture dock. Two precision silver half-rings, separated and slightly offset, surround ONE removable transparent cylindrical cartridge containing a small lavender branching syntax-tree structure. Below, the graphite dock has a lime-lit keyed socket whose distinctive notches visibly match the collar. A small deliberate air gap between cartridge and socket clearly makes this an optional, explicitly fitted interface, not an always-installed parser engine. Two restrained curved translucent conduits lead from one side of the dock, suggesting a language binding's request/response interface. No conveyor, no grammar drum, no declaration plate stack, no computer screen, no generic data network.\nAbsolutely no text, letters, numbers, logos, watermark, people, labels, checkmarks or universal correctness symbols. One elegant coherent scene, readable at thumbnail size.",
+      "output": "media/cards/card-135.webp",
+      "sha256": "1de542260378caed4586630eb0edbe6a9bb397cb94d462b2ecfce4ca5daf3ad7",
+      "bytes": 39548,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L34",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L73"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L34",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L73"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/sql-structure.md#L34",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L73"
+      ]
+    },
+    {
+      "index": 136,
+      "sourceId": "arxiv:2504.12058",
+      "title": "ProvSQL: A General System for Keeping Track of the Provenance and Probability of Data",
+      "kind": "paper",
+      "label": "FINITE PROVENANCE SPECIMENS",
+      "factualConcept": "The pinned arXiv v3 paper informs proof-scope caution for independently authored finite bag/provenance expectations; no benchmark, theorem, Lean build or ProvSQL runtime is reproduced.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas.\nSource to illustrate, context only: the paper \"ProvSQL: A General System for Keeping Track of the Provenance and Probability of Data\", newly consulted for carefully scoped multiset/provenance examples. New original image, not an edit.\nCreate a refined physically rendered miniature specimen instrument on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6). Macro three-quarter product photography, precise material detail, soft controlled light, central 80% composition and clean edges.\nThe hero is a low wide specimen cradle with THREE separate shallow transparent wells arranged along a silver rail. First well contains a clearly grouped pair of identical lime glass beads plus one separate lavender bead, making duplicate multiplicity visible. Second well holds a few separate small hollow frosted rings, intentionally different from the solid beads. Third well contains an independently arranged frosted reference pattern of bead-shaped recesses. Thin transparent trace channels beneath the cradle connect each bead position down to its own small source peg in a visible lower layer, showing inspectable origins and separate expected-bag reference rather than assuming an annotation equals a returned row. A tiny sliding magnifying lens above one duplicated pair makes the finite example feel deliberate and research-oriented.\nThis must look different from a lineage loom, tall graph/tree machine, declaration-plate stack, parser cylinder, or adapter collar. No woven ribbons. No universal proof seal, no success checkmarks, no percentages. Absolutely no text, letters, numbers, logos, watermark, people, labels, or screens. One coherent polished scene, readable as a small card.",
+      "output": "media/cards/card-136.webp",
+      "sha256": "2ac4d5f1ed49f4bacf3afb659d7073198263e9b3cff138c2daf2746b56d54604",
+      "bytes": 67224,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L10",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L82"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L10",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L82"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L10",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L82"
+      ]
+    },
+    {
+      "index": 137,
+      "sourceId": "github:pierresenellart/provenance-lean",
+      "title": "provenance-lean",
+      "kind": "project",
+      "label": "ANNOTATION SUPPORT BOUNDARY",
+      "factualConcept": "The pinned Dedup/Diff counterexample distinguishes nonzero annotation support from a concrete returned row; positive Diff-free adequacy must not be extended across this boundary. No upstream Lean execution or proof transfer occurs.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card artwork for Reference Atlas.\nSource to illustrate, context only: provenance-lean, formal query-provenance reasoning with explicit hypotheses and a Dedup/Diff counterexample. Not a universal SQL correctness proof. New original image, not an edit.\nPremium physically rendered miniature mathematical experiment on a near-black olive studio surface (#10130f), brushed silver, graphite, clear glass, luminous lime (#d3fc70), restrained lavender (#c3b0f6), one tiny amber caution accent. Three-quarter product photography, controlled soft lighting, readable central 80% composition, clean edges.\nThe hero is a low graphite platform with TWO clearly separated parallel precision tracks. Each track begins with a matched pair of identical small lime glass spheres in a twin input cradle, then passes through a compact silver gathering ring and a removal notch. Keep each track short and visually legible.\nThe upper, abstract-annotation track terminates in one small closed transparent receptacle containing ONE luminous lavender residual core.\nThe lower, concrete-result track terminates in a visibly EMPTY transparent cup, lit from beneath so the emptiness is unambiguous. Behind the paired tracks, a short upright stair of three small frosted proof tiles fits precisely into silver supports, suggesting structured formal steps with stated assumptions. A narrow amber separator between the two output receptacles emphasizes that the residual annotation and concrete result must not be conflated.\nThis must be a scoped counterexample model, not a success machine: no green approval seal, no claims of theorem-prover completeness, no table of data, no magnifier specimen wells, no parser cylinder, no adapter collar, no declaration stack.\nAbsolutely no text, letters, numbers, logos, watermark, people, labels, screens or mathematical writing. No arrows printed on the surface. Refined mechanical/glass geometry only, one coherent scene.",
+      "output": "media/cards/card-137.webp",
+      "sha256": "681ab09b6e9e20b36dec64971c017c519bfd7c8c38c1339ac37149a924fcffdd",
+      "bytes": 49994,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L12",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L49",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L83"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L12",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L49",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L83"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L12",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L49",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L83"
       ]
     }
   ],

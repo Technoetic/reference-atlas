@@ -95,6 +95,14 @@ packaging/version changes, not a newly established semantic capability.
 Public source/tag availability and formal release status are separate checks;
 verify both before publishing the prepared Atlas snapshot through GitHub Pages.
 
+For the semantic-crosscheck v0.21.0/v0.21.1 snapshots, use
+`scripts/update_sxc021_references.py --plugin-root <plugin-checkout> --commit <public-sha> --tag v0.21.1`.
+This offline helper preserves commissioned artwork, including the six references
+introduced in v0.21.0, and reports only sources that still need their own image.
+It rejects unknown or duplicate artwork assignments and mismatched current
+citations. Reapplying the same snapshot preserves original prompts, image metadata
+and generation-time evidence; a citation repin updates only current evidence.
+
 The registry is not a live literature index. New versions and new uses may warrant
 review after explicitly stating their difference from the prior reference.
 

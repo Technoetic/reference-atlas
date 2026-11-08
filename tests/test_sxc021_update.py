@@ -207,6 +207,87 @@ class Sxc021UpdateTests(unittest.TestCase):
         self.assertEqual((again, same_images), (revised, images))
         self.assertEqual((summary['addedCitations'], summary['repinnedCitations'], summary['addedSourceIds']), (0, 0, []))
 
+    def commissioned(self, identifiers):
+        registry, artwork, _ = self.apply(*fixture())
+        sources = {source['id']: source for source in registry['sources']}
+        for index, identifier in enumerate(identifiers, 3):
+            urls = [row['url'] for use in sources[identifier]['uses'] for row in use['evidence']]
+            artwork['assets'].append({'index': index, 'sourceId': identifier,
+                'output': f'media/cards/card-{index}.webp', 'sha256': f'{index:064x}',
+                'bytes': index * 100, 'dimensions': [960, 640],
+                'prompt': 'Separately generated concept for ' + identifier,
+                'generationEvidenceUrls': copy.deepcopy(urls),
+                'evidenceUrls': copy.deepcopy(urls), 'currentEvidenceUrls': copy.deepcopy(urls)})
+        artwork['count'] = len(artwork['assets'])
+        return registry, artwork, fixture()[2]
+
+    def test_reapply_preserves_all_six_commissioned_images_and_is_idempotent(self):
+        registry, artwork, texts = self.commissioned(NEW_IDENTITIES)
+        before = copy.deepcopy((registry, artwork))
+        revised, images, summary = self.apply(registry, artwork, texts)
+        self.assertEqual((revised, images), before)
+        self.assertEqual((registry, artwork), before)
+        self.assertEqual((summary['artworkCount'], summary['textFallbackSourceIds']), (8, []))
+        again, same_images, repeated = self.apply(revised, images, texts)
+        self.assertEqual((again, same_images), before)
+        self.assertEqual((repeated['repinnedCitations'], repeated['addedCitations']), (0, 0))
+
+    def test_partial_commission_reports_only_the_actual_remaining_fallbacks(self):
+        registry, artwork, texts = self.commissioned([
+            'github:datacontract/datacontract-cli', 'github:lelit/pglast'])
+        revised, images, summary = self.apply(registry, artwork, texts)
+        self.assertEqual(images, artwork)
+        self.assertEqual(summary['textFallbackSourceIds'], [
+            'arxiv:2504.12058', 'github:bitol-io/open-data-contract-standard',
+            'github:pganalyze/libpg_query', 'github:pierresenellart/provenance-lean'])
+
+    def test_commissioned_new_artwork_rejects_unknown_duplicate_missing_and_bad_evidence(self):
+        for mutation in ('unknown', 'duplicate', 'missing-prior', 'evidence', 'current', 'both-current', 'generation'):
+            with self.subTest(mutation=mutation):
+                registry, artwork, texts = self.commissioned(NEW_IDENTITIES)
+                if mutation == 'unknown':
+                    artwork['assets'][-1]['sourceId'] = 'github:missing/source'
+                elif mutation == 'duplicate':
+                    artwork['assets'].append(copy.deepcopy(artwork['assets'][-1]))
+                    artwork['count'] += 1
+                elif mutation == 'missing-prior':
+                    artwork['assets'].pop(0)
+                    artwork['count'] -= 1
+                elif mutation == 'both-current':
+                    urls = copy.deepcopy(artwork['assets'][0]['evidenceUrls'])
+                    artwork['assets'][-1].update(evidenceUrls=urls, currentEvidenceUrls=urls)
+                else:
+                    key = {'evidence': 'evidenceUrls', 'current': 'currentEvidenceUrls',
+                           'generation': 'generationEvidenceUrls'}[mutation]
+                    artwork['assets'][-1][key] = []
+                before = copy.deepcopy((registry, artwork))
+                with self.assertRaises(ValueError):
+                    self.apply(registry, artwork, texts)
+                self.assertEqual((registry, artwork), before)
+
+    def test_new_id_artwork_without_an_existing_catalog_source_is_refused(self):
+        registry, artwork, texts = fixture()
+        asset = copy.deepcopy(artwork['assets'][0])
+        asset['sourceId'] = 'github:lelit/pglast'
+        artwork['assets'].append(asset)
+        artwork['count'] += 1
+        before = copy.deepcopy((registry, artwork))
+        with self.assertRaises(ValueError):
+            self.apply(registry, artwork, texts)
+        self.assertEqual((registry, artwork), before)
+
+    def test_corrective_release_repins_commissioned_artwork_without_changing_generation_history(self):
+        registry, artwork, texts = self.commissioned(NEW_IDENTITIES)
+        before = copy.deepcopy(artwork)
+        for file in texts:
+            texts[file].insert(0, 'Corrective release heading')
+        revised, images, summary = self.apply(registry, artwork, texts, commit='d' * 40, tag='v0.21.1')
+        for old, new in zip(before['assets'], images['assets']):
+            self.assertEqual({k: v for k, v in old.items() if k not in {'evidenceUrls', 'currentEvidenceUrls'}},
+                             {k: v for k, v in new.items() if k not in {'evidenceUrls', 'currentEvidenceUrls'}})
+            self.assertTrue(any('/blob/' + 'd' * 40 + '/' in url for url in new['currentEvidenceUrls']))
+        self.assertEqual(summary['textFallbackSourceIds'], [])
+
     def test_corrective_release_repins_existing_six_without_losing_source_history(self):
         revised, images, _ = self.apply(*fixture())
         for source in revised['sources'][2:]:
