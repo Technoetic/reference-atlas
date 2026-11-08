@@ -103,6 +103,26 @@ class Sxc021UpdateTests(unittest.TestCase):
                     self.assertEqual(row['excerpt'], texts['README.md'][row['line'] - 1])
         self.assertEqual((summary['priorSxcCitations'], summary['repinnedCitations'], summary['remappedLines']), (2, 2, 2))
 
+    def test_separate_curated_rows_for_a_shared_identity_keep_both_plugins_and_notes(self):
+        registry, artwork, texts = fixture()
+        original = registry['sources'][0]
+        sxc = copy.deepcopy(original)
+        sxc.update(aliases=['Separate SXC alias'], note='Separate SXC scope.')
+        sxc['uses'] = [sxc['uses'][1]]
+        original['uses'] = [original['uses'][0]]
+        registry['sources'].append(sxc)
+        before = copy.deepcopy(registry['sources'])
+        revised, images, summary = self.apply(registry, artwork, texts)
+        self.assertEqual(len(revised['sources']), 9)
+        self.assertEqual(revised['sources'][0], before[0])
+        for field in ('keys', 'aliases', 'note'):
+            self.assertEqual(revised['sources'][2][field], before[2][field])
+        self.assertEqual(summary['counts']['total'], 8)
+        self.assertEqual(summary['counts']['shared'], 1)
+        self.assertEqual(images['assets'][0]['currentEvidenceUrls'], [
+            f'https://github.com/Technoetic/agentic-vault/blob/{AV}/docs/prior.md#L9',
+            f'https://github.com/Technoetic/semantic-crosscheck/blob/{NEW}/README.md#L2'])
+
     def test_six_distinct_canonical_sources_gain_public_evidence_without_artwork(self):
         revised, images, summary = self.apply(*fixture())
         new_sources = {source['id']: source for source in revised['sources'][2:]}

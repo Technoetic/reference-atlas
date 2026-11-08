@@ -82,11 +82,10 @@ def evidence_url(commit, file, line):
 def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=None):
     if not re.fullmatch('[0-9a-f]{40}', commit) or tag != TAG:
         raise ValueError('Expected a full lowercase commit SHA and exact tag v0.21.0')
-    validate_catalog(registry)
     old_sources = merge_sources(registry['sources'])
-    # Never normalize away a duplicate/merged curated record during this update.
-    if len(old_sources) != len(registry['sources']):
-        raise ValueError('Existing curated source identities must already be unique')
+    # Raw curation retains separate plugin rows/notes for some shared identities.
+    # Validate the published merge, but edit and preserve every raw record below.
+    validate_catalog({**registry, 'sources': old_sources})
     old_by_id = {source['id']: source for source in old_sources}
     present_new = NEW_IDS & set(old_by_id)
     for spec in SPECS:
@@ -163,8 +162,9 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
                                   'url': f'https://github.com/Technoetic/{PLUGIN}/tree/{commit}'}
     if revised != registry:
         revised['updatedAt'] = updated_at or datetime.now(timezone.utc).isoformat()
-    validate_catalog(revised)
-    by_id = {source['id']: source for source in revised['sources']}
+    merged = merge_sources(revised['sources'])
+    validate_catalog({**revised, 'sources': merged})
+    by_id = {source['id']: source for source in merged}
     for asset in images['assets']:
         urls = [row['url'] for use in by_id[asset['sourceId']]['uses'] for row in use['evidence']]
         asset['evidenceUrls'] = urls
@@ -172,7 +172,7 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
     summary = {'priorSxcCitations': prior_count, 'repinnedCitations': repinned_count,
                'remappedLines': moved_count, 'addedCitations': added_count,
                'addedSourceIds': sorted(NEW_IDS - present_new),
-               'counts': metrics(merge_sources(revised['sources'])), 'artworkCount': images['count'],
+               'counts': metrics(merged), 'artworkCount': images['count'],
                'textFallbackSourceIds': sorted(NEW_IDS), 'snapshot': revised['snapshots'][PLUGIN]}
     return revised, images, summary
 
