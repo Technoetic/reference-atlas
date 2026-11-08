@@ -167,6 +167,18 @@ class Sxc021UpdateTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Expected 1 exact citation'):
                 self.apply(registry, artwork, texts)
 
+    def test_similarly_named_repo_or_other_paper_version_is_not_the_expected_citation(self):
+        for file, old, wrong in [
+            ('docs/contract-report.md', 'https://github.com/datacontract/datacontract-cli',
+             'https://github.com/datacontract/datacontract-cli-different'),
+            ('docs/provenance-fixtures.md', 'https://arxiv.org/abs/2504.12058v3',
+             'https://arxiv.org/abs/2504.12058v31'),
+        ]:
+            registry, artwork, texts = fixture()
+            texts[file] = [line.replace(old, wrong) for line in texts[file]]
+            with self.assertRaisesRegex(ValueError, 'Expected 1 exact citation'):
+                self.apply(registry, artwork, texts)
+
     def test_existing_strong_alias_collision_is_not_added_as_a_new_reference(self):
         registry, artwork, texts = fixture()
         registry['sources'][0]['keys'].append('github:lelit/pglast')

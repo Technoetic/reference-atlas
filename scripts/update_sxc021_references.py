@@ -138,10 +138,16 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
     added_count = 0
     for spec in SPECS:
         rows = []
-        needle = spec.get('needle', spec['url'])
+        def cites_expected_identity(text):
+            for url in re.findall(r'https?://[^\s<>()`]+', text):
+                identity = canonical_key(url)
+                if identity and identity['key'] == spec['id']:
+                    if 'needle' not in spec or url == spec['needle']:
+                        return True
+            return False
         for file, expected_count in spec['files']:
             lines = lines_for(file)
-            matches = [i + 1 for i, text in enumerate(lines) if needle in text]
+            matches = [i + 1 for i, text in enumerate(lines) if cites_expected_identity(text)]
             if len(matches) != expected_count:
                 raise ValueError(f'Expected {expected_count} exact citation URL(s): {spec["id"]} / {file}')
             rows.extend({'file': file, 'line': line, 'url': evidence_url(commit, file, line),
