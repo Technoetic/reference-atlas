@@ -1,4 +1,4 @@
-"""Prepare semantic-crosscheck v0.21.0 references from exact tagged Git blobs.
+"""Prepare semantic-crosscheck v0.21.0/v0.21.1 references from exact tagged Git blobs.
 
 Offline and dry-run by default. The caller must independently verify public
 source/tag availability before publishing. This helper neither publishes nor
@@ -19,7 +19,7 @@ from update_ontology_references import write_update
 ROOT = Path(__file__).resolve().parents[1]
 PLUGIN = 'semantic-crosscheck'
 PREFIX = f'https://github.com/Technoetic/{PLUGIN}/blob/'
-TAG = 'v0.21.0'
+TAGS = ('v0.21.0', 'v0.21.1')
 SCOPE = ('공개 저장소의 논문·설계/평가/구현 참고·배경 사례. 실제 구현의 파서 구조 참고는 포함하고, '
          '실행·CI 도구로만 쓰는 의존성은 제외합니다. 참고 기록은 코드 복사나 연구 결과 재현을 뜻하지 않습니다.')
 SPECS = (
@@ -80,8 +80,8 @@ def evidence_url(commit, file, line):
 
 
 def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=None):
-    if not re.fullmatch('[0-9a-f]{40}', commit) or tag != TAG:
-        raise ValueError('Expected a full lowercase commit SHA and exact tag v0.21.0')
+    if not re.fullmatch('[0-9a-f]{40}', commit) or tag not in TAGS:
+        raise ValueError('Expected a full lowercase commit SHA and exact tag v0.21.0 or v0.21.1')
     old_sources = merge_sources(registry['sources'])
     # Raw curation retains separate plugin rows/notes for some shared identities.
     # Validate the published merge, but edit and preserve every raw record below.
@@ -157,8 +157,13 @@ def prepare_update(registry, artwork, read_lines, commit, tag, *, updated_at=Non
                       uses=[{'plugin': PLUGIN, 'role': 'reference', 'evidence': rows}])
         if spec['id'] in present_new:
             existing = next(item for item in revised['sources'] if item['id'] == spec['id'])
-            if existing != source:
-                raise ValueError(f'Existing v0.21.0 source differs from the prepared record: {spec["id"]}')
+            identity = canonical_key(existing.get('url') or '')
+            uses = [use for use in existing['uses'] if use['plugin'] == PLUGIN]
+            if (existing['kind'] != spec['kind'] or not identity or identity['key'] != spec['id']
+                    or uses != source['uses']):
+                raise ValueError(f'Existing v0.21 source identity or cited use differs from the prepared record: {spec["id"]}')
+            # A patch release refreshes current evidence, not prior curation.
+            # Retain notes, keys, aliases, labels and any other plugin uses.
         else:
             revised['sources'].append(source)
             added_count += len(rows)
@@ -187,7 +192,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--plugin-root', required=True, type=Path)
     parser.add_argument('--commit', required=True)
-    parser.add_argument('--tag', required=True, choices=[TAG])
+    parser.add_argument('--tag', required=True, choices=TAGS)
     parser.add_argument('--apply', action='store_true', help='Write registry and current artwork citation mapping; no publishing')
     args = parser.parse_args(argv)
     if not re.fullmatch('[0-9a-f]{40}', args.commit):

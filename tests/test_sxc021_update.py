@@ -207,6 +207,42 @@ class Sxc021UpdateTests(unittest.TestCase):
         self.assertEqual((again, same_images), (revised, images))
         self.assertEqual((summary['addedCitations'], summary['repinnedCitations'], summary['addedSourceIds']), (0, 0, []))
 
+    def test_corrective_release_repins_existing_six_without_losing_source_history(self):
+        revised, images, _ = self.apply(*fixture())
+        for source in revised['sources'][2:]:
+            source['keys'].append('name:reviewed ' + source['id'])
+            source['aliases'].append('Prior reviewed alias for ' + source['id'])
+            source['note'] += ' Prior review history must survive the patch release.'
+        before_sources = copy.deepcopy(revised['sources'])
+        before_images = copy.deepcopy(images)
+        texts = fixture()[2]
+        for file in texts:
+            texts[file].insert(0, 'Corrective release heading')
+        patch_sha = 'd' * 40
+        patched, patched_images, summary = self.apply(revised, images, texts, commit=patch_sha, tag='v0.21.1')
+        self.assertEqual(len(patched['sources']), 8)
+        self.assertEqual((summary['priorSxcCitations'], summary['repinnedCitations'], summary['addedCitations']), (15, 15, 0))
+        self.assertEqual(summary['addedSourceIds'], [])
+        self.assertEqual(patched['snapshots']['semantic-crosscheck']['version'], 'v0.21.1')
+        for old, new in zip(before_sources, patched['sources']):
+            self.assertEqual({k:v for k,v in old.items() if k!='uses'},
+                             {k:v for k,v in new.items() if k!='uses'})
+            for use in new['uses']:
+                if use['plugin']=='semantic-crosscheck':
+                    self.assertTrue(all('/blob/'+patch_sha+'/' in row['url'] for row in use['evidence']))
+        for old, new in zip(before_images['assets'], patched_images['assets']):
+            self.assertEqual({k:v for k,v in old.items() if k not in {'evidenceUrls','currentEvidenceUrls'}},
+                             {k:v for k,v in new.items() if k not in {'evidenceUrls','currentEvidenceUrls'}})
+        again, again_images, repeated = self.apply(patched, patched_images, texts, commit=patch_sha, tag='v0.21.1')
+        self.assertEqual((again, again_images), (patched, patched_images))
+        self.assertEqual((repeated['repinnedCitations'], repeated['addedCitations'], repeated['addedSourceIds']), (0, 0, []))
+
+    def test_corrective_release_refuses_a_changed_existing_source_role(self):
+        revised, images, _ = self.apply(*fixture())
+        revised['sources'][2]['uses'][0]['role']='background'
+        with self.assertRaisesRegex(ValueError, 'identity or cited use'):
+            self.apply(revised, images, fixture()[2], commit='d'*40, tag='v0.21.1')
+
     def test_cli_reads_tagged_git_blobs_and_dry_run_never_writes(self):
         self.assertIsNotNone(updater, 'The v0.21.0 source-bound updater is not implemented')
         registry, artwork, texts = fixture()
@@ -226,6 +262,7 @@ class Sxc021UpdateTests(unittest.TestCase):
             git('-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.org', 'commit', '-m', 'fixture')
             commit = git('rev-parse', 'HEAD')
             git('tag', 'v0.21.0')
+            git('tag', 'v0.21.1')
             for name, document in [('data/registry.source.json', registry), ('docs/card-artwork-unique-prompts.json', artwork)]:
                 target = root / name
                 target.parent.mkdir(parents=True, exist_ok=True)
@@ -238,6 +275,10 @@ class Sxc021UpdateTests(unittest.TestCase):
                 self.assertEqual(updater.main(['--plugin-root', str(plugin), '--commit', commit, '--tag', 'v0.21.0']), 0)
             result = json.loads(output.getvalue())
             self.assertEqual((result['mode'], result['snapshot']['commit']), ('dry-run', commit))
+            patch_output = StringIO()
+            with patch.object(updater, 'ROOT', root), redirect_stdout(patch_output):
+                self.assertEqual(updater.main(['--plugin-root', str(plugin), '--commit', commit, '--tag', 'v0.21.1']), 0)
+            self.assertEqual(json.loads(patch_output.getvalue())['snapshot']['version'], 'v0.21.1')
             self.assertEqual(before, [(root / file).read_bytes() for file in ['data/registry.source.json', 'docs/card-artwork-unique-prompts.json']])
             with patch.object(updater, 'ROOT', root), redirect_stdout(StringIO()):
                 with self.assertRaisesRegex(ValueError, 'tag'):
