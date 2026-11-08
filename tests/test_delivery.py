@@ -12,6 +12,7 @@ EXPECTED_COVERAGE={
     ('v0.41.0','v0.20.0'):(42,34,1,104,173),
     ('v0.42.0','v0.20.0'):(44,37,1,109,181),
     ('v0.43.0','v0.20.0'):(50,49,5,131,233),
+    ('v0.43.0','v0.21.0'):(50,49,5,137,246),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -30,10 +31,9 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[1])
         self.assertEqual(catalog['countsByPlugin']['agentic-vault'].get('article',0),expected[2])
         self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[3:])
-        self.assertEqual(catalog['countsByPlugin']['semantic-crosscheck']['paper'],13)
         sxc=catalog['countsByPlugin']['semantic-crosscheck']
-        self.assertEqual((sxc['total'],sxc['citations']), (28,45) if versions[1]=='v0.20.0' else (26,41))
-        self.assertEqual(catalog['counts']['shared'],5 if versions[1]=='v0.20.0' else 3)
+        sxc_coverage={'v0.19.1':(13,26,41,3),'v0.20.0':(13,28,45,5),'v0.21.0':(14,34,58,5)}
+        self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
     def test_v042_coverage_adds_two_papers_three_projects_and_eight_citations_without_rewriting_history(self):
