@@ -10,7 +10,14 @@ const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
 ]);
-const uncommissioned=new Set();
+const uncommissioned=new Set([
+  'github:datacontract/datacontract-cli',
+  'github:bitol-io/open-data-contract-standard',
+  'github:pganalyze/libpg_query',
+  'github:lelit/pglast',
+  'arxiv:2504.12058',
+  'github:pierresenellart/provenance-lean'
+]);
 const newReleaseCommissioned=new Set([
   "url:https://code.claude.com/docs/en/hooks",
   "url:https://code.claude.com/docs/en/plugins/cli-reference",
