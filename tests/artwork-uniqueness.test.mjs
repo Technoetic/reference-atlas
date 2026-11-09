@@ -6,6 +6,9 @@ import {sourceArtwork,artworkCover} from '../src/screens/art.mjs';
 
 const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
 const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-prompts.json',import.meta.url),'utf8'));
+const av044TextFallbacks=new Set([
+  'arxiv:2611.09807','arxiv:2611.09721','arxiv:2611.09662'
+]);
 const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
@@ -55,7 +58,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0'].includes(catalog.snapshots['agentic-vault'].version)){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -63,17 +66,28 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all catalog sources have dedicated images; future sources retain explicit text fallback',()=>{
+test('all commissioned sources keep dedicated images and only new AV044 papers use text fallback',()=>{
   assert.equal(manifest.count,137);
-  const images=[];
+  const images=[],fallbacks=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
-    images.push(art.src);
+    if(art.src) images.push(art.src);
+    else {
+      fallbacks.push(source.id);
+      assert.ok(av044TextFallbacks.has(source.id),`Unexpected uncommissioned source: ${source.id}`);
+      for(const detail of [false,true]){
+        const html=artworkCover(source,{detail});
+        assert.ok(html.includes('is-art-fallback'));
+        assert.ok(!html.includes('<img data-source-artwork'));
+      }
+    }
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+fallbacks.length,catalog.sources.length);
+  if(catalog.snapshots['agentic-vault'].version==='v0.44.0')
+    assert.deepEqual(new Set(fallbacks),av044TextFallbacks);
+  else assert.deepEqual(fallbacks,[]);
 });
 
 test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{
