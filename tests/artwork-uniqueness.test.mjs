@@ -9,6 +9,10 @@ const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-pr
 const av044TextFallbacks=new Set([
   'arxiv:2611.09807','arxiv:2611.09721','arxiv:2611.09662'
 ]);
+const av045TextFallbacks=new Set([
+  ...av044TextFallbacks,
+  'arxiv:2502.05167','arxiv:2404.06654','arxiv:2411.06037','github:nvidia/ruler'
+]);
 const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
@@ -58,7 +62,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0'].includes(catalog.snapshots['agentic-vault'].version)){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -66,15 +70,17 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all commissioned sources keep dedicated images and only new AV044 papers use text fallback',()=>{
+test('all commissioned sources keep dedicated images and declared uncommissioned sources use text fallback',()=>{
   assert.equal(manifest.count,137);
+  const expectedFallbacks=catalog.snapshots['agentic-vault'].version==='v0.45.0'
+    ? av045TextFallbacks : av044TextFallbacks;
   const images=[],fallbacks=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
     if(art.src) images.push(art.src);
     else {
       fallbacks.push(source.id);
-      assert.ok(av044TextFallbacks.has(source.id),`Unexpected uncommissioned source: ${source.id}`);
+      assert.ok(expectedFallbacks.has(source.id),`Unexpected uncommissioned source: ${source.id}`);
       for(const detail of [false,true]){
         const html=artworkCover(source,{detail});
         assert.ok(html.includes('is-art-fallback'));
@@ -85,8 +91,8 @@ test('all commissioned sources keep dedicated images and only new AV044 papers u
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
   assert.equal(images.length+fallbacks.length,catalog.sources.length);
-  if(catalog.snapshots['agentic-vault'].version==='v0.44.0')
-    assert.deepEqual(new Set(fallbacks),av044TextFallbacks);
+  if(['v0.44.0','v0.45.0'].includes(catalog.snapshots['agentic-vault'].version))
+    assert.deepEqual(new Set(fallbacks),expectedFallbacks);
   else assert.deepEqual(fallbacks,[]);
 });
 
