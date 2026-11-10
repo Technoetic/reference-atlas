@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T14:07:13.798455+00:00",
+  "updatedAt": "2026-11-10T14:31:08.891846+00:00",
   "snapshots": {
     "agentic-vault": {
       "name": "Agentic Vault",
-      "version": "v0.45.0",
-      "commit": "7d65b897edeb770588182a91a7aa33d603dfa21f",
-      "url": "https://github.com/Technoetic/agentic-vault/tree/7d65b897edeb770588182a91a7aa33d603dfa21f"
+      "version": "v0.45.1",
+      "commit": "7e463f5e8f57ce5aa01b32d54709e6778d81f2cc",
+      "url": "https://github.com/Technoetic/agentic-vault/tree/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc"
     },
     "semantic-crosscheck": {
       "name": "Semantic Crosscheck",
@@ -47,7 +47,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1091,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1091",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1091",
               "excerpt": "- [Statistical Significance Testing in Information Retrieval: An Empirical Analysis of Type I, Type II and Type III Errors](https://arxiv.org/abs/1905.11096) (Urbano·Lima·Hanjalic, SIGIR 2019, arXiv v2 2019-06-05): 부호를 무"
             }
           ]
@@ -78,13 +78,13 @@
             {
               "file": "docs/hardening.md",
               "line": 428,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L428",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L428",
               "excerpt": "방법은 [CheckList](https://aclanthology.org/2020.acl-main.442/)(Ribeiro·Wu·Guestrin·Singh, ACL 2020, arXiv 2005.04118) §2.2·§2.3의 불변 시험(INV)과 방향 기대 시험(DIR)에서 빌렸다."
             },
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 10,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.32.0.md#L10",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.32.0.md#L10",
               "excerpt": "- **기간 정규화의 변성 시험과 보류·회복(`--normalize-periods`, 선택):** 새 `tests/test_vault_period_metamorphic.py`는 작은 낱말 목록의 데카르트 곱(`itertools.product`)으로 만든 14,775개 사례로 관계 아홉 개를 본다. DIR(방향 기대)은 좁히는 말, 기간 앞의 영문 수식어, 구분 기호 뒤의 기간 단위 항목, 두"
             }
           ]
@@ -115,7 +115,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 458,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L458",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L458",
               "excerpt": "- [An Empirical Study of Flaky Tests in Python](https://arxiv.org/abs/2101.09077)(Gruber 등, ICST 2021), [DeleteFileW](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-deletefilew): 재실행 횟수와 상한으로 간헐 실"
             }
           ]
@@ -146,13 +146,13 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 616,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L616",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L616",
               "excerpt": "- 근거: [Testing for Outliers with Conformal p-values](https://arxiv.org/abs/2104.08279)(Bates·Candès·Lei·Romano·Sesia,"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1095,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1095",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1095",
               "excerpt": "- [Testing for Outliers with Conformal p-values](https://arxiv.org/abs/2104.08279) (Bates·Candès·Lei·Romano·Sesia, Ann. Statist. 51(1):149–178, 2023, arXiv v3 2022-05-25): 식 (3)의 분할 conformal p-value와 그 p ≤ α에 해당하는 문턱 규칙"
             }
           ]
@@ -183,13 +183,13 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 617,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L617",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L617",
               "excerpt": "Ann. Statist. 51(1), 2023)의 분할 conformal p-value와 [Learn then Test](https://arxiv.org/abs/2110.01052)"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1096,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1096",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1096",
               "excerpt": "- [Learn then Test](https://arxiv.org/abs/2110.01052) (Angelopoulos·Bates·Candès·Jordan·Lei, arXiv v5 2022-09-29): 위험 통제를 다중 가설 검정으로 바꾸는 틀에서 fixed-sequence 검정과 정확한 이항 꼬리 p-value를 [답 없음 보정 문턱](#답-없음-보정-문턱)의 `calibration_c"
             }
           ]
@@ -220,13 +220,13 @@
             {
               "file": "docs/improvement-experiments.md",
               "line": 164,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-experiments.md#L164",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-experiments.md#L164",
               "excerpt": "선택형 `--receipt-order`는 [Pre-registration for Predictive Modeling](https://arxiv.org/abs/2311.18807)"
             },
             {
               "file": "docs/improvement-experiments.md",
               "line": 165,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-experiments.md#L165",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-experiments.md#L165",
               "excerpt": "(Hofman 외, arXiv 2311.18807 v1, 2023-11-30)의 사전 등록 원칙, 곧 시각이 찍힌 계획으로 미리 정한 것과"
             }
           ]
@@ -258,7 +258,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1098,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1098",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1098",
               "excerpt": "- [AgentDojo](https://arxiv.org/abs/2406.13352), [공식 코드](https://github.com/ethz-spylab/agentdojo): 정상 업무와 공격 목표를 독립 사후 조건으로 평가하는 방법 참고."
             }
           ]
@@ -289,7 +289,7 @@
             {
               "file": "docs/tower-reliability.md",
               "line": 152,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L152",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L152",
               "excerpt": "출처: [MUSCLE](https://arxiv.org/abs/2407.09435) §3.1의 음의 뒤집힘(NF)과 NFR 정의(분모는 전체"
             }
           ]
@@ -321,7 +321,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1088,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1088",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1088",
               "excerpt": "- [LMEB](https://arxiv.org/abs/2603.12572), [LongMemEval](https://arxiv.org/abs/2410.10813): 검색과 답변을 분리하고 갱신·시간·답변 보류를 평가하는 참고."
             }
           ]
@@ -352,7 +352,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 20,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L20",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L20",
               "excerpt": "| [Zep 논문](https://arxiv.org/abs/2501.13956), [Graphiti](https://github.com/getzep/graphiti) | 사실의 유효 기간과 출처, 과거 시점 조회 | `valid_from`·`valid_until`·`checked_at`·`superseded_by`와 `--as-of`; Graphiti DB나 완전한 이중 시간 DB는 사용하지"
             }
           ]
@@ -383,13 +383,13 @@
             {
               "file": "docs/link-proposals.md",
               "line": 68,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L68",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L68",
               "excerpt": "- [A-MEM 논문](https://arxiv.org/abs/2502.12110)과 [공식 시스템 구현](https://github.com/WujiangXu/A-mem-sys): 관련 노트와 연결 변경안을 제안하는 아이디어를 참고했다. 이번 helper는 어휘 후보를 반환하며 자동 기억 진화·의미 검색은 포함하지 않는다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 17,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L17",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L17",
               "excerpt": "| [A-MEM 논문](https://arxiv.org/abs/2502.12110), [공식 시스템](https://github.com/WujiangXu/A-mem-sys) | 새 기억과 기존 노트의 연결을 검토하고 출처를 보존 | `vault_links.py`의 해시·diff 제안, `vault_memory.py`의 구조화 단위  | 연결·인용·해시 동작 테스트 통과. 의미 관계/기억 진화"
             }
           ]
@@ -420,7 +420,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 19,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L19",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L19",
               "excerpt": "| [HippoRAG 2 논문](https://arxiv.org/abs/2502.14802), [공식 코드](https://github.com/OSU-NLP-Group/HippoRAG) | 질의에서 연결된 근거로 범위를 확장 | 실제 파일명이 유일한 위키링크를 최대 2단계 순회하고 경로·해시를 반환; PPR·엔티티 모델은 별도  | 2단계 연결 fixture 통과. 합성 전체 검색 재현율 7"
             }
           ]
@@ -452,7 +452,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1090,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1090",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1090",
               "excerpt": "- [Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints](https://arxiv.org/abs/2503.01747) (Bowyer·Aitchison·Ivanova, ICML 2025 Spotlight Position, arXiv v3 2025-05-28): 작은 N에서 CLT 구간이 불확실성을 "
             }
           ]
@@ -484,13 +484,13 @@
             {
               "file": "docs/link-proposals.md",
               "line": 70,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L70",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L70",
               "excerpt": "- [MINJA 논문](https://arxiv.org/abs/2503.03704)과 [공식 구현](https://github.com/dsh3n77/MINJA): 지속 기억을 통해 후속 판단이 오염될 위험을 참고했다. 이번 합성 fixture는 오염된 출처의 검색 노출만 측정하며 원래 공격을 재현하거나 공격 성공률을 측정하지 않는다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 22,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L22",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L22",
               "excerpt": "| [MINJA 논문](https://arxiv.org/abs/2503.03704), [공식 코드](https://github.com/dsh3n77/MINJA) | 저장된 오염이 후속 작업으로 전파되는 경로 점검 | 오염 근거 노출 측정, 원문 재조회·정책 검사, 합성 실행기의 금지 행동 차단과 철회 후 잔류 검사  | 합성 실행기의 금지 행동 차단·실제 출처 철회 후 잔류0 확인. 실제 공"
             }
           ]
@@ -521,7 +521,7 @@
             {
               "file": "docs/improvement-accounting.md",
               "line": 131,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-accounting.md#L131",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-accounting.md#L131",
               "excerpt": "설계 참고: [DGM v3](https://arxiv.org/pdf/2505.22954v3)의 평가 우회 사례와 탐색 비용,"
             }
           ]
@@ -554,7 +554,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 454,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L454",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L454",
               "excerpt": "- [LongMemEval-V2](https://arxiv.org/abs/2605.12493), [MemoryAgentBench](https://arxiv.org/abs/2507.05257): 상태 변화와 실제 기억 사용을 분리하는 평가 설계 참고."
             }
           ]
@@ -585,7 +585,7 @@
             {
               "file": "docs/hardening.md",
               "line": 152,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L152",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L152",
               "excerpt": "방법은 [HaluMem](https://arxiv.org/abs/2511.03506)(기억 환각을 추출·갱신·질의응답 단계별로 측정)과"
             }
           ]
@@ -616,7 +616,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 18,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L18",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L18",
               "excerpt": "| [SimpleMem 논문](https://arxiv.org/abs/2601.02553), [공식 코드](https://github.com/aiming-lab/SimpleMem) | 독립적으로 이해할 수 있는 사실 단위, 정확한 중복 병합, 질문에 따른 선택 | 출처 인용을 검증하는 `compile_units()`; 의미 해석·대명사 해소는 호스트가 명시적으로 작성  | 단위·중복·조건·잠"
             }
           ]
@@ -647,7 +647,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 455,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L455",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L455",
               "excerpt": "- [MLCL](https://arxiv.org/abs/2601.05366), [BFCL](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard): 언어별 도구 인자 실패를 가르는 실험 틀. MLCL의 한국어 검증을 재현한 것은 아니다."
             }
           ]
@@ -679,7 +679,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 23,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L23",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L23",
               "excerpt": "| [MemoryArena 논문](https://arxiv.org/abs/2602.16313), [공식 코드](https://github.com/ZexueHe/MemoryArena) | 여러 세션의 기억이 실제 다음 행동에 영향을 주는지 평가 | 상태 전제·사후 조건으로 채점하는 `evaluate_memory_workflows.py`; 원 벤치마크 재현은 아님  | 같은 로컬 Qwen 모델/"
             }
           ]
@@ -711,7 +711,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1088,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1088",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1088",
               "excerpt": "- [LMEB](https://arxiv.org/abs/2603.12572), [LongMemEval](https://arxiv.org/abs/2410.10813): 검색과 답변을 분리하고 갱신·시간·답변 보류를 평가하는 참고."
             }
           ]
@@ -742,7 +742,7 @@
             {
               "file": "docs/memory-revocation.md",
               "line": 141,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-revocation.md#L141",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-revocation.md#L141",
               "excerpt": "[Memora](https://arxiv.org/abs/2604.20006) motivates inspecting forbidden-memory use"
             }
           ]
@@ -775,19 +775,19 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 454,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L454",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L454",
               "excerpt": "- [LongMemEval-V2](https://arxiv.org/abs/2605.12493), [MemoryAgentBench](https://arxiv.org/abs/2507.05257): 상태 변화와 실제 기억 사용을 분리하는 평가 설계 참고."
             },
             {
               "file": "docs/link-proposals.md",
               "line": 69,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L69",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L69",
               "excerpt": "- [LongMemEval-V2 논문](https://arxiv.org/abs/2605.12493)과 [공식 구현](https://github.com/xiaowu0162/LongMemEval-V2): 상태 변화·업무 절차·환경 주의점·잘못된 전제를 구분하는 평가 관점을 참고했다. 데이터셋과 논문 성능 수치는 가져오지 않았다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 21,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L21",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L21",
               "excerpt": "| [LongMemEval V2](https://arxiv.org/abs/2605.12493), [공식 코드](https://github.com/xiaowu0162/LongMemEval-V2) | 변경 사실·절차·전제 오류·정답 없음의 구분 | 경험 fixture와 고급 fixture의 질의별·시나리오별 검색/노출 평가  | 기존16/경험16/고급16질문 평가 실행. 출처 검색·노출만 측정;"
             }
           ]
@@ -818,7 +818,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 461,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L461",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L461",
               "excerpt": "- [The Constraint Tax](https://arxiv.org/abs/2605.26128), [Mitigating Bias in Locally Constrained Decoding](https://arxiv.org/abs/2606.01926): 스키마 유효·정답·실행 정확도·'유효하지만 틀림'을 따로 세는 짝 비교 설계와, 문자열 값 마스킹이 분포를 왜곡할 수 있다는 경고의 참고."
             }
           ]
@@ -850,7 +850,7 @@
             {
               "file": "docs/memory-assembly.md",
               "line": 144,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-assembly.md#L144",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-assembly.md#L144",
               "excerpt": "[Reliable Post-Retrieval Assembly](https://arxiv.org/abs/2606.01435)의 의미 후보 추출과"
             }
           ]
@@ -881,7 +881,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 461,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L461",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L461",
               "excerpt": "- [The Constraint Tax](https://arxiv.org/abs/2605.26128), [Mitigating Bias in Locally Constrained Decoding](https://arxiv.org/abs/2606.01926): 스키마 유효·정답·실행 정확도·'유효하지만 틀림'을 따로 세는 짝 비교 설계와, 문자열 값 마스킹이 분포를 왜곡할 수 있다는 경고의 참고."
             }
           ]
@@ -912,7 +912,7 @@
             {
               "file": "docs/memory-lifecycle.md",
               "line": 66,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-lifecycle.md#L66",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-lifecycle.md#L66",
               "excerpt": "(persistence→consequence→selective repair), [MPBench](https://arxiv.org/abs/2606.04329)"
             }
           ]
@@ -943,25 +943,25 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 112,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L112",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L112",
               "excerpt": "실제 제외 기전의 몫인지 따로 잰다. [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019)의"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1089,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1089",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1089",
               "excerpt": "- [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019) (Jiang 외, arXiv v1 2026-07-17): 표시 방식을 고정한 대조군으로 시간 유효성 기전의 몫을 분리하는 방법 참고. 코드나 데이터는 사용하지 않았다."
             },
             {
               "file": "docs/releases/v0.23.0.md",
               "line": 44,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.23.0.md#L44",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.23.0.md#L44",
               "excerpt": "논문([arXiv 2607.16019](https://arxiv.org/abs/2607.16019))의 질문 2,907개, 겉보기 이득 +0.182, 기전 잔차"
             },
             {
               "file": "docs/verification/render-matched-20261017.md",
               "line": 8,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/verification/render-matched-20261017.md#L8",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/verification/render-matched-20261017.md#L8",
               "excerpt": "The control follows [Presentation, Not Mechanism](https://arxiv.org/abs/2607.16019)"
             }
           ]
@@ -992,7 +992,7 @@
             {
               "file": "docs/memory-lifecycle.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-lifecycle.md#L65",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-lifecycle.md#L65",
               "excerpt": "The design borrows evaluation questions from [MemSecBench](https://arxiv.org/abs/2607.27080)"
             }
           ]
@@ -1023,7 +1023,7 @@
             {
               "file": "docs/hardening.md",
               "line": 153,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L153",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L153",
               "excerpt": "[MemTxn](https://arxiv.org/abs/2607.27834)(갱신이 원천에 의해 뒷받침되는지 보는 경계)을 참고했다."
             }
           ]
@@ -1054,19 +1054,19 @@
             {
               "file": "docs/release-integrity.md",
               "line": 487,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/release-integrity.md#L487",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/release-integrity.md#L487",
               "excerpt": "- [Reproducibility is Not Enough](https://arxiv.org/abs/2608.18180)(Solarin 외, 2026-08): 재빌드 검증을 주로 막는 것이"
             },
             {
               "file": "docs/releases/v0.26.0.md",
               "line": 209,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.26.0.md#L209",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.26.0.md#L209",
               "excerpt": "- 새로 인용한 외부 자료(Gruber 등 ICST 2021, Reproducible Builds의 Archive metadata, arXiv 2608.18180, 키 가명화"
             },
             {
               "file": "docs/verification/v0.26.0.md",
               "line": 249,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/verification/v0.26.0.md#L249",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/verification/v0.26.0.md#L249",
               "excerpt": "development (Gruber et al. ICST 2021, Reproducible Builds archive metadata, arXiv 2608.18180, the ENISA"
             }
           ]
@@ -1097,14 +1097,14 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1554,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1554",
+              "line": 1569,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1569",
               "excerpt": "| [WikiSkill](https://arxiv.org/abs/2608.27454) (Google Research) | 스킬 진화의 **영속 위키 계층**과 승격 게이팅 — v0.8.3이 3건 흡수: index 서술 규격(\"설명만 읽고 열지 말지 결정\") · 기각 초안 전문 보존 · 승격 후 관찰 검증→확정/롤백(\"스킬은 가역, 위키는 영속\" 비대칭) |"
             },
             {
               "file": "docs/releases/v0.8.3.md",
               "line": 5,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.8.3.md#L5",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.8.3.md#L5",
               "excerpt": "v0.8.3은 WikiSkill 논문([arXiv 2608.27454](https://arxiv.org/abs/2608.27454), Google Research — 이 플러그인과 같은 Karpathy LLM Wiki 계보의 스킬 진화 프레임워크)에서 3건을 흡수한 릴리스다. 전부 마크다운 계약(템플릿·커맨드·rules) 변경이며 Python 코드·훅은 건드리지 않는다. 흡수 판정은 후보별 "
             }
           ]
@@ -1138,7 +1138,7 @@
             {
               "file": "docs/memory-stage-evaluation.md",
               "line": 5,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-stage-evaluation.md#L5",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-stage-evaluation.md#L5",
               "excerpt": "The experimental design borrows the principles of stage-wise contrasts and matched clean/poisoned conditions from Zang et al., [Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory (MemGauge)](https://arx"
             }
           ]
@@ -1170,7 +1170,7 @@
             {
               "file": "docs/evidence.md",
               "line": 200,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evidence.md#L200",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evidence.md#L200",
               "excerpt": "설계 참고: [Harness-of-Harness (HoH)](https://arxiv.org/abs/2609.01481)의"
             }
           ]
@@ -1201,7 +1201,7 @@
             {
               "file": "docs/improvement-accounting.md",
               "line": 132,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-accounting.md#L132",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-accounting.md#L132",
               "excerpt": "[AIDE²](https://arxiv.org/pdf/2609.26457v1)의 개선 실험 평가 조건. 코드·모델을 가져온 것은 아니다."
             }
           ]
@@ -1235,19 +1235,19 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 513,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L513",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L513",
               "excerpt": "- 프로토콜: [Search Engines Never Say No](https://arxiv.org/abs/2610.05348)의 쌍둥이 실험을 따른다. 논문은 질문마다"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1094,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1094",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1094",
               "excerpt": "- [Search Engines Never Say No: How Frozen Agents React When the Retrieval Tool Refuses](https://arxiv.org/abs/2610.05348) (Chandradevan·Ghosh·Selvendran, arXiv v1 2026-10-04, cs.IR, CC BY 4.0): 골드 제거 쌍둥이와 '거짓 거부 예산을 고정한"
             },
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 11,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.32.0.md#L11",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.32.0.md#L11",
               "excerpt": "- **답 없음 쌍둥이와 행 토큰 정렬(`scripts/evaluate_recall.py`, 선택):** 저장소 평가 도구의 새 `--gold-removal-twins`는 inspected가 아닌 답 있는 문항마다 그 답을 담은 노트(`expected_paths`, `relevance` 등급이 0보다 큰 모든 경로, 정규화한 `required_claims` 문장이 든 노트)를 뺀 볼트에서 같"
             }
           ]
@@ -1278,19 +1278,19 @@
             {
               "file": "docs/improvement-experiments.md",
               "line": 160,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-experiments.md#L160",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-experiments.md#L160",
               "excerpt": "[Harness² 논문 §2](https://arxiv.org/html/2610.14224v1#S2)의 일반/특화 후보 대비와 합성, [Appendix H](https://arxiv.org/html/2610.14224v1#A8)의 수정 효과·교훈 분리와 NO_ENTRY를 참고해 기존 AV 구조로 구현했다. 원 프로젝트 코드·런타임·벤치마크를 복사하거나 논문의 점수를 가져오지 않는다."
             },
             {
               "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
               "line": 61,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L61",
               "excerpt": "- https://arxiv.org/html/2610.14224v1#S2"
             },
             {
               "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L62",
               "excerpt": "- https://arxiv.org/html/2610.14224v1#A8"
             }
           ]
@@ -1321,7 +1321,7 @@
             {
               "file": "docs/memory-revocation.md",
               "line": 139,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-revocation.md#L139",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-revocation.md#L139",
               "excerpt": "[Bemula](https://arxiv.org/abs/2610.18052) motivates paired stored-target controls,"
             }
           ]
@@ -1353,44 +1353,44 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 847,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L847",
+              "line": 862,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L862",
               "excerpt": "AgentOnto (arXiv 2610.23317): `evaluate_korean_memory.py --answer-rates` reports the response rate,"
             },
             {
               "file": "README.md",
-              "line": 1285,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1285",
+              "line": 1300,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1300",
               "excerpt": "v0.30.0의 [평가기 식별·개선 비용 근거](docs/improvement-accounting.md)(선택한 평가기 코드·설정 스냅샷 연결, 실패·버린 시도까지 합산하는 비용 근거, 미측정 값 `null`)와 v0.29.0의 선택형 응답률·조용한 오류율(`--answer-rates`)·회수 성공률 하한(`--success-bounds`)·`preserve-check`를 유지한다. 평가기를"
             },
             {
               "file": "README.md",
-              "line": 1556,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1556",
+              "line": 1571,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1571",
               "excerpt": "| [AgentOnto](https://arxiv.org/abs/2610.23317) | 갱신 관문(정정·유지 검사)과 '조용한 의미 오류' 지표의 **설계 원리만** — v0.29.0에 더한 선택형 제안 유지 문구 확인(`preserve-check`, 등장 횟수 대조), 한국어 평가의 응답률·조용한 오류율(`--answer-rates`), 회수 성공률 하한(`--success-bounds`"
             },
             {
               "file": "docs/lesson-proposals.md",
               "line": 86,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/lesson-proposals.md#L86",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/lesson-proposals.md#L86",
               "excerpt": "- 바뀌어야 할 것(정정)과 그대로여야 할 것(유지)을 함께 선언하는 방식은 AgentOnto(arXiv 2610.23317)의 갱신"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 79,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L79",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L79",
               "excerpt": "- 설계 원리는 AgentOnto(arXiv 2610.23317)의 '조용한 의미 오류' 지표와 응답률 병기에서 가져왔다. 그 논문의"
             },
             {
               "file": "docs/releases/v0.29.0.md",
               "line": 6,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.29.0.md#L6",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.29.0.md#L6",
               "excerpt": "[AgentOnto](https://arxiv.org/abs/2610.23317)(arXiv 2610.23317)의 갱신 관문(정정·유지 검사)과"
             },
             {
               "file": "docs/verification/v0.29.0.md",
               "line": 12,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/verification/v0.29.0.md#L12",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/verification/v0.29.0.md#L12",
               "excerpt": "principles come from AgentOnto (arXiv 2610.23317); none of its numbers is used as evidence."
             }
           ]
@@ -1421,7 +1421,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1092,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1092",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1092",
               "excerpt": "- [Statistical stopping criteria for automated screening in systematic reviews](https://doi.org/10.1186/s13643-020-01521-4) (Callaghan·Müller-Hansen, Systematic Reviews 9:273, 2020, CC BY 4.0): 남은 문서의 무작위 표본과 초기하 검정(식 7·"
             }
           ]
@@ -1452,7 +1452,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 456,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L456",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L456",
               "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
             }
           ]
@@ -1483,7 +1483,7 @@
             {
               "file": "docs/hardening.md",
               "line": 781,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L781",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L781",
               "excerpt": "atomic group·possessive quantifier(\"Added in version 3.11\"). [VULCANBOOST](https://www.usenix.org/conference/usenixsecurity25/presentation/li-yeting)"
             }
           ]
@@ -1515,7 +1515,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 18,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L18",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L18",
               "excerpt": "| [SimpleMem 논문](https://arxiv.org/abs/2601.02553), [공식 코드](https://github.com/aiming-lab/SimpleMem) | 독립적으로 이해할 수 있는 사실 단위, 정확한 중복 병합, 질문에 따른 선택 | 출처 인용을 검증하는 `compile_units()`; 의미 해석·대명사 해소는 호스트가 명시적으로 작성  | 단위·중복·조건·잠"
             }
           ]
@@ -1548,13 +1548,13 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 802,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L802",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L802",
               "excerpt": "- [obsidian-wiki의 평가](https://github.com/Ar9av/obsidian-wiki/blob/main/obsidian_wiki/evaluate.py)는 경로,"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1099,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1099",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1099",
               "excerpt": "- [obsidian-wiki `evaluate.py`](https://github.com/Ar9av/obsidian-wiki/blob/main/obsidian_wiki/evaluate.py) (MIT): 볼트마다 손으로 라벨한 골드셋(`_meta/eval.jsonl`), 경로나 파일 이름 슬러그로 기대 노트를 맞추는 방식, recall@k·MRR 최소 기준 검사를 참고했다. 코드는 사용하지"
             }
           ]
@@ -1587,13 +1587,13 @@
             {
               "file": "docs/link-proposals.md",
               "line": 70,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L70",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L70",
               "excerpt": "- [MINJA 논문](https://arxiv.org/abs/2503.03704)과 [공식 구현](https://github.com/dsh3n77/MINJA): 지속 기억을 통해 후속 판단이 오염될 위험을 참고했다. 이번 합성 fixture는 오염된 출처의 검색 노출만 측정하며 원래 공격을 재현하거나 공격 성공률을 측정하지 않는다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 22,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L22",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L22",
               "excerpt": "| [MINJA 논문](https://arxiv.org/abs/2503.03704), [공식 코드](https://github.com/dsh3n77/MINJA) | 저장된 오염이 후속 작업으로 전파되는 경로 점검 | 오염 근거 노출 측정, 원문 재조회·정책 검사, 합성 실행기의 금지 행동 차단과 철회 후 잔류 검사  | 합성 실행기의 금지 행동 차단·실제 출처 철회 후 잔류0 확인. 실제 공"
             }
           ]
@@ -1626,7 +1626,7 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1098,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1098",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1098",
               "excerpt": "- [AgentDojo](https://arxiv.org/abs/2406.13352), [공식 코드](https://github.com/ethz-spylab/agentdojo): 정상 업무와 공격 목표를 독립 사후 조건으로 평가하는 방법 참고."
             }
           ]
@@ -1658,7 +1658,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 20,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L20",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L20",
               "excerpt": "| [Zep 논문](https://arxiv.org/abs/2501.13956), [Graphiti](https://github.com/getzep/graphiti) | 사실의 유효 기간과 출처, 과거 시점 조회 | `valid_from`·`valid_until`·`checked_at`·`superseded_by`와 `--as-of`; Graphiti DB나 완전한 이중 시간 DB는 사용하지"
             }
           ]
@@ -1690,19 +1690,19 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 74,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L74",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L74",
               "excerpt": "- [llama.cpp 서버 README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)(2026-10-19 열람)는"
             },
             {
               "file": "docs/evaluation-stability.md",
               "line": 459,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L459",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L459",
               "excerpt": "- [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/), [llama.cpp 서버 README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md):"
             },
             {
               "file": "docs/evaluation-stability.md",
               "line": 462,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L462",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L462",
               "excerpt": "- [JSON Schema Regular Expressions](https://json-schema.org/understanding-json-schema/reference/regular_expressions), [llama.cpp b10729](https://github.com/ggml-org/llama.cpp/tree/b10729): `pattern`이 ECMA-262 문법이고 이식 가능한"
             }
           ]
@@ -1741,49 +1741,49 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 457,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L457",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L457",
               "excerpt": "- [Git의 Windows rename 수정](https://github.com/git/git/commit/391bceae4350): 열린 핸들 때문에 교체가 거부되는 원인과 제한된 재시도의 참고."
             },
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 378,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L378",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L378",
               "excerpt": "- [git-commit](https://git-scm.com/docs/git-commit), `--only`, and"
             },
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 379,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L379",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L379",
               "excerpt": "[git-worktree](https://git-scm.com/docs/git-worktree), as shipped with Git for"
             },
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 393,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L393",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L393",
               "excerpt": "- [git-update-ref](https://git-scm.com/docs/git-update-ref): earlier used as a design"
             },
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 401,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L401",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L401",
               "excerpt": "and [git-config.adoc](https://github.com/git/git/blob/fb25501/Documentation/git-config.adoc)"
             },
             {
               "file": "docs/concurrent-commits.md",
               "line": 123,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/concurrent-commits.md#L123",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/concurrent-commits.md#L123",
               "excerpt": "- [git-commit](https://git-scm.com/docs/git-commit), `--only`, as shipped with Git for Windows 2.55.0.windows.3."
             },
             {
               "file": "docs/concurrent-commits.md",
               "line": 124,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/concurrent-commits.md#L124",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/concurrent-commits.md#L124",
               "excerpt": "- [git-update-ref](https://git-scm.com/docs/git-update-ref), the old-value check, same release."
             },
             {
               "file": "docs/reliability.md",
               "line": 314,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/reliability.md#L314",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/reliability.md#L314",
               "excerpt": "([git-config.adoc](https://github.com/git/git/blob/fb25501/Documentation/git-config.adoc),"
             }
           ]
@@ -1815,13 +1815,13 @@
             {
               "file": "docs/improvement-experiments.md",
               "line": 162,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/improvement-experiments.md#L162",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/improvement-experiments.md#L162",
               "excerpt": "공개 Harness²의 [선택 풀](https://github.com/google-research/harness2/blob/1cfe254e8d25b15f37048c3730134686abe60335/harness2/core/selection.py#L93-L111)은 기본 실행 결과와 보류를 제외한다. 이 구현은 기본안 유지와 보류를 명시하고 기존 AV의 비교 경계를 따른다. 온라인 자율 개선·"
             },
             {
               "file": "docs/superpowers/specs/2026-10-21-improvement-experiments-design.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/superpowers/specs/2026-10-21-improvement-experiments-design.md#L63",
               "excerpt": "- https://github.com/google-research/harness2/blob/1cfe254e8d25b15f37048c3730134686abe60335/harness2/core/selection.py#L93-L111"
             }
           ]
@@ -1853,13 +1853,13 @@
             {
               "file": "docs/releases/v0.40.0.md",
               "line": 64,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.40.0.md#L64",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.40.0.md#L64",
               "excerpt": "[google/skill-reach at `6cc80dd9f7fc3771f088b3ae5941651db5c11938`](https://github.com/google/skill-reach/tree/6cc80dd9f7fc3771f088b3ae5941651db5c11938),"
             },
             {
               "file": "docs/skill-routing-evaluation.md",
               "line": 203,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/skill-routing-evaluation.md#L203",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/skill-routing-evaluation.md#L203",
               "excerpt": "[google/skill-reach at `6cc80dd9f7fc3771f088b3ae5941651db5c11938`](https://github.com/google/skill-reach/tree/6cc80dd9f7fc3771f088b3ae5941651db5c11938),"
             }
           ]
@@ -1892,8 +1892,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 303,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L303",
+              "line": 310,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L310",
               "excerpt": "[OKF 사양](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/SPEC.md)과"
             }
           ]
@@ -1925,13 +1925,13 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 1097,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1097",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1097",
               "excerpt": "- [Hypothesis 상태 기반 검사](https://hypothesis.readthedocs.io/en/latest/stateful.html): 작업 순서 생성과 실패 축소. 개발 패키지 라이선스는 [upstream LICENSE](https://github.com/HypothesisWorks/hypothesis/blob/master/LICENSE.txt)를 따른다."
             },
             {
               "file": "docs/releases/v0.44.0.md",
               "line": 102,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.44.0.md#L102",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.44.0.md#L102",
               "excerpt": "- [Hypothesis license at `9ab0be61aaaa27396fc1bbf4b34e7925cc68d1e2`](https://github.com/HypothesisWorks/hypothesis/blob/9ab0be61aaaa27396fc1bbf4b34e7925cc68d1e2/LICENSE.txt):"
             }
           ]
@@ -1963,13 +1963,13 @@
             {
               "file": "docs/model-korean-memory.md",
               "line": 50,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/model-korean-memory.md#L50",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/model-korean-memory.md#L50",
               "excerpt": "on memory evaluation, including MemGauge and NoMIRACL, and Inspect's separation"
             },
             {
               "file": "docs/releases/v0.38.0.md",
               "line": 27,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.38.0.md#L27",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.38.0.md#L27",
               "excerpt": "라이브러리만 사용한다. Inspect AI의 데이터/풀이/채점 분리는 설계 참고이며"
             }
           ]
@@ -2002,13 +2002,13 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 274,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L274",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L274",
               "excerpt": "`kiwipiepy==0.24.0`, qmd에는 `@tobilu/qmd@2.8.3`을 설치해 이번 관측을 재현할 수 있다."
             },
             {
               "file": "docs/evaluation-stability.md",
               "line": 456,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L456",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L456",
               "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
             }
           ]
@@ -2039,8 +2039,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 304,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L304",
+              "line": 311,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L311",
               "excerpt": "[OpenWiki](https://github.com/langchain-ai/openwiki/tree/7bb583d664f2d1c2484fa44b9d591f6103ca8166)의"
             }
           ]
@@ -2072,7 +2072,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 25,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L25",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L25",
               "excerpt": "| [Letta Code](https://github.com/letta-ai/letta-code) | 파일 기반 지속 기억과 교훈의 후속 효과 추적 | 기존 승인된 교훈 제안에 적용 가능성·성공·재발·역효과 관측 추가; 자동 승격 없음  | 관측34테스트·현재 근거/분모/동시 기록 검증. 교훈의 실제 재발 감소 효과 미측정; Letta 서버 불필요 |"
             }
           ]
@@ -2104,13 +2104,13 @@
             {
               "file": "docs/memory-evaluation.md",
               "line": 940,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L940",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L940",
               "excerpt": "- 운영 규율은 [MemPalace](https://github.com/MemPalace/mempalace)의 보고 방식을 빌렸다. 실패 분석과 조정은 dev에서만"
             },
             {
               "file": "docs/memory-evaluation.md",
               "line": 1100,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-evaluation.md#L1100",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-evaluation.md#L1100",
               "excerpt": "- [MemPalace](https://github.com/MemPalace/mempalace) (MIT): dev 50문항으로 조정하고 보지 않은 held-out 450문항의 98.4%를 따로 내세우며, 틀린 답을 살펴 얻은 마지막 0.6%는 'teaching to the test'로 표시해 헤드라인에 쓰지 않는 보고 규율을 참고했다. 수치는 README의 자가 보고(2026-10-19 확"
             }
           ]
@@ -2143,25 +2143,25 @@
             {
               "file": "docs/tower-reliability.md",
               "line": 259,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L259",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L259",
               "excerpt": "[반복 행동 평가](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/harness/harness-eval-runner.ts),"
             },
             {
               "file": "docs/tower-reliability.md",
               "line": 260,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L260",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L260",
               "excerpt": "[실행 대장](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/agent-turn/side-effect-tool-wrapper.ts),"
             },
             {
               "file": "docs/tower-reliability.md",
               "line": 261,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L261",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L261",
               "excerpt": "[복구 미리보기](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/services/agent-turn/file-checkpoint.ts),"
             },
             {
               "file": "docs/tower-reliability.md",
               "line": 262,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L262",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L262",
               "excerpt": "[연결 진단](https://github.com/moatai-io/towersource/blob/76268c2969f20ccbea66d6582206c26e81ba7983/packages/backend/scripts/provider-doctor.ts)"
             }
           ]
@@ -2192,32 +2192,32 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1555,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1555",
+              "line": 1570,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1570",
               "excerpt": "| [MoAI-ADK](https://github.com/modu-ai/moai-adk/tree/2aab5f797b75983e132af451da68f69e3426557b) | v0.21.0: 전체 지침의 정적 분량 진단·완료 인덱스 원문 보존 미리보기·명시한 요구별 검증 누락 확인. 기존 Doctor/기억/근거 도구에 맞춰 Python 표준 라이브러리로 구현했으며 upstream Go 코드는"
             },
             {
               "file": "docs/moai-diagnostics.md",
               "line": 14,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/moai-diagnostics.md#L14",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/moai-diagnostics.md#L14",
               "excerpt": "| 지침 분량 관측 | [instructions_loaded.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/hook/instructions_loaded.go), [rule-loading-budget.md](https://github.com/modu-ai/moai-adk/"
             },
             {
               "file": "docs/moai-diagnostics.md",
               "line": 14,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/moai-diagnostics.md#L14",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/moai-diagnostics.md#L14",
               "excerpt": "| 지침 분량 관측 | [instructions_loaded.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/hook/instructions_loaded.go), [rule-loading-budget.md](https://github.com/modu-ai/moai-adk/"
             },
             {
               "file": "docs/moai-diagnostics.md",
               "line": 15,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/moai-diagnostics.md#L15",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/moai-diagnostics.md#L15",
               "excerpt": "| 원문 보존 정리 | [memory_fold.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/cli/memory_fold.go) | 명시적 완료 항목과 해시를 검증하는 미리보기; 적용 없음 |"
             },
             {
               "file": "docs/moai-diagnostics.md",
               "line": 16,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/moai-diagnostics.md#L16",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/moai-diagnostics.md#L16",
               "excerpt": "| 요구·검증 연결 | [lint_coverage_sibling.go](https://github.com/modu-ai/moai-adk/blob/2aab5f797b75983e132af451da68f69e3426557b/internal/spec/lint_coverage_sibling.go) | 기존 evidence/run 완전성 패턴을 일반 작업의 선언된 요구·검사에 적용 |"
             }
           ]
@@ -2248,8 +2248,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1553,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1553",
+              "line": 1568,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1568",
               "excerpt": "| [hermes-agent](https://github.com/NousResearch/hermes-agent) (Nous Research) | 에이전트 **선별** 메모리 사상(캡처→인박스→사람 있는 세션 정제)과 **자기개선 스킬 루프** — 후자는 `lessons.md` 대장 + 반복 3회 승격 제안으로 파일 기반 흡수(자동 승격 없음, v0.4.0) |"
             }
           ]
@@ -2280,8 +2280,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1552,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1552",
+              "line": 1567,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1567",
               "excerpt": "| [OpenClaw](https://github.com/openclaw/openclaw) | 🤖 Jarvis 계층의 \"몸통\" 사상 — 메신저 편재성·상시 데몬·cron 선발화. 우리는 채널 20종 대신 **1채널 최소판**으로 흡수하고 몸통 인프라 재발명은 의도적으로 포기 |"
             }
           ]
@@ -2313,7 +2313,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 19,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L19",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L19",
               "excerpt": "| [HippoRAG 2 논문](https://arxiv.org/abs/2502.14802), [공식 코드](https://github.com/OSU-NLP-Group/HippoRAG) | 질의에서 연결된 근거로 범위를 확장 | 실제 파일명이 유일한 위키링크를 최대 2단계 순회하고 경로·해시를 반환; PPR·엔티티 모델은 별도  | 2단계 연결 fixture 통과. 합성 전체 검색 재현율 7"
             }
           ]
@@ -2345,13 +2345,13 @@
             {
               "file": "docs/releases/v0.38.1.md",
               "line": 15,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.38.1.md#L15",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.38.1.md#L15",
               "excerpt": "[CPython 3.10의 Windows 구현](https://github.com/python/cpython/blob/3.10/Python/pytime.c#L882)은"
             },
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 406,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L406",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L406",
               "excerpt": "- [CPython `Doc/using/windows.rst`](https://github.com/python/cpython/blob/cbaba022cf2778c5f02445ae231a8af1f1db53a1/Doc/using/windows.rst)"
             }
           ]
@@ -2385,7 +2385,7 @@
             {
               "file": "docs/reliability.md",
               "line": 259,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/reliability.md#L259",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/reliability.md#L259",
               "excerpt": "[ccusage](https://github.com/ryoppippi/ccusage)(MIT)의 Claude 사용량 파서에서 방식만 빌렸다. 코드와 의존성은"
             }
           ]
@@ -2417,7 +2417,7 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 455,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L455",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L455",
               "excerpt": "- [MLCL](https://arxiv.org/abs/2601.05366), [BFCL](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard): 언어별 도구 인자 실패를 가르는 실험 틀. MLCL의 한국어 검증을 재현한 것은 아니다."
             }
           ]
@@ -2451,7 +2451,7 @@
             {
               "file": "docs/memory-lifecycle.md",
               "line": 68,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-lifecycle.md#L68",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-lifecycle.md#L68",
               "excerpt": "[AgentMemoryBench Repair](https://github.com/solomoon313/AgentMemoryBench)"
             }
           ]
@@ -2483,7 +2483,7 @@
             {
               "file": "docs/tower-reliability.md",
               "line": 154,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/tower-reliability.md#L154",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/tower-reliability.md#L154",
               "excerpt": "FAIL_TO_PASS·PASS_TO_PASS 정의, [SWE-bench](https://github.com/SWE-bench/SWE-bench) 채점 코드"
             }
           ]
@@ -2515,13 +2515,13 @@
             {
               "file": "docs/hardening.md",
               "line": 931,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L931",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L931",
               "excerpt": "| `sync-conflict-copy` (`syncthing-conflict`) | `<filename>.sync-conflict-<date>-<time>-<modifiedBy>.<ext>` | [Syncthing: Understanding Synchronization](https://docs.syncthing.net/users/syncing.html) \"Conflicting Changes"
             },
             {
               "file": "docs/hardening.md",
               "line": 939,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L939",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L939",
               "excerpt": "- 같은 문서에 따르면 Syncthing은 대상 파일에 직접 쓰지 않고 임시 사본에 쓴 뒤 옮긴다. 복사·동기화 중 오류가 나면 임시 파일이"
             }
           ]
@@ -2556,8 +2556,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1546,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1546",
+              "line": 1561,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1561",
               "excerpt": "| [**Technoetic/harness107**](https://github.com/Technoetic/harness107) | **자매 레포** — harness107이 \"실행\"의 하네스라면 agentic-vault는 \"기억\"의 하네스. README 형식과 정직성 섹션 관행 공유 |"
             }
           ]
@@ -2589,13 +2589,13 @@
             {
               "file": "docs/evaluation-stability.md",
               "line": 456,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/evaluation-stability.md#L456",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/evaluation-stability.md#L456",
               "excerpt": "- [Kiwi](https://doi.org/10.23287/KJDH.2024.1.1.6), [qmd](https://github.com/tobi/qmd): 선택형 검색 대조군."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 24,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L24",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L24",
               "excerpt": "| [qmd 공식 코드](https://github.com/tobi/qmd) | BM25·검색 결과 결합과 선택형 외부 의미 검색 | `lexical`/`bm25`/`hybrid`, RRF, `import_qmd_candidates.py`와 원문을 다시 읽는 sidecar 입력  | BM25/RRF/원문 재조회·어댑터20테스트 검증. qmd 실제 임베딩/재순위 모델 미설치·효과 미측정; 외부"
             }
           ]
@@ -2627,13 +2627,13 @@
             {
               "file": "docs/link-proposals.md",
               "line": 68,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L68",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L68",
               "excerpt": "- [A-MEM 논문](https://arxiv.org/abs/2502.12110)과 [공식 시스템 구현](https://github.com/WujiangXu/A-mem-sys): 관련 노트와 연결 변경안을 제안하는 아이디어를 참고했다. 이번 helper는 어휘 후보를 반환하며 자동 기억 진화·의미 검색은 포함하지 않는다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 17,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L17",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L17",
               "excerpt": "| [A-MEM 논문](https://arxiv.org/abs/2502.12110), [공식 시스템](https://github.com/WujiangXu/A-mem-sys) | 새 기억과 기존 노트의 연결을 검토하고 출처를 보존 | `vault_links.py`의 해시·diff 제안, `vault_memory.py`의 구조화 단위  | 연결·인용·해시 동작 테스트 통과. 의미 관계/기억 진화"
             }
           ]
@@ -2666,13 +2666,13 @@
             {
               "file": "docs/link-proposals.md",
               "line": 69,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/link-proposals.md#L69",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/link-proposals.md#L69",
               "excerpt": "- [LongMemEval-V2 논문](https://arxiv.org/abs/2605.12493)과 [공식 구현](https://github.com/xiaowu0162/LongMemEval-V2): 상태 변화·업무 절차·환경 주의점·잘못된 전제를 구분하는 평가 관점을 참고했다. 데이터셋과 논문 성능 수치는 가져오지 않았다."
             },
             {
               "file": "docs/memory-patterns.md",
               "line": 21,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L21",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L21",
               "excerpt": "| [LongMemEval V2](https://arxiv.org/abs/2605.12493), [공식 코드](https://github.com/xiaowu0162/LongMemEval-V2) | 변경 사실·절차·전제 오류·정답 없음의 구분 | 경험 fixture와 고급 fixture의 질의별·시나리오별 검색/노출 평가  | 기존16/경험16/고급16질문 평가 실행. 출처 검색·노출만 측정;"
             }
           ]
@@ -2705,7 +2705,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 23,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L23",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L23",
               "excerpt": "| [MemoryArena 논문](https://arxiv.org/abs/2602.16313), [공식 코드](https://github.com/ZexueHe/MemoryArena) | 여러 세션의 기억이 실제 다음 행동에 영향을 주는지 평가 | 상태 전제·사후 조건으로 채점하는 `evaluate_memory_workflows.py`; 원 벤치마크 재현은 아님  | 같은 로컬 Qwen 모델/"
             }
           ]
@@ -2737,7 +2737,7 @@
             {
               "file": "docs/memory-patterns.md",
               "line": 116,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-patterns.md#L116",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-patterns.md#L116",
               "excerpt": "Apache Lucene [LUCENE-8231](https://issues.apache.org/jira/browse/LUCENE-8231)(2018, HANTEC)"
             }
           ]
@@ -2767,8 +2767,8 @@
           "evidence": [
             {
               "file": "README.md",
-              "line": 1549,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/README.md#L1549",
+              "line": 1564,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/README.md#L1564",
               "excerpt": "| MemGPT · A-MEM | OS 메모리 계층을 본뜬 티어드 메모리 — hot(캐시) → handoff(세션) → 볼트(디스크) |"
             }
           ]
@@ -2799,7 +2799,7 @@
             {
               "file": "docs/model-korean-memory.md",
               "line": 50,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/model-korean-memory.md#L50",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/model-korean-memory.md#L50",
               "excerpt": "on memory evaluation, including MemGauge and NoMIRACL, and Inspect's separation"
             }
           ]
@@ -2830,7 +2830,7 @@
             {
               "file": "docs/knowledge-evolution.md",
               "line": 7,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/knowledge-evolution.md#L7",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/knowledge-evolution.md#L7",
               "excerpt": "This small fixture is inspired by longitudinal evaluation such as LEDGER; it does not reproduce that benchmark, infer facts from natural language, establish evaluator completeness, or measure coverage beyond its authored"
             }
           ]
@@ -2861,13 +2861,13 @@
             {
               "file": "docs/memory-formation.md",
               "line": 29,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-formation.md#L29",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-formation.md#L29",
               "excerpt": "MemForm-inspired synthetic cases; they are not official benchmark cases."
             },
             {
               "file": "docs/memory-formation.md",
               "line": 67,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/memory-formation.md#L67",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/memory-formation.md#L67",
               "excerpt": "an official MemForm reproduction. The bounded control is an evaluation-only"
             }
           ]
@@ -3813,13 +3813,13 @@
             {
               "file": "docs/ontology-contracts.md",
               "line": 181,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/ontology-contracts.md#L181",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/ontology-contracts.md#L181",
               "excerpt": "NVIDIA's [October21,2026 Agent Toolkit article](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/)"
             },
             {
               "file": "docs/releases/v0.41.0.md",
               "line": 33,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.41.0.md#L33",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.41.0.md#L33",
               "excerpt": "[NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/),"
             }
           ]
@@ -3870,13 +3870,13 @@
             {
               "file": "docs/ontology-contracts.md",
               "line": 182,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/ontology-contracts.md#L182",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/ontology-contracts.md#L182",
               "excerpt": "and [Auto Ontology at2a24f5d](https://github.com/NVIDIA/auto-ontology/tree/2a24f5d34ef6b6e168a7f22d308504d3ab36a198)"
             },
             {
               "file": "docs/releases/v0.41.0.md",
               "line": 34,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.41.0.md#L34",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.41.0.md#L34",
               "excerpt": "and [NVIDIA/auto-ontology at commit 2a24f5d34ef6b6e168a7f22d308504d3ab36a198](https://github.com/NVIDIA/auto-ontology/tree/2a24f5d34ef6b6e168a7f22d308504d3ab36a198)."
             }
           ]
@@ -3922,7 +3922,7 @@
             {
               "file": "docs/releases/v0.42.0.md",
               "line": 45,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.42.0.md#L45",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.42.0.md#L45",
               "excerpt": "- [All File Systems Are Not Created Equal (OSDI 2014)](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai)"
             }
           ]
@@ -3951,13 +3951,13 @@
             {
               "file": "docs/releases/v0.42.0.md",
               "line": 46,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.42.0.md#L46",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.42.0.md#L46",
               "excerpt": "and [ALICE at 6afda210b96baa2b0b277505d72742420ba89b68](https://github.com/madthanu/alice/tree/6afda210b96baa2b0b277505d72742420ba89b68)"
             },
             {
               "file": "docs/recoverable-bundles.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/recoverable-bundles.md#L62",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/recoverable-bundles.md#L62",
               "excerpt": "Design reference: [ALICE, OSDI 2014 application crash consistency](https://github.com/madthanu/alice/tree/6afda210b96baa2b0b277505d72742420ba89b68), pinned conceptual reference only. Its legacy Linux/Python 2 implementat"
             }
           ]
@@ -3988,13 +3988,13 @@
             {
               "file": "docs/releases/v0.42.0.md",
               "line": 49,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.42.0.md#L49",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.42.0.md#L49",
               "excerpt": "- [DVC at 1c06f9860af61d3947adafac99d8206f713dbfdd](https://github.com/treeverse/dvc/tree/1c06f9860af61d3947adafac99d8206f713dbfdd)"
             },
             {
               "file": "docs/review-planning.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/review-planning.md#L35",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/review-planning.md#L35",
               "excerpt": "The conceptual reference is DVC's declared computation graph, previously researched generally and now applied specifically to explicit review propagation: [`treeverse/dvc` pinned source](https://github.com/treeverse/dvc/"
             }
           ]
@@ -4023,7 +4023,7 @@
             {
               "file": "docs/releases/v0.42.0.md",
               "line": 53,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.42.0.md#L53",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.42.0.md#L53",
               "excerpt": "- [AgentPoison, arXiv:2407.12784](https://arxiv.org/abs/2407.12784)"
             }
           ]
@@ -4052,13 +4052,13 @@
             {
               "file": "docs/releases/v0.42.0.md",
               "line": 54,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.42.0.md#L54",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.42.0.md#L54",
               "excerpt": "and [code at 7b02e28f5e477052bd16c778fef7c1f78f7c9d7c](https://github.com/AI-secure/AgentPoison/tree/7b02e28f5e477052bd16c778fef7c1f78f7c9d7c)"
             },
             {
               "file": "docs/generated-memory-lifecycle.md",
               "line": 33,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/generated-memory-lifecycle.md#L33",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/generated-memory-lifecycle.md#L33",
               "excerpt": "This experiment uses AgentPoison as a conceptual reference for poisoned persistent memory: [AI-secure/AgentPoison at 7b02e28f5e477052bd16c778fef7c1f78f7c9d7c](https://github.com/AI-secure/AgentPoison/tree/7b02e28f5e47705"
             }
           ]
@@ -4087,13 +4087,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 338,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L338",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L338",
               "excerpt": "- [LCM: Lossless Context Management](https://papers.voltropy.com/LCM), PDF generated"
             },
             {
               "file": "docs/handoff-fold.md",
               "line": 117,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/handoff-fold.md#L117",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/handoff-fold.md#L117",
               "excerpt": "- [LCM: Lossless Context Management](https://papers.voltropy.com/LCM), paper PDF generated 2026-02-14, with [lossless-claw v1.2.0](https://github.com/Martian-Engineering/lossless-claw/tree/v1.2.0): summaries as a derived"
             }
           ]
@@ -4122,13 +4122,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 339,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L339",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L339",
               "excerpt": "2026-02-14, with [lossless-claw v1.2.0](https://github.com/Martian-Engineering/lossless-claw/tree/v1.2.0)"
             },
             {
               "file": "docs/handoff-fold.md",
               "line": 117,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/handoff-fold.md#L117",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/handoff-fold.md#L117",
               "excerpt": "- [LCM: Lossless Context Management](https://papers.voltropy.com/LCM), paper PDF generated 2026-02-14, with [lossless-claw v1.2.0](https://github.com/Martian-Engineering/lossless-claw/tree/v1.2.0): summaries as a derived"
             }
           ]
@@ -4155,13 +4155,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 342,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L342",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L342",
               "excerpt": "- [Evaluating Context Compression for AI Agents](https://factory.com/news/evaluating-compression),"
             },
             {
               "file": "docs/handoff-fold.md",
               "line": 119,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/handoff-fold.md#L119",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/handoff-fold.md#L119",
               "excerpt": "- [Evaluating Context Compression for AI Agents](https://factory.com/news/evaluating-compression), published 2025-12-16: the recall, artifact, continuation and decision probe kinds. It is a vendor post on its own product"
             }
           ]
@@ -4191,13 +4191,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 345,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L345",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L345",
               "excerpt": "- [Sourcegraph `Skipped`](https://github.com/sourcegraph/sourcegraph-public-snapshot/blob/c864f15af264f0f456a6d8a83290b5c940715349/internal/search/streaming/api/types.go)"
             },
             {
               "file": "docs/recall-scope.md",
               "line": 133,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/recall-scope.md#L133",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/recall-scope.md#L133",
               "excerpt": "[`internal/search/streaming/api/types.go`](https://github.com/sourcegraph/sourcegraph-public-snapshot/blob/c864f15af264f0f456a6d8a83290b5c940715349/internal/search/streaming/api/types.go),"
             }
           ]
@@ -4226,13 +4226,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 347,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L347",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L347",
               "excerpt": "[Zoekt `Stats`](https://github.com/sourcegraph/zoekt/blob/a5a933bc043e/api.go) at"
             },
             {
               "file": "docs/recall-scope.md",
               "line": 138,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/recall-scope.md#L138",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/recall-scope.md#L138",
               "excerpt": "[`api.go`](https://github.com/sourcegraph/zoekt/blob/a5a933bc043e/api.go), commit"
             }
           ]
@@ -4262,13 +4262,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 349,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L349",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L349",
               "excerpt": "- [Prometheus `predict_linear`](https://github.com/prometheus/prometheus/blob/dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6/docs/querying/functions.md)"
             },
             {
               "file": "docs/capacity.md",
               "line": 59,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/capacity.md#L59",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/capacity.md#L59",
               "excerpt": "`estimated_days_to_limit` follows the shape of [Prometheus `predict_linear`](https://github.com/prometheus/prometheus/blob/dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6/docs/querying/functions.md) (commit `dd7aa6b0f19f`). `st"
             }
           ]
@@ -4297,13 +4297,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 351,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L351",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L351",
               "excerpt": "- [Betterer](https://github.com/phenomnomnominal/betterer/tree/69a83c14975b6ef2e4e42736e686ffba0f28895f)"
             },
             {
               "file": "docs/capacity.md",
               "line": 93,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/capacity.md#L93",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/capacity.md#L93",
               "excerpt": "Only `hot_note` with `hot_max_tokens` above 0 and `handoff_note` with `handoff_max_tokens` above 0 are checked. A note is reported when it grew and its staged size is over the budget, or when it grew past the growth limi"
             }
           ]
@@ -4332,19 +4332,19 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 354,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L354",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L354",
               "excerpt": "- [Drain3 v0.9.11](https://github.com/logpai/Drain3/tree/78d3cae4bcac329c4e4f275d416562e10c5c446e)"
             },
             {
               "file": "docs/lesson-recurrence.md",
               "line": 91,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/lesson-recurrence.md#L91",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/lesson-recurrence.md#L91",
               "excerpt": "The masking idea was weighed against [Drain3](https://github.com/logpai/Drain3) at v0.9.11 (commit"
             },
             {
               "file": "assets/adapters/lesson-cues/guide.md",
               "line": 142,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/lesson-cues/guide.md#L142",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/lesson-cues/guide.md#L142",
               "excerpt": "- [logpai/Drain3](https://github.com/logpai/Drain3) at v0.9.11, commit 78d3cae4bcac329c4e4f275d416562e10c5c446e, MIT"
             }
           ]
@@ -4373,13 +4373,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 357,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L357",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L357",
               "excerpt": "- [DocOps, arXiv:2607.19865](https://arxiv.org/abs/2607.19865) v1: the mutation"
             },
             {
               "file": "docs/verifier-fidelity.md",
               "line": 112,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/verifier-fidelity.md#L112",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/verifier-fidelity.md#L112",
               "excerpt": "comes from DocOps ([arXiv:2607.19865](https://arxiv.org/abs/2607.19865), v1,"
             }
           ]
@@ -4408,13 +4408,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 360,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L360",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L360",
               "excerpt": "- [reprotest 0.7.33 manual](https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html):"
             },
             {
               "file": "docs/verifier-fidelity.md",
               "line": 166,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/verifier-fidelity.md#L166",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/verifier-fidelity.md#L166",
               "excerpt": "([manual](https://manpages.debian.org/unstable/reprotest/reprotest.1.en.html),"
             }
           ]
@@ -4443,13 +4443,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 365,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L365",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L365",
               "excerpt": "- [Stale Instruction Files Override the Code, arXiv:2610.30571](https://arxiv.org/abs/2610.30571)"
             },
             {
               "file": "docs/hardening.md",
               "line": 867,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L867",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L867",
               "excerpt": "Source: [Stale Instruction Files Override the Code](https://arxiv.org/abs/2610.30571) (v1, 2026-10-22) and its data repository"
             }
           ]
@@ -4478,13 +4478,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 366,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L366",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L366",
               "excerpt": "v1, with its [data repository](https://github.com/WenJing95/stale-docs-data/tree/fa3c8b8)"
             },
             {
               "file": "docs/hardening.md",
               "line": 868,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L868",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L868",
               "excerpt": "([`conditions/B_fix.md`](https://github.com/WenJing95/stale-docs-data/blob/fa3c8b8/conditions/B_fix.md) at `fa3c8b8`), whose remedy has"
             }
           ]
@@ -4511,13 +4511,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 370,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L370",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L370",
               "excerpt": "- [Benchmarks Are Surprisingly Compaction-Friendly, arXiv:2610.31778](https://arxiv.org/abs/2610.31778)"
             },
             {
               "file": "docs/hardening.md",
               "line": 855,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L855",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L855",
               "excerpt": "Why keep such a note: [Benchmarks Are Surprisingly Compaction-Friendly](https://arxiv.org/abs/2610.31778) (v1, 2026-10-22, abstract"
             }
           ]
@@ -4546,13 +4546,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 374,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L374",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L374",
               "excerpt": "- [nah v1.7.0](https://github.com/manuelschipper/nah/tree/v1.7.0) (MIT): another hook"
             },
             {
               "file": "assets/adapters/deny-guard/guide.md",
               "line": 205,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/deny-guard/guide.md#L205",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/deny-guard/guide.md#L205",
               "excerpt": "**같은 층의 다른 사례:** [nah](https://github.com/manuelschipper/nah/tree/v1.7.0)(v1.7.0, MIT)는 도구 호출을 효과로 풀어 판정하되 승인을 내지"
             }
           ]
@@ -4579,13 +4579,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 376,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L376",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L376",
               "excerpt": "- [Claude Code worktrees documentation](https://code.claude.com/docs/en/worktrees),"
             },
             {
               "file": "docs/hardening.md",
               "line": 987,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/hardening.md#L987",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/hardening.md#L987",
               "excerpt": "`.claude/worktrees/<name>/` ([worktrees documentation](https://code.claude.com/docs/en/worktrees),"
             }
           ]
@@ -4615,7 +4615,7 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 381,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L381",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L381",
               "excerpt": "- [Trio `MockClock`](https://github.com/python-trio/trio/blob/v0.35.0/src/trio/_core/_mock_clock.py)"
             }
           ]
@@ -4646,13 +4646,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 388,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L388",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L388",
               "excerpt": "- [Beads](https://github.com/gastownhall/beads/tree/v1.3.4) at v1.3.4 (MIT), formerly"
             },
             {
               "file": "docs/handoff-fold.md",
               "line": 118,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/handoff-fold.md#L118",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/handoff-fold.md#L118",
               "excerpt": "- [Beads `bd admin compact`](https://github.com/gastownhall/beads/blob/v1.3.4/docs/cli-reference/admin.md), v1.3.4: the analyze, host summary, apply sequence. Beads discards the original and limits compaction to closed i"
             }
           ]
@@ -4679,19 +4679,19 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 396,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L396",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L396",
               "excerpt": "- [Claude Code hooks reference](https://code.claude.com/docs/en/hooks), read 2026-11-07:"
             },
             {
               "file": "assets/adapters/lesson-cues/guide.md",
               "line": 134,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/lesson-cues/guide.md#L134",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/lesson-cues/guide.md#L134",
               "excerpt": "- [Claude Code hooks reference](https://code.claude.com/docs/en/hooks), read on 2026-11-07. The page shows no version."
             },
             {
               "file": "assets/adapters/deny-guard/guide.md",
               "line": 318,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/deny-guard/guide.md#L318",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/deny-guard/guide.md#L318",
               "excerpt": "- Claude Code hooks 문서(`code.claude.com/docs/en/hooks`): PreToolUse 입력(`tool_name`·`tool_input`·`cwd`), `hookSpecificOutput`의"
             }
           ]
@@ -4718,13 +4718,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 400,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L400",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L400",
               "excerpt": "- [Claude Code plugin CLI reference](https://code.claude.com/docs/en/plugins/cli-reference)"
             },
             {
               "file": "docs/reliability.md",
               "line": 333,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/reliability.md#L333",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/reliability.md#L333",
               "excerpt": "`enabled` is kept ([field list](https://code.claude.com/docs/en/plugins/cli-reference),"
             }
           ]
@@ -4753,7 +4753,7 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 404,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L404",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L404",
               "excerpt": "- [Governance Decay, arXiv:2606.22528](https://arxiv.org/abs/2606.22528): already read"
             }
           ]
@@ -4782,13 +4782,13 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 410,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L410",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L410",
               "excerpt": "- [Delivery, Not Storage, arXiv:2607.20972](https://arxiv.org/abs/2607.20972), with"
             },
             {
               "file": "assets/adapters/lesson-cues/guide.md",
               "line": 136,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/lesson-cues/guide.md#L136",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/lesson-cues/guide.md#L136",
               "excerpt": "- [Delivery, Not Storage, arXiv:2607.20972](https://arxiv.org/abs/2607.20972). Earlier work took the `cues` idea from this"
             }
           ]
@@ -4808,7 +4808,7 @@
         "joeblackwaslike/lessons-learned"
       ],
       "tags": [],
-      "note": "Pinned at 3b39f38152fe (MIT), beside a prior-use paper but a new source. It informs the split into hint and guard, the per-call budget and the handling of quoted text. Its budget is larger and its patterns are regular expressions; both differ. Concepts only; no code or data copied. AV v0.45.0 reuses lessons-learned at 3b39f38152fe (MIT). Earlier AV v0.43.0 used hint/guard separation, per-call budgets and handling of quoted text. The new application scores caller-supplied observation records across no-cue, hint and guard conditions with matched comparisons, timing, missing observations, first attempt, retry, final result, unnecessary interruption and measured usage kept distinct. Bundled scripted demonstrations are not actual-host efficacy evidence or causal certification. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced.",
+      "note": "Pinned at 3b39f38152fe (MIT), beside a prior-use paper but a new source. It informs the split into hint and guard, the per-call budget and the handling of quoted text. Its budget is larger and its patterns are regular expressions; both differ. Concepts only; no code or data copied. AV v0.45.1 reuses lessons-learned at 3b39f38152fe (MIT). Earlier AV v0.43.0 used hint/guard separation, per-call budgets and handling of quoted text. The new application scores caller-supplied observation records across no-cue, hint and guard conditions with matched comparisons, timing, missing observations, first attempt, retry, final result, unnecessary interruption and measured usage kept distinct. Bundled scripted demonstrations are not actual-host efficacy evidence or causal certification. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced. The v0.45.1 snapshot continues the same application after the v0.45.0 source-only candidate received a test-owned temporary-path correction; runtime file-reading restrictions were not relaxed.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4817,25 +4817,25 @@
             {
               "file": "docs/releases/v0.43.0.md",
               "line": 411,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.43.0.md#L411",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.43.0.md#L411",
               "excerpt": "[lessons-learned](https://github.com/joeblackwaslike/lessons-learned/tree/3b39f38152fe)"
             },
             {
               "file": "assets/adapters/lesson-cues/guide.md",
               "line": 138,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/assets/adapters/lesson-cues/guide.md#L138",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/assets/adapters/lesson-cues/guide.md#L138",
               "excerpt": "- [joeblackwaslike/lessons-learned](https://github.com/joeblackwaslike/lessons-learned) at `main` 3b39f38152fe, MIT."
             },
             {
-              "file": "docs/releases/v0.45.0.md",
-              "line": 40,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.45.0.md#L40",
+              "file": "docs/releases/v0.45.1.md",
+              "line": 48,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.45.1.md#L48",
               "excerpt": "| [lessons-learned](https://github.com/joeblackwaslike/lessons-learned/tree/3b39f38152fe/evals) | MIT. 비교 팔과 행동·최종 결과를 구별하는 평가 설계 참고 | v0.43.0의 hint/guard·예산·인용문 처리 참고를 재사용. 이번에는 관찰 기록의 비교 조건과 정직한 점수 집계로 확장하며 코드/시나리오 복사 "
             },
             {
               "file": "docs/lesson-cue-effects.md",
-              "line": 245,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/lesson-cue-effects.md#L245",
+              "line": 248,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/lesson-cue-effects.md#L248",
               "excerpt": "`joeblackwaslike/lessons-learned` at `3b39f38152fe` (MIT), as recorded in the"
             }
           ]
@@ -5101,7 +5101,7 @@
             {
               "file": "docs/releases/v0.44.0.md",
               "line": 84,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.44.0.md#L84",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.44.0.md#L84",
               "excerpt": "evaluation against retrieval-augmented generation, arXiv:2611.09807v1](https://arxiv.org/abs/2611.09807v1):"
             }
           ]
@@ -5134,7 +5134,7 @@
             {
               "file": "docs/releases/v0.44.0.md",
               "line": 91,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.44.0.md#L91",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.44.0.md#L91",
               "excerpt": "arXiv:2611.09721v1](https://arxiv.org/abs/2611.09721v1): motivates tracing later exposure"
             }
           ]
@@ -5167,7 +5167,7 @@
             {
               "file": "docs/releases/v0.44.0.md",
               "line": 98,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.44.0.md#L98",
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.44.0.md#L98",
               "excerpt": "arXiv:2611.09662v1](https://arxiv.org/abs/2611.09662v1): exploratory guidance for future"
             }
           ]
@@ -5191,16 +5191,16 @@
         "메모리·검색",
         "평가·테스트"
       ],
-      "note": "AV v0.45.0 references the ICML 2025 paper (arXiv v3) for low-overlap questions and literal distractors in independently authored recall fixtures. The associated repository has noncommercial academic research and education restrictions, as pinned in https://github.com/adobe-research/NoLiMa/blob/cb14780b249fecf2851127b2101a062c1b2c6430/LICENSE; it is not presented as unrestricted open source. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced.",
+      "note": "AV v0.45.1 references the ICML 2025 paper (arXiv v3) for low-overlap questions and literal distractors in independently authored recall fixtures. The associated repository has noncommercial academic research and education restrictions, as pinned in https://github.com/adobe-research/NoLiMa/blob/cb14780b249fecf2851127b2101a062c1b2c6430/LICENSE; it is not presented as unrestricted open source. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced. The v0.45.1 snapshot continues the same application after the v0.45.0 source-only candidate received a test-owned temporary-path correction; runtime file-reading restrictions were not relaxed.",
       "uses": [
         {
           "plugin": "agentic-vault",
           "role": "reference",
           "evidence": [
             {
-              "file": "docs/releases/v0.45.0.md",
-              "line": 38,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.45.0.md#L38",
+              "file": "docs/releases/v0.45.1.md",
+              "line": 46,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.45.1.md#L46",
               "excerpt": "| [NoLiMa, ICML 2025](https://arxiv.org/html/2502.05167v3) · [라이선스](https://github.com/adobe-research/NoLiMa/blob/cb14780b249fecf2851127b2101a062c1b2c6430/LICENSE) | 질문·근거의 낮은 어휘 중복과 literal distractor 설계만 참고 | 비상업 학술 연구"
             }
           ]
@@ -5224,16 +5224,16 @@
         "메모리·검색",
         "평가·테스트"
       ],
-      "note": "AV v0.45.0 references the COLM 2024 paper (arXiv v3) for synthetic length/position, multiple-value and variable-link evaluation questions. Its application runs actual recall on original local synthetic records; it neither changes the 512 KiB file ceiling nor implements a model benchmark. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced.",
+      "note": "AV v0.45.1 references the COLM 2024 paper (arXiv v3) for synthetic length/position, multiple-value and variable-link evaluation questions. Its application runs actual recall on original local synthetic records; it neither changes the 512 KiB file ceiling nor implements a model benchmark. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced. The v0.45.1 snapshot continues the same application after the v0.45.0 source-only candidate received a test-owned temporary-path correction; runtime file-reading restrictions were not relaxed.",
       "uses": [
         {
           "plugin": "agentic-vault",
           "role": "reference",
           "evidence": [
             {
-              "file": "docs/releases/v0.45.0.md",
-              "line": 37,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.45.0.md#L37",
+              "file": "docs/releases/v0.45.1.md",
+              "line": 45,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.45.1.md#L45",
               "excerpt": "| [RULER, COLM 2024](https://arxiv.org/html/2404.06654v3) · [NVIDIA/RULER](https://github.com/NVIDIA/RULER/tree/db43f92ff634bbce1c33d1fb15858aec4bba509a) | Apache-2.0 코드가 공개된 합성 길이·복수 값·변수 연결 평가. 이 버전은 원본 합성 기록과 실제 recal"
             }
           ]
@@ -5258,16 +5258,16 @@
         "메모리·검색",
         "평가·테스트"
       ],
-      "note": "RULER evaluation project, Apache-2.0, pinned at db43f92ff634bbce1c33d1fb15858aec4bba509a. The former hsiehjackson/RULER URL is the same repository identity; intellectronica/ruler is a different rules-distribution project. The AV v0.45.0 application concerns independently authored recall fixtures. The current upstream main labels the old execution pipeline deprecated; the 2024 method is not a claim about current models or current-branch performance. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced.",
+      "note": "RULER evaluation project, Apache-2.0, pinned at db43f92ff634bbce1c33d1fb15858aec4bba509a. The former hsiehjackson/RULER URL is the same repository identity; intellectronica/ruler is a different rules-distribution project. The AV v0.45.1 application concerns independently authored recall fixtures. The current upstream main labels the old execution pipeline deprecated; the 2024 method is not a claim about current models or current-branch performance. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced. The v0.45.1 snapshot continues the same application after the v0.45.0 source-only candidate received a test-owned temporary-path correction; runtime file-reading restrictions were not relaxed.",
       "uses": [
         {
           "plugin": "agentic-vault",
           "role": "reference",
           "evidence": [
             {
-              "file": "docs/releases/v0.45.0.md",
-              "line": 37,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.45.0.md#L37",
+              "file": "docs/releases/v0.45.1.md",
+              "line": 45,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.45.1.md#L45",
               "excerpt": "| [RULER, COLM 2024](https://arxiv.org/html/2404.06654v3) · [NVIDIA/RULER](https://github.com/NVIDIA/RULER/tree/db43f92ff634bbce1c33d1fb15858aec4bba509a) | Apache-2.0 코드가 공개된 합성 길이·복수 값·변수 연결 평가. 이 버전은 원본 합성 기록과 실제 recal"
             }
           ]
@@ -5291,16 +5291,16 @@
         "메모리·검색",
         "평가·테스트"
       ],
-      "note": "Prior review already considered sufficiency judgment; this first Atlas card does not imply a newly discovered paper. AV v0.45.0 reuses the ICLR 2025 paper (arXiv v3) to distinguish a relevant record from explicitly declared required evidence actually visible in recall output. This is literal observation, not a semantic sufficiency autorater, truth test or permission gate. The associated public repository at https://github.com/hljoren/sufficientcontext/tree/801b465eb3be5bf5216fbe3301e61daee85ff99c contains a README and image with no verified reuse license or executable autorater; it is not described as licensed OSS. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced.",
+      "note": "Prior review already considered sufficiency judgment; this first Atlas card does not imply a newly discovered paper. AV v0.45.1 reuses the ICLR 2025 paper (arXiv v3) to distinguish a relevant record from explicitly declared required evidence actually visible in recall output. This is literal observation, not a semantic sufficiency autorater, truth test or permission gate. The associated public repository at https://github.com/hljoren/sufficientcontext/tree/801b465eb3be5bf5216fbe3301e61daee85ff99c contains a README and image with no verified reuse license or executable autorater; it is not described as licensed OSS. Only evaluation concepts are referenced; no upstream code, dataset, scenario or published performance result is copied or reproduced. The v0.45.1 snapshot continues the same application after the v0.45.0 source-only candidate received a test-owned temporary-path correction; runtime file-reading restrictions were not relaxed.",
       "uses": [
         {
           "plugin": "agentic-vault",
           "role": "reference",
           "evidence": [
             {
-              "file": "docs/releases/v0.45.0.md",
-              "line": 39,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/7d65b897edeb770588182a91a7aa33d603dfa21f/docs/releases/v0.45.0.md#L39",
+              "file": "docs/releases/v0.45.1.md",
+              "line": 47,
+              "url": "https://github.com/Technoetic/agentic-vault/blob/7e463f5e8f57ce5aa01b32d54709e6778d81f2cc/docs/releases/v0.45.1.md#L47",
               "excerpt": "| [Sufficient Context, ICLR 2025](https://arxiv.org/html/2411.06037v3) · [공개 설명](https://github.com/hljoren/sufficientcontext/tree/801b465eb3be5bf5216fbe3301e61daee85ff99c) | 관련 기록 존재와 질문 지원의 구분을 실제 recall 문맥의 명시적 필수 근거 "
             }
           ]

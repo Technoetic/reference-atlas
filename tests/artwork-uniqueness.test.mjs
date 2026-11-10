@@ -62,7 +62,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version)){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -72,7 +72,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 
 test('all commissioned sources keep dedicated images and declared uncommissioned sources use text fallback',()=>{
   assert.equal(manifest.count,137);
-  const expectedFallbacks=catalog.snapshots['agentic-vault'].version==='v0.45.0'
+  const expectedFallbacks=['v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version)
     ? av045TextFallbacks : av044TextFallbacks;
   const images=[],fallbacks=[];
   for(const source of catalog.sources){
@@ -91,7 +91,7 @@ test('all commissioned sources keep dedicated images and declared uncommissioned
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
   assert.equal(images.length+fallbacks.length,catalog.sources.length);
-  if(['v0.44.0','v0.45.0'].includes(catalog.snapshots['agentic-vault'].version))
+  if(['v0.44.0','v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version))
     assert.deepEqual(new Set(fallbacks),expectedFallbacks);
   else assert.deepEqual(fallbacks,[]);
 });
