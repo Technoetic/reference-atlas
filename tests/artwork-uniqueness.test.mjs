@@ -13,6 +13,11 @@ const av045TextFallbacks=new Set([
   ...av044TextFallbacks,
   'arxiv:2502.05167','arxiv:2404.06654','arxiv:2411.06037','github:nvidia/ruler'
 ]);
+const av046TextFallbacks=new Set([
+  ...av045TextFallbacks,
+  'url:https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3',
+  'url:https://www.unicode.org/reports/tr15/tr15-58.html','url:https://yaml.org/spec/1.2.2'
+]);
 const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
@@ -62,7 +67,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version)){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -72,8 +77,9 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 
 test('all commissioned sources keep dedicated images and declared uncommissioned sources use text fallback',()=>{
   assert.equal(manifest.count,137);
-  const expectedFallbacks=['v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version)
-    ? av045TextFallbacks : av044TextFallbacks;
+  const avVersion=catalog.snapshots['agentic-vault'].version;
+  const expectedFallbacks=avVersion==='v0.46.0' ? av046TextFallbacks
+    : ['v0.45.0','v0.45.1'].includes(avVersion) ? av045TextFallbacks : av044TextFallbacks;
   const images=[],fallbacks=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
@@ -91,7 +97,7 @@ test('all commissioned sources keep dedicated images and declared uncommissioned
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
   assert.equal(images.length+fallbacks.length,catalog.sources.length);
-  if(['v0.44.0','v0.45.0','v0.45.1'].includes(catalog.snapshots['agentic-vault'].version))
+  if(['v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version))
     assert.deepEqual(new Set(fallbacks),expectedFallbacks);
   else assert.deepEqual(fallbacks,[]);
 });
