@@ -18,6 +18,7 @@ EXPECTED_COVERAGE={
     ('v0.45.0','v0.21.1'):(56,50,5,144,256),
     ('v0.45.1','v0.21.1'):(56,50,5,144,256),
     ('v0.46.0','v0.21.1'):(56,53,5,147,264),
+    ('v0.47.0','v0.21.1'):(56,53,7,149,269),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -72,6 +73,12 @@ class DeliveryTests(unittest.TestCase):
                     self.assertEqual(evidence['url'],expected)
                     self.assertGreater(evidence['line'],0)
                     self.assertLessEqual(len(evidence['excerpt']),220)
+
+    def test_v047_coverage_adds_the_release_cited_cards_without_rewriting_history(self):
+        prior=EXPECTED_COVERAGE[('v0.46.0','v0.21.1')]
+        self.assertEqual(prior,(56,53,5,147,264))
+        revised=EXPECTED_COVERAGE[('v0.47.0','v0.21.1')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,0,2,2,5))
 
     def test_public_data_has_no_local_paths_or_credentials(self):
         text=(ROOT/'data/catalog.json').read_text(encoding='utf8')

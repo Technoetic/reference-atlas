@@ -18,6 +18,11 @@ const av046TextFallbacks=new Set([
   'url:https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3',
   'url:https://www.unicode.org/reports/tr15/tr15-58.html','url:https://yaml.org/spec/1.2.2'
 ]);
+const av047TextFallbacks=new Set([
+  ...av046TextFallbacks,
+  'url:https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2',
+  'url:https://code.claude.com/docs/en/skills'
+]);
 const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
@@ -67,7 +72,8 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version)){
+    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version)
+      ||catalog.snapshots['agentic-vault'].version==='v0.47.0'){
       assert.ok(asset.generationEvidenceUrls.length);
       assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
     }
@@ -86,7 +92,7 @@ test('all commissioned sources keep dedicated images and declared uncommissioned
     if(art.src) images.push(art.src);
     else {
       fallbacks.push(source.id);
-      assert.ok(expectedFallbacks.has(source.id),`Unexpected uncommissioned source: ${source.id}`);
+      assert.ok((avVersion==='v0.47.0' ? av047TextFallbacks : expectedFallbacks).has(source.id),`Unexpected uncommissioned source: ${source.id}`);
       for(const detail of [false,true]){
         const html=artworkCover(source,{detail});
         assert.ok(html.includes('is-art-fallback'));
@@ -99,6 +105,7 @@ test('all commissioned sources keep dedicated images and declared uncommissioned
   assert.equal(images.length+fallbacks.length,catalog.sources.length);
   if(['v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version))
     assert.deepEqual(new Set(fallbacks),expectedFallbacks);
+  else if(avVersion==='v0.47.0') assert.deepEqual(new Set(fallbacks),av047TextFallbacks);
   else assert.deepEqual(fallbacks,[]);
 });
 
