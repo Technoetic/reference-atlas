@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 137,
+  "count": 149,
   "assets": [
     {
       "index": 1,
@@ -3758,6 +3758,333 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L12",
         "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/docs/provenance-fixtures.md#L49",
         "https://github.com/Technoetic/semantic-crosscheck/blob/05046875791e50403837d9ff30d6b852196b6763/THIRD_PARTY.md#L83"
+      ]
+    },
+    {
+      "index": 138,
+      "sourceId": "url:https://code.claude.com/docs/en/skills",
+      "title": "Extend Claude with skills",
+      "kind": "article",
+      "label": "Modular skills and scoped execution gate",
+      "factualConcept": "Distinct skill cartridges feed a clear bounded execution-permission aperture. Permissions express scope, not a blanket safety guarantee; no hook behavior or reproduced result is depicted.",
+      "prompt": "Use case: stylized-concept.\nAsset type: unique source-dedicated editorial artwork for the Reference Atlas source “Extend Claude with skills”; one landscape 3:2 raster image, no text.\nPrimary request: a premium miniature physical mechanism for modular skills and explicitly scoped execution permissions. Three distinct removable frosted-glass skill cartridges sit in brushed graphite slots, one lime-edged cartridge partly slid forward along a silver rail. The rail leads through a clear rectangular execution permission gate with a visibly bounded aperture shaped to admit only the fitting cartridge. A few idle cartridges remain behind in their own slots. Show the gate as an access-scope selector, never a shield, guarantee of safety, security victory or test result. A single clean hero assembly.\nScene: near-black olive #10130f seamless studio surface and background. Premium physically rendered miniature product sculpture, brushed silver/graphite, clear and frosted glass, lime #d3fc70 light accents, subtle lavender #c3b0f6 reflections, very restrained amber indicator.\nComposition: landscape 3:2, centered within the middle 80%, full silhouette safely inset, three-quarter close view, tactile geometry, elegant negative space, soft studio illumination, controlled highlights and shallow depth of field with the whole hero readable. Match sophisticated editorial miniature 3D art, not schematic clip art.\nConstraints: no text, no letters, no numbers, no logos, no people, no watermarks; no screenshot, interface, page, document, paper figure, graph, chart, performance claim or copied imagery; no shields or locks. New standalone artwork, not a collage or contact sheet.",
+      "output": "media/cards/card-138.webp",
+      "sha256": "782dd5e9ce5633366e67f7681e3c11b977f2b1ce464b80fbde52a99a6873bd2c",
+      "bytes": 52446,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/SECURITY.md#L280"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/SECURITY.md#L280"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/SECURITY.md#L280"
+      ]
+    },
+    {
+      "index": 139,
+      "sourceId": "url:https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "title": "Prompting Claude Fable 5.2",
+      "kind": "article",
+      "label": "Ownership boundary and bounded execution control",
+      "factualConcept": "A clear workbench boundary keeps user-owned plan plates separate from agent execution modules, with a transfer opening and finite retry-control pegs. Conceptual ownership and stopping control only; no measured plugin performance.",
+      "prompt": "Use case: stylized-concept.\nAsset type: unique source-dedicated editorial artwork for the Reference Atlas source “Prompting Claude Fable 5.2”; one landscape 3:2 raster image, no text.\nPrimary request: a premium miniature workbench with a precise visible ownership boundary. A thin clear-glass divider cleanly splits one physical brushed-graphite workbench into two areas: on one side a carefully nested set of lavender frosted-glass plan plates held in a silver tray, on the other side a small lime-accented execution mechanism made of interchangeable modules arranged on rails. A single clear transfer slot in the divider makes the handoff explicit. On the execution side, include a small bounded retry-control track: exactly three small amber pegs in a short recessed channel with a physical end-stop, a control device rather than a chart. The composition expresses plans retained by the user and bounded agent execution; it must not imply measured speed, accuracy, success or plugin performance.\nScene: near-black olive #10130f seamless studio background. Premium physically rendered miniature editorial product sculpture. Brushed silver/graphite, clear/frosted glass, lime #d3fc70, lavender #c3b0f6, restrained amber.\nComposition: landscape 3:2, single centered hero workbench safely within the middle 80%, three-quarter elevated camera, clean silhouette and refined negative space, soft studio light, realistic restrained reflections, detailed tactile material.\nConstraints: no text, letters, numbers, labels, logos, people, humanoid robots or watermarks. No screens, screenshots, pages, paper diagrams, graphs, charts, results, medals, triumphant imagery or claims of measured performance. New source-specific standalone artwork, not a collage.",
+      "output": "media/cards/card-139.webp",
+      "sha256": "2fe491052273d7a1d4398dbac1a283b243ff93f49b65a359e2ed8cef3cad9061",
+      "bytes": 46500,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L913",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L963"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L913",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L963"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.47.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L913",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/hardening.md#L963"
+      ]
+    },
+    {
+      "index": 140,
+      "sourceId": "url:https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3",
+      "title": "The Unicode Standard, Version 18.0.0, Core Specification, Chapter 3: Conformance",
+      "kind": "format",
+      "label": "Canonical caseless matching through three ordered stages",
+      "factualConcept": "Two abstract token inputs pass through three ordered stations representing canonical decomposition (NFD), casefold, and canonical decomposition (NFD), then reach equal comparison arrangements. Abstract shapes avoid claims about specific Unicode characters or versioned runtime data.",
+      "prompt": "Use case: stylized-concept.\nAsset type: unique source-dedicated editorial artwork for the Reference Atlas source Unicode 18.0 Core Specification Chapter 3, canonical caseless matching; one landscape 3:2 raster image, no text.\nPrimary request: a premium miniature comparison instrument. Two parallel narrow token paths start with visibly different abstract token sculptures: one a compact silver pebble with a small lavender facet, the other two separated components with a different orientation. Both paths pass left-to-right through exactly three successive paired glass processing stations in a clear visible order. First station gently separates composite abstract pieces into canonical components; middle station aligns their geometric orientation consistently; final station reorders the separated pieces into exactly matching arrangements. This is a conceptual metaphor for NFD, casefold, NFD, without writing those names. At the far end both streams meet a small clear comparison cradle holding two identical token arrangements side by side. Keep both incoming paths and all three ordered stages visibly legible in one compact physical sculpture. Do not use real Unicode letters or glyph transformations, no character-data claims, no compatibility-normalization metaphor.\nScene: seamless near-black olive #10130f. Brushed silver/graphite rail base, clear/frosted-glass stations, lime #d3fc70 token accents, lavender #c3b0f6, soft studio lighting and controlled reflections. Premium physically rendered miniature editorial 3D.\nComposition: landscape 3:2, centered hero fully within middle 80%, elevated three-quarter view, clean silhouette and negative space, elegant precise physical craft. Comparison paths are the main subject, not a reversible assembly jig.\nConstraints: no text, letters, numbers, labels, logos, people, watermarks, screenshot, paper figure, graph, chart or reproduced result. No locks or shields. No collage/contact sheet; entirely new dedicated artwork.",
+      "output": "media/cards/card-140.webp",
+      "sha256": "9f23f8e900fe0b050f84648dad72ae2267ad21642dffd4322d3854d7a1bab69d",
+      "bytes": 47196,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L179",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/tests/test_zone_normalization.py#L155",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/skills/agentic-vault/scripts/vault_paths.py#L74"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L179",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/tests/test_zone_normalization.py#L155",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/skills/agentic-vault/scripts/vault_paths.py#L74"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L179",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/tests/test_zone_normalization.py#L155",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/skills/agentic-vault/scripts/vault_paths.py#L74"
+      ]
+    },
+    {
+      "index": 141,
+      "sourceId": "url:https://www.unicode.org/reports/tr15/tr15-58.html",
+      "title": "Unicode Standard Annex #15: Unicode Normalization Forms",
+      "kind": "format",
+      "label": "Canonical decomposition and recomposition jig",
+      "factualConcept": "One abstract base-and-diacritic component family appears separated and assembled in a reversible jig, representing NFD/NFC canonical normalization. Distinct from caseless comparison paths; no compatibility substitution or real-glyph claims.",
+      "prompt": "Use case: stylized-concept.\nAsset type: unique source-dedicated editorial artwork for the Reference Atlas source Unicode Standard Annex #15 revision 58, Unicode Normalization Forms; one landscape 3:2 raster image, no text.\nPrimary request: an exquisite miniature reversible assembly jig demonstrating canonical decomposition and composition. One abstract nonalphabetic glyph-like sculpture consists of a rounded silver base component and a small detached lavender diacritic-like geometric cap. On a central brushed-graphite jig, show the SAME sculpture in two states: on the left, the base and cap are separated by a small visible gap and seated in precisely fitted shallow molds; on the right, matching base and cap are assembled into one coherent sculpture with a visible fine join. A single curved transparent rail arches between the two states, suggesting a reversible physical assembly process with matching pieces. Use only this one component family; no change of glyph identity, no compatibility substitutions, no comparison lanes, no multi-stage pipeline.\nScene: near-black olive #10130f seamless studio ground/background. Premium miniature physically rendered editorial product sculpture, brushed silver and graphite, clear/frosted glass jig accents, lime #d3fc70 restrained edge light, lavender #c3b0f6 cap, tiny amber control only if needed.\nComposition: landscape 3:2, central hero safely within the middle 80%, three-quarter close view, tactile crafted surfaces, soft studio light, controlled glass highlights and generous negative space. Distinct from token comparison pathways: focus on tangible decomposition/recomposition of one abstract glyph sculpture.\nConstraints: no real letters, text, labels, numbers, logos, people, watermarks, screenshots, pages, paper figures, diagrams, graphs, charts, test results, compatibility claims or borrowed imagery. One new standalone sculpture artwork, no collage/contact sheet.",
+      "output": "media/cards/card-141.webp",
+      "sha256": "59cd03e6c17d0a9806d9dad7f282e781ef8d17dbea5ec7d758a42ed08e51e204",
+      "bytes": 47720,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L180",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ]
+    },
+    {
+      "index": 142,
+      "sourceId": "url:https://yaml.org/spec/1.2.2",
+      "title": "YAML Ain't Markup Language (YAML) version 1.2, Revision 1.2.2",
+      "kind": "format",
+      "label": "YAML 1.2.2 · scalar and nested sequence",
+      "factualConcept": "YAML structure and indentation: a quoted scalar remains one value, distinct from an actual nested sequence. Conceptual art for the front-matter shape reference; no parser implementation or copied standard text.",
+      "prompt": "Use case: stylized-concept\nAsset type: one source-dedicated Reference Atlas editorial card, 3:2 landscape raster artwork.\nPrimary request: a premium physically rendered miniature exhibit about YAML structured indentation and the difference between an intact quoted scalar and a real nested sequence.\nScene: near-black olive #10130f studio, subtle dark matte tabletop and seamless background.\nSubject: a low brushed graphite and silver stepped organizer tray viewed from elevated three-quarter angle. Its physical recesses are arranged in a clear nesting hierarchy, each smaller tray inset and shifted deeper to convey indentation. In the front-left recess, a single lavender translucent glass capsule holds a pair of abstract bracket-like inclusions sealed together as ONE solid intact token; it remains one object despite the forms within. Beside it, a separate larger recessed module genuinely contains a nested sequence of three individual lime-tinted glass tiles inside a smaller child tray. Show the distinction through physical containment and seams, not through writing or a schematic. A few neutral silver scalar tokens occupy other nested pockets. Make the distinction elegant and immediately visible.\nStyle/medium: meticulous high-end miniature 3D product photography, realistic glass refraction and brushed metal, refined editorial concept art matching a premium technical research atlas.\nComposition/framing: 3:2 landscape; all meaningful objects in central 80 percent, generous breathing room, low perspective with top surfaces visible, a single coherent still-life, not a collage.\nLighting/mood: soft studio key light and rim light, gentle lime and lavender reflections, quiet precise mood.\nColor palette: near-black olive #10130f, brushed silver/graphite, clear and frosted glass, restrained lime #d3fc70 and lavender #c3b0f6, almost no amber.\nConstraints: purely conceptual representation based on YAML 1.2.2 structure/scalar distinctions, not a literal parser UI or claimed implementation. No typography, no letters, no numbers, no logos, no watermark, no people, no paper figures, no plots, no code, no screenshot. Distinct structured tray concept; no generic glowing network.",
+      "output": "media/cards/card-142.webp",
+      "sha256": "8b6366e488c0b76bc44896ba3e736f7bbf83523be60f924b34ea85a51ae110e5",
+      "bytes": 70486,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.46.0.md#L181",
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/verification/v0.46.0.md#L139"
+      ]
+    },
+    {
+      "index": 143,
+      "sourceId": "arxiv:2611.09807",
+      "title": "Compaction, decay and reinforcement in a two-tier conversational memory: a paired evaluation against retrieval-augmented generation",
+      "kind": "paper",
+      "label": "Two-tier conversational memory",
+      "factualConcept": "The paper's two-tier memory concepts: active tier, long-term reservoir, compacted capsules, decay and selected reinforcement. The plugin reference concerns preserving source wording and paired original/candidate evaluation; this artwork does not imply deployed automatic compaction, decay ranking or reproduced performance.",
+      "prompt": "Use case: stylized-concept\nAsset type: one source-dedicated Reference Atlas editorial card, 3:2 landscape raster artwork.\nPrimary request: a premium physically rendered miniature two-tier conversational memory exhibit, showing active memory, compaction, fading, and selected reinforcement as a conceptual still-life.\nScene/backdrop: near-black olive #10130f seamless studio with a dark matte tabletop.\nSubject: in the foreground a small low circular brushed graphite carousel with four occupied glass memory slots, compact and active. Behind it, elevated on a separate rear level, a much larger curved frosted-glass long-term reservoir holds many little capsule-like memories. Several thin translucent sheets are physically gathered by a gentle narrow funnel into one compact lavender capsule on the connecting bridge between the two tiers, suggesting compaction while retaining layered traces. In the rear reservoir a few old capsules softly fade toward nearly clear glass. One selected memory capsule has a single vivid lime filament connecting it to the front carousel, with a slightly stronger glow to suggest reinforcement. Visible physical two-tier architecture and meaningful containment, a graceful asymmetric small front carousel and larger rear reservoir. No machinery beyond what is necessary.\nStyle/medium: high-end miniature 3D editorial product photography with believable brushed metal, optical clear glass, frosted glass, soft realistic refractions and restrained emissive accents.\nComposition/framing: landscape 3:2, all essential forms in the central 80 percent with breathing room; front-small and rear-large hierarchy clearly readable at thumbnail size. One cohesive physical exhibit.\nLighting/mood: soft studio lighting, subtle rim lights and realistic reflective highlights, dark and quiet.\nPalette: near-black olive #10130f, graphite and brushed silver, clear/frosted glass, lime #d3fc70 and lavender #c3b0f6, no dominant other colors.\nConstraints: a conceptual interpretation of a two-tier conversational memory research source, not a reproduction of paper diagrams or a claim about a plugin's deployed automatic compaction/decay or benchmark performance. No charts, no metrics, no paper pages, no plots, no labels, no typography, no numbers, no logos, no watermark, no people, no generic brain or neural-network node web.",
+      "output": "media/cards/card-143.webp",
+      "sha256": "3f03085da27fd3b4599d0b6aac0ea8f1c18edb5dfaabd333f1928c3f2e7396b6",
+      "bytes": 59422,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L84"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L84"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L84"
+      ]
+    },
+    {
+      "index": 144,
+      "sourceId": "arxiv:2611.09662",
+      "title": "How Much Conversation History Does an AI Agent Need?",
+      "kind": "paper",
+      "label": "Conversation history · exploratory background",
+      "factualConcept": "Exploratory background question of conversation-history budget and necessary-context retention, represented by telescoping history ribbon and sliding windows of different lengths. No optimal budget, winner, scoring measure or implemented optimization is asserted.",
+      "prompt": "Use case: stylized-concept\nAsset type: one source-dedicated Reference Atlas editorial card, 3:2 landscape raster artwork.\nPrimary request: premium physically rendered miniature still-life exploring how much conversation history an AI agent may need, as an open research question rather than a winner or result.\nScene/backdrop: near-black olive #10130f tabletop and seamless studio background.\nSubject: a long continuous thin translucent frosted-glass ribbon of conversation history, folded into a graceful accordion and telescoping horizontally in a low graphite rail. The ribbon contains a sequence of softly rounded small glass segments, alternating faint lavender and clear traces to imply exchanges without any symbols or words. Three nested transparent sliding rectangular sleeves have different physical lengths and can glide across the ribbon, creating different available-context windows; show them staggered rather than ranked. A single small lime glass knot near the middle-left of the ribbon is an essential context cue, visible through the larger clear window while one shorter sleeve lies beyond it. The scene should pose a thoughtful budget and retention question, with beautiful physical sliding and telescoping affordances. The ribbon and window lengths are the clear main subject.\nStyle/medium: polished miniature 3D editorial product photography, plausible brushed silver/graphite mechanics, frosted and optical-clear glass, very high material quality.\nComposition/framing: 3:2 landscape, all meaningful pieces safely in central 80 percent; elevated oblique view along a broad gentle diagonal, generous space, balanced asymmetric studio still-life. This is one coherent physical object, not multiple panels or a chart.\nLighting/mood: soft studio light, restrained lime/lavender rim reflections, thoughtful quiet mood.\nColor palette: near-black olive #10130f, silver/graphite, clear/frosted glass, muted lavender #c3b0f6 and one lime #d3fc70 context accent.\nConstraints: conceptual background research only. No winner, no trophy, no scoring, no ticks, no scale markings, no metric, no implied optimal budget, no performance claim. No paper figures or charts, no text, letters or numbers, no logos, no watermark, no people, no UI, no generic memory brain or glowing node web.",
+      "output": "media/cards/card-144.webp",
+      "sha256": "459cbac9ecf5f7489c0674aef4e6f89d35c953e9b181f3e12fa560a57d434ca3",
+      "bytes": 41040,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L98"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L98"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L98"
+      ]
+    },
+    {
+      "index": 145,
+      "sourceId": "arxiv:2611.09721",
+      "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+      "kind": "paper",
+      "label": "MemoryDojo · later poison exposure",
+      "factualConcept": "Poison fragment planted into a memory slot later reappears through a retrieval path in a contained comparison chamber, reflecting later-exposure and benign-utility tracing. No universal poison removal guarantee, official code reuse or reproduced model benchmark is implied.",
+      "prompt": "Use case: stylized-concept\nAsset type: one source-dedicated Reference Atlas editorial card, 3:2 landscape raster artwork.\nPrimary request: premium physically rendered miniature contained test chamber about memory poisoning that becomes visible later during retrieval, inspired by MemoryDojo's research topic.\nScene/backdrop: near-black olive #10130f seamless studio and dark tabletop.\nSubject: a single elegant low rectangular brushed graphite testing chamber enclosed by clear glass walls. Inside, on the left, a curved row of quiet frosted lavender memory tiles rests in fitted slots; one small irregular amber-red glass fragment is visibly planted into the seam of one tile, unlike all the benign rounded capsules. A slim transparent retrieval channel exits that exact slot, bends across the chamber, and arrives at a shallow glass observation well on the right. Within that observation well the same distinct amber-red angular fragment is clearly exposed among a few benign clear/lavender retrieved capsules, making later exposure causally legible. The path has restrained lime edge reflections but the suspicious fragment itself stays amber-red. A small adjacent reference well contains only a benign lavender capsule, indicating a contained comparison without a score or verdict. No hands, no tools attacking it, no security icon.\nStyle/medium: refined miniature 3D editorial product photography, tactile brushed silver/graphite, clear/frosted glass, gentle believable reflections and refraction, premium laboratory exhibit rather than sci-fi battle.\nComposition/framing: 3:2 landscape, all meaningful objects inside central 80 percent safe crop; elevated three-quarter view with clear left planted-memory to right later-observation flow. Single coherent chamber, one still-life, no multiple image panels.\nLighting/mood: soft studio key and delicate rim lighting, dark restrained research mood.\nPalette: near-black olive #10130f, graphite and silver, frosted lavender #c3b0f6 memory objects, subtle lime #d3fc70 retrieval guide, one restrained amber-red poison fragment.\nConstraints: conceptual depiction of research and later-exposure tracing; no universal removal guarantee, no claim of real model benchmark reproduction, no scores or fake precision. Do not show a shield, padlock, hazard symbol or generic defense emblem. No text, letters or numbers, no logos, no watermark, no people, no paper figures, charts, UI or screenshots.",
+      "output": "media/cards/card-145.webp",
+      "sha256": "8a79ea46ef85ec9d06f741bf8c60804c3267c6f32e49619071076ef5b4726254",
+      "bytes": 69382,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L91"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L91"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.44.0.md#L91"
+      ]
+    },
+    {
+      "index": 146,
+      "sourceId": "arxiv:2502.05167",
+      "title": "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+      "kind": "paper",
+      "label": "MEANING BEYOND LITERAL MATCH",
+      "factualConcept": "NoLiMa studies long-context retrieval beyond literal word matching, including semantically relevant evidence with low lexical overlap and misleading literal distractors. This artwork illustrates the evaluation challenge, not measured success.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape research source-card artwork for the existing Reference Atlas. New original artwork only for NoLiMa: Long-Context Evaluation Beyond Literal Matching.\nPremium physically rendered miniature scientific exhibit on a near-black olive studio surface (#10130f), brushed silver and graphite, clear and frosted glass, luminous lime (#d3fc70) and restrained lavender (#c3b0f6), a tiny amber caution accent. Three-quarter product photography, soft controlled studio lighting, sophisticated tactile materials. Central 80 percent crop-safe composition, one strong readable subject, generous dark margins.\nThe hero is a suspended large triangular optical observation prism above a shallow silver specimen table. In front of the prism is a small rounded query capsule containing a distinctive lime three-lobed core. Under the prism farther back, a deliberately very different outer-shaped faceted evidence capsule contains the SAME three-lobed lime core, clearly visible through the prism. Beside it are two distractor capsules whose smooth outside resembles the query capsule but whose inner cores are plainly different lavender angular shapes. Their matching wrappers are misleading; the matching inner meaning is the important relation. A precise thin silver alignment beam links the two matching cores, while an amber notch visually separates the decoys. This is a thought-provoking conceptual evaluation specimen, not a machine certified to solve the benchmark.\nNo writing, no letters, no numbers, no captions, no logos, no people, no watermark. No charts or invented results. No collage, no generic brain, no stock AI orb. Do not depict keyword string equality as the correct solution. Make a beautifully art-directed collectible research object, consistent with a dark olive, lime and lavender editorial gallery.",
+      "output": "media/cards/card-146.webp",
+      "sha256": "ee57800551f822120a49d98b40bd74f7202ab091a5b708229bb1e54f92c8b809",
+      "bytes": 61816,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L46"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L46"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L46"
+      ]
+    },
+    {
+      "index": 147,
+      "sourceId": "arxiv:2404.06654",
+      "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+      "kind": "paper",
+      "label": "CONTEXT LENGTH UNDER TEST",
+      "factualConcept": "The RULER paper evaluates effective use of long context across synthetic tasks rather than equating advertised context capacity with successful retrieval and reasoning. No numerical result is depicted.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape Reference Atlas research-paper card, newly generated only for RULER: What's the Real Context Size of Your Long-Context Language Models?\nPremium miniature physical laboratory installation, near-black olive (#10130f), brushed silver/graphite, frosted and clear glass, luminous lime (#d3fc70) with subtle lavender (#c3b0f6). Dramatic but soft product photography, three-quarter wide view, central 80 percent crop safe, dark margins.\nThe distinctive hero is an elegant long telescoping measurement rail stretching diagonally across a low studio plinth, with no numeric graduations. A transparent ribbon of many tiny context beads flows across the rail. Embedded at several distances are a few distinctive connected lime keys; most filler beads are dim frosted lavender. Three compact transparent inspection collars at separated positions surround the ribbon, revealing a short silver dependency chain between meaningful keys across distance. One glass sleeve extends much farther than the illuminated, actually inspected portion: the empty capacity sleeve must visibly differ from the portion whose connections can be checked. This expresses context length versus effective context use as a testing question, not an accuracy graph or a claim that any particular length succeeds.\nNo text, letters, digits, labels, charts, percentages, logos, people, watermark or trophy. No large ruler icon, no literal paper screenshots. Use realistic precision materials, subtle reflections, restrained lime light and museum-quality object styling. Distinct from a keyword matching prism and distinct from a software-toolbox cabinet.",
+      "output": "media/cards/card-147.webp",
+      "sha256": "e4dc62d78e38a5718928113474385d9517735696de7380f8d700a0260b613711",
+      "bytes": 60128,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ]
+    },
+    {
+      "index": 148,
+      "sourceId": "arxiv:2411.06037",
+      "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "kind": "paper",
+      "label": "RELEVANT IS NOT SUFFICIENT",
+      "factualConcept": "Sufficient Context distinguishes having related retrieved material from having enough evidence to support the requested answer. The visual is an editorial metaphor for evidence completeness, not a reproduced result.",
+      "prompt": "Use case: stylized-concept. Asset type: one dedicated 3:2 landscape source-card illustration for Sufficient Context: A New Lens on Retrieval Augmented Generation Systems. New original image, not an edit.\nAn exquisitely built miniature architectural reasoning specimen, near-black olive studio floor (#10130f), brushed silver and graphite, clear glass, lime (#d3fc70) and restrained lavender (#c3b0f6), tiny amber detail. Soft dramatic three-quarter product photography, clean central 80 percent composition and dark crop-safe margins.\nThe hero is a small transparent cantilever bridge with an unmistakably incomplete central arch. Two lime structural keystones are correctly seated and carry a thin illuminated path, but the third necessary keystone is missing, leaving a clear small gap before a frosted answer-like terminal on the far end. Off to the side is a neat tray crowded with many lavender context fragments: these look thematically similar to the bridge but NONE has the exact missing keystone profile. Nearby, one separate clear required keystone is precisely aligned above its empty slot, showing what sufficient supporting context would mean when added. Keep the terminal softly unlit while the gap exists. Emphasize one precise missing requirement despite abundant related context, not quantity alone. Do not depict an unsupported answer as approved or complete.\nNo text, letters, numbers, charts, metrics, badges, green checkmarks, logos, people, watermark, books or generic AI brains. A sophisticated memorable physical metaphor, not a flowchart and not a screenshot. Preserve a strong silhouette and readable missing gap at thumbnail size.",
+      "output": "media/cards/card-148.webp",
+      "sha256": "b6b7ab530450858e21ea67441af562ad796065f4249cf17dba2463b5683e7ca2",
+      "bytes": 61808,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L47"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L47"
+      ]
+    },
+    {
+      "index": 149,
+      "sourceId": "github:nvidia/ruler",
+      "title": "NVIDIA/RULER",
+      "kind": "project",
+      "label": "REPRODUCIBLE CONTEXT TASK RIG",
+      "factualConcept": "The NVIDIA/RULER open-source project provides a synthetic long-context evaluation toolkit. The depicted task-generation and comparison rig is distinct from the RULER paper's context-length question; no local execution or benchmark reproduction is claimed.",
+      "prompt": "Use case: stylized-concept. Asset type: one unique 3:2 landscape Reference Atlas open-source project card for NVIDIA/RULER. Newly generated specifically for the evaluation TOOLKIT, not its paper.\nPremium physically rendered miniature engineering test fixture in the same dark olive (#10130f), brushed silver, graphite, clear/frosted glass, lime (#d3fc70) and subtle lavender (#c3b0f6) gallery style. Three-quarter tabletop product photography, precise small machined details, soft cinematic studio lighting, central 80 percent crop-safe composition, dark background with generous margins.\nThe unmistakable hero is a compact modular test-rig cabinet opened horizontally like a precision instrument case. Three visibly different removable task cartridges sit in separate machined slots: one capsule selector with an embedded tiny lime needle among frosted filler beads, one paired-value cartridge with two distinct matching lime tokens, and one variable-dependency cartridge with a short linked silver-and-lime chain. A silver input feeder on one side loads the chosen cartridge into a clear enclosed test channel. On the other side, two SMALL blank translucent sample trays sit side by side for comparing observed outputs to expected tokens; no score or success signal. Include a tidy little configuration key in its own fitted recess, suggesting repeatable setup. Make the open-source tool hardware metaphor clean, inventive and tactile.\nNo writing, letters, numbers, charts, command lines, dashboards, metrics, logos (including no NVIDIA logo), people, watermark, trophy or approval badge. No code screenshots. This is a concept of configurable evaluation tooling, not a claim of actually running or reproducing results. Visually distinct from the paper's long telescoping context rail.",
+      "output": "media/cards/card-149-v2.webp",
+      "sha256": "1491e765319ad66934c8f93b79e14deb48c0102a07a631bdc94bea549640157e",
+      "bytes": 77662,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1ffc63d125d6ebc2099a4aa28f538b2c9e1b83b7/docs/releases/v0.45.1.md#L45"
+      ],
+      "refinementPrompts": [
+        "Use case: precise-object-edit. Image 1 is the edit target. Change ONLY the tiny dark embossed pseudo-letter/logo mark on the top-center silver case latch, directly beneath the lime-colored latch insert. Erase that little mark completely and replace it with continuous plain brushed silver matching its surrounding latch surface. Keep the latch itself and its lime insert. Preserve the entire rest of this image as closely as possible: all three task cartridges, glass beads, needle, paired green tokens, dependency chain, input feeder, transparent test channel, two blank output trays, configuration parts, case, camera angle, 3:2 composition, metallic and glass materials, lime/lavender colors, shadows and lighting. Add absolutely no letters, text, logo, engraving, numbers or watermark anywhere. This is a narrowly targeted cleanup, not a redesign."
       ]
     }
   ],

@@ -85,7 +85,7 @@ class AV046Tests(unittest.TestCase):
 
     def test_test_edits_apply_once(self):
         texts={'tests/test_delivery.py':(ROOT/'tests/test_delivery.py').read_text(encoding='utf-8'),
-               'tests/artwork-uniqueness.test.mjs':(ROOT/'tests/artwork-uniqueness.test.mjs').read_text(encoding='utf-8')}
+               'tests/artwork-uniqueness.test.mjs':(ROOT/'tests/fixtures/artwork-v047-before-commissioning.mjs.txt').read_text(encoding='utf-8')}
         once,_=edit_tests(texts);twice,applied=edit_tests(once)
         self.assertEqual((twice,applied),(once,0))
         self.assertIn("('v0.46.0','v0.21.1'):(56,53,5,147,264)",once['tests/test_delivery.py'])
