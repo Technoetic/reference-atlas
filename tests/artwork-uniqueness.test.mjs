@@ -6,23 +6,46 @@ import {sourceArtwork,artworkCover} from '../src/screens/art.mjs';
 
 const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
 const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-prompts.json',import.meta.url),'utf8'));
-const av044TextFallbacks=new Set([
-  'arxiv:2611.09807','arxiv:2611.09721','arxiv:2611.09662'
-]);
-const av045TextFallbacks=new Set([
-  ...av044TextFallbacks,
-  'arxiv:2502.05167','arxiv:2404.06654','arxiv:2411.06037','github:nvidia/ruler'
-]);
-const av046TextFallbacks=new Set([
-  ...av045TextFallbacks,
-  'url:https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3',
-  'url:https://www.unicode.org/reports/tr15/tr15-58.html','url:https://yaml.org/spec/1.2.2'
-]);
-const av047TextFallbacks=new Set([
-  ...av046TextFallbacks,
-  'url:https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2',
-  'url:https://code.claude.com/docs/en/skills'
-]);
+const completedArtwork=[
+  ['url:https://code.claude.com/docs/en/skills',138],
+  ['url:https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2',139],
+  ['url:https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3',140],
+  ['url:https://www.unicode.org/reports/tr15/tr15-58.html',141],
+  ['url:https://yaml.org/spec/1.2.2',142],
+  ['arxiv:2611.09807',143],
+  ['arxiv:2611.09662',144],
+  ['arxiv:2611.09721',145],
+  ['arxiv:2502.05167',146],
+  ['arxiv:2404.06654',147],
+  ['arxiv:2411.06037',148],
+  ['github:nvidia/ruler',149]
+];
+
+test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
+  for(const [id,index] of completedArtwork){
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    const output=`media/cards/card-${index}${index===149?'-v2':''}.webp`;
+    const expected=new URL(`../${output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected,`Missing dedicated artwork: ${id}`);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.equal(record.index,index);
+    assert.equal(record.output,output);
+    if(index===149) assert.ok(record.refinementPrompts?.length,'The refined RULER artwork retains its exact edit prompt');
+    assert.deepEqual(record.dimensions,[960,640]);
+    const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
+    assert.deepEqual(record.evidenceUrls,citations);
+    assert.deepEqual(record.currentEvidenceUrls,citations);
+    assert.deepEqual(record.generationEvidenceUrls,citations);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+});
 const newlyCommissioned=new Set([
   'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
   'github:madthanu/alice','github:treeverse/dvc','arxiv:2407.12784','github:ai-secure/agentpoison'
@@ -72,41 +95,37 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     assert.equal(bytes.length,asset.bytes);
     assert.ok(asset.prompt.trim());
     hashes.push(digest);
-    if(['v0.41.0','v0.42.0','v0.43.0','v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version)
-      ||catalog.snapshots['agentic-vault'].version==='v0.47.0'){
-      assert.ok(asset.generationEvidenceUrls.length);
-      assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
-    }
+    assert.ok(asset.generationEvidenceUrls.length);
+    assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
   }
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all commissioned sources keep dedicated images and declared uncommissioned sources use text fallback',()=>{
-  assert.equal(manifest.count,137);
-  const avVersion=catalog.snapshots['agentic-vault'].version;
-  const expectedFallbacks=avVersion==='v0.46.0' ? av046TextFallbacks
-    : ['v0.45.0','v0.45.1'].includes(avVersion) ? av045TextFallbacks : av044TextFallbacks;
-  const images=[],fallbacks=[];
+test('every current catalog source has its own commissioned image in card and detail views',()=>{
+  assert.equal(manifest.count,149);
+  const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(art.src) images.push(art.src);
-    else {
-      fallbacks.push(source.id);
-      assert.ok((avVersion==='v0.47.0' ? av047TextFallbacks : expectedFallbacks).has(source.id),`Unexpected uncommissioned source: ${source.id}`);
-      for(const detail of [false,true]){
-        const html=artworkCover(source,{detail});
-        assert.ok(html.includes('is-art-fallback'));
-        assert.ok(!html.includes('<img data-source-artwork'));
-      }
+    assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
+    images.push(art.src);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'),`Fallback rendered for ${source.id}`);
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(art.src));
     }
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+fallbacks.length,catalog.sources.length);
-  if(['v0.44.0','v0.45.0','v0.45.1','v0.46.0'].includes(catalog.snapshots['agentic-vault'].version))
-    assert.deepEqual(new Set(fallbacks),expectedFallbacks);
-  else if(avVersion==='v0.47.0') assert.deepEqual(new Set(fallbacks),av047TextFallbacks);
-  else assert.deepEqual(fallbacks,[]);
+  assert.equal(images.length,catalog.sources.length);
+});
+
+test('the original 137 commissioned images retain their generation records and binary identities',()=>{
+  const generationRecords=manifest.assets.slice(0,137).map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  const digest=createHash('sha256').update(JSON.stringify(generationRecords)).digest('hex');
+  assert.equal(digest,'97ffb3dbe6005aa2d0c45c3e8e2741ae1b49217fafadbf7ff50044293455539b');
 });
 
 test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{
