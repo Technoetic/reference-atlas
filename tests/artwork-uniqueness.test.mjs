@@ -102,7 +102,8 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 });
 
 test('every current catalog source has its own commissioned image in card and detail views',()=>{
-  assert.equal(manifest.count,149);
+  const expectedCount=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0'?153:149;
+  assert.equal(manifest.count,expectedCount);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
@@ -118,6 +119,31 @@ test('every current catalog source has its own commissioned image in card and de
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
   assert.equal(images.length,catalog.sources.length);
+});
+
+test('the v0.24 catalog publishes four distinct source-specific raster assignments together',()=>{
+  const ids=[
+    'github:stryker-mutator/stryker-js',
+    'github:stryker-mutator/mutation-testing-elements',
+    'arxiv:2004.00481',
+    'github:georgia-tech-db/spes'
+  ];
+  const published=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0';
+  for(const id of ids){
+    const source=catalog.sources.find(source=>source.id===id);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    if(!published){
+      assert.equal(source,undefined,'An unreleased snapshot must not invent a public source use');
+      assert.equal(record,undefined,'Artwork assignment is pending the actual public source citation');
+      continue;
+    }
+    assert.ok(source,`Missing v0.24 source ${id}`);
+    assert.ok(record,`Missing separately commissioned image ${id}`);
+    assert.match(record.output,/\.webp$/);
+    assert.equal(sourceArtwork(source).src,new URL(`../${record.output}`,import.meta.url).href);
+    assert.deepEqual(record.currentEvidenceUrls,source.uses.flatMap(use=>use.evidence.map(row=>row.url)));
+    assert.ok(record.generationEvidenceUrls.length);
+  }
 });
 
 test('the original 137 commissioned images retain their generation records and binary identities',()=>{
@@ -150,7 +176,9 @@ test('each v0.21.1 reference renders its own exact commissioned card and detail 
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    assert.deepEqual(record.generationEvidenceUrls,citations);
+    // The original 137-record hash above protects these exact generation URLs.
+    // Current evidence can be repinned without rewriting how an image was made.
+    assert.ok(record.generationEvidenceUrls.length);
     for(const detail of [false,true]){
       const html=artworkCover({id,title:'Commissioned <reference>'},{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));

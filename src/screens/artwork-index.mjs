@@ -149,4 +149,8 @@ export const artworkIndex = Object.freeze({
   "arxiv:2404.06654": Object.freeze({key: "card-147", src: new URL("../../media/cards/card-147.webp", import.meta.url).href, label: "CONTEXT LENGTH UNDER TEST", word: "CONTEXT LENGTH UNDER TEST"}),
   "arxiv:2411.06037": Object.freeze({key: "card-148", src: new URL("../../media/cards/card-148.webp", import.meta.url).href, label: "RELEVANT IS NOT SUFFICIENT", word: "RELEVANT IS NOT SUFFICIENT"}),
   "github:nvidia/ruler": Object.freeze({key: "card-149", src: new URL("../../media/cards/card-149-v2.webp", import.meta.url).href, label: "REPRODUCIBLE CONTEXT TASK RIG", word: "REPRODUCIBLE CONTEXT TASK RIG"}),
+  "github:stryker-mutator/stryker-js": Object.freeze({key: "card-150", src: new URL("../../media/cards/card-150-stryker-js-v024.webp", import.meta.url).href, label: "MUTATION OBSERVATION TRACKS", word: "MUTATION OBSERVATION TRACKS"}),
+  "github:stryker-mutator/mutation-testing-elements": Object.freeze({key: "card-151", src: new URL("../../media/cards/card-151-mutation-testing-elements-v024.webp", import.meta.url).href, label: "EXECUTION AND DETECTION LEDGER", word: "EXECUTION AND DETECTION LEDGER"}),
+  "arxiv:2004.00481": Object.freeze({key: "card-152", src: new URL("../../media/cards/card-152-spes-paper-v024.webp", import.meta.url).href, label: "BAG MULTIPLICITY BALANCE", word: "BAG MULTIPLICITY BALANCE"}),
+  "github:georgia-tech-db/spes": Object.freeze({key: "card-153", src: new URL("../../media/cards/card-153-spes-project-v024.webp", import.meta.url).href, label: "SYMBOLIC QUERY WORKBENCH", word: "SYMBOLIC QUERY WORKBENCH"}),
 });
