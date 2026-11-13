@@ -20,6 +20,25 @@ const completedArtwork=[
   ['arxiv:2411.06037',148],
   ['github:nvidia/ruler',149]
 ];
+const avCatalogVersion=catalog.snapshots['agentic-vault'].version;
+const av048TextFallbacks=new Set([
+  'url:https://antigravity.google/docs/build-plugins',
+  'url:https://antigravity.google/docs/hooks',
+  'url:https://antigravity.google/docs/customization-discovery',
+  'url:https://antigravity.google/docs/plugins',
+  'url:https://antigravity.google/docs/rules',
+  'url:https://antigravity.google/docs/permissions',
+  'url:https://antigravity.google/docs/cli/commands/permissions',
+  'url:https://antigravity.google/docs/settings',
+  'url:https://antigravity.google/docs/cli/reference',
+  'url:https://antigravity.google/docs/skills',
+  'url:https://antigravity.google/docs/faq',
+  'github:google-antigravity/antigravity-cli',
+  'github:tw93/waza',
+  'github:obra/superpowers'
+]);
+const declaredTextFallback=source=>avCatalogVersion==='v0.48.0'&&av048TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
+const pinnedFile=url=>url.replace(new RegExp('/blob/[0-9a-f]{40}/'),'/blob/<commit>/').replace(new RegExp('#L[0-9]+$'),'');
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
   for(const [id,index] of completedArtwork){
@@ -36,7 +55,8 @@ test('all twelve formerly unillustrated references render their own exact card a
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    assert.deepEqual(record.generationEvidenceUrls,citations);
+    if(avCatalogVersion==='v0.47.0') assert.deepEqual(record.generationEvidenceUrls,citations);
+    else assert.deepEqual(record.generationEvidenceUrls.map(pinnedFile),citations.map(pinnedFile));
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
@@ -101,12 +121,13 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('every current catalog source has its own commissioned image in card and detail views',()=>{
+test('every current catalog source except the declared v0.48.0 text fallbacks has its own commissioned image in card and detail views',()=>{
   const expectedCount=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0'?153:149;
   assert.equal(manifest.count,expectedCount);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
+    if(declaredTextFallback(source)) continue;
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -118,7 +139,21 @@ test('every current catalog source has its own commissioned image in card and de
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(declaredTextFallback).length,catalog.sources.length);
+});
+
+test('the sources first cited by agentic-vault v0.48.0 render the text fallback until their artwork is commissioned',()=>{
+  const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
+  if(avCatalogVersion==='v0.48.0') assert.deepEqual(new Set(fallbacks),av048TextFallbacks);
+  else assert.deepEqual(fallbacks,[]);
+  for(const id of fallbacks){
+    const source=catalog.sources.find(source=>source.id===id);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img data-source-artwork'));
+    }
+  }
 });
 
 test('the v0.24 catalog publishes four distinct source-specific raster assignments together',()=>{
@@ -152,6 +187,15 @@ test('the original 137 commissioned images retain their generation records and b
   ));
   const digest=createHash('sha256').update(JSON.stringify(generationRecords)).digest('hex');
   assert.equal(digest,'97ffb3dbe6005aa2d0c45c3e8e2741ae1b49217fafadbf7ff50044293455539b');
+});
+
+test('the twelve images commissioned at agentic-vault v0.47.0 keep their generation records when citations move',()=>{
+  const generationRecords=manifest.assets.slice(137,149).map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  assert.deepEqual(generationRecords.map(record=>[record.sourceId,record.index]),completedArtwork);
+  const digest=createHash('sha256').update(JSON.stringify(generationRecords)).digest('hex');
+  assert.equal(digest,'28d76e85647acd97c35566b48bb66d664b3a38175314f73aa60cfb7537cc5da8');
 });
 
 test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{

@@ -120,6 +120,11 @@ class Sxc024UpdateTests(unittest.TestCase):
     def test_published_identity_set_and_all_prior_raw_records_are_preserved(self):
         registry = json.loads((ROOT / 'data/registry.source.json').read_text(encoding='utf8'))
         artwork = json.loads((ROOT / 'docs/card-artwork-unique-prompts.json').read_text(encoding='utf8'))
+        if registry['snapshots']['agentic-vault']['version'] != 'v0.47.0':
+            # The reconstruction below removes only this update's sources, so it describes the catalog this update
+            # was published on (agentic-vault v0.47.0). agentic-vault v0.48.0 adds text-fallback sources without
+            # artwork and repins every agentic-vault row; tests/test_av048_update.py covers that update.
+            self.skipTest('The live catalog is past the agentic-vault v0.47.0 snapshot this reconstruction assumes')
         # Retain the complete original identity set when tests run after application too.
         registry['sources'] = [s for s in registry['sources'] if s['id'] not in IDENTITIES]
         artwork['assets'] = [a for a in artwork['assets'] if a['sourceId'] not in IDENTITIES]

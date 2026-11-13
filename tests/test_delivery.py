@@ -20,6 +20,7 @@ EXPECTED_COVERAGE={
     ('v0.46.0','v0.21.1'):(56,53,5,147,264),
     ('v0.47.0','v0.21.1'):(56,53,7,149,269),
     ('v0.47.0','v0.24.0'):(56,53,7,153,277),
+    ('v0.48.0','v0.24.0'):(56,56,18,167,303),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -86,5 +87,11 @@ class DeliveryTests(unittest.TestCase):
         text=(ROOT/'data/catalog.json').read_text(encoding='utf8')
         pattern=r'(?i)(?<![A-Za-z])[a-z]:[\\/]|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|op_u_[A-Za-z0-9]+|sk-[A-Za-z0-9]{16,}'
         self.assertIsNone(re.search(pattern,text),'A credential or local path was found in public data')
+
+    def test_v048_coverage_adds_the_release_cited_cards_without_rewriting_history(self):
+        prior=EXPECTED_COVERAGE[('v0.47.0','v0.24.0')]
+        self.assertEqual(prior,(56,53,7,153,277))
+        revised=EXPECTED_COVERAGE[('v0.48.0','v0.24.0')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,3,11,14,26))
 
 if __name__=='__main__':unittest.main()
