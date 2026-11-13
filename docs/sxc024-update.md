@@ -13,9 +13,10 @@ commit or placeholder hash:
 python scripts/update_sxc024_references.py --plugin-root <published-checkout> --sxc-commit <full-public-sxc-commit> --pending-artwork docs/sxc024-card-artwork.pending.json
 ```
 
-Inspect the dry-run result before repeating with `--apply`. Apply atomically
-updates `data/registry.source.json` and current citation mappings in
-`docs/card-artwork-unique-prompts.json`, using the existing transactional helper.
+Inspect the dry-run result before repeating with `--apply`. Apply updates
+`data/registry.source.json` and current citation mappings in
+`docs/card-artwork-unique-prompts.json`, using the existing helper with rollback
+on ordinary errors. This is not a crash-atomic transaction across both files.
 It never rewrites image files, prompts, hashes, dimensions or generation history.
 The original 149 canonical identities, all raw curation rows, aliases, roles and
 notes survive, including the Agentic Vault snapshot and cited uses.
