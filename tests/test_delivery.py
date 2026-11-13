@@ -19,6 +19,7 @@ EXPECTED_COVERAGE={
     ('v0.45.1','v0.21.1'):(56,50,5,144,256),
     ('v0.46.0','v0.21.1'):(56,53,5,147,264),
     ('v0.47.0','v0.21.1'):(56,53,7,149,269),
+    ('v0.47.0','v0.24.0'):(56,53,7,153,277),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -39,7 +40,8 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[3:])
         sxc=catalog['countsByPlugin']['semantic-crosscheck']
         sxc_coverage={'v0.19.1':(13,26,41,3),'v0.20.0':(13,28,45,5),
-                      'v0.21.0':(14,34,58,5),'v0.21.1':(14,34,58,5)}
+                      'v0.21.0':(14,34,58,5),'v0.21.1':(14,34,58,5),
+                      'v0.24.0':(15,38,66,5)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 

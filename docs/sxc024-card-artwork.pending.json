@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generationMode": "built-in image_gen",
+  "policy": "Four separately generated source-specific images, awaiting final public SXC citation binding. No borrowed artwork.",
+  "count": 4,
+  "assets": [
+    {
+      "index": 150,
+      "sourceId": "github:stryker-mutator/stryker-js",
+      "title": "StrykerJS",
+      "kind": "project",
+      "label": "MUTATION OBSERVATION TRACKS",
+      "factualConcept": "Independent test paths continue observing a bounded mutant after the first detection.",
+      "prompt": "Use case: stylized-concept. Create one original premium editorial illustration for a research-source card on a dark navy software research atlas. Landscape 3:2 composition, a single coherent sculptural scene, refined isometric 3D with precise geometry, charcoal navy background, restrained luminous cyan and violet, ample breathing room, elegant high-end technology magazine aesthetic, no text or letters, no logos, no watermark. It must visually embody the following specific idea, not a generic AI chip.\nA meticulous mutation-testing observatory: three parallel translucent test tracks inspect a tiny circuit tile deliberately altered at one joint; many sensor gates illuminate on separate paths as they detect the same defect. The central object is a branching matrix of independently observed test paths. Teal and warm coral highlight detection; distinguish the paths cleanly.",
+      "output": "media/cards/card-150-stryker-js-v024.webp",
+      "sha256": "4931fc826b0230bf8184e68b29462a7628e1ae2c8f0b3993a66b9d8ad32337ac",
+      "bytes": 78568,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/stryker-mutator/stryker-js/blob/959127763e5bbe2eb65f5341a8161780d6d8a476/packages/api/schema/stryker-core.json#L499-L503"
+      ],
+      "delivery": {
+        "sourceSha256": "3c903d3a5f82d7edaf7d86a15f4385938b6e601fceb1fdbf7ccb04e70f613aec",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB conversion and LANCZOS resize; no crop or content edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 151,
+      "sourceId": "github:stryker-mutator/mutation-testing-elements",
+      "title": "Mutation Testing Elements report schema",
+      "kind": "format",
+      "label": "EXECUTION AND DETECTION LEDGER",
+      "factualConcept": "Separate channels distinguish covered tests, observed detectors and completed tests.",
+      "prompt": "Use case: stylized-concept. Create one original premium editorial illustration for a research-source card on a dark navy software research atlas. Landscape 3:2 composition, a single coherent sculptural scene, refined isometric 3D with precise geometry, charcoal navy background, restrained luminous cyan and violet, ample breathing room, elegant high-end technology magazine aesthetic, no text or letters, no logos, no watermark. It must visually embody the following specific idea, not a generic AI chip.\nA beautifully structured test-report artifact: a tall translucent architectural ledger with three visibly different stacked channels, an empty outlined observation channel, a filled detection channel, and a small count of completed blocks, all joined to an ordered geometric report grid. Emphasize clear separation of execution and detection using different materials, amber versus cyan. No symbols or labels.",
+      "output": "media/cards/card-151-mutation-testing-elements-v024.webp",
+      "sha256": "3d6b8b0bf0db611d01f69e8cf1d5dcb8a915732537631fde2ac89c7bb6800229",
+      "bytes": 63404,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/stryker-mutator/mutation-testing-elements/blob/4b5b62cc6bf81f23dd9521447131abeb51f895db/packages/report-schema/src/mutation-testing-report-schema.json#L43-L100"
+      ],
+      "delivery": {
+        "sourceSha256": "39ba86b8b049d34715a85587f0363d4a747323de0c560f20e32449114feec2f0",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB conversion and LANCZOS resize; no crop or content edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 152,
+      "sourceId": "arxiv:2004.00481",
+      "title": "SPES: A Symbolic Approach to Proving Query Equivalence Under Bag Semantics",
+      "kind": "paper",
+      "label": "BAG MULTIPLICITY BALANCE",
+      "factualConcept": "Matching bags retain duplicate multiplicities; the empty slot remains separate.",
+      "prompt": "Use case: stylized-concept. Create one original premium editorial illustration for a research-source card on a dark navy software research atlas. Landscape 3:2 composition, a single coherent sculptural scene, refined isometric 3D with precise geometry, charcoal navy background, restrained luminous cyan and violet, ample breathing room, elegant high-end technology magazine aesthetic, no text or letters, no logos, no watermark. It must visually embody the following specific idea, not a generic AI chip.\nA mathematical multiset equivalence sculpture: two elegant glass funnels combine duplicated pairs of small amber and cyan tokens; both sides produce two perfectly matching transparent trays retaining exact duplicate multiplicities. A thin balanced beam between the trays expresses equivalence without a scales-of-justice cliché. Fine violet connections emphasize multiplicity and a single unfilled null-shaped slot remains distinct.",
+      "output": "media/cards/card-152-spes-paper-v024.webp",
+      "sha256": "035e609d8ca86506c83bbdbdd7b18bab1aa9ec7413f44f20c0ebacd3150f6153",
+      "bytes": 60908,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://arxiv.org/abs/2004.00481v2"
+      ],
+      "delivery": {
+        "sourceSha256": "dc314f23355cf49b6c96b2b23a505045cae06ada02719a952ee33a82f49e510c",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB conversion and LANCZOS resize; no crop or content edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 153,
+      "sourceId": "github:georgia-tech-db/spes",
+      "title": "SPES repository",
+      "kind": "project",
+      "label": "SYMBOLIC QUERY WORKBENCH",
+      "factualConcept": "Asymmetric expression trees flow into one symbolic comparison chamber.",
+      "prompt": "Use case: stylized-concept. Create one original premium editorial illustration for a research-source card on a dark navy software research atlas. Landscape 3:2 composition, a single coherent sculptural scene, refined isometric 3D with precise geometry, charcoal navy background, restrained luminous cyan and violet, ample breathing room, elegant high-end technology magazine aesthetic, no text or letters, no logos, no watermark. It must visually embody the following specific idea, not a generic AI chip.\nA symbolic SQL verification workbench: two different abstract query-expression trees made of dark porcelain joints and cyan rails flow into one glowing geometric constraint chamber, with three duplicate token pairs visible in each output lane. A proof-like network of thin violet links surrounds the chamber. Focus on executable symbolic comparison rather than a paper or generic diagram; asymmetric input trees, matching repeated output tokens.",
+      "output": "media/cards/card-153-spes-project-v024.webp",
+      "sha256": "666c8ea25e5ce70c05267020d4c3731f95838af9f5b7beffb3c7ba965661b138",
+      "bytes": 58354,
+      "dimensions": [
+        960,
+        640
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/georgia-tech-db/spes/tree/8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2"
+      ],
+      "delivery": {
+        "sourceSha256": "6aeb2d13c2a42663d8b8527daa61222657208cfa4d3ff9af9a319c084b1de646",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB conversion and LANCZOS resize; no crop or content edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    }
+  ]
+}
