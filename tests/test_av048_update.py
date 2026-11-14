@@ -234,6 +234,8 @@ class AV048Tests(unittest.TestCase):
     def test_test_edits_apply_once_and_keep_the_earlier_edits_in_place(self):
         files=('tests/test_delivery.py','tests/artwork-uniqueness.test.mjs','tests/test_sxc024_update.py')
         texts={file:(ROOT/file).read_text(encoding='utf-8') for file in files}
+        # Keep this migration's exact historical anchors independent of later release assertions.
+        texts['tests/artwork-uniqueness.test.mjs']=(ROOT/'tests/fixtures/artwork-v048-before-v049.mjs.txt').read_text(encoding='utf-8')
         once,_=edit_tests(texts);twice,applied=edit_tests(once)
         self.assertEqual((twice,applied),(once,0))
         delivery=once['tests/test_delivery.py']

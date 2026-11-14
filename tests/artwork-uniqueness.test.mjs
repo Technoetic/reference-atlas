@@ -37,7 +37,10 @@ const av048TextFallbacks=new Set([
   'github:tw93/waza',
   'github:obra/superpowers'
 ]);
-const declaredTextFallback=source=>avCatalogVersion==='v0.48.0'&&av048TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
+const av049TextFallbacks=new Set([...av048TextFallbacks,'github:q00/ouroboros']);
+const releaseTextFallbacks=avCatalogVersion==='v0.49.0'?av049TextFallbacks:
+  avCatalogVersion==='v0.48.0'?av048TextFallbacks:new Set();
+const declaredTextFallback=source=>releaseTextFallbacks.has(source.id)&&!sourceArtwork(source).src;
 const pinnedFile=url=>url.replace(new RegExp('/blob/[0-9a-f]{40}/'),'/blob/<commit>/').replace(new RegExp('#L[0-9]+$'),'');
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
@@ -121,7 +124,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('every current catalog source except the declared v0.48.0 text fallbacks has its own commissioned image in card and detail views',()=>{
+test('every current catalog source except declared release text fallbacks has its own commissioned image in card and detail views',()=>{
   const expectedCount=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0'?153:149;
   assert.equal(manifest.count,expectedCount);
   const images=[];
@@ -142,10 +145,9 @@ test('every current catalog source except the declared v0.48.0 text fallbacks ha
   assert.equal(images.length+catalog.sources.filter(declaredTextFallback).length,catalog.sources.length);
 });
 
-test('the sources first cited by agentic-vault v0.48.0 render the text fallback until their artwork is commissioned',()=>{
+test('uncommissioned release references render text fallbacks until their artwork is commissioned',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  if(avCatalogVersion==='v0.48.0') assert.deepEqual(new Set(fallbacks),av048TextFallbacks);
-  else assert.deepEqual(fallbacks,[]);
+  assert.deepEqual(new Set(fallbacks),releaseTextFallbacks);
   for(const id of fallbacks){
     const source=catalog.sources.find(source=>source.id===id);
     for(const detail of [false,true]){
@@ -153,6 +155,26 @@ test('the sources first cited by agentic-vault v0.48.0 render the text fallback 
       assert.ok(html.includes('is-art-fallback'));
       assert.ok(!html.includes('<img data-source-artwork'));
     }
+  }
+});
+
+test('v0.49.0 adds one project text fallback without assigning or borrowing artwork',()=>{
+  const id='github:q00/ouroboros';
+  const source=catalog.sources.find(source=>source.id===id);
+  assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+  assert.equal(sourceArtwork({id}).src,null);
+  if(avCatalogVersion!=='v0.49.0'){
+    assert.equal(source,undefined,'An unreleased citation must not be added to the live catalog');
+    return;
+  }
+  assert.ok(source);
+  assert.equal(source.kind,'project');
+  assert.equal(av049TextFallbacks.size,15);
+  assert.equal(manifest.count,153);
+  for(const detail of [false,true]){
+    const html=artworkCover(source,{detail});
+    assert.ok(html.includes('is-art-fallback'));
+    assert.ok(!html.includes('<img data-source-artwork'));
   }
 });
 
