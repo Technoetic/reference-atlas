@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 153,
+  "count": 168,
   "assets": [
     {
       "index": 1,
@@ -4241,6 +4241,429 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/82af236fbb4a4dd4b870fe799bcb7cb98404429a/THIRD_PARTY.md#L211",
         "https://github.com/Technoetic/semantic-crosscheck/blob/82af236fbb4a4dd4b870fe799bcb7cb98404429a/docs/join-aggregate-fixtures.md#L86"
+      ]
+    },
+    {
+      "index": 154,
+      "sourceId": "url:https://antigravity.google/docs/cli/commands/permissions",
+      "title": "Google Antigravity documentation: /permissions command",
+      "kind": "article",
+      "label": "THREE PERMISSION SCOPES",
+      "factualConcept": "The /permissions command exposes Global, Shared and Project scopes. These scopes manage rules rather than establish that a tool was executed or allowed in a real session.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A sculptural permissions console has three visibly distinct concentric open trays: a wide outer global tray, a middle shared-workspace tray, and a smaller project tray. A single bright lime key token can be placed into one tray without merging them. The selected project tray glows, lavender tokens remain parked in the other trays. Three-quarter top-down view, careful nested-scope geometry. Symbolize choosing permission scope, not bypassing controls.",
+      "output": "media/cards/card-154-permission-scopes.webp",
+      "sha256": "9136ce9be41933849a164e69623c12b309d5de6624a69609ecfa046b1f78b6d6",
+      "bytes": 55882,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L207"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L207"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L207"
+      ]
+    },
+    {
+      "index": 155,
+      "sourceId": "url:https://antigravity.google/docs/build-plugins",
+      "title": "Google Antigravity documentation: Build plugins",
+      "kind": "article",
+      "label": "ASSEMBLE A PLUGIN PACKAGE",
+      "factualConcept": "A plugin root combines its manifest, skills directory and root hooks.json; commands/ is not a native component. The cited documentation assigns plugin skills their slash invocation name.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A beautiful exploded view of one developer plugin capsule: a rigid open gunmetal package root contains a central thin manifest plate, a neat bundle of translucent lavender skill tabs, and a slim lime event-hook rail with sockets. The parts are suspended just above their exact matching compartments, ready to be assembled into one distributable package. Architectural isometric composition, striking exploded technical sculpture, no duplicates of other artwork.",
+      "output": "media/cards/card-155-build-plugins.webp",
+      "sha256": "3c34e1095b59ab4125b5f98d7fd22b4c0cdb136c28d85dea9f5546e174bd1804",
+      "bytes": 67686,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L202"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L202"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L202"
+      ]
+    },
+    {
+      "index": 156,
+      "sourceId": "url:https://antigravity.google/docs/cli/reference",
+      "title": "Google Antigravity documentation: CLI reference",
+      "kind": "article",
+      "label": "TRUSTED INPUT AND LOG ROUTES",
+      "factualConcept": "The CLI reference documents a workspace trust list. The --log-file option changes the CLI log destination path.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A precision terminal-like inlet prism receives one clean lavender workspace tile through a clearly gated square port. An independent thin lime optical conduit exits sideways to a separate small log spool, visually separate from the main workpiece flow. Minimal asymmetric industrial routing instrument, low-angle macro view; emphasize trusted workspace inlet and a separately reroutable log path rather than a generic terminal screen.",
+      "output": "media/cards/card-156-cli-reference.webp",
+      "sha256": "2893fae5e15325944162b8569b8d78699495e5237d19c8f83b6c8150dfccbf7e",
+      "bytes": 54844,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ]
+    },
+    {
+      "index": 157,
+      "sourceId": "url:https://antigravity.google/docs/customization-discovery",
+      "title": "Google Antigravity documentation: Customization discovery",
+      "kind": "article",
+      "label": "NAMESPACED DISCOVERY",
+      "factualConcept": "The release attributes plugin-prefixed skill names to this specific documentation page. Discovery identifies plugin skills using a qualified name such as agentic-vault:vault-day; actual user spelling was not runtime verified.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A broad smoked-glass optical search lens floats above a fan of small directory drawers arranged in three separate family racks. Each drawer holds distinctive lavender geometric skill tiles. Delicate lime scanning beams identify matching slots in the separate racks and converge into one ordered discovery tray beneath the lens, preserving separate origins. High overhead oblique view, elegant optical instrument and directory fan.",
+      "output": "media/cards/card-157-customization-discovery.webp",
+      "sha256": "4a247f599969c04ddc9a46bf56d64224b1fcac107e48a508ae437f973ec4fb4f",
+      "bytes": 86654,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L204"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L204"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L204"
+      ]
+    },
+    {
+      "index": 158,
+      "sourceId": "url:https://antigravity.google/docs/faq",
+      "title": "Google Antigravity documentation: FAQ",
+      "kind": "article",
+      "label": "SESSION BOUNDARY CLARITY",
+      "factualConcept": "The cited FAQ addresses wrapping agy inside third-party agents under consumer plans. AV's guide consequently directs real conversation checks to the user's own terminal; the release did not run a real agy conversation.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A transparent enclosing arch defines a protected session chamber containing one lavender communication crystal. At the chamber edge, an incompatible third-party wrapper sleeve is stopped outside by a visible lime boundary notch; a small open reference book outside illuminates the boundary with a fine light ray. Calm explanatory sculptural composition, no red alarms, no question marks, no implication of a tested running session. Express understanding a documented session boundary.",
+      "output": "media/cards/card-158-faq.webp",
+      "sha256": "179503b9cae8fc0ea4636d0e4f36433ebcc8d120b5643de8aad7421d5f7685c4",
+      "bytes": 45560,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ]
+    },
+    {
+      "index": 159,
+      "sourceId": "url:https://antigravity.google/docs/hooks",
+      "title": "Google Antigravity documentation: Hooks",
+      "kind": "article",
+      "label": "EVENT INPUT AND INJECTION",
+      "factualConcept": "The cited hook interface has six events, without compaction or session-end events. Plugin hooks run from the plugin directory, receive workspacePaths in JSON input, and return stdout JSON including injectSteps.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. An elegantly curved chronological rail contains six small event sockets. A lavender workspace-input tile enters one socket, triggers a fine vertical lime pulse, and a separate output channel inserts a thin guidance strip into the forward flow at exactly that stage. Several other sockets remain idle; physical causal event choreography, not a circular generic network. Side-on three-quarter macro photograph of a precision event instrument.",
+      "output": "media/cards/card-159-hooks.webp",
+      "sha256": "1ae0f859ed2fb5d29de72d4772f6193ad5e1a7723abf46b1d6556fbbc0b984ef",
+      "bytes": 51500,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L203"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L203"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L203"
+      ]
+    },
+    {
+      "index": 160,
+      "sourceId": "url:https://antigravity.google/docs/permissions",
+      "title": "Google Antigravity documentation: Permissions",
+      "kind": "article",
+      "label": "PAIRED ACCESS BOUNDARY",
+      "factualConcept": "A read_file deny on a path also blocks write_file to that path. Windows match paths omit drive letters and use forward slashes.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. Two visibly parallel lavender data rails, one inbound and one outbound, lead toward the same protected glass compartment. A single substantial lime crossbar closes both matching ports together, with the stopped payload tiles remaining outside. The shared crossbar symbolizes a deny boundary applied to reading and writing, not encryption or identity certification. Frontal architectural view, clear bilateral composition, beautiful restrained glass and metal.",
+      "output": "media/cards/card-160-permissions.webp",
+      "sha256": "4cb985076424b83f02a6a71c1434ba1768e588088f30b3e55165971d031b2218",
+      "bytes": 41754,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L206"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L206"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L206"
+      ]
+    },
+    {
+      "index": 161,
+      "sourceId": "url:https://antigravity.google/docs/plugins",
+      "title": "Google Antigravity documentation: Plugins",
+      "kind": "article",
+      "label": "INSTALLED SKILL CAPSULE",
+      "factualConcept": "The cited plugin material covers installation location and installed plugin components. Plugin skills are called using /<skill name>; do not confuse source plugin construction with installed use.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. An intact sealed smoked-glass plugin capsule is firmly mounted in a dark read-only library rack. Inside are several orderly lavender skill leaves; a separate lime invocation arm reaches a contact on one leaf while the sealed capsule remains intact and mounted. Show an installed usable plugin distinct from an exploded build package. Low sweeping perspective, capsule in sharp focus with an elegant rack silhouette.",
+      "output": "media/cards/card-161-plugins.webp",
+      "sha256": "3d337a2d6982c2699490099f1570d7ab98c20d0a6ca9a9f0bcbe0526e1a1d8fd",
+      "bytes": 58510,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ]
+    },
+    {
+      "index": 162,
+      "sourceId": "url:https://antigravity.google/docs/rules",
+      "title": "Google Antigravity documentation: Rules",
+      "kind": "article",
+      "label": "BOUNDED RULE INCLUDES",
+      "factualConcept": "Rules are discovered from locations including AGENTS.md; CLAUDE.md is not among this host's automatic locations. After @ includes expand, rule files beyond 24000 bytes are truncated.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A long folding chain of lavender translucent rule sheets extends from several nested open folders toward a precise lime aperture. Only a bounded section of the chain passes through the aperture onto a small flat reading platform; the remaining sheets stay clearly visible outside with no destruction. Physical accordion-paper sculpture, high diagonal composition; symbolize included instruction expansion with an explicit size boundary, not permission to execute every instruction.",
+      "output": "media/cards/card-162-rules.webp",
+      "sha256": "515f6ee9a0e882e5de2e972b479ee242d8aff5095f8f37f741009b1b779500f4",
+      "bytes": 47884,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L205"
+      ]
+    },
+    {
+      "index": 163,
+      "sourceId": "url:https://antigravity.google/docs/settings",
+      "title": "Google Antigravity documentation: Settings",
+      "kind": "article",
+      "label": "ACCOUNT POLICY SETTINGS",
+      "factualConcept": "The data-collection setting is stored with the account. The release attributes the always-off collection setting for business accounts to this page.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A premium brushed-metal settings instrument holds a lavender account token in a fixed dock. Beside it is a conspicuously separated smoked-glass telemetry conduit with a physical lime toggle fixed in its disconnected position and a small empty gap in the conduit. Other softly lit adjustment discs remain neutral. Close-up product photography, spacious asymmetric framing; convey account-linked configuration and disabled data collection without claiming all privacy controls are guaranteed.",
+      "output": "media/cards/card-163-settings.webp",
+      "sha256": "36c2ac2f637306f6b0d05eb6a5d4d5484a599776438677ae0f9e60daf7d9a717",
+      "bytes": 58862,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L208"
+      ]
+    },
+    {
+      "index": 164,
+      "sourceId": "url:https://antigravity.google/docs/skills",
+      "title": "Google Antigravity documentation: Skills",
+      "kind": "article",
+      "label": "PROGRESSIVE SKILL LOADING",
+      "factualConcept": "The cited skills documentation covers skill frontmatter. Each skill gains a /<skill name> slash command.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A compact library of closed lavender instruction folios sits in a neat rack; each has a small metadata tab visible without opening. One chosen folio slides out and unfolds into a larger translucent instruction sheet only at a lime invocation dock. Other folios remain closed. Strong elegant book-fan silhouette, three-quarter close view, emphasize metadata discovery before on-demand full content rather than all skills loaded together.",
+      "output": "media/cards/card-164-skills.webp",
+      "sha256": "a24ea5e3acdd11d1bf606c6382028b92ded23d41f23fe07e959e9555f844a289",
+      "bytes": 70378,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L129",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L209"
+      ]
+    },
+    {
+      "index": 165,
+      "sourceId": "github:google-antigravity/antigravity-cli",
+      "title": "google-antigravity/antigravity-cli",
+      "kind": "project",
+      "label": "VERSIONED ADAPTER INPUTS",
+      "factualConcept": "Pinned changelog records PLUGIN_ROOT/PLUGIN_DATA hook variables from 1.5.3 and cwd/hookEventName hook input from 1.5.4. Version 1.5.6 warns on PLUGIN_ROOT in hook commands and favors relative paths because hooks already run from the plugin folder.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A precision command-line adapter bridge spans two dark platforms: one platform supplies a single lavender workspace-input tile, the other offers a paired fallback-input coupling of a different shape. A small mechanical selector routes one compatible input through the bridge into an ordered workbench. Separate lime and lavender root/data reservoirs sit beside the bridge, clearly distinct. Macro industrial engineering sculpture, clean diagonal bridge composition, version compatibility and fallback adapters without textual version numbers.",
+      "output": "media/cards/card-165-antigravity-cli.webp",
+      "sha256": "d6bcc55906695b1b97ac99fb660a65b683174095220f415aa1933cbaf5d0975f",
+      "bytes": 75718,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L130",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L210"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L130",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L210"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L130",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/antigravity.md#L210"
+      ]
+    },
+    {
+      "index": 166,
+      "sourceId": "github:obra/superpowers",
+      "title": "obra/superpowers",
+      "kind": "project",
+      "label": "SHARED SKILLS HOST MANIFESTS",
+      "factualConcept": "The cited layout places multiple host manifests at one repository root, including .antigravity-plugin/plugin.json. The AV release uses it as a skill-centered same-root comparison with no native root hooks.json; AV itself chooses a generated subfolder for its hook/command requirements.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. One shared sculptural central skill library is anchored to a broad gunmetal root platform. Three differently shaped thin host-manifest docking frames surround it at different angles and connect to the same inner lavender skill leaves with delicate lime rails, each frame retains its own socket shape. Sophisticated radial architecture, camera slightly above. Convey a reusable skill-centered core with host-specific manifest entry points, not superhuman powers or a generic automation brain.",
+      "output": "media/cards/card-166-superpowers.webp",
+      "sha256": "1ec279794dc92e4e868e83ec79261bc8087c25284a6d355ab6dc026d49e23a75",
+      "bytes": 64788,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L132"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L132"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L132"
+      ]
+    },
+    {
+      "index": 167,
+      "sourceId": "github:q00/ouroboros",
+      "title": "Ouroboros",
+      "kind": "project",
+      "label": "PROVENANCE AND BOUNDED REVIEW",
+      "factualConcept": "Only evidence-backed resolved ledger entries may bind a seed; defaulted assumptions remain nonbinding. Executed mechanical evidence grants acceptance while model reviews may withhold it; convergence distinguishes a verified success exit from a maximum-generation exhaustion exit.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A sculptural near-circular iterative track carries a lavender requirement ledger tile with a visible embedded origin pearl through three distinct review gates of increasing shape. At the end the track visibly forks: a clean lime completion dock on one side and a neutral dark capped stop buffer on the other, so stopping is distinct from succeeding. Several earlier ledger revision leaves remain stacked beside the entry. Sophisticated high diagonal view, bounded iteration, provenance and staged review, no snake, no infinity sign, no endless closed loop.",
+      "output": "media/cards/card-167-ouroboros.webp",
+      "sha256": "bd03b1116d4ab9bab2975a3d98805349f7e5ff109b8f3ed6c749b557bbc3b8f0",
+      "bytes": 59720,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L55",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L60",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L62",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L66"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L55",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L60",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L62",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L66"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L55",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L60",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L61",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L62",
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.49.0.md#L66"
+      ]
+    },
+    {
+      "index": 168,
+      "sourceId": "github:tw93/waza",
+      "title": "tw93/Waza",
+      "kind": "project",
+      "label": "PINNED NESTED PACKAGE",
+      "factualConcept": "The cited public pattern places the Antigravity plugin under plugins/waza. The recorded isolated-home installation selected only that subfolder from a tag-pinned repository URL; its installed package contained eight skills and six rules.",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive editorial cover for a Reference Atlas source card. Premium tactile 3D product-sculpture illustration, dark olive-black seamless studio #10130f, brushed gunmetal, smoked translucent glass, luminous lime #d3fc70 and soft lavender #c3b0f6, precise materials, restrained cinematic rim light. Landscape 3:2 composition, one bold readable central mechanism with generous dark margins; main subject fits center80% for responsive cropping. No written text, characters, numbers, logos, watermark, people, snakes or generic floating brain. This is symbolic commissioned artwork, not a literal screenshot or a scientific result. A tall stepped hierarchy of three nested smoked-glass directory cases opens to reveal one small lavender plugin cartridge deep inside. A precise lime selector clamp reaches only that inner cartridge and docks it into a separate clean host socket; the large outer repository container remains behind. A tiny geometric pin attaches to the selected cartridge without any lettering. Dramatic cutaway product sculpture, distinct nested packaging and pinned subdirectory installation, no copying the whole outer box.",
+      "output": "media/cards/card-168-waza.webp",
+      "sha256": "722e5ca52d205213213907c67dbf2c39e023b468644f5be1a2d9e650dc989337",
+      "bytes": 49680,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L131"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L131"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/1fc8269039c06ecadb2852e2addbadfb0a40e15b/docs/releases/v0.48.0.md#L131"
       ]
     }
   ],

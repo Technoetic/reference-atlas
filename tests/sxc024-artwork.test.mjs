@@ -31,7 +31,8 @@ test('all four pending v0.24 images render their exact source-specific card and 
 });
 
 test('149 preserved originals plus the four commissions have 153 unique actual WebP files and prompts',async()=>{
-  const originals=manifest.assets.filter(asset=>!ids.has(asset.sourceId));
+  // This historical batch remains the first 149 assets even after later commissions.
+  const originals=manifest.assets.filter(asset=>asset.index<=149);
   assert.equal(originals.length,149);
   const all=[...originals,...pending.assets];
   assert.equal(new Set(all.map(asset=>asset.output)).size,153);

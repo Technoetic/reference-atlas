@@ -106,6 +106,17 @@ class AV049ReferenceTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.prepare(once, images, texts)
 
+    def test_historical_release_replay_rejects_the_later_ouroboros_commission(self):
+        registry, art, texts = fixture()
+        later = copy.deepcopy(art['assets'][0])
+        later['sourceId'] = 'github:q00/ouroboros'
+        art['assets'].append(later)
+        art['count'] = len(art['assets'])
+        before = copy.deepcopy((registry, art))
+        with self.assertRaisesRegex(ValueError, 'Uncommissioned Ouroboros reference must use text fallback'):
+            self.prepare(registry, art, texts)
+        self.assertEqual((registry, art), before)
+
     def test_sha_tag_and_excerpt_mismatch_are_refused(self):
         for commit, tag in [('B' * 40, 'v0.49.0'), ('a' * 39, 'v0.49.0'),
                             (NEW, 'v0.48.0'), (NEW, '../v0.49.0')]:

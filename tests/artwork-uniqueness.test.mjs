@@ -21,26 +21,23 @@ const completedArtwork=[
   ['github:nvidia/ruler',149]
 ];
 const avCatalogVersion=catalog.snapshots['agentic-vault'].version;
-const av048TextFallbacks=new Set([
-  'url:https://antigravity.google/docs/build-plugins',
-  'url:https://antigravity.google/docs/hooks',
-  'url:https://antigravity.google/docs/customization-discovery',
-  'url:https://antigravity.google/docs/plugins',
-  'url:https://antigravity.google/docs/rules',
-  'url:https://antigravity.google/docs/permissions',
-  'url:https://antigravity.google/docs/cli/commands/permissions',
-  'url:https://antigravity.google/docs/settings',
-  'url:https://antigravity.google/docs/cli/reference',
-  'url:https://antigravity.google/docs/skills',
-  'url:https://antigravity.google/docs/faq',
-  'github:google-antigravity/antigravity-cli',
-  'github:tw93/waza',
-  'github:obra/superpowers'
-]);
-const av049TextFallbacks=new Set([...av048TextFallbacks,'github:q00/ouroboros']);
-const releaseTextFallbacks=avCatalogVersion==='v0.49.0'?av049TextFallbacks:
-  avCatalogVersion==='v0.48.0'?av048TextFallbacks:new Set();
-const declaredTextFallback=source=>releaseTextFallbacks.has(source.id)&&!sourceArtwork(source).src;
+const completedReleaseArtwork=[
+  ['url:https://antigravity.google/docs/cli/commands/permissions',154],
+  ['url:https://antigravity.google/docs/build-plugins',155],
+  ['url:https://antigravity.google/docs/cli/reference',156],
+  ['url:https://antigravity.google/docs/customization-discovery',157],
+  ['url:https://antigravity.google/docs/faq',158],
+  ['url:https://antigravity.google/docs/hooks',159],
+  ['url:https://antigravity.google/docs/permissions',160],
+  ['url:https://antigravity.google/docs/plugins',161],
+  ['url:https://antigravity.google/docs/rules',162],
+  ['url:https://antigravity.google/docs/settings',163],
+  ['url:https://antigravity.google/docs/skills',164],
+  ['github:google-antigravity/antigravity-cli',165],
+  ['github:obra/superpowers',166],
+  ['github:q00/ouroboros',167],
+  ['github:tw93/waza',168]
+];
 const pinnedFile=url=>url.replace(new RegExp('/blob/[0-9a-f]{40}/'),'/blob/<commit>/').replace(new RegExp('#L[0-9]+$'),'');
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
@@ -109,8 +106,13 @@ const newReleaseCommissioned=new Set([
 test('artwork provenance assigns each generated file and exact prompt to its source',async()=>{
   assert.equal(manifest.count,manifest.assets.length);
   assert.equal(new Set(manifest.assets.map(asset=>asset.sourceId)).size,manifest.assets.length);
+  assert.equal(new Set(manifest.assets.map(asset=>asset.output)).size,manifest.assets.length);
+  assert.equal(new Set(manifest.assets.map(asset=>asset.prompt)).size,manifest.assets.length);
+  assert.equal(new Set(manifest.assets.map(asset=>asset.factualConcept)).size,manifest.assets.length);
   const hashes=[];
   for(const asset of manifest.assets){
+    const source=catalog.sources.find(source=>source.id===asset.sourceId);
+    assert.ok(source,`Unknown artwork source: ${asset.sourceId}`);
     const expected=new URL(`../${asset.output}`,import.meta.url);
     assert.equal(sourceArtwork({id:asset.sourceId}).src,expected.href);
     const bytes=await readFile(expected),digest=createHash('sha256').update(bytes).digest('hex');
@@ -120,17 +122,17 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
     hashes.push(digest);
     assert.ok(asset.generationEvidenceUrls.length);
     assert.deepEqual(asset.currentEvidenceUrls,asset.evidenceUrls);
+    assert.deepEqual(asset.currentEvidenceUrls,source.uses.flatMap(use=>use.evidence.map(row=>row.url)));
   }
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('every current catalog source except declared release text fallbacks has its own commissioned image in card and detail views',()=>{
-  const expectedCount=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0'?153:149;
-  assert.equal(manifest.count,expectedCount);
+test('all 168 current catalog sources have their own commissioned image in card and detail views',()=>{
+  assert.equal(manifest.count,168);
+  assert.equal(catalog.sources.length,168);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(declaredTextFallback(source)) continue;
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -142,39 +144,43 @@ test('every current catalog source except declared release text fallbacks has it
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+catalog.sources.filter(declaredTextFallback).length,catalog.sources.length);
+  assert.equal(images.length,catalog.sources.length);
 });
 
-test('uncommissioned release references render text fallbacks until their artwork is commissioned',()=>{
+test('no current catalog source remains on the uncommissioned text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(new Set(fallbacks),releaseTextFallbacks);
-  for(const id of fallbacks){
+  assert.deepEqual(fallbacks,[]);
+});
+
+test('the fifteen formerly unillustrated v0.48 and v0.49 sources render their exact separately commissioned images',()=>{
+  const records=manifest.assets.slice(153);
+  assert.deepEqual(records.map(asset=>[asset.sourceId,asset.index]),completedReleaseArtwork);
+  assert.equal(new Set(records.map(asset=>asset.prompt)).size,15);
+  assert.equal(new Set(records.map(asset=>asset.factualConcept)).size,15);
+  for(const [id,index] of completedReleaseArtwork){
     const source=catalog.sources.find(source=>source.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,id.startsWith('url:')?'article':'project');
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.match(record.output,new RegExp(`^media/cards/card-${index}-[a-z0-9-]+\\.webp$`));
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.ok(record.prompt.trim());
+    assert.ok(record.factualConcept.trim());
+    assert.ok(record.generationEvidenceUrls.length);
+    const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
+    assert.deepEqual(record.evidenceUrls,citations);
+    assert.deepEqual(record.currentEvidenceUrls,citations);
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
-      assert.ok(html.includes('is-art-fallback'));
-      assert.ok(!html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
     }
-  }
-});
-
-test('v0.49.0 adds one project text fallback without assigning or borrowing artwork',()=>{
-  const id='github:q00/ouroboros';
-  const source=catalog.sources.find(source=>source.id===id);
-  assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
-  assert.equal(sourceArtwork({id}).src,null);
-  if(avCatalogVersion!=='v0.49.0'){
-    assert.equal(source,undefined,'An unreleased citation must not be added to the live catalog');
-    return;
-  }
-  assert.ok(source);
-  assert.equal(source.kind,'project');
-  assert.equal(av049TextFallbacks.size,15);
-  assert.equal(manifest.count,153);
-  for(const detail of [false,true]){
-    const html=artworkCover(source,{detail});
-    assert.ok(html.includes('is-art-fallback'));
-    assert.ok(!html.includes('<img data-source-artwork'));
   }
 });
 
@@ -218,6 +224,15 @@ test('the twelve images commissioned at agentic-vault v0.47.0 keep their generat
   assert.deepEqual(generationRecords.map(record=>[record.sourceId,record.index]),completedArtwork);
   const digest=createHash('sha256').update(JSON.stringify(generationRecords)).digest('hex');
   assert.equal(digest,'28d76e85647acd97c35566b48bb66d664b3a38175314f73aa60cfb7537cc5da8');
+});
+
+test('all original 153 images retain their immutable generation records when the next fifteen are commissioned',()=>{
+  const generationRecords=manifest.assets.slice(0,153).map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  assert.equal(generationRecords.length,153);
+  const digest=createHash('sha256').update(JSON.stringify(generationRecords)).digest('hex');
+  assert.equal(digest,'290310e9b78b760862ac224e5a3b01b26eb505dcb75f35a93b32119db335f71c');
 });
 
 test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{
@@ -305,7 +320,11 @@ test('each commissioned v0.43.0 reference renders its dedicated card and detail 
 test('an unillustrated future source never silently borrows another source image',()=>{
   const source={id:'unknown:future-source',title:'Future <source>',tags:['메모리·검색']};
   assert.equal(sourceArtwork(source).src,null);
-  const cover=artworkCover(source);
-  assert.ok(!cover.includes('<img'));
-  assert.ok(!cover.includes('Future <source>'));
+  for(const detail of [false,true]){
+    const cover=artworkCover(source,{detail});
+    assert.ok(cover.includes(detail?'detail-art':'source-art'));
+    assert.ok(cover.includes('is-art-fallback'));
+    assert.ok(!cover.includes('<img'));
+    assert.ok(!cover.includes('Future <source>'));
+  }
 });

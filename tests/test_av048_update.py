@@ -134,6 +134,17 @@ class AV048Tests(unittest.TestCase):
         broken=copy.deepcopy(once);next(s for s in broken['sources'] if s['id'] in NEW_IDS)['note']='edited'
         with self.assertRaises(ValueError):self.prepare(broken,copy.deepcopy(images),texts)
 
+    def test_historical_release_replay_rejects_artwork_commissioned_after_that_update(self):
+        for identity in NEW_IDS:
+            registry,art,texts=fixture()
+            later=copy.deepcopy(art['assets'][0]);later['sourceId']=identity
+            art['assets'].append(later);art['count']=len(art['assets'])
+            before=copy.deepcopy((registry,art))
+            with self.subTest(identity=identity),self.assertRaisesRegex(
+                    ValueError,'Uncommissioned v0.48.0 sources must use text fallback'):
+                self.prepare(registry,art,texts)
+            self.assertEqual((registry,art),before)
+
     def test_missing_release_line_or_unknown_baseline_is_refused(self):
         registry,art,texts=fixture();texts[RELEASE]=['no citation']
         with self.assertRaises(ValueError):self.prepare(registry,art,texts)
