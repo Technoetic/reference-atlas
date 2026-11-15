@@ -21,6 +21,14 @@ const completedArtwork=[
   ['github:nvidia/ruler',149]
 ];
 const avCatalogVersion=catalog.snapshots['agentic-vault'].version;
+// Sources first cited by agentic-vault v0.50.0; they use the text fallback until artwork is commissioned.
+const av050TextFallbacks=new Set([
+  'url:https://www.youtube.com/watch?v=iysCcCRKZA4',
+  'url:https://www.anthropic.com/research/redesigning-source-control',
+  'url:https://openai.com/index/scaling-git-at-openai',
+  'url:https://github.blog/engineering/infrastructure/inside-githubs-new-git-storage-architecture'
+]);
+const declaredTextFallback=source=>av050TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
 const completedReleaseArtwork=[
   ['url:https://antigravity.google/docs/cli/commands/permissions',154],
   ['url:https://antigravity.google/docs/build-plugins',155],
@@ -127,11 +135,12 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all 168 current catalog sources have their own commissioned image in card and detail views',()=>{
+test('all 168 commissioned catalog sources have their own image in card and detail views',()=>{
   assert.equal(manifest.count,168);
-  assert.equal(catalog.sources.length,168);
+  assert.equal(catalog.sources.filter(source=>!declaredTextFallback(source)).length,168);
   const images=[];
   for(const source of catalog.sources){
+    if(declaredTextFallback(source)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -144,12 +153,23 @@ test('all 168 current catalog sources have their own commissioned image in card 
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(declaredTextFallback).length,catalog.sources.length);
 });
 
-test('no current catalog source remains on the uncommissioned text fallback',()=>{
+test('only the declared v0.50.0 sources render the uncommissioned text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks,[]);
+  assert.deepEqual(fallbacks.filter(id=>!av050TextFallbacks.has(id)),[]);
+  if(avCatalogVersion==='v0.49.0') assert.deepEqual(fallbacks,[]);
+  for(const id of fallbacks){
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.equal(source.kind,'article');
+    assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img data-source-artwork'));
+    }
+  }
 });
 
 test('the fifteen formerly unillustrated v0.48 and v0.49 sources render their exact separately commissioned images',()=>{

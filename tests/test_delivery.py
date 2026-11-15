@@ -22,6 +22,7 @@ EXPECTED_COVERAGE={
     ('v0.47.0','v0.24.0'):(56,53,7,153,277),
     ('v0.48.0','v0.24.0'):(56,56,18,167,303),
     ('v0.49.0','v0.24.0'):(56,57,18,168,308),
+    ('v0.50.0','v0.24.0'):(56,57,22,172,316),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -100,5 +101,11 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(prior,(56,56,18,167,303))
         revised=EXPECTED_COVERAGE[('v0.49.0','v0.24.0')]
         self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,1,0,1,5))
+
+    def test_v050_coverage_adds_four_article_cards_and_eight_citations_without_rewriting_history(self):
+        prior=EXPECTED_COVERAGE[('v0.49.0','v0.24.0')]
+        self.assertEqual(prior,(56,57,18,168,308))
+        revised=EXPECTED_COVERAGE[('v0.50.0','v0.24.0')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,0,4,4,8))
 
 if __name__=='__main__':unittest.main()
