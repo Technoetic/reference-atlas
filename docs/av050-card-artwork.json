@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "task_id": "reference-atlas-artwork-20261115",
+  "generationMode": "built-in image_gen",
+  "generatedAt": "2026-11-15T07:23:45.929858+00:00",
+  "baseCommit": "94128f67bed2e2fa872464b15ef3b40397b8d7c6",
+  "policy": "Four independently generated source-specific covers; no borrowed topic images; first168 asset records and files preserved.",
+  "count": 4,
+  "assets": [
+    {
+      "index": 169,
+      "sourceId": "url:https://www.youtube.com/watch?v=iysCcCRKZA4",
+      "title": "Git은 이러라고 만든 게 아님 | Scion & Pando",
+      "label": "ISOLATED WORK AND INTENT REVIEW",
+      "factualConcept": "The cited explanatory video connects agent-scale Git limitations to three small-team practices: separate worktrees, cancelling obsolete pull-request CI runs, and reviewing intent rather than only lines. These are symbolic references to the video's advice, not the server designs of the three companies.",
+      "output": "media/cards/card-169-agent-scale-git-video.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive raster editorial cover for the Reference Atlas research-source card about a Korean explanatory video on agent-scale Git and practical multi-agent workflows. Premium tactile isometric 3D product sculpture; a seamless almost-black olive studio, brushed gunmetal, smoked glass, luminous lime and soft lavender, matching a refined dark research atlas. Landscape 3:2, one bold mechanism in the central 80 percent with generous dark margins, readable at thumbnail size and safe under a 16:10 crop. Three separate miniature glass workbenches fan out from a shared immutable root rail, each bench holding its own distinct small lavender revision tree and a precise lime boundary. At the near bench, a new bright test tile proceeds while an older dim test tile stops in a clearly capped side lane. A single translucent review frame encloses the silhouette of a whole miniature blueprint, suggesting review of purpose. One coherent architectural still life, not three separate panels. No people, text, numbers, letters, logos, watermarks, generic AI brains or chips. Abstract source-specific interpretation, not a screenshot or benchmark. Make the separated workbenches the dominant silhouette.",
+      "kind": "article",
+      "sha256": "caa61abb1c71a58efe855ac83bdb5b9aaec4f78fb11a5f6dcba00923c11588fd",
+      "bytes": 63860,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L85",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L85",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L85",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "delivery": {
+        "sourceSha256": "72e478dd9d958a1f26e9907d2e03cb054b93ca1ad64e72ee2cff4d7d1e7b7b39",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB encoding and LANCZOS resize only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 170,
+      "sourceId": "url:https://github.blog/engineering/infrastructure/inside-githubs-new-git-storage-architecture",
+      "title": "Inside GitHub's new Git storage architecture",
+      "label": "DURABLE LOG DISPOSABLE REPLICAS",
+      "factualConcept": "Rubicon separates durable pack storage and per-reference CAS log ordering from disposable virtual replicas and background compaction. The visual represents resilient storage roles, not claimed plugin functionality or reproduced performance.",
+      "output": "media/cards/card-170-github-rubicon.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive raster editorial cover for Reference Atlas about GitHub Rubicon's new Git storage architecture. Premium tactile isometric 3D product sculpture; seamless almost-black olive studio, brushed dark metal, smoked glass, luminous lime and soft lavender. Landscape 3:2, distinctive central silhouette contained in the central 80 percent, generous dark margins for a responsive 16:10 crop. A broad durable foundation holds tightly ordered lavender pack ingots and several separate short journal rails, each rail having its own small lime gate. Above this persistent base stand three interchangeable thin glass replica shells with identical etched branching silhouettes. One shell is visibly lifted away while another empty shell slides into its socket; the solid pack foundation and individual journal rails remain undisturbed. A small secondary compaction press sits at the rear edge of the same base, clearly separate from the replica shells. High-end precise architectural rendering with beautiful depth and rim light. No text, numbers, letters, logos, cats, people, watermarks, shields or generic AI chips. Symbolic source-specific architecture cover, not a literal implementation diagram or a claim of measured results.",
+      "kind": "article",
+      "sha256": "33c6e7ba607d6c7dde4317cd48ae99edc1367420293f5fd91732c13a6675521d",
+      "bytes": 73106,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L88",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L88",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L88",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "delivery": {
+        "sourceSha256": "181ec92616b1dd976d195f69be487ed33b2055f3d43bbc218935db842856c645",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB encoding and LANCZOS resize only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 171,
+      "sourceId": "url:https://www.anthropic.com/research/redesigning-source-control",
+      "title": "Redesigning source control at Anthropic",
+      "label": "SERVER SIDE CHANGESETS",
+      "factualConcept": "Scion moves history and commit-related operations into an online service, records changed-file changesets and serves selected immutable content through caches. Shared reference movement remains a separate coordinated operation.",
+      "output": "media/cards/card-171-anthropic-scion.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive raster editorial cover for Reference Atlas about Anthropic Scion redesigning source control. Premium tactile 3D editorial sculpture on seamless near-black olive, brushed gunmetal and smoked translucent glass, luminous lime and soft lavender. Landscape 3:2; central 80 percent composition with dark breathing room for 16:10 cropping. A tall elegant central service tower contains a visible vertical sequence of tiny immutable lavender change leaves. One newly changed file leaf is illuminated lime and docks alongside its parent record. Three very thin sparse glass work surfaces surround the tower, each holding only two or three selected file tiles connected to a nearby small shared cache cradle, rather than carrying entire trees. Above the tower a delicate separate movable reference pointer rests over one chosen change leaf. Make the slender vertical service and sparse work surfaces the unmistakable hero shape. Refined precise isometric material rendering, cinematic restrained rim light. No people, written text, numbers, letters, logos, watermarks, tree plants, generic neural brains or AI chips. Abstract visual interpretation of the source's roles, not proof of lock-free global updates or an implementation screenshot.",
+      "kind": "article",
+      "sha256": "85fc012127c56c1791f85fa791c50704a29e011e47c28976b57f18283f5a6504",
+      "bytes": 39678,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L86",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L86",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L86",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "delivery": {
+        "sourceSha256": "9959a49796d3cba6c410f06f1ea4fdf9d7fdbc5eb66006c67ca17c99b3f437c7",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB encoding and LANCZOS resize only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    },
+    {
+      "index": 172,
+      "sourceId": "url:https://openai.com/index/scaling-git-at-openai",
+      "title": "Scaling Git at OpenAI",
+      "label": "REUSABLE PACK DELIVERY",
+      "factualConcept": "Pando preserves Git workflows while independently accepting unrelated ref pushes, reusing immutable packs and multilevel covers, and separating fetch planning from regional Express cache delivery. A pack can depend on a shared trunk history.",
+      "output": "media/cards/card-172-openai-pando.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one exclusive raster editorial cover for Reference Atlas about OpenAI Pando scaling Git. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio; dark brushed metal, smoked transparent glass, luminous lime and soft lavender. Landscape 3:2 with one bold horizontal central mechanism inside the central 80 percent and generous dark margins for 16:10 cropping. An ordered stepped rack stores immutable translucent lavender pack cartridges in clearly increasing aggregation sizes, from tiny leaves to a few thick covers. A small precise planner fork selects already-made cartridges and sends identical matching cartridges along luminous lime tracks toward three regional glass cache trays; several tiny reader ports draw from each nearby tray. A continuous shared base rail beneath the rack visually supplies the common trunk dependency. Emphasize reuse of the same well-formed cartridges and separation of planning from delivery; do not depict bespoke recompression for each reader. Elegant high-end editorial lighting and strong horizontal silhouette. No text, numbers, letters, logos, people, watermarks, generic clouds, brains or AI chips. Symbolic cover artwork, not a literal API diagram or performance claim.",
+      "kind": "article",
+      "sha256": "45c6c3b01e2471da15c67db39bc51e7c27294aa0ea98697354cd7a7a2a89a44a",
+      "bytes": 46152,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L87",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L87",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/releases/v0.50.0.md#L87",
+        "https://github.com/Technoetic/agentic-vault/blob/39e5177de416dd056fad99f77c074415c42f6f89/docs/verification/v0.50.0.md#L34"
+      ],
+      "delivery": {
+        "sourceSha256": "8af3e5d0fe0acbe72415d498588f8abc677a51dc50d0111ad00305a78c75ccdd",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame RGB encoding and LANCZOS resize only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0",
+        "webpVersion": "1.6.0",
+        "quality": 90,
+        "method": 6
+      }
+    }
+  ],
+  "artifact_paths": [
+    "media/cards/card-169-agent-scale-git-video.webp",
+    "media/cards/card-170-github-rubicon.webp",
+    "media/cards/card-171-anthropic-scion.webp",
+    "media/cards/card-172-openai-pando.webp",
+    "src/screens/artwork-index.mjs",
+    "docs/card-artwork-unique-prompts.json"
+  ],
+  "verification_commands_and_results": [
+    {
+      "command": "node --test",
+      "result": "PASS: 82 tests, 0 failures, 0 skipped; independently rerun."
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "result": "PASS: 138 discovered, 137 passed and 1 preexisting skipped test; independently rerun."
+    },
+    {
+      "command": "python scripts/build_catalog.py; git diff --exit-code -- data/catalog.json data/catalog.csv data/registry.source.json",
+      "result": "PASS: 172 sources, 316 citations; catalog and registry content unchanged."
+    },
+    {
+      "command": "node scripts/build.mjs",
+      "result": "PASS: build1596a1e6e1f73a85; 191 current assets, 197 output files."
+    },
+    {
+      "command": "Read-only independent asset verification against base94128f67",
+      "result": "PASS: 30 checks, 172 unique actual WebP hashes, 168 prior generation records and binary Git blobs preserved, four exact source-ID and public citation bindings."
+    },
+    {
+      "command": "Aside local sources and detail view checks at1440 and390 widths",
+      "result": "PASS: four card images and four detail images loaded at each width; visible card fallback0, horizontal overflow0. The first detail probe read too soon after asynchronous navigation; the corrected probe waits for the target route and title before checking."
+    },
+    {
+      "command": "Read-only view_image inspection of all four final raster assets",
+      "result": "PASS4/4: isolated workbenches, durable-log replica foundation, vertical sparse-client changeset tower, horizontal pack-cache delivery. No required regeneration. Scion upper decorative frame can be lightly cropped by the existing16:10 card viewport without obscuring its central concept."
+    }
+  ],
+  "assumptions": [
+    "Artwork is an editorial interpretation of the cited source; it is not a paper figure, source implementation or reproduced result.",
+    "Canonical source IDs stay unchanged even when an original article URL redirects.",
+    "Existing172-source data and prior168 covers are retained. Only the new four artwork assignments and necessary test expectations change; no source-plugin changes are made."
+  ],
+  "unresolved": [
+    "Live GitHub Pages delivery verification is performed after publishing and recorded separately; local browser verification is not a live-deployment claim.",
+    "The existing build-update service is unchanged and its unit checks passed. A previously opened public tab spanning this deployment has not yet been exercised."
+  ],
+  "next_safe_action": "Publish the reviewed artwork-only change to the already authorized GitHub Pages destination, then confirm the live build and new card/detail images.",
+  "testFixtureCorrection": {
+    "reason": "The reference-migration replay test previously read the evolving current artwork test, whose historical fallback anchors no longer match after this commission.",
+    "action": "Replay the v0.50 reference migration against an exact frozen v0.49 artwork-test fixture rather than changing the production updater or weakening missing-image checks.",
+    "fixture": "tests/fixtures/artwork-v049-before-v050.mjs.txt",
+    "copiedFrom": "3d4b505:tests/artwork-uniqueness.test.mjs",
+    "sha256": "5dfd805a8730ac6611f8642472b9e0ba4e915ba6f91b7cb3b382c88fbf74736f",
+    "replayResult": "First application changes one file; second changes zero; contents equal. Production update_av050_references.py unchanged."
+  },
+  "verified_by": [
+    {
+      "actor": "Codex root",
+      "date": "2026-11-15",
+      "scope": "Four built-in generations, source assignments, full tests, catalog/build and local browser verification."
+    },
+    {
+      "actor": "Codex read-only asset reviewer",
+      "date": "2026-11-15",
+      "scope": "Independent30-check asset audit, exact fixture provenance, full test/build commands rerun."
+    },
+    {
+      "actor": "Codex read-only visual reviewer",
+      "date": "2026-11-15",
+      "scope": "All four actual WebP images opened with view_image; reference style, separate concepts, source IDs and dimensions checked."
+    }
+  ]
+}

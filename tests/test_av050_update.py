@@ -187,7 +187,13 @@ class AV050ReferenceTests(unittest.TestCase):
 
     def test_test_edits_apply_once_and_keep_the_earlier_lines(self):
         texts = {file: (ROOT / file).read_text(encoding='utf-8') for file in updater.TEST_FILES}
-        once, _ = updater.edit_tests(texts)
+        # Replay the historical reference migration before its later artwork commission.
+        # Fixture copied exactly from commit 3d4b505 (168 commissioned sources).
+        texts['tests/artwork-uniqueness.test.mjs'] = (
+            ROOT / 'tests/fixtures/artwork-v049-before-v050.mjs.txt'
+        ).read_text(encoding='utf-8')
+        once, applied = updater.edit_tests(texts)
+        self.assertGreater(applied, 0)
         twice, applied = updater.edit_tests(once)
         self.assertEqual((twice, applied), (once, 0))
         delivery = once['tests/test_delivery.py']

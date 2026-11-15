@@ -168,4 +168,8 @@ export const artworkIndex = Object.freeze({
   "github:obra/superpowers": Object.freeze({key: "card-166", src: new URL("../../media/cards/card-166-superpowers.webp", import.meta.url).href, label: "SHARED SKILLS HOST MANIFESTS", word: "SHARED SKILLS HOST MANIFESTS"}),
   "github:q00/ouroboros": Object.freeze({key: "card-167", src: new URL("../../media/cards/card-167-ouroboros.webp", import.meta.url).href, label: "PROVENANCE AND BOUNDED REVIEW", word: "PROVENANCE AND BOUNDED REVIEW"}),
   "github:tw93/waza": Object.freeze({key: "card-168", src: new URL("../../media/cards/card-168-waza.webp", import.meta.url).href, label: "PINNED NESTED PACKAGE", word: "PINNED NESTED PACKAGE"}),
+  "url:https://www.youtube.com/watch?v=iysCcCRKZA4": Object.freeze({key: "card-169", src: new URL("../../media/cards/card-169-agent-scale-git-video.webp", import.meta.url).href, label: "ISOLATED WORK AND INTENT REVIEW", word: "ISOLATED WORK AND INTENT REVIEW"}),
+  "url:https://github.blog/engineering/infrastructure/inside-githubs-new-git-storage-architecture": Object.freeze({key: "card-170", src: new URL("../../media/cards/card-170-github-rubicon.webp", import.meta.url).href, label: "DURABLE LOG DISPOSABLE REPLICAS", word: "DURABLE LOG DISPOSABLE REPLICAS"}),
+  "url:https://www.anthropic.com/research/redesigning-source-control": Object.freeze({key: "card-171", src: new URL("../../media/cards/card-171-anthropic-scion.webp", import.meta.url).href, label: "SERVER SIDE CHANGESETS", word: "SERVER SIDE CHANGESETS"}),
+  "url:https://openai.com/index/scaling-git-at-openai": Object.freeze({key: "card-172", src: new URL("../../media/cards/card-172-openai-pando.webp", import.meta.url).href, label: "REUSABLE PACK DELIVERY", word: "REUSABLE PACK DELIVERY"}),
 });
