@@ -58,6 +58,13 @@ const sxc027TextFallbacks=new Map([
   ['url:https://diataxis.fr/','article']
 ]);
 const declaredSxc027TextFallback=source=>sxc027TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
+// Sources first cited by agentic-vault v0.51.0; they use the text fallback until artwork is commissioned.
+const av051TextFallbacks=new Set([
+  'url:https://bizrouter.ai/docs/decisions',
+  'url:https://artificialanalysis.ai/evaluations/decision-index'
+]);
+const declaredAv051TextFallback=source=>av051TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
+const declaredAnyTextFallback=source=>declaredSxc027TextFallback(source)||declaredAv051TextFallback(source);
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
   for(const [id,index] of completedArtwork){
@@ -148,10 +155,10 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 
 test('all 172 commissioned catalog sources have their own image in card and detail views',()=>{
   assert.equal(manifest.count,172);
-  assert.equal(catalog.sources.filter(source=>!declaredSxc027TextFallback(source)).length,172);
+  assert.equal(catalog.sources.filter(source=>!declaredAnyTextFallback(source)).length,172);
   const images=[];
   for(const source of catalog.sources){
-    if(declaredSxc027TextFallback(source)) continue;
+    if(declaredAnyTextFallback(source)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -164,12 +171,23 @@ test('all 172 commissioned catalog sources have their own image in card and deta
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+catalog.sources.filter(declaredSxc027TextFallback).length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(declaredAnyTextFallback).length,catalog.sources.length);
 });
 
-test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
+test('the four formerly uncommissioned v0.50.0 sources render their exact separate images and only declared sxc027/av051 sources use text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)),[]);
+  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)&&!av051TextFallbacks.has(id)),[]);
+  if(avCatalogVersion==='v0.50.0') assert.deepEqual(fallbacks.filter(id=>av051TextFallbacks.has(id)),[]);
+  for(const id of fallbacks.filter(id=>av051TextFallbacks.has(id))){
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.equal(source.kind,'article');
+    assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img data-source-artwork'));
+    }
+  }
   for(const [id,index,slug] of completedAv050Artwork){
     const source=catalog.sources.find(source=>source.id===id);
     assert.equal(source.kind,'article');
@@ -362,15 +380,15 @@ test('an unillustrated future source never silently borrows another source image
   }
 });
 
-test('only the declared semantic-crosscheck v0.27.0 sources render the uncommissioned text fallback',()=>{
+test('only the declared semantic-crosscheck v0.27.0 and agentic-vault v0.51.0 sources render the uncommissioned text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)),[]);
-  if(sxcCatalogVersion==='v0.24.0') assert.deepEqual(fallbacks,[]);
+  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)&&!av051TextFallbacks.has(id)),[]);
+  if(sxcCatalogVersion==='v0.24.0'&&avCatalogVersion==='v0.50.0') assert.deepEqual(fallbacks,[]);
   if(sxcCatalogVersion==='v0.27.0') for(const id of sxc027TextFallbacks.keys())
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing catalog source: ${id}`);
   for(const id of fallbacks){
     const source=catalog.sources.find(source=>source.id===id);
-    assert.equal(source.kind,sxc027TextFallbacks.get(id));
+    assert.equal(source.kind,sxc027TextFallbacks.get(id)||'article');
     assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
