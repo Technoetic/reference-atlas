@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 172,
+  "count": 180,
   "assets": [
     {
       "index": 1,
@@ -4824,6 +4824,314 @@
         "webpVersion": "1.6.0",
         "quality": 90,
         "method": 6
+      }
+    },
+    {
+      "index": 173,
+      "sourceId": "url:https://artificialanalysis.ai/evaluations/decision-index",
+      "title": "Artificial Analysis Decision Index",
+      "kind": "article",
+      "label": "CALIBRATED JUDGMENT INDEX",
+      "factualConcept": "The Decision Index is background for evaluating structured-judgment model calibration and invariance under controlled changes, not a measurement of the plugin's own quality.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: Artificial Analysis Decision Index, a benchmark context for calibration and controlled-input invariance of structured judgment. Make an elegant precision measuring bridge the dominant sculptural silhouette: a wide floating gunmetal balance beam on a central pivot, suspending a finely detailed translucent lavender calibration lens over three round lime-rimmed specimen dishes. Inside each dish lies a different translucent shell orientation around a matching small core; tiny unmarked weights sit on an external calibration rail beside the dishes. The instrument measures the specimens rather than awarding a winner. Give the beam, suspended lens and discs a coherent laboratory still-life composition. No model ranking, score, numerical ticks, perfectly equal-result assertion, or trophy. The paired specimens and independent measuring bridge must clearly differ from any routing or release-timeline illustration.",
+      "output": "media/cards/card-173-decision-index.webp",
+      "sha256": "0a39b02f489650d5f38cac0ee182df410035c3547ca9e31e72bb29e2a2bd1720",
+      "bytes": 67898,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L44"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L44"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L44"
+      ],
+      "delivery": {
+        "sourceSha256": "9b156062d5df80e6a39735367f4f9e127381a093dfef53ac1952347a2334c598",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 174,
+      "sourceId": "url:https://bizrouter.ai/docs/decisions",
+      "title": "BizRouter Decisions API documentation",
+      "kind": "article",
+      "label": "THREE STRUCTURED JUDGMENTS",
+      "factualConcept": "BizRouter Decisions defines noul, choice and score output contracts used by the optional provider adapter; it does not replace the default Jev provider or turn each output into factual proof.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: BizRouter Decisions API's three bounded structured judgment outputs: probability, choice, score. One striking central triangular precision manifold accepts a single glowing lavender input conduit, then divides into exactly THREE distinct output mechanisms within a thin transparent contract frame. One branch ends in a circular unmarked probability dial with a luminous arc; a second branch ends in a tray of three distinct geometric tokens with one token mechanically isolated in a clear selection socket; the third ends in a compact bank of unequal-height lime glass score columns. Show each branch and its output clearly as one integrated engineered object, not separate panels. The triangular manifold is the dominant silhouette. No mathematical text, probability numbers, API endpoint lettering or chatbot imagery.",
+      "output": "media/cards/card-174-bizrouter-decisions.webp",
+      "sha256": "89bf4e623194503ffca7f04c2a8a3b803067118c6b89a22fd9abd7461c1b2998",
+      "bytes": 59898,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L43"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L43"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/22168b7ddd10796e8ad0a894fe2c79a704bd7da2/docs/releases/v0.51.0.md#L43"
+      ],
+      "delivery": {
+        "sourceSha256": "bb412f876ef4222992fd12ee10526aa92bca90fdecfb4a3ff49821343470bd66",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 175,
+      "sourceId": "url:https://diataxis.fr/",
+      "title": "Diátaxis",
+      "kind": "article",
+      "label": "FOUR DOCUMENTATION PURPOSES",
+      "factualConcept": "Diataxis separates tutorials, how-to guides, reference and explanation; the recorded use splits reference material out of a crowded README.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: Diataxis and its FOUR different documentation purposes. Build a single sculptural cross-shaped reading pavilion with an open smoked-glass book at the center, its four wide page-wings fanning into four distinct tactile miniatures. One wing becomes a gentle staircase of lavender learning tiles; one is a fitted lime tool jig that guides a practical operation; one is an orderly bank of rigid index slots with precise blank glass reference cards; one is an open transparent cutaway chamber exposing how its internal pieces fit. All four wings share one clean central binding and have equal visual importance. The open book and four-wing architecture must be instantly readable at thumbnail scale. No written page content, compass letters, quadrant labels, or copied official Diataxis diagram.",
+      "output": "media/cards/card-175-diataxis.webp",
+      "sha256": "7c239bc1eff843f4fa608248c6efe45e3bbaca20648c9bfdc960686105183b8b",
+      "bytes": 78362,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L109"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L109"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L109"
+      ],
+      "delivery": {
+        "sourceSha256": "e9cc3a1e5eb89ab8b6b666788b3661021f1418f559e8c8bf86cdf97e26261d24",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 176,
+      "sourceId": "url:https://peps.python.org/pep-0664",
+      "title": "PEP 664 – Python 3.11 Release Schedule",
+      "kind": "article",
+      "label": "PYTHON RELEASE LIFECYCLE",
+      "factualConcept": "PEP 664 documents the Python 3.11 release lifecycle and security-support schedule, used as a pinned support-end reference rather than a guarantee of the plugin's future maintenance.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: PEP 664's Python release lifecycle from development through stable release to security-only maintenance and end of support. One beautiful continuous translucent ribbon spirals around a stepped dark-metal ramp. Its entry carries several rough separate lavender construction blocks, its middle carries one smooth complete lavender release capsule, and its long final arc carries small lime patch tiles attached to the same capsule pathway before reaching a precise capped terminal. Use material transitions to express the phases without labels. The spiral ribbon is the dominant unmistakable silhouette. This is a release lifecycle, not a speed or performance chart. No snake, Python logo, shield icon, exact dates, tick marks, or promise of indefinite support.",
+      "output": "media/cards/card-176-python-lifecycle.webp",
+      "sha256": "797f5361020c1d08a53ff86b53c27ebf6554f697004ef0af13a9332ac757f92b",
+      "bytes": 45080,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L183"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L183"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L183"
+      ],
+      "delivery": {
+        "sourceSha256": "cd76459258493b4b6ff779c5d6abe76073958063ee8a4eb20ed188827057bcf3",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 177,
+      "sourceId": "url:https://www.postgresql.org/support/versioning",
+      "title": "PostgreSQL: Versioning Policy",
+      "kind": "article",
+      "label": "OVERLAPPING VERSION SUPPORT",
+      "factualConcept": "PostgreSQL's official versioning policy describes overlapping support windows and maintenance endpoints for major versions; the cited use records the minimum supported database's upstream end date.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: PostgreSQL official versioning policy and overlapping maintenance windows for database generations. Make five thick translucent lavender data cylinders lie parallel on a beautifully precise stair-stepped gunmetal maintenance rack. Each cylinder has a different visible support span and its own sequence of small lime maintenance rings; their shared active regions overlap rather than forming one chronological queue. At the near edge, one older cylinder has a clear closed dark end cap, while the neighboring supported cylinders retain glowing rings farther along. Emphasize the long parallel cylinders and staggered support spans, not a literal count of currently supported product versions. No elephant, logo, version numerals, calendar dates or engine performance claims. Entirely distinct from a spiral or rotating carousel.",
+      "output": "media/cards/card-177-postgresql-support.webp",
+      "sha256": "6554fcc654d9b27c255d4c8620b9bbbc63b76369115bd57157f884069a5aa5a4",
+      "bytes": 53816,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L184"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L184"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L184"
+      ],
+      "delivery": {
+        "sourceSha256": "f815f859c75bec0553be64fd1089b0f1ae23811841ea2325ff3f16c9e36105d2",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 178,
+      "sourceId": "url:https://adoptium.net/support",
+      "title": "Temurin™ Support",
+      "kind": "article",
+      "label": "LONG TERM RUNTIME SUPPORT",
+      "factualConcept": "Eclipse Temurin's published Java LTS availability is a lower-bound support reference for the HermiT runtime, not a statement that all vendor support stops on an exact inferred date.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: Eclipse Temurin Java long-term runtime support, expressing sustained maintenance and a stated lower bound rather than an invented hard cutoff. A long horizontal lavender ceramic runtime core rests inside an open smoked-glass cradle. Over it extends one elegant lime maintenance bridge supported by several strong slim gunmetal arches; a small patch carriage is servicing the core beneath the bridge. The bridge's far end finishes in a visible open extension joint that fades gently into the dark background rather than a closed termination wall. The long protective engineering bridge and open continuation joint are the distinctive silhouette. No coffee cup, Java logo, actual engine brand, date marks, indefinite-availability guarantee or shield. Calm stable architectural composition, clearly unlike stacked database cylinders.",
+      "output": "media/cards/card-178-temurin-support.webp",
+      "sha256": "aaee22f52e414d4f60db0e2a664ed06ebe490bca118a72491b177f787f221b6f",
+      "bytes": 45384,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L187"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L187"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L187"
+      ],
+      "delivery": {
+        "sourceSha256": "14033e17788b7362ab601a5dbe714c5cdbf0f779a4b0a82be89c916cf4e2072c",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 179,
+      "sourceId": "url:https://www.postgresql.org/list/pgsql-hackers/since/202607270000",
+      "title": "timestamp vs. timestamptz comparisons inconsistently ordered under DST",
+      "kind": "article",
+      "label": "DAYLIGHT SAVING ORDER DISAGREEMENT",
+      "factualConcept": "The cited PostgreSQL discussion reports timestamp/timestamptz comparison-order disagreement near a daylight-saving transition between sequential and index access paths; this depicts the recorded pitfall, not a universal current bug claim.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: a PostgreSQL discussion of daylight-saving-time boundary ordering disagreement between timestamp and timezone-aware timestamp comparisons under two query access paths. A large translucent clock disc with a blank face sits at a dramatic folded-time hinge in the middle of one sculptural test rig. Two routes leave the same pair of distinctive objects, a lavender sphere and a lime cube: the near route is a smooth low sequential track, the far route is an ordered stair-like index rail. At the folded clock boundary the routes cross; show the two SAME objects at the two exit trays in OPPOSITE order. Their differing shapes make the order disagreement understandable without text. Two faint overlapping clock-hand silhouettes suggest a shifted hour. One coherent object, not a chart or screenshot. No time numerals, databases with faces, SQL lettering, red alarm symbols or claim that every PostgreSQL version is affected.",
+      "output": "media/cards/card-179-dst-order.webp",
+      "sha256": "edaa826befd580565d4ac4cc08e3959a9666a52728d75d2e8bef584683a6f31c",
+      "bytes": 49624,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L106"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L106"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L106"
+      ],
+      "delivery": {
+        "sourceSha256": "a6eda70faacbd61beafa5f5d8dfa956e393750837012ac788beaa43931753c69",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 180,
+      "sourceId": "github:nodejs/release",
+      "title": "nodejs/Release",
+      "kind": "project",
+      "label": "RUNTIME RELEASE CADENCE",
+      "factualConcept": "The Node.js Release Working Group repository supplies release cadence and upstream runtime support schedules, used for a minimum-runtime end-of-support planning reference rather than a claimed dependency upgrade.",
+      "prompt": "Use case: stylized-concept. Asset type: one source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, smoked glass, brushed gunmetal, restrained luminous lime and soft lavender, precise studio rim light and beautiful realistic material depth. One strong readable silhouette with generous dark margins; keep the mechanism in the central 75 percent so it survives a responsive 16:10 cover crop. No people, letters, words, numbers, dates, logos, watermark, UI screenshot, generic AI brain or chip. A unique abstract interpretation of this particular source, not a reproduction of an upstream diagram or a claim of reproduced research performance. Subject: the Node.js Release Working Group's runtime release cadence and phased support. A bold circular engineering turntable rotates several unbranded hexagonal lavender runtime cartridges through three physically distinct arcs: a short bright introduction cradle, a long lime-lit stable-support rail with small maintenance clips, and a dim retired dock with an empty socket. One cartridge in the foreground has a small detachable glass dependency cube beside its mount to suggest planning a supported-runtime transition, not an upgrade already completed. Make the circular carousel with its cartridge sockets the dominant silhouette, very different from a spiral lifecycle ramp, parallel database rack, or straight maintenance bridge. No Node.js logo, hexadecimal text, release version numbers, exact dates or unsupported performance promises.",
+      "output": "media/cards/card-180-node-release.webp",
+      "sha256": "7a82ae90fd7fa178cda0ac1670d2a5b45aaa9b3586c8f9c02a34175dffb2b37a",
+      "bytes": 74548,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L188"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L188"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L188"
+      ],
+      "delivery": {
+        "sourceSha256": "f5298587e799af0eb298d67c722a786a4aa569c96a1a576b4e9e6ceed37ce454",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
       }
     }
   ],
