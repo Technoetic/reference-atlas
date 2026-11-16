@@ -46,6 +46,18 @@ const completedReleaseArtwork=[
   ['github:tw93/waza',168]
 ];
 const pinnedFile=url=>url.replace(new RegExp('/blob/[0-9a-f]{40}/'),'/blob/<commit>/').replace(new RegExp('#L[0-9]+$'),'');
+const sxcCatalogVersion=catalog.snapshots['semantic-crosscheck'].version;
+// Sources first cited by semantic-crosscheck v0.27.0, with their kinds; they use the text fallback until
+// artwork is commissioned.
+const sxc027TextFallbacks=new Map([
+  ['url:https://www.postgresql.org/list/pgsql-hackers/since/202607270000','article'],
+  ['url:https://peps.python.org/pep-0664','article'],
+  ['url:https://www.postgresql.org/support/versioning','article'],
+  ['url:https://adoptium.net/support','article'],
+  ['github:nodejs/release','project'],
+  ['url:https://diataxis.fr/','article']
+]);
+const declaredSxc027TextFallback=source=>sxc027TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
   for(const [id,index] of completedArtwork){
@@ -134,11 +146,12 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all 172 catalog sources have their own commissioned image in card and detail views',()=>{
+test('all 172 commissioned catalog sources have their own image in card and detail views',()=>{
   assert.equal(manifest.count,172);
-  assert.equal(catalog.sources.length,172);
+  assert.equal(catalog.sources.filter(source=>!declaredSxc027TextFallback(source)).length,172);
   const images=[];
   for(const source of catalog.sources){
+    if(declaredSxc027TextFallback(source)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -151,12 +164,12 @@ test('all 172 catalog sources have their own commissioned image in card and deta
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(declaredSxc027TextFallback).length,catalog.sources.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks,[]);
+  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)),[]);
   for(const [id,index,slug] of completedAv050Artwork){
     const source=catalog.sources.find(source=>source.id===id);
     assert.equal(source.kind,'article');
@@ -211,7 +224,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=catalog.snapshots['semantic-crosscheck'].version==='v0.24.0';
+  const published=['v0.24.0','v0.27.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
@@ -346,5 +359,23 @@ test('an unillustrated future source never silently borrows another source image
     assert.ok(cover.includes('is-art-fallback'));
     assert.ok(!cover.includes('<img'));
     assert.ok(!cover.includes('Future <source>'));
+  }
+});
+
+test('only the declared semantic-crosscheck v0.27.0 sources render the uncommissioned text fallback',()=>{
+  const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
+  assert.deepEqual(fallbacks.filter(id=>!sxc027TextFallbacks.has(id)),[]);
+  if(sxcCatalogVersion==='v0.24.0') assert.deepEqual(fallbacks,[]);
+  if(sxcCatalogVersion==='v0.27.0') for(const id of sxc027TextFallbacks.keys())
+    assert.ok(catalog.sources.some(source=>source.id===id),`Missing catalog source: ${id}`);
+  for(const id of fallbacks){
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.equal(source.kind,sxc027TextFallbacks.get(id));
+    assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img data-source-artwork'));
+    }
   }
 });

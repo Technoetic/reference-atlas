@@ -23,6 +23,7 @@ EXPECTED_COVERAGE={
     ('v0.48.0','v0.24.0'):(56,56,18,167,303),
     ('v0.49.0','v0.24.0'):(56,57,18,168,308),
     ('v0.50.0','v0.24.0'):(56,57,22,172,316),
+    ('v0.50.0','v0.27.0'):(56,57,22,178,326),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -44,7 +45,8 @@ class DeliveryTests(unittest.TestCase):
         sxc=catalog['countsByPlugin']['semantic-crosscheck']
         sxc_coverage={'v0.19.1':(13,26,41,3),'v0.20.0':(13,28,45,5),
                       'v0.21.0':(14,34,58,5),'v0.21.1':(14,34,58,5),
-                      'v0.24.0':(15,38,66,5)}
+                      'v0.24.0':(15,38,66,5),
+                      'v0.27.0':(15,44,76,5)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -107,5 +109,11 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(prior,(56,57,18,168,308))
         revised=EXPECTED_COVERAGE[('v0.50.0','v0.24.0')]
         self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,0,4,4,8))
+
+    def test_sxc027_coverage_adds_six_cards_and_ten_citations_without_rewriting_history(self):
+        prior=EXPECTED_COVERAGE[('v0.50.0','v0.24.0')]
+        self.assertEqual(prior,(56,57,22,172,316))
+        revised=EXPECTED_COVERAGE[('v0.50.0','v0.27.0')]
+        self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,0,0,6,10))
 
 if __name__=='__main__':unittest.main()
