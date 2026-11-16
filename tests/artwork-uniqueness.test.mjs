@@ -56,6 +56,19 @@ const completedLatestArtwork=[
   ['url:https://www.postgresql.org/list/pgsql-hackers/since/202607270000',179,'dst-order'],
   ['github:nodejs/release',180,'node-release']
 ];
+// Sources first cited by agentic-vault v0.52.0, with their kinds; they use the text fallback until artwork is commissioned.
+const av052TextFallbacks=new Map([
+  ['arxiv:2403.14720','paper'],
+  ['arxiv:2510.09023','paper'],
+  ['url:https://docs.jj-vcs.dev/latest/guides/divergence','article'],
+  ['arxiv:2607.10139','paper'],
+  ['arxiv:2407.02348','paper'],
+  ['url:https://slsa.dev/spec/v1.2/source-requirements','article'],
+  ['url:https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository','article'],
+  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets','article'],
+  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets','article']
+]);
+const declaredAv052TextFallback=source=>av052TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
   for(const [id,index] of completedArtwork){
@@ -146,9 +159,10 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 
 test('all 180 commissioned catalog sources have their own image in card and detail views',()=>{
   assert.equal(manifest.count,180);
-  assert.equal(catalog.sources.length,180);
+  assert.equal(catalog.sources.filter(source=>!declaredAv052TextFallback(source)).length,180);
   const images=[];
   for(const source of catalog.sources){
+    if(declaredAv052TextFallback(source)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -161,7 +175,7 @@ test('all 180 commissioned catalog sources have their own image in card and deta
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(declaredAv052TextFallback).length,catalog.sources.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
@@ -263,7 +277,12 @@ test('all original 172 images retain their immutable records when the next eight
   assert.equal(digest,'290310e9b78b760862ac224e5a3b01b26eb505dcb75f35a93b32119db335f71c');
   const originalRecords=manifest.assets.slice(0,172);
   assert.equal(originalRecords.length,172);
-  assert.equal(createHash('sha256').update(JSON.stringify(originalRecords)).digest('hex'),'cd4937c7f636bd80c50a2a4ebe7f553884fc0aabff586fee82ac51bd0465df1b');
+  // The full records hold the current evidence URLs, which follow the agentic-vault rows when a release repins them.
+  if(avCatalogVersion==='v0.51.0') assert.equal(createHash('sha256').update(JSON.stringify(originalRecords)).digest('hex'),'cd4937c7f636bd80c50a2a4ebe7f553884fc0aabff586fee82ac51bd0465df1b');
+  const immutableRecords=originalRecords.map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  assert.equal(createHash('sha256').update(JSON.stringify(immutableRecords)).digest('hex'),'8cfd6cc21d1b8233cec30417cd5a43fe92646d793ec0ba19ddf4dcdd389285d4');
 });
 
 test('each v0.21.1 reference renders its own exact commissioned card and detail image',()=>{
@@ -360,6 +379,25 @@ test('an unillustrated future source never silently borrows another source image
   }
 });
 
+test('only the declared agentic-vault v0.52.0 sources render the uncommissioned text fallback',()=>{
+  const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
+  assert.deepEqual(fallbacks.filter(id=>!av052TextFallbacks.has(id)),[]);
+  if(avCatalogVersion==='v0.51.0') assert.deepEqual(fallbacks,[]);
+  if(avCatalogVersion==='v0.52.0') for(const id of av052TextFallbacks.keys())
+    assert.ok(catalog.sources.some(source=>source.id===id),`Missing catalog source: ${id}`);
+  for(const id of fallbacks){
+    const source=catalog.sources.find(source=>source.id===id);
+    assert.equal(source.kind,av052TextFallbacks.get(id));
+    assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(html.includes('is-art-fallback'));
+      assert.ok(!html.includes('<img data-source-artwork'));
+    }
+  }
+});
+
 test('the eight formerly unillustrated v0.27.0 and v0.51.0 references render their exact commissioned card and detail images',()=>{
   const records=manifest.assets.slice(172,180);
   assert.deepEqual(records.map(asset=>[asset.sourceId,asset.index,asset.output]),completedLatestArtwork.map(([id,index,slug])=>[id,index,`media/cards/card-${index}-${slug}.webp`]));
@@ -376,7 +414,9 @@ test('the eight formerly unillustrated v0.27.0 and v0.51.0 references render the
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    assert.deepEqual(record.generationEvidenceUrls,citations);
+    // Generation records keep the citations the image was made from; agentic-vault rows move with each release.
+    if(avCatalogVersion==='v0.51.0') assert.deepEqual(record.generationEvidenceUrls,citations);
+    else assert.deepEqual(record.generationEvidenceUrls.map(pinnedFile),citations.map(pinnedFile));
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
