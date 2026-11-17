@@ -28,6 +28,7 @@ EXPECTED_COVERAGE={
     ('v0.52.0','v0.27.0'):(60,57,29,189,343),
     ('v0.52.0','v0.28.0'):(60,57,29,190,350),
     ('v0.52.1','v0.28.0'):(60,57,29,190,350),
+    ('v0.53.0','v0.28.0'):(62,60,29,195,359),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -138,5 +139,30 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(prior,(60,57,29,190,350))
         revised=EXPECTED_COVERAGE[('v0.52.1','v0.28.0')]
         self.assertEqual(tuple(new-old for old,new in zip(prior,revised)),(0,0,0,0,0))
+
+    def test_v053_reference_pairs_point_to_the_feature_document_and_release(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.53.0':
+            self.skipTest('These citation locations describe the v0.53.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected={
+            'doi:10.18653/v1/d19-1382':('paper','docs/ko-order-recall.md'),
+            'github:google-research-datasets/paws':('project','docs/ko-order-recall.md'),
+            'arxiv:2611.02017':('paper','docs/handoff-resume.md'),
+            'github:miraclecsc/switch-swe':('project','docs/handoff-resume.md'),
+            'github:simplistix/sybil':('project',None),
+        }
+        for identity,(kind,feature) in expected.items():
+            with self.subTest(identity=identity):
+                source=indexed[identity]
+                self.assertEqual(source['kind'],kind)
+                use,=source['uses']
+                self.assertEqual((use['plugin'],use['role']),('agentic-vault','reference'))
+                files=['docs/releases/v0.53.0.md']
+                if feature:
+                    files.append(feature)
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+        self.assertEqual(set(indexed['doi:10.18653/v1/d19-1382']['keys']),
+                         {'doi:10.18653/v1/d19-1382','arxiv:1908.11828','url:https://aclanthology.org/D19-1382'})
 
 if __name__=='__main__':unittest.main()

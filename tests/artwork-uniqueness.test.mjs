@@ -158,11 +158,16 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all 190 current catalog sources have their own image in card and detail views',()=>{
+const uncommissionedAv053=new Set([
+  'doi:10.18653/v1/d19-1382','github:google-research-datasets/paws',
+  'arxiv:2611.02017','github:miraclecsc/switch-swe','github:simplistix/sybil'
+]);
+
+test('all 190 commissioned sources have their own image in card and detail views',()=>{
   assert.equal(manifest.count,190);
-  assert.equal(catalog.sources.length,190);
   const images=[];
   for(const source of catalog.sources){
+    if(uncommissionedAv053.has(source.id)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -175,7 +180,7 @@ test('all 190 current catalog sources have their own image in card and detail vi
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length,catalog.sources.length);
+  assert.equal(images.length+catalog.sources.filter(source=>uncommissionedAv053.has(source.id)).length,catalog.sources.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
@@ -379,9 +384,17 @@ test('an unillustrated future source never silently borrows another source image
   }
 });
 
-test('no current catalog source remains on the uncommissioned text fallback',()=>{
+test('only the five uncommissioned v0.53.0 sources render the text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks,[]);
+  assert.deepEqual(new Set(fallbacks),uncommissionedAv053);
+  for(const id of fallbacks){
+    const source=catalog.sources.find(item=>item.id===id);
+    for(const detail of [false,true]){
+      const cover=artworkCover(source,{detail});
+      assert.ok(cover.includes('is-art-fallback'));
+      assert.ok(!cover.includes('<img'));
+    }
+  }
 });
 
 test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their exact commissioned card and detail images',()=>{
