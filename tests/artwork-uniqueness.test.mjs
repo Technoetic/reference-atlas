@@ -46,6 +46,7 @@ const completedReleaseArtwork=[
   ['github:tw93/waza',168]
 ];
 const pinnedFile=url=>url.replace(new RegExp('/blob/[0-9a-f]{40}/'),'/blob/<commit>/').replace(new RegExp('#L[0-9]+$'),'');
+const releasedFile=url=>pinnedFile(url).replace('/blob/<commit>/docs/releases/v0.52.0.md','/blob/<commit>/docs/releases/v0.52.1.md');
 const completedLatestArtwork=[
   ['url:https://artificialanalysis.ai/evaluations/decision-index',173,'decision-index'],
   ['url:https://bizrouter.ai/docs/decisions',174,'bizrouter-decisions'],
@@ -403,7 +404,8 @@ test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    assert.deepEqual(record.generationEvidenceUrls,citations);
+    if(avCatalogVersion==='v0.52.0') assert.deepEqual(record.generationEvidenceUrls,citations);
+    else assert.deepEqual(record.generationEvidenceUrls.map(releasedFile),citations.map(releasedFile));
     assert.deepEqual(record.delivery.sourceDimensions,[1536,1024]);
     assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
     assert.equal(record.delivery.quality,90);
