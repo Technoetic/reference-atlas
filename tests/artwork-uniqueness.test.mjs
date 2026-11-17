@@ -56,21 +56,19 @@ const completedLatestArtwork=[
   ['url:https://www.postgresql.org/list/pgsql-hackers/since/202607270000',179,'dst-order'],
   ['github:nodejs/release',180,'node-release']
 ];
-// Sources first cited by agentic-vault v0.52.0, with their kinds; they use the text fallback until artwork is commissioned.
-const av052TextFallbacks=new Map([
-  ['arxiv:2403.14720','paper'],
-  ['arxiv:2510.09023','paper'],
-  ['url:https://docs.jj-vcs.dev/latest/guides/divergence','article'],
-  ['arxiv:2607.10139','paper'],
-  ['arxiv:2407.02348','paper'],
-  ['url:https://slsa.dev/spec/v1.2/source-requirements','article'],
-  ['url:https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository','article'],
-  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets','article'],
-  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets','article']
-]);
-const declaredAv052TextFallback=source=>av052TextFallbacks.has(source.id)&&!sourceArtwork(source).src;
-// Later uncommissioned sources extend this fallback contract without rewriting the AV052 block.
-av052TextFallbacks.set('doi:10.1145/3654991','paper');
+// The ten remaining sources now have independently generated, source-specific artwork.
+const completedCurrentArtwork=[
+  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets',181,'rulesets','article','SCOPED RULE ARCHITECTURE'],
+  ['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets',182,'rule-options','article','CONFIGURABLE RULE MECHANISMS'],
+  ['url:https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository',183,'private-reporting','article','PRIVATE DISCLOSURE CHANNEL'],
+  ['url:https://docs.jj-vcs.dev/latest/guides/divergence',184,'divergent-changes','article','COEXISTING DIVERGENT CHANGES'],
+  ['url:https://slsa.dev/spec/v1.2/source-requirements',185,'slsa-source','article','SOURCE PROVENANCE REQUIREMENTS'],
+  ['arxiv:2407.02348',186,'agreement-cascade','paper','AGREEMENT-GATED CASCADE'],
+  ['arxiv:2403.14720',187,'spotlighting','paper','MARKED UNTRUSTED INPUT'],
+  ['doi:10.1145/3654991',188,'query-plans','paper','DIFFERENTIAL QUERY ROUTES'],
+  ['arxiv:2607.10139',189,'model-jury','paper','CROSS-MODEL JURY'],
+  ['arxiv:2510.09023',190,'adaptive-attacks','paper','ADAPTIVE BOUNDARY PROBE']
+];
 
 test('all twelve formerly unillustrated references render their own exact card and detail images',()=>{
   for(const [id,index] of completedArtwork){
@@ -159,12 +157,11 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('all 180 commissioned catalog sources have their own image in card and detail views',()=>{
-  assert.equal(manifest.count,180);
-  assert.equal(catalog.sources.filter(source=>!declaredAv052TextFallback(source)).length,180);
+test('all 190 current catalog sources have their own image in card and detail views',()=>{
+  assert.equal(manifest.count,190);
+  assert.equal(catalog.sources.length,190);
   const images=[];
   for(const source of catalog.sources){
-    if(declaredAv052TextFallback(source)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -177,7 +174,7 @@ test('all 180 commissioned catalog sources have their own image in card and deta
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+catalog.sources.filter(declaredAv052TextFallback).length,catalog.sources.length);
+  assert.equal(images.length,catalog.sources.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
@@ -381,23 +378,51 @@ test('an unillustrated future source never silently borrows another source image
   }
 });
 
-test('only the declared agentic-vault v0.52.0 sources render the uncommissioned text fallback',()=>{
+test('no current catalog source remains on the uncommissioned text fallback',()=>{
   const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(fallbacks.filter(id=>!av052TextFallbacks.has(id)),[]);
-  if(avCatalogVersion==='v0.51.0') assert.deepEqual(fallbacks,[]);
-  if(avCatalogVersion==='v0.52.0') for(const id of av052TextFallbacks.keys())
-    assert.ok(catalog.sources.some(source=>source.id===id),`Missing catalog source: ${id}`);
-  for(const id of fallbacks){
+  assert.deepEqual(fallbacks,[]);
+});
+
+test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their exact commissioned card and detail images',()=>{
+  const records=manifest.assets.slice(180);
+  assert.deepEqual(records.map(asset=>[asset.sourceId,asset.index,asset.output,asset.kind,asset.label]),
+    completedCurrentArtwork.map(([id,index,slug,kind,label])=>[id,index,`media/cards/card-${index}-${slug}.webp`,kind,label]));
+  assert.equal(new Set(manifest.assets.map(asset=>asset.label)).size,190);
+  for(const [id,index,slug,kind,label] of completedCurrentArtwork){
     const source=catalog.sources.find(source=>source.id===id);
-    assert.equal(source.kind,av052TextFallbacks.get(id));
-    assert.equal(manifest.assets.find(asset=>asset.sourceId===id),undefined);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    const expected=new URL(`../media/cards/card-${index}-${slug}.webp`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.ok(record.factualConcept.trim());
+    assert.ok(record.prompt.trim());
+    const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
+    assert.deepEqual(record.evidenceUrls,citations);
+    assert.deepEqual(record.currentEvidenceUrls,citations);
+    assert.deepEqual(record.generationEvidenceUrls,citations);
+    assert.deepEqual(record.delivery.sourceDimensions,[1536,1024]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.equal(record.delivery.quality,90);
+    assert.equal(record.delivery.compressionLevel,6);
+    assert.match(record.delivery.commandTemplate,/scale=960:640:flags=lanczos/);
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
-      assert.ok(html.includes('is-art-fallback'));
-      assert.ok(!html.includes('<img data-source-artwork'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
     }
   }
+});
+
+test('the new artwork preserves all first 180 generation records at the current citation snapshot',()=>{
+  if(avCatalogVersion!=='v0.52.0'||catalog.snapshots['semantic-crosscheck'].version!=='v0.28.0') return;
+  assert.equal(createHash('sha256').update(JSON.stringify(manifest.assets.slice(0,180))).digest('hex'),
+    '22138e438e0758335e8466deabb9bbb3508d51559c43d1e0f0e98d21fca22680');
 });
 
 test('the eight formerly unillustrated v0.27.0 and v0.51.0 references render their exact commissioned card and detail images',()=>{

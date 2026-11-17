@@ -6910,7 +6910,7 @@
       "tags": [
         "SQL"
       ],
-      "note": "The exact paper identity cited by SXC v0.28.0 is Keep It Simple: Testing Databases via Differential Query Plans (2024), DOI 10.1145/3654991. The release characterizes it as an existing deferred research direction now applied to its admitted real-plan diagnostic, which requires observed plan diversity and compares full typed row bags on owned synthetic data. The older name:dqp record remains a separate historical unresolved-name citation: its original public line gave only the acronym, so this entry does not retrospectively assert a canonical identity for that line. No algorithm reproduction, unrestricted SQL fuzzer, copied source, oracle adoption or benchmark result is claimed. This paper has no commissioned artwork and uses the text fallback.",
+      "note": "The exact paper identity cited by SXC v0.28.0 is Keep It Simple: Testing Databases via Differential Query Plans (2024), DOI 10.1145/3654991. The release characterizes it as an existing deferred research direction now applied to its admitted real-plan diagnostic, which requires observed plan diversity and compares full typed row bags on owned synthetic data. The older name:dqp record remains a separate historical unresolved-name citation: its original public line gave only the acronym, so this entry does not retrospectively assert a canonical identity for that line. No algorithm reproduction, unrestricted SQL fuzzer, copied source, oracle adoption or benchmark result is claimed. Its dedicated artwork is an editorial interpretation, not a reproduced paper figure.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",

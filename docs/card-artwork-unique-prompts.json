@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 180,
+  "count": 190,
   "assets": [
     {
       "index": 1,
@@ -5143,6 +5143,418 @@
         "compressionLevel": 6,
         "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
       }
+    },
+    {
+      "index": 181,
+      "sourceId": "url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets",
+      "title": "GitHub Docs: About rulesets",
+      "kind": "article",
+      "label": "SCOPED RULE ARCHITECTURE",
+      "factualConcept": "Rulesets group repository rules and target branches or tags. Broad removable architectural arches over a branching rail path convey configurable shared rule boundaries, without implying unchangeable or complete protection.",
+      "prompt": "Use case: stylized-concept\nAsset type: dedicated editorial cover artwork for the reference source GitHub Docs: About rulesets.\nPrimary request: Create a premium tactile isometric 3D editorial sculpture that makes a collection of repository rules visible as broad protective architectural arches surrounding a branching source-tree pathway. Three generously spaced, suspended gunmetal arches curve over a branching path of narrow smoked-glass rails; a handful of small lime-lit nodes travel under the arches. The rails visibly divide and recombine at the center, evoking branches and tags under a shared rule boundary. Show small open joints and removable structural connections so the sculpture suggests configured governance, never an invincible security barrier. This is a source-specific conceptual illustration about what rulesets are, not a dashboard or a literal GitHub interface.\nScene/backdrop: seamless dark olive near-black studio ground and background, no horizon line, restrained atmospheric depth.\nStyle/medium: beautifully crafted high-end physical miniature, tactile brushed gunmetal, smoked glass, subtle machined edges, luminous lime light in the branching rails and soft lavender rim accents.\nComposition/framing: landscape 3:2 image, elevated three-quarter isometric camera, large clear central sculpture, entire meaningful form inside the central 75 percent of the frame so a centered 16:10 cover crop preserves it, calm generous negative space around it. Favor broad architectural silhouettes over tiny components.\nLighting/mood: sophisticated studio rim lighting, low-key olive shadows, precise material highlights, crisp sculptural depth without fog or clutter.\nConstraints: Generate a new original image. No letters, words, typography, numbers, logos, brands, watermarks, people, faces, screenshots, pictograms, interface panels, chart labels, or copied upstream figures. Do not add a shield, padlock, globe, book, or generic network orb. Do not imply guaranteed security, complete protection, or a performance result.",
+      "output": "media/cards/card-181-rulesets.webp",
+      "sha256": "f3a1f967c9da592848249f544f615f8f03708f94ab227e17a4efb250a785a7c3",
+      "bytes": 42400,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "delivery": {
+        "sourceSha256": "d6ee2a814f7228f898e5cba334d2ccfd1108d339fe924ded31a4fc0d46147adb",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"
+      ]
+    },
+    {
+      "index": 182,
+      "sourceId": "url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets",
+      "title": "GitHub Docs: Available rules for rulesets",
+      "kind": "article",
+      "label": "CONFIGURABLE RULE MECHANISMS",
+      "factualConcept": "Available rules are concrete configurable policy mechanisms, including review requirements, restrictions on tag updates/deletion, and required status checks. Two converging review keys, a clamped tag loop, and an aligning status gate make this a rule-options selector board distinct from the architecture used for About rulesets.",
+      "prompt": "Use case: stylized-concept\nAsset type: dedicated editorial cover artwork for the reference source GitHub Docs: Available rules for rulesets.\nPrimary request: Create a premium tactile isometric 3D editorial sculpture of a compact precision policy selector board, a physical set of three DISTINCT interlocking mechanisms arranged on one machined smoked-glass rectangular plinth. On the left, a review threshold mechanism: two separate lavender metal keys must meet a small lime hub before the geared connector can continue. In the middle, a sturdy locking tag loop: an unmarked thin pentagonal metal tag with a round hole is fixed onto a closed metal retaining loop held by a precision clamp, evoking restrictions on updating or deleting a tag. On the right, a status-check gate: three small luminous lime status pins in a row physically align a short sliding bar to let a narrow data rail continue. Small finely machined linkages couple the three mechanisms, demonstrating selectable concrete repository rule options. The board has depth and mechanical substance. This is a source-specific metaphor for available configurable rules, not a computer keyboard or dashboard.\nScene/backdrop: seamless dark olive near-black studio ground and background, no horizon.\nStyle/medium: premium tactile physical miniature, brushed gunmetal, smoked glass inlays, muted lavender components and carefully controlled luminous lime accents, tiny realistic screws and beveled edges.\nComposition/framing: landscape 3:2 image, elevated isometric three-quarter close view, all three mechanisms immediately distinguishable, entire meaningful form inside central 75 percent of the frame to survive a centered 16:10 cover crop. Bold coherent silhouettes, restrained detail, ample dark breathing space.\nLighting/mood: studio rim lighting, sophisticated low-key highlights, crisp contact shadows and material definition.\nConstraints: New original illustration. No letters, words, typography, numbers, logos, brands, watermarks, people, faces, screens, labels, printed symbols, charts, or copied upstream figures. Do not depict arches or a protected branching tree, do not add a generic padlock, shield, globe, book or network orb. Do not imply all rules are mandatory or guarantee complete protection. Only the described physical mechanisms.",
+      "output": "media/cards/card-182-rule-options.webp",
+      "sha256": "6345d58d8fdabb23f9e83700ab26f94ee0d8e6ccb52a21c25357b57dee70bcda",
+      "bytes": 56704,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L507"
+      ],
+      "delivery": {
+        "sourceSha256": "5c34c3370485d08639331809bf2b41aa300934a22ebe25ff8df8178e3f25b5b9",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets"
+      ]
+    },
+    {
+      "index": 183,
+      "sourceId": "url:https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository",
+      "title": "GitHub Docs: Configuring private vulnerability reporting for a repository",
+      "kind": "article",
+      "label": "PRIVATE DISCLOSURE CHANNEL",
+      "factualConcept": "An owner or administrator can enable private vulnerability reporting for a public repository so researchers can privately report a vulnerability to maintainers. An intact capsule containing a cracked crystal travels down one enclosed private channel to a repair workspace; the flaw remains unrepaired and no successful outcome is claimed.",
+      "prompt": "Use case: stylized-concept\nAsset type: dedicated editorial cover artwork for the reference source GitHub Docs: Configuring private vulnerability reporting for a repository.\nPrimary request: Create a premium tactile isometric 3D editorial sculpture showing a confidential vulnerability report traveling privately toward a repository maintainer's repair space. A small translucent smoked-glass capsule at the center encloses one visibly cracked lavender crystal fragment. The capsule is intact and sealed, with a fine gunmetal band, representing a sensitive flaw described without public disclosure. It travels along a single narrow luminous lime-lined private channel recessed between two tall opaque brushed-gunmetal walls. At the far end of this short channel sits a partially open sheltered repair vault, a simple dark square workshop chamber with a faint lavender interior and one small precision repair arm reaching toward the arriving capsule. The capsule and cracked fragment must remain the clear focal point. The channel has a visible entry, an enclosing middle and a private receiving end. This illustrates repository owners enabling a private report path to maintainers, not a promise of secure or automatic repair.\nScene/backdrop: seamless deep olive near-black studio floor and background, no horizon, no city or landscape.\nStyle/medium: high-end physical miniature, beautifully tactile brushed gunmetal, smoked glass, luminous lime path edges and soft lavender crystal, restrained crafted detail.\nComposition/framing: landscape 3:2, elevated three-quarter isometric camera looking down into the protected channel, compact central composition entirely within the central 75 percent so a centered 16:10 cover crop preserves the capsule, channel and receiving room, broad simple silhouettes and dark negative space.\nLighting/mood: controlled studio rim lighting and soft internal illumination, deliberate confidentiality and care, crisp material highlights, realistic contact shadows.\nConstraints: Entirely new original conceptual artwork. No letters, text, typography, numbers, logos, brands, watermarks, people, faces, screenshots, printed symbols or copied upstream figures. No envelope icon, public megaphone, public crowd, generic shield badge, padlock, branching tree, policy selector board, globe, book, or network orb. Do not depict the crystal repaired, do not imply complete protection, automatic patching, guaranteed confidentiality or any performance statistic.",
+      "output": "media/cards/card-183-private-reporting.webp",
+      "sha256": "6fa58740a8dfa88ab46885ee5b61fbc0910d9d4e92820d23f9666bb93cada68b",
+      "bytes": 48740,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L509"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L509"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L49",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L509"
+      ],
+      "delivery": {
+        "sourceSha256": "97294f8c4c6451bce9a22e23081a2a729f11713b4bb1f4b89800c102e2fe757f",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository"
+      ]
+    },
+    {
+      "index": 184,
+      "sourceId": "url:https://docs.jj-vcs.dev/latest/guides/divergence",
+      "title": "Jujutsu: Divergent changes",
+      "kind": "article",
+      "label": "COEXISTING DIVERGENT CHANGES",
+      "factualConcept": "Two visible commits may share one change ID; keeping both is a valid resolution of divergence. The fork is deliberately left open.",
+      "prompt": "Use case: stylized-concept.\nAsset type: original editorial reference-library card artwork, landscape 3:2.\nPrimary request: a premium tactile isometric 3D sculpture representing Jujutsu divergent changes. One luminous circular change-ring at the rear splits into TWO equally prominent visible branching commit-capsules in the foreground. Each of the two capsules contains an identical small inset glowing core, making their shared change identity visually clear, while their outer sculptural forms subtly differ. The fork remains visibly open: the two capsules are both retained, side by side, with no rejoining path and no automatic merge. Precisely one origin ring and two terminal capsules, cleanly readable at thumbnail size.\nScene/backdrop: nearly black olive studio cyclorama with a low matte plinth and generous negative space.\nStyle/medium: sophisticated sculptural product render, photoreal tactile materials, gunmetal satin-machined metal and smoked glass, restrained lime glow and faint lavender rim light, soft volumetric light, deep soft shadows, controlled reflections.\nComposition/framing: isometric three-quarter camera, whole sculpture centered within the middle 75 percent of the image, all important geometry inside a safe inset for a later 16:10 cover crop; landscape 3:2 image, balanced premium editorial composition.\nConstraints: new conceptual illustration, not a reproduction of documentation. No text, no letters, no numbers, no actual commit identifiers, no logos, no people, no watermarks. Do not depict one branch as correct and the other as broken. Avoid generic circuit-board imagery, flat vector icons, screens, merge arrows, and extra capsules.",
+      "output": "media/cards/card-184-divergent-changes.webp",
+      "sha256": "fd2b23586130a4efae0facac0669d898c632ab99ab8c1450ebd41e46993d9b17",
+      "bytes": 39778,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L45"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L45"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L45"
+      ],
+      "delivery": {
+        "sourceSha256": "47ef8730b9cc12bbfc3446e3edac20d12e38c579313d725c439e813c86e5327c",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://docs.jj-vcs.dev/latest/guides/divergence/"
+      ]
+    },
+    {
+      "index": 185,
+      "sourceId": "url:https://slsa.dev/spec/v1.2/source-requirements",
+      "title": "SLSA v1.2 Source requirements",
+      "kind": "article",
+      "label": "SOURCE PROVENANCE REQUIREMENTS",
+      "factualConcept": "Source requirements include protecting tags against movement/deletion and review requirements. Illustration is conceptual; it claims no achieved SLSA level or certification.",
+      "prompt": "Use case: stylized-concept.\nAsset type: original editorial reference-library card artwork, landscape 3:2.\nPrimary request: a premium tactile isometric 3D sculpture representing a source-provenance requirements framework as an ascending stepped fortress. Four broad staggered gunmetal terraces rise diagonally toward a compact open geometric citadel. Along the terraces, heavy circular tag-rings are mechanically pinned into the structure by obvious immovable anchor posts, visually unable to slide off or be removed. Two separate small checkpoint portals stand along the ascent as review checkpoints, abstract objects with no symbols. Small smoked-glass provenance tiles form a continuous trace through the terraces. The unmistakable silhouette is a stepped fortress with anchored rings, not a generic padlock.\nScene/backdrop: nearly black olive studio cyclorama with generous negative space, floating dust-free clarity and a subtle low matte foundation.\nStyle/medium: sophisticated sculptural product render, photoreal tactile satin gunmetal, brushed dark metal, smoked glass, restrained lime edge illumination and faint lavender rim light, soft volumetric light, deep soft shadows and controlled reflections.\nComposition/framing: isometric three-quarter camera, whole sculpture centered within the middle 75 percent, important geometry safely inset for later 16:10 cover crop; landscape 3:2.\nConstraints: new conceptual illustration of source requirements, not a certification badge or a compliance/performance claim. No checkmarks, shields with ticks, seals, medals, text, letters, numbers, source-code characters, logos, people or watermarks. No copied SLSA branding or diagram. Avoid circuit boards, screens and ornamental extra towers.",
+      "output": "media/cards/card-185-slsa-source.webp",
+      "sha256": "4ce059565afa555708083dc5f1d85ef40d51ba48d37683b8020af88b174cfd60",
+      "bytes": 55534,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L48",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L288",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L511"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L48",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L288",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L511"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L48",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L288",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/release-integrity.md#L511"
+      ],
+      "delivery": {
+        "sourceSha256": "67257d76eabea96e8953797bf9449c06396d76069e34661254fa748ecb7e5fee",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://slsa.dev/spec/v1.2/source-requirements"
+      ]
+    },
+    {
+      "index": 186,
+      "sourceId": "arxiv:2407.02348",
+      "title": "Agreement-Based Cascading for Efficient Inference",
+      "kind": "paper",
+      "label": "AGREEMENT-GATED CASCADE",
+      "factualConcept": "A stagewise model ensemble uses agreement to decide early acceptance or deferral to later inference stages; a conceptual depiction, not a measured cost-saving result.",
+      "prompt": "Use case: stylized-concept. Asset type: one original source-specific raster card cover for Reference Atlas. Landscape 3:2. Primary request: visually interpret Agreement-Based Cascading for Efficient Inference (arXiv 2407.02348), with a memorable physical metaphor for stagewise ensemble agreement and deferral, not a reproduction of a paper figure. Scene: premium tactile isometric 3D product sculpture on a seamless almost-black olive studio backdrop, brushed gunmetal, smoked glass, small polished lavender and lime components, precise studio rim lighting and real material depth. Subject: a compact ascending THREE-TIER mechanical cascade tower. At the lowest compact tier, a small cluster of crystal decision prisms directs an agreeing lime answer token through a short side exit chute; a separate unresolved lavender token continues up a curved deferral lift into a larger middle chamber. The middle chamber likewise has its own clearly visible side exit and an onward lift toward the largest upper chamber. Make the tiered chambers, side exits, and one continuing deferral path unambiguous, with visibly larger chamber capacity toward the top. Mechanical valves are driven by small clusters of matching prism indicators, suggesting agreement rather than a single judge. One tower and one coherent material system, elegant restrained glow, gallery-grade realism. The concept is staged decision/deferral, with no numbers, savings percentages, performance guarantees or claim about the plugin's measured behavior. Main silhouette fully inside central 75 percent with generous dark margin on every edge, suitable for a 16:10 responsive crop. No people, letters, words, numerals, labels, arrows with text, logos, watermarks, UI screenshots, generic AI brain or chip. Do not use parallel query tracks, courtroom seating, a shield fortress or a repeated stock network sphere.",
+      "output": "media/cards/card-186-agreement-cascade.webp",
+      "sha256": "46acb372f0cac24fb792934a74253dccd0f04c86c0fe636162da557555f9c93d",
+      "bytes": 58740,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L47"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L47"
+      ],
+      "delivery": {
+        "sourceSha256": "f99098512684270f10c68c7b9d04c9dfc375a3df6031cd281298f9644e8afa0b",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 187,
+      "sourceId": "arxiv:2403.14720",
+      "title": "Defending Against Indirect Prompt Injection Attacks With Spotlighting",
+      "kind": "paper",
+      "label": "MARKED UNTRUSTED INPUT",
+      "factualConcept": "Spotlighting differentiates untrusted content from authoritative instructions. The source cautions against delimiter-only defense and recommends stronger datamarking or encoding; artwork is a marked-content metaphor, not assurance.",
+      "prompt": "Use case: stylized-concept.\nAsset type: original editorial reference-library card artwork, landscape 3:2.\nPrimary request: a premium tactile isometric 3D sculpture about Spotlighting, a research approach that marks untrusted input as distinct from authoritative instructions. A distinctive small theatrical spotlight fixture on the upper-left shines a clearly visible soft cone of lavender-white light onto three floating, curved translucent smoked-glass strips. The strips suggest fragments of externally supplied content using only abstract shallow grooves, absolutely no actual characters. Each strip is physically outlined by a bright lime luminous border and punctuated with tiny repeated nonlinguistic etched dot markings, making its untrusted status explicit through material marking. On a separate raised pedestal at the right stands a single solid gunmetal mechanical gear-lever, the authoritative control, with a clear air gap between it and the marked strips. The lever is separate and untouched; no strip reaches it. Show the relationship of light, marked input strips and control boundary clearly, without presenting an impenetrable security barrier.\nScene/backdrop: nearly black olive studio cyclorama with generous empty margins and subtle low circular plinth.\nStyle/medium: sophisticated photoreal tactile sculptural product render, satin gunmetal, smoked glass, restrained lime glow and faint lavender rim light, deep soft shadows, controlled reflections.\nComposition/framing: isometric three-quarter view, complete compact sculpture occupies at most 72 percent of canvas width and 72 percent of height, centered with abundant dark negative space on ALL edges, safe for later 16:10 cover crop; landscape 3:2 image.\nConstraints: new conceptual illustration, not a copied paper figure. Boundary hygiene and marking only, no invincible-defense or performance claim. No shields, locks, checkmarks, letters, words, numbers, readable symbols, code, logos, people or watermarks. Avoid a generic cube network, computer screen, circuit board, or glowing brain.",
+      "output": "media/cards/card-187-spotlighting.webp",
+      "sha256": "95dcd0042c0e054f6ca1fb94f85792107a9125073a101263dc2ae4a218efe82b",
+      "bytes": 33482,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L43"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L43"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L43"
+      ],
+      "delivery": {
+        "sourceSha256": "e22775fb1c08c6150afee7262ebe8b07cc3052e1573a10b1e2b5d7c44435e133",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://arxiv.org/abs/2403.14720"
+      ]
+    },
+    {
+      "index": 188,
+      "sourceId": "doi:10.1145/3654991",
+      "title": "Keep It Simple: Testing Databases via Differential Query Plans",
+      "kind": "paper",
+      "label": "DIFFERENTIAL QUERY ROUTES",
+      "factualConcept": "The same query and inputs are executed using distinct physical query plans and full results are compared; agreement does not establish universal correctness.",
+      "prompt": "Use case: stylized-concept. Asset type: one unique source-specific editorial raster card cover for Reference Atlas. Landscape 3:2. Primary request: illustrate the research paper Keep It Simple: Testing Databases via Differential Query Plans (DOI 10.1145/3654991) through a precise original mechanical metaphor, not a reproduction of its figures. Scene: seamless almost-black olive studio backdrop; premium tactile isometric 3D product sculpture, brushed gunmetal rails, smoked glass and polished black stone, restrained luminous lime and soft lavender rim light, beautiful material depth. Subject: ONE small transparent input hopper feeds the SAME data beads into TWO visibly different physical query routes: one broad winding sequential-scan ribbon track sweeping around the left side, and one compact upright indexed shortcut with stacked selector fins on the right. Both routes terminate at two adjacent transparent result trays inside ONE precision comparison frame in the foreground; the trays hold matching structured bead arrangements. The distinct long sweeping route and narrow indexed shortcut must be visually obvious, with a shared input and a careful side-by-side output comparison. This is a conceptual image of varying physical query plans and comparing complete results, not a performance claim or a universal correctness guarantee. Composition: one strong readable asymmetrical dual-route silhouette, 3/4 elevated viewpoint, main sculpture within the central 75 percent, generous dark margins so it survives a responsive 16:10 cover crop. No people, no letters, no words, no numbers, no dates, no labels, no logos, no watermark, no UI screenshot, no brain or chip icon, no repeated stock network pattern. Sharp crafted details, elegant restrained glow, clean editorial gallery quality.",
+      "output": "media/cards/card-188-query-plans.webp",
+      "sha256": "05ae81f2ad6ec5329083e87406781c438aaf2de8afd574b1a96e991de68e8097",
+      "bytes": 84884,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L231"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L231"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L231"
+      ],
+      "delivery": {
+        "sourceSha256": "45e770f28b10147e10a745317cccef565839cc8113bd247d397532f79503a373",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 189,
+      "sourceId": "arxiv:2607.10139",
+      "title": "LLMs as a Jury: Cross-Model Consensus Can Outperform Process Reward Models for LLM Reasoning",
+      "kind": "paper",
+      "label": "CROSS-MODEL JURY",
+      "factualConcept": "Independent model answers can be compared for agreement and disagreement, with the shared-error-floor limitation that correlated assumptions may yield agreeing wrong answers.",
+      "prompt": "Use case: stylized-concept. Asset type: one original source-specific editorial raster cover for Reference Atlas. Landscape 3:2. Primary request: abstractly illustrate LLMs as a Jury: Cross-Model Consensus Can Outperform Process Reward Models for LLM Reasoning (arXiv 2607.10139). This is an original conceptual metaphor, not a paper figure or reproduced performance claim. Scene: premium tactile isometric 3D sculpture, seamless almost-black olive background, smoked glass and brushed gunmetal, restrained lime and soft lavender studio rim light, beautiful realistic materials. Subject: FIVE physically separate tall angular crystal judge-pylons arranged in a broad semicircle around a small central answer prism on a low pentagonal plinth. Each judge-pylon holds its own separate small decision sphere; four aligned thin lime light beams converge toward the answer prism while one lavender beam remains offset, showing model agreement and disagreement without human figures. At the near side of the plinth, two small pylons subtly share a single dark underfloor support rail, and their glass contains the same tiny embedded dark inclusion, hinting that shared assumptions can produce shared errors: agreement is evidence, not infallibility. Make the semicircle of separate angular judges and the central answer the dominant silhouette, easy to recognize at thumbnail size. No waterfall tower, parallel racing tracks, generic security shield, brain or chip icon. Keep the complete main structure within central 75 percent with generous dark margins on every edge, ready for a 16:10 cover crop. No people, faces, letters, words, numbers, labels, logos, watermarks, UI screenshots, accuracy percentages, leaderboard graphics or winner medals. Elegant analytical mood, crisp construction, controlled glow.",
+      "output": "media/cards/card-189-model-jury.webp",
+      "sha256": "95929ad825a47d65aa877f2fac14c51736aa94aac5b39ea2e1bd01c41264e568",
+      "bytes": 52120,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L46"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L46"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L46"
+      ],
+      "delivery": {
+        "sourceSha256": "c392b59b01169ca865fd0fcbfd2741632f2d1a64a2de15c6d42ecf1a6d06efb2",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      }
+    },
+    {
+      "index": 190,
+      "sourceId": "arxiv:2510.09023",
+      "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against Llm Jailbreaks and Prompt Injections",
+      "kind": "paper",
+      "label": "ADAPTIVE BOUNDARY PROBE",
+      "factualConcept": "Adaptive attackers adjust their method after seeing a fixed defense. Artwork illustrates evaluation limits with a second curved route around a lattice; it supplies no attack code and makes no performance claim.",
+      "prompt": "Use case: stylized-concept.\nAsset type: original editorial reference-library card artwork, landscape 3:2.\nPrimary request: a premium tactile isometric 3D sculpture about adaptive security evaluation, The Attacker Moves Second. A fixed rigid gunmetal lattice fence stands vertically across a compact dark plinth. In front of it, a jointed chrome probe with several articulated hexagonal segments visibly changes its shape: its first straight approach is suggested only by one subtle ghosted lavender motion trail stopping at the rigid lattice; the present solid chrome probe bends around the lattice's exposed outer edge on a different curved route. Its lime-lit tip has just reached the far side. Distinctive silhouette of one adjustable segmented probe bending around one previously fixed lattice, a clear contrast between rigid defense and adaptive second approach. Abstract research metaphor only, no real exploit mechanics or software interfaces.\nScene/backdrop: nearly black olive studio cyclorama, restrained low foundation, abundant dark negative space.\nStyle/medium: sophisticated photoreal tactile sculptural product render, satin gunmetal, polished chrome, small smoked-glass inserts, restrained lime tip and faint lavender rim light, soft controlled reflections, deep soft shadows, cinematic calm.\nComposition/framing: isometric three-quarter camera so both sides of the lattice and the curved probe path are visible. Keep complete sculpture compact, occupying at most 72 percent of canvas width and height, centered with wide empty margins for later 16:10 cover crop; landscape 3:2.\nConstraints: new conceptual illustration, not a reproduction of a research figure or any attack code. No assurance or model-performance claim. No broken padlock, superhero shield, shattering glass, explosion or violent imagery. No letters, words, numbers, arrows, logos, people, screens, circuit boards or watermarks. Do not draw multiple probes; just one present probe and a faint earlier motion trail.",
+      "output": "media/cards/card-190-adaptive-attacks.webp",
+      "sha256": "b0c86b3d6af2932a805d94b9b53d72a4de32e8219d287dd094bd6538fc2b03fc",
+      "bytes": 30490,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/SECURITY.md#L246"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/SECURITY.md#L246"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L44",
+        "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/SECURITY.md#L246"
+      ],
+      "delivery": {
+        "sourceSha256": "89e74f9183440bce54b4e621df8aba8c945346b4e2dc558523873869e8ed1207",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://arxiv.org/abs/2510.09023"
+      ]
     }
   ],
   "evidencePolicy": "generationEvidenceUrls preserve the public source URLs recorded when each image was generated. currentEvidenceUrls and the legacy evidenceUrls field follow the current citation snapshot. Repinning citations does not regenerate artwork or change original prompts."
