@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T14:08:39.133476+00:00",
+  "updatedAt": "2026-11-17T05:05:58.332468+00:00",
   "snapshots": {
     "agentic-vault": {
       "name": "Agentic Vault",
@@ -10,9 +10,9 @@
     },
     "semantic-crosscheck": {
       "name": "Semantic Crosscheck",
-      "version": "v0.27.0",
-      "commit": "cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f",
-      "url": "https://github.com/Technoetic/semantic-crosscheck/tree/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f"
+      "version": "v0.28.0",
+      "commit": "9a42f68cbd04165762c937ac4b326c8e0f51624e",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/tree/9a42f68cbd04165762c937ac4b326c8e0f51624e"
     }
   },
   "method": {
@@ -230,7 +230,7 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 109,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L109",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L109",
               "excerpt": "| [Diátaxis](https://diataxis.fr/) | Separating the README's reference sections from its tutorial and explanation. |"
             }
           ]
@@ -912,13 +912,13 @@
             {
               "file": "docs/semantic-preflight.md",
               "line": 182,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/semantic-preflight.md#L182",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/semantic-preflight.md#L182",
               "excerpt": "NVIDIA's [October 21, 2026 Agent Toolkit article](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 46,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L46",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L46",
               "excerpt": "[October 21, 2026 Agent Toolkit article](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/)"
             }
           ]
@@ -948,13 +948,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
-              "line": 183,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L183",
+              "line": 185,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/README.md#L185",
               "excerpt": "| Python + pg8000 (`requirements/core.txt`) | 모든 단계 | **Python 3.11 이상** | 2027-10 무렵(보안 수정 종료) · [PEP 664](https://peps.python.org/pep-0664/) |"
             }
           ]
@@ -984,13 +984,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
-              "line": 184,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L184",
+              "line": 186,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/README.md#L186",
               "excerpt": "| PostgreSQL | DB를 사용하는 단계 | **PostgreSQL 17 이상** · `MERGE ... WHEN NOT MATCHED BY SOURCE`, `merge_action()`, `COPY ... ON_ERROR` 사용 | 2029-11-08(마지막 판) · [PostgreSQL 버전 정책](https://www.postgresql.org/support/versioning/"
             }
           ]
@@ -1173,13 +1173,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
-              "line": 187,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L187",
+              "line": 189,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/README.md#L189",
               "excerpt": "| Java | `reason`의 HermiT | **Java 11 이상** | 최소 2027-10까지(Eclipse Temurin 11) · [Adoptium 지원 일정](https://adoptium.net/support/) |"
             }
           ]
@@ -1208,7 +1208,7 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 106,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L106",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L106",
               "excerpt": "| pgsql-hackers thread \"timestamp vs. timestamptz comparisons inconsistently ordered under DST\", 2026-07-27 to 2026-07-31 ([list archive from 2026-07-27](https://www.postgresql.org/list/pgsql-hackers/since/202607270000/)"
             }
           ]
@@ -1238,13 +1238,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 212,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L212",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L212",
               "excerpt": "and [Mutation Testing Elements' separate coveredBy, killedBy and testsCompleted fields](https://github.com/stryker-mutator/mutation-testing-elements/blob/4b5b62cc6bf81f23dd9521447131abeb51f895db/packages/report-schema/sr"
             },
             {
               "file": "docs/mutation-matrix.md",
               "line": 78,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/mutation-matrix.md#L78",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/mutation-matrix.md#L78",
               "excerpt": "and [Mutation Testing Elements' separate execution and detection fields](https://github.com/stryker-mutator/mutation-testing-elements/blob/4b5b62cc6bf81f23dd9521447131abeb51f895db/packages/report-schema/src/mutation-test"
             }
           ]
@@ -1277,13 +1277,13 @@
             {
               "file": "docs/contract-report.md",
               "line": 5,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/contract-report.md#L5",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/contract-report.md#L5",
               "excerpt": "and [Open Data Contract Standard](https://github.com/bitol-io/open-data-contract-standard/tree/448f7b93329ece7827897d7dd51e827a3e279460)."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L65",
               "excerpt": "[Open Data Contract Standard](https://github.com/bitol-io/open-data-contract-standard)"
             }
           ]
@@ -1329,19 +1329,19 @@
             {
               "file": "docs/okf.md",
               "line": 44,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/okf.md#L44",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/okf.md#L44",
               "excerpt": "is `sxc-verification-contract-metadata/v1`; OKF version is the string `0.2`."
             },
             {
               "file": "docs/releases/v0.15.0.md",
               "line": 31,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.15.0.md#L31",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.15.0.md#L31",
               "excerpt": "local inputs. The bundle uses OKF 0.2 and custom type `SXC Verification Contract`."
             },
             {
               "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
               "line": 3,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
               "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
             }
           ]
@@ -1374,7 +1374,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 41,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L41",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L41",
               "excerpt": "refer to the [SHACL report contract](https://www.w3.org/TR/shacl/#validation-report)"
             }
           ]
@@ -1703,20 +1703,20 @@
           "evidence": [
             {
               "file": "docs/design.md",
-              "line": 747,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/design.md#L747",
+              "line": 757,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/design.md#L757",
               "excerpt": "arXiv 2307.00417). An `additive` test exists for every sum/count measure (each configuration measure with `agg`"
             },
             {
               "file": "CHANGELOG.md",
-              "line": 968,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/CHANGELOG.md#L968",
+              "line": 976,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/CHANGELOG.md#L976",
               "excerpt": "applicable (aggregation-consistency errors, HILDA 2023, arXiv 2307.00417)."
             },
             {
               "file": "docs/releases/v0.4.0.md",
               "line": 30,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.4.0.md#L30",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.4.0.md#L30",
               "excerpt": "method follows [Aggregation Consistency Errors in Semantic Layers](https://arxiv.org/abs/2307.00417)"
             }
           ]
@@ -1863,14 +1863,14 @@
           "evidence": [
             {
               "file": "docs/design.md",
-              "line": 1455,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/design.md#L1455",
+              "line": 1465,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/design.md#L1465",
               "excerpt": "follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of Exhaustive Testing for Data Structures\""
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 305,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L305",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L305",
               "excerpt": "correctness on real data. The method follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of"
             }
           ]
@@ -2075,13 +2075,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 37,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L37",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L37",
               "excerpt": "informed by [Data Generation for Testing and Grading SQL Queries (XData)](https://arxiv.org/abs/1411.6704)."
             },
             {
               "file": "docs/boundary-schema.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/boundary-schema.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/boundary-schema.md#L108",
               "excerpt": "[XData](https://arxiv.org/abs/1411.6704) and implements only the bounded scalar"
             }
           ]
@@ -2243,7 +2243,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 142,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/owl-explanations.md#L142",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/owl-explanations.md#L142",
               "excerpt": "Design references: [Fast, flexible MUS enumeration](https://doi.org/10.1007/s10601-015-9183-0),"
             }
           ]
@@ -2445,6 +2445,45 @@
               "line": 98,
               "url": "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.44.0.md#L98",
               "excerpt": "arXiv:2611.09662v1](https://arxiv.org/abs/2611.09662v1): exploratory guidance for future"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1145/3654991",
+      "kind": "paper",
+      "title": "Keep It Simple: Testing Databases via Differential Query Plans",
+      "url": "https://doi.org/10.1145/3654991",
+      "year": 2024,
+      "keys": [
+        "doi:10.1145/3654991"
+      ],
+      "aliases": [
+        "DQP",
+        "Differential Query Plans",
+        "Keep It Simple"
+      ],
+      "tags": [
+        "SQL"
+      ],
+      "note": "The exact paper identity cited by SXC v0.28.0 is Keep It Simple: Testing Databases via Differential Query Plans (2024), DOI 10.1145/3654991. The release characterizes it as an existing deferred research direction now applied to its admitted real-plan diagnostic, which requires observed plan diversity and compares full typed row bags on owned synthetic data. The older name:dqp record remains a separate historical unresolved-name citation: its original public line gave only the acronym, so this entry does not retrospectively assert a canonical identity for that line. No algorithm reproduction, unrestricted SQL fuzzer, copied source, oracle adoption or benchmark result is claimed. This paper has no commissioned artwork and uses the text fallback.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.28.0.md",
+              "line": 66,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L66",
+              "excerpt": "- [Keep It Simple: Testing Databases via Differential Query Plans (2024)](https://doi.org/10.1145/3654991): an existing deferred research direction now applied to the admitted real-plan diagnostic."
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 231,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L231",
+              "excerpt": "[Keep It Simple: Testing Databases via Differential Query Plans (2024)](https://doi.org/10.1145/3654991)"
             }
           ]
         }
@@ -3100,7 +3139,7 @@
             {
               "file": "docs/tlp.md",
               "line": 47,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/tlp.md#L47",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/tlp.md#L47",
               "excerpt": "[NoREC (ESEC/FSE 2020)](https://arxiv.org/abs/2007.08292). Materializing the"
             }
           ]
@@ -3131,13 +3170,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 20,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L20",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L20",
               "excerpt": "[Polygon](https://arxiv.org/abs/2504.06542) and"
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 185,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L185",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L185",
               "excerpt": "from [Polygon](https://arxiv.org/abs/2504.06542); no solver or third-party source is bundled."
             }
           ]
@@ -3286,7 +3325,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 19,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L19",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L19",
               "excerpt": "[Provenance Semirings](https://repository.upenn.edu/handle/20.500.14332/8764),"
             }
           ]
@@ -3319,13 +3358,13 @@
             {
               "file": "docs/provenance-fixtures.md",
               "line": 10,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/provenance-fixtures.md#L10",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/provenance-fixtures.md#L10",
               "excerpt": "[the provenance formalization paper, pinned to arXiv v3](https://arxiv.org/abs/2504.12058v3)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 82,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L82",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L82",
               "excerpt": "[ProvSQL: A General System for Keeping Track of the Provenance and Probability of Data](https://arxiv.org/abs/2504.12058v3)"
             }
           ]
@@ -3356,13 +3395,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 105,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L105",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L105",
               "excerpt": "constraint-model principle of [Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/)"
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 153,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L153",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L153",
               "excerpt": "[Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/);"
             }
           ]
@@ -3393,7 +3432,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 21,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L21",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L21",
               "excerpt": "[RDFGraphGen](https://arxiv.org/abs/2407.17941). No source from these projects is copied or bundled;"
             }
           ]
@@ -3578,7 +3617,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 27,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L27",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L27",
               "excerpt": "[sheval](https://arxiv.org/abs/2609.05944v2) as an architectural reference only. Its repository's code"
             }
           ]
@@ -3640,13 +3679,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 217,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L217",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L217",
               "excerpt": "[SPES: A Symbolic Approach to Proving Query Equivalence Under Bag Semantics (ICDE 2022), arXiv v2](https://arxiv.org/abs/2004.00481v2)"
             },
             {
               "file": "docs/join-aggregate-fixtures.md",
               "line": 84,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/join-aggregate-fixtures.md#L84",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/join-aggregate-fixtures.md#L84",
               "excerpt": "[SPES: A Symbolic Approach to Proving Query Equivalence Under Bag Semantics, arXiv v2](https://arxiv.org/abs/2004.00481v2)"
             }
           ]
@@ -3944,25 +3983,25 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 30,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L30",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L30",
               "excerpt": "[Union and Intersection of all Justifications](https://arxiv.org/abs/2109.11216); no code from that work is used"
             },
             {
               "file": "docs/owl-explanations.md",
               "line": 32,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/owl-explanations.md#L32",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/owl-explanations.md#L32",
               "excerpt": "Justifications](https://arxiv.org/abs/2109.11216), ESWC 2022, applied here to generated axiom groups over fixed"
             },
             {
               "file": "CHANGELOG.md",
-              "line": 687,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/CHANGELOG.md#L687",
+              "line": 695,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/CHANGELOG.md#L695",
               "excerpt": "- `reason --explain-inconsistency` reports `uniqueness` (`unique`, `not_unique` or `not_proven`) for a completed subset-minimal explanation. One extra same-HermiT check per retained group removes only that group from the"
             },
             {
               "file": "docs/releases/v0.14.0.md",
               "line": 13,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.14.0.md#L13",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.14.0.md#L13",
               "excerpt": "- **Uniqueness of OWL explanations.** A completed subset-minimal explanation from `reason --explain-inconsistency` reports `uniqueness`. One extra same-HermiT check per retained group removes only that group from the ful"
             }
           ]
@@ -3993,13 +4032,13 @@
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 95,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L95",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L95",
               "excerpt": "[VeriEQL](https://doi.org/10.1145/3649849). No VeriEQL source is copied or bundled; its"
             },
             {
               "file": "docs/releases/v0.3.0.md",
               "line": 111,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.3.0.md#L111",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.3.0.md#L111",
               "excerpt": "The integrity-domain method is informed by [VeriEQL](https://doi.org/10.1145/3649849); no CC BY-NC-SA"
             }
           ]
@@ -4030,13 +4069,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 103,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L103",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L103",
               "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 152,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L152",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L152",
               "excerpt": "This original implementation draws on [Vulcan](https://doi.org/10.1145/3586049) and"
             }
           ]
@@ -4376,13 +4415,13 @@
             {
               "file": "docs/contract-report.md",
               "line": 4,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/contract-report.md#L4",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/contract-report.md#L4",
               "excerpt": "[Data Contract CLI](https://github.com/datacontract/datacontract-cli/tree/09e779dfeaec63ee60edc102e7a3d6970e34e16b)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L63",
               "excerpt": "informed by [Data Contract CLI](https://github.com/datacontract/datacontract-cli)"
             }
           ]
@@ -4850,13 +4889,25 @@
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 255,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/skills/semantic-crosscheck/references/counterexamples.md#L255",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L255",
               "excerpt": "[Hypothesis](https://github.com/HypothesisWorks/hypothesis), and the counterexample/reduction approach"
+            },
+            {
+              "file": "docs/releases/v0.28.0.md",
+              "line": 65,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L65",
+              "excerpt": "- [Hypothesis](https://github.com/HypothesisWorks/hypothesis): already referenced for counterexamples; generated-input/permutation/boundary-test ideas are extended to numerical regression cases, without a new runtime dep"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 228,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L228",
+              "excerpt": "[Hypothesis](https://github.com/HypothesisWorks/hypothesis); Hypothesis is not installed or bundled."
             }
           ]
         }
       ],
-      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다. AV v0.44.0 reuses the existing development-only hypothesis==6.168.5 dependency for authored-record mutation and revoke/declared-derivative/rebuild/fresh-retrieve/prepare/simulated-send invariants. This extends shipped proposal/operation lifecycle machines; it is not a new stateful framework or production dependency. Earlier AV and SXC uses remain recorded. Upstream LICENSE.txt at 9ab0be61aaaa27396fc1bbf4b34e7925cc68d1e2 states MPL-2.0 with noted exceptions. No upstream implementation source is copied into runtime."
+      "note": "공개 프로젝트의 설계·평가·구현 참고 기록입니다. 모든 코드 도입이나 라이선스 전수 감사를 뜻하지 않습니다. AV v0.44.0 reuses the existing development-only hypothesis==6.168.5 dependency for authored-record mutation and revoke/declared-derivative/rebuild/fresh-retrieve/prepare/simulated-send invariants. This extends shipped proposal/operation lifecycle machines; it is not a new stateful framework or production dependency. Earlier AV and SXC uses remain recorded. Upstream LICENSE.txt at 9ab0be61aaaa27396fc1bbf4b34e7925cc68d1e2 states MPL-2.0 with noted exceptions. No upstream implementation source is copied into runtime. SXC v0.28.0 reuses the existing generated-input and failure-shrinking reference for numerical regression/permutation/boundary tests. No new runtime dependency or upstream source is copied; the earlier agentic-vault and semantic-crosscheck uses remain recorded."
     },
     {
       "id": "github:ukgovernmentbeis/inspect_ai",
@@ -4972,7 +5023,7 @@
             {
               "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
               "line": 3,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
               "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
             }
           ]
@@ -5082,13 +5133,13 @@
             {
               "file": "docs/sql-structure.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/sql-structure.md#L35",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/sql-structure.md#L35",
               "excerpt": "and [libpg_query's licenses](https://github.com/pganalyze/libpg_query#license)."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 72,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L72",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L72",
               "excerpt": "[libpg_query](https://github.com/pganalyze/libpg_query) through the optional"
             }
           ]
@@ -5153,7 +5204,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 143,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/owl-explanations.md#L143",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/owl-explanations.md#L143",
               "excerpt": "[MARCO](https://github.com/liffiton/MARCO), and"
             }
           ]
@@ -5365,13 +5416,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
-              "line": 188,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/README.md#L188",
+              "line": 190,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/README.md#L190",
               "excerpt": "| Node.js + npm | `cube-install`, `cube`, `verify` | **Node.js 22 이상** | 2027-04-30 · [Node.js 릴리스 일정](https://github.com/nodejs/Release) |"
             }
           ]
@@ -5453,13 +5504,13 @@
             {
               "file": "docs/semantic-preflight.md",
               "line": 183,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/semantic-preflight.md#L183",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/semantic-preflight.md#L183",
               "excerpt": "is enterprise-platform context. [NVIDIA Auto Ontology at `c4495670947eb7b4616f0dd9900e5ced2a48ca1e`](https://github.com/NVIDIA/auto-ontology/tree/c4495670947eb7b4616f0dd9900e5ced2a48ca1e)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 47,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L47",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L47",
               "excerpt": "and [Auto Ontology at c4495670947eb7b4616f0dd9900e5ced2a48ca1e](https://github.com/NVIDIA/auto-ontology/tree/c4495670947eb7b4616f0dd9900e5ced2a48ca1e),"
             }
           ]
@@ -5672,7 +5723,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 144,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/owl-explanations.md#L144",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/owl-explanations.md#L144",
               "excerpt": "[OWL Explanation](https://github.com/matthewhorridge/owlexplanation). These are algorithm/design references;"
             }
           ]
@@ -5703,7 +5754,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 103,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L103",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L103",
               "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
             }
           ]
@@ -5736,13 +5787,13 @@
             {
               "file": "docs/sql-structure.md",
               "line": 34,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/sql-structure.md#L34",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/sql-structure.md#L34",
               "excerpt": "not bundled in this project. See [the binding source](https://github.com/lelit/pglast/tree/v7.22)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 73,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L73",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L73",
               "excerpt": "[pglast](https://github.com/lelit/pglast) Python binding, pinned to 7.22"
             }
           ]
@@ -5810,19 +5861,19 @@
             {
               "file": "docs/provenance-fixtures.md",
               "line": 12,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/provenance-fixtures.md#L12",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/provenance-fixtures.md#L12",
               "excerpt": "[QueryAdequacy.lean at commit 92af5cf2a057dfb46aab0a364d4ade5fde9c5699, lines 17–46](https://github.com/PierreSenellart/provenance-lean/blob/92af5cf2a057dfb46aab0a364d4ade5fde9c5699/Provenance/QueryAdequacy.lean#L17-L46)"
             },
             {
               "file": "docs/provenance-fixtures.md",
               "line": 49,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/provenance-fixtures.md#L49",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/provenance-fixtures.md#L49",
               "excerpt": "[Nat.counterexample_diff_adequacy, lines 411–452](https://github.com/PierreSenellart/provenance-lean/blob/92af5cf2a057dfb46aab0a364d4ade5fde9c5699/Provenance/QueryAdequacy.lean#L411-L452)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 83,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L83",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L83",
               "excerpt": "and [provenance-lean](https://github.com/PierreSenellart/provenance-lean)"
             }
           ]
@@ -5853,7 +5904,7 @@
             {
               "file": "docs/releases/v0.19.1.md",
               "line": 121,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.19.1.md#L121",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.19.1.md#L121",
               "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
             }
           ]
@@ -6092,13 +6143,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 219,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L219",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L219",
               "excerpt": "[public SPES repository](https://github.com/georgia-tech-db/spes/tree/8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2)"
             },
             {
               "file": "docs/join-aggregate-fixtures.md",
               "line": 86,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/join-aggregate-fixtures.md#L86",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/join-aggregate-fixtures.md#L86",
               "excerpt": "[public SPES repository pinned at 8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2](https://github.com/georgia-tech-db/spes/tree/8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2)"
             }
           ]
@@ -6129,19 +6180,37 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 25,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L25",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L25",
               "excerpt": "[SQLancer](https://github.com/sqlancer/sqlancer), whose project is MIT-licensed. No SQLancer source is"
             },
             {
               "file": "docs/mutation-coverage.md",
               "line": 72,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/mutation-coverage.md#L72",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/mutation-coverage.md#L72",
               "excerpt": "prior art: [SQLancer](https://github.com/sqlancer/sqlancer). No SQLancer dependency or comparator is"
+            },
+            {
+              "file": "docs/releases/v0.28.0.md",
+              "line": 67,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.28.0.md#L67",
+              "excerpt": "- [SQLancer pinned source](https://github.com/sqlancer/sqlancer/tree/a513c87781ed879e5aae6bc78f8b6c6056bd7a99): existing differential-testing reference; no source/oracle is copied or installed, and Cloudberry-specific co"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 232,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L232",
+              "excerpt": "and the already referenced [SQLancer project, pinned source](https://github.com/sqlancer/sqlancer/tree/a513c87781ed879e5aae6bc78f8b6c6056bd7a99)."
+            },
+            {
+              "file": "skills/semantic-crosscheck/references/counterexamples.md",
+              "line": 256,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/skills/semantic-crosscheck/references/counterexamples.md#L256",
+              "excerpt": "in [SQLancer](https://github.com/sqlancer/sqlancer). Neither project is bundled or copied, and no new"
             }
           ]
         }
       ],
-      "note": "TLP 분할 검사와 반례·축소 방법의 설계 참고입니다. SQLancer 코드를 도입한 것은 아닙니다."
+      "note": "TLP 분할 검사와 반례·축소 방법의 설계 참고입니다. SQLancer 코드를 도입한 것은 아닙니다. SXC v0.28.0 reuses the existing differential-testing reference for a bounded real-plan diagnostic; the release pins upstream a513c87781ed879e5aae6bc78f8b6c6056bd7a99 and says Cloudberry-specific code is not a PostgreSQL drop-in. No SQLancer source or oracle is copied or installed. The counterexamples.md citation is an earlier use added here to complete coverage, not a new use."
     },
     {
       "id": "github:tobymao/sqlglot",
@@ -6167,7 +6236,7 @@
             {
               "file": "docs/releases/v0.19.1.md",
               "line": 121,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.19.1.md#L121",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/releases/v0.19.1.md#L121",
               "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
             }
           ]
@@ -6233,13 +6302,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 211,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L211",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L211",
               "excerpt": "[StrykerJS v10.1.1's disableBail option](https://github.com/stryker-mutator/stryker-js/blob/959127763e5bbe2eb65f5341a8161780d6d8a476/packages/api/schema/stryker-core.json#L499-L503)"
             },
             {
               "file": "docs/mutation-matrix.md",
               "line": 77,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/mutation-matrix.md#L77",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/mutation-matrix.md#L77",
               "excerpt": "[StrykerJS v10.1.1 `disableBail`](https://github.com/stryker-mutator/stryker-js/blob/959127763e5bbe2eb65f5341a8161780d6d8a476/packages/api/schema/stryker-core.json#L499-L503)"
             }
           ]
@@ -6474,13 +6543,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 199,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/THIRD_PARTY.md#L199",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/THIRD_PARTY.md#L199",
               "excerpt": "| [W3C SHACL test suite](https://github.com/w3c/data-shapes) (`data-shapes-test-suite/tests/core`) | commit `1dfcd9f30cab70ac02b049611eeba451fa1308e7` | W3C Software and Document License | Expected reports for `shacl-cor"
             },
             {
               "file": "docs/shacl-corpus.md",
               "line": 104,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/shacl-corpus.md#L104",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/shacl-corpus.md#L104",
               "excerpt": "[w3c/data-shapes](https://github.com/w3c/data-shapes) that contains"
             }
           ]
@@ -6657,7 +6726,7 @@
             {
               "file": "docs/superpowers/specs/2026-10-25-verification-hardening.md",
               "line": 22,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
               "excerpt": "The selected approach extends existing comparison and TLP mechanisms. A separate NoREC stage would duplicate standalone dispatch and replay machinery. A third SHACL engine and DQP are later research candidates rather tha"
             }
           ]
@@ -6689,7 +6758,7 @@
             {
               "file": "docs/superpowers/plans/2026-11-03-response-witness-hardening.md",
               "line": 18,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/9a42f68cbd04165762c937ac4b326c8e0f51624e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
               "excerpt": "- User authorization covers this first research bundle and necessary local verification/integration. Broader Gungnir/MC, new reasoners, deployment, releases and active installations are outside this change."
             }
           ]
@@ -6829,14 +6898,14 @@
     }
   ],
   "counts": {
-    "paper": 75,
+    "paper": 76,
     "project": 67,
     "article": 34,
     "format": 7,
     "research-name": 6,
-    "total": 189,
+    "total": 190,
     "shared": 5,
-    "citations": 343
+    "citations": 350
   },
   "countsByPlugin": {
     "agentic-vault": {
@@ -6850,14 +6919,14 @@
       "citations": 267
     },
     "semantic-crosscheck": {
-      "paper": 15,
+      "paper": 16,
       "project": 17,
       "article": 6,
       "format": 4,
       "research-name": 2,
-      "total": 44,
+      "total": 45,
       "shared": 5,
-      "citations": 76
+      "citations": 83
     }
   }
 }
