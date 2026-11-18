@@ -29,6 +29,7 @@ EXPECTED_COVERAGE={
     ('v0.52.0','v0.28.0'):(60,57,29,190,350),
     ('v0.52.1','v0.28.0'):(60,57,29,190,350),
     ('v0.53.0','v0.28.0'):(62,60,29,195,359),
+    ('v0.53.0','v0.29.0'):(62,60,29,195,359),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -52,7 +53,7 @@ class DeliveryTests(unittest.TestCase):
                       'v0.21.0':(14,34,58,5),'v0.21.1':(14,34,58,5),
                       'v0.24.0':(15,38,66,5),
                       'v0.27.0':(15,44,76,5),
-                      'v0.28.0':(16,45,83,5)}
+                      'v0.28.0':(16,45,83,5),'v0.29.0':(16,45,83,5)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 

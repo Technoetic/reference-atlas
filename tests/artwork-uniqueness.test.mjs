@@ -238,11 +238,11 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
-    if(!published&&catalog.snapshots['semantic-crosscheck'].version!=='v0.28.0'){
+    if(!published){
       assert.equal(source,undefined,'An unreleased snapshot must not invent a public source use');
       assert.equal(record,undefined,'Artwork assignment is pending the actual public source citation');
       continue;
