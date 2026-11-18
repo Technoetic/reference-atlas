@@ -138,6 +138,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(manifest.count,manifest.assets.length);
   assert.equal(new Set(manifest.assets.map(asset=>asset.sourceId)).size,manifest.assets.length);
   assert.equal(new Set(manifest.assets.map(asset=>asset.output)).size,manifest.assets.length);
+  assert.equal(new Set(manifest.assets.map(asset=>asset.label)).size,manifest.assets.length);
   assert.equal(new Set(manifest.assets.map(asset=>asset.prompt)).size,manifest.assets.length);
   assert.equal(new Set(manifest.assets.map(asset=>asset.factualConcept)).size,manifest.assets.length);
   const hashes=[];
@@ -158,16 +159,10 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-const uncommissionedAv053=new Set([
-  'doi:10.18653/v1/d19-1382','github:google-research-datasets/paws',
-  'arxiv:2611.02017','github:miraclecsc/switch-swe','github:simplistix/sybil'
-]);
-
-test('all 190 commissioned sources have their own image in card and detail views',()=>{
-  assert.equal(manifest.count,190);
+test('every current catalog source renders its dedicated image in card and detail views',()=>{
+  assert.equal(manifest.count,catalog.sources.length);
   const images=[];
   for(const source of catalog.sources){
-    if(uncommissionedAv053.has(source.id)) continue;
     const art=sourceArtwork(source);
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
@@ -180,7 +175,6 @@ test('all 190 commissioned sources have their own image in card and detail views
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
   assert.equal(images.length,manifest.assets.length);
-  assert.equal(images.length+catalog.sources.filter(source=>uncommissionedAv053.has(source.id)).length,catalog.sources.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{
@@ -384,24 +378,37 @@ test('an unillustrated future source never silently borrows another source image
   }
 });
 
-test('only the five uncommissioned v0.53.0 sources render the text fallback',()=>{
-  const fallbacks=catalog.sources.filter(source=>!sourceArtwork(source).src).map(source=>source.id);
-  assert.deepEqual(new Set(fallbacks),uncommissionedAv053);
-  for(const id of fallbacks){
-    const source=catalog.sources.find(item=>item.id===id);
-    for(const detail of [false,true]){
-      const cover=artworkCover(source,{detail});
-      assert.ok(cover.includes('is-art-fallback'));
-      assert.ok(!cover.includes('<img'));
-    }
+test('the five v0.53.0 covers retain the source and delivery provenance of each independent commission',()=>{
+  const expected=[
+    ['doi:10.18653/v1/d19-1382','paws-x','https://aclanthology.org/D19-1382/'],
+    ['arxiv:2611.02017','switch-swe-paper','https://arxiv.org/abs/2611.02017'],
+    ['github:google-research-datasets/paws','paws-dataset','https://github.com/google-research-datasets/paws'],
+    ['github:miraclecsc/switch-swe','switch-swe-project','https://github.com/Miraclecsc/Switch-SWE'],
+    ['github:simplistix/sybil','sybil','https://github.com/simplistix/sybil']
+  ];
+  const records=manifest.assets.slice(190,195);
+  assert.equal(records.length,expected.length);
+  assert.equal(new Set(records.map(record=>record.delivery.sourceSha256)).size,expected.length);
+  for(const [offset,record] of records.entries()){
+    const [id,slug,referenceUrl]=expected[offset];
+    assert.equal(record.sourceId,id);
+    const source=catalog.sources.find(item=>item.id===record.sourceId);
+    assert.equal(record.index,191+offset);
+    assert.equal(record.kind,source.kind);
+    assert.equal(record.title,source.title);
+    assert.equal(sourceArtwork(source).label,record.label);
+    assert.equal(record.output,`media/cards/card-${record.index}-${slug}.webp`);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(record.generationReferenceUrls.includes(referenceUrl));
+    if(avCatalogVersion==='v0.53.0') assert.deepEqual(record.generationEvidenceUrls,record.currentEvidenceUrls);
   }
 });
 
 test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their exact commissioned card and detail images',()=>{
-  const records=manifest.assets.slice(180);
+  const records=manifest.assets.slice(180,190);
   assert.deepEqual(records.map(asset=>[asset.sourceId,asset.index,asset.output,asset.kind,asset.label]),
     completedCurrentArtwork.map(([id,index,slug,kind,label])=>[id,index,`media/cards/card-${index}-${slug}.webp`,kind,label]));
-  assert.equal(new Set(manifest.assets.map(asset=>asset.label)).size,190);
   for(const [id,index,slug,kind,label] of completedCurrentArtwork){
     const source=catalog.sources.find(source=>source.id===id);
     assert.ok(source,`Missing catalog source: ${id}`);
@@ -432,6 +439,14 @@ test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their
       assert.ok(html.includes(`src="${expected}"`));
     }
   }
+});
+
+test('the first 190 commissioned covers retain their immutable generation records',()=>{
+  const records=manifest.assets.slice(0,190).map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  assert.equal(createHash('sha256').update(JSON.stringify(records)).digest('hex'),
+    '9566255ce1dd9d1d1d1689b5a5b37183ed6a1298cbf660c4944bcb0ec52447f3');
 });
 
 test('the new artwork preserves all first 180 generation records at the current citation snapshot',()=>{

@@ -190,4 +190,9 @@ export const artworkIndex = Object.freeze({
   "doi:10.1145/3654991": Object.freeze({key: "card-188-query-plans", src: new URL("../../media/cards/card-188-query-plans.webp", import.meta.url).href, label: "DIFFERENTIAL QUERY ROUTES", word: "DIFFERENTIAL QUERY ROUTES"}),
   "arxiv:2607.10139": Object.freeze({key: "card-189-model-jury", src: new URL("../../media/cards/card-189-model-jury.webp", import.meta.url).href, label: "CROSS-MODEL JURY", word: "CROSS-MODEL JURY"}),
   "arxiv:2510.09023": Object.freeze({key: "card-190-adaptive-attacks", src: new URL("../../media/cards/card-190-adaptive-attacks.webp", import.meta.url).href, label: "ADAPTIVE BOUNDARY PROBE", word: "ADAPTIVE BOUNDARY PROBE"}),
+  "doi:10.18653/v1/d19-1382": Object.freeze({key: "card-191-paws-x", src: new URL("../../media/cards/card-191-paws-x.webp", import.meta.url).href, label: "SAME WORDS, SHIFTED MEANING", word: "SAME WORDS, SHIFTED MEANING"}),
+  "arxiv:2611.02017": Object.freeze({key: "card-192-switch-swe-paper", src: new URL("../../media/cards/card-192-switch-swe-paper.webp", import.meta.url).href, label: "INTERRUPTED TASKS", word: "INTERRUPTED TASKS"}),
+  "github:google-research-datasets/paws": Object.freeze({key: "card-193-paws-dataset", src: new URL("../../media/cards/card-193-paws-dataset.webp", import.meta.url).href, label: "PAIRED EXAMPLES", word: "PAIRED EXAMPLES"}),
+  "github:miraclecsc/switch-swe": Object.freeze({key: "card-194-switch-swe-project", src: new URL("../../media/cards/card-194-switch-swe-project.webp", import.meta.url).href, label: "SESSION AND CHECKOUT", word: "SESSION AND CHECKOUT"}),
+  "github:simplistix/sybil": Object.freeze({key: "card-195-sybil", src: new URL("../../media/cards/card-195-sybil.webp", import.meta.url).href, label: "EXECUTABLE EXAMPLES", word: "EXECUTABLE EXAMPLES"}),
 });

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 190,
+  "count": 195,
   "assets": [
     {
       "index": 1,
@@ -5554,6 +5554,218 @@
       },
       "generationReferenceUrls": [
         "https://arxiv.org/abs/2510.09023"
+      ]
+    },
+    {
+      "index": 191,
+      "sourceId": "doi:10.18653/v1/d19-1382",
+      "title": "PAWS-X: A Cross-lingual Adversarial Dataset for Paraphrase Identification",
+      "kind": "paper",
+      "label": "SAME WORDS, SHIFTED MEANING",
+      "factualConcept": "PAWS-X studies whether sentences with high word overlap preserve meaning across languages; reordered roles can reverse their meaning.",
+      "prompt": "Use case: stylized-concept. Asset type: dedicated art for a research-library source card. Create ONE original landscape 3:2 editorial cover, a premium tangible object photographed in a controlled studio. The central silhouette should read immediately at small thumbnail size, fully within the middle 72% of the wide frame; generous crop-safe margins. No lettering, digits, labels, logo, watermarks, people or UI.\nA black-ink intaglio diptych on a single sheet of warm ivory cotton paper. In the left panel one orange fox is visibly chasing a dark teal hare to the right; in the right panel the very same small hare chases that fox to the right. Use a playful clean running silhouette with a clear leader and pursuer in each, enough separation that the reversal is instant. Subtle differently coloured embossed paper edges suggest translation editions of the same print. Dead-on editorial print photograph, crisp fox tail and long rabbit ears, raking light, uncluttered warm cream field. Focus is identical participants exchanging roles; two precise small scenes side by side, no other animals or decorative details.",
+      "output": "media/cards/card-191-paws-x.webp",
+      "sha256": "d89a0d4cd1b48b9c4e586c4b01f22aab7a29cc849e57e1210e0d7bb45a0a6bfa",
+      "bytes": 149732,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "delivery": {
+        "sourceSha256": "be046c80f6d9275a30cd29202962efd6ff3df18aab0d2f3408d44f490c8ccae2",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://aclanthology.org/D19-1382/"
+      ]
+    },
+    {
+      "index": 192,
+      "sourceId": "arxiv:2611.02017",
+      "title": "Switch-SWE: Do Coding Agents Hold Focus When Switching Between Unfinished Tasks?",
+      "kind": "paper",
+      "label": "INTERRUPTED TASKS",
+      "factualConcept": "Switch-SWE compares uninterrupted and interleaved coding tasks using a common verifier for the final focus task.",
+      "prompt": "Use case: stylized-concept. Asset type: dedicated art for a research-library source card. Create ONE original landscape 3:2 editorial cover, a premium tangible object photographed in a controlled studio. The central silhouette should read immediately at small thumbnail size, fully within the middle 72% of the wide frame; generous crop-safe margins. No lettering, digits, labels, logo, watermarks, people or UI.\nA single monumental double exposure of mechanical clockwork, designed as two precise paths across a midnight-blue board viewed from slightly above. Along the upper path an amber thread runs straight between two brass spool hubs. Along the lower matched path a second amber thread briefly interleaves with a cyan thread around a separate blue spool, then returns to its original trajectory. Both amber threads arrive at two identical notches of one ivory inspection gauge at the right. The blue thread stays on its own auxiliary spool. Bold simplified cinematic studio sculpture with a few large spools, warm brass, matte midnight enamel, one clear comparison that reads at thumbnail size. Avoid computers, tracks with trains, faux graphs, arrows, miniature text or tangled wire.",
+      "output": "media/cards/card-192-switch-swe-paper.webp",
+      "sha256": "829b8af760177a4fe903aa4dbc7b97bd7b93fcac827f499f020c8585beb29742",
+      "bytes": 57298,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "delivery": {
+        "sourceSha256": "4a37f72dfae83413f366b9d9eeee90cf2e89de45c6445317faa5051b913cf673",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://arxiv.org/abs/2611.02017"
+      ]
+    },
+    {
+      "index": 193,
+      "sourceId": "github:google-research-datasets/paws",
+      "title": "google-research-datasets/paws",
+      "kind": "project",
+      "label": "PAIRED EXAMPLES",
+      "factualConcept": "The PAWS dataset repository distributes labeled sentence pairs with substantial word overlap, including pairs with different meanings.",
+      "prompt": "Use case: stylized-concept. Asset type: dedicated art for a research-library source card. Create ONE original landscape 3:2 editorial cover, a premium tangible object photographed in a controlled studio. The central silhouette should read immediately at small thumbnail size, fully within the middle 72% of the wide frame; generous crop-safe margins. No lettering, digits, labels, logo, watermarks, people or UI.\nA refined museum specimen drawer photographed almost from above. Horizontal strips of black archival card carry paired sequences of removable geometric letterpress sorts, using only three unmistakable nonalphabetic forms: a vermilion disc, a cobalt triangle, a brass square. The top two strips repeat the exact same shape order; in the lower pair the two end pieces are visibly transposed, with small brass cylindrical registration pins opposite each pair. Dark walnut drawer lip, charcoal felt, dramatic bright enamel shapes, clean catalog photography. The dominant object is the single drawer and its organized paired specimens. Do not depict animals, books, ink printing an actual word, or true/false text.",
+      "output": "media/cards/card-193-paws-dataset.webp",
+      "sha256": "4c9dbd62b9e6608fcd30e00462d75b450c1bff31e451fcd64e4c8e30a9bd0270",
+      "bytes": 125506,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L15",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/ko-order-recall.md#L30"
+      ],
+      "delivery": {
+        "sourceSha256": "5bab1e675af0d3a69aad33bc6e70523191c8e848b5ed897d429f36a0cb1ff32f",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://github.com/google-research-datasets/paws"
+      ]
+    },
+    {
+      "index": 194,
+      "sourceId": "github:miraclecsc/switch-swe",
+      "title": "Miraclecsc/Switch-SWE",
+      "kind": "project",
+      "label": "SESSION AND CHECKOUT",
+      "factualConcept": "The Switch-SWE task package describes retaining the agent session across task changes and evaluating the final focus checkout.",
+      "prompt": "Use case: stylized-concept. Asset type: dedicated art for a research-library source card. Create ONE original landscape 3:2 editorial cover, a premium tangible object photographed in a controlled studio. The central silhouette should read immediately at small thumbnail size, fully within the middle 72% of the wide frame; generous crop-safe margins. No lettering, digits, labels, logo, watermarks, people or UI.\nOne compact industrial bench fixture in pale sage enamel, photographed three-quarter front on a calm sage-gray cyclorama. Two clearly separate removable workpiece trays sit side by side, one copper and one anodized blue. A single slim jointed inspection head rides one continuous overhead rail above both trays; it has returned to the copper tray and lowers a machined go/no-go ring over its matching copper workpiece. The blue tray holds a distinct interrupted assembly. Restrained brushed steel, precise hardware, clean grazing shadows. Few elements, contemporary industrial-design magazine cover, one rail, one head, two trays. Do not use threads, spools, screens, arrows or printed symbols.",
+      "output": "media/cards/card-194-switch-swe-project.webp",
+      "sha256": "427be5a78b2a869e7a1a4849e5dda20e036b309c0e3d3c09c22cee1dd8ab617a",
+      "bytes": 43896,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L16",
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/handoff-resume.md#L47"
+      ],
+      "delivery": {
+        "sourceSha256": "a6b5504acba89181cdc72059b50b80059c699cf545fae050f11389ef1078a2d3",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://github.com/Miraclecsc/Switch-SWE"
+      ]
+    },
+    {
+      "index": 195,
+      "sourceId": "github:simplistix/sybil",
+      "title": "simplistix/sybil",
+      "kind": "project",
+      "label": "EXECUTABLE EXAMPLES",
+      "factualConcept": "Sybil extracts examples from documentation, executes them, and can compare the observed result with expected output.",
+      "prompt": "Use case: stylized-concept. Asset type: dedicated art for a research-library source card. Create ONE original landscape 3:2 editorial cover, a premium tangible object photographed in a controlled studio. The central silhouette should read immediately at small thumbnail size, fully within the middle 72% of the wide frame; generous crop-safe margins. No lettering, digits, labels, logo, watermarks, people or UI.\nA sculptural open off-white manual with a single die-cut rectangle in its right page, standing open like a tent. An orange strip carrying three solid relief shapes emerges from the page, goes through a small inset mechanical roller, and meets a second, stationary strip whose three recessed shapes match the raised strip exactly. This stages a documentation example becoming an executable test and meeting its expected result. Bold coral-orange cyclorama, white paper grain, graphite roller, crisp matt shadow. Close product photography in a restrained modern editorial style. No writing, book title, typographic marks, checkmarks, human hands or terminal screen.",
+      "output": "media/cards/card-195-sybil.webp",
+      "sha256": "6f1a5615ac0b6160a227c2d28ab1c2871041fb3b80dbf85a73fb3e4389aa4073",
+      "bytes": 47620,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L17"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L17"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/c0f4a3cb4547897ad3e38a8a663e3aaa390db31a/docs/releases/v0.53.0.md#L17"
+      ],
+      "delivery": {
+        "sourceSha256": "88b793c24e6803e3f823b7c5f1e3dc4c5f2cfed719ac9fd26c7b4cd95090b646",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://github.com/simplistix/sybil"
       ]
     }
   ],
