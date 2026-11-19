@@ -159,11 +159,22 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('every current catalog source renders its dedicated image in card and detail views',()=>{
-  assert.equal(manifest.count,catalog.sources.length);
+test('commissioned sources have dedicated images and the new software record uses its text cover',()=>{
+  const uncommissioned='doi:10.5281/zenodo.24361690';
+  assert.ok(catalog.sources.some(source=>source.id===uncommissioned));
+  assert.equal(manifest.count,catalog.sources.length-1);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
+    if(source.id===uncommissioned){
+      assert.equal(art.src,null);
+      for(const detail of [false,true]){
+        const html=artworkCover(source,{detail});
+        assert.ok(html.includes('is-art-fallback'));
+        assert.ok(!html.includes('<img'));
+      }
+      continue;
+    }
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -232,7 +243,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);

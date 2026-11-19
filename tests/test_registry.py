@@ -23,6 +23,19 @@ def fixture():
     }]}
 
 class IdentityTests(unittest.TestCase):
+    def test_connectome_software_record_resolves_from_archive_and_repository_identifiers(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        identifier='doi:10.5281/zenodo.24361690'
+        for candidate in ('10.5281/zenodo.24361690', '10.5281/zenodo.24355565',
+                          'https://zenodo.org/records/24361690',
+                          'https://github.com/ai3inc/connectome-cognition-benchmark/tree/v1.1.0'):
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(identifier,'project'))
+        self.assertEqual(find_matches(catalog,'connectome-cognition-benchmark')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
