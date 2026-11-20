@@ -195,4 +195,6 @@ export const artworkIndex = Object.freeze({
   "github:google-research-datasets/paws": Object.freeze({key: "card-193-paws-dataset", src: new URL("../../media/cards/card-193-paws-dataset.webp", import.meta.url).href, label: "PAIRED EXAMPLES", word: "PAIRED EXAMPLES"}),
   "github:miraclecsc/switch-swe": Object.freeze({key: "card-194-switch-swe-project", src: new URL("../../media/cards/card-194-switch-swe-project.webp", import.meta.url).href, label: "SESSION AND CHECKOUT", word: "SESSION AND CHECKOUT"}),
   "github:simplistix/sybil": Object.freeze({key: "card-195-sybil", src: new URL("../../media/cards/card-195-sybil.webp", import.meta.url).href, label: "EXECUTABLE EXAMPLES", word: "EXECUTABLE EXAMPLES"}),
+  "github:affaan-m/ecc": Object.freeze({key: "card-196-ecc", src: new URL("../../media/cards/card-196-ecc.webp", import.meta.url).href, label: "HOOK WIRING", word: "HOOK WIRING"}),
+  "doi:10.5281/zenodo.24361690": Object.freeze({key: "card-197-connectome-folds", src: new URL("../../media/cards/card-197-connectome-folds.webp", import.meta.url).href, label: "PAIRED FOLD RESULTS", word: "PAIRED FOLD RESULTS"}),
 });

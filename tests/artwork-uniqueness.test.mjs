@@ -159,24 +159,11 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
-  const uncommissioned=new Set(['doi:10.5281/zenodo.24361690','github:affaan-m/ecc']);
-  for(const id of uncommissioned){
-    assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
-  }
-  assert.equal(manifest.count,catalog.sources.length-uncommissioned.size);
+test('every catalog source has its own image on its card and detail page',()=>{
+  assert.equal(manifest.count,catalog.sources.length);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(uncommissioned.has(source.id)){
-      assert.equal(art.src,null);
-      for(const detail of [false,true]){
-        const html=artworkCover(source,{detail});
-        assert.ok(html.includes('is-art-fallback'));
-        assert.ok(!html.includes('<img'));
-      }
-      continue;
-    }
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -454,12 +441,38 @@ test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their
   }
 });
 
-test('the first 190 commissioned covers retain their immutable generation records',()=>{
-  const records=manifest.assets.slice(0,190).map(asset=>Object.fromEntries(
+test('ECC and the connectome benchmark have their assigned artwork and generation evidence',()=>{
+  const projects = [
+    [196, 'github:affaan-m/ecc', 'ecc', 'HOOK WIRING'],
+    [197, 'doi:10.5281/zenodo.24361690', 'connectome-folds', 'PAIRED FOLD RESULTS']
+  ];
+  const originalHashes = new Set();
+  for (const [index, id, slug, label] of projects) {
+    const source = catalog.sources.find(item => item.id === id);
+    const record = manifest.assets.find(asset => asset.sourceId === id);
+    assert.ok(record, `Missing artwork for ${id}`);
+    assert.equal(record.index, index);
+    assert.equal(record.kind, 'project');
+    assert.equal(record.title, source.title);
+    assert.equal(record.label, label);
+    assert.equal(sourceArtwork(source).label, label);
+    assert.equal(record.output, `media/cards/card-${index}-${slug}.webp`);
+    assert.deepEqual(record.dimensions, [960, 640]);
+    assert.match(record.delivery.sourceSha256, /^[0-9a-f]{64}$/);
+    originalHashes.add(record.delivery.sourceSha256);
+    if (avCatalogVersion === 'v0.54.0' && catalog.snapshots['semantic-crosscheck'].version === 'v0.30.0') {
+      assert.deepEqual(record.generationEvidenceUrls, record.currentEvidenceUrls);
+    }
+  }
+  assert.equal(originalHashes.size, projects.length);
+});
+
+test('the first 195 commissioned covers retain their immutable generation records',()=>{
+  const records=manifest.assets.slice(0,195).map(asset=>Object.fromEntries(
     Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
   ));
   assert.equal(createHash('sha256').update(JSON.stringify(records)).digest('hex'),
-    '9566255ce1dd9d1d1d1689b5a5b37183ed6a1298cbf660c4944bcb0ec52447f3');
+    '653e968e8acad6396d15d1bb2163a3d33da7a12c6c124ea19fca3a9ec45f5893');
 });
 
 test('the new artwork preserves all first 180 generation records at the current citation snapshot',()=>{

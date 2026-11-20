@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 195,
+  "count": 197,
   "assets": [
     {
       "index": 1,
@@ -5766,6 +5766,104 @@
       },
       "generationReferenceUrls": [
         "https://github.com/simplistix/sybil"
+      ]
+    },
+    {
+      "index": 196,
+      "sourceId": "github:affaan-m/ecc",
+      "title": "affaan-m/ECC",
+      "kind": "project",
+      "label": "HOOK WIRING",
+      "factualConcept": "ECC inspects hook configuration and tracks the files installed by its tooling.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about ECC's hook wiring diagnostics and install-state tracking. Macro industrial product photograph of one circular deep teal enamel patch panel supported upright on an ochre studio floor, four bright orange braided jumper cables sweeping between neatly machined ceramic sockets. A single unconnected plug rests in a precisely matching recessed position on an adjacent little inventory plate, and a glass-tipped inspection probe hovers above its empty socket: the visual subject is inspection of how a system is wired. Frame the entire compact asymmetric object within the central 70% of the wide image, striking silhouette and tangible materials, directional studio daylight, subtle film grain, deep petrol shadows, editorial art direction. No screens, lettering, labels, numbers, people, logos, borders, captions, or watermark.",
+      "output": "media/cards/card-196-ecc.webp",
+      "sha256": "4dcefb98549442e787576398ef248a430db5000a9595ec74d3d079b271c6c52b",
+      "bytes": 107522,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_hook_wiring.py#L4",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_install_state.py#L5"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_hook_wiring.py#L4",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_install_state.py#L5"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_hook_wiring.py#L4",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/skills/agentic-vault/scripts/vault_install_state.py#L5"
+      ],
+      "delivery": {
+        "sourceSha256": "4185f9c5a5d0c03a1d8db9b9d968fb75aa34601e2fa6c3268b10bfc41133ae57",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://github.com/affaan-m/ECC"
+      ]
+    },
+    {
+      "index": 197,
+      "sourceId": "doi:10.5281/zenodo.24361690",
+      "title": "connectome-cognition-benchmark: code, per-fold results and pre-registrations",
+      "kind": "project",
+      "label": "PAIRED FOLD RESULTS",
+      "factualConcept": "The archive publishes pre-registrations, code and per-fold results for comparing methods on the same connectome evaluation folds.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial source-card photograph about the connectome-cognition-benchmark software archive: the same brain connectivity data compared across evaluation folds, with results tracked individually. At the center place one translucent brain-shaped scientific sculpture made from a delicate lattice of wine-red silk threads and sparse coral nodes; beneath it fan three broad frosted ivory specimen plates. Each plate bears an identical tiny embossed connectivity pattern with a different segment picked out in crimson, suggesting different held-out folds. Precise physical museum still life on a soft lilac background, contrasting red threads with milky layered glass, long soft shadows, elegant three-quarter view, uncluttered bold silhouette legible at thumbnail scale. Keep edges of the sculpture and plates inside the middle 72% of the frame. No charts with axes, writing, letters, numbers, labels, logos, people, interface, borders or watermarks.",
+      "output": "media/cards/card-197-connectome-folds.webp",
+      "sha256": "68b4c74c6b186838f8d09f5e9214e071918b6605507183d5387160d39f2210b5",
+      "bytes": 85336,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L242",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L243",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L244",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/scripts/verify_release_claims.py#L5"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L242",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L243",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L244",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/scripts/verify_release_claims.py#L5"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L242",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L243",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/b51688e57e2a208e17f8408eae0d2076a7e87dd5/THIRD_PARTY.md#L244",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/docs/releases/v0.54.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/2b35dc0635edb453077aecebac5717e05afe25c8/scripts/verify_release_claims.py#L5"
+      ],
+      "delivery": {
+        "sourceSha256": "c70377fbec16ef2969aa3929a0c32b988f1577f875d62da0915c580f5a9a0c4d",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "ffmpeg -nostdin -v error -n -i INPUT.png -vf scale=960:640:flags=lanczos -frames:v 1 -c:v libwebp -quality 90 -compression_level 6 OUTPUT.webp"
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.5281/zenodo.24361690"
       ]
     }
   ],
