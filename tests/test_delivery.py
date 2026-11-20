@@ -31,6 +31,7 @@ EXPECTED_COVERAGE={
     ('v0.53.0','v0.28.0'):(62,60,29,195,359),
     ('v0.53.0','v0.29.0'):(62,60,29,195,359),
     ('v0.53.0','v0.30.0'):(62,60,29,196,362),
+    ('v0.54.0','v0.30.0'):(62,62,29,197,367),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -55,7 +56,7 @@ class DeliveryTests(unittest.TestCase):
                       'v0.24.0':(15,38,66,5),
                       'v0.27.0':(15,44,76,5),
                       'v0.28.0':(16,45,83,5),'v0.29.0':(16,45,83,5),
-                      'v0.30.0':(16,46,86,5)}
+                      'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -167,5 +168,27 @@ class DeliveryTests(unittest.TestCase):
                 self.assertCountEqual([row['file'] for row in use['evidence']],files)
         self.assertEqual(set(indexed['doi:10.18653/v1/d19-1382']['keys']),
                          {'doi:10.18653/v1/d19-1382','arxiv:1908.11828','url:https://aclanthology.org/D19-1382'})
+
+    def test_v054_references_cover_ecc_and_shared_connectome_record(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.54.0':
+            self.skipTest('These citation locations describe the v0.54.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        ecc=indexed['github:affaan-m/ecc']
+        self.assertEqual(ecc['kind'],'project')
+        self.assertEqual(set(ecc['keys']),{'github:affaan-m/ecc','github:affaan-m/everything-claude-code'})
+        ecc_use,=ecc['uses']
+        self.assertEqual((ecc_use['plugin'],ecc_use['role']),('agentic-vault','reference'))
+        self.assertCountEqual(
+            [row['file'] for row in ecc_use['evidence']],
+            ['docs/releases/v0.54.0.md','skills/agentic-vault/scripts/vault_hook_wiring.py','skills/agentic-vault/scripts/vault_install_state.py'],
+        )
+        conn=indexed['doi:10.5281/zenodo.24361690']
+        self.assertCountEqual([u['plugin'] for u in conn['uses']],['semantic-crosscheck','agentic-vault'])
+        av_use=next(u for u in conn['uses'] if u['plugin']=='agentic-vault')
+        self.assertCountEqual(
+            [row['file'] for row in av_use['evidence']],
+            ['docs/releases/v0.54.0.md','scripts/verify_release_claims.py'],
+        )
 
 if __name__=='__main__':unittest.main()

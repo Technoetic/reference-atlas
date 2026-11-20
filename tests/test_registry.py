@@ -36,6 +36,17 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual((source['id'],source['kind']),(identifier,'project'))
         self.assertEqual(find_matches(catalog,'connectome-cognition-benchmark')['status'],'possible')
 
+    def test_ecc_repository_and_former_name_alias_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for candidate in ('https://github.com/affaan-m/ECC',
+                          'https://github.com/affaan-m/everything-claude-code',
+                          'https://github.com/affaan-m/ECC/tree/v2.2.3'):
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),('github:affaan-m/ecc','project'))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

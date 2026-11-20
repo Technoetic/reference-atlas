@@ -159,14 +159,16 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('commissioned sources have dedicated images and the new software record uses its text cover',()=>{
-  const uncommissioned='doi:10.5281/zenodo.24361690';
-  assert.ok(catalog.sources.some(source=>source.id===uncommissioned));
-  assert.equal(manifest.count,catalog.sources.length-1);
+test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
+  const uncommissioned=new Set(['doi:10.5281/zenodo.24361690','github:affaan-m/ecc']);
+  for(const id of uncommissioned){
+    assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
+  }
+  assert.equal(manifest.count,catalog.sources.length-uncommissioned.size);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(source.id===uncommissioned){
+    if(uncommissioned.has(source.id)){
       assert.equal(art.src,null);
       for(const detail of [false,true]){
         const html=artworkCover(source,{detail});
