@@ -168,7 +168,11 @@ test('commissioned sources have dedicated images and uncommissioned records use 
     'doi:10.1145/3243734.3243804',
     'github:astral-sh/ruff',
     'github:astral-sh/ty',
-    'github:quarylabs/sqruff'
+    'github:quarylabs/sqruff',
+    'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
+    'url:https://www.unicode.org/reports/tr39',
+    'arxiv:2106.09898',
+    'github:rhysd/actionlint'
   ]);
   for(const id of uncommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);

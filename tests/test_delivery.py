@@ -33,6 +33,7 @@ EXPECTED_COVERAGE={
     ('v0.53.0','v0.30.0'):(62,60,29,196,362),
     ('v0.54.0','v0.30.0'):(62,62,29,197,367),
     ('v0.54.0','v0.31.0'):(62,62,29,205,390),
+    ('v0.54.1','v0.31.0'):(64,64,29,209,399),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -231,6 +232,30 @@ class DeliveryTests(unittest.TestCase):
         self.assertCountEqual(
             [row['file'] for row in sxc_use['evidence']],
             ['docs/releases/v0.31.0.md','THIRD_PARTY.md'],
+        )
+
+    def test_v0541_references_cover_unicode_hardening_actionlint_and_pillai_reuse(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.54.1':
+            self.skipTest('These citation locations describe the v0.54.1 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        for sid,kind,files in [
+            ('url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher','paper',['docs/releases/v0.54.1.md','SECURITY.md']),
+            ('url:https://www.unicode.org/reports/tr39','format',['docs/releases/v0.54.1.md','SECURITY.md']),
+            ('arxiv:2106.09898','paper',['docs/releases/v0.54.1.md','SECURITY.md']),
+            ('github:rhysd/actionlint','project',['docs/releases/v0.54.1.md','docs/release-integrity.md']),
+        ]:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('agentic-vault','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+        pillai=indexed['url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai']
+        av_use=next(u for u in pillai['uses'] if u['plugin']=='agentic-vault')
+        self.assertCountEqual(
+            [row['file'] for row in av_use['evidence']],
+            ['docs/releases/v0.42.0.md','docs/releases/v0.54.1.md'],
         )
 
 if __name__=='__main__':unittest.main()

@@ -67,6 +67,23 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
 
+    def test_av0541_unicode_hardening_and_actionlint_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
+             'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher','paper'),
+            ('https://www.unicode.org/reports/tr39/',
+             'url:https://www.unicode.org/reports/tr39','format'),
+            ('https://arxiv.org/abs/2106.09898v2','arxiv:2106.09898','paper'),
+            ('https://github.com/rhysd/actionlint','github:rhysd/actionlint','project'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
