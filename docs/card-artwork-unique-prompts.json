@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 197,
+  "count": 220,
   "assets": [
     {
       "index": 1,
@@ -5870,6 +5870,1031 @@
       },
       "generationReferenceUrls": [
         "https://doi.org/10.5281/zenodo.24361690"
+      ]
+    },
+    {
+      "index": 198,
+      "sourceId": "url:https://docs.npmjs.com/cli/v11/commands/npm-sbom",
+      "title": "npm CLI Documentation — npm sbom",
+      "kind": "article",
+      "label": "LOCKFILE PACKAGE MANIFEST",
+      "factualConcept": "npm sbom extracts a CycloneDX software bill of materials directly from an existing package lockfile without adding runtime dependencies.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about npm sbom extracting a CycloneDX software bill of materials directly from an existing package lockfile without adding runtime dependencies. Macro industrial still-life photograph on a warm terracotta-red and deep espresso matte studio surface: an open matte charcoal archival specimen box containing a precision interlocking grid of nested translucent amber acrylic blocks representing locked packages and sub-dependencies, inspected by a machined brass optical caliper resting beside a neat ivory porcelain ledger tray holding matching miniature glass tokens. Warm raking studio daylight, tactile bevels, crisp shadows, editorial art direction, subtle film grain. Frame the entire sculptural composition cleanly within the central 74% of the wide 3:2 image with a bold silhouette legible at thumbnail scale. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-198-npm-sbom.webp",
+      "sha256": "f50d2b16534d67314ad21317e44679576ab2e97cae29365018ba2d671868fc96",
+      "bytes": 91116,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L275"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L275"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L275"
+      ],
+      "delivery": {
+        "sourceSha256": "50f47e39b57aa318a05d2cf8b3c74422e80fb3924078bf8b2bcd7673e651c42f",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://docs.npmjs.com/cli/v11/commands/npm-sbom"
+      ]
+    },
+    {
+      "index": 199,
+      "sourceId": "url:https://www.postgresql.org/docs/17/collation.html",
+      "title": "PostgreSQL 17 Documentation — 23.2. Collation Support",
+      "kind": "article",
+      "label": "IMMUTABLE CODEPOINT ORDER",
+      "factualConcept": "PostgreSQL 17 provides a built-in C.UTF-8 collation that sorts strings deterministically by code point without depending on external OS locale libraries.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about PostgreSQL 17 built-in C.UTF-8 collation sorting strings deterministically by code point without depending on external OS locale libraries. Architectural macro still-life photograph on a cool pale slate-blue matte studio floor: a stepped row of nine precision-machined brushed-steel and cobalt-anodized calibration blocks arranged in strict ascending mathematical order locked inside a milled limestone alignment rail, cleanly separated from two drifting frosted-glass prisms resting loose outside the rail to symbolize immutable internal ordering isolated from external drift. Crisp museum studio daylight, subtle specular reflections, editorial art direction, fine film grain. Frame the entire composition cleanly within the central 74% of the wide 3:2 image with a strong silhouette readable at thumbnail scale. Strictly no text, letters, numbers, tick marks, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-199-pg-builtin-collation.webp",
+      "sha256": "ef3e28688e0404c0ce041475aa3bca5264100af60fcd4dbb95c1e90db6258a40",
+      "bytes": 31382,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L60",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L272",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/data-rules.md#L173"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L60",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L272",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/data-rules.md#L173"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L60",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L272",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/data-rules.md#L173"
+      ],
+      "delivery": {
+        "sourceSha256": "6dbd7fa36bf9062b5c8b1ffff00ffe048ba064e6b5aaedfc990c4ee64f041a21",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/collation.html"
+      ]
+    },
+    {
+      "index": 200,
+      "sourceId": "url:https://ecma-international.org/publications-and-standards/standards/ecma-424",
+      "title": "ECMA-424: OWASP CycloneDX Software Bill of Materials Standard",
+      "kind": "format",
+      "label": "STANDARDIZED COMPONENT BILL",
+      "factualConcept": "ECMA-424 standardizes the machine-readable OWASP CycloneDX software bill of materials format for verifiable component inventories.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about the ECMA-424 OWASP CycloneDX machine-readable software bill of materials standard. Editorial museum still-life photograph on a deep midnight-indigo matte studio surface: an exploded concentric arrangement of precision-milled ivory porcelain and brushed titanium mechanical rings resting on a circular satin-brass reference plate, each ring cleanly socketed with distinct faceted emerald and clear sapphire glass component jewels arranged in verifiable radial order, photographed from a refined three-quarter elevated angle. Clean directional rim lighting, rich ceramic-and-metal contrast, editorial art direction, subtle film grain. Frame the entire sculptural assembly within the central 74% of the wide 3:2 image with a bold silhouette legible at thumbnail scale. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-200-ecma-424-cyclonedx.webp",
+      "sha256": "a0d02ae659e21e5335782f369773f72314a27b4cdabe93b15c7dd96c35d7f0cc",
+      "bytes": 76712,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L274"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L274"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L274"
+      ],
+      "delivery": {
+        "sourceSha256": "677e91d1cedfc7be43ebd8ee777260accee423689b0b6f4e20cc9f4c1bdc8b7a",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://ecma-international.org/publications-and-standards/standards/ecma-424/"
+      ]
+    },
+    {
+      "index": 201,
+      "sourceId": "url:https://reproducible-builds.org/specs/source-date-epoch",
+      "title": "SOURCE_DATE_EPOCH specification (Reproducible Builds)",
+      "kind": "format",
+      "label": "FROZEN BUILD TIMESTAMP",
+      "factualConcept": "SOURCE_DATE_EPOCH fixes archive timestamps to a single timezone-independent UTC instant so identical builds yield bit-for-bit identical digests.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about the SOURCE_DATE_EPOCH specification fixing build archive timestamps to a single timezone-independent UTC instant for bit-for-bit identical digests. Macro horological studio still-life photograph on a muted sandstone-grey surface: three identical sealed brushed-brass cylindrical archival capsules standing side by side on three distinct matte stone plinths (ochre, cool slate, and muted sage representing separate timezones), synchronized from above by a single clear borosilicate glass cylinder housing a frozen brass mechanical balance wheel held still by one gleaming golden locking pin. Pure unengraved metal and glass surfaces with zero clock numerals or markings. Crisp diffused studio daylight, sculptural shadows, editorial art direction, subtle film grain. Frame the entire composition within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, dials, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-201-source-date-epoch.webp",
+      "sha256": "711df1cc519affa7bcc2c8adbeebfd9a8cfd89354a5b9751d16c22f997716566",
+      "bytes": 48134,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L269"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L269"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L57",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L269"
+      ],
+      "delivery": {
+        "sourceSha256": "08bc1808ac0a5aa8d34094cc464db60c2ee16e6f13273fa2a6960e8a086eefdc",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://reproducible-builds.org/specs/source-date-epoch/"
+      ]
+    },
+    {
+      "index": 202,
+      "sourceId": "url:https://www.unicode.org/reports/tr39",
+      "title": "Unicode Technical Standard #39: Unicode Security Mechanisms",
+      "kind": "format",
+      "label": "INVISIBLE GLYPH MECHANISMS",
+      "factualConcept": "Unicode Technical Standard #39 classifies Default_Ignorable code points and visual confusable hazards for security filtering.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Unicode Technical Standard #39 classifying Default_Ignorable invisible code points and confusable hazards. Precision optical laboratory still-life photograph on a matte pale alabaster studio surface: a neat straight row of blank dark-obsidian geometric relief blocks (pure stepped rectangular blocks with no letters or symbols) inspected through an angled polarized amber crystal lens held in a matte black anodized laboratory clamp; through the polarized lens, two ghostly clear-quartz hidden spacer wedges glow softly in luminous magenta light wedged between the dark blocks, exposing invisible insertions. Sharp studio lighting, crisp caustics, editorial art direction, subtle film grain. Frame the entire composition within the central 74% of the wide 3:2 image. Strictly no text, letters, glyphs, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-202-unicode-tr39.webp",
+      "sha256": "a649dfc2eeb4be328437b049b502b10d6885e2f7500ee824e6ce02283e476e55",
+      "bytes": 24056,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L271"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L271"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L271"
+      ],
+      "delivery": {
+        "sourceSha256": "ef499de6b1947c2c25f27b64a0995c60f274a7b22849bb42289301a1dc0465cd",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.unicode.org/reports/tr39/"
+      ]
+    },
+    {
+      "index": 203,
+      "sourceId": "doi:10.1002/stvr.1486",
+      "title": "A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering",
+      "kind": "paper",
+      "label": "RANDOMIZED EFFECT SIZES",
+      "factualConcept": "Arcuri and Briand (2014) recommend non-parametric statistical tests paired with effect size measures when evaluating randomized software engineering algorithms.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Arcuri and Briand (2014) recommending non-parametric statistical tests and effect size reporting for randomized software engineering algorithms. Tactile museum still-life photograph on a soft matte sage-green studio surface: a finely crafted oiled walnut and brushed-brass precision balance scale flanked by two matte white ceramic specimen dishes holding clusters of glossy cobalt-blue and pale ice-blue glass marbles of distinct sizes, while a single calibrated terracotta stone counterweight cube rests on the brass beam to quantify separation magnitude. Clean directional studio daylight, subtle shadows, editorial art direction, subtle film grain. Frame the entire sculptural arrangement within the central 74% of the wide 3:2 image with a crisp silhouette at thumbnail scale. Strictly no text, letters, numbers, axes, charts, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-203-arcuri-briand-stats.webp",
+      "sha256": "9b69bbdefebb2f01c0cff5c3256c0ed126eacacc309daae901c73129c28cfae4",
+      "bytes": 48678,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L53",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L53",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L53",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "delivery": {
+        "sourceSha256": "06481007e0a0f6a0d59b07ad94f1159c420f99adbcf42f5112ff3fccb8cf2f5e",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1002/stvr.1486"
+      ]
+    },
+    {
+      "index": 204,
+      "sourceId": "doi:10.1162/089976698300017197",
+      "title": "Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms",
+      "kind": "paper",
+      "label": "PAIRED CLASSIFIER TRIALS",
+      "factualConcept": "Dietterich (1998) analyzes statistical tests for comparing two supervised classifiers and motivates paired tests when both run on the same test set.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Dietterich (1998) comparing two supervised classifiers on the same paired test set. Minimalist industrial museum still-life photograph on a warm parchment-cream matte studio surface: a twin-channel brushed-aluminum precision comparator track where identical translucent smoked-glass spheres roll side by side down two parallel machined channels — one edged in deep forest-emerald anodized metal, the other in burnt-vermilion anodized metal — passing delicate hinged brass diverter gates that reveal matching and diverging outcomes along the paired lane. Soft overhead directional studio daylight, refined material contrast, editorial art direction, subtle film grain. Frame the entire apparatus within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-204-dietterich-classifier-tests.webp",
+      "sha256": "541c60cbb2c8b26c03d01faacb2424027074c13ca67c2a25536cc72938aab737",
+      "bytes": 47348,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L52",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L52",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L52",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "delivery": {
+        "sourceSha256": "d35e9c2957566bdcbceb0d046496d38493e15cbb1a1a0a341447cb49e1eb5d30",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1162/089976698300017197"
+      ]
+    },
+    {
+      "index": 205,
+      "sourceId": "arxiv:2106.09898",
+      "title": "Bad Characters: Imperceptible NLP Attacks",
+      "kind": "paper",
+      "label": "IMPERCEPTIBLE TOKEN PERTURBATIONS",
+      "factualConcept": "Bad Characters demonstrates that invisible Unicode control characters and perturbations can disrupt NLP model behavior without changing visual appearance.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Bad Characters analyzing invisible character and control perturbations that disrupt language models without altering visual appearance. Dramatic sculptural still-life photograph on a deep charcoal-obsidian matte studio surface: a serene straight line of pure matte chalk-white porcelain rectangular tiles standing upright in orderly sequence, while razor-thin nearly transparent iridescent optical glass shims wedge almost invisibly between two central tiles, refracting an intense violet and electric-lime caustic beam across the dark slate floor behind them. Crisp theatrical studio side lighting, stark contrast, editorial art direction, subtle film grain. Frame the entire sculptural sequence within the central 74% of the wide 3:2 image. Strictly no text, letters, symbols, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-205-bad-characters-nlp.webp",
+      "sha256": "ab1212e065e432d1d928853ba907c7859cd8e7701ed2d43660615e0d95f2f7b3",
+      "bytes": 40736,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L252"
+      ],
+      "delivery": {
+        "sourceSha256": "9072627624f21a07ce92253e782ba065ddcf7ac23bed12520af8da3dcf084925",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://arxiv.org/abs/2106.09898"
+      ]
+    },
+    {
+      "index": 206,
+      "sourceId": "doi:10.1145/3194164.3194186",
+      "title": "Cognitive complexity: an overview and evaluation",
+      "kind": "paper",
+      "label": "NESTED FLOW UNDERSTANDABILITY",
+      "factualConcept": "Campbell (2018) introduces cognitive complexity to penalize deep control-flow nesting and flow breaks that hinder human code comprehension.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Campbell (2018) introducing cognitive complexity to measure how deep control-flow nesting and flow breaks hinder human comprehension. Sculptural architectural studio still-life photograph on a muted warm dusty-rose matte plaster surface: on the left rests a single effortless flat open loop of smooth satin-brass tubing, contrasted on the right against deeply nested concentric labyrinthine hoops of darkened gunmetal and frosted cobalt glass interlocking inward around a softly glowing amber crystal core. Soft museum gallery side daylight, long gentle shadows, tactile metal and frosted glass contrast, editorial art direction, subtle film grain. Frame the entire sculptural contrast cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-206-cognitive-complexity-paper.webp",
+      "sha256": "855599e036800ee0cfa2fc62f89deeee812dc9b78570301ff486962279f1060e",
+      "bytes": 61750,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L273"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L273"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L273"
+      ],
+      "delivery": {
+        "sourceSha256": "7cafbb0be7c8c421559f00ab85f5e82940317087d94d12682c5a017db5acdd18",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1145/3194164.3194186"
+      ]
+    },
+    {
+      "index": 207,
+      "sourceId": "doi:10.1145/3243734.3243804",
+      "title": "Evaluating Fuzz Testing",
+      "kind": "paper",
+      "label": "FUZZING EXPERIMENT HYGIENE",
+      "factualConcept": "Klees et al. (CCS 2018) establish experimental hygiene for fuzz testing evaluation, emphasizing fixed seeds, fault deduplication, and held-out separation.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Klees et al. (CCS 2018) establishing fuzz testing evaluation hygiene: fault deduplication, fixed seeds, and held-out separation. Precision laboratory specimen still-life photograph on a cool dove-grey stone studio surface: a matte black anodized sorting tray partitioned by crisp brass dividers; the left bay holds a jumbled heap of jagged obsidian shards representing duplicate raw crashes, while an inclined fine perforated copper sieve feeds three distinct, clean polished mineral crystals (deep emerald, sapphire, and citrine) displayed individually beneath tiny clear glass domes on the right bay to represent deduplicated unique faults. Directional museum daylight, refined shadows, editorial art direction, subtle film grain. Frame the entire apparatus within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-207-evaluating-fuzz-testing.webp",
+      "sha256": "a56f46dbde0c9781906e14e10206ba3fea4e7c2e49940ca58699e6e900e0b97a",
+      "bytes": 134356,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L54",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L54",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L54",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L254",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L35"
+      ],
+      "delivery": {
+        "sourceSha256": "be621388e97a43adc49a1d0fe1db3b1e0c47eec278d6fed9a83e2e6e593829b0",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1145/3243734.3243804"
+      ]
+    },
+    {
+      "index": 208,
+      "sourceId": "doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c",
+      "title": "Improved confidence intervals for the difference between binomial proportions based on paired data",
+      "kind": "paper",
+      "label": "PAIRED PROPORTION INTERVALS",
+      "factualConcept": "Newcombe (1998) derives Method 10 Wilson-score confidence intervals for differences between paired binomial proportions to quantify small-sample uncertainty.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Newcombe (1998) deriving Method 10 Wilson-score confidence intervals for differences between paired binomial proportions. Precision optical-instrument studio still-life photograph on a soft warm taupe matte surface: a sleek dark anodized graphite alignment rail supporting two opposing translucent emerald and coral frosted-glass caliper jaws framing a suspended luminous matte-white porcelain pearl at center, with slender curved smoked-glass span brackets extending asymmetrically outward from each jaw to make statistical uncertainty width tangibly architectural. Completely smooth unengraved metal and glass with zero rulers, ticks, or numbers. Soft directional studio daylight, editorial art direction, subtle film grain. Frame the entire instrument within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, ruler markings, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-208-newcombe-paired-ci.webp",
+      "sha256": "9286d62840a19462e15c36516e19a6455aa9ce2089303632c9f04741110ea0b1",
+      "bytes": 34678,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L51",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L253",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L32"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L51",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L253",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L32"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L51",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L253",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L32"
+      ],
+      "delivery": {
+        "sourceSha256": "a2d01fba0fa1f0fc4084c1d583da0405ceb5fb6cae019e7ead852ab4256f3261",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1002/%28SICI%291097-0258%2819981130%2917:22%3C2635::AID-SIM954%3E3.0.CO;2-C"
+      ]
+    },
+    {
+      "index": 209,
+      "sourceId": "doi:10.1186/1471-2288-13-91",
+      "title": "The McNemar test for binary matched-pairs data: mid-p and asymptotic are better than exact conditional",
+      "kind": "paper",
+      "label": "DISCORDANT PAIR BALANCE",
+      "factualConcept": "Fagerland, Lydersen and Laake (2013) show that Mid-P McNemar tests outperform overly conservative exact conditional tests for binary matched-pairs data.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Fagerland, Lydersen and Laake (2013) analyzing exact conditional and Mid-P McNemar tests on binary matched-pairs discordant counts. Tactile geometric studio still-life photograph on a deep slate-teal matte surface: a precision-machined 2x2 matte dark-basalt recessed specimen tray; the two main diagonal wells hold quiet flush frosted pale-grey ceramic cubes representing concordant pairs, while the two off-diagonal wells support a delicate tilted polished-brass seesaw beam carrying vibrant chartreuse and burnt-tangerine translucent glass cylinders of unequal weight representing discordant pairs governing the test. Crisp studio rim light, strong graphic geometry legible at thumbnail scale, editorial art direction, subtle film grain. Frame the entire tray and beam cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-209-fagerland-mcnemar-midp.webp",
+      "sha256": "fd860f05d820dc5e4ae474356e8b7f0a97e8d7259510c68021dad426a4c83a8b",
+      "bytes": 77872,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L50",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L31"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L50",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L31"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L50",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L252",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/paired-release.md#L31"
+      ],
+      "delivery": {
+        "sourceSha256": "d6c2ceedf9c985779f6f00b3b7e889765ab19fe29c3d1c1175277c5992403292",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1186/1471-2288-13-91"
+      ]
+    },
+    {
+      "index": 210,
+      "sourceId": "url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher",
+      "title": "Trojan Source: Invisible Vulnerabilities",
+      "kind": "paper",
+      "label": "REVERSED DISPLAY ORDER",
+      "factualConcept": "Trojan Source demonstrates how Unicode bidirectional control characters make source code visually read differently from the logical order parsed by compilers.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about Trojan Source demonstrating how Unicode bidirectional control characters cause source code to visually appear in reversed order compared to the logical order parsed by compilers. Dramatic precision optical still-life photograph on a deep warm burgundy-espresso matte studio surface: an ordered horizontal line of stepped brushed-steel, matte ivory, and warm copper geometric prism blocks aligned along a straight dark metal track, bisected by an angled double-sided crystal beam-splitter prism that optically reverses the visible order of the reflected blocks while the solid metallic blocks continue in true unreversed sequence beneath it. Razor-sharp directional studio light, striking optical clarity, editorial art direction, subtle film grain. Frame the entire optical apparatus within the central 74% of the wide 3:2 image. Strictly no text, letters, arrows, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-210-trojan-source-bidi.webp",
+      "sha256": "82bde752b3c6ffe98464c5f6469e3f59eaae9520541d145dd030957a7029223f",
+      "bytes": 50778,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L251",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L58",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L270"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L251",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L58",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L270"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/SECURITY.md#L251",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L58",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L270"
+      ],
+      "delivery": {
+        "sourceSha256": "3a8f5f10b801748f4f33c007169273791da951a48982d498656fc927762ac218",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.usenix.org/conference/usenixsecurity23/presentation/boucher"
+      ]
+    },
+    {
+      "index": 211,
+      "sourceId": "github:astral-sh/ruff",
+      "title": "astral-sh/ruff",
+      "kind": "project",
+      "label": "HIGH-SPEED SYNTAX LINTER",
+      "factualConcept": "Ruff is a Rust-based Python linter run in CI to inspect syntax and correctness rules rapidly without adding runtime dependencies.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about astral-sh/ruff, an ultra-fast Rust-based Python syntax and correctness linter run in CI. Dynamic industrial macro studio photograph on a deep obsidian-plum matte surface: a sleek aerodynamic forged-titanium and oxidized-copper multi-toothed precision finishing comb sweeping effortlessly across a taut parallel ribbon of fine silver and luminous chartreuse braided metallic threads, cleanly parting and lifting a single kinked crimson wire snag out of alignment. Crisp high-contrast studio key lighting, metallic specular sheen, editorial art direction, subtle film grain. Frame the entire object cleanly within the central 74% of the wide 3:2 image with a bold silhouette legible at thumbnail scale. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-211-astral-ruff.webp",
+      "sha256": "6441b99a192da938108a106488dc99e003e6c8fedbc61e81da409f0cf818108c",
+      "bytes": 82678,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L259"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L259"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L259"
+      ],
+      "delivery": {
+        "sourceSha256": "2cbc68f388ae2079628fad69a7c3ed8fa99edfd315fe3b25613c29cdb7abf9cf",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/astral-sh/ruff"
+      ]
+    },
+    {
+      "index": 212,
+      "sourceId": "github:astral-sh/ty",
+      "title": "astral-sh/ty",
+      "kind": "project",
+      "label": "STATIC TYPE VERIFIER",
+      "factualConcept": "ty is Astral's static Python type checker used in CI to verify type contracts across curated core and tool modules.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about astral-sh/ty, Astral's static Python type checker verifying module type contracts in CI. Precision mechanical studio still-life photograph on a cool pale glacier-grey matte surface: a thick machined matte-black anodized aluminum gauge plate standing upright on steel brackets, pierced with three clean geometric apertures (a circle, a hexagon, and an equilateral triangle); matching glossy amethyst-violet, electric-teal, and brushed-brass solid precision rods align straight into their corresponding apertures, while one mismatched oversized square amber-glass rod is cleanly halted flush against the circular opening. Crisp museum studio daylight, subtle shadows, editorial art direction, subtle film grain. Frame the entire assembly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-212-astral-ty.webp",
+      "sha256": "e9603fa05b2659f3170b5e8ef42bee040cc3c40f74bf71bb30a5675ad3e421c1",
+      "bytes": 29802,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L260"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L260"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L260"
+      ],
+      "delivery": {
+        "sourceSha256": "b53aaf08938590a550f7c071f87a4e2ba0c7858bcacff2c544e6cb066634493f",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/astral-sh/ty"
+      ]
+    },
+    {
+      "index": 213,
+      "sourceId": "github:cyclonedx/cyclonedx-python",
+      "title": "CycloneDX/cyclonedx-python",
+      "kind": "project",
+      "label": "PYTHON REQUIREMENT BOM",
+      "factualConcept": "cyclonedx-python generates reproducible CycloneDX JSON software bills of materials from pinned Python requirements files in CI.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about CycloneDX/cyclonedx-python generating reproducible CycloneDX JSON software bills of materials from pinned Python requirements files. Editorial industrial still-life photograph on a rich matte forest-olive studio surface: four parallel braided dark-copper and charcoal specimen ribbons feeding smoothly from the left through one precision-milled polished-brass and smoked-glass optical manifold block, emerging neatly cataloged on the right as a tidy staggered stack of circular frosted-ivory porcelain inventory discs rimmed with thin golden bands. Warm directional side lighting, tactile brass-and-porcelain luxury, editorial art direction, subtle film grain. Frame the entire manifold and discs within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-213-cyclonedx-python.webp",
+      "sha256": "dd1387c05dd31936767cd97f38ab7523e1a3469a9a81a16d3b82b6afb10e7863",
+      "bytes": 74714,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L282"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L282"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L282"
+      ],
+      "delivery": {
+        "sourceSha256": "cb55929685b83ca6733fdc2542cb31bd89bdce52fd2d7cd1b958ddec0bd29cab",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/CycloneDX/cyclonedx-python"
+      ]
+    },
+    {
+      "index": 214,
+      "sourceId": "github:jendrikseipp/vulture",
+      "title": "jendrikseipp/vulture",
+      "kind": "project",
+      "label": "UNUSED CODE DETECTOR",
+      "factualConcept": "Vulture statically scans Python codebases in CI to identify unreachable or unused functions, imports, and variables at high confidence.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about jendrikseipp/vulture statically identifying unreachable or unused Python functions, imports, and variables. Sculptural museum still-life photograph on a matte warm bone-ivory studio surface: an intricate branching dark-bronze architectural tree of luminous translucent lime-glass conduits connected solidly to a dark stone base, contrasted with two pale matte ash-grey unlit ceramic branch offshoots cleanly snipped off and resting detached on the studio floor beside a sleek pair of polished stainless-steel surgical shears. Crisp studio daylight, long delicate shadows, editorial art direction, subtle film grain. Frame the entire sculptural tree and clipped pieces cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-214-vulture-dead-code.webp",
+      "sha256": "9ff1e767f9dbfb6305a9dcf0250daf54e51ec92300406c6d904ee52e67d322a2",
+      "bytes": 67096,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L69",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L284"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L69",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L284"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L69",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L284"
+      ],
+      "delivery": {
+        "sourceSha256": "1f99b0196ef0f16cef69ac160392ecb3cdc0bb7fc233e58e8aa2102b8098fa2a",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/jendrikseipp/vulture"
+      ]
+    },
+    {
+      "index": 215,
+      "sourceId": "github:osprey-oss/deptry",
+      "title": "osprey-oss/deptry",
+      "kind": "project",
+      "label": "IMPORT DECLARATION HYGIENE",
+      "factualConcept": "deptry checks Python imports against declared requirement files in CI to catch missing, unused, or transitive dependency mismatches.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about osprey-oss/deptry checking Python imports against declared requirements to catch missing, unused, or transitive dependency mismatches. Tactile industrial still-life photograph on a muted slate-blue matte studio surface: a machined brushed-aluminum pegboard manifest rail holding luminous amber ceramic cylindrical plugs along the left bar, linked by taut braided cobalt-blue silk cords to matching sockets on the right bar — clearly isolating one disconnected amber plug with no cord attached and one empty unlinked socket highlighted by a hovering polished-brass inspection ring. Clean raking studio daylight, tactile ceramic-metal-fabric craft, editorial art direction, subtle film grain. Frame the entire board within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-215-deptry-dependencies.webp",
+      "sha256": "58ff3675d69665c2cb3459c1c9bfa767fd4941306df99c27bc45afcebbdf4dcd",
+      "bytes": 56648,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L70",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L285"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L70",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L285"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L70",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L285"
+      ],
+      "delivery": {
+        "sourceSha256": "f2823ab681f940e3fecddd4721f78eb072ea12eeabceb553cbb476c64aaf34f5",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/osprey-oss/deptry"
+      ]
+    },
+    {
+      "index": 216,
+      "sourceId": "github:pypa/pip-audit",
+      "title": "pypa/pip-audit",
+      "kind": "project",
+      "label": "DEPENDENCY ADVISORY SCAN",
+      "factualConcept": "pip-audit audits pinned Python requirements files against vulnerability advisories in CI without adding runtime dependencies.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about pypa/pip-audit auditing pinned Python requirements files against vulnerability advisories in CI. Macro laboratory specimen still-life photograph on a deep charcoal-navy matte studio surface: a neat 2x4 grid of eight sealed borosilicate glass specimen vials filled with clear serene aqua liquid standing upright in a machined dark-titanium laboratory rack, while a cantilevered articulated brass optical magnifying lens hovers directly over one vial whose inner liquid core glows vivid warning crimson-orange, isolating a single vulnerable dependency inside a clean pinned set. Dramatic directional studio lighting, crisp glass refraction, editorial art direction, subtle film grain. Frame the entire rack and lens cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, graduation marks, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-216-pip-audit-advisories.webp",
+      "sha256": "8d46bf6ae4f7036e0d4119d5fad08bbb1dfb4b9f529bd549d12211ce7ccefa43",
+      "bytes": 61394,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L281"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L281"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L281"
+      ],
+      "delivery": {
+        "sourceSha256": "5884c9e450e4dc276326642cf0e476d4923f44df648d4219bade1509a5439a34",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/pypa/pip-audit"
+      ]
+    },
+    {
+      "index": 217,
+      "sourceId": "github:quarylabs/sqruff",
+      "title": "quarylabs/sqruff",
+      "kind": "project",
+      "label": "POSTGRESQL DIALECT LINTER",
+      "factualConcept": "sqruff runs advisory PostgreSQL SQL parsing and semantic anti-pattern lint checks on gold query files in CI without overriding equivalence verdicts.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about quarylabs/sqruff running advisory PostgreSQL SQL parsing and semantic anti-pattern lint checks in CI. Architectural studio still-life photograph on a warm pale ochre-sand matte surface: a clean tiered stack of polished deep-emerald serpentine marble slabs alternating with fluted clear crystal-glass plates (symbolizing structured relational query layers), being lightly swept along one precision chamfered edge by a smooth unengraved brushed-brass drafting straightedge and a fine wooden-handled architect's brush lifting tiny stray charcoal dust grains off the ledge. Warm sunlit museum shadows, tactile stone and glass, editorial art direction, subtle film grain. Frame the entire sculptural stack within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, ruler ticks, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-217-sqruff-sql-linter.webp",
+      "sha256": "0208fb1a37e15bd34c7bcb96d16574d835af0524af7b0cdaef01b7bca26c1b9e",
+      "bytes": 97606,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L261"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L261"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.0.md#L55",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L261"
+      ],
+      "delivery": {
+        "sourceSha256": "16902955e4f0099c87dea059ec780bf5b2a69133b009271b92eb08853695d39d",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/quarylabs/sqruff"
+      ]
+    },
+    {
+      "index": 218,
+      "sourceId": "github:rhysd/actionlint",
+      "title": "rhysd/actionlint",
+      "kind": "project",
+      "label": "WORKFLOW SYNTAX CHECKER",
+      "factualConcept": "actionlint statically validates GitHub Actions workflow syntax, expressions, and shell steps using a SHA-256 checksum-verified binary in CI.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about rhysd/actionlint statically validating GitHub Actions workflow syntax, expressions, and shell steps. Precision kinetic still-life photograph on a cool misty-lavender matte studio surface: a sequential relay of four interlocking machined satin-titanium and burnt-sienna matte porcelain mechanical toggle gates linked in series by slender copper linkage rods, with a clear hexagonal optical calibration prism lowered precisely onto the alignment pin at the third joint before actuation. Clean directional museum daylight, crisp shadow geometry, editorial art direction, subtle film grain. Frame the entire four-stage relay within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-218-actionlint-workflows.webp",
+      "sha256": "8c40b9d1ffe1f1be5046051f2cc16460c93c5097c38d2dee505a22cff69a9642",
+      "bytes": 33150,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/release-integrity.md#L319",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L279"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/release-integrity.md#L319",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L279"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/release-integrity.md#L319",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L279"
+      ],
+      "delivery": {
+        "sourceSha256": "84c5686fa0f6934d96e1e6ca5025b60b0b840858e42311e25efc27a5fd0120df",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/rhysd/actionlint"
+      ]
+    },
+    {
+      "index": 219,
+      "sourceId": "github:rohaquinlop/complexipy",
+      "title": "rohaquinlop/complexipy",
+      "kind": "project",
+      "label": "COMPLEXITY CEILING MONITOR",
+      "factualConcept": "complexipy is a Rust-backed Python cognitive complexity analyzer used in CI to enforce tool complexity ceilings and surface top script hotspots.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about rohaquinlop/complexipy enforcing Python cognitive complexity ceilings and surfacing hotspot functions in CI. Sculptural editorial still-life photograph on a deep matte charcoal-olive studio surface: a structured grid of slender vertical matte-graphite glass columns rising at calm modest heights beneath one suspended horizontal sheet of frosted-quartz glass representing a hard ceiling plane, while two densely knotted luminous molten-amber and vivid magenta twisted spiral columns rise sharply and press right up against the underside of the translucent ceiling plane, highlighting complexity hotspots. High-contrast sculptural studio lighting, refined depth, editorial art direction, subtle film grain. Frame the entire grid and ceiling plane cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, axes, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-219-complexipy-hotspots.webp",
+      "sha256": "263859197a4647f91e30c77dc2ba430e7bc0efe32c128c55ab398c02fcbaa8d1",
+      "bytes": 53392,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L68",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L283"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L68",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L283"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L68",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L283"
+      ],
+      "delivery": {
+        "sourceSha256": "91b36db083c506a0e5e21e6c9fbc987be02200357fd101d92a09d643e4deadf5",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/rohaquinlop/complexipy"
+      ]
+    },
+    {
+      "index": 220,
+      "sourceId": "github:zizmorcore/zizmor",
+      "title": "zizmorcore/zizmor",
+      "kind": "project",
+      "label": "OFFLINE WORKFLOW AUDITOR",
+      "factualConcept": "zizmor performs offline static security analysis on GitHub Actions workflow files in CI to uncover supply-chain and permission hazards.",
+      "prompt": "Use case: stylized-concept. Produce a single landscape 3:2 editorial cover photograph for a research source card about zizmorcore/zizmor running offline static security audits on GitHub Actions workflows to expose supply-chain and permission hazards. Atmospheric industrial still-life photograph on a deep matte petrol-black studio surface: a heavy forged dark-slate vault conduit assembly joined by sealed hexagonal brushed-brass flange rings and solid steel security locking pins, illuminated by a crisp tilted shaft of cool emerald-cyan inspection light that pinpoints one single unseated glowing crimson lock pin protruding from an otherwise tightly sealed pipeline flange. Moody precision product photography, sharp metallic edges, editorial art direction, subtle film grain. Frame the entire conduit assembly cleanly within the central 74% of the wide 3:2 image. Strictly no text, letters, numbers, labels, screens, logos, people, borders, captions, or watermarks.",
+      "output": "media/cards/card-220-zizmor-workflow-security.webp",
+      "sha256": "5b61cbb25afa7182c3956f1865c65ef53b94478cc19e566fc73d5226e5d3da30",
+      "bytes": 44138,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L280"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L280"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/THIRD_PARTY.md#L280"
+      ],
+      "delivery": {
+        "sourceSha256": "a4f8cb3ea91b8cb3b2b0e241ddbfc7d440ae58b060cd7765d5d0110bb395c953",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT.jpg').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/zizmorcore/zizmor"
       ]
     }
   ],
