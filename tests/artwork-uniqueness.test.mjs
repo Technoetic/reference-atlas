@@ -160,31 +160,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 });
 
 test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
-  const uncommissioned=new Set([
-    'doi:10.1186/1471-2288-13-91',
-    'doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c',
-    'doi:10.1162/089976698300017197',
-    'doi:10.1002/stvr.1486',
-    'doi:10.1145/3243734.3243804',
-    'github:astral-sh/ruff',
-    'github:astral-sh/ty',
-    'github:quarylabs/sqruff',
-    'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
-    'url:https://www.unicode.org/reports/tr39',
-    'arxiv:2106.09898',
-    'github:rhysd/actionlint',
-    'url:https://reproducible-builds.org/specs/source-date-epoch',
-    'url:https://www.postgresql.org/docs/17/collation.html',
-    'url:https://ecma-international.org/publications-and-standards/standards/ecma-424',
-    'url:https://docs.npmjs.com/cli/v11/commands/npm-sbom',
-    'github:cyclonedx/cyclonedx-python',
-    'github:zizmorcore/zizmor',
-    'github:pypa/pip-audit',
-    'doi:10.1145/3194164.3194186',
-    'github:rohaquinlop/complexipy',
-    'github:jendrikseipp/vulture',
-    'github:osprey-oss/deptry'
-  ]);
+  const uncommissioned=new Set([]);
   for(const id of uncommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
   }
@@ -547,4 +523,81 @@ test('the eight formerly unillustrated v0.27.0 and v0.51.0 references render the
       assert.ok(html.includes(`src="${expected}"`));
     }
   }
+});
+
+test('the twenty-three formerly unillustrated v0.31.0, v0.54.1 and v0.31.1 references render their exact commissioned card and detail images',()=>{
+  const commissioned=[
+    [198,'url:https://docs.npmjs.com/cli/v11/commands/npm-sbom','npm-sbom','article','LOCKFILE PACKAGE MANIFEST'],
+    [199,'url:https://www.postgresql.org/docs/17/collation.html','pg-builtin-collation','article','IMMUTABLE CODEPOINT ORDER'],
+    [200,'url:https://ecma-international.org/publications-and-standards/standards/ecma-424','ecma-424-cyclonedx','format','STANDARDIZED COMPONENT BILL'],
+    [201,'url:https://reproducible-builds.org/specs/source-date-epoch','source-date-epoch','format','FROZEN BUILD TIMESTAMP'],
+    [202,'url:https://www.unicode.org/reports/tr39','unicode-tr39','format','INVISIBLE GLYPH MECHANISMS'],
+    [203,'doi:10.1002/stvr.1486','arcuri-briand-stats','paper','RANDOMIZED EFFECT SIZES'],
+    [204,'doi:10.1162/089976698300017197','dietterich-classifier-tests','paper','PAIRED CLASSIFIER TRIALS'],
+    [205,'arxiv:2106.09898','bad-characters-nlp','paper','IMPERCEPTIBLE TOKEN PERTURBATIONS'],
+    [206,'doi:10.1145/3194164.3194186','cognitive-complexity-paper','paper','NESTED FLOW UNDERSTANDABILITY'],
+    [207,'doi:10.1145/3243734.3243804','evaluating-fuzz-testing','paper','FUZZING EXPERIMENT HYGIENE'],
+    [208,'doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c','newcombe-paired-ci','paper','PAIRED PROPORTION INTERVALS'],
+    [209,'doi:10.1186/1471-2288-13-91','fagerland-mcnemar-midp','paper','DISCORDANT PAIR BALANCE'],
+    [210,'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher','trojan-source-bidi','paper','REVERSED DISPLAY ORDER'],
+    [211,'github:astral-sh/ruff','astral-ruff','project','HIGH-SPEED SYNTAX LINTER'],
+    [212,'github:astral-sh/ty','astral-ty','project','STATIC TYPE VERIFIER'],
+    [213,'github:cyclonedx/cyclonedx-python','cyclonedx-python','project','PYTHON REQUIREMENT BOM'],
+    [214,'github:jendrikseipp/vulture','vulture-dead-code','project','UNUSED CODE DETECTOR'],
+    [215,'github:osprey-oss/deptry','deptry-dependencies','project','IMPORT DECLARATION HYGIENE'],
+    [216,'github:pypa/pip-audit','pip-audit-advisories','project','DEPENDENCY ADVISORY SCAN'],
+    [217,'github:quarylabs/sqruff','sqruff-sql-linter','project','POSTGRESQL DIALECT LINTER'],
+    [218,'github:rhysd/actionlint','actionlint-workflows','project','WORKFLOW SYNTAX CHECKER'],
+    [219,'github:rohaquinlop/complexipy','complexipy-hotspots','project','COMPLEXITY CEILING MONITOR'],
+    [220,'github:zizmorcore/zizmor','zizmor-workflow-security','project','OFFLINE WORKFLOW AUDITOR']
+  ];
+  const records=manifest.assets.slice(197,220);
+  assert.equal(records.length,commissioned.length);
+  const sourceHashes=new Set();
+  for(const [offset,[index,id,slug,kind,label]] of commissioned.entries()){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
+    const record=records[offset];
+    assert.equal(record.index,index);
+    assert.equal(record.sourceId,id);
+    assert.equal(record.title,source.title);
+    assert.equal(record.kind,kind);
+    assert.equal(record.label,label);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.ok(record.factualConcept.trim());
+    assert.ok(record.prompt.trim());
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    sourceHashes.add(record.delivery.sourceSha256);
+    assert.equal(record.delivery.quality,90);
+    assert.equal(record.delivery.compressionLevel,6);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
+    assert.deepEqual(record.evidenceUrls,citations);
+    assert.deepEqual(record.currentEvidenceUrls,citations);
+    if(avCatalogVersion==='v0.54.1'&&catalog.snapshots['semantic-crosscheck'].version==='v0.31.1'){
+      assert.deepEqual(record.generationEvidenceUrls,citations);
+    }
+    const expected=new URL(`../media/cards/card-${index}-${slug}.webp`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(html.includes(detail?'detail-art':'source-art'));
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(sourceHashes.size,commissioned.length);
+});
+
+test('the first 197 commissioned covers retain their immutable generation records',()=>{
+  const records=manifest.assets.slice(0,197).map(asset=>Object.fromEntries(
+    Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
+  ));
+  assert.equal(createHash('sha256').update(JSON.stringify(records)).digest('hex'),
+    'd7ec3bc18ab23012d80d2c780c874d5840192b2a3bce2c99a64eef648059cdad');
 });
