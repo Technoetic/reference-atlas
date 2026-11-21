@@ -32,6 +32,7 @@ EXPECTED_COVERAGE={
     ('v0.53.0','v0.29.0'):(62,60,29,195,359),
     ('v0.53.0','v0.30.0'):(62,60,29,196,362),
     ('v0.54.0','v0.30.0'):(62,62,29,197,367),
+    ('v0.54.0','v0.31.0'):(62,62,29,205,390),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -56,7 +57,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.24.0':(15,38,66,5),
                       'v0.27.0':(15,44,76,5),
                       'v0.28.0':(16,45,83,5),'v0.29.0':(16,45,83,5),
-                      'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5)}
+                      'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5),
+                      'v0.31.0':(21,55,109,7)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -189,6 +191,46 @@ class DeliveryTests(unittest.TestCase):
         self.assertCountEqual(
             [row['file'] for row in av_use['evidence']],
             ['docs/releases/v0.54.0.md','scripts/verify_release_claims.py'],
+        )
+
+    def test_sxc0310_references_cover_paired_stats_static_linters_and_shared_rulesets(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.31.0':
+            self.skipTest('These citation locations describe the v0.31.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        papers=[
+            'doi:10.1186/1471-2288-13-91',
+            'doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c',
+            'doi:10.1162/089976698300017197',
+            'doi:10.1002/stvr.1486',
+            'doi:10.1145/3243734.3243804',
+        ]
+        for pid in papers:
+            with self.subTest(paper=pid):
+                src=indexed[pid]
+                self.assertEqual(src['kind'],'paper')
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual(
+                    [row['file'] for row in use['evidence']],
+                    ['docs/releases/v0.31.0.md','THIRD_PARTY.md','docs/paired-release.md'],
+                )
+        for proj in ('github:astral-sh/ruff','github:astral-sh/ty','github:quarylabs/sqruff'):
+            with self.subTest(project=proj):
+                src=indexed[proj]
+                self.assertEqual(src['kind'],'project')
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual(
+                    [row['file'] for row in use['evidence']],
+                    ['docs/releases/v0.31.0.md','THIRD_PARTY.md'],
+                )
+        rulesets=indexed['url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets']
+        self.assertCountEqual([u['plugin'] for u in rulesets['uses']],['agentic-vault','semantic-crosscheck'])
+        sxc_use=next(u for u in rulesets['uses'] if u['plugin']=='semantic-crosscheck')
+        self.assertCountEqual(
+            [row['file'] for row in sxc_use['evidence']],
+            ['docs/releases/v0.31.0.md','THIRD_PARTY.md'],
         )
 
 if __name__=='__main__':unittest.main()

@@ -159,11 +159,33 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('every catalog source has its own image on its card and detail page',()=>{
-  assert.equal(manifest.count,catalog.sources.length);
+test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
+  const uncommissioned=new Set([
+    'doi:10.1186/1471-2288-13-91',
+    'doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c',
+    'doi:10.1162/089976698300017197',
+    'doi:10.1002/stvr.1486',
+    'doi:10.1145/3243734.3243804',
+    'github:astral-sh/ruff',
+    'github:astral-sh/ty',
+    'github:quarylabs/sqruff'
+  ]);
+  for(const id of uncommissioned){
+    assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
+  }
+  assert.equal(manifest.count,catalog.sources.length-uncommissioned.size);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
+    if(uncommissioned.has(source.id)){
+      assert.equal(art.src,null);
+      for(const detail of [false,true]){
+        const html=artworkCover(source,{detail});
+        assert.ok(html.includes('is-art-fallback'),`Expected text cover for ${source.id}`);
+        assert.ok(!html.includes('<img'));
+      }
+      continue;
+    }
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -232,7 +254,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
@@ -424,8 +446,10 @@ test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    if(avCatalogVersion==='v0.52.0') assert.deepEqual(record.generationEvidenceUrls,citations);
-    else assert.deepEqual(record.generationEvidenceUrls.map(releasedFile),citations.map(releasedFile));
+    const avCitations=source.uses.filter(use=>use.plugin==='agentic-vault').flatMap(use=>use.evidence.map(row=>row.url));
+    const baseCitations=id.includes('about-rulesets')?avCitations:citations;
+    if(avCatalogVersion==='v0.52.0') assert.deepEqual(record.generationEvidenceUrls,baseCitations);
+    else assert.deepEqual(record.generationEvidenceUrls.map(releasedFile),baseCitations.map(releasedFile));
     assert.deepEqual(record.delivery.sourceDimensions,[1536,1024]);
     assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
     assert.equal(record.delivery.quality,90);

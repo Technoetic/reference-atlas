@@ -47,6 +47,26 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),('github:affaan-m/ecc','project'))
 
+    def test_sxc0310_paired_stats_and_static_linters_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://doi.org/10.1186/1471-2288-13-91','doi:10.1186/1471-2288-13-91','paper'),
+            ('10.1002/(SICI)1097-0258(19981130)17:22<2635::AID-SIM954>3.0.CO;2-C','doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c','paper'),
+            ('https://doi.org/10.1002/%28SICI%291097-0258%2819981130%2917:22%3C2635::AID-SIM954%3E3.0.CO;2-C','doi:10.1002/(sici)1097-0258(19981130)17:22<2635::aid-sim954>3.0.co;2-c','paper'),
+            ('https://doi.org/10.1162/089976698300017197','doi:10.1162/089976698300017197','paper'),
+            ('https://doi.org/10.1002/stvr.1486','doi:10.1002/stvr.1486','paper'),
+            ('https://doi.org/10.1145/3243734.3243804','doi:10.1145/3243734.3243804','paper'),
+            ('https://github.com/astral-sh/ruff','github:astral-sh/ruff','project'),
+            ('https://github.com/astral-sh/ty','github:astral-sh/ty','project'),
+            ('https://github.com/quarylabs/sqruff','github:quarylabs/sqruff','project'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
