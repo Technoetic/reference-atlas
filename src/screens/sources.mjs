@@ -3,7 +3,7 @@ import { artworkCover } from './art.mjs';
 import { escapeHTML, kindLabel, kindKorean, pluginLabel, pluginClass, safeURL, sourceCard, sourceBadges } from './util.mjs';
 
 export class SourcesScreen {
-  constructor({ element, catalog, state, onState, onSource, onRefresh = async () => false }) { this.element = element; this.catalog = catalog; this.state = state; this.onState = onState; this.onSource = onSource; this.onRefresh = onRefresh; this.abort = new AbortController(); }
+  constructor({ element, catalog, state, onState, onSource, onRefresh = async () => false }) { this.element = element; this.catalog = catalog; this.state = state; this.onState = onState; this.onSource = onSource; this.onRefresh = onRefresh; this.abort = new AbortController(); this.lastDetailId = null; this.lastTriggerId = null; this.pendingRestoreFocusId = null; }
   mount() {
     this.element.innerHTML = `<section class="library-page"><div class="page-heading"><p class="eyebrow">THE REFERENCE LIBRARY / 탐색</p><h1>IDEAS HAVE<br><span>ORIGINS.</span></h1><div class="page-intro"><p>무엇을 읽고, 어디에 참고했는가.<br>공개된 근거를 따라가 보세요.</p><span class="library-index" aria-hidden="true">[ A → Z ]</span></div></div><div class="library-toolbar"><label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">출처 검색</span><input id="source-search" type="search" placeholder="제목, 태그, 식별자로 검색" autocomplete="off"></label><div class="filter-row"><label><span>플러그인</span><select id="plugin-filter"><option value="all">전체 플러그인</option><option value="agentic-vault">Agentic Vault</option><option value="semantic-crosscheck">Semantic Crosscheck</option><option value="shared">두 플러그인 공통</option></select></label><label><span>종류</span><select id="kind-filter"><option value="all">전체 종류</option><option value="paper">논문</option><option value="project">프로젝트</option><option value="article">기사</option><option value="format">공개 규격</option><option value="research-name">이름 기록</option></select></label><label><span>정렬</span><select id="sort-filter"><option value="title">이름 A → Z</option><option value="year-desc">연도 최신순</option><option value="year-asc">연도 오래된순</option><option value="connections">참조 연결순</option></select></label></div></div><div id="source-detail"></div><div class="result-meta"><p><b id="result-count">0</b> SOURCES <span id="result-context"></span></p><button type="button" class="reset-filters">필터 초기화 ↺</button></div><div class="source-grid" id="source-results" aria-live="polite"></div><div class="library-footnote"><span>연도는 확인된 기록 또는 arXiv 식별자 기준입니다. 학술지 출판 연도와 다를 수 있습니다.</span><a href="./data/catalog.json" download>전체 대장 JSON ↓</a></div></section>`;
     const toolbar = this.element.querySelector('.library-toolbar');
@@ -13,7 +13,11 @@ export class SourcesScreen {
     this.element.querySelector('#source-search').addEventListener('input', event => this.onState({ q: event.target.value, source: null }, { replace: true }), options);
     for (const [id, key] of [['plugin-filter', 'plugin'], ['kind-filter', 'kind'], ['sort-filter', 'sort']]) this.element.querySelector(`#${id}`).addEventListener('change', event => this.onState({ [key]: event.target.value, source: null }), options);
     this.element.querySelector('.reset-filters').addEventListener('click', () => this.onState({ q: '', plugin: 'all', kind: 'all', sort: 'title', source: null }), options);
-    this.element.addEventListener('click', event => { const source = event.target.closest('[data-source]'); if (source) this.onSource(source.dataset.source); if (event.target.closest('[data-close-detail]')) this.onState({ source: null }); }, options);
+    this.element.addEventListener('click', event => {
+      const source = event.target.closest('[data-source]');
+      if (source) { this.lastTriggerId = source.dataset.source; this.onSource(source.dataset.source); }
+      if (event.target.closest('[data-close-detail]')) { this.pendingRestoreFocusId = this.lastTriggerId || this.lastDetailId; this.onState({ source: null }); }
+    }, options);
     this.update(this.state);
   }
   update(state) {
@@ -26,11 +30,40 @@ export class SourcesScreen {
     this.renderDetail(state.source);
   }
   renderDetail(id) {
-    const container = this.element.querySelector('#source-detail'); if (!id) { container.innerHTML = ''; return; }
+    const container = this.element.querySelector('#source-detail');
+    const changed = (id || null) !== this.lastDetailId;
+    if (!id) {
+      container.innerHTML = '';
+      this.lastDetailId = null;
+      if (this.pendingRestoreFocusId) {
+        const restoreId = this.pendingRestoreFocusId;
+        this.pendingRestoreFocusId = null;
+        const cards = this.element.querySelectorAll?.('[data-source]') || [];
+        const trigger = [...cards].find(el => el.dataset?.source === restoreId);
+        trigger?.focus?.({ preventScroll: true });
+      }
+      return;
+    }
+    this.pendingRestoreFocusId = null;
+    this.lastDetailId = id;
     const source = this.catalog.sources.find(item => item.id === id);
-    if (!source) { container.innerHTML = `<aside class="detail-panel"><button class="detail-close" type="button" data-close-detail aria-label="상세 닫기">×</button><h2>기록을 찾을 수 없습니다.</h2><p>이 스냅샷에 없는 식별자입니다. 전체 목록에서 다시 찾아보세요.</p></aside>`; return; }
+    if (!source) {
+      container.innerHTML = `<aside class="detail-panel" aria-labelledby="detail-title"><button class="detail-close" type="button" data-close-detail aria-label="상세 닫기">×</button><h2 id="detail-title" tabindex="-1">기록을 찾을 수 없습니다.</h2><p>이 스냅샷에 없는 식별자입니다. 전체 목록에서 다시 찾아보세요.</p></aside>`;
+      if (changed) this.focusDetail(container);
+      return;
+    }
     const url = safeURL(source.url); const uses = source.uses.map(use => `<section class="evidence-group"><h3><i class="evidence-dot ${pluginClass(use.plugin)}"></i>${pluginLabel(use.plugin)} <span>${use.role === 'background' ? '배경 참고' : use.role === 'unresolved' ? '이름 기록 · 식별 미확정' : '참조 기록'}</span></h3>${(use.evidence || []).slice(0, 8).map(evidence => { const link = safeURL(evidence.url); return `<div class="evidence-item">${link ? `<a href="${escapeHTML(link)}" target="_blank" rel="noopener noreferrer">${escapeHTML(evidence.file)}:${Number(evidence.line) || ''} ↗</a>` : `<span>${escapeHTML(evidence.file)}</span>`}<p>${escapeHTML(evidence.excerpt || '')}</p></div>`; }).join('')}${use.evidence.length > 8 ? `<p class="evidence-extra">이 밖의 ${use.evidence.length - 8}개 인용은 전체 JSON에서 확인할 수 있습니다.</p>` : ''}</section>`).join('');
-    container.innerHTML = `<aside class="detail-panel" aria-labelledby="detail-title">${artworkCover(source, { detail: true })}<button class="detail-close" type="button" data-close-detail aria-label="상세 닫기">×</button><p class="eyebrow">${kindLabel(source.kind)} / SOURCE DETAIL</p><h2 id="detail-title">${escapeHTML(source.title)}</h2><div class="detail-meta">${sourceBadges(source)}${source.year ? `<span>${source.year}</span>` : ''}<span>${kindKorean(source.kind)}</span></div><div class="detail-key">${escapeHTML((source.keys || [source.id]).join(' · '))}</div>${source.note ? `<p class="detail-note">${escapeHTML(source.note)}</p>` : ''}${url ? `<a class="button button-lime detail-original" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">원문·프로젝트 열기 ↗</a>` : '<p>원문 식별이 확정되지 않은 이름 기록입니다.</p>'}<div class="evidence-list">${uses}</div><p class="scope-note">위 기록은 공개 저장소의 참조 근거입니다. 전체 코드 도입, 논문 성능 재현 또는 현재 버전의 구현 범위를 인증하지 않습니다.</p></aside>`;
+    container.innerHTML = `<aside class="detail-panel" aria-labelledby="detail-title">${artworkCover(source, { detail: true })}<button class="detail-close" type="button" data-close-detail aria-label="상세 닫기">×</button><p class="eyebrow">${kindLabel(source.kind)} / SOURCE DETAIL</p><h2 id="detail-title" tabindex="-1">${escapeHTML(source.title)}</h2><div class="detail-meta">${sourceBadges(source)}${source.year ? `<span>${source.year}</span>` : ''}<span>${kindKorean(source.kind)}</span></div><div class="detail-key">${escapeHTML((source.keys || [source.id]).join(' · '))}</div>${source.note ? `<p class="detail-note">${escapeHTML(source.note)}</p>` : ''}${url ? `<a class="button button-lime detail-original" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">원문·프로젝트 열기 ↗</a>` : '<p>원문 식별이 확정되지 않은 이름 기록입니다.</p>'}<div class="evidence-list">${uses}</div><p class="scope-note">위 기록은 공개 저장소의 참조 근거입니다. 전체 코드 도입, 논문 성능 재현 또는 현재 버전의 구현 범위를 인증하지 않습니다.</p></aside>`;
+    if (changed) this.focusDetail(container);
+  }
+  focusDetail(container = this.element.querySelector?.('#source-detail')) {
+    const panel = container?.querySelector?.('.detail-panel');
+    const heading = panel?.querySelector?.('#detail-title');
+    const reduced = Boolean(globalThis.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches);
+    const rect = panel?.getBoundingClientRect?.();
+    const far = !rect || Math.abs(rect.top) > 400;
+    panel?.scrollIntoView?.({ behavior: reduced || far ? 'instant' : 'smooth', block: 'start' });
+    heading?.focus?.({ preventScroll: true });
   }
   destroy() { this.abort.abort(); }
 }
