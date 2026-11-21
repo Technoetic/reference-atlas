@@ -84,6 +84,28 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
 
+    def test_sxc0311_archive_collation_sbom_and_ci_hygiene_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://reproducible-builds.org/specs/source-date-epoch/','url:https://reproducible-builds.org/specs/source-date-epoch','format'),
+            ('https://www.postgresql.org/docs/17/collation.html','url:https://www.postgresql.org/docs/17/collation.html','article'),
+            ('https://ecma-international.org/publications-and-standards/standards/ecma-424/','url:https://ecma-international.org/publications-and-standards/standards/ecma-424','format'),
+            ('https://docs.npmjs.com/cli/v11/commands/npm-sbom','url:https://docs.npmjs.com/cli/v11/commands/npm-sbom','article'),
+            ('https://github.com/CycloneDX/cyclonedx-python','github:cyclonedx/cyclonedx-python','project'),
+            ('https://github.com/zizmorcore/zizmor','github:zizmorcore/zizmor','project'),
+            ('https://github.com/pypa/pip-audit','github:pypa/pip-audit','project'),
+            ('https://doi.org/10.1145/3194164.3194186','doi:10.1145/3194164.3194186','paper'),
+            ('https://github.com/rohaquinlop/complexipy','github:rohaquinlop/complexipy','project'),
+            ('https://github.com/jendrikseipp/vulture','github:jendrikseipp/vulture','project'),
+            ('https://github.com/osprey-oss/deptry','github:osprey-oss/deptry','project'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

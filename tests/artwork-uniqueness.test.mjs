@@ -172,7 +172,18 @@ test('commissioned sources have dedicated images and uncommissioned records use 
     'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
     'url:https://www.unicode.org/reports/tr39',
     'arxiv:2106.09898',
-    'github:rhysd/actionlint'
+    'github:rhysd/actionlint',
+    'url:https://reproducible-builds.org/specs/source-date-epoch',
+    'url:https://www.postgresql.org/docs/17/collation.html',
+    'url:https://ecma-international.org/publications-and-standards/standards/ecma-424',
+    'url:https://docs.npmjs.com/cli/v11/commands/npm-sbom',
+    'github:cyclonedx/cyclonedx-python',
+    'github:zizmorcore/zizmor',
+    'github:pypa/pip-audit',
+    'doi:10.1145/3194164.3194186',
+    'github:rohaquinlop/complexipy',
+    'github:jendrikseipp/vulture',
+    'github:osprey-oss/deptry'
   ]);
   for(const id of uncommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
@@ -258,7 +269,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);

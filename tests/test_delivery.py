@@ -34,6 +34,7 @@ EXPECTED_COVERAGE={
     ('v0.54.0','v0.30.0'):(62,62,29,197,367),
     ('v0.54.0','v0.31.0'):(62,62,29,205,390),
     ('v0.54.1','v0.31.0'):(64,64,29,209,399),
+    ('v0.54.1','v0.31.1'):(64,64,29,220,428),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -59,7 +60,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.27.0':(15,44,76,5),
                       'v0.28.0':(16,45,83,5),'v0.29.0':(16,45,83,5),
                       'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5),
-                      'v0.31.0':(21,55,109,7)}
+                      'v0.31.0':(21,55,109,7),
+                      'v0.31.1':(23,69,138,10)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -248,14 +250,51 @@ class DeliveryTests(unittest.TestCase):
             with self.subTest(source=sid):
                 src=indexed[sid]
                 self.assertEqual(src['kind'],kind)
-                use,=src['uses']
-                self.assertEqual((use['plugin'],use['role']),('agentic-vault','reference'))
-                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+                av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
+                self.assertEqual(av_use['role'],'reference')
+                self.assertCountEqual([row['file'] for row in av_use['evidence']],files)
         pillai=indexed['url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai']
         av_use=next(u for u in pillai['uses'] if u['plugin']=='agentic-vault')
         self.assertCountEqual(
             [row['file'] for row in av_use['evidence']],
             ['docs/releases/v0.42.0.md','docs/releases/v0.54.1.md'],
         )
+
+    def test_sxc0311_references_cover_archive_unicode_collation_sbom_and_ci_hygiene(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.31.1':
+            self.skipTest('These citation locations describe the v0.31.1 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected_new=[
+            ('url:https://reproducible-builds.org/specs/source-date-epoch','format',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('url:https://www.postgresql.org/docs/17/collation.html','article',['docs/releases/v0.31.1.md','THIRD_PARTY.md','docs/data-rules.md']),
+            ('url:https://ecma-international.org/publications-and-standards/standards/ecma-424','format',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('url:https://docs.npmjs.com/cli/v11/commands/npm-sbom','article',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:cyclonedx/cyclonedx-python','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:zizmorcore/zizmor','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:pypa/pip-audit','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('doi:10.1145/3194164.3194186','paper',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:rohaquinlop/complexipy','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:jendrikseipp/vulture','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+            ('github:osprey-oss/deptry','project',['docs/releases/v0.31.1.md','THIRD_PARTY.md']),
+        ]
+        for sid,kind,files in expected_new:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+        for shared_id in (
+            'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
+            'url:https://www.unicode.org/reports/tr39',
+            'github:rhysd/actionlint',
+        ):
+            with self.subTest(shared=shared_id):
+                src=indexed[shared_id]
+                self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+                sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
+                self.assertEqual(sxc_use['role'],'reference')
+                self.assertCountEqual([row['file'] for row in sxc_use['evidence']],['docs/releases/v0.31.1.md','THIRD_PARTY.md'])
 
 if __name__=='__main__':unittest.main()
