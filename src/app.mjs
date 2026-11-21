@@ -30,10 +30,10 @@ export class ReferenceAtlasApp {
     if (outcome.mode === 'blocked') { if (pop) history.replaceState({}, '', this.renderedURL); return; }
     if (!pop || canonicalized) history[replace || pop ? 'replaceState' : 'pushState']({}, '', target); this.intendedURL = null;
     const previous = this.view; this.render();
-    if (previous !== this.view) { window.scrollTo({ top: 0, behavior: 'instant' }); this.main.focus({ preventScroll: true }); }
+    if (previous !== this.view && !(this.view === 'sources' && this.state().source)) { window.scrollTo({ top: 0, behavior: 'instant' }); this.main.focus({ preventScroll: true }); }
   }
   setFilters(patch, { replace = false } = {}) { const target = routeURL(patch, this.intendedURL?.href || location.href); return this.navigate(target, { replace }); }
-  openSource(id) { const target = routeURL({ view: 'sources', source: id }); this.navigate(target).then(() => { if (this.view === 'sources') document.querySelector('#source-detail')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }); }); }
+  openSource(id) { const same = this.view === 'sources' && this.state().source === id; const target = routeURL({ view: 'sources', source: id }); this.navigate(target).then(() => { if (same && this.view === 'sources' && this.state().source === id) this.screen?.focusDetail?.(); }); }
   render() {
     if (!this.catalog) return; const url = routeURL(); if (url.href !== location.href) history.replaceState({}, '', url); const state = this.state(url); this.renderedURL = url.href;
     for (const anchor of document.querySelectorAll('[data-view]')) { const active = state.view === anchor.dataset.view; anchor.classList.toggle('active', active); if (active) anchor.setAttribute('aria-current', 'page'); else anchor.removeAttribute('aria-current'); }

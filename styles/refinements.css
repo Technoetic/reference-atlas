@@ -1,7 +1,333 @@
-@media(min-width:721px){.hero-map .hub-av{top:68%}}
-@media(max-width:720px){.hero h1{font-size:calc((100vw - 60px)/5.8)}}
-.hero-map .map-hub b{font-size:14px;line-height:1.35;letter-spacing:.01em}
-.hero-map .hub-sc b{font-size:12px;letter-spacing:0}
-.plugin-badges{min-width:0}
-.plugin-badge{white-space:nowrap}
-.card-bottom{gap:10px}
+@media (min-width: 721px) {
+  .hero-map .hub-av { top: 68%; }
+}
+
+@media (max-width: 720px) {
+  .hero h1 { font-size: calc((100vw - 60px) / 5.8); }
+}
+
+.hero-map .map-hub b {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: .01em;
+}
+
+.hero-map .hub-sc b {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.plugin-badges { min-width: 0; }
+.plugin-badge { white-space: nowrap; }
+.card-bottom { gap: 10px; }
+
+/* Bundle A: Readability floor (>=11px labels, >=12-14px body/excerpts),
+   desktop detail-close clearance, accessible touch targets (>=44px),
+   and unresolved-link restoration across all viewports. */
+
+.eyebrow,
+.hero-copy .eyebrow,
+.system-panel .eyebrow,
+.page-heading > .eyebrow,
+.detail-panel > .eyebrow,
+.library-tools-heading > .eyebrow,
+.load-error > .eyebrow {
+  font-size: 11px;
+  letter-spacing: .1em;
+}
+
+.brand {
+  font-size: 11px;
+  min-height: 44px;
+}
+
+.main-nav {
+  font-size: 13px;
+}
+
+.main-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 4px;
+}
+
+.hero-description,
+.section-heading > p:not(.eyebrow),
+.system-panel > p:not(.eyebrow),
+.page-intro p,
+.page-heading > p:not(.eyebrow),
+.footer-notes > p:first-child,
+.detail-note,
+.empty-state p,
+.load-error > p:not(.eyebrow),
+.loading-screen p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.map-tooltip { font-size: 12px; }
+.map-legend span { font-size: 11px; }
+.map-coordinate { font-size: 11px; line-height: 1.6; }
+
+.hero-stats {
+  flex-wrap: wrap;
+  row-gap: 18px;
+}
+
+.hero-stats > div > span { font-size: 12px; }
+
+.unresolved-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 12px;
+  padding: 6px 0;
+}
+
+.scroll-cue {
+  min-height: 44px;
+  font-size: 11px;
+  gap: 16px;
+}
+
+.system-bottom,
+.system-bottom > span { font-size: 12px; }
+
+.text-link,
+.section-inline > .text-link {
+  min-height: 44px;
+  font-size: 13px;
+  align-items: center;
+}
+
+.card-top,
+.card-number,
+.card-year,
+.card-tags,
+.plugin-badge,
+.shared-marker { font-size: 11px; }
+
+.card-tags > span { padding: 4px 8px; }
+
+.footer-notes > p:not(:first-child),
+.footer-links,
+.library-footnote,
+.scope-note,
+.detail-panel > .scope-note,
+.version-notice { font-size: 12px; }
+
+.footer-links { gap: 8px 18px; }
+.footer-links a,
+.library-footnote a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.footer-notes .snapshot-label {
+  font-size: 11px !important;
+  line-height: 1.6;
+}
+
+.library-tools-heading > button,
+.reset-filters {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+#refresh-status { font-size: 12px; }
+.search-field input { font-size: 14px; }
+.filter-row label > span { font-size: 12px; }
+.filter-row select {
+  min-height: 44px;
+  font-size: 13px;
+  padding: 10px 18px 10px 0;
+}
+
+.result-meta { font-size: 12px; }
+.result-meta p > span { font-size: 12px; }
+
+/* Clear separation between top-right close button (16..60px) and panel content/art (>=68px) */
+.detail-panel {
+  padding-top: 68px;
+}
+
+.detail-panel > h2:focus {
+  outline: none;
+}
+
+.detail-panel > h2:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 6px;
+}
+
+.detail-close {
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+}
+
+.detail-meta,
+.detail-key,
+.detail-original,
+.evidence-group h3 > span,
+.evidence-item > a,
+.evidence-item > span,
+.evidence-item > p,
+.evidence-extra { font-size: 12px; }
+
+.detail-original {
+  min-height: 44px;
+  padding: 12px 22px;
+  font-size: 13px;
+}
+
+.evidence-item > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  line-height: 1.4;
+}
+
+.evidence-item > p { line-height: 1.7; }
+
+@media (max-width: 1100px) {
+  .unresolved-link {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 720px) {
+  .brand { font-size: 11px; }
+  .main-nav { gap: 12px; font-size: 12px; }
+
+  .hero { padding-bottom: 36px; }
+  .hero-copy .eyebrow,
+  .system-panel .eyebrow,
+  .section-inline .eyebrow,
+  .page-heading > .eyebrow,
+  .detail-panel > .eyebrow,
+  .load-error > .eyebrow { font-size: 11px; }
+
+  .hero-stats strong span { font-size: 12px; }
+
+  .hero-description,
+  .section-heading > p:not(.eyebrow),
+  .system-panel > p:not(.eyebrow),
+  .page-intro p,
+  .page-heading > p:not(.eyebrow),
+  .footer-notes > p:first-child,
+  .detail-note { font-size: 13px; }
+
+  .hero-actions .button {
+    min-height: 44px;
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+
+  .map-coordinate { font-size: 11px; right: 6%; top: 18px; }
+  .map-legend {
+    gap: 10px 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 92%;
+    bottom: 18px;
+  }
+  .map-legend span { font-size: 11px; }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .hero-stats > div,
+  .hero-stats > div:last-of-type {
+    padding-right: 12px;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+
+  .hero-stats > div > span {
+    font-size: 11px;
+    max-width: none;
+  }
+
+  .unresolved-link {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    font-size: 12px;
+    min-height: 44px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+  }
+
+  .scroll-cue {
+    position: static;
+    margin-top: 18px;
+    justify-content: flex-end;
+    font-size: 11px;
+  }
+
+  .system-bottom > span { font-size: 11px; }
+  .section-inline { flex-wrap: wrap; gap: 12px; }
+  .section-inline > .text-link { font-size: 12px; gap: 12px; }
+
+  .card-top,
+  .card-number,
+  .card-year,
+  .card-tags,
+  .plugin-badge,
+  .shared-marker { font-size: 11px; }
+
+  .footer-notes > p:not(:first-child),
+  .footer-links,
+  .library-footnote,
+  .version-notice,
+  .result-meta,
+  .result-meta p > span,
+  .reset-filters,
+  .filter-row label > span,
+  .detail-meta,
+  .detail-key,
+  .evidence-group h3 > span,
+  .evidence-item > a,
+  .evidence-item > span,
+  .evidence-item > p,
+  .detail-panel > .scope-note { font-size: 12px; }
+
+  .footer-notes .snapshot-label { font-size: 11px !important; }
+  .search-field input { font-size: 13px; }
+  .filter-row select { font-size: 12px; min-height: 44px; }
+
+  .detail-panel { padding: 64px 20px 26px; }
+  .detail-close { top: 14px; right: 14px; width: 44px; height: 44px; font-size: 22px; }
+  .detail-original { font-size: 13px; }
+}
+
+@media (max-width: 430px) {
+  .site-header { gap: 8px; }
+  .brand { font-size: 11px; gap: 7px; }
+  .main-nav { gap: 8px; font-size: 11px; }
+  .hero-actions .button { font-size: 12px; }
+  .section-inline > .text-link { font-size: 12px; }
+  .card-top,
+  .card-year,
+  .card-tags,
+  .plugin-badge,
+  .shared-marker { font-size: 11px; }
+}
