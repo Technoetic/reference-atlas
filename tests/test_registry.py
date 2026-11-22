@@ -106,6 +106,27 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
 
+    def test_sxc0320_rls_evalues_summarizability_and_function_boundary_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://www.postgresql.org/docs/17/ddl-rowsecurity.html','url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html','article'),
+            ('https://www.postgresql.org/docs/17/catalog-pg-index.html','url:https://www.postgresql.org/docs/17/catalog-pg-index.html','article'),
+            ('https://doi.org/10.1093/jrsssb/qkae011','doi:10.1093/jrsssb/qkae011','paper'),
+            ('https://arxiv.org/abs/1906.07801','doi:10.1093/jrsssb/qkae011','paper'),
+            ('https://doi.org/10.1214/23-STS894','doi:10.1214/23-sts894','paper'),
+            ('https://arxiv.org/abs/2210.01948','doi:10.1214/23-sts894','paper'),
+            ('https://doi.org/10.1214/20-AOS1991','doi:10.1214/20-aos1991','paper'),
+            ('https://arxiv.org/abs/1810.08240','doi:10.1214/20-aos1991','paper'),
+            ('https://doi.org/10.1016/j.datak.2009.07.010','doi:10.1016/j.datak.2009.07.010','paper'),
+            ('https://doi.org/10.1145/3689031.3696064','doi:10.1145/3689031.3696064','paper'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

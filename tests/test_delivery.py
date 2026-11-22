@@ -35,6 +35,7 @@ EXPECTED_COVERAGE={
     ('v0.54.0','v0.31.0'):(62,62,29,205,390),
     ('v0.54.1','v0.31.0'):(64,64,29,209,399),
     ('v0.54.1','v0.31.1'):(64,64,29,220,428),
+    ('v0.54.1','v0.32.0'):(64,64,29,227,446),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -61,7 +62,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.28.0':(16,45,83,5),'v0.29.0':(16,45,83,5),
                       'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5),
                       'v0.31.0':(21,55,109,7),
-                      'v0.31.1':(23,69,138,10)}
+                      'v0.31.1':(23,69,138,10),
+                      'v0.32.0':(28,76,156,10)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -296,5 +298,30 @@ class DeliveryTests(unittest.TestCase):
                 sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
                 self.assertEqual(sxc_use['role'],'reference')
                 self.assertCountEqual([row['file'] for row in sxc_use['evidence']],['docs/releases/v0.31.1.md','THIRD_PARTY.md'])
+
+    def test_sxc0320_references_cover_rls_evalues_summarizability_and_function_boundary(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.32.0':
+            self.skipTest('These citation locations describe the v0.32.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected_new=[
+            ('url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html','article',['docs/releases/v0.32.0.md','THIRD_PARTY.md']),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-index.html','article',['docs/releases/v0.32.0.md','THIRD_PARTY.md']),
+            ('doi:10.1093/jrsssb/qkae011','paper',['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/paired-release.md']),
+            ('doi:10.1214/23-sts894','paper',['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/paired-release.md']),
+            ('doi:10.1214/20-aos1991','paper',['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/paired-release.md']),
+            ('doi:10.1016/j.datak.2009.07.010','paper',['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/semantic-preflight.md']),
+            ('doi:10.1145/3689031.3696064','paper',['docs/releases/v0.32.0.md','THIRD_PARTY.md']),
+        ]
+        for sid,kind,files in expected_new:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+        self.assertEqual(set(indexed['doi:10.1093/jrsssb/qkae011']['keys']),{'doi:10.1093/jrsssb/qkae011','arxiv:1906.07801'})
+        self.assertEqual(set(indexed['doi:10.1214/23-sts894']['keys']),{'doi:10.1214/23-sts894','arxiv:2210.01948'})
+        self.assertEqual(set(indexed['doi:10.1214/20-aos1991']['keys']),{'doi:10.1214/20-aos1991','arxiv:1810.08240'})
 
 if __name__=='__main__':unittest.main()

@@ -160,7 +160,15 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 });
 
 test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
-  const uncommissioned=new Set([]);
+  const uncommissioned=new Set([
+    'url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html',
+    'url:https://www.postgresql.org/docs/17/catalog-pg-index.html',
+    'doi:10.1093/jrsssb/qkae011',
+    'doi:10.1214/23-sts894',
+    'doi:10.1214/20-aos1991',
+    'doi:10.1016/j.datak.2009.07.010',
+    'doi:10.1145/3689031.3696064'
+  ]);
   for(const id of uncommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
   }
@@ -245,7 +253,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
