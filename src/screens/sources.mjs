@@ -1,11 +1,12 @@
 import { filterSources } from '../core/catalog.mjs';
 import { artworkCover } from './art.mjs';
 import { escapeHTML, kindLabel, kindKorean, pluginLabel, pluginClass, safeURL, sourceCard, sourceBadges } from './util.mjs';
+import { ScrollReveal } from '../visuals/reveal.mjs';
 
 export class SourcesScreen {
-  constructor({ element, catalog, state, onState, onSource, onRefresh = async () => false }) { this.element = element; this.catalog = catalog; this.state = state; this.onState = onState; this.onSource = onSource; this.onRefresh = onRefresh; this.abort = new AbortController(); this.lastDetailId = null; this.lastTriggerId = null; this.pendingRestoreFocusId = null; }
+  constructor({ element, catalog, state, onState, onSource, onRefresh = async () => false }) { this.element = element; this.catalog = catalog; this.state = state; this.onState = onState; this.onSource = onSource; this.onRefresh = onRefresh; this.abort = new AbortController(); this.lastDetailId = null; this.lastTriggerId = null; this.pendingRestoreFocusId = null; this.reveal = null; }
   mount() {
-    this.element.innerHTML = `<section class="library-page"><div class="page-heading"><p class="eyebrow">THE REFERENCE LIBRARY / 탐색</p><h1>IDEAS HAVE<br><span>ORIGINS.</span></h1><div class="page-intro"><p>무엇을 읽고, 어디에 참고했는가.<br>공개된 근거를 따라가 보세요.</p><span class="library-index" aria-hidden="true">[ A → Z ]</span></div></div><div class="library-toolbar"><label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">출처 검색</span><input id="source-search" type="search" placeholder="제목, 태그, 식별자로 검색" autocomplete="off"></label><div class="filter-row"><label><span>플러그인</span><select id="plugin-filter"><option value="all">전체 플러그인</option><option value="agentic-vault">Agentic Vault</option><option value="semantic-crosscheck">Semantic Crosscheck</option><option value="shared">두 플러그인 공통</option></select></label><label><span>종류</span><select id="kind-filter"><option value="all">전체 종류</option><option value="paper">논문</option><option value="project">프로젝트</option><option value="article">기사</option><option value="format">공개 규격</option><option value="research-name">이름 기록</option></select></label><label><span>정렬</span><select id="sort-filter"><option value="title">이름 A → Z</option><option value="year-desc">연도 최신순</option><option value="year-asc">연도 오래된순</option><option value="connections">참조 연결순</option></select></label></div></div><div id="source-detail"></div><div class="result-meta"><p><b id="result-count">0</b> SOURCES <span id="result-context"></span></p><button type="button" class="reset-filters">필터 초기화 ↺</button></div><div class="source-grid" id="source-results" aria-live="polite"></div><div class="library-footnote"><span>연도는 확인된 기록 또는 arXiv 식별자 기준입니다. 학술지 출판 연도와 다를 수 있습니다.</span><a href="./data/catalog.json" download>전체 대장 JSON ↓</a></div></section>`;
+    this.element.innerHTML = `<section class="library-page"><div class="page-heading"><p class="eyebrow">THE REFERENCE LIBRARY / 탐색</p><h1>IDEAS HAVE<br><span>ORIGINS.</span></h1><div class="page-intro"><p>무엇을 읽고, 어디에 참고했는가.<br>공개된 근거를 따라가 보세요.</p><span class="library-index" aria-hidden="true">[ A → Z ]</span></div></div><div class="library-toolbar"><label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">출처 검색</span><input id="source-search" type="search" placeholder="제목, 태그, 식별자로 검색" autocomplete="off"></label><div class="filter-row"><label><span>플러그인</span><select id="plugin-filter"><option value="all">전체 플러그인</option><option value="agentic-vault">Agentic Vault</option><option value="semantic-crosscheck">Semantic Crosscheck</option><option value="shared">두 플러그인 공통</option></select></label><label><span>종류</span><select id="kind-filter"><option value="all">전체 종류</option><option value="paper">논문</option><option value="project">프로젝트</option><option value="article">기사</option><option value="format">공개 규격</option><option value="research-name">이름 기록</option></select></label><label><span>정렬</span><select id="sort-filter"><option value="title">이름 A → Z</option><option value="year-desc">연도 최신순</option><option value="year-asc">연도 오래된순</option><option value="connections">참조 연결순</option></select></label></div></div><div id="source-detail"></div><div class="result-meta"><p><b id="result-count">0</b> SOURCES <span id="result-context"></span></p><button type="button" class="reset-filters">필터 초기화 ↺</button></div><div class="source-grid" id="source-results" aria-live="polite"></div><div class="library-footnote" data-reveal><span>연도는 확인된 기록 또는 arXiv 식별자 기준입니다. 학술지 출판 연도와 다를 수 있습니다.</span><a href="./data/catalog.json" download>전체 대장 JSON ↓</a></div></section>`;
     const toolbar = this.element.querySelector('.library-toolbar');
     const tools = document.createElement('div'); tools.className = 'library-tools-heading'; tools.innerHTML = '<span class="eyebrow">SOURCE INDEX</span><button type="button" id="refresh-catalog">대장 새로고침 ↻</button><span id="refresh-status" role="status"></span>'; toolbar.prepend(tools);
     const options = { signal: this.abort.signal };
@@ -18,6 +19,7 @@ export class SourcesScreen {
       if (source) { this.lastTriggerId = source.dataset.source; this.onSource(source.dataset.source); }
       if (event.target.closest('[data-close-detail]')) { this.pendingRestoreFocusId = this.lastTriggerId || this.lastDetailId; this.onState({ source: null }); }
     }, options);
+    this.reveal = new ScrollReveal(this.element);
     this.update(this.state);
   }
   update(state) {
@@ -26,9 +28,11 @@ export class SourcesScreen {
     const sources = filterSources(this.catalog, { plugin: state.plugin || 'all', kind: state.kind || 'all', query: state.q || '', sort: state.sort || 'title', tag: state.tag || 'all' });
     this.element.querySelector('#result-count').textContent = String(sources.length);
     this.element.querySelector('#result-context').textContent = state.q ? ` / “${state.q}”` : '';
-    this.element.querySelector('#source-results').innerHTML = sources.length ? sources.map(sourceCard).join('') : `<div class="empty-state"><span aria-hidden="true">∅</span><h2>일치하는 출처가 없습니다.</h2><p>검색어나 필터를 바꿔 보세요.<br>검색 결과 없음은 새로운 연구라는 뜻이 아닙니다.</p></div>`;
+    this.element.querySelector('#source-results').innerHTML = sources.length ? sources.map((source, index) => sourceCard(source, index, { reveal: true, stagger: index % 3 })).join('') : `<div class="empty-state"><span aria-hidden="true">∅</span><h2>일치하는 출처가 없습니다.</h2><p>검색어나 필터를 바꿔 보세요.<br>검색 결과 없음은 새로운 연구라는 뜻이 아닙니다.</p></div>`;
     this.renderDetail(state.source);
+    this.reveal?.refresh();
   }
+  syncMotion(options) { this.reveal?.sync(options); }
   renderDetail(id) {
     const container = this.element.querySelector('#source-detail');
     const changed = (id || null) !== this.lastDetailId;
@@ -65,5 +69,5 @@ export class SourcesScreen {
     panel?.scrollIntoView?.({ behavior: reduced || far ? 'instant' : 'smooth', block: 'start' });
     heading?.focus?.({ preventScroll: true });
   }
-  destroy() { this.abort.abort(); }
+  destroy() { this.reveal?.destroy(); this.abort.abort(); }
 }
