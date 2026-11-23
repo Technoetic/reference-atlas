@@ -37,6 +37,7 @@ EXPECTED_COVERAGE={
     ('v0.54.1','v0.31.1'):(64,64,29,220,428),
     ('v0.54.1','v0.32.0'):(64,64,29,227,446),
     ('v0.56.0','v0.32.0'):(64,66,29,229,450),
+    ('v0.56.0','v0.33.0'):(64,66,29,229,453),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -64,7 +65,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.30.0':(16,46,86,6 if versions[0]=='v0.54.0' else 5),
                       'v0.31.0':(21,55,109,7),
                       'v0.31.1':(23,69,138,10),
-                      'v0.32.0':(28,76,156,10)}
+                      'v0.32.0':(28,76,156,10),
+                      'v0.33.0':(28,77,159,11)}
         self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
@@ -338,8 +340,23 @@ class DeliveryTests(unittest.TestCase):
             with self.subTest(source=sid):
                 src=indexed[sid]
                 self.assertEqual(src['kind'],kind)
-                use,=src['uses']
-                self.assertEqual((use['plugin'],use['role']),('agentic-vault','reference'))
-                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+                av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
+                self.assertEqual(av_use['role'],'reference')
+                self.assertCountEqual([row['file'] for row in av_use['evidence']],files)
+
+    def test_sxc0330_references_cover_shared_foldboost(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.33.0':
+            self.skipTest('These citation locations describe the v0.33.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        src=indexed['github:ai3inc/foldboost']
+        self.assertEqual(src['kind'],'project')
+        self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+        sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
+        self.assertEqual(sxc_use['role'],'reference')
+        self.assertCountEqual(
+            [row['file'] for row in sxc_use['evidence']],
+            ['docs/releases/v0.33.0.md','THIRD_PARTY.md','docs/paired-release.md'],
+        )
 
 if __name__=='__main__':unittest.main()

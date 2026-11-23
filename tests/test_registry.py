@@ -143,6 +143,9 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
         self.assertEqual(find_matches(catalog,'FoldBoost')['status'],'possible')
         self.assertEqual(find_matches(catalog,'stock-team-harness')['status'],'possible')
+        if catalog['snapshots']['semantic-crosscheck']['version']=='v0.33.0':
+            fb,=find_matches(catalog,'https://github.com/ai3inc/foldboost')['matches']
+            self.assertCountEqual([u['plugin'] for u in fb['uses']],['agentic-vault','semantic-crosscheck'])
 
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
