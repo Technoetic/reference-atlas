@@ -159,34 +159,11 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(hashes).size,manifest.assets.length);
 });
 
-test('commissioned sources have dedicated images and uncommissioned records use text covers',()=>{
-  const uncommissioned=new Set([
-    'url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html',
-    'url:https://www.postgresql.org/docs/17/catalog-pg-index.html',
-    'doi:10.1093/jrsssb/qkae011',
-    'doi:10.1214/23-sts894',
-    'doi:10.1214/20-aos1991',
-    'doi:10.1016/j.datak.2009.07.010',
-    'doi:10.1145/3689031.3696064',
-    'github:seulee26/stock-team-harness',
-    'github:ai3inc/foldboost'
-  ]);
-  for(const id of uncommissioned){
-    assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
-  }
-  assert.equal(manifest.count,catalog.sources.length-uncommissioned.size);
+test('every current catalog source renders its dedicated image in the gallery and detail view',()=>{
+  assert.equal(manifest.count,catalog.sources.length);
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
-    if(uncommissioned.has(source.id)){
-      assert.equal(art.src,null);
-      for(const detail of [false,true]){
-        const html=artworkCover(source,{detail});
-        assert.ok(html.includes('is-art-fallback'),`Expected text cover for ${source.id}`);
-        assert.ok(!html.includes('<img'));
-      }
-      continue;
-    }
     assert.ok(art.src,`Missing commissioned artwork: ${source.id}`);
     images.push(art.src);
     for(const detail of [false,true]){
@@ -604,10 +581,43 @@ test('the twenty-three formerly unillustrated v0.31.0, v0.54.1 and v0.31.1 refer
   assert.equal(sourceHashes.size,commissioned.length);
 });
 
-test('the first 197 commissioned covers retain their immutable generation records',()=>{
-  const records=manifest.assets.slice(0,197).map(asset=>Object.fromEntries(
+test('the first 220 commissioned covers retain their immutable generation records',()=>{
+  const records=manifest.assets.slice(0,220).map(asset=>Object.fromEntries(
     Object.entries(asset).filter(([key])=>!['evidenceUrls','currentEvidenceUrls'].includes(key))
   ));
   assert.equal(createHash('sha256').update(JSON.stringify(records)).digest('hex'),
-    'd7ec3bc18ab23012d80d2c780c874d5840192b2a3bce2c99a64eef648059cdad');
+    '3217b746f4e362ebb1e5571434da67f6767fe4dd5ed1f2718480d5a8f4c74ce3');
+});
+
+test('the nine newly commissioned covers retain their source assignments and independent originals',()=>{
+  const ids=[
+    'url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html',
+    'url:https://www.postgresql.org/docs/17/catalog-pg-index.html',
+    'doi:10.1016/j.datak.2009.07.010',
+    'doi:10.1214/23-sts894',
+    'doi:10.1093/jrsssb/qkae011',
+    'doi:10.1214/20-aos1991',
+    'doi:10.1145/3689031.3696064',
+    'github:ai3inc/foldboost',
+    'github:seulee26/stock-team-harness'
+  ];
+  const records=manifest.assets.slice(220,229);
+  assert.deepEqual(records.map(asset=>asset.sourceId),ids);
+  const previousOriginals=new Set(manifest.assets.slice(0,220).map(asset=>asset.delivery?.sourceSha256));
+  for(const [offset,record] of records.entries()){
+    const index=221+offset;
+    const source=catalog.sources.find(item=>item.id===record.sourceId);
+    assert.equal(record.index,index);
+    assert.equal(record.kind,source.kind);
+    assert.equal(record.title,source.title);
+    assert.equal(sourceArtwork(source).label,record.label);
+    assert.match(record.output,new RegExp(`^media/cards/card-${index}-[a-z0-9-]+\\.webp$`));
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${source.id}`);
+    previousOriginals.add(record.delivery.sourceSha256);
+    if(avCatalogVersion==='v0.56.0'&&catalog.snapshots['semantic-crosscheck'].version==='v0.33.0'){
+      assert.deepEqual(record.generationEvidenceUrls,record.currentEvidenceUrls);
+    }
+  }
 });

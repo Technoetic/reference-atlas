@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 220,
+  "count": 229,
   "assets": [
     {
       "index": 1,
@@ -6895,6 +6895,414 @@
       },
       "generationReferenceUrls": [
         "https://github.com/zizmorcore/zizmor"
+      ]
+    },
+    {
+      "index": 221,
+      "sourceId": "url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html",
+      "title": "PostgreSQL 17 Documentation — 5.9. Row Security Policies",
+      "kind": "article",
+      "label": "ROW VISIBILITY POLICIES",
+      "factualConcept": "PostgreSQL row-level security controls which rows are visible to a role.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A museum specimen cabinet photographed from the front. A massive deep-teal sliding brass-and-slate shutter with a series of staggered narrow horizontal slots exposes only selected rows of polished amber specimens on a shelf. The hidden and visible rows are immediately legible. Strong oblique cyan afternoon light and velvet shadows. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-221-postgres-row-security.webp",
+      "sha256": "35e92f29bce8df4675340ac1696b12297eecbd4574a51c7855b394403910a984",
+      "bytes": 151710,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L61",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "delivery": {
+        "sourceSha256": "b69bd654300606213c028700a29b06d44d064c093ba9da7347f2c66776b1eb00",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/ddl-rowsecurity.html"
+      ]
+    },
+    {
+      "index": 222,
+      "sourceId": "url:https://www.postgresql.org/docs/17/catalog-pg-index.html",
+      "title": "PostgreSQL 17 Documentation — 52.26. pg_index (indnullsnotdistinct)",
+      "kind": "article",
+      "label": "NULLS NOT DISTINCT",
+      "factualConcept": "PostgreSQL’s unique index can treat two nulls as equal.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. An oblique macro product photograph of a compact graphite indexing jig. Several separate sockets hold uniquely shaped opaque stones. Two identical transparent hollow glass rings compete for a single matching recess: one is seated within the recess and its twin is poised neatly above it. Use warm cream raking light, smoky violet shadow, and a crisp silhouette. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-222-postgres-null-uniqueness.webp",
+      "sha256": "cdd58fa7e194245867980a92fa510290701accab83413be2fbb77a2cf7a1c8c0",
+      "bytes": 122404,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L62",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L293"
+      ],
+      "delivery": {
+        "sourceSha256": "fe8f0dfe377a30dca49cf2270144c90c51736bccaedc15951121acf32d61f29f",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/catalog-pg-index.html"
+      ]
+    },
+    {
+      "index": 223,
+      "sourceId": "doi:10.1016/j.datak.2009.07.010",
+      "title": "A survey on summarizability issues in multidimensional modeling",
+      "kind": "paper",
+      "label": "CUBE SUMMARIZABILITY",
+      "factualConcept": "The survey examines when aggregating values across dimensions and levels yields valid summaries.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A precise physical model on a pale sand architectural drafting surface: a large geometric cube assembled from interlocking groups of smaller terra-cotta, ochre and pale-blue wooden unit blocks. Two nested levels of aggregation, separated a little in an elegant exploded corner, show clearly how the groups fit back into the whole with no overlaps. Crisp overhead daylight and linear shadows. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-223-multidimensional-summarizability.webp",
+      "sha256": "b13a731b1a6a99f7e8506643391c7236aa420607db55a895022f91333792b8e7",
+      "bytes": 114528,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L295",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/semantic-preflight.md#L48"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L295",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/semantic-preflight.md#L48"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L66",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L295",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/semantic-preflight.md#L48"
+      ],
+      "delivery": {
+        "sourceSha256": "2d7c242c6158169e9f9e054e6b89b9224846fe004451c640d658b8bfb58b006f",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1016/j.datak.2009.07.010"
+      ]
+    },
+    {
+      "index": 224,
+      "sourceId": "doi:10.1214/23-sts894",
+      "title": "Game-Theoretic Statistics and Safe Anytime-Valid Inference",
+      "kind": "paper",
+      "label": "SEQUENTIAL EVIDENCE",
+      "factualConcept": "Game-theoretic statistics use sequential evidence processes for anytime-valid inference.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. On a blue-black mathematical instrument maker's workbench, one sinuous path of small brass counters rises and falls across ordered shallow steps. A continuous vermilion fine cord connects the small piles as an evolving sequence of betting capital. Horizontal cinematic side-light and polished endgrain. One dynamic left-to-right composition; no board-game markings. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-224-anytime-valid-inference.webp",
+      "sha256": "e3ec5ad600a72f3d81d8f7df088697d1b1d87394a42790bd9a40a1b476b67cb7",
+      "bytes": 145498,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L64",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "delivery": {
+        "sourceSha256": "77956b35e0bb9dc2eebec86562d9b8aa73a087d4166af3ad405a5f74fdfb0331",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1214/23-STS894"
+      ]
+    },
+    {
+      "index": 225,
+      "sourceId": "doi:10.1093/jrsssb/qkae011",
+      "title": "Safe Testing",
+      "kind": "paper",
+      "label": "OPTIONAL STOPPING",
+      "factualConcept": "Safe Testing uses e-values to permit optional stopping and continuation.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A single indigo enamel hand press holds an elegant serpentine row of small ivory ceramic domino tiles in a frozen halfway-fallen state. A bright orange removable stop pin arrests the next tile, with the rest of the row standing ready beyond it. Close-up eye-level composition, strong tangible shadows, quiet persimmon studio background. The pin and arrested tile are the focal point. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-225-safe-testing.webp",
+      "sha256": "70acfbba637f9ff6b70e345c238bd19d425d3478758f9fddd506ed66d1361ee3",
+      "bytes": 84218,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L63",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "delivery": {
+        "sourceSha256": "3fee5785f066cfdf6ca626e5c55b835deec9458bc69751626098e424694d70f2",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1093/jrsssb/qkae011"
+      ]
+    },
+    {
+      "index": 226,
+      "sourceId": "doi:10.1214/20-aos1991",
+      "title": "Time-uniform, nonparametric, nonasymptotic confidence sequences",
+      "kind": "paper",
+      "label": "TIME-UNIFORM BOUNDS",
+      "factualConcept": "Confidence sequences provide uncertainty intervals with simultaneous coverage across time.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. An elongated, translucent sea-glass ribbon tunnel with two undulating clearly visible outer edges, wide at the near left and gently narrowing into the mid-right with observations. A continuous thin amber filament meanders entirely inside it. Gallery-quality tabletop studio photograph on matte deep pine, grazing light and translucent caustics. A sculptural uncertainty envelope, no axes. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-226-confidence-sequences.webp",
+      "sha256": "d2d7d9b4e364b80f32bae3d2a7356d47c419014b3f32f271305219743d794931",
+      "bytes": 79572,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L65",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L294",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L39"
+      ],
+      "delivery": {
+        "sourceSha256": "f8c210c503ec657bafdda8cdf518f76614fe3a5d05cbf26c1b5df4cde0f165f6",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1214/20-AOS1991"
+      ]
+    },
+    {
+      "index": 227,
+      "sourceId": "doi:10.1145/3689031.3696064",
+      "title": "Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments to Trigger Hundreds of DBMS Bugs",
+      "kind": "paper",
+      "label": "FUNCTION BOUNDARIES",
+      "factualConcept": "The paper studies boundary arguments in SQL function testing.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A precision machinist's go/no-go gauge in brushed steel holding three honed ceramic cylinders just below, exactly at, and just above the circular tolerance opening. Focus on the one rim where the largest piece cannot pass. Clean industrial cobalt backdrop, brightly lit ends, striking oblique tabletop composition. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-227-sql-function-boundaries.webp",
+      "sha256": "3fa8221e68dd00842ebee1649e328f1979f48cebffabc6befd4a5c61044df05a",
+      "bytes": 92464,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L296"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L296"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L67",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L296"
+      ],
+      "delivery": {
+        "sourceSha256": "e2916f2929d59a772a0b566a295bb65bdc3c0b970049ebc352dde538e95ff926",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1145/3689031.3696064"
+      ]
+    },
+    {
+      "index": 228,
+      "sourceId": "github:ai3inc/foldboost",
+      "title": "ai3inc/foldboost",
+      "kind": "project",
+      "label": "SEALED EVALUATION PLAN",
+      "factualConcept": "FoldBoost is cited for sealed evaluation plans, drift checks and activation audits.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A preregistered experiment represented by a single neatly accordion-folded stack of warm ivory archival leaves, held shut by a conspicuous cobalt wax seal molded over taut linen cord. Fan the paper folds just enough to read the structure without showing any writing. Museum archive tabletop, rich slate background, low glancing daylight bringing out the seal and folds. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-228-foldboost-eval-plan.webp",
+      "sha256": "cf73b37bff5a1a69d60bab4fbe5e528974716139c20072a119bd573af68776a3",
+      "bytes": 148622,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.56.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L115",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.33.0.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L302",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L47"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.56.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L115",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.33.0.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L302",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L47"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.56.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L115",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.33.0.md#L59",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/THIRD_PARTY.md#L302",
+        "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/paired-release.md#L47"
+      ],
+      "delivery": {
+        "sourceSha256": "2b5a27aedc70ad91a1833faebbbbfe1f80979ba554c47ea6a01143902572cfb4",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/ai3inc/foldboost"
+      ]
+    },
+    {
+      "index": 229,
+      "sourceId": "github:seulee26/stock-team-harness",
+      "title": "seulee26/stock-team-harness",
+      "kind": "project",
+      "label": "DATED REVIEW CHECKS",
+      "factualConcept": "Stock Team Harness is cited for verification dates, scheduled reviews and rollover checks.",
+      "prompt": "Use case: stylized-concept. Create one full-bleed 3:2 landscape editorial cover for a Reference Atlas source card. A vintage mechanical date-change wheel captured at the moment of rolling one brass tab past a brilliant red inspection pointer. Use alternating blind-embossed geometric notches, blank aged cream tabs and a faint row of receding tabs for a sense of calendar cadence. Close-up from above, dark petrol dial housing, silver pivots, dramatic directional workshop light. No digits on the tabs. Keep the main subject in the central 75% so it is legible at thumbnail size, including a wide crop. Tactile materials and purposeful composition. No typography, letters, numbers, labels, logos, watermark, border or interface elements.",
+      "output": "media/cards/card-229-stock-team-harness.webp",
+      "sha256": "a0555592beb79b257352bda7be486d86cf8200c07263e04e13e436e428df309d",
+      "bytes": 162452,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.55.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L123"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.55.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L123"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/releases/v0.55.0.md#L3",
+        "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L123"
+      ],
+      "delivery": {
+        "sourceSha256": "b241a94a00c8c01dfa80188eb94f4b546f3df5ae38ca4f75efb6892e4bfc296e",
+        "sourceDimensions": [
+          1536,
+          1024
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/seulee26/stock-team-harness"
       ]
     }
   ],
