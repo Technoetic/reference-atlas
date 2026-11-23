@@ -127,6 +127,23 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
 
+    def test_av0560_stock_team_harness_and_foldboost_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://github.com/seulee26/stock-team-harness','github:seulee26/stock-team-harness','project'),
+            ('https://github.com/seulee26/stock-team-harness/tree/v2.4.0','github:seulee26/stock-team-harness','project'),
+            ('https://github.com/ai3inc/foldboost','github:ai3inc/foldboost','project'),
+            ('https://github.com/ai3inc/foldboost/tree/v0.3.0','github:ai3inc/foldboost','project'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+        self.assertEqual(find_matches(catalog,'FoldBoost')['status'],'possible')
+        self.assertEqual(find_matches(catalog,'stock-team-harness')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

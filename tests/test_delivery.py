@@ -36,6 +36,7 @@ EXPECTED_COVERAGE={
     ('v0.54.1','v0.31.0'):(64,64,29,209,399),
     ('v0.54.1','v0.31.1'):(64,64,29,220,428),
     ('v0.54.1','v0.32.0'):(64,64,29,227,446),
+    ('v0.56.0','v0.32.0'):(64,66,29,229,450),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -323,5 +324,22 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(set(indexed['doi:10.1093/jrsssb/qkae011']['keys']),{'doi:10.1093/jrsssb/qkae011','arxiv:1906.07801'})
         self.assertEqual(set(indexed['doi:10.1214/23-sts894']['keys']),{'doi:10.1214/23-sts894','arxiv:2210.01948'})
         self.assertEqual(set(indexed['doi:10.1214/20-aos1991']['keys']),{'doi:10.1214/20-aos1991','arxiv:1810.08240'})
+
+    def test_av0560_references_cover_stock_team_harness_and_foldboost(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.56.0':
+            self.skipTest('These citation locations describe the v0.56.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected_new=[
+            ('github:seulee26/stock-team-harness','project',['docs/releases/v0.55.0.md','README.md']),
+            ('github:ai3inc/foldboost','project',['docs/releases/v0.56.0.md','README.md']),
+        ]
+        for sid,kind,files in expected_new:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('agentic-vault','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
 
 if __name__=='__main__':unittest.main()
