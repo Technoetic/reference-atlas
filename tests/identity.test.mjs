@@ -29,8 +29,8 @@ test('article and repository URLs resolve to their own records without an alias 
 });
 test('article counts never inflate papers or projects and remain visible by plugin',()=>{
   const sources={sources:[...catalog.sources,article,project]};
-  assert.deepEqual(catalogStats(sources),{total:5,papers:3,projects:1,articles:1,names:0,shared:1});
-  assert.deepEqual(catalogStats(sources,'semantic-crosscheck'),{total:2,papers:2,projects:0,articles:0,names:0,shared:1});
+  assert.deepEqual(catalogStats(sources),{total:5,papers:3,projects:1,articles:1,shared:1});
+  assert.deepEqual(catalogStats(sources,'semantic-crosscheck'),{total:2,papers:2,projects:0,articles:0,shared:1});
   assert.equal(kindLabel('article'),'ARTICLE');
   assert.equal(kindKorean('article'),'기사');
   assert.match(sourceCard(article),/>ARTICLE</);

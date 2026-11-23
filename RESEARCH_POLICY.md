@@ -13,15 +13,17 @@ Crosscheck. It is a duplication check, not a prohibition on reading or revisitin
    reviewed again. State the previous use, the new delta and the evidence to test.
 5. Name matches are tentative. Resolve the actual identifier instead of merging
    unrelated works with similar names.
-6. A missing match is not proof of novelty. Check earlier research notes and the
-   official source as well; the public registry covers only its stated snapshots.
+6. A missing match is not proof of novelty. Check earlier research notes, the
+   name-only mentions in `data/registry.source.json` and the official source.
 7. Update the registry only after verifying public citation evidence. Do not promote
    speculative titles, private documents or dependency lists into adopted research.
 
 Record the snapshot used, candidate identifier, match status, previous use and
 new delta in the research output. Do not claim that every recorded source's code
 or benchmark has been reproduced. Runtime/CI-only tools are outside the current
-research-reference scope; unresolved and background records are marked explicitly.
+research-reference scope. Identified background references retain their role.
+Mentions awaiting identification stay in the curation input until a plugin citation
+establishes which external work it refers to.
 
 The visual site, JSON/CSV downloads and offline CLI use the same catalog. Checking
 it is part of the research process; the catalog itself does not grant permission

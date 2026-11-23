@@ -26,7 +26,7 @@ Never invent statistics, citations, adoption levels or publication years.
 
 `data/catalog.json`: `{schemaVersion:1, updatedAt, snapshots, sources:[]}`.
 Each source: `{id,kind,title,url,year,tags,keys,aliases,uses,note?}`.
-Kinds: `paper`, `project`, `article`, `format`, `research-name`. Official articles
+Published kinds: `paper`, `project`, `article`, `format`. Official articles
 have their own facet and counts; they do not inflate paper/project/format totals. A use has
 `{plugin,role,evidence:[{file,line,url,excerpt}]}`; plugin is `agentic-vault` or
 `semantic-crosscheck`, role is `reference`, `background`, or `unresolved`.
@@ -35,8 +35,9 @@ year is a registration-year hint, not a journal publication claim.
 
 Canonical keys: `arxiv:YYMM.NNNNN`, `doi:lowercase`,
 `github:owner/repo`, `name:normalized name`, `url:normalized URL`.
-Cross-plugin duplicates merge into one source with multiple uses. Name-only
-research remains visibly unresolved and does not inflate identified-paper counts.
+Cross-plugin duplicates merge into one source with multiple uses. The curation
+input keeps `research-name` mentions and their pinned evidence for later review.
+The map, library, download files and their metrics omit these mentions.
 An article URL and a repository identity stay distinct even when the article
 discusses that project; a shared topic is not evidence of an identity alias.
 

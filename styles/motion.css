@@ -36,8 +36,7 @@
 }
 
 .hero-stats strong .countup-value,
-.system-bottom b .countup-value,
-.unresolved-link .countup-value {
+.system-bottom b .countup-value {
   font-size: inherit;
   line-height: inherit;
   color: inherit;

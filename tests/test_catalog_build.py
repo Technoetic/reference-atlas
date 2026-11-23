@@ -1,9 +1,12 @@
+import csv
+import json
 import sys
 from pathlib import Path
+from tempfile import TemporaryDirectory
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from build_catalog import merge_sources,metrics
+from build_catalog import build,merge_sources,metrics
 
 def source(plugin,key='arxiv:2502.12110',title='A-MEM'):
     return {'id':key,'kind':'paper','title':title,'url':'https://arxiv.org/abs/2502.12110','year':2025,
@@ -50,5 +53,42 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(counts['project'],1)
         self.assertEqual(counts['format'],0)
         self.assertEqual(counts['citations'],2)
+
+    def test_public_exports_withhold_unresolved_uses_and_include_a_subsequently_identified_paper(self):
+        known = source('agentic-vault', 'name:identified paper', 'Identified paper')
+        pending = source('semantic-crosscheck', 'name:pending title', 'Pending title')
+        pending.update(kind='research-name', url=pending['uses'][0]['evidence'][0]['url'])
+        pending['uses'][0]['role'] = 'unresolved'
+        registry = {'schemaVersion': 1, 'sources': [known, pending], 'snapshots': {
+            plugin: {'commit': 'a' * 40} for plugin in ('agentic-vault', 'semantic-crosscheck')}}
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = root / 'data'
+            data.mkdir()
+            audit_file = data / 'registry.source.json'
+            for identified in (False, True):
+                with self.subTest(identified=identified):
+                    if identified:
+                        pending.update(kind='paper', url='https://arxiv.org/abs/2502.12111')
+                        pending['keys'].append('arxiv:2502.12111')
+                        pending['uses'][0]['role'] = 'reference'
+                    original = json.dumps(registry)
+                    audit_file.write_text(original, encoding='utf-8')
+                    build(root)
+                    self.assertEqual(audit_file.read_text(encoding='utf-8'), original)
+                    catalog = json.loads((data / 'catalog.json').read_text(encoding='utf-8'))
+                    with (data / 'catalog.csv').open(encoding='utf-8-sig', newline='') as stream:
+                        rows = list(csv.DictReader(stream))
+                    expected = [known, pending] if identified else [known]
+                    self.assertEqual(catalog['sources'], expected)
+                    self.assertEqual([row['id'] for row in rows], [s['id'] for s in expected])
+                    self.assertEqual([row['evidence_urls'] for row in rows],
+                                     [s['uses'][0]['evidence'][0]['url'] for s in expected])
+                    self.assertEqual(catalog['counts']['total'], len(expected))
+                    self.assertEqual(catalog['counts']['citations'], len(expected))
+                    self.assertEqual(catalog['counts']['research-name'], 0)
+                    self.assertEqual(catalog['countsByPlugin']['agentic-vault']['total'], 1)
+                    sxc = catalog['countsByPlugin']['semantic-crosscheck']
+                    self.assertEqual((sxc['total'], sxc['citations']), (int(identified), int(identified)))
 
 if __name__=='__main__':unittest.main()

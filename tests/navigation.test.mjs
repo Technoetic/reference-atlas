@@ -27,6 +27,15 @@ test('legacy check URLs resolve to the source library without losing filters or 
   assert.equal(routeURL({}, `${base}?view=unknown`).searchParams.get('view'), 'unknown');
 });
 
+test('retired name-only filters clear only the obsolete kind on bookmarked library URLs', () => {
+  const target = routeURL({}, `${base}?view=sources&kind=research-name&plugin=shared&q=memory&sort=connections&tag=tools&source=name%3Aold#source-detail`);
+  assert.equal(target.searchParams.has('kind'), false);
+  assert.deepEqual(Object.fromEntries(target.searchParams), {
+    view: 'sources', plugin: 'shared', q: 'memory', sort: 'connections', tag: 'tools', source: 'name:old',
+  });
+  assert.equal(target.hash, '#source-detail');
+});
+
 test('rendering a legacy check deep link replaces its history entry and restores source state', t => {
   const changes = environment(t);
   let state;
@@ -82,4 +91,5 @@ test('public header and home expose research exploration without the removed che
   assert.match(element.innerHTML, /hero-map/);
   assert.match(element.innerHTML, /연구 탐색하기/);
   assert.match(element.innerHTML, /featured-section/);
+  assert.doesNotMatch(element.innerHTML, /이름만 기록된 자료|kind=research-name/);
 });

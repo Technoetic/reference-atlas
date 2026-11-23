@@ -1,10 +1,14 @@
 import json
 from pathlib import Path
 import re
+import sys
 import unittest
 from urllib.parse import urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from build_catalog import merge_sources, metrics
+
 # AV paper, project+format, article, catalog sources, catalog citations.
 EXPECTED_COVERAGE={
     ('v0.40.1','v0.19.1'):(42,33,0,102,165),
@@ -49,13 +53,24 @@ class DeliveryTests(unittest.TestCase):
 
     def test_registry_counts_have_not_lost_pinned_plugin_coverage(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
-        self.assertEqual(catalog['counts']['total'],len(catalog['sources']))
+        registry = json.loads((ROOT / 'data/registry.source.json').read_text(encoding='utf8'))
+        audited = merge_sources(registry['sources'])
+        withheld = [s for s in audited if s['kind'] == 'research-name']
+        self.assertEqual(catalog['sources'], [s for s in audited if s['kind'] != 'research-name'])
+        self.assertEqual(catalog['counts']['total'], len(catalog['sources']))
+        self.assertEqual(catalog['counts'], metrics(catalog['sources']))
+        for plugin, counts in catalog['countsByPlugin'].items():
+            source_count = sum(any(use['plugin'] == plugin for use in source['uses']) for source in catalog['sources'])
+            uses = [use for source in catalog['sources'] for use in source['uses'] if use['plugin'] == plugin]
+            self.assertEqual(counts['total'], source_count)
+            self.assertEqual(counts['citations'], sum(len(use['evidence']) for use in uses))
         versions=tuple(catalog['snapshots'][plugin]['version'] for plugin in ('agentic-vault','semantic-crosscheck'))
         expected=EXPECTED_COVERAGE[versions]
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['paper'],expected[0])
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[1])
         self.assertEqual(catalog['countsByPlugin']['agentic-vault'].get('article',0),expected[2])
-        self.assertEqual((catalog['counts']['total'],catalog['counts']['citations']),expected[3:])
+        # Historical coverage includes the name-only rows retained in the audit registry.
+        self.assertEqual((len(audited), metrics(audited)['citations']), expected[3:])
         sxc=catalog['countsByPlugin']['semantic-crosscheck']
         sxc_coverage={'v0.19.1':(13,26,41,3),'v0.20.0':(13,28,45,5),
                       'v0.21.0':(14,34,58,5),'v0.21.1':(14,34,58,5),
@@ -67,7 +82,12 @@ class DeliveryTests(unittest.TestCase):
                       'v0.31.1':(23,69,138,10),
                       'v0.32.0':(28,76,156,10),
                       'v0.33.0':(28,77,159,11)}
-        self.assertEqual((sxc['paper'],sxc['total'],sxc['citations'],catalog['counts']['shared']),sxc_coverage[versions[1]])
+        sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
+        sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
+                                if u['plugin'] == 'semantic-crosscheck')
+        audit_shared = catalog['counts']['shared'] + metrics(withheld)['shared']
+        self.assertEqual((sxc['paper'], sxc['total'] + len(sxc_withheld),
+                          sxc['citations'] + sxc_withheld_rows, audit_shared), sxc_coverage[versions[1]])
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
     def test_v042_coverage_adds_two_papers_three_projects_and_eight_citations_without_rewriting_history(self):

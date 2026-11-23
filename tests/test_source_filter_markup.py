@@ -40,6 +40,7 @@ class SourceFilterMarkupTests(unittest.TestCase):
         actual = parser.options['plugin-filter']
         self.assertEqual(set(actual), expected)
         self.assertEqual(len(actual), len(expected), 'Plugin options must not be duplicated')
+        self.assertEqual(parser.options['kind-filter'], ['all', 'paper', 'project', 'article', 'format'])
 
 
 if __name__ == '__main__':
