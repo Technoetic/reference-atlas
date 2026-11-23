@@ -147,11 +147,119 @@
 
 #refresh-status { font-size: 12px; }
 .search-field input { font-size: 14px; }
-.filter-row label > span { font-size: 12px; }
+.filter-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1.4fr) repeat(2, minmax(8rem, 1fr));
+  gap: 12px;
+  max-width: 38rem;
+}
+
+.filter-row label {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.filter-row label > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .filter-row select {
+  width: 100%;
+  min-width: 0;
   min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color-scheme: dark;
+  background-color: var(--ink-soft);
+  color: var(--paper);
   font-size: 13px;
-  padding: 10px 18px 10px 0;
+  font-weight: 600;
+}
+
+.filter-row select:hover { border-color: var(--muted); }
+.filter-row select:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+
+/* Fine pointers get an Atlas-styled picker; touch keeps the platform picker. */
+@supports (appearance: base-select) and selector(::picker(select)) {
+  @media (hover: hover) and (pointer: fine) {
+    .filter-row select,
+    .filter-row select::picker(select) { appearance: base-select; }
+
+    .filter-row select {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .filter-row select::picker-icon {
+      content: "";
+      width: 7px;
+      height: 7px;
+      margin: -3px 3px 0 0;
+      border: solid var(--muted);
+      border-width: 0 1.5px 1.5px 0;
+      rotate: 45deg;
+    }
+
+    .filter-row select:open { border-color: var(--lime); }
+    .filter-row select:open::picker-icon {
+      margin-top: 3px;
+      border-color: var(--lime);
+      rotate: 225deg;
+    }
+
+    .filter-row select::picker(select) {
+      margin-block: 5px;
+      padding: 5px;
+      max-block-size: min(20rem, 60dvh);
+      overflow-y: auto;
+      border: 1px solid color-mix(in srgb, var(--muted) 40%, var(--ink));
+      border-radius: 12px;
+      background: var(--ink-card);
+      color: var(--paper);
+      box-shadow: 0 12px 28px rgb(0 0 0 / 32%);
+    }
+
+    .filter-row option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 40px;
+      padding: 8px 10px;
+      border-radius: 7px;
+      font: 500 13px/1.4 var(--font);
+      cursor: pointer;
+    }
+
+    .filter-row option:checked {
+      background: color-mix(in srgb, var(--lime) 12%, var(--ink-card));
+      color: var(--lime);
+      font-weight: 700;
+    }
+
+    .filter-row option::checkmark { order: 1; }
+    .filter-row option:hover {
+      background: color-mix(in srgb, var(--paper) 10%, var(--ink-card));
+    }
+    .filter-row option:focus-visible {
+      outline: 2px solid var(--lime);
+      outline-offset: -2px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .filter-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filter-row label:first-child { grid-column: 1 / -1; }
+  .filter-row label:last-child { min-width: 0; }
 }
 
 .result-meta { font-size: 12px; }
