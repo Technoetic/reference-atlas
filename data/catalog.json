@@ -8413,200 +8413,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "name:dqp",
-      "kind": "research-name",
-      "title": "DQP",
-      "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
-      "year": null,
-      "tags": [
-        "지식 그래프",
-        "SQL"
-      ],
-      "keys": [
-        "name:dqp"
-      ],
-      "aliases": [
-        "DQP"
-      ],
-      "uses": [
-        {
-          "plugin": "semantic-crosscheck",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "docs/superpowers/specs/2026-10-25-verification-hardening.md",
-              "line": 22,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
-              "excerpt": "The selected approach extends existing comparison and TLP mechanisms. A separate NoREC stage would duplicate standalone dispatch and replay machinery. A third SHACL engine and DQP are later research candidates rather tha"
-            }
-          ]
-        }
-      ],
-      "note": "이름만 남은 후속 연구 후보입니다. 특정 논문·저장소의 식별자는 공개 문서에서 확인되지 않아 미식별로 보존했습니다."
-    },
-    {
-      "id": "name:gungnir mc",
-      "kind": "research-name",
-      "title": "Gungnir / MC",
-      "url": "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
-      "year": null,
-      "tags": [
-        "신뢰성"
-      ],
-      "keys": [
-        "name:gungnir mc"
-      ],
-      "aliases": [
-        "Gungnir/MC",
-        "Gungnir"
-      ],
-      "uses": [
-        {
-          "plugin": "semantic-crosscheck",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "docs/superpowers/plans/2026-11-03-response-witness-hardening.md",
-              "line": 18,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
-              "excerpt": "- User authorization covers this first research bundle and necessary local verification/integration. Broader Gungnir/MC, new reasoners, deployment, releases and active installations are outside this change."
-            }
-          ]
-        }
-      ],
-      "note": "계획에서 더 넓은 연구 범위로만 언급한 이름입니다. 구체 논문·저장소와 현재 도입 여부를 추정하지 않습니다."
-    },
-    {
-      "id": "name:ledger",
-      "kind": "research-name",
-      "title": "LEDGER",
-      "url": null,
-      "year": null,
-      "tags": [
-        "메모리·검색"
-      ],
-      "keys": [
-        "name:ledger"
-      ],
-      "aliases": [
-        "LEDGER"
-      ],
-      "uses": [
-        {
-          "plugin": "agentic-vault",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "docs/knowledge-evolution.md",
-              "line": 7,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/knowledge-evolution.md#L7",
-              "excerpt": "This small fixture is inspired by longitudinal evaluation such as LEDGER; it does not reproduce that benchmark, infer facts from natural language, establish evaluator completeness, or measure coverage beyond its authored"
-            }
-          ]
-        }
-      ],
-      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
-    },
-    {
-      "id": "name:memform",
-      "kind": "research-name",
-      "title": "MemForm",
-      "url": null,
-      "year": null,
-      "tags": [
-        "메모리·검색"
-      ],
-      "keys": [
-        "name:memform"
-      ],
-      "aliases": [
-        "MemForm"
-      ],
-      "uses": [
-        {
-          "plugin": "agentic-vault",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "docs/memory-formation.md",
-              "line": 29,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/memory-formation.md#L29",
-              "excerpt": "MemForm-inspired synthetic cases; they are not official benchmark cases."
-            },
-            {
-              "file": "docs/memory-formation.md",
-              "line": 67,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/memory-formation.md#L67",
-              "excerpt": "an official MemForm reproduction. The bounded control is an evaluation-only"
-            }
-          ]
-        }
-      ],
-      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
-    },
-    {
-      "id": "name:memgpt",
-      "kind": "research-name",
-      "title": "MemGPT",
-      "url": null,
-      "year": null,
-      "tags": [
-        "메모리·검색"
-      ],
-      "keys": [
-        "name:memgpt"
-      ],
-      "aliases": [
-        "MemGPT"
-      ],
-      "uses": [
-        {
-          "plugin": "agentic-vault",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "README.md",
-              "line": 829,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/README.md#L829",
-              "excerpt": "| MemGPT · A-MEM | OS 메모리 계층을 본뜬 티어드 메모리 — hot(캐시) → handoff(세션) → 볼트(디스크) |"
-            }
-          ]
-        }
-      ],
-      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
-    },
-    {
-      "id": "name:nomiracl",
-      "kind": "research-name",
-      "title": "NoMIRACL",
-      "url": null,
-      "year": null,
-      "tags": [
-        "메모리·검색"
-      ],
-      "keys": [
-        "name:nomiracl"
-      ],
-      "aliases": [
-        "NoMIRACL"
-      ],
-      "uses": [
-        {
-          "plugin": "agentic-vault",
-          "role": "unresolved",
-          "evidence": [
-            {
-              "file": "docs/model-korean-memory.md",
-              "line": 50,
-              "url": "https://github.com/Technoetic/agentic-vault/blob/de80d0bf7cd80ab73238ec17539909b44d52c2b3/docs/model-korean-memory.md#L50",
-              "excerpt": "on memory evaluation, including MemGauge and NoMIRACL, and Inspect's separation"
-            }
-          ]
-        }
-      ],
-      "note": "이름은 참조돼 있으나 이 저장소 인용만으로 논문 식별자를 확정하지 못한 기록입니다. 확인된 논문 수에 포함하지 않습니다."
     }
   ],
   "counts": {
@@ -8614,10 +8420,10 @@
     "project": 84,
     "article": 38,
     "format": 10,
-    "research-name": 6,
-    "total": 229,
+    "research-name": 0,
+    "total": 223,
     "shared": 11,
-    "citations": 453
+    "citations": 446
   },
   "countsByPlugin": {
     "agentic-vault": {
@@ -8625,20 +8431,20 @@
       "project": 61,
       "article": 29,
       "format": 5,
-      "research-name": 4,
-      "total": 163,
+      "research-name": 0,
+      "total": 159,
       "shared": 11,
-      "citations": 294
+      "citations": 289
     },
     "semantic-crosscheck": {
       "paper": 28,
       "project": 29,
       "article": 11,
       "format": 7,
-      "research-name": 2,
-      "total": 77,
+      "research-name": 0,
+      "total": 75,
       "shared": 11,
-      "citations": 159
+      "citations": 157
     }
   }
 }

@@ -17,8 +17,10 @@ referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
 - A responsive, reduced-motion-aware interface; no framework, CDN or runtime dependency.
 
 The catalog is a snapshot of published citations. A reference is not a claim of
-copied code, a runtime dependency or reproduced benchmark results. Unidentified
-research names and background references remain visible as separate categories.
+copied code, a runtime dependency or reproduced benchmark results. The public map,
+source library and downloads cover identified references, including sources cited
+as background. Mentions that identify a work only by name stay in the curation
+input with their original citations for later review.
 The year shown for an arXiv identifier is a registration-year hint, not necessarily
 the final journal publication year. Official articles and public formats are labeled separately;
 an article never inflates paper or project counts.

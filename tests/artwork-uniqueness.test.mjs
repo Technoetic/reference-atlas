@@ -6,6 +6,8 @@ import {sourceArtwork,artworkCover} from '../src/screens/art.mjs';
 
 const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
 const manifest=JSON.parse(await readFile(new URL('../docs/card-artwork-unique-prompts.json',import.meta.url),'utf8'));
+const registry=JSON.parse(await readFile(new URL('../data/registry.source.json',import.meta.url),'utf8'));
+const unpublishedMentions=new Map(registry.sources.filter(source=>source.kind==='research-name').map(source=>[source.id,source]));
 const completedArtwork=[
   ['url:https://code.claude.com/docs/en/skills',138],
   ['url:https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2',139],
@@ -143,7 +145,7 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
   assert.equal(new Set(manifest.assets.map(asset=>asset.factualConcept)).size,manifest.assets.length);
   const hashes=[];
   for(const asset of manifest.assets){
-    const source=catalog.sources.find(source=>source.id===asset.sourceId);
+    const source=catalog.sources.find(source=>source.id===asset.sourceId) ?? unpublishedMentions.get(asset.sourceId);
     assert.ok(source,`Unknown artwork source: ${asset.sourceId}`);
     const expected=new URL(`../${asset.output}`,import.meta.url);
     assert.equal(sourceArtwork({id:asset.sourceId}).src,expected.href);
@@ -160,7 +162,8 @@ test('artwork provenance assigns each generated file and exact prompt to its sou
 });
 
 test('every current catalog source renders its dedicated image in the gallery and detail view',()=>{
-  assert.equal(manifest.count,catalog.sources.length);
+  const publicArtwork=manifest.assets.filter(asset=>!unpublishedMentions.has(asset.sourceId));
+  assert.deepEqual(new Set(publicArtwork.map(asset=>asset.sourceId)),new Set(catalog.sources.map(source=>source.id)));
   const images=[];
   for(const source of catalog.sources){
     const art=sourceArtwork(source);
@@ -174,7 +177,7 @@ test('every current catalog source renders its dedicated image in the gallery an
     }
   }
   assert.equal(new Set(images).size,images.length,'Different cards must not share topic artwork');
-  assert.equal(images.length,manifest.assets.length);
+  assert.equal(images.length,publicArtwork.length);
 });
 
 test('the four formerly uncommissioned v0.50.0 sources render their exact separate images',()=>{

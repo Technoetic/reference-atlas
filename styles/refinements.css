@@ -22,8 +22,7 @@
 .card-bottom { gap: 10px; }
 
 /* Bundle A: Readability floor (>=11px labels, >=12-14px body/excerpts),
-   desktop detail-close clearance, accessible touch targets (>=44px),
-   and unresolved-link restoration across all viewports. */
+   desktop detail-close clearance, and accessible touch targets (>=44px). */
 
 .eyebrow,
 .hero-copy .eyebrow,
@@ -78,15 +77,6 @@
 }
 
 .hero-stats > div > span { font-size: 12px; }
-
-.unresolved-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 44px;
-  font-size: 12px;
-  padding: 6px 0;
-}
 
 .scroll-cue {
   min-height: 44px;
@@ -311,12 +301,6 @@
 
 .evidence-item > p { line-height: 1.7; }
 
-@media (max-width: 1100px) {
-  .unresolved-link {
-    display: inline-flex;
-  }
-}
-
 @media (max-width: 720px) {
   .brand { font-size: 11px; }
   .main-nav { gap: 12px; font-size: 12px; }
@@ -373,15 +357,6 @@
   .hero-stats > div > span {
     font-size: 11px;
     max-width: none;
-  }
-
-  .unresolved-link {
-    grid-column: 1 / -1;
-    display: inline-flex;
-    font-size: 12px;
-    min-height: 44px;
-    padding-top: 8px;
-    border-top: 1px solid var(--line);
   }
 
   .scroll-cue {

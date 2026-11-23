@@ -47,7 +47,9 @@ def merge_sources(records):
 
 def build(root=ROOT):
     data=json.loads((root/'data/registry.source.json').read_text(encoding='utf8'))
-    sources=merge_sources(data['sources'])
+    # Name-only records remain in the audit registry until their source is identified.
+    audited = merge_sources(data['sources'])
+    sources = [source for source in audited if source['kind'] != 'research-name']
     catalog={key:value for key,value in data.items() if key!='sources'}
     catalog.update({'schemaVersion':1,'sources':sources,'counts':metrics(sources)})
     catalog['countsByPlugin']={plugin:metrics([source for source in sources if any(use['plugin']==plugin for use in source['uses'])])

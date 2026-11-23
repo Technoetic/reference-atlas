@@ -10,9 +10,13 @@ export class CatalogService {
       const response = await this.fetcher(url, { cache: 'no-store', signal: controller.signal });
       if (!response.ok) throw new Error(`출처 목록을 가져오지 못했습니다. (HTTP ${response.status})`);
       const catalog = await response.json();
-    validateCatalog(catalog);
+      validateCatalog(catalog);
       if (sequence !== this.sequence) throw new DOMException('A newer request replaced this result.', 'AbortError');
-      return catalog;
+      const sources = catalog.sources.filter(source => source.kind !== 'research-name');
+      if (sources.length === catalog.sources.length) return catalog;
+      // The older snapshot's counts include hidden rows. Screens count the visible sources.
+      const { counts, countsByPlugin, ...visibleCatalog } = catalog;
+      return { ...visibleCatalog, sources };
     } catch (error) { if (controller.signal.reason === 'timeout') throw new Error('출처 목록의 응답이 늦어지고 있습니다. 연결을 확인하고 다시 시도해 주세요.'); throw error; }
     finally { clearTimeout(timeout); }
   }
