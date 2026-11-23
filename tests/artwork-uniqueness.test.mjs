@@ -167,7 +167,9 @@ test('commissioned sources have dedicated images and uncommissioned records use 
     'doi:10.1214/23-sts894',
     'doi:10.1214/20-aos1991',
     'doi:10.1016/j.datak.2009.07.010',
-    'doi:10.1145/3689031.3696064'
+    'doi:10.1145/3689031.3696064',
+    'github:seulee26/stock-team-harness',
+    'github:ai3inc/foldboost'
   ]);
   for(const id of uncommissioned){
     assert.ok(catalog.sources.some(source=>source.id===id),`Missing uncommissioned source: ${id}`);
