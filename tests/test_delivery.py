@@ -43,6 +43,7 @@ EXPECTED_COVERAGE={
     ('v0.56.0','v0.32.0'):(64,66,29,229,450),
     ('v0.56.0','v0.33.0'):(64,66,29,229,453),
     ('v0.57.0','v0.33.0'):(64,67,29,230,455),
+    ('v0.57.0','v0.34.0'):(64,67,29,233,463),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -82,7 +83,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.31.0':(21,55,109,7),
                       'v0.31.1':(23,69,138,10),
                       'v0.32.0':(28,76,156,10),
-                      'v0.33.0':(28,77,159,11)}
+                      'v0.33.0':(28,77,159,11),
+                      'v0.34.0':(28,80,167,11)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
@@ -378,6 +380,33 @@ class DeliveryTests(unittest.TestCase):
         self.assertCountEqual(
             [row['file'] for row in sxc_use['evidence']],
             ['docs/releases/v0.33.0.md','THIRD_PARTY.md','docs/paired-release.md'],
+        )
+
+    def test_sxc0340_references_cover_pg17_catalog_docs_and_pg_index_repin(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.34.0':
+            self.skipTest('These citation locations describe the v0.34.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        for sid in (
+            'url:https://www.postgresql.org/docs/17/catalog-pg-class.html',
+            'url:https://www.postgresql.org/docs/17/catalog-pg-constraint.html',
+            'url:https://www.postgresql.org/docs/17/ddl-partitioning.html',
+        ):
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],'article')
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual(
+                    [row['file'] for row in use['evidence']],
+                    ['docs/releases/v0.34.0.md','THIRD_PARTY.md'],
+                )
+        pg_idx=indexed['url:https://www.postgresql.org/docs/17/catalog-pg-index.html']
+        use,=pg_idx['uses']
+        self.assertEqual(len(use['evidence']),4)
+        self.assertCountEqual(
+            [row['file'] for row in use['evidence']],
+            ['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/releases/v0.34.0.md','THIRD_PARTY.md'],
         )
 
 if __name__=='__main__':unittest.main()
