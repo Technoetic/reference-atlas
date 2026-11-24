@@ -229,4 +229,5 @@ export const artworkIndex = Object.freeze({
   "doi:10.1145/3689031.3696064": Object.freeze({key: "card-227-sql-function-boundaries", src: new URL("../../media/cards/card-227-sql-function-boundaries.webp", import.meta.url).href, label: "FUNCTION BOUNDARIES", word: "FUNCTION BOUNDARIES"}),
   "github:ai3inc/foldboost": Object.freeze({key: "card-228-foldboost-eval-plan", src: new URL("../../media/cards/card-228-foldboost-eval-plan.webp", import.meta.url).href, label: "SEALED EVALUATION PLAN", word: "SEALED EVALUATION PLAN"}),
   "github:seulee26/stock-team-harness": Object.freeze({key: "card-229-stock-team-harness", src: new URL("../../media/cards/card-229-stock-team-harness.webp", import.meta.url).href, label: "DATED REVIEW CHECKS", word: "DATED REVIEW CHECKS"}),
+  "github:ai3inc/opentoolsearch": Object.freeze({key: "card-230-opentoolsearch", src: new URL("../../media/cards/card-230-opentoolsearch.webp", import.meta.url).href, label: "RERANKED RETRIEVAL HYGIENE", word: "RERANKED RETRIEVAL HYGIENE"}),
 });

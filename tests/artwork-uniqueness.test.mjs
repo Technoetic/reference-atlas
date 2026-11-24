@@ -624,3 +624,30 @@ test('the nine newly commissioned covers retain their source assignments and ind
     }
   }
 });
+
+test('the v0.57.0 opentoolsearch cover retains its dedicated artwork and provenance',()=>{
+  const id='github:ai3inc/opentoolsearch';
+  const source=catalog.sources.find(item=>item.id===id);
+  assert.ok(source,`Missing catalog source: ${id}`);
+  assert.equal(source.kind,'project');
+  const record=manifest.assets.find(asset=>asset.sourceId===id);
+  assert.ok(record,`Missing commissioned artwork: ${id}`);
+  assert.equal(record.index,230);
+  assert.equal(record.output,'media/cards/card-230-opentoolsearch.webp');
+  assert.equal(record.label,'RERANKED RETRIEVAL HYGIENE');
+  assert.deepEqual(record.dimensions,[960,640]);
+  assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+  assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+  assert.ok(record.generationReferenceUrls.includes('https://github.com/ai3inc/opentoolsearch'));
+  const previousOriginals=new Set(manifest.assets.slice(0,229).map(asset=>asset.delivery?.sourceSha256));
+  assert.ok(!previousOriginals.has(record.delivery.sourceSha256),'Reused original for opentoolsearch');
+  const expected=new URL(`../${record.output}`,import.meta.url).href;
+  assert.equal(sourceArtwork(source).src,expected);
+  assert.equal(sourceArtwork(source).label,'RERANKED RETRIEVAL HYGIENE');
+  for(const detail of [false,true]){
+    const html=artworkCover(source,{detail});
+    assert.ok(!html.includes('is-art-fallback'));
+    assert.ok(html.includes('<img data-source-artwork'));
+    assert.ok(html.includes(`src="${expected}"`));
+  }
+});
