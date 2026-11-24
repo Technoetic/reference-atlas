@@ -147,6 +147,19 @@ class IdentityTests(unittest.TestCase):
             fb,=find_matches(catalog,'https://github.com/ai3inc/foldboost')['matches']
             self.assertCountEqual([u['plugin'] for u in fb['uses']],['agentic-vault','semantic-crosscheck'])
 
+    def test_av0570_opentoolsearch_resolves(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for candidate in (
+            'https://github.com/ai3inc/opentoolsearch',
+            'https://github.com/ai3inc/opentoolsearch/tree/v0.2.1',
+        ):
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),('github:ai3inc/opentoolsearch','project'))
+        self.assertEqual(find_matches(catalog,'OpenToolSearch')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
