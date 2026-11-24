@@ -160,6 +160,23 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual((source['id'],source['kind']),('github:ai3inc/opentoolsearch','project'))
         self.assertEqual(find_matches(catalog,'OpenToolSearch')['status'],'possible')
 
+    def test_sxc0340_pg17_catalog_docs_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://www.postgresql.org/docs/17/catalog-pg-class.html',
+             'url:https://www.postgresql.org/docs/17/catalog-pg-class.html','article'),
+            ('https://www.postgresql.org/docs/17/catalog-pg-constraint.html',
+             'url:https://www.postgresql.org/docs/17/catalog-pg-constraint.html','article'),
+            ('https://www.postgresql.org/docs/17/ddl-partitioning.html',
+             'url:https://www.postgresql.org/docs/17/ddl-partitioning.html','article'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

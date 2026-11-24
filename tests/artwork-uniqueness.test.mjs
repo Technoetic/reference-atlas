@@ -235,7 +235,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0','v0.34.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
@@ -650,4 +650,40 @@ test('the v0.57.0 opentoolsearch cover retains its dedicated artwork and provena
     assert.ok(html.includes('<img data-source-artwork'));
     assert.ok(html.includes(`src="${expected}"`));
   }
+});
+
+test('the three v0.34.0 PostgreSQL 17 catalog covers retain their dedicated artwork and provenance',()=>{
+  const commissioned=[
+    [231,'url:https://www.postgresql.org/docs/17/catalog-pg-class.html','postgres-pg-class','RELATION CATALOG STATE'],
+    [232,'url:https://www.postgresql.org/docs/17/catalog-pg-constraint.html','postgres-pg-constraint','UNVALIDATED CONSTRAINTS'],
+    [233,'url:https://www.postgresql.org/docs/17/ddl-partitioning.html','postgres-table-partitioning','PARTITION RLS ASYMMETRY']
+  ];
+  const previousOriginals=new Set(manifest.assets.slice(0,230).map(asset=>asset.delivery?.sourceSha256));
+  const newOriginals=new Set();
+  for(const [index,id,slug,label] of commissioned){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,'article');
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.equal(record.label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${id}`);
+    newOriginals.add(record.delivery.sourceSha256);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(newOriginals.size,commissioned.length);
 });
