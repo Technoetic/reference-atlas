@@ -177,6 +177,27 @@ class IdentityTests(unittest.TestCase):
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
 
+    def test_av0580_hidden_markup_holm_ppi_and_skillcfi_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://arxiv.org/abs/2611.28763','arxiv:2611.28763','paper'),
+            ('https://arxiv.org/abs/2611.28763v1','arxiv:2611.28763','paper'),
+            ('https://doi.org/10.2307/4615733','doi:10.2307/4615733','paper'),
+            ('https://doi.org/10.1126/science.adi6000','doi:10.1126/science.adi6000','paper'),
+            ('https://arxiv.org/abs/2311.01453','arxiv:2311.01453','paper'),
+            ('https://arxiv.org/abs/2311.01453v2','arxiv:2311.01453','paper'),
+            ('https://arxiv.org/abs/2601.18777','arxiv:2601.18777','paper'),
+            ('https://arxiv.org/abs/2611.24185','arxiv:2611.24185','paper'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+        self.assertEqual(find_matches(catalog,'SkillCFI')['status'],'possible')
+        self.assertEqual(find_matches(catalog,'PRECISE')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

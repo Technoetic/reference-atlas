@@ -44,6 +44,7 @@ EXPECTED_COVERAGE={
     ('v0.56.0','v0.33.0'):(64,66,29,229,453),
     ('v0.57.0','v0.33.0'):(64,67,29,230,455),
     ('v0.57.0','v0.34.0'):(64,67,29,233,463),
+    ('v0.58.0','v0.34.0'):(70,67,29,239,475),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -408,5 +409,28 @@ class DeliveryTests(unittest.TestCase):
             [row['file'] for row in use['evidence']],
             ['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/releases/v0.34.0.md','THIRD_PARTY.md'],
         )
+
+    def test_av0580_references_cover_hidden_markup_holm_ppi_and_skillcfi(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.58.0':
+            self.skipTest('These citation locations describe the v0.58.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        for sid in (
+            'arxiv:2611.28763',
+            'doi:10.2307/4615733',
+            'doi:10.1126/science.adi6000',
+            'arxiv:2311.01453',
+            'arxiv:2601.18777',
+            'arxiv:2611.24185',
+        ):
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],'paper')
+                av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
+                self.assertEqual(av_use['role'],'reference')
+                self.assertCountEqual(
+                    [row['file'] for row in av_use['evidence']],
+                    ['docs/releases/v0.58.0.md','README.md'],
+                )
 
 if __name__=='__main__':unittest.main()
