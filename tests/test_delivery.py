@@ -45,6 +45,7 @@ EXPECTED_COVERAGE={
     ('v0.57.0','v0.33.0'):(64,67,29,230,455),
     ('v0.57.0','v0.34.0'):(64,67,29,233,463),
     ('v0.58.0','v0.34.0'):(70,67,29,239,475),
+    ('v0.58.0','v0.35.0'):(70,67,29,245,488),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -85,7 +86,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.31.1':(23,69,138,10),
                       'v0.32.0':(28,76,156,10),
                       'v0.33.0':(28,77,159,11),
-                      'v0.34.0':(28,80,167,11)}
+                      'v0.34.0':(28,80,167,11),
+                      'v0.35.0':(30,86,180,11)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
@@ -432,5 +434,30 @@ class DeliveryTests(unittest.TestCase):
                     [row['file'] for row in av_use['evidence']],
                     ['docs/releases/v0.58.0.md','README.md'],
                 )
+
+    def test_sxc0350_references_cover_pg17_view_collation_symmetry_and_dominators(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.35.0':
+            self.skipTest('These citation locations describe the v0.35.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected_new=[
+            ('url:https://www.postgresql.org/docs/17/sql-createview.html','article',['docs/releases/v0.35.0.md','THIRD_PARTY.md']),
+            ('url:https://www.postgresql.org/docs/17/rules-privileges.html','article',['docs/releases/v0.35.0.md','THIRD_PARTY.md']),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-database.html','article',['docs/releases/v0.35.0.md','THIRD_PARTY.md']),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-collation.html','article',['docs/releases/v0.35.0.md','THIRD_PARTY.md']),
+            ('doi:10.1609/aaai.v39i11.33217','paper',['docs/releases/v0.35.0.md','THIRD_PARTY.md']),
+            ('doi:10.1145/2950290.2950322','paper',['docs/releases/v0.35.0.md','THIRD_PARTY.md','docs/mutation-matrix.md']),
+        ]
+        for sid,kind,files in expected_new:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],files)
+        self.assertEqual(
+            set(indexed['doi:10.1609/aaai.v39i11.33217']['keys']),
+            {'doi:10.1609/aaai.v39i11.33217','arxiv:2502.10155'},
+        )
 
 if __name__=='__main__':unittest.main()

@@ -235,7 +235,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0','v0.34.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0','v0.34.0','v0.35.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
@@ -703,6 +703,45 @@ test('the six v0.58.0 paper covers retain their dedicated artwork and provenance
     const source=catalog.sources.find(item=>item.id===id);
     assert.ok(source,`Missing catalog source: ${id}`);
     assert.equal(source.kind,'paper');
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.equal(record.label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${id}`);
+    newOriginals.add(record.delivery.sourceSha256);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(newOriginals.size,commissioned.length);
+});
+
+test('the six v0.35.0 semantic-crosscheck covers retain their dedicated artwork and provenance',()=>{
+  const commissioned=[
+    [240,'url:https://www.postgresql.org/docs/17/sql-createview.html','article','postgres-create-view','VIEW SECURITY OPTIONS'],
+    [241,'url:https://www.postgresql.org/docs/17/rules-privileges.html','article','postgres-rules-privileges','OWNER VS INVOKER ACCESS'],
+    [242,'url:https://www.postgresql.org/docs/17/catalog-pg-database.html','article','postgres-pg-database','DB COLLATION VERSION'],
+    [243,'url:https://www.postgresql.org/docs/17/catalog-pg-collation.html','article','postgres-pg-collation','COLUMN COLLATION DRIFT'],
+    [244,'doi:10.1609/aaai.v39i11.33217','paper','danco-symmetry-breaking','LEXICOGRAPHIC SYMMETRY'],
+    [245,'doi:10.1145/2950290.2950322','paper','kurtz-dominator-mutants','DOMINATOR SUBSUMPTION']
+  ];
+  const previousOriginals=new Set(manifest.assets.slice(0,239).map(asset=>asset.delivery?.sourceSha256));
+  const newOriginals=new Set();
+  for(const [index,id,kind,slug,label] of commissioned){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
     assert.ok(record,`Missing commissioned artwork: ${id}`);
     assert.equal(record.index,index);

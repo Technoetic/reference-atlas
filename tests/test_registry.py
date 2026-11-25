@@ -198,6 +198,34 @@ class IdentityTests(unittest.TestCase):
         self.assertEqual(find_matches(catalog,'SkillCFI')['status'],'possible')
         self.assertEqual(find_matches(catalog,'PRECISE')['status'],'possible')
 
+    def test_sxc0350_pg17_view_collation_symmetry_and_dominators_resolve(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://www.postgresql.org/docs/17/sql-createview.html',
+             'url:https://www.postgresql.org/docs/17/sql-createview.html','article'),
+            ('https://www.postgresql.org/docs/17/rules-privileges.html',
+             'url:https://www.postgresql.org/docs/17/rules-privileges.html','article'),
+            ('https://www.postgresql.org/docs/17/catalog-pg-database.html',
+             'url:https://www.postgresql.org/docs/17/catalog-pg-database.html','article'),
+            ('https://www.postgresql.org/docs/17/catalog-pg-collation.html',
+             'url:https://www.postgresql.org/docs/17/catalog-pg-collation.html','article'),
+            ('https://doi.org/10.1609/aaai.v39i11.33217',
+             'doi:10.1609/aaai.v39i11.33217','paper'),
+            ('https://arxiv.org/abs/2502.10155',
+             'doi:10.1609/aaai.v39i11.33217','paper'),
+            ('https://arxiv.org/abs/2502.10155v1',
+             'doi:10.1609/aaai.v39i11.33217','paper'),
+            ('https://doi.org/10.1145/2950290.2950322',
+             'doi:10.1145/2950290.2950322','paper'),
+        ]
+        for candidate,expected_id,expected_kind in cases:
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
+        self.assertEqual(find_matches(catalog,'Dominator Mutants')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
