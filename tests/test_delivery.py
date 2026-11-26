@@ -47,6 +47,7 @@ EXPECTED_COVERAGE={
     ('v0.58.0','v0.34.0'):(70,67,29,239,475),
     ('v0.58.0','v0.35.0'):(70,67,29,245,488),
     ('v0.59.0','v0.35.0'):(70,68,29,246,491),
+    ('v0.59.0','v0.36.0'):(70,68,29,246,494),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -88,7 +89,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.32.0':(28,76,156,10),
                       'v0.33.0':(28,77,159,11),
                       'v0.34.0':(28,80,167,11),
-                      'v0.35.0':(30,86,180,11)}
+                      'v0.35.0':(30,86,180,11),
+                      'v0.36.0':(30,87,183,12)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
@@ -473,6 +475,21 @@ class DeliveryTests(unittest.TestCase):
         self.assertCountEqual(
             [row['file'] for row in av_use['evidence']],
             ['docs/releases/v0.59.0.md','README.md','docs/note-lifecycle.md'],
+        )
+
+    def test_sxc0360_references_cover_shared_openai_math(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['semantic-crosscheck']['version']!='v0.36.0':
+            self.skipTest('These citation locations describe the v0.36.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        src=indexed['github:openai/math']
+        self.assertEqual(src['kind'],'project')
+        self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+        sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
+        self.assertEqual(sxc_use['role'],'reference')
+        self.assertCountEqual(
+            [row['file'] for row in sxc_use['evidence']],
+            ['docs/releases/v0.36.0.md','THIRD_PARTY.md','docs/paired-release.md'],
         )
 
 if __name__=='__main__':unittest.main()
