@@ -226,6 +226,19 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual((source['id'],source['kind']),(expected_id,expected_kind))
         self.assertEqual(find_matches(catalog,'Dominator Mutants')['status'],'possible')
 
+    def test_av0590_openai_math_resolves(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for candidate in (
+            'https://github.com/openai/math',
+            'https://github.com/openai/math/tree/3344da59',
+        ):
+            with self.subTest(candidate=candidate):
+                result=find_matches(catalog,candidate)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),('github:openai/math','project'))
+        self.assertEqual(find_matches(catalog,'openai/math')['status'],'possible')
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
