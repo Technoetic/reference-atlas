@@ -46,6 +46,7 @@ EXPECTED_COVERAGE={
     ('v0.57.0','v0.34.0'):(64,67,29,233,463),
     ('v0.58.0','v0.34.0'):(70,67,29,239,475),
     ('v0.58.0','v0.35.0'):(70,67,29,245,488),
+    ('v0.59.0','v0.35.0'):(70,68,29,246,491),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -458,6 +459,20 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(
             set(indexed['doi:10.1609/aaai.v39i11.33217']['keys']),
             {'doi:10.1609/aaai.v39i11.33217','arxiv:2502.10155'},
+        )
+
+    def test_av0590_references_cover_openai_math(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.59.0':
+            self.skipTest('These citation locations describe the v0.59.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        src=indexed['github:openai/math']
+        self.assertEqual(src['kind'],'project')
+        av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
+        self.assertEqual(av_use['role'],'reference')
+        self.assertCountEqual(
+            [row['file'] for row in av_use['evidence']],
+            ['docs/releases/v0.59.0.md','README.md','docs/note-lifecycle.md'],
         )
 
 if __name__=='__main__':unittest.main()

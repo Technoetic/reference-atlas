@@ -245,4 +245,5 @@ export const artworkIndex = Object.freeze({
   "url:https://www.postgresql.org/docs/17/catalog-pg-collation.html": Object.freeze({key: "card-243-postgres-pg-collation", src: new URL("../../media/cards/card-243-postgres-pg-collation.webp", import.meta.url).href, label: "COLUMN COLLATION DRIFT", word: "COLUMN COLLATION DRIFT"}),
   "doi:10.1609/aaai.v39i11.33217": Object.freeze({key: "card-244-danco-symmetry-breaking", src: new URL("../../media/cards/card-244-danco-symmetry-breaking.webp", import.meta.url).href, label: "LEXICOGRAPHIC SYMMETRY", word: "LEXICOGRAPHIC SYMMETRY"}),
   "doi:10.1145/2950290.2950322": Object.freeze({key: "card-245-kurtz-dominator-mutants", src: new URL("../../media/cards/card-245-kurtz-dominator-mutants.webp", import.meta.url).href, label: "DOMINATOR SUBSUMPTION", word: "DOMINATOR SUBSUMPTION"}),
+  "github:openai/math": Object.freeze({key: "card-246-openai-math", src: new URL("../../media/cards/card-246-openai-math.webp", import.meta.url).href, label: "PROOF ARTIFACT LIFECYCLE", word: "PROOF ARTIFACT LIFECYCLE"}),
 });

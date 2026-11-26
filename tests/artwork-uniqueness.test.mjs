@@ -765,3 +765,37 @@ test('the six v0.35.0 semantic-crosscheck covers retain their dedicated artwork 
   }
   assert.equal(newOriginals.size,commissioned.length);
 });
+
+test('the v0.59.0 agentic-vault openai/math cover retains its dedicated artwork and provenance',()=>{
+  const commissioned=[
+    [246,'github:openai/math','project','openai-math','PROOF ARTIFACT LIFECYCLE']
+  ];
+  const previousOriginals=new Set(manifest.assets.slice(0,245).map(asset=>asset.delivery?.sourceSha256));
+  const newOriginals=new Set();
+  for(const [index,id,kind,slug,label] of commissioned){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.equal(record.label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${id}`);
+    newOriginals.add(record.delivery.sourceSha256);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(newOriginals.size,commissioned.length);
+});
