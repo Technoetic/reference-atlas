@@ -235,7 +235,7 @@ test('the v0.24 catalog publishes four distinct source-specific raster assignmen
     'arxiv:2004.00481',
     'github:georgia-tech-db/spes'
   ];
-  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0','v0.34.0','v0.35.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
+  const published=['v0.24.0','v0.27.0','v0.28.0','v0.29.0','v0.30.0','v0.31.0','v0.31.1','v0.32.0','v0.33.0','v0.34.0','v0.35.0','v0.36.0'].includes(catalog.snapshots['semantic-crosscheck'].version);
   for(const id of ids){
     const source=catalog.sources.find(source=>source.id===id);
     const record=manifest.assets.find(asset=>asset.sourceId===id);
