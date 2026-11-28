@@ -51,6 +51,7 @@ EXPECTED_COVERAGE={
     ('v0.60.0','v0.36.0'):(74,69,29,251,506),
     ('v0.60.0','v0.36.0','v0.2.0+docs'):(74,69,29,268,527),
     ('v0.60.0','v0.36.0','v0.3.0'):(74,69,29,268,552),
+    ('v0.60.0','v0.37.0','v0.3.0'):(74,69,29,276,577),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -94,7 +95,8 @@ class DeliveryTests(unittest.TestCase):
                       'v0.33.0':(28,77,159,11),
                       'v0.34.0':(28,80,167,11),
                       'v0.35.0':(30,86,180,11),
-                      'v0.36.0':(30,87,183,36 if versions[2:]==('v0.3.0',) else 16 if has_npd else 12)}
+                      'v0.36.0':(30,87,183,36 if versions[2:]==('v0.3.0',) else 16 if has_npd else 12),
+                      'v0.37.0':(34,98,208,37 if versions[2:]==('v0.3.0',) else 17 if has_npd else 13)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
@@ -597,5 +599,56 @@ class DeliveryTests(unittest.TestCase):
                 self.assertTrue(npd_use['evidence'][0]['url'].startswith(
                     f"https://github.com/Technoetic/node-pg-defense/blob/{snap['commit']}/docs/references.md#L"
                 ))
+
+    def test_sxc0370_references_cover_pg17_ddmin_crash_consistency_and_holm(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        snap=catalog['snapshots']['semantic-crosscheck']
+        if snap['version']!='v0.37.0':
+            self.skipTest('These citation locations describe the v0.37.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        expected_new=[
+            ('url:https://www.postgresql.org/docs/17/xfunc-volatility.html','article'),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-proc.html','article'),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-rewrite.html','article'),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-depend.html','article'),
+            ('url:https://www.postgresql.org/docs/17/catalog-pg-attribute.html','article'),
+            ('github:mfvanek/pg-index-health','project'),
+            ('doi:10.1109/32.988498','paper'),
+            ('arxiv:2601.04689','paper'),
+        ]
+        for sid,kind in expected_new:
+            with self.subTest(new_source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                use,=src['uses']
+                self.assertEqual((use['plugin'],use['role']),('semantic-crosscheck','reference'))
+                self.assertCountEqual([row['file'] for row in use['evidence']],['docs/releases/v0.37.0.md','THIRD_PARTY.md'])
+        pg_idx=indexed['url:https://www.postgresql.org/docs/17/catalog-pg-index.html']
+        sxc_idx=next(u for u in pg_idx['uses'] if u['plugin']=='semantic-crosscheck')
+        self.assertEqual(len(sxc_idx['evidence']),6)
+        self.assertCountEqual(
+            [row['file'] for row in sxc_idx['evidence']],
+            ['docs/releases/v0.32.0.md','THIRD_PARTY.md','docs/releases/v0.34.0.md','THIRD_PARTY.md','docs/releases/v0.37.0.md','THIRD_PARTY.md'],
+        )
+        for sid in (
+            'url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',
+            'github:madthanu/alice',
+        ):
+            with self.subTest(tri_shared=sid):
+                src=indexed[sid]
+                self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck','node-pg-defense'])
+                sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
+                self.assertCountEqual([row['file'] for row in sxc_use['evidence']],['docs/releases/v0.37.0.md','THIRD_PARTY.md'])
+        holm=indexed['doi:10.2307/4615733']
+        self.assertEqual(holm['url'],'https://www.jstor.org/stable/4615733')
+        self.assertEqual(set(holm['keys']),{'doi:10.2307/4615733','url:https://www.jstor.org/stable/4615733'})
+        self.assertCountEqual([u['plugin'] for u in holm['uses']],['agentic-vault','semantic-crosscheck'])
+        sxc_holm=next(u for u in holm['uses'] if u['plugin']=='semantic-crosscheck')
+        self.assertCountEqual(
+            [row['file'] for row in sxc_holm['evidence']],
+            ['docs/releases/v0.37.0.md','THIRD_PARTY.md','docs/paired-release.md'],
+        )
+        tri_shared_all=[s['id'] for s in catalog['sources'] if len(s['uses'])==3]
+        self.assertEqual(len(tri_shared_all),7)
 
 if __name__=='__main__':unittest.main()
