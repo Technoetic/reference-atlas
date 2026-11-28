@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-28T04:50:29.124652+00:00",
+  "updatedAt": "2026-11-28T06:18:25.599227+00:00",
   "snapshots": {
     "agentic-vault": {
       "name": "Agentic Vault",
@@ -16,9 +16,9 @@
     },
     "node-pg-defense": {
       "name": "Node PG Defense",
-      "version": "v0.2.0+docs",
-      "commit": "fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401",
-      "url": "https://github.com/Technoetic/node-pg-defense/tree/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401"
+      "version": "v0.3.0",
+      "commit": "3677b4bf1e2974c7f51515c78ca62021eeb6cc76",
+      "url": "https://github.com/Technoetic/node-pg-defense/tree/3677b4bf1e2974c7f51515c78ca62021eeb6cc76"
     }
   },
   "method": {
@@ -3064,9 +3064,21 @@
               "excerpt": "[XData](https://arxiv.org/abs/1411.6704) and implements only the bounded scalar"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 15,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L15",
+              "excerpt": "| 25–26 | [Data Generation for Testing and Grading SQL Queries (XData, arXiv:1411.6704)](https://arxiv.org/abs/1411.6704) | 단일·다중 조건(`AND`) 및 경계 데이터셋 기반 SQL 의미 동치·주입 차단 대조 설계(`scripts/verify-postgres.cjs`) |"
+            }
+          ]
         }
       ],
-      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다."
+      "note": "설계·평가 원리를 참고한 기록이며 원 코드 도입이나 논문 성능 재현을 뜻하지 않습니다. 연도는 arXiv 식별자의 등록 연도이며 정식 출판 연도와 다를 수 있습니다. Node PG Defense v0.3.0 adapts differential boundary and multi-predicate AND oracle fixtures in scripts/verify-postgres.cjs against an ephemeral PostgreSQL 17 instance."
     },
     {
       "id": "arxiv:2007.08292",
@@ -3409,9 +3421,21 @@
               "excerpt": "in [SQLancer](https://github.com/sqlancer/sqlancer). Neither project is bundled or copied, and no new"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 33,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L33",
+              "excerpt": "| 25–26 | [SQLancer (`sqlancer/sqlancer`)](https://github.com/sqlancer/sqlancer) | 변환 전후 쿼리 결과 집합과 주입 차단 동치 대조 오라클 개념 참고(코드 복사·의존성 없음) |"
+            }
+          ]
         }
       ],
-      "note": "TLP 분할 검사와 반례·축소 방법의 설계 참고입니다. SQLancer 코드를 도입한 것은 아닙니다. SXC v0.28.0 reuses the existing differential-testing reference for a bounded real-plan diagnostic; the release pins upstream a513c87781ed879e5aae6bc78f8b6c6056bd7a99 and says Cloudberry-specific code is not a PostgreSQL drop-in. No SQLancer source or oracle is copied or installed. The counterexamples.md citation is an earlier use added here to complete coverage, not a new use."
+      "note": "TLP 분할 검사와 반례·축소 방법의 설계 참고입니다. SQLancer 코드를 도입한 것은 아닙니다. SXC v0.28.0 reuses the existing differential-testing reference for a bounded real-plan diagnostic; the release pins upstream a513c87781ed879e5aae6bc78f8b6c6056bd7a99 and says Cloudberry-specific code is not a PostgreSQL drop-in. No SQLancer source or oracle is copied or installed. The counterexamples.md citation is an earlier use added here to complete coverage, not a new use. Node PG Defense v0.3.0 references SQLancer conceptually for differential result-set and injection-rejection oracle checks in scripts/verify-postgres.cjs; no SQLancer code or dependency is copied."
     },
     {
       "id": "github:uw-pluverse/perses",
@@ -3949,7 +3973,7 @@
       ],
       "aliases": [],
       "tags": [],
-      "note": "Application-level interrupted-operation reasoning informs cooperating Markdown journal recovery (v0.42.0) and POSIX parent-directory fsync durability in backup_vault.py snapshot publish and restore (v0.54.1); not filesystem-wide atomicity or reproduced crash-consistency results.",
+      "note": "Application-level interrupted-operation reasoning informs cooperating Markdown journal recovery (v0.42.0) and POSIX parent-directory fsync durability in backup_vault.py snapshot publish and restore (v0.54.1); not filesystem-wide atomicity or reproduced crash-consistency results. Node PG Defense v0.3.0 applies durability ordering in lib/workspace.cjs by fsyncing .bak backup files before committing journal.json and issuing POSIX O_DIRECTORY fsyncs around staging-to-transaction renames and atomic source replacements.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -3968,6 +3992,18 @@
               "excerpt": "공개 v0.54.0(커밋 `2b35dc0635edb453077aecebac5717e05afe25c8`)을 바탕으로 11차 연구 조사에서 확인된 즉시 적용 가능한 보안·위생·내구성·CI 거버넌스 패치 네 건을 Python 표준 라이브러리만으로 구현해 공개한다. 새 런타임 의존성은 없으며 경고 승격 인증서가 묶는 일곱 파일은 바이트 단위로 유지한다. [Trojan Source](https://w"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 13,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L13",
+              "excerpt": "| 복구·저널 | [All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications (Pillai et al., OSDI 2014)](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) "
+            }
+          ]
         }
       ]
     },
@@ -3984,7 +4020,7 @@
         "madthanu/alice"
       ],
       "tags": [],
-      "note": "Pinned legacy Linux/Python 2 conceptual reference for interrupted-operation recovery; no implementation or dependency copied.",
+      "note": "Pinned legacy Linux/Python 2 conceptual reference for interrupted-operation recovery; no implementation or dependency copied. Node PG Defense v0.3.0 references ALICE conceptually alongside Pillai et al. (OSDI 2014) for backup-file and POSIX directory fsync ordering in lib/workspace.cjs; no ALICE code or dependency is copied.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4001,6 +4037,18 @@
               "line": 62,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recoverable-bundles.md#L62",
               "excerpt": "Design reference: [ALICE, OSDI 2014 application crash consistency](https://github.com/madthanu/alice/tree/6afda210b96baa2b0b277505d72742420ba89b68), pinned conceptual reference only. Its legacy Linux/Python 2 implementat"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 32,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L32",
+              "excerpt": "| 복구·저널 | [ALICE (`madthanu/alice`)](https://github.com/madthanu/alice) | 중단된 파일 연산과 디렉터리 항목 내구성 순서의 개념적 참고(코드 복사·의존성 없음) |"
             }
           ]
         }
@@ -4224,7 +4272,7 @@
         "sourcegraph/sourcegraph-public-snapshot"
       ],
       "tags": [],
-      "note": "Archived snapshot with no clear license, pinned at c864f15af264f0f456a6d8a83290b5c940715349. Structure only: the Skipped type separates \"not searched\" from \"searched and absent\" for recall scope reports. Concepts only; no code or data copied.",
+      "note": "Archived snapshot with no clear license, pinned at c864f15af264f0f456a6d8a83290b5c940715349. Structure only: the Skipped type separates \"not searched\" from \"searched and absent\" for recall scope reports. Concepts only; no code or data copied. Node PG Defense v0.3.0 adopts typed skipped reasonCode entries and summary.skippedByReason counts in lib/workspace.cjs and scripts/pg-defense.cjs to distinguish skipped files from inspected clean files.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4243,6 +4291,18 @@
               "excerpt": "[`internal/search/streaming/api/types.go`](https://github.com/sourcegraph/sourcegraph-public-snapshot/blob/c864f15af264f0f456a6d8a83290b5c940715349/internal/search/streaming/api/types.go),"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 35,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35",
+              "excerpt": "| 보고서·범위 | [Sourcegraph public snapshot (`sourcegraph/sourcegraph-public-snapshot`)](https://github.com/sourcegraph/sourcegraph-public-snapshot) · [Zoekt (`sourcegraph/zoekt`)](https://github.com/sourcegraph/zoekt) | “검사"
+            }
+          ]
         }
       ]
     },
@@ -4259,7 +4319,7 @@
         "sourcegraph/zoekt"
       ],
       "tags": [],
-      "note": "Stats pinned at a5a933bc043e (Apache-2.0): separating \"not searched\" from \"searched and absent\". Concepts only; no code or data copied.",
+      "note": "Stats pinned at a5a933bc043e (Apache-2.0): separating \"not searched\" from \"searched and absent\". Concepts only; no code or data copied. Node PG Defense v0.3.0 cites Zoekt alongside Sourcegraph for separating searched-and-absent files from reason-coded skipped files (oversized, binary, invalid_utf8, symlink, unreadable).",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4276,6 +4336,18 @@
               "line": 138,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L138",
               "excerpt": "[`api.go`](https://github.com/sourcegraph/zoekt/blob/a5a933bc043e/api.go), commit"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 35,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35",
+              "excerpt": "| 보고서·범위 | [Sourcegraph public snapshot (`sourcegraph/sourcegraph-public-snapshot`)](https://github.com/sourcegraph/sourcegraph-public-snapshot) · [Zoekt (`sourcegraph/zoekt`)](https://github.com/sourcegraph/zoekt) | “검사"
             }
           ]
         }
@@ -6452,8 +6524,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 33,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33",
+              "line": 54,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L54",
               "excerpt": "| 30 | [PostgreSQL: Versioning Policy](https://www.postgresql.org/support/versioning/) | PostgreSQL 메이저·마이너 지원 주기와 배포 서버 패치 버전 대조 기준 |"
             }
           ]
@@ -6635,7 +6707,7 @@
         "Spotlighting"
       ],
       "tags": [],
-      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Paper on defending against indirect prompt injection (arXiv, 2024). The release note cites it for the point that its authors do not recommend delimiting alone (wrapping untrusted input in delimiters), because an attacker who knows the delimiters can insert the same delimiters to override instructions; they recommend datamarking or encoding instead. Release item 2 applies that point to SessionStart: a note line that starts with one of the hook's own section headers (=== SESSION HANDOFF, === HOT CONTEXT, === FIXED CONSTRAINTS) gets the prefix [note line, not a hook header], deterministically and right after credential redaction. The release did not adopt datamarking or encoding of the whole note text, so that the output of ordinary notes stays byte-identical. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin.",
+      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Paper on defending against indirect prompt injection (arXiv, 2024). The release note cites it for the point that its authors do not recommend delimiting alone (wrapping untrusted input in delimiters), because an attacker who knows the delimiters can insert the same delimiters to override instructions; they recommend datamarking or encoding instead. Release item 2 applies that point to SessionStart: a note line that starts with one of the hook's own section headers (=== SESSION HANDOFF, === HOT CONTEXT, === FIXED CONSTRAINTS) gets the prefix [note line, not a hook header], deterministically and right after credential redaction. The release did not adopt datamarking or encoding of the whole note text, so that the output of ordinary notes stays byte-identical. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin. Node PG Defense v0.3.0 cites Spotlighting conceptually in docs/references.md for the untrusted-data versus execution-instruction boundary guidance in skills/node-pg-defense/SKILL.md (without claiming datamarking or encoding).",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -6646,6 +6718,18 @@
               "line": 74,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L74",
               "excerpt": "| [Defending Against Indirect Prompt Injection Attacks With Spotlighting](https://arxiv.org/abs/2403.14720)(2024) | 신뢰할 수 없는 입력을 구분자로만 감싸는 방법(delimiting)은 구분자를 아는 공격자가 같은 구분자를 넣어 지시를 덮어쓸 수 있어 저자들이 실제로 쓰라고 권하지 않는다. 대신 dat"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 20,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L20",
+              "excerpt": "| 스킬·보안 | [Defending Against Indirect Prompt Injection Attacks With Spotlighting (Hines et al., arXiv:2403.14720)](https://arxiv.org/abs/2403.14720) | 비신뢰 저장소 데이터와 실행 지시 간 경계 분리 원칙(`skills/node-pg-defense/SKILL.md`) |"
             }
           ]
         }
@@ -6664,7 +6748,7 @@
         "The Attacker Moves Second"
       ],
       "tags": [],
-      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Paper on adaptive attacks against LLM jailbreak and prompt injection defences (arXiv, 2025). The release note cites it for the finding that adaptive attacks, which change their method to fit a defence, bypassed most of the recent defences tested, most of which had originally reported attack success rates near zero. It is the basis for the limit stated for release item 2 and for the SECURITY.md sentence that the boundary sentence, credential redaction and header-line defusing are hygiene, not a guarantee against adaptive prompt injection; the defence stays with deterministic controls (note text grants no authority, and deny zones and the path checks do not depend on what a note says). This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin.",
+      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Paper on adaptive attacks against LLM jailbreak and prompt injection defences (arXiv, 2025). The release note cites it for the finding that adaptive attacks, which change their method to fit a defence, bypassed most of the recent defences tested, most of which had originally reported attack success rates near zero. It is the basis for the limit stated for release item 2 and for the SECURITY.md sentence that the boundary sentence, credential redaction and header-line defusing are hygiene, not a guarantee against adaptive prompt injection; the defence stays with deterministic controls (note text grants no authority, and deny zones and the path checks do not depend on what a note says). This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin. Node PG Defense v0.3.0 cites adaptive prompt-injection limits in SECURITY.md and docs/references.md, and documents in skills/node-pg-defense/SKILL.md that write safety relies on deterministic engine checks rather than prompt wording alone.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -6681,6 +6765,18 @@
               "line": 218,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L218",
               "excerpt": "defences they tested ([The Attacker Moves Second](https://arxiv.org/abs/2510.09023))."
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 21,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L21",
+              "excerpt": "| 스킬·보안 | [The Attacker Moves Second (Nasr et al., arXiv:2510.09023)](https://arxiv.org/abs/2510.09023) | 프롬프트 지침은 위생 보조 수단이며 최종 쓰기 안전은 결정적 엔진 경계에 둔다는 한계 명시(`SECURITY.md`, `SKILL.md`) |"
             }
           ]
         }
@@ -6784,7 +6880,7 @@
         "SLSA v1.2 Source 요구사항"
       ],
       "tags": [],
-      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Page of the SLSA v1.2 specification (Source track). The release note cites it for the requirement that a source control system that supports tags must be configured to prevent tags from being moved or deleted (from level 2), for Source levels being shown by a Source VSA that the source control system issues (a revision without one is at Source level 0), and for level 4 requiring review by two trusted persons for every change to a protected branch. Release item 4 adds a v* tag ruleset that blocks updates and deletions; the release note and docs/release-integrity.md claim no Source level, because no Source VSA is issued and a single maintainer cannot meet the level 4 two-person review. The release note adds that docs/release-integrity.md mentioned SLSA earlier only for build provenance (actions/attest) and cited neither the Source track nor this page. The release note gives no read date; the page may have changed since. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin.",
+      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). Page of the SLSA v1.2 specification (Source track). The release note cites it for the requirement that a source control system that supports tags must be configured to prevent tags from being moved or deleted (from level 2), for Source levels being shown by a Source VSA that the source control system issues (a revision without one is at Source level 0), and for level 4 requiring review by two trusted persons for every change to a protected branch. Release item 4 adds a v* tag ruleset that blocks updates and deletions; the release note and docs/release-integrity.md claim no Source level, because no Source VSA is issued and a single maintainer cannot meet the level 4 two-person review. The release note adds that docs/release-integrity.md mentioned SLSA earlier only for build provenance (actions/attest) and cited neither the Source track nor this page. The release note gives no read date; the page may have changed since. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin. Node PG Defense v0.3.0 cites SLSA v1.2 Source tag-immutability principles in docs/references.md alongside the refs/tags/v* ruleset and admin-override limit disclosure in SECURITY.md, without claiming formal SLSA certification.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -6807,6 +6903,18 @@
               "line": 513,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L513",
               "excerpt": "- [SLSA v1.2 Source requirements](https://slsa.dev/spec/v1.2/source-requirements): 태그 이동·삭제 금지(L2부터), Source VSA,"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 61,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61",
+              "excerpt": "| 릴리스·무결성 | [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) · [SLSA v1.2 Source requirements](https://slsa.dev/sp"
             }
           ]
         }
@@ -6860,7 +6968,7 @@
         "About rulesets"
       ],
       "tags": [],
-      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). GitHub documentation page (About rulesets). The release note cites it with the other rulesets page in one row for rulesets that target tags, bypass permissions and the active or disabled state, and for the Restrict updates and Restrict deletions rules, with which only users with bypass permission can push or delete tags whose names match. Release item 4 adds a ruleset on refs/tags/v* that blocks updates and deletions, with no bypass actors and no creation rule; because an administrator can disable the ruleset, docs/release-integrity.md states what it proves and what it does not. The release note gives no read date; the page may have changed since. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin. Semantic Crosscheck v0.31.0 applies the same refs/tags/v* immutable release-tag ruleset pattern alongside main branch protection and Dependabot security updates.",
+      "note": "No earlier agentic-vault or semantic-crosscheck use of this source is recorded in this catalog; the v0.52.0 release note says earlier repository documents did not cite it (a git grep of the v0.51.0 tree found none). GitHub documentation page (About rulesets). The release note cites it with the other rulesets page in one row for rulesets that target tags, bypass permissions and the active or disabled state, and for the Restrict updates and Restrict deletions rules, with which only users with bypass permission can push or delete tags whose names match. Release item 4 adds a ruleset on refs/tags/v* that blocks updates and deletions, with no bypass actors and no creation rule; because an administrator can disable the ruleset, docs/release-integrity.md states what it proves and what it does not. The release note gives no read date; the page may have changed since. This records a citation, not copied code, a runtime dependency or reproduced results; the effects and numbers the source reports are not claimed for the plugin. Semantic Crosscheck v0.31.0 applies the same refs/tags/v* immutable release-tag ruleset pattern alongside main branch protection and Dependabot security updates. Node PG Defense v0.3.0 protects release tags under refs/tags/v* with an active update/deletion-blocking ruleset documented in SECURITY.md.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -6895,6 +7003,18 @@
               "line": 263,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263",
               "excerpt": "Repository release-tag immutability (`refs/tags/v*`) and branch governance follow [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 61,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61",
+              "excerpt": "| 릴리스·무결성 | [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) · [SLSA v1.2 Source requirements](https://slsa.dev/sp"
             }
           ]
         }
@@ -7626,7 +7746,7 @@
       "tags": [
         "보안·안전"
       ],
-      "note": "Nicholas Boucher and Ross Anderson (USENIX Security 2023) demonstrate how Unicode bidirectional control characters alter visual rendering relative to logical token order. Agentic Vault v0.54.1 expands SessionStart, vault_doctor, and static repo hygiene checks to strip directional marks (U+061C, U+200E, U+200F) alongside bidi overrides and isolates. Semantic Crosscheck v0.31.1 adopts the same bidirectional control character defense in stdlib-only tools/check_unicode.py, enforced by unit tests and CI hygiene without echoing line text.",
+      "note": "Nicholas Boucher and Ross Anderson (USENIX Security 2023) demonstrate how Unicode bidirectional control characters alter visual rendering relative to logical token order. Agentic Vault v0.54.1 expands SessionStart, vault_doctor, and static repo hygiene checks to strip directional marks (U+061C, U+200E, U+200F) alongside bidi overrides and isolates. Semantic Crosscheck v0.31.1 adopts the same bidirectional control character defense in stdlib-only tools/check_unicode.py, enforced by unit tests and CI hygiene without echoing line text. Node PG Defense v0.3.0 adds zero-dependency bidirectional Unicode control detection in lib/unicode.cjs (refusing automatic apply without echoing source, checking shadow-stripped lines in lib/controls.cjs, and enforcing repository Unicode hygiene in test/integrity.test.cjs).",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -7663,6 +7783,18 @@
               "excerpt": "- [Boucher & Anderson (USENIX Security 2023), \"Trojan Source: Invisible Vulnerabilities\"](https://www.usenix.org/conference/usenixsecurity23/presentation/boucher) for bidirectional control character defenses;"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 11,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L11",
+              "excerpt": "| 01, 23, 31–34 | [Trojan Source: Invisible Vulnerabilities (Boucher & Anderson, USENIX Security 2023)](https://www.usenix.org/conference/usenixsecurity23/presentation/boucher) | 양방향(Bidi) 유니코드 제어 문자를 이용한 시각·논리 순서 괴리 탐지("
+            }
+          ]
         }
       ]
     },
@@ -7682,7 +7814,7 @@
       "tags": [
         "보안·안전"
       ],
-      "note": "Unicode Technical Standard #39 (Unicode 18.0.0) catalogs Default_Ignorable and confusable security hazards. Agentic Vault v0.54.1 adds seven Default_Ignorable code points (U+00AD, U+034F, U+061C, U+200E, U+200F, U+3164, U+FFA0) to SessionStart and CI hygiene stripping while documenting visual homoglyphs as a residual boundary. Semantic Crosscheck v0.31.1 rejects dangerous Default_Ignorable and invisible smuggling code points in tools/check_unicode.py across tracked repository files and explicit TOML/SQL inputs while allowing normal UTF-8 text.",
+      "note": "Unicode Technical Standard #39 (Unicode 18.0.0) catalogs Default_Ignorable and confusable security hazards. Agentic Vault v0.54.1 adds seven Default_Ignorable code points (U+00AD, U+034F, U+061C, U+200E, U+200F, U+3164, U+FFA0) to SessionStart and CI hygiene stripping while documenting visual homoglyphs as a residual boundary. Semantic Crosscheck v0.31.1 rejects dangerous Default_Ignorable and invisible smuggling code points in tools/check_unicode.py across tracked repository files and explicit TOML/SQL inputs while allowing normal UTF-8 text. Node PG Defense v0.3.0 enforces UTS #39 dangerous Default_Ignorable and Bidi controls detection in lib/unicode.cjs, lib/controls.cjs, scripts/pg-defense.cjs, and test/integrity.test.cjs.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -7719,6 +7851,18 @@
               "excerpt": "- [Unicode Technical Standard #39: Unicode Security Mechanisms](https://www.unicode.org/reports/tr39/) for `Default_Ignorable` and invisible smuggling code-point classification;"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 44,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L44",
+              "excerpt": "| 01, 23, 31–34 | [Unicode Technical Standard #39: Unicode Security Mechanisms](https://www.unicode.org/reports/tr39/) | 위험 `Default_Ignorable` 및 양방향 제어 코드 포인트 보안 기준(`lib/unicode.cjs`) |"
+            }
+          ]
         }
       ]
     },
@@ -7738,7 +7882,7 @@
       "tags": [
         "보안·안전"
       ],
-      "note": "Boucher et al. (IEEE S&P 2022, arXiv:2106.09898) analyze invisible character and control perturbations against language models. Agentic Vault v0.54.1 strips seven additional invisible Default_Ignorable code points (including U+034F CGJ) before secret redaction and fake-header neutralization in SessionStart and vault_doctor.",
+      "note": "Boucher et al. (IEEE S&P 2022, arXiv:2106.09898) analyze invisible character and control perturbations against language models. Agentic Vault v0.54.1 strips seven additional invisible Default_Ignorable code points (including U+034F CGJ) before secret redaction and fake-header neutralization in SessionStart and vault_doctor. Node PG Defense v0.3.0 detects and shadow-strips dangerous Default_Ignorable and Unicode Tag smuggling code points (U+E0000-U+E007F, U+200B-U+200D, U+2060-U+2064, U+00AD, U+034F) in lib/unicode.cjs and lib/controls.cjs.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -7755,6 +7899,18 @@
               "line": 210,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210",
               "excerpt": "[Unicode UTS #39](https://www.unicode.org/reports/tr39/) and [Bad Characters](https://arxiv.org/abs/2106.09898))"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 12,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L12",
+              "excerpt": "| 01, 23, 31–34 | [Bad Characters: Imperceptible NLP Attacks (Boucher et al., IEEE S&P 2022, arXiv:2106.09898)](https://arxiv.org/abs/2106.09898) | 불가시 `Default_Ignorable` 문자를 삽입한 키워드·패턴 우회 방어(`lib/unicode.cjs`, `lib/con"
             }
           ]
         }
@@ -7776,7 +7932,7 @@
         "보안·안전",
         "검증"
       ],
-      "note": "rhysd/actionlint v1.7.12 (MIT) statically checks GitHub Actions workflow syntax, expressions, and shell scripts. Agentic Vault v0.54.1 adds a SHA-256 checksum-verified advisory actionlint step to its read-only supply-chain-audit CI job alongside zizmor and hash-checked pip-audit. Semantic Crosscheck v0.31.1 runs the same SHA-256 checksum-verified rhysd/actionlint v1.7.12 linux_amd64 binary in its CI hygiene job.",
+      "note": "rhysd/actionlint v1.7.12 (MIT) statically checks GitHub Actions workflow syntax, expressions, and shell scripts. Agentic Vault v0.54.1 adds a SHA-256 checksum-verified advisory actionlint step to its read-only supply-chain-audit CI job alongside zizmor and hash-checked pip-audit. Semantic Crosscheck v0.31.1 runs the same SHA-256 checksum-verified rhysd/actionlint v1.7.12 linux_amd64 binary in its CI hygiene job. Node PG Defense v0.3.0 runs the SHA-256 verified rhysd/actionlint v1.7.12 linux_amd64 binary in its CI hygiene job (.github/workflows/verify.yml) with zero runtime dependencies.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -7813,6 +7969,18 @@
               "excerpt": "- [rhysd/actionlint](https://github.com/rhysd/actionlint) `v1.7.12` (MIT, official `linux_amd64` tarball verified by SHA-256) for GitHub Actions workflow syntax and expression linting;"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 36,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L36",
+              "excerpt": "| CI 위생 | [rhysd/actionlint (`rhysd/actionlint`)](https://github.com/rhysd/actionlint) | CI 전용(SHA-256 검증 `v1.7.12` 바이너리) GitHub Actions 워크플로 구문·표현식 정적 검사 |"
+            }
+          ]
         }
       ]
     },
@@ -7833,7 +8001,7 @@
         "신뢰성",
         "보안·안전"
       ],
-      "note": "Reproducible Builds specification defining SOURCE_DATE_EPOCH for timezone-independent build timestamps. Semantic Crosscheck v0.31.1 adds stdlib-only tools/build_release_zip.py using git archive --format=tar, UTC gmtime timestamps, sorted POSIX paths, fixed Unix metadata (create_system = 3), and deflate -9 so release ZIP SHA-256 digests match across TZ=KST-9, TZ=UTC0 and TZ=EST5. This records a citation, not copied code or a runtime dependency.",
+      "note": "Reproducible Builds specification defining SOURCE_DATE_EPOCH for timezone-independent build timestamps. Semantic Crosscheck v0.31.1 adds stdlib-only tools/build_release_zip.py using git archive --format=tar, UTC gmtime timestamps, sorted POSIX paths, fixed Unix metadata (create_system = 3), and deflate -9 so release ZIP SHA-256 digests match across TZ=KST-9, TZ=UTC0 and TZ=EST5. This records a citation, not copied code or a runtime dependency. Node PG Defense v0.3.0 builds its published release archive deterministically from git archive using SOURCE_DATE_EPOCH and accompanies it with SHA256SUMS.txt.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -7850,6 +8018,18 @@
               "line": 269,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269",
               "excerpt": "- [Reproducible Builds `SOURCE_DATE_EPOCH` specification](https://reproducible-builds.org/specs/source-date-epoch/) for timezone-independent UTC release ZIP timestamps;"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 62,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L62",
+              "excerpt": "| 릴리스·재현성 | [SOURCE_DATE_EPOCH specification (Reproducible Builds)](https://reproducible-builds.org/specs/source-date-epoch/) | 타임존 독립적 결정적 릴리스 아카이브 패키징 및 `SHA256SUMS.txt` 검증 기준 |"
             }
           ]
         }
@@ -8034,7 +8214,7 @@
         "보안·안전",
         "평가·테스트"
       ],
-      "note": "Static security analyzer for GitHub Actions workflows (MIT, pinned to 1.32.0 in CI only). Semantic Crosscheck v0.31.1 runs zizmor --offline .github/workflows/tests.yml in the CI static quality job without adding any runtime dependency or copying third-party code.",
+      "note": "Static security analyzer for GitHub Actions workflows (MIT, pinned to 1.32.0 in CI only). Semantic Crosscheck v0.31.1 runs zizmor --offline .github/workflows/tests.yml in the CI static quality job without adding any runtime dependency or copying third-party code. Node PG Defense v0.3.0 runs pinned zizmor 1.32.0 --offline on .github/workflows/verify.yml in its CI hygiene job with zero runtime dependencies.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8051,6 +8231,18 @@
               "line": 280,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280",
               "excerpt": "- [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) `1.32.0` (MIT) for offline GitHub Actions security static analysis;"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 37,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L37",
+              "excerpt": "| CI 보안 | [zizmorcore/zizmor (`zizmorcore/zizmor`)](https://github.com/zizmorcore/zizmor) | CI 전용(고정 `1.32.0`) GitHub Actions 워크플로 정적 보안 감사(`zizmor --offline`) |"
             }
           ]
         }
@@ -8296,8 +8488,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 31,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31",
+              "line": 49,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L49",
               "excerpt": "| 19–20 | [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html) | RLS `USING`·`WITH CHECK` 정책, 소유자 대상 `FORCE ROW LEVEL SECURITY` 및 `BYPASSRLS` |"
             }
           ]
@@ -8561,7 +8753,7 @@
         "SQL",
         "평가·테스트"
       ],
-      "note": "Jingzhou Fu, Jie Liang, Zhiyong Wu, Jingzheng Zhao, Mingzhe Li & Yu Jiang (EuroSys 2025), showing that targeted boundary arguments (empty/quoted/Unicode strings, signed zero, integer/decimal extremes, extreme dates and NULLs) trigger hundreds of SQL built-in function bugs across DBMS engines. Semantic Crosscheck v0.32.0 adds the deterministic function_boundary synthetic fixture scenario to counterexample and tlp without copying external code or changing existing scenarios.",
+      "note": "Jingzhou Fu, Jie Liang, Zhiyong Wu, Jingzheng Zhao, Mingzhe Li & Yu Jiang (EuroSys 2025), showing that targeted boundary arguments (empty/quoted/Unicode strings, signed zero, integer/decimal extremes, extreme dates and NULLs) trigger hundreds of SQL built-in function bugs across DBMS engines. Semantic Crosscheck v0.32.0 adds the deterministic function_boundary synthetic fixture scenario to counterexample and tlp without copying external code or changing existing scenarios. Node PG Defense v0.3.0 expands scripts/verify-postgres.cjs live PostgreSQL 17 checks with empty string, backslash, whitespace, combining Unicode, and JS null/undefined string-coercion boundary probes.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8578,6 +8770,18 @@
               "line": 296,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296",
               "excerpt": "- [Fu, Liang, Wu, Zhao, Li & Jiang (EuroSys 2025), \"Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments to Trigger Hundreds of DBMS Bugs\"](https://doi.org/10.1145/3689031.3696064) for the deter"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 14,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L14",
+              "excerpt": "| 25–26 | [Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments (Fu et al., EuroSys 2025)](https://doi.org/10.1145/3689031.3696064) | 빈 문자열·역슬래시·결합 유니코드·경계값 입력을 이용한 일회용 PostgreSQL 17 동치 검증(`scri"
             }
           ]
         }
@@ -8745,7 +8949,7 @@
         "SQL",
         "신뢰성"
       ],
-      "note": "PostgreSQL 17 system catalog documentation for pg_class (relkind, relispopulated, relhasrules). Semantic Crosscheck v0.34.0 inspects these columns inside doctor._privileges_sql() with zero extra SQL round trips to fail closed on unpopulated materialized views (relkind='m', relispopulated=false) with an actionable REFRESH MATERIALIZED VIEW hint, disclose foreign-table REPEATABLE READ snapshot limits (relkind='f'), and disclose ordinary/partitioned table rewrite rules (relhasrules=true, excluding views and materialized views). This records a citation, not copied code or a runtime dependency.",
+      "note": "PostgreSQL 17 system catalog documentation for pg_class (relkind, relispopulated, relhasrules). Semantic Crosscheck v0.34.0 inspects these columns inside doctor._privileges_sql() with zero extra SQL round trips to fail closed on unpopulated materialized views (relkind='m', relispopulated=false) with an actionable REFRESH MATERIALIZED VIEW hint, disclose foreign-table REPEATABLE READ snapshot limits (relkind='f'), and disclose ordinary/partitioned table rewrite rules (relhasrules=true, excluding views and materialized views). This records a citation, not copied code or a runtime dependency. Node PG Defense v0.3.0 extends Control 19 to surface CREATE [OR REPLACE] RULE declarations for table rewrite rule review alongside RLS policies.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8762,6 +8966,18 @@
               "line": 315,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.11. `pg_class`](https://www.postgresql.org/docs/17/catalog-pg-class.html) for zero-extra-round-trip `relkind`, `relispopulated` (fail-closed unpopulated materialized view detection), `"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 51,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L51",
+              "excerpt": "| 19 | [PostgreSQL 17 Documentation — 51.11. pg_class](https://www.postgresql.org/docs/17/catalog-pg-class.html) | 테이블 재작성 규칙(`CREATE RULE`, `relhasrules`)이 RLS·조회 의미에 미치는 영향 검토 기준 |"
             }
           ]
         }
@@ -8785,7 +9001,7 @@
         "SQL",
         "신뢰성"
       ],
-      "note": "PostgreSQL 17 system catalog documentation for pg_constraint (contype, convalidated). Semantic Crosscheck v0.34.0 counts unvalidated CHECK and FOREIGN KEY constraints (contype IN ('c', 'f') AND NOT convalidated) inside doctor._privileges_sql() with zero extra SQL round trips and discloses them in not_proven so NOT VALID constraints are never mistaken for validated row invariants. Verified against live PostgreSQL 17 in tests/test_rls_catalog_pg.py.",
+      "note": "PostgreSQL 17 system catalog documentation for pg_constraint (contype, convalidated). Semantic Crosscheck v0.34.0 counts unvalidated CHECK and FOREIGN KEY constraints (contype IN ('c', 'f') AND NOT convalidated) inside doctor._privileges_sql() with zero extra SQL round trips and discloses them in not_proven so NOT VALID constraints are never mistaken for validated row invariants. Verified against live PostgreSQL 17 in tests/test_rls_catalog_pg.py. Node PG Defense v0.3.0 extends Control 19 to surface constraint-scoped NOT VALID declarations so unvalidated CHECK and FOREIGN KEY constraints are reviewed explicitly.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8802,6 +9018,18 @@
               "line": 316,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.13. `pg_constraint`](https://www.postgresql.org/docs/17/catalog-pg-constraint.html) for zero-extra-round-trip unvalidated `CHECK` / `FOREIGN KEY` (`NOT VALID`, `convalidated = false`) "
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 52,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L52",
+              "excerpt": "| 19 | [PostgreSQL 17 Documentation — 51.13. pg_constraint](https://www.postgresql.org/docs/17/catalog-pg-constraint.html) | 미검증 `NOT VALID` 제약(`convalidated = false`)을 검증된 불변식으로 오인하지 않도록 하는 검토 기준 |"
             }
           ]
         }
@@ -8826,7 +9054,7 @@
         "보안·안전",
         "신뢰성"
       ],
-      "note": "PostgreSQL 17 official documentation covering declarative table partitioning and pg_inherits partition hierarchies. Semantic Crosscheck v0.34.0 adds a recursive pg_inherits check inside doctor._privileges_sql() and grain.evaluate() (zero extra SQL round trips, preserving grain's five-statement budget) to record child_partition_row_security and disclose asymmetric child partition RLS policies when the parent relation has relrowsecurity=false.",
+      "note": "PostgreSQL 17 official documentation covering declarative table partitioning and pg_inherits partition hierarchies. Semantic Crosscheck v0.34.0 adds a recursive pg_inherits check inside doctor._privileges_sql() and grain.evaluate() (zero extra SQL round trips, preserving grain's five-statement budget) to record child_partition_row_security and disclose asymmetric child partition RLS policies when the parent relation has relrowsecurity=false. Node PG Defense v0.3.0 extends Control 19 (lib/controls.cjs and docs/controls.md) to surface declarative partition definitions (PARTITION OF, ATTACH PARTITION, CREATE/ALTER TABLE ... PARTITION BY) for child RLS review.",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8843,6 +9071,18 @@
               "line": 317,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.12. Table Partitioning](https://www.postgresql.org/docs/17/ddl-partitioning.html) for recursive `pg_inherits` child-partition RLS asymmetry detection (`child_partition_row_security`) in"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 50,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L50",
+              "excerpt": "| 19 | [PostgreSQL 17 Documentation — 5.12. Table Partitioning](https://www.postgresql.org/docs/17/ddl-partitioning.html) | 선언적 파티션 자식 테이블(`PARTITION OF`) 직접 조회 시 부모 RLS 비대칭 검토 기준 |"
             }
           ]
         }
@@ -8865,7 +9105,7 @@
         "보안·안전",
         "신뢰성"
       ],
-      "note": "Gabi Nakibly & Zvika Babo (2026, arXiv:2611.28763). Empirical study of non-rendered hidden Markdown and HTML prompt-injection channels on GitHub. Agentic Vault v0.58.0 cites it for linear-time _strip_hidden_markup() sanitization in hooks/session_start.py and skills/agentic-vault/scripts/vault_doctor.py, stripping HTML comments, hidden Markdown link-reference comments, and hidden HTML elements from the injected buffer only (never mutating vault files on disk; preserving fenced code, inline code spans, normal URLs, and trailing/standalone single-token anchors) before credential redaction and fake-header neutralization.",
+      "note": "Gabi Nakibly & Zvika Babo (2026, arXiv:2611.28763). Empirical study of non-rendered hidden Markdown and HTML prompt-injection channels on GitHub. Agentic Vault v0.58.0 cites it for linear-time _strip_hidden_markup() sanitization in hooks/session_start.py and skills/agentic-vault/scripts/vault_doctor.py, stripping HTML comments, hidden Markdown link-reference comments, and hidden HTML elements from the injected buffer only (never mutating vault files on disk; preserving fenced code, inline code spans, normal URLs, and trailing/standalone single-token anchors) before credential redaction and fake-header neutralization. Node PG Defense v0.3.0 adds an explicit untrusted-repository boundary section to skills/node-pg-defense/SKILL.md so target comments, READMEs, and hidden markup are treated strictly as data.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -8882,6 +9122,18 @@
               "line": 131,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
               "excerpt": "공개 v0.57.0을 바탕으로 번들 `/aside-repl` 명령(PR #25)과 Jarvis Telegram 브리지(PR #26) 제거를 묶고, Python 표준 라이브러리만으로 세 가지 보안·통계·거부 복구 개선을 구현했다. `hooks/session_start.py`와 `skills/agentic-vault/scripts/vault_doctor.py`에 비(非)렌더링 숨김 마크업 차단("
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 18,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L18",
+              "excerpt": "| 스킬·보안 | [Who Is Prompt-Injecting Coding Agents? Hidden AI-Directed Text on GitHub (Nakibly & Babo, arXiv:2611.28763)](https://arxiv.org/abs/2611.28763) | 대상 저장소의 주석·README·숨김 텍스트를 비신뢰 데이터로 격리하는 스킬 경계 지침(`skills/node-pg"
             }
           ]
         }
@@ -9058,7 +9310,7 @@
         "에이전트",
         "신뢰성"
       ],
-      "note": "Bonan Ruan, Yuhao Sun, Jiahao Liu et al. (2026, arXiv:2611.24185). Skill control-flow integrity study observing that enumerating legal next steps in policy refusals substantially improves agent recovery. Agentic Vault v0.58.0 selectively adapts only the deterministic recovery-guidance pattern: appending pure-ASCII single-line Next legal steps: hints to every deny/ask reason in assets/adapters/deny-guard/deny-guard.py (engine=0.58.0 with matching ps-parse.ps1, unchanged 3-key hookSpecificOutput schema) and adding content-free next_legal_steps lists to skills/agentic-vault/scripts/vault_task_contracts.py. It does not claim runtime CFI sandboxing.",
+      "note": "Bonan Ruan, Yuhao Sun, Jiahao Liu et al. (2026, arXiv:2611.24185). Skill control-flow integrity study observing that enumerating legal next steps in policy refusals substantially improves agent recovery. Agentic Vault v0.58.0 selectively adapts only the deterministic recovery-guidance pattern: appending pure-ASCII single-line Next legal steps: hints to every deny/ask reason in assets/adapters/deny-guard/deny-guard.py (engine=0.58.0 with matching ps-parse.ps1, unchanged 3-key hookSpecificOutput schema) and adding content-free next_legal_steps lists to skills/agentic-vault/scripts/vault_task_contracts.py. It does not claim runtime CFI sandboxing. Node PG Defense v0.3.0 adapts deterministic content-free nextLegalSteps recovery guidance alongside errorCode in scripts/pg-defense.cjs CLI error responses.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -9075,6 +9327,18 @@
               "line": 131,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
               "excerpt": "공개 v0.57.0을 바탕으로 번들 `/aside-repl` 명령(PR #25)과 Jarvis Telegram 브리지(PR #26) 제거를 묶고, Python 표준 라이브러리만으로 세 가지 보안·통계·거부 복구 개선을 구현했다. `hooks/session_start.py`와 `skills/agentic-vault/scripts/vault_doctor.py`에 비(非)렌더링 숨김 마크업 차단("
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 17,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L17",
+              "excerpt": "| CLI·에이전트 | [Control-Flow Integrity for Agent Skills (SkillCFI, arXiv:2611.24185)](https://arxiv.org/abs/2611.24185) | 오류·거절 응답에 결정적·내용 비노출 `nextLegalSteps` 복구 안내를 제공해 에이전트 복구력을 높이는 패턴(`scripts/pg-defense.cjs`) |"
             }
           ]
         }
@@ -9125,8 +9389,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 32,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32",
+              "line": 53,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L53",
               "excerpt": "| 19 | [PostgreSQL 17 Documentation — CREATE VIEW](https://www.postgresql.org/docs/17/sql-createview.html) | RLS 테이블 조회 뷰의 `security_invoker = true` 옵션 적용 기준 |"
             }
           ]
@@ -9177,8 +9441,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 30,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30",
+              "line": 48,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L48",
               "excerpt": "| 18–19 | [PostgreSQL 17 Documentation — 39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) | 뷰 소유자 대 호출자 권한 평가 및 RLS 경계 검토 기준 |"
             }
           ]
@@ -9369,7 +9633,7 @@
         "신뢰성",
         "지식관리"
       ],
-      "note": "OpenAI (2026, Apache-2.0, commit 3344da59). Public repository of mathematical research artifacts, proof-verification workflows, and structured withdrawal/supersession records. Agentic Vault v0.59.0 selectively adapts three Python stdlib-only patterns: (1) opt-in read-only note withdrawal & supersession lifecycle auditing (skills/agentic-vault/scripts/vault_lifecycle.py, docs/note-lifecycle.md) with withdrawal_scope=proof_or_evidence_only, pinned 40/64-hex withdrawn_revision, O(N) supersession chains, and bounded cascade dependents; (2) check_exact_tree_membership() and required zero-count negative-evidence verification plus --require-independent-review in scripts/verify_release_claims.py; and (3) opt-in review_status, automation_methods, pinned immutable spec_files vs disjoint solution_files separation, and permitted_gaps allowlists in skills/agentic-vault/scripts/vault_coverage.py. Semantic Crosscheck v0.36.0 reuses this source for three distinct pure-stdlib verification patterns with zero new runtime dependencies and byte-identical default report outputs: (1) exact fixture-directory tree membership auditing (tree_membership_passed, extra_files, extra_directories, unexpected_entries, symlink/reparse rejection) in tools/paired_release.py and tools/run_paired_example.py (adapted from MUB-6 check_records.py); (2) closed-enum trust-assumption derivation (ASSUMPTION_CODES, 17 codes) and opt-in sxc.py report --permitted-assumptions <csv|none> allowlist checking (assumptions:permitted) in report.py and sxc.py (informed by Lean ComparatorChallenges permitted_axioms); and (3) removal of remaining production/CI raw assert statements (guarded by AST unit test) paired with relocated-CWD, read-only SHA-256, python -O -B tamper-rejection verification in tools/portability_check.py (informed by Einstein four-manifolds portability_check.py and Mahler reproduce.py). No Lean proofs, datasets, heavy numeric packages, or upstream code were copied.",
+      "note": "OpenAI (2026, Apache-2.0, commit 3344da59). Public repository of mathematical research artifacts, proof-verification workflows, and structured withdrawal/supersession records. Agentic Vault v0.59.0 selectively adapts three Python stdlib-only patterns: (1) opt-in read-only note withdrawal & supersession lifecycle auditing (skills/agentic-vault/scripts/vault_lifecycle.py, docs/note-lifecycle.md) with withdrawal_scope=proof_or_evidence_only, pinned 40/64-hex withdrawn_revision, O(N) supersession chains, and bounded cascade dependents; (2) check_exact_tree_membership() and required zero-count negative-evidence verification plus --require-independent-review in scripts/verify_release_claims.py; and (3) opt-in review_status, automation_methods, pinned immutable spec_files vs disjoint solution_files separation, and permitted_gaps allowlists in skills/agentic-vault/scripts/vault_coverage.py. Semantic Crosscheck v0.36.0 reuses this source for three distinct pure-stdlib verification patterns with zero new runtime dependencies and byte-identical default report outputs: (1) exact fixture-directory tree membership auditing (tree_membership_passed, extra_files, extra_directories, unexpected_entries, symlink/reparse rejection) in tools/paired_release.py and tools/run_paired_example.py (adapted from MUB-6 check_records.py); (2) closed-enum trust-assumption derivation (ASSUMPTION_CODES, 17 codes) and opt-in sxc.py report --permitted-assumptions <csv|none> allowlist checking (assumptions:permitted) in report.py and sxc.py (informed by Lean ComparatorChallenges permitted_axioms); and (3) removal of remaining production/CI raw assert statements (guarded by AST unit test) paired with relocated-CWD, read-only SHA-256, python -O -B tamper-rejection verification in tools/portability_check.py (informed by Einstein four-manifolds portability_check.py and Mahler reproduce.py). No Lean proofs, datasets, heavy numeric packages, or upstream code were copied. Node PG Defense v0.3.0 adapts exact root-tree membership auditing, vendored-parser SHA-256 checking, and relocated-CWD portability execution tests in test/integrity.test.cjs with zero runtime dependencies.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -9418,6 +9682,18 @@
               "excerpt": "v0.36.0부터 [`openai/math`](https://github.com/openai/math)(커밋 `3344da59`, Apache-2.0)의 `check_records.py`(`check_tree_membership`)와 `portability_check.py` 패턴을 Python 표준 라이브러리만으로 선택 반영했다(새 런타임 의존성 0개)."
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 34,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L34",
+              "excerpt": "| 검증·이식성 | [openai/math (`openai/math`)](https://github.com/openai/math) | 정확한 배포 트리 소속 검증, 벤더 파일 해시 대조 및 타 CWD 이식성 실행 시험 패턴(`test/integrity.test.cjs`) |"
+            }
+          ]
         }
       ]
     },
@@ -9440,7 +9716,7 @@
         "에이전트",
         "지식관리"
       ],
-      "note": "Qianli Wang, Boyang Ma et al. (2026, arXiv:2602.10498v1). Demonstrates hidden-comment prompt injection in Markdown documents and agent skills invisible to human readers. Agentic Vault v0.60.0 extends linear-time _strip_hidden_markup() in hooks/session_start.py (shared by vault_doctor.py) to strip Obsidian %% ... %% inline/multiline/unclosed comments, zero-dimension <svg> elements (attribute and CSS width:0/height:0 with exact HTML5 §13.2.5.32-40 self-closing state machine), and <svg>-scoped <desc>/<title>/<metadata> from the injected SessionStart buffer only while preserving fenced code, inline code spans, single %, and vault files.",
+      "note": "Qianli Wang, Boyang Ma et al. (2026, arXiv:2602.10498v1). Demonstrates hidden-comment prompt injection in Markdown documents and agent skills invisible to human readers. Agentic Vault v0.60.0 extends linear-time _strip_hidden_markup() in hooks/session_start.py (shared by vault_doctor.py) to strip Obsidian %% ... %% inline/multiline/unclosed comments, zero-dimension <svg> elements (attribute and CSS width:0/height:0 with exact HTML5 §13.2.5.32-40 self-closing state machine), and <svg>-scoped <desc>/<title>/<metadata> from the injected SessionStart buffer only while preserving fenced code, inline code spans, single %, and vault files. Node PG Defense v0.3.0 cites hidden-comment injection risks in docs/references.md for skills/node-pg-defense/SKILL.md, which treats target comments as untrusted data and requires raw code-point inspection whenever unicodeFindings are reported.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -9457,6 +9733,18 @@
               "line": 115,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
               "excerpt": "공개 v0.59.0을 바탕으로 Python 표준 라이브러리만으로 세 가지 보안·무결성·수명주기 연동을 구현했다. `hooks/session_start.py`와 `skills/agentic-vault/scripts/vault_doctor.py`의 선형 시간 `_strip_hidden_markup()`에 **Obsidian `%% ... %%` 단일행·다중행·미닫힘 주석**과 **크기 0 `<s"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 19,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L19",
+              "excerpt": "| 스킬·보안 | [When Skills Lie: Hidden-Comment Injection in LLM Agents (Wang et al., arXiv:2602.10498)](https://arxiv.org/abs/2602.10498) | 숨김 주석·비표시 문자를 통한 에이전트 지시 가로채기 위험과 원시 바이트 확인 지침(`skills/node-pg-defense/SKILL.md`) |"
             }
           ]
         }
@@ -9527,7 +9815,7 @@
         "신뢰성",
         "에이전트"
       ],
-      "note": "Shiyu Kan, Yue Qi et al. (2026, arXiv:2611.01976v1). Evaluates post-trust mutations to external tool and hook code outside the LLM context window (ETUDE). Agentic Vault v0.60.0 tracks SHA-256 digests of settings-referenced hooks, managed vault git hooks (00-meta/scripts/git-hooks/pre-commit, pre-push, and vault_healthcheck.py), and bundled plugin hooks in vault_policy_drift.py, flagging modified, missing, untracked, or symlinked/junctioned/hardlinked/UNC hook targets fail-closed without executing hooks.",
+      "note": "Shiyu Kan, Yue Qi et al. (2026, arXiv:2611.01976v1). Evaluates post-trust mutations to external tool and hook code outside the LLM context window (ETUDE). Agentic Vault v0.60.0 tracks SHA-256 digests of settings-referenced hooks, managed vault git hooks (00-meta/scripts/git-hooks/pre-commit, pre-push, and vault_healthcheck.py), and bundled plugin hooks in vault_policy_drift.py, flagging modified, missing, untracked, or symlinked/junctioned/hardlinked/UNC hook targets fail-closed without executing hooks. Node PG Defense v0.3.0 adds test-time SHA-256 verification of bundled vendor/acorn.cjs against vendor/README.md in test/integrity.test.cjs.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -9550,6 +9838,18 @@
               "line": 3,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/policy-drift.md#L3",
               "excerpt": "`skills/agentic-vault/scripts/vault_policy_drift.py` is an opt-in, offline, standard-library helper added in `v0.60.0` (inspired by [arXiv:2611.32195](https://arxiv.org/abs/2611.32195) on silent removal of operator `deny"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 16,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L16",
+              "excerpt": "| 공급망·무결성 | [Beyond Prompt Injection: The Tool Update Gap in LLM Agent Security (Kan et al., arXiv:2611.01976)](https://arxiv.org/abs/2611.01976) | 내장 파서(`vendor/acorn.cjs`) SHA-256 고정 대조를 통한 테스트 시점(`node --test`) 도구 변조 "
             }
           ]
         }
@@ -9662,7 +9962,7 @@
             {
               "file": "docs/references.md",
               "line": 9,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9",
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L9",
               "excerpt": "| 01, 04–06 | [The Essence of Command Injection Attacks in Web Applications (Su & Wassermann, POPL 2006)](https://doi.org/10.1145/1111037.1111070) | 사용자 입력이 SQL 구문 구조를 바꾸지 못하도록 본문과 값을 엄격히 분리하는 형식적 근거 |"
             }
           ]
@@ -9696,7 +9996,7 @@
             {
               "file": "docs/references.md",
               "line": 10,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10",
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L10",
               "excerpt": "| 23–26 | [Obfuscating Code Vulnerabilities against Static Analysis in JavaScript Code (arXiv:2604.01131)](https://arxiv.org/abs/2604.01131) | JavaScript 정적 패턴 검사 단독의 한계와 데이터 흐름·회귀·실 DB 통합 검증 병행 근거 |"
             }
           ]
@@ -9729,8 +10029,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 16,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16",
+              "line": 27,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L27",
               "excerpt": "| 01–30 | [OWASP Application Security Verification Standard (ASVS)](https://github.com/OWASP/ASVS) | 데이터 검증, 매개변수화 쿼리, 접근 통제, 오류 처리·감사 로그 검증 기준 |"
             }
           ]
@@ -9762,8 +10062,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 17,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17",
+              "line": 28,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L28",
               "excerpt": "| 01–02, 15 | [node-postgres (`brianc/node-postgres`)](https://github.com/brianc/node-postgres) | `pg.Pool`·`pg.Client` 위치 매개변수 `$1` 바인딩과 트랜잭션 클라이언트 생명주기 |"
             }
           ]
@@ -9795,8 +10095,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 18,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18",
+              "line": 29,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L29",
               "excerpt": "| 03 | [PgBouncer (`pgbouncer/pgbouncer`)](https://github.com/pgbouncer/pgbouncer) | 트랜잭션 풀링 모드에서의 준비된 문장(`max_prepared_statements`) 및 연결 재사용 제약 |"
             }
           ]
@@ -9828,8 +10128,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 19,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19",
+              "line": 30,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L30",
               "excerpt": "| 22 | [SafeQL (`ts-safeql/safeql`)](https://github.com/ts-safeql/safeql) | 실제 PostgreSQL 스키마 대비 원시 SQL 열·타입 정적 검증 모델 |"
             }
           ]
@@ -9862,8 +10162,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 20,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20",
+              "line": 31,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L31",
               "excerpt": "| 28 | [pgAudit (`pgaudit/pgaudit`)](https://github.com/pgaudit/pgaudit) | PostgreSQL 세션·객체 단위 감사 로그 수집 및 검토 범위 기준 |"
             }
           ]
@@ -9895,8 +10195,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 26,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26",
+              "line": 43,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L43",
               "excerpt": "| 01–16 | [OWASP SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) | 매개변수화 쿼리, 식별자 허용 목록, 패턴 검색 및 최소 권한 방어 지침 |"
             }
           ]
@@ -9929,8 +10229,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 27,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27",
+              "line": 45,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L45",
               "excerpt": "| 01–02 | [PostgreSQL 17 Documentation — 53.2. Message Flow](https://www.postgresql.org/docs/17/protocol-flow.html) | Extended Query 프로토콜(Parse/Bind/Execute)과 서버 측 매개변수 바인딩 |"
             }
           ]
@@ -9962,8 +10262,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 28,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28",
+              "line": 46,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L46",
               "excerpt": "| 16 | [PostgreSQL 17 Documentation — 41.5. Basic Statements](https://www.postgresql.org/docs/17/plpgsql-statements.html) | PL/pgSQL 동적 SQL의 `format('%I', ...)` 식별자 조합과 `EXECUTE ... USING` 값 분리 |"
             }
           ]
@@ -9996,8 +10296,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 29,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29",
+              "line": 47,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L47",
               "excerpt": "| 16 | [PostgreSQL 17 Documentation — CREATE FUNCTION](https://www.postgresql.org/docs/17/sql-createfunction.html) | `SECURITY DEFINER` 함수의 `SET search_path` 고정과 `PUBLIC` `EXECUTE` 회수 |"
             }
           ]
@@ -10030,8 +10330,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 34,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34",
+              "line": 55,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L55",
               "excerpt": "| 30 | [PostgreSQL Security Information — CVE-2024-4317](https://www.postgresql.org/support/security/CVE-2024-4317/) | 마이너 수정판 설치 뒤 클러스터 모든 DB·템플릿에 보정 SQL 실행이 필요한 사례 |"
             }
           ]
@@ -10064,8 +10364,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 35,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35",
+              "line": 56,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L56",
               "excerpt": "| 31 | [PostgreSQL 17 Documentation — COPY](https://www.postgresql.org/docs/17/sql-copy.html) | `COPY ... PROGRAM` 및 서버 파일 경로 접근 제한과 `FROM STDIN` 대안 |"
             }
           ]
@@ -10097,8 +10397,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 36,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36",
+              "line": 57,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L57",
               "excerpt": "| 32 | [PostgreSQL 17 Documentation — F.11. dblink](https://www.postgresql.org/docs/17/dblink.html) | 서버 밖 외부 DB 연결 확장, `dblink_connect_u` 및 `PUBLIC` 사용자 매핑 위험 통제 |"
             }
           ]
@@ -10131,8 +10431,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 37,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37",
+              "line": 58,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L58",
               "excerpt": "| 17, 33 | [PostgreSQL 17 Documentation — 21.2. Role Attributes](https://www.postgresql.org/docs/17/role-attributes.html) | `SUPERUSER`·`BYPASSRLS`·`CREATEROLE`·`REPLICATION`·`VALID UNTIL` 역할 속성 점검 |"
             }
           ]
@@ -10166,8 +10466,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 38,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38",
+              "line": 59,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L59",
               "excerpt": "| 18, 33 | [PostgreSQL 17 Documentation — 21.5. Predefined Roles](https://www.postgresql.org/docs/17/predefined-roles.html) | `pg_read/write_server_files`·`pg_execute_server_program`·`pg_read/write_all_data` 권한 범위 |"
             }
           ]
@@ -10199,8 +10499,8 @@
           "evidence": [
             {
               "file": "docs/references.md",
-              "line": 39,
-              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39",
+              "line": 60,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L60",
               "excerpt": "| 34 | [PostgreSQL 17 Documentation — ALTER SYSTEM](https://www.postgresql.org/docs/17/sql-altersystem.html) | `ALTER SYSTEM` 및 `GRANT ... ON PARAMETER` 매개변수 권한 위임 제한 |"
             }
           ]

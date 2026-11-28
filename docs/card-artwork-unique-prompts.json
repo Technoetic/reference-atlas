@@ -366,7 +366,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L37",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/boundary-schema.md#L108"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/boundary-schema.md#L108",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L15"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L37",
@@ -374,7 +375,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L37",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/boundary-schema.md#L108"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/boundary-schema.md#L108",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L15"
       ]
     },
     {
@@ -2364,7 +2366,8 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-coverage.md#L72",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.28.0.md#L67",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L232",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L256"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L256",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L33"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/c7f4bc0f1f863b24971544f95453e42aac68963e/THIRD_PARTY.md#L25",
@@ -2375,7 +2378,8 @@
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-coverage.md#L72",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.28.0.md#L67",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L232",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L256"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L256",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L33"
       ]
     },
     {
@@ -2844,7 +2848,8 @@
       "output": "media/cards/card-105.webp",
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.42.0.md#L45",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L13"
       ],
       "sha256": "0ee84ed566baaff77480fdbd5fb496206881769a256daa26342d8be80dc7dd8f",
       "bytes": 55800,
@@ -2858,7 +2863,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.42.0.md#L45",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L13"
       ]
     },
     {
@@ -2872,7 +2878,8 @@
       "output": "media/cards/card-106.webp",
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.42.0.md#L46",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recoverable-bundles.md#L62"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recoverable-bundles.md#L62",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L32"
       ],
       "sha256": "c68b8174a0fbced26777ac8fec1dd3446b72d7f9cd3bce7c960e1a2ef2dfc4d6",
       "bytes": 78956,
@@ -2887,7 +2894,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.42.0.md#L46",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recoverable-bundles.md#L62"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recoverable-bundles.md#L62",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L32"
       ]
     },
     {
@@ -3509,7 +3517,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.43.0.md#L345",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L133"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L133",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L345",
@@ -3517,7 +3526,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.43.0.md#L345",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L133"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L133",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35"
       ]
     },
     {
@@ -3590,7 +3600,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.43.0.md#L347",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L138"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L138",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/89ce65a7c90e202c601ec50ef7cfa4ada0539c79/docs/releases/v0.43.0.md#L347",
@@ -3598,7 +3609,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.43.0.md#L347",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L138"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/recall-scope.md#L138",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L35"
       ]
     },
     {
@@ -5007,7 +5019,7 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L54"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
@@ -5016,7 +5028,7 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L54"
       ],
       "delivery": {
         "sourceSha256": "f815f859c75bec0553be64fd1089b0f1ae23811841ea2325ff3f16c9e36105d2",
@@ -5167,7 +5179,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L81",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L509",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L56",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L50",
@@ -5177,7 +5190,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L81",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L509",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L56",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61"
       ],
       "delivery": {
         "sourceSha256": "d6ee2a814f7228f898e5cba334d2ccfd1108d339fe924ded31a4fc0d46147adb",
@@ -5339,7 +5353,8 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L79",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L290",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L513"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L513",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L48",
@@ -5349,7 +5364,8 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L79",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L290",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L513"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L513",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L61"
       ],
       "delivery": {
         "sourceSha256": "67257d76eabea96e8953797bf9449c06396d76069e34661254fa748ecb7e5fee",
@@ -5420,13 +5436,15 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L74"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L74",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L20"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L43"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L74"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L74",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L20"
       ],
       "delivery": {
         "sourceSha256": "e22775fb1c08c6150afee7262ebe8b07cc3052e1573a10b1e2b5d7c44435e133",
@@ -5538,7 +5556,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L75",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L218"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L218",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L21"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/3dbee6a159dd5f21417fa52c222805d5081c9db0/docs/releases/v0.52.0.md#L44",
@@ -5546,7 +5565,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.52.1.md#L75",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L218"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L218",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L21"
       ],
       "delivery": {
         "sourceSha256": "89e74f9183440bce54b4e621df8aba8c945346b4e2dc558523873869e8ed1207",
@@ -6023,7 +6043,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L57",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L62"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L57",
@@ -6031,7 +6052,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L57",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L62"
       ],
       "delivery": {
         "sourceSha256": "08bc1808ac0a5aa8d34094cc464db60c2ee16e6f13273fa2a6960e8a086eefdc",
@@ -6068,7 +6090,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L59",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L271"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L271",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L44"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
@@ -6080,7 +6103,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L59",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L271"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L271",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L44"
       ],
       "delivery": {
         "sourceSha256": "ef499de6b1947c2c25f27b64a0995c60f274a7b22849bb42289301a1dc0465cd",
@@ -6207,7 +6231,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L12"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
@@ -6215,7 +6240,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L210",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L12"
       ],
       "delivery": {
         "sourceSha256": "9072627624f21a07ce92253e782ba065ddcf7ac23bed12520af8da3dcf084925",
@@ -6433,7 +6459,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L209",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L58",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L270"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L270",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L11"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
@@ -6445,7 +6472,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/SECURITY.md#L209",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L58",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L270"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L270",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L11"
       ],
       "delivery": {
         "sourceSha256": "3a8f5f10b801748f4f33c007169273791da951a48982d498656fc927762ac218",
@@ -6783,7 +6811,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L319",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L64",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L279"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L279",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L36"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/74a2776cec936cd2cce7274cc9f3cb29bacf0159/docs/releases/v0.54.1.md#L3",
@@ -6795,7 +6824,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.54.1.md#L3",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/release-integrity.md#L319",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L64",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L279"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L279",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L36"
       ],
       "delivery": {
         "sourceSha256": "84c5686fa0f6934d96e1e6ca5025b60b0b840858e42311e25efc27a5fd0120df",
@@ -6873,7 +6903,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L65",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L37"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0d741b3287d30d323268b607c06a22d6d68a74b3/docs/releases/v0.31.1.md#L65",
@@ -6881,7 +6912,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L65",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L37"
       ],
       "delivery": {
         "sourceSha256": "a4f8cb3ea91b8cb3b2b0e241ddbfc7d440ae58b060cd7765d5d0110bb395c953",
@@ -6917,7 +6949,7 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L61",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L49"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L61",
@@ -6926,7 +6958,7 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L61",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L49"
       ],
       "delivery": {
         "sourceSha256": "b69bd654300606213c028700a29b06d44d064c093ba9da7347f2c66776b1eb00",
@@ -7192,7 +7224,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L67",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L14"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L67",
@@ -7200,7 +7233,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L67",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L14"
       ],
       "delivery": {
         "sourceSha256": "e2916f2929d59a772a0b566a295bb65bdc3c0b970049ebc352dde538e95ff926",
@@ -7373,7 +7407,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L51"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/381212b8d3f63eebaa3bef48540ec4be1b22bb98/docs/releases/v0.34.0.md#L61",
@@ -7381,7 +7416,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L51"
       ],
       "delivery": {
         "sourceSha256": "4174f96c975761dc50586c6b8752b0856462d591cbf1f88e0a8c478a302bcb60",
@@ -7416,7 +7452,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L62",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L52"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/381212b8d3f63eebaa3bef48540ec4be1b22bb98/docs/releases/v0.34.0.md#L62",
@@ -7424,7 +7461,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L62",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L52"
       ],
       "delivery": {
         "sourceSha256": "eb39e00986b2b29168ef655b0f73bf44c072d4bdcbc0f82bf279da55efb43689",
@@ -7459,7 +7497,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L63",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L50"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/381212b8d3f63eebaa3bef48540ec4be1b22bb98/docs/releases/v0.34.0.md#L63",
@@ -7467,7 +7506,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L63",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L50"
       ],
       "delivery": {
         "sourceSha256": "bc48df9dedeb76f9be1d8929db579f44669bd202449104a05297c71dc8cedd9c",
@@ -7502,7 +7542,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.58.0.md#L8",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L18"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/34db74b437ddca715280f7d934d90204405f87c3/docs/releases/v0.58.0.md#L8",
@@ -7510,7 +7551,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.58.0.md#L8",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L18"
       ],
       "delivery": {
         "sourceSha256": "12c3d016226137273d5e704c14307bf6a37f03e7791b6743eea80abd8b45b989",
@@ -7717,7 +7759,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.58.0.md#L12",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L17"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/34db74b437ddca715280f7d934d90204405f87c3/docs/releases/v0.58.0.md#L12",
@@ -7725,7 +7768,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.58.0.md#L12",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L17"
       ],
       "delivery": {
         "sourceSha256": "b26c51d30e2f34005bbf88b8f8e9a42b10230b716f7584a8b856fc396288c737",
@@ -7761,7 +7805,7 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L60",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L53"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/9e91c7a38973863c9e5ce2d137f422d13a5af7f5/docs/releases/v0.35.0.md#L60",
@@ -7770,7 +7814,7 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L60",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L53"
       ],
       "delivery": {
         "sourceSha256": "3c4b38dfc33f4bc8512573c6a94fea6161d6da423eefa97afb6a28664eaad061",
@@ -7806,7 +7850,7 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L61",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L48"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/9e91c7a38973863c9e5ce2d137f422d13a5af7f5/docs/releases/v0.35.0.md#L61",
@@ -7815,7 +7859,7 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L61",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L48"
       ],
       "delivery": {
         "sourceSha256": "bac83df3d7afabc55e4d81c62963f9986f52720a48c784a74d60e76ae8d35b9d",
@@ -8030,7 +8074,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/note-lifecycle.md#L3",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.36.0.md#L59",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L334",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L65"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L65",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L34"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/0ce51c04924170a0ef5341e4225ee9fe9798a621/docs/releases/v0.59.0.md#L3",
@@ -8043,7 +8088,8 @@
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/note-lifecycle.md#L3",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.36.0.md#L59",
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L334",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L65"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L65",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L34"
       ],
       "delivery": {
         "sourceSha256": "2be29e7f311bc53a62ee683a9655d96c9e60f9575d83c7b1bdd0fd912c73bdf9",
@@ -8078,7 +8124,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L8",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L19"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L8",
@@ -8086,7 +8133,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L8",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L19"
       ],
       "delivery": {
         "sourceSha256": "c2020e7f38c6367f227b8ad2315c59029f409681892f063330a3e1bbd5acd3ed",
@@ -8168,7 +8216,8 @@
       "evidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L10",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/policy-drift.md#L3"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/policy-drift.md#L3",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L16"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L10",
@@ -8178,7 +8227,8 @@
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/releases/v0.60.0.md#L10",
         "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
-        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/policy-drift.md#L3"
+        "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/docs/policy-drift.md#L3",
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L16"
       ],
       "delivery": {
         "sourceSha256": "a622d4d747564d4088a9740f906bacb50ccb175c2d8cdd40b4106c6421d6574e",
@@ -8298,13 +8348,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L9"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L9"
       ],
       "delivery": {
         "sourceSha256": "c7cd00e2b8ecd119f9d4330c5f1fb4415447b538493dfca859d69371c08771d6",
@@ -8338,13 +8388,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L10"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L10"
       ],
       "delivery": {
         "sourceSha256": "bb7a3493b4752b52d6fd6b0b7048fefb4158be3618138178fe7d8e2199d9aa57",
@@ -8378,13 +8428,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L27"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L27"
       ],
       "delivery": {
         "sourceSha256": "6e551ec3850d1d2edda7b7af06eb60a56e900b5b86d77ce5e6a2f34f1ceb34c8",
@@ -8418,13 +8468,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L28"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L28"
       ],
       "delivery": {
         "sourceSha256": "96923fefff11306d31071ea1bf0f1ab2aca2d30d82ff345456085bc1e59fa88d",
@@ -8458,13 +8508,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L29"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L29"
       ],
       "delivery": {
         "sourceSha256": "f344ceba7a175ce1ab3e8a6ed55422e9f35c5c347f7184605fbbfae5154c6a14",
@@ -8498,13 +8548,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L30"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L30"
       ],
       "delivery": {
         "sourceSha256": "28c1764f2954ef6c28b2307f0820c5589e0627527ef3781268534fc681f6f721",
@@ -8538,13 +8588,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L31"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L31"
       ],
       "delivery": {
         "sourceSha256": "9288de8876b9fcf405dea4fdef969dd21deff8e318033508fedaf24404eb7079",
@@ -8578,13 +8628,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L43"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L43"
       ],
       "delivery": {
         "sourceSha256": "5d1206338d0d4771eae3cb7df9b2515290d8cf611c3a9639ab6e4f088cf56240",
@@ -8618,13 +8668,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L45"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L45"
       ],
       "delivery": {
         "sourceSha256": "ce4703cb23b715601f9723923f49ddf41f2bf444bc1465b06872aca4557fddae",
@@ -8658,13 +8708,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L46"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L46"
       ],
       "delivery": {
         "sourceSha256": "57ac05112d16c246fda343738c43e25f0c12e80ec6d7f8a56f5a0fd0a3ac811d",
@@ -8698,13 +8748,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L47"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L47"
       ],
       "delivery": {
         "sourceSha256": "82f995f71246a9498be76e76e905f3e8184d93b9214f6a8942378b9b06fa507b",
@@ -8738,13 +8788,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L55"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L55"
       ],
       "delivery": {
         "sourceSha256": "88c9345bc16f1f611e3ba20bcd0166ce675258b0125289a47d9208de53852683",
@@ -8778,13 +8828,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L56"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L56"
       ],
       "delivery": {
         "sourceSha256": "96d76ca0c94f3bc99e7bb7978b9543f9f2e5da60d5801203ce719cda18d43e4d",
@@ -8818,13 +8868,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L57"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L57"
       ],
       "delivery": {
         "sourceSha256": "8958365cc0ccfbdf5129b6f1aaa127627ab57c253886eee36ce6fa65bc8f2f5e",
@@ -8858,13 +8908,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L58"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L58"
       ],
       "delivery": {
         "sourceSha256": "8f1117d1e0e4089d46e945e3aac3b11c303539238e52563259045f1bd0ad3e23",
@@ -8898,13 +8948,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L59"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L59"
       ],
       "delivery": {
         "sourceSha256": "267fba0b9c35404aa1f75d565c138584ec8a6020ccf617fecc381724f78f21e7",
@@ -8938,13 +8988,13 @@
         640
       ],
       "evidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L60"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
       ],
       "currentEvidenceUrls": [
-        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
+        "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L60"
       ],
       "delivery": {
         "sourceSha256": "dfd659933a7d7e4826e11c79554137611074ef7a8e012074d116d0946e8fe602",

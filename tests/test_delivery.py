@@ -50,6 +50,7 @@ EXPECTED_COVERAGE={
     ('v0.59.0','v0.36.0'):(70,68,29,246,494),
     ('v0.60.0','v0.36.0'):(74,69,29,251,506),
     ('v0.60.0','v0.36.0','v0.2.0+docs'):(74,69,29,268,527),
+    ('v0.60.0','v0.36.0','v0.3.0'):(74,69,29,268,552),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -93,7 +94,7 @@ class DeliveryTests(unittest.TestCase):
                       'v0.33.0':(28,77,159,11),
                       'v0.34.0':(28,80,167,11),
                       'v0.35.0':(30,86,180,11),
-                      'v0.36.0':(30,87,183,16 if has_npd else 12)}
+                      'v0.36.0':(30,87,183,36 if versions[2:]==('v0.3.0',) else 16 if has_npd else 12)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
@@ -102,7 +103,7 @@ class DeliveryTests(unittest.TestCase):
                           sxc['citations'] + sxc_withheld_rows, audit_shared), sxc_coverage[versions[1]])
         if has_npd:
             npd=catalog['countsByPlugin']['node-pg-defense']
-            npd_coverage={'v0.2.0+docs':(2,5,14,21,21,4)}
+            npd_coverage={'v0.2.0+docs':(2,5,14,21,21,4),'v0.3.0':(13,14,19,46,46,29)}
             self.assertEqual(
                 (npd['paper'], npd['project']+npd['format'], npd['article'], npd['total'], npd['citations'], npd['shared']),
                 npd_coverage[versions[2]],
@@ -336,7 +337,7 @@ class DeliveryTests(unittest.TestCase):
         ):
             with self.subTest(shared=shared_id):
                 src=indexed[shared_id]
-                self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+                self.assertTrue({'agentic-vault','semantic-crosscheck'}.issubset({u['plugin'] for u in src['uses']}))
                 sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
                 self.assertEqual(sxc_use['role'],'reference')
                 self.assertCountEqual([row['file'] for row in sxc_use['evidence']],['docs/releases/v0.31.1.md','THIRD_PARTY.md'])
@@ -390,7 +391,7 @@ class DeliveryTests(unittest.TestCase):
         indexed={source['id']:source for source in catalog['sources']}
         src=indexed['github:ai3inc/foldboost']
         self.assertEqual(src['kind'],'project')
-        self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+        self.assertTrue({'agentic-vault','semantic-crosscheck'}.issubset({u['plugin'] for u in src['uses']}))
         sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
         self.assertEqual(sxc_use['role'],'reference')
         self.assertCountEqual(
@@ -494,7 +495,7 @@ class DeliveryTests(unittest.TestCase):
         indexed={source['id']:source for source in catalog['sources']}
         src=indexed['github:openai/math']
         self.assertEqual(src['kind'],'project')
-        self.assertCountEqual([u['plugin'] for u in src['uses']],['agentic-vault','semantic-crosscheck'])
+        self.assertTrue({'agentic-vault','semantic-crosscheck'}.issubset({u['plugin'] for u in src['uses']}))
         sxc_use=next(u for u in src['uses'] if u['plugin']=='semantic-crosscheck')
         self.assertEqual(sxc_use['role'],'reference')
         self.assertCountEqual(
@@ -568,5 +569,33 @@ class DeliveryTests(unittest.TestCase):
                 npd_use,=src['uses']
                 self.assertEqual((npd_use['plugin'],npd_use['role']),('node-pg-defense','reference'))
                 self.assertEqual([row['file'] for row in npd_use['evidence']],['docs/references.md'])
+
+    def test_npd030_cross_links_25_existing_sources_including_five_tri_shared_bridges(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        snap=catalog['snapshots'].get('node-pg-defense')
+        self.assertIsNotNone(snap)
+        if snap['version']!='v0.3.0':
+            self.skipTest('These citation locations describe the v0.3.0 snapshot')
+        indexed={source['id']:source for source in catalog['sources']}
+        tri_shared=[
+            'url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',
+            'github:openai/math',
+            'github:rhysd/actionlint',
+            'url:https://www.unicode.org/reports/tr39',
+            'url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets',
+        ]
+        for sid in tri_shared:
+            with self.subTest(tri_shared=sid):
+                src=indexed[sid]
+                self.assertCountEqual(
+                    [u['plugin'] for u in src['uses']],
+                    ['agentic-vault','semantic-crosscheck','node-pg-defense'],
+                )
+                npd_use=next(u for u in src['uses'] if u['plugin']=='node-pg-defense')
+                self.assertEqual(npd_use['role'],'reference')
+                self.assertEqual([row['file'] for row in npd_use['evidence']],['docs/references.md'])
+                self.assertTrue(npd_use['evidence'][0]['url'].startswith(
+                    f"https://github.com/Technoetic/node-pg-defense/blob/{snap['commit']}/docs/references.md#L"
+                ))
 
 if __name__=='__main__':unittest.main()
