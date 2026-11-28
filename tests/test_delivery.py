@@ -48,6 +48,7 @@ EXPECTED_COVERAGE={
     ('v0.58.0','v0.35.0'):(70,67,29,245,488),
     ('v0.59.0','v0.35.0'):(70,68,29,246,491),
     ('v0.59.0','v0.36.0'):(70,68,29,246,494),
+    ('v0.60.0','v0.36.0'):(74,69,29,251,506),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -491,5 +492,24 @@ class DeliveryTests(unittest.TestCase):
             [row['file'] for row in sxc_use['evidence']],
             ['docs/releases/v0.36.0.md','THIRD_PARTY.md','docs/paired-release.md'],
         )
+
+    def test_av0600_references_cover_hidden_comments_policy_drift_and_retired_notes(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        if catalog['snapshots']['agentic-vault']['version']!='v0.60.0':
+            self.skipTest('These citation locations describe the v0.60.0 release')
+        indexed={source['id']:source for source in catalog['sources']}
+        for sid,kind,files in [
+            ('arxiv:2602.10498','paper',['docs/releases/v0.60.0.md','README.md']),
+            ('arxiv:2611.32195','paper',['docs/releases/v0.60.0.md','README.md','docs/policy-drift.md']),
+            ('arxiv:2611.01976','paper',['docs/releases/v0.60.0.md','README.md','docs/policy-drift.md']),
+            ('arxiv:2605.14478','paper',['docs/releases/v0.60.0.md','README.md']),
+            ('github:ccf/agentcairn','project',['docs/releases/v0.60.0.md','README.md']),
+        ]:
+            with self.subTest(source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
+                self.assertEqual(av_use['role'],'reference')
+                self.assertCountEqual([row['file'] for row in av_use['evidence']],files)
 
 if __name__=='__main__':unittest.main()

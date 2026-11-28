@@ -799,3 +799,41 @@ test('the v0.59.0 agentic-vault openai/math cover retains its dedicated artwork 
   }
   assert.equal(newOriginals.size,commissioned.length);
 });
+
+test('the five v0.60.0 agentic-vault covers retain their dedicated artwork and provenance',()=>{
+  const commissioned=[
+    [247,'arxiv:2602.10498','paper','when-skills-lie','HIDDEN COMMENT FILTERING'],
+    [248,'arxiv:2611.32195','paper','when-answering-is-administering','DENY RULE MONOTONICITY'],
+    [249,'arxiv:2611.01976','paper','tool-update-gap','POST-TRUST HOOK HASH DRIFT'],
+    [250,'arxiv:2605.14478','paper','stale-repository-context','STALE RETRIEVAL EXCLUSION'],
+    [251,'github:ccf/agentcairn','project','ccf-agentcairn','VAULT CAIRN RETIREMENT']
+  ];
+  const previousOriginals=new Set(manifest.assets.slice(0,246).map(asset=>asset.delivery?.sourceSha256));
+  const newOriginals=new Set();
+  for(const [index,id,kind,slug,label] of commissioned){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.equal(record.label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${id}`);
+    newOriginals.add(record.delivery.sourceSha256);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(newOriginals.size,commissioned.length);
+});
