@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-28T06:18:25.599227+00:00",
+  "updatedAt": "2026-11-28T08:34:10.500111+00:00",
   "snapshots": {
     "agentic-vault": {
       "name": "Agentic Vault",
@@ -10,9 +10,9 @@
     },
     "semantic-crosscheck": {
       "name": "Semantic Crosscheck",
-      "version": "v0.36.0",
-      "commit": "0cebbe4257fbe7e2f10fa184c25cde8e92831066",
-      "url": "https://github.com/Technoetic/semantic-crosscheck/tree/0cebbe4257fbe7e2f10fa184c25cde8e92831066"
+      "version": "v0.37.0",
+      "commit": "4b1c08e0f763d0e2405b1c701503f10701457454",
+      "url": "https://github.com/Technoetic/semantic-crosscheck/tree/4b1c08e0f763d0e2405b1c701503f10701457454"
     },
     "node-pg-defense": {
       "name": "Node PG Defense",
@@ -2904,13 +2904,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 20,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L20",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L20",
               "excerpt": "[Polygon](https://arxiv.org/abs/2504.06542) and"
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 185,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L185",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L185",
               "excerpt": "from [Polygon](https://arxiv.org/abs/2504.06542); no solver or third-party source is bundled."
             }
           ]
@@ -2941,7 +2941,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 21,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L21",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L21",
               "excerpt": "[RDFGraphGen](https://arxiv.org/abs/2407.17941). No source from these projects is copied or bundled;"
             }
           ]
@@ -2972,7 +2972,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 27,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L27",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L27",
               "excerpt": "[sheval](https://arxiv.org/abs/2609.05944v2) as an architectural reference only. Its repository's code"
             }
           ]
@@ -3003,25 +3003,25 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 30,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L30",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L30",
               "excerpt": "[Union and Intersection of all Justifications](https://arxiv.org/abs/2109.11216); no code from that work is used"
             },
             {
               "file": "docs/owl-explanations.md",
               "line": 32,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/owl-explanations.md#L32",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/owl-explanations.md#L32",
               "excerpt": "Justifications](https://arxiv.org/abs/2109.11216), ESWC 2022, applied here to generated axiom groups over fixed"
             },
             {
               "file": "CHANGELOG.md",
-              "line": 766,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/CHANGELOG.md#L766",
+              "line": 776,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/CHANGELOG.md#L776",
               "excerpt": "- `reason --explain-inconsistency` reports `uniqueness` (`unique`, `not_unique` or `not_proven`) for a completed subset-minimal explanation. One extra same-HermiT check per retained group removes only that group from the"
             },
             {
               "file": "docs/releases/v0.14.0.md",
               "line": 13,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.14.0.md#L13",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.14.0.md#L13",
               "excerpt": "- **Uniqueness of OWL explanations.** A completed subset-minimal explanation from `reason --explain-inconsistency` reports `uniqueness`. One extra same-HermiT check per retained group removes only that group from the ful"
             }
           ]
@@ -3054,13 +3054,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 37,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L37",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L37",
               "excerpt": "informed by [Data Generation for Testing and Grading SQL Queries (XData)](https://arxiv.org/abs/1411.6704)."
             },
             {
               "file": "docs/boundary-schema.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/boundary-schema.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/boundary-schema.md#L108",
               "excerpt": "[XData](https://arxiv.org/abs/1411.6704) and implements only the bounded scalar"
             }
           ]
@@ -3103,7 +3103,7 @@
             {
               "file": "docs/tlp.md",
               "line": 47,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/tlp.md#L47",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/tlp.md#L47",
               "excerpt": "[NoREC (ESEC/FSE 2020)](https://arxiv.org/abs/2007.08292). Materializing the"
             }
           ]
@@ -3136,19 +3136,19 @@
             {
               "file": "docs/design.md",
               "line": 758,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/design.md#L758",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/design.md#L758",
               "excerpt": "arXiv 2307.00417). An `additive` test exists for every sum/count measure (each configuration measure with `agg`"
             },
             {
               "file": "CHANGELOG.md",
-              "line": 1047,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/CHANGELOG.md#L1047",
+              "line": 1057,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/CHANGELOG.md#L1057",
               "excerpt": "applicable (aggregation-consistency errors, HILDA 2023, arXiv 2307.00417)."
             },
             {
               "file": "docs/releases/v0.4.0.md",
               "line": 30,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.4.0.md#L30",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.4.0.md#L30",
               "excerpt": "method follows [Aggregation Consistency Errors in Semantic Layers](https://arxiv.org/abs/2307.00417)"
             }
           ]
@@ -3179,13 +3179,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 103,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L103",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L103",
               "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 152,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L152",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L152",
               "excerpt": "This original implementation draws on [Vulcan](https://doi.org/10.1145/3586049) and"
             }
           ]
@@ -3216,13 +3216,13 @@
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 95,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L95",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L95",
               "excerpt": "[VeriEQL](https://doi.org/10.1145/3649849). No VeriEQL source is copied or bundled; its"
             },
             {
               "file": "docs/releases/v0.3.0.md",
               "line": 111,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.3.0.md#L111",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.3.0.md#L111",
               "excerpt": "The integrity-domain method is informed by [VeriEQL](https://doi.org/10.1145/3649849); no CC BY-NC-SA"
             }
           ]
@@ -3254,7 +3254,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 142,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/owl-explanations.md#L142",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/owl-explanations.md#L142",
               "excerpt": "Design references: [Fast, flexible MUS enumeration](https://doi.org/10.1007/s10601-015-9183-0),"
             }
           ]
@@ -3285,7 +3285,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 19,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L19",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L19",
               "excerpt": "[Provenance Semirings](https://repository.upenn.edu/handle/20.500.14332/8764),"
             }
           ]
@@ -3317,13 +3317,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 105,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L105",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L105",
               "excerpt": "constraint-model principle of [Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/)"
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 153,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L153",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L153",
               "excerpt": "[Qex](https://www.microsoft.com/en-us/research/publication/qex-symbolic-sql-query-explorer/);"
             }
           ]
@@ -3355,13 +3355,13 @@
             {
               "file": "docs/design.md",
               "line": 1466,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/design.md#L1466",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/design.md#L1466",
               "excerpt": "follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of Exhaustive Testing for Data Structures\""
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 305,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L305",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L305",
               "excerpt": "correctness on real data. The method follows Marinov, Andoni, Daniliuc, Khurshid and Rinard, \"An Evaluation of"
             }
           ]
@@ -3393,31 +3393,31 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 25,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L25",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L25",
               "excerpt": "[SQLancer](https://github.com/sqlancer/sqlancer), whose project is MIT-licensed. No SQLancer source is"
             },
             {
               "file": "docs/mutation-coverage.md",
               "line": 72,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-coverage.md#L72",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/mutation-coverage.md#L72",
               "excerpt": "prior art: [SQLancer](https://github.com/sqlancer/sqlancer). No SQLancer dependency or comparator is"
             },
             {
               "file": "docs/releases/v0.28.0.md",
               "line": 67,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.28.0.md#L67",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.28.0.md#L67",
               "excerpt": "- [SQLancer pinned source](https://github.com/sqlancer/sqlancer/tree/a513c87781ed879e5aae6bc78f8b6c6056bd7a99): existing differential-testing reference; no source/oracle is copied or installed, and Cloudberry-specific co"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 232,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L232",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L232",
               "excerpt": "and the already referenced [SQLancer project, pinned source](https://github.com/sqlancer/sqlancer/tree/a513c87781ed879e5aae6bc78f8b6c6056bd7a99)."
             },
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 256,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L256",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L256",
               "excerpt": "in [SQLancer](https://github.com/sqlancer/sqlancer). Neither project is bundled or copied, and no new"
             }
           ]
@@ -3460,7 +3460,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 103,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L103",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L103",
               "excerpt": "[Vulcan (2023)](https://doi.org/10.1145/3586049) and [Perses](https://github.com/uw-pluverse/perses)."
             }
           ]
@@ -3491,7 +3491,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 143,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/owl-explanations.md#L143",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/owl-explanations.md#L143",
               "excerpt": "[MARCO](https://github.com/liffiton/MARCO), and"
             }
           ]
@@ -3523,7 +3523,7 @@
             {
               "file": "docs/owl-explanations.md",
               "line": 144,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/owl-explanations.md#L144",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/owl-explanations.md#L144",
               "excerpt": "[OWL Explanation](https://github.com/matthewhorridge/owlexplanation). These are algorithm/design references;"
             }
           ]
@@ -3554,19 +3554,19 @@
             {
               "file": "skills/semantic-crosscheck/references/counterexamples.md",
               "line": 255,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/skills/semantic-crosscheck/references/counterexamples.md#L255",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/skills/semantic-crosscheck/references/counterexamples.md#L255",
               "excerpt": "[Hypothesis](https://github.com/HypothesisWorks/hypothesis), and the counterexample/reduction approach"
             },
             {
               "file": "docs/releases/v0.28.0.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.28.0.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.28.0.md#L65",
               "excerpt": "- [Hypothesis](https://github.com/HypothesisWorks/hypothesis): already referenced for counterexamples; generated-input/permutation/boundary-test ideas are extended to numerical regression cases, without a new runtime dep"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 228,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L228",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L228",
               "excerpt": "[Hypothesis](https://github.com/HypothesisWorks/hypothesis); Hypothesis is not installed or bundled."
             }
           ]
@@ -3599,13 +3599,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 199,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L199",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L199",
               "excerpt": "| [W3C SHACL test suite](https://github.com/w3c/data-shapes) (`data-shapes-test-suite/tests/core`) | commit `1dfcd9f30cab70ac02b049611eeba451fa1308e7` | W3C Software and Document License | Expected reports for `shacl-cor"
             },
             {
               "file": "docs/shacl-corpus.md",
               "line": 104,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/shacl-corpus.md#L104",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/shacl-corpus.md#L104",
               "excerpt": "[w3c/data-shapes](https://github.com/w3c/data-shapes) that contains"
             }
           ]
@@ -3637,7 +3637,7 @@
             {
               "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
               "line": 3,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
               "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
             }
           ]
@@ -3669,7 +3669,7 @@
             {
               "file": "docs/releases/v0.19.1.md",
               "line": 121,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.19.1.md#L121",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.19.1.md#L121",
               "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
             }
           ]
@@ -3701,7 +3701,7 @@
             {
               "file": "docs/releases/v0.19.1.md",
               "line": 121,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.19.1.md#L121",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.19.1.md#L121",
               "excerpt": "- SQLGlot, ProvSQL and ordered-query contracts remain research directions, not"
             }
           ]
@@ -3734,19 +3734,19 @@
             {
               "file": "docs/okf.md",
               "line": 44,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/okf.md#L44",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/okf.md#L44",
               "excerpt": "is `sxc-verification-contract-metadata/v1`; OKF version is the string `0.2`."
             },
             {
               "file": "docs/releases/v0.15.0.md",
               "line": 31,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.15.0.md#L31",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.15.0.md#L31",
               "excerpt": "local inputs. The bundle uses OKF 0.2 and custom type `SXC Verification Contract`."
             },
             {
               "file": "docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md",
               "line": 3,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/superpowers/specs/2026-11-01-knowledge-contracts-design.md#L3",
               "excerpt": "The user authorized the first three proposals from the OKF/OpenWiki comparison: bind authored business definitions to expectation contracts, exchange a limited metadata profile, and exercise version transitions. Work fro"
             }
           ]
@@ -3779,7 +3779,7 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 41,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L41",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L41",
               "excerpt": "refer to the [SHACL report contract](https://www.w3.org/TR/shacl/#validation-report)"
             }
           ]
@@ -3811,7 +3811,7 @@
             {
               "file": "docs/superpowers/specs/2026-10-25-verification-hardening.md",
               "line": 22,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/superpowers/specs/2026-10-25-verification-hardening.md#L22",
               "excerpt": "The selected approach extends existing comparison and TLP mechanisms. A separate NoREC stage would duplicate standalone dispatch and replay machinery. A third SHACL engine and DQP are later research candidates rather tha"
             }
           ]
@@ -3843,7 +3843,7 @@
             {
               "file": "docs/superpowers/plans/2026-11-03-response-witness-hardening.md",
               "line": 18,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/superpowers/plans/2026-11-03-response-witness-hardening.md#L18",
               "excerpt": "- User authorization covers this first research bundle and necessary local verification/integration. Broader Gungnir/MC, new reasoners, deployment, releases and active installations are outside this change."
             }
           ]
@@ -3891,13 +3891,13 @@
             {
               "file": "docs/semantic-preflight.md",
               "line": 195,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/semantic-preflight.md#L195",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/semantic-preflight.md#L195",
               "excerpt": "NVIDIA's [October 21, 2026 Agent Toolkit article](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 46,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L46",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L46",
               "excerpt": "[October 21, 2026 Agent Toolkit article](https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/)"
             }
           ]
@@ -3948,13 +3948,13 @@
             {
               "file": "docs/semantic-preflight.md",
               "line": 196,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/semantic-preflight.md#L196",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/semantic-preflight.md#L196",
               "excerpt": "is enterprise-platform context. [NVIDIA Auto Ontology at `c4495670947eb7b4616f0dd9900e5ced2a48ca1e`](https://github.com/NVIDIA/auto-ontology/tree/c4495670947eb7b4616f0dd9900e5ced2a48ca1e)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 47,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L47",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L47",
               "excerpt": "and [Auto Ontology at c4495670947eb7b4616f0dd9900e5ced2a48ca1e](https://github.com/NVIDIA/auto-ontology/tree/c4495670947eb7b4616f0dd9900e5ced2a48ca1e),"
             }
           ]
@@ -3973,7 +3973,7 @@
       ],
       "aliases": [],
       "tags": [],
-      "note": "Application-level interrupted-operation reasoning informs cooperating Markdown journal recovery (v0.42.0) and POSIX parent-directory fsync durability in backup_vault.py snapshot publish and restore (v0.54.1); not filesystem-wide atomicity or reproduced crash-consistency results. Node PG Defense v0.3.0 applies durability ordering in lib/workspace.cjs by fsyncing .bak backup files before committing journal.json and issuing POSIX O_DIRECTORY fsyncs around staging-to-transaction renames and atomic source replacements.",
+      "note": "Application-level interrupted-operation reasoning informs cooperating Markdown journal recovery (v0.42.0) and POSIX parent-directory fsync durability in backup_vault.py snapshot publish and restore (v0.54.1); not filesystem-wide atomicity or reproduced crash-consistency results. Node PG Defense v0.3.0 applies durability ordering in lib/workspace.cjs by fsyncing .bak backup files before committing journal.json and issuing POSIX O_DIRECTORY fsyncs around staging-to-transaction renames and atomic source replacements. Semantic Crosscheck v0.37.0 applies this crash-consistency ordering to Result.write() in result.py by flushing and calling os.fsync() on temporary .result-*.part descriptors before closing and atomically replacing result.json, followed by a best-effort POSIX O_DIRECTORY parent-directory fsync (verified via unit tests in tests/test_result_contract.py).",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4004,6 +4004,24 @@
               "excerpt": "| 복구·저널 | [All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications (Pillai et al., OSDI 2014)](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) "
             }
           ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 65,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L65",
+              "excerpt": "- [Pillai et al. (OSDI 2014), \"All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications\"](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) and [A"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 348,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L348",
+              "excerpt": "- [Pillai et al. (OSDI 2014), \"All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications\"](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) and [A"
+            }
+          ]
         }
       ]
     },
@@ -4020,7 +4038,7 @@
         "madthanu/alice"
       ],
       "tags": [],
-      "note": "Pinned legacy Linux/Python 2 conceptual reference for interrupted-operation recovery; no implementation or dependency copied. Node PG Defense v0.3.0 references ALICE conceptually alongside Pillai et al. (OSDI 2014) for backup-file and POSIX directory fsync ordering in lib/workspace.cjs; no ALICE code or dependency is copied.",
+      "note": "Pinned legacy Linux/Python 2 conceptual reference for interrupted-operation recovery; no implementation or dependency copied. Node PG Defense v0.3.0 references ALICE conceptually alongside Pillai et al. (OSDI 2014) for backup-file and POSIX directory fsync ordering in lib/workspace.cjs; no ALICE code or dependency is copied. Semantic Crosscheck v0.37.0 references ALICE conceptually alongside Pillai et al. (OSDI 2014) for temp-file os.fsync() before os.replace() and best-effort POSIX parent-directory fsync ordering in result.py; no ALICE code or dependency is copied.",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -4049,6 +4067,24 @@
               "line": 32,
               "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L32",
               "excerpt": "| 복구·저널 | [ALICE (`madthanu/alice`)](https://github.com/madthanu/alice) | 중단된 파일 연산과 디렉터리 항목 내구성 순서의 개념적 참고(코드 복사·의존성 없음) |"
+            }
+          ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 65,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L65",
+              "excerpt": "- [Pillai et al. (OSDI 2014), \"All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications\"](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) and [A"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 348,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L348",
+              "excerpt": "- [Pillai et al. (OSDI 2014), \"All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications\"](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai) and [A"
             }
           ]
         }
@@ -4981,13 +5017,13 @@
             {
               "file": "docs/contract-report.md",
               "line": 4,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/contract-report.md#L4",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/contract-report.md#L4",
               "excerpt": "[Data Contract CLI](https://github.com/datacontract/datacontract-cli/tree/09e779dfeaec63ee60edc102e7a3d6970e34e16b)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L63",
               "excerpt": "informed by [Data Contract CLI](https://github.com/datacontract/datacontract-cli)"
             }
           ]
@@ -5020,13 +5056,13 @@
             {
               "file": "docs/contract-report.md",
               "line": 5,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/contract-report.md#L5",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/contract-report.md#L5",
               "excerpt": "and [Open Data Contract Standard](https://github.com/bitol-io/open-data-contract-standard/tree/448f7b93329ece7827897d7dd51e827a3e279460)."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L65",
               "excerpt": "[Open Data Contract Standard](https://github.com/bitol-io/open-data-contract-standard)"
             }
           ]
@@ -5056,13 +5092,13 @@
             {
               "file": "docs/sql-structure.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/sql-structure.md#L35",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/sql-structure.md#L35",
               "excerpt": "and [libpg_query's licenses](https://github.com/pganalyze/libpg_query#license)."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 72,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L72",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L72",
               "excerpt": "[libpg_query](https://github.com/pganalyze/libpg_query) through the optional"
             }
           ]
@@ -5094,13 +5130,13 @@
             {
               "file": "docs/sql-structure.md",
               "line": 34,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/sql-structure.md#L34",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/sql-structure.md#L34",
               "excerpt": "not bundled in this project. See [the binding source](https://github.com/lelit/pglast/tree/v7.22)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 73,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L73",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L73",
               "excerpt": "[pglast](https://github.com/lelit/pglast) Python binding, pinned to 7.22"
             }
           ]
@@ -5132,13 +5168,13 @@
             {
               "file": "docs/provenance-fixtures.md",
               "line": 10,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/provenance-fixtures.md#L10",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/provenance-fixtures.md#L10",
               "excerpt": "[the provenance formalization paper, pinned to arXiv v3](https://arxiv.org/abs/2504.12058v3)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 82,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L82",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L82",
               "excerpt": "[ProvSQL: A General System for Keeping Track of the Provenance and Probability of Data](https://arxiv.org/abs/2504.12058v3)"
             }
           ]
@@ -5170,19 +5206,19 @@
             {
               "file": "docs/provenance-fixtures.md",
               "line": 12,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/provenance-fixtures.md#L12",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/provenance-fixtures.md#L12",
               "excerpt": "[QueryAdequacy.lean at commit 92af5cf2a057dfb46aab0a364d4ade5fde9c5699, lines 17–46](https://github.com/PierreSenellart/provenance-lean/blob/92af5cf2a057dfb46aab0a364d4ade5fde9c5699/Provenance/QueryAdequacy.lean#L17-L46)"
             },
             {
               "file": "docs/provenance-fixtures.md",
               "line": 49,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/provenance-fixtures.md#L49",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/provenance-fixtures.md#L49",
               "excerpt": "[Nat.counterexample_diff_adequacy, lines 411–452](https://github.com/PierreSenellart/provenance-lean/blob/92af5cf2a057dfb46aab0a364d4ade5fde9c5699/Provenance/QueryAdequacy.lean#L411-L452)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 83,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L83",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L83",
               "excerpt": "and [provenance-lean](https://github.com/PierreSenellart/provenance-lean)"
             }
           ]
@@ -5648,13 +5684,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 211,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L211",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L211",
               "excerpt": "[StrykerJS v10.1.1's disableBail option](https://github.com/stryker-mutator/stryker-js/blob/959127763e5bbe2eb65f5341a8161780d6d8a476/packages/api/schema/stryker-core.json#L499-L503)"
             },
             {
               "file": "docs/mutation-matrix.md",
               "line": 78,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-matrix.md#L78",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/mutation-matrix.md#L78",
               "excerpt": "[StrykerJS v10.1.1 `disableBail`](https://github.com/stryker-mutator/stryker-js/blob/959127763e5bbe2eb65f5341a8161780d6d8a476/packages/api/schema/stryker-core.json#L499-L503)"
             }
           ]
@@ -5684,13 +5720,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 212,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L212",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L212",
               "excerpt": "and [Mutation Testing Elements' separate coveredBy, killedBy and testsCompleted fields](https://github.com/stryker-mutator/mutation-testing-elements/blob/4b5b62cc6bf81f23dd9521447131abeb51f895db/packages/report-schema/sr"
             },
             {
               "file": "docs/mutation-matrix.md",
               "line": 79,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-matrix.md#L79",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/mutation-matrix.md#L79",
               "excerpt": "and [Mutation Testing Elements' separate execution and detection fields](https://github.com/stryker-mutator/mutation-testing-elements/blob/4b5b62cc6bf81f23dd9521447131abeb51f895db/packages/report-schema/src/mutation-test"
             }
           ]
@@ -5720,13 +5756,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 217,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L217",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L217",
               "excerpt": "[SPES: A Symbolic Approach to Proving Query Equivalence Under Bag Semantics (ICDE 2022), arXiv v2](https://arxiv.org/abs/2004.00481v2)"
             },
             {
               "file": "docs/join-aggregate-fixtures.md",
               "line": 84,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/join-aggregate-fixtures.md#L84",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/join-aggregate-fixtures.md#L84",
               "excerpt": "[SPES: A Symbolic Approach to Proving Query Equivalence Under Bag Semantics, arXiv v2](https://arxiv.org/abs/2004.00481v2)"
             }
           ]
@@ -5755,13 +5791,13 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 219,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L219",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L219",
               "excerpt": "[public SPES repository](https://github.com/georgia-tech-db/spes/tree/8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2)"
             },
             {
               "file": "docs/join-aggregate-fixtures.md",
               "line": 86,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/join-aggregate-fixtures.md#L86",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/join-aggregate-fixtures.md#L86",
               "excerpt": "[public SPES repository pinned at 8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2](https://github.com/georgia-tech-db/spes/tree/8049f98d8e64a5c2c43d1ed581e7d5b6e0a006e2)"
             }
           ]
@@ -6442,7 +6478,7 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 106,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L106",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L106",
               "excerpt": "| pgsql-hackers thread \"timestamp vs. timestamptz comparisons inconsistently ordered under DST\", 2026-07-27 to 2026-07-31 ([list archive from 2026-07-27](https://www.postgresql.org/list/pgsql-hackers/since/202607270000/)"
             }
           ]
@@ -6471,13 +6507,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
               "line": 185,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L185",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/README.md#L185",
               "excerpt": "| Python + pg8000 (`requirements/core.txt`) | 모든 단계 | **Python 3.11 이상** | 2027-10 무렵(보안 수정 종료) · [PEP 664](https://peps.python.org/pep-0664/) |"
             }
           ]
@@ -6507,13 +6543,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
               "line": 186,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/README.md#L186",
               "excerpt": "| PostgreSQL | DB를 사용하는 단계 | **PostgreSQL 17 이상** · `MERGE ... WHEN NOT MATCHED BY SOURCE`, `merge_action()`, `COPY ... ON_ERROR` 사용 | 2029-11-08(마지막 판) · [PostgreSQL 버전 정책](https://www.postgresql.org/support/versioning/"
             }
           ]
@@ -6556,13 +6592,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
               "line": 189,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L189",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/README.md#L189",
               "excerpt": "| Java | `reason`의 HermiT | **Java 11 이상** | 최소 2027-10까지(Eclipse Temurin 11) · [Adoptium 지원 일정](https://adoptium.net/support/) |"
             }
           ]
@@ -6593,13 +6629,13 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 108,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L108",
               "excerpt": "| [PEP 664](https://peps.python.org/pep-0664/), [PostgreSQL versioning policy](https://www.postgresql.org/support/versioning/), [Adoptium support page](https://adoptium.net/support/), [Node.js release schedule](https://g"
             },
             {
               "file": "README.md",
               "line": 190,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L190",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/README.md#L190",
               "excerpt": "| Node.js + npm | `cube-install`, `cube`, `verify` | **Node.js 22 이상** | 2027-04-30 · [Node.js 릴리스 일정](https://github.com/nodejs/Release) |"
             }
           ]
@@ -6628,7 +6664,7 @@
             {
               "file": "docs/releases/v0.27.0.md",
               "line": 109,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L109",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.27.0.md#L109",
               "excerpt": "| [Diátaxis](https://diataxis.fr/) | Separating the README's reference sections from its tutorial and explanation. |"
             }
           ]
@@ -6995,13 +7031,13 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 56,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L56",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L56",
               "excerpt": "- [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 263,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L263",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L263",
               "excerpt": "Repository release-tag immutability (`refs/tags/v*`) and branch governance follow [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets"
             }
           ]
@@ -7081,13 +7117,13 @@
             {
               "file": "docs/releases/v0.28.0.md",
               "line": 66,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.28.0.md#L66",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.28.0.md#L66",
               "excerpt": "- [Keep It Simple: Testing Databases via Differential Query Plans (2024)](https://doi.org/10.1145/3654991): an existing deferred research direction now applied to the admitted real-plan diagnostic."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 231,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L231",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L231",
               "excerpt": "[Keep It Simple: Testing Databases via Differential Query Plans (2024)](https://doi.org/10.1145/3654991)"
             }
           ]
@@ -7305,19 +7341,19 @@
             {
               "file": "THIRD_PARTY.md",
               "line": 242,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L242",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L242",
               "excerpt": "Chulmin Pyo's [connectome-cognition-benchmark v1.1.0 software record](https://doi.org/10.5281/zenodo.24361690) inspired the evaluation design."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 243,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L243",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L243",
               "excerpt": "The preregistration documents [prior exposure](https://github.com/ai3inc/connectome-cognition-benchmark/blob/9c5d863256fdc20c341b94b874e62921e92f22c1/preregistration/PREREG_EXTERNAL_COHORT.md#L8-L22) and the [registered "
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 244,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L244",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L244",
               "excerpt": "The [numbers index builder](https://github.com/ai3inc/connectome-cognition-benchmark/blob/9c5d863256fdc20c341b94b874e62921e92f22c1/paper/build_numbers.py#L1-L25) records input provenance. The [manuscript claim checker](h"
             }
           ]
@@ -7416,19 +7452,19 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 50,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L50",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L50",
               "excerpt": "- [Fagerland, Lydersen & Laake (2013), \"The McNemar test for binary matched-pairs data: mid-p and asymptotic are better than exact conditional\"](https://doi.org/10.1186/1471-2288-13-91)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 252,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L252",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L252",
               "excerpt": "- [Fagerland, Lydersen & Laake (2013), \"The McNemar test for binary matched-pairs data: mid-p and asymptotic are better than exact conditional\"](https://doi.org/10.1186/1471-2288-13-91) for exact conditional and Mid-P Mc"
             },
             {
               "file": "docs/paired-release.md",
               "line": 31,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L31",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L31",
               "excerpt": "- **쌍체 가설 검정:** 정확 조건부 McNemar 양측 p-값(`exact_mcnemar_p`)과 Mid-P McNemar 양측 p-값(`midp_mcnemar_p`)을 함께 출력한다([Fagerland, Lydersen & Laake 2013](https://doi.org/10.1186/1471-2288-13-91)). 소표본 이진 쌍체 자료에서 정확 조건부 검정은 보수적이며 Mid-"
             }
           ]
@@ -7462,19 +7498,19 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 51,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L51",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L51",
               "excerpt": "- [Newcombe (1998), \"Improved confidence intervals for the difference between binomial proportions based on paired data\"](https://doi.org/10.1002/%28SICI%291097-0258%2819981130%2917:22%3C2635::AID-SIM954%3E3.0.CO;2-C)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 253,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L253",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L253",
               "excerpt": "- [Newcombe (1998), \"Improved confidence intervals for the difference between binomial proportions based on paired data\"](https://doi.org/10.1002/%28SICI%291097-0258%2819981130%2917:22%3C2635::AID-SIM954%3E3.0.CO;2-C) (M"
             },
             {
               "file": "docs/paired-release.md",
               "line": 32,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L32",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L32",
               "excerpt": "- **비율 차 95% 신뢰구간:** 후보와 기준의 비율 차(`rate_diff = (b - c) / n`)에 대해 쌍체 Wilson 점수 95% 신뢰구간(`diff_ci_95`, Method 10)을 계산한다([Newcombe 1998](https://doi.org/10.1002/%28SICI%291097-0258%2819981130%2917:22%3C2635::AID-SIM954%3E3."
             }
           ]
@@ -7505,19 +7541,19 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 52,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L52",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L52",
               "excerpt": "- [Dietterich (1998), \"Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms\"](https://doi.org/10.1162/089976698300017197)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 254,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L254",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L254",
               "excerpt": "- [Dietterich (1998), \"Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms\"](https://doi.org/10.1162/089976698300017197), [Arcuri & Briand (2014), \"A Hitchhiker's guide to statistica"
             },
             {
               "file": "docs/paired-release.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L35",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L35",
               "excerpt": "- **실험 위생:** 동일 시험 집합에서 두 검출기를 비교할 때 쌍체 검정(McNemar 계열)을 선택하는 근거([Dietterich 1998](https://doi.org/10.1162/089976698300017197)), 무작위 생성기·변이 비교 시 비모수 검정과 효과 크기 병기 원칙([Arcuri & Briand 2014](https://doi.org/10.1002/stvr.1486"
             }
           ]
@@ -7549,19 +7585,19 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 53,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L53",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L53",
               "excerpt": "- [Arcuri & Briand (2014), \"A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering\"](https://doi.org/10.1002/stvr.1486)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 254,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L254",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L254",
               "excerpt": "- [Dietterich (1998), \"Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms\"](https://doi.org/10.1162/089976698300017197), [Arcuri & Briand (2014), \"A Hitchhiker's guide to statistica"
             },
             {
               "file": "docs/paired-release.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L35",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L35",
               "excerpt": "- **실험 위생:** 동일 시험 집합에서 두 검출기를 비교할 때 쌍체 검정(McNemar 계열)을 선택하는 근거([Dietterich 1998](https://doi.org/10.1162/089976698300017197)), 무작위 생성기·변이 비교 시 비모수 검정과 효과 크기 병기 원칙([Arcuri & Briand 2014](https://doi.org/10.1002/stvr.1486"
             }
           ]
@@ -7594,19 +7630,19 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 54,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L54",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L54",
               "excerpt": "- [Klees, Ruef, Cooper, Wei & Hicks (CCS 2018), \"Evaluating Fuzz Testing\"](https://doi.org/10.1145/3243734.3243804)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 254,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L254",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L254",
               "excerpt": "- [Dietterich (1998), \"Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms\"](https://doi.org/10.1162/089976698300017197), [Arcuri & Briand (2014), \"A Hitchhiker's guide to statistica"
             },
             {
               "file": "docs/paired-release.md",
               "line": 35,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L35",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L35",
               "excerpt": "- **실험 위생:** 동일 시험 집합에서 두 검출기를 비교할 때 쌍체 검정(McNemar 계열)을 선택하는 근거([Dietterich 1998](https://doi.org/10.1162/089976698300017197)), 무작위 생성기·변이 비교 시 비모수 검정과 효과 크기 병기 원칙([Arcuri & Briand 2014](https://doi.org/10.1002/stvr.1486"
             }
           ]
@@ -7639,13 +7675,13 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 55,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L55",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L55",
               "excerpt": "- [astral-sh/ruff (`0.17.6`)](https://github.com/astral-sh/ruff) · [astral-sh/ty (`0.0.107`)](https://github.com/astral-sh/ty) · [quarylabs/sqruff (`0.44.0`)](https://github.com/quarylabs/sqruff)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 259,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L259",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L259",
               "excerpt": "- [ruff](https://github.com/astral-sh/ruff) `0.17.6` (MIT) for Python syntax and correctness checks;"
             }
           ]
@@ -7678,13 +7714,13 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 55,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L55",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L55",
               "excerpt": "- [astral-sh/ruff (`0.17.6`)](https://github.com/astral-sh/ruff) · [astral-sh/ty (`0.0.107`)](https://github.com/astral-sh/ty) · [quarylabs/sqruff (`0.44.0`)](https://github.com/quarylabs/sqruff)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 260,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L260",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L260",
               "excerpt": "- [ty](https://github.com/astral-sh/ty) `0.0.107` (MIT) for curated core and tool static type checks;"
             }
           ]
@@ -7717,13 +7753,13 @@
             {
               "file": "docs/releases/v0.31.0.md",
               "line": 55,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.0.md#L55",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.0.md#L55",
               "excerpt": "- [astral-sh/ruff (`0.17.6`)](https://github.com/astral-sh/ruff) · [astral-sh/ty (`0.0.107`)](https://github.com/astral-sh/ty) · [quarylabs/sqruff (`0.44.0`)](https://github.com/quarylabs/sqruff)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 261,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L261",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L261",
               "excerpt": "- [sqruff](https://github.com/quarylabs/sqruff) `0.44.0` (Apache-2.0) for PostgreSQL SQL parsing and semantic anti-pattern checks on `demo/gold/*.sql` (configured in `.sqruff`, advisory style/lint only, not SQL equivalen"
             }
           ]
@@ -7773,13 +7809,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 58,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L58",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L58",
               "excerpt": "- [Boucher & Anderson (USENIX Security 2023), \"Trojan Source: Invisible Vulnerabilities\"](https://www.usenix.org/conference/usenixsecurity23/presentation/boucher)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 270,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L270",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L270",
               "excerpt": "- [Boucher & Anderson (USENIX Security 2023), \"Trojan Source: Invisible Vulnerabilities\"](https://www.usenix.org/conference/usenixsecurity23/presentation/boucher) for bidirectional control character defenses;"
             }
           ]
@@ -7841,13 +7877,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 59,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L59",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L59",
               "excerpt": "- [Unicode Technical Standard #39: Unicode Security Mechanisms](https://www.unicode.org/reports/tr39/)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 271,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L271",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L271",
               "excerpt": "- [Unicode Technical Standard #39: Unicode Security Mechanisms](https://www.unicode.org/reports/tr39/) for `Default_Ignorable` and invisible smuggling code-point classification;"
             }
           ]
@@ -7959,13 +7995,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 64,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L64",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L64",
               "excerpt": "- [rhysd/actionlint (`v1.7.12`, MIT)](https://github.com/rhysd/actionlint)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 279,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L279",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L279",
               "excerpt": "- [rhysd/actionlint](https://github.com/rhysd/actionlint) `v1.7.12` (MIT, official `linux_amd64` tarball verified by SHA-256) for GitHub Actions workflow syntax and expression linting;"
             }
           ]
@@ -8010,13 +8046,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 57,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L57",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L57",
               "excerpt": "- [Reproducible Builds `SOURCE_DATE_EPOCH` specification](https://reproducible-builds.org/specs/source-date-epoch/)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 269,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L269",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L269",
               "excerpt": "- [Reproducible Builds `SOURCE_DATE_EPOCH` specification](https://reproducible-builds.org/specs/source-date-epoch/) for timezone-independent UTC release ZIP timestamps;"
             }
           ]
@@ -8061,19 +8097,19 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 60,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L60",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L60",
               "excerpt": "- [PostgreSQL 17 Documentation — 23.2. Collation Support](https://www.postgresql.org/docs/17/collation.html)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 272,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L272",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L272",
               "excerpt": "- [PostgreSQL 17 Documentation — 23.2. Collation Support](https://www.postgresql.org/docs/17/collation.html) for deterministic `provider = builtin, locale = 'C.UTF-8'` collation guidance in `docs/data-rules.md` and `test"
             },
             {
               "file": "docs/data-rules.md",
               "line": 173,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/data-rules.md#L173",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/data-rules.md#L173",
               "excerpt": "collation ([PostgreSQL 17 Documentation, 23.2. Collation Support](https://www.postgresql.org/docs/17/collation.html))"
             }
           ]
@@ -8107,13 +8143,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 61,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L61",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L61",
               "excerpt": "- [ECMA-424: OWASP CycloneDX Software Bill of Materials Standard](https://ecma-international.org/publications-and-standards/standards/ecma-424/)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 274,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L274",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L274",
               "excerpt": "- [ECMA-424: OWASP CycloneDX Software Bill of Materials Standard](https://ecma-international.org/publications-and-standards/standards/ecma-424/) for machine-readable CycloneDX SBOM format checks;"
             }
           ]
@@ -8144,13 +8180,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L62",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L62",
               "excerpt": "- [npm CLI `npm sbom` documentation](https://docs.npmjs.com/cli/v11/commands/npm-sbom)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 275,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L275",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L275",
               "excerpt": "- [npm CLI `npm sbom` documentation](https://docs.npmjs.com/cli/v11/commands/npm-sbom) for built-in Cube adapter CycloneDX SBOM extraction."
             }
           ]
@@ -8184,13 +8220,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L63",
               "excerpt": "- [CycloneDX/cyclonedx-python (`cyclonedx-bom 9.0.0`, Apache-2.0)](https://github.com/CycloneDX/cyclonedx-python)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 282,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L282",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L282",
               "excerpt": "- [CycloneDX/cyclonedx-python](https://github.com/CycloneDX/cyclonedx-python) (`cyclonedx-bom==9.0.0`, Apache-2.0) for reproducible CycloneDX JSON SBOM checks on `requirements/*.txt`;"
             }
           ]
@@ -8223,13 +8259,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L65",
               "excerpt": "- [zizmorcore/zizmor (`1.32.0`, MIT)](https://github.com/zizmorcore/zizmor)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 280,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L280",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L280",
               "excerpt": "- [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) `1.32.0` (MIT) for offline GitHub Actions security static analysis;"
             }
           ]
@@ -8273,13 +8309,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 66,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L66",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L66",
               "excerpt": "- [pypa/pip-audit (`2.10.1`, Apache-2.0)](https://github.com/pypa/pip-audit)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 281,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L281",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L281",
               "excerpt": "- [pypa/pip-audit](https://github.com/pypa/pip-audit) `2.10.1` (Apache-2.0) for auditing pinned `requirements/*.txt` against PyPI vulnerability advisories;"
             }
           ]
@@ -8313,13 +8349,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 67,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L67",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L67",
               "excerpt": "- [G. Ann Campbell (IEEE/ACM TechDebt 2018), \"Cognitive complexity: an overview and evaluation\"](https://doi.org/10.1145/3194164.3194186)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 273,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L273",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L273",
               "excerpt": "- [G. Ann Campbell (IEEE/ACM TechDebt 2018), \"Cognitive complexity: an overview and evaluation\"](https://doi.org/10.1145/3194164.3194186) for cognitive complexity tracking;"
             }
           ]
@@ -8352,13 +8388,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 68,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L68",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L68",
               "excerpt": "- [rohaquinlop/complexipy (`9.0.0`, MIT)](https://github.com/rohaquinlop/complexipy)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 283,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L283",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L283",
               "excerpt": "- [rohaquinlop/complexipy](https://github.com/rohaquinlop/complexipy) `9.0.0` (MIT) for cognitive complexity ceilings on `tools/` and top-10 hotspot visibility on package scripts;"
             }
           ]
@@ -8391,13 +8427,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 69,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L69",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L69",
               "excerpt": "- [jendrikseipp/vulture (`2.16`, MIT)](https://github.com/jendrikseipp/vulture)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 284,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L284",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L284",
               "excerpt": "- [jendrikseipp/vulture](https://github.com/jendrikseipp/vulture) `2.16` (MIT) for high-confidence (`>= 80%`) dead-code hygiene checks;"
             }
           ]
@@ -8430,13 +8466,13 @@
             {
               "file": "docs/releases/v0.31.1.md",
               "line": 70,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.31.1.md#L70",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.31.1.md#L70",
               "excerpt": "- [osprey-oss/deptry (`0.25.1`, MIT)](https://github.com/osprey-oss/deptry)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 285,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L285",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L285",
               "excerpt": "- [osprey-oss/deptry](https://github.com/osprey-oss/deptry) `0.25.1` (MIT) for checking Python package imports against `requirements/*.txt`."
             }
           ]
@@ -8471,13 +8507,13 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 61,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L61",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L61",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 293,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L293",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html) and [52.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) for `relrowsecurity`"
             }
           ]
@@ -8514,7 +8550,7 @@
         "SQL",
         "신뢰성"
       ],
-      "note": "PostgreSQL 17 system catalog documentation for pg_index (indisunique, indisvalid, indisready, indpred, indexprs and indnullsnotdistinct). Semantic Crosscheck v0.32.0 first recorded unique_nulls_not_distinct catalog facts in doctor and grain, and v0.34.0 tightened the predicate in doctor._privileges_sql() and grain.evaluate() to require indisunique AND indisvalid AND indisready AND indpred IS NULL AND indexprs IS NULL AND indnullsnotdistinct, eliminating false positives from invalid, partial and expression unique indexes (verified against live PostgreSQL 17 in tests/test_rls_catalog_pg.py).",
+      "note": "PostgreSQL 17 system catalog documentation for pg_index (indisunique, indisvalid, indisready, indpred, indexprs and indnullsnotdistinct). Semantic Crosscheck v0.32.0 first recorded unique_nulls_not_distinct catalog facts in doctor and grain, v0.34.0 tightened the predicate in doctor._privileges_sql() and grain.evaluate() to require indisunique AND indisvalid AND indisready AND indpred IS NULL AND indexprs IS NULL AND indnullsnotdistinct, and v0.37.0 adds zero-extra-round-trip invalid/unready index counts (NOT indisvalid OR NOT indisready) on parent relations and recursive pg_inherits child partitions (invalid_indexes, child_invalid_indexes) with explicit not_proven disclosures and report hygiene parity (verified against live PostgreSQL 17 failed CREATE UNIQUE INDEX CONCURRENTLY in tests/test_rls_catalog_pg.py).",
       "uses": [
         {
           "plugin": "semantic-crosscheck",
@@ -8523,26 +8559,38 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L62",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L62",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.26. `pg_index` (`indnullsnotdistinct`)](https://www.postgresql.org/docs/17/catalog-pg-index.html)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 293,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L293",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html) and [52.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) for `relrowsecurity`"
             },
             {
               "file": "docs/releases/v0.34.0.md",
               "line": 60,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L60",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.34.0.md#L60",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) — catalog columns `indisunique`, `indisvalid`, `indisready`, `indpred`, `indexprs` and `indnullsnotdistinct` u"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 314,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L314",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L314",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) for narrowing `unique_nulls_not_distinct` inspection in `doctor.py` and `grain.py` to valid, ready, non-partia"
+            },
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 63,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L63",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) and [mfvanek/pg-index-health](https://github.com/mfvanek/pg-index-health) (`Apache-2.0`) — `NOT indisvalid OR "
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
             }
           ]
         }
@@ -8576,19 +8624,19 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L63",
               "excerpt": "- [Grünwald, de Heide & Koolen (JRSS-B 2024), \"Safe Testing\"](https://doi.org/10.1093/jrsssb/qkae011) ([arXiv:1906.07801](https://arxiv.org/abs/1906.07801))"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 294,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L294",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L294",
               "excerpt": "- [Grünwald, de Heide & Koolen (JRSS-B 2024), \"Safe Testing\"](https://doi.org/10.1093/jrsssb/qkae011), [Ramdas, Grünwald, Vovk & Shafer (Statistical Science 2023), \"Game-Theoretic Statistics and Safe Anytime-Valid Infere"
             },
             {
               "file": "docs/paired-release.md",
               "line": 39,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L39",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L39",
               "excerpt": "사례가 점진적으로 추가되는 held-out 코퍼스에서 결과를 반복 확인할 때(optional stopping / optional continuation) 고정 표본 McNemar p-값은 제1종 오류율이 팽창한다. v0.32.0부터 `tools/paired_release.py`는 표준 라이브러리(`math.lgamma`)만으로 불일치 쌍 $(b, c)$에 대한 정확한 Jeffreys $\\ma"
             }
           ]
@@ -8623,19 +8671,19 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 64,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L64",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L64",
               "excerpt": "- [Ramdas, Grünwald, Vovk & Shafer (Statistical Science 2023), \"Game-Theoretic Statistics and Safe Anytime-Valid Inference\"](https://doi.org/10.1214/23-STS894) ([arXiv:2210.01948](https://arxiv.org/abs/2210.01948))"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 294,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L294",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L294",
               "excerpt": "- [Grünwald, de Heide & Koolen (JRSS-B 2024), \"Safe Testing\"](https://doi.org/10.1093/jrsssb/qkae011), [Ramdas, Grünwald, Vovk & Shafer (Statistical Science 2023), \"Game-Theoretic Statistics and Safe Anytime-Valid Infere"
             },
             {
               "file": "docs/paired-release.md",
               "line": 39,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L39",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L39",
               "excerpt": "사례가 점진적으로 추가되는 held-out 코퍼스에서 결과를 반복 확인할 때(optional stopping / optional continuation) 고정 표본 McNemar p-값은 제1종 오류율이 팽창한다. v0.32.0부터 `tools/paired_release.py`는 표준 라이브러리(`math.lgamma`)만으로 불일치 쌍 $(b, c)$에 대한 정확한 Jeffreys $\\ma"
             }
           ]
@@ -8669,19 +8717,19 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L65",
               "excerpt": "- [Howard, Ramdas, McAuliffe & Sekhon (Annals of Statistics 2021), \"Time-uniform, nonparametric, nonasymptotic confidence sequences\"](https://doi.org/10.1214/20-AOS1991) ([arXiv:1810.08240](https://arxiv.org/abs/1810.082"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 294,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L294",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L294",
               "excerpt": "- [Grünwald, de Heide & Koolen (JRSS-B 2024), \"Safe Testing\"](https://doi.org/10.1093/jrsssb/qkae011), [Ramdas, Grünwald, Vovk & Shafer (Statistical Science 2023), \"Game-Theoretic Statistics and Safe Anytime-Valid Infere"
             },
             {
               "file": "docs/paired-release.md",
               "line": 39,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L39",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L39",
               "excerpt": "사례가 점진적으로 추가되는 held-out 코퍼스에서 결과를 반복 확인할 때(optional stopping / optional continuation) 고정 표본 McNemar p-값은 제1종 오류율이 팽창한다. v0.32.0부터 `tools/paired_release.py`는 표준 라이브러리(`math.lgamma`)만으로 불일치 쌍 $(b, c)$에 대한 정확한 Jeffreys $\\ma"
             }
           ]
@@ -8716,19 +8764,19 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 66,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L66",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L66",
               "excerpt": "- [Mazón, Lechtenbörger & Trujillo (Data & Knowledge Engineering 2009), \"A survey on summarizability issues in multidimensional modeling\"](https://doi.org/10.1016/j.datak.2009.07.010)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 295,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L295",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L295",
               "excerpt": "- [Mazón, Lechtenbörger & Trujillo (Data & Knowledge Engineering 2009), \"A survey on summarizability issues in multidimensional modeling\"](https://doi.org/10.1016/j.datak.2009.07.010) for summarizability classification i"
             },
             {
               "file": "docs/semantic-preflight.md",
               "line": 48,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/semantic-preflight.md#L48",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/semantic-preflight.md#L48",
               "excerpt": "`(period_kind, context.aggregation)` following [Mazón, Lechtenbörger & Trujillo (DKE 2009)](https://doi.org/10.1016/j.datak.2009.07.010):"
             }
           ]
@@ -8762,13 +8810,13 @@
             {
               "file": "docs/releases/v0.32.0.md",
               "line": 67,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L67",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.32.0.md#L67",
               "excerpt": "- [Fu, Liang, Wu, Zhao, Li & Jiang (EuroSys 2025), \"Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments to Trigger Hundreds of DBMS Bugs\"](https://doi.org/10.1145/3689031.3696064)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 296,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L296",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L296",
               "excerpt": "- [Fu, Liang, Wu, Zhao, Li & Jiang (EuroSys 2025), \"Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments to Trigger Hundreds of DBMS Bugs\"](https://doi.org/10.1145/3689031.3696064) for the deter"
             }
           ]
@@ -8871,19 +8919,19 @@
             {
               "file": "docs/releases/v0.33.0.md",
               "line": 59,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.33.0.md#L59",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.33.0.md#L59",
               "excerpt": "- [ai3inc/foldboost (`v0.3.0`, commit `ff7ad2208cf52d7692d5d016ba5b788d782256c7`, Apache-2.0)](https://github.com/ai3inc/foldboost) — existing Reference Atlas source first recorded for `agentic-vault` `v0.56.0` and reuse"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 302,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L302",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L302",
               "excerpt": "All v0.33.0 additions are original Python standard-library implementations with zero new runtime dependencies. They selectively adapt three non-redundant patterns informed by [ai3inc/foldboost](https://github.com/ai3inc/"
             },
             {
               "file": "docs/paired-release.md",
               "line": 47,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L47",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L47",
               "excerpt": "[`ai3inc/foldboost`](https://github.com/ai3inc/foldboost)(`v0.3.0`, 커밋 `ff7ad2208cf52d7692d5d016ba5b788d782256c7`, Apache-2.0)의 실험 규율 패턴을 Python 표준 라이브러리만으로 `tools/paired_release.py`와 `tools/run_paired_example.py`에 선택 반영"
             }
           ]
@@ -8958,13 +9006,13 @@
             {
               "file": "docs/releases/v0.34.0.md",
               "line": 61,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L61",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.34.0.md#L61",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.11. `pg_class`](https://www.postgresql.org/docs/17/catalog-pg-class.html) — catalog columns `relkind`, `relispopulated` and `relhasrules` used for zero-extra-round-trip materialized vi"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 315,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L315",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L315",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.11. `pg_class`](https://www.postgresql.org/docs/17/catalog-pg-class.html) for zero-extra-round-trip `relkind`, `relispopulated` (fail-closed unpopulated materialized view detection), `"
             }
           ]
@@ -9010,13 +9058,13 @@
             {
               "file": "docs/releases/v0.34.0.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L62",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.34.0.md#L62",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.13. `pg_constraint`](https://www.postgresql.org/docs/17/catalog-pg-constraint.html) — catalog columns `contype` and `convalidated` used to detect unvalidated `NOT VALID` `CHECK` and `F"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 316,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L316",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L316",
               "excerpt": "- [PostgreSQL 17 Documentation — 52.13. `pg_constraint`](https://www.postgresql.org/docs/17/catalog-pg-constraint.html) for zero-extra-round-trip unvalidated `CHECK` / `FOREIGN KEY` (`NOT VALID`, `convalidated = false`) "
             }
           ]
@@ -9063,13 +9111,13 @@
             {
               "file": "docs/releases/v0.34.0.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.34.0.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.34.0.md#L63",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.12. Table Partitioning](https://www.postgresql.org/docs/17/ddl-partitioning.html) — partitioned table and `pg_inherits` hierarchy semantics used for recursive child-partition RLS asymme"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 317,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L317",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L317",
               "excerpt": "- [PostgreSQL 17 Documentation — 5.12. Table Partitioning](https://www.postgresql.org/docs/17/ddl-partitioning.html) for recursive `pg_inherits` child-partition RLS asymmetry detection (`child_partition_row_security`) in"
             }
           ]
@@ -9143,10 +9191,11 @@
       "id": "doi:10.2307/4615733",
       "kind": "paper",
       "title": "A Simple Sequentially Rejective Multiple Test Procedure",
-      "url": "https://doi.org/10.2307/4615733",
+      "url": "https://www.jstor.org/stable/4615733",
       "year": 1979,
       "keys": [
-        "doi:10.2307/4615733"
+        "doi:10.2307/4615733",
+        "url:https://www.jstor.org/stable/4615733"
       ],
       "aliases": [
         "Holm (1979)",
@@ -9156,7 +9205,7 @@
         "평가·테스트",
         "검증"
       ],
-      "note": "Sture Holm (Scandinavian Journal of Statistics, 1979, doi:10.2307/4615733). Distribution-free step-down family-wise error rate (FWER) adjustment for multiple hypothesis testing. Agentic Vault v0.58.0 cites it for holm_bonferroni_adjust() (schema agentic-vault/holm-bonferroni/v1) in scripts/eval_stats.py using only the Python standard library, keeping existing evaluation defaults and pass/fail gates unchanged.",
+      "note": "Sture Holm (Scandinavian Journal of Statistics, 1979, doi:10.2307/4615733). Distribution-free step-down family-wise error rate (FWER) adjustment for multiple hypothesis testing. Agentic Vault v0.58.0 cites it for holm_bonferroni_adjust() (schema agentic-vault/holm-bonferroni/v1) in scripts/eval_stats.py using only the Python standard library, keeping existing evaluation defaults and pass/fail gates unchanged. Semantic Crosscheck v0.37.0 reuses this procedure in pure-stdlib holm_bonferroni_adjust() and build_multiplicity_diagnostics() inside tools/paired_release.py (schema semantic-crosscheck/holm-bonferroni/v1, diagnostic_only=true), emitting step-down FWER adjusted exact and Mid-P McNemar p-values across simultaneously evaluated (exposure, detections/false_positives) endpoints without changing existing groups, pairs, claim checks, or exit codes (cited via the live JSTOR record https://www.jstor.org/stable/4615733).",
       "uses": [
         {
           "plugin": "agentic-vault",
@@ -9173,6 +9222,30 @@
               "line": 131,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L131",
               "excerpt": "공개 v0.57.0을 바탕으로 번들 `/aside-repl` 명령(PR #25)과 Jarvis Telegram 브리지(PR #26) 제거를 묶고, Python 표준 라이브러리만으로 세 가지 보안·통계·거부 복구 개선을 구현했다. `hooks/session_start.py`와 `skills/agentic-vault/scripts/vault_doctor.py`에 비(非)렌더링 숨김 마크업 차단("
+            }
+          ]
+        },
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 66,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L66",
+              "excerpt": "- [Holm (Scand. J. Stat. 1979), \"A Simple Sequentially Rejective Multiple Test Procedure\"](https://www.jstor.org/stable/4615733) — reused Reference Atlas FWER source (previously recorded for `agentic-vault` `v0.58.0`), a"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 349,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L349",
+              "excerpt": "- [Holm (Scand. J. Stat. 1979), \"A Simple Sequentially Rejective Multiple Test Procedure\"](https://www.jstor.org/stable/4615733) (reused Reference Atlas source previously recorded for `agentic-vault` `v0.58.0`) for diagn"
+            },
+            {
+              "file": "docs/paired-release.md",
+              "line": 72,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L72",
+              "excerpt": "동일 비교 실행에서 여러 노출 구간(`heldout`, `development`, `unknown`)과 지표(`detections`, `false_positives`)의 McNemar p-값을 동시에 읽으면 가족별 제1종 오류율(FWER)이 팽창한다. v0.37.0부터 `tools/paired_release.py`는 Python 표준 라이브러리만으로 [Holm (1979)](https://w"
             }
           ]
         }
@@ -9372,13 +9445,13 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 60,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L60",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L60",
               "excerpt": "- [PostgreSQL 17 Documentation — `CREATE VIEW`](https://www.postgresql.org/docs/17/sql-createview.html) — `security_invoker` and `security_barrier` view options inspected from `pg_class.reloptions` in `doctor.py`."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 325,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L325",
               "excerpt": "- [PostgreSQL 17 Documentation — `CREATE VIEW`](https://www.postgresql.org/docs/17/sql-createview.html) and [39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) for inspecting `security_"
             }
           ]
@@ -9424,13 +9497,13 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 61,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L61",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L61",
               "excerpt": "- [PostgreSQL 17 Documentation — 39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) — view-owner vs view-invoker permission and RLS evaluation semantics disclosed in `doctor.py`."
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 325,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L325",
               "excerpt": "- [PostgreSQL 17 Documentation — `CREATE VIEW`](https://www.postgresql.org/docs/17/sql-createview.html) and [39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) for inspecting `security_"
             }
           ]
@@ -9476,13 +9549,13 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 62,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L62",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L62",
               "excerpt": "- [PostgreSQL 17 Documentation — 51.15. `pg_database`](https://www.postgresql.org/docs/17/catalog-pg-database.html) — `datcollversion` and `pg_database_collation_actual_version` drift detection in `doctor.py` and `runtim"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 326,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L326",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L326",
               "excerpt": "- [PostgreSQL 17 Documentation — 51.15. `pg_database`](https://www.postgresql.org/docs/17/catalog-pg-database.html) and [51.12. `pg_collation`](https://www.postgresql.org/docs/17/catalog-pg-collation.html) for detecting "
             }
           ]
@@ -9516,13 +9589,13 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 63,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L63",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L63",
               "excerpt": "- [PostgreSQL 17 Documentation — 51.12. `pg_collation`](https://www.postgresql.org/docs/17/catalog-pg-collation.html) — `collversion` and `pg_collation_actual_version` per-entity column collation drift detection in `doct"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 326,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L326",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L326",
               "excerpt": "- [PostgreSQL 17 Documentation — 51.15. `pg_database`](https://www.postgresql.org/docs/17/catalog-pg-database.html) and [51.12. `pg_collation`](https://www.postgresql.org/docs/17/catalog-pg-collation.html) for detecting "
             }
           ]
@@ -9556,13 +9629,13 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 64,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L64",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L64",
               "excerpt": "- [Dančo, Janota, Codish & Araújo (AAAI 2025), \"Complete Symmetry Breaking for Finite Models\"](https://arxiv.org/abs/2502.10155) (`doi:10.1609/aaai.v39i11.33217`) — lexicographic symmetry-breaking formulation applied to "
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 327,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L327",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L327",
               "excerpt": "- [Dančo, Janota, Codish & Araújo (AAAI 2025), \"Complete Symmetry Breaking for Finite Models\"](https://arxiv.org/abs/2502.10155) (`doi:10.1609/aaai.v39i11.33217`) for lexicographic row-order symmetry breaking in Z3 finit"
             }
           ]
@@ -9596,19 +9669,19 @@
             {
               "file": "docs/releases/v0.35.0.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.35.0.md#L65",
               "excerpt": "- [Kurtz, Ammann, Offutt, Delamaro, Kurtz & Gökçe (ESEC/FSE 2016), \"Analyzing the Validity of Selective Mutation with Dominator Mutants\"](https://doi.org/10.1145/2950290.2950322) — Dynamic Mutant Subsumption Graph (DMSG)"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 328,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L328",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L328",
               "excerpt": "- [Kurtz, Ammann, Offutt, Delamaro, Kurtz & Gökçe (ESEC/FSE 2016), \"Analyzing the Validity of Selective Mutation with Dominator Mutants\"](https://doi.org/10.1145/2950290.2950322) for the pure-stdlib Dynamic Mutant Subsum"
             },
             {
               "file": "docs/mutation-matrix.md",
               "line": 82,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/mutation-matrix.md#L82",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/mutation-matrix.md#L82",
               "excerpt": "[Kurtz, Ammann, Offutt, Delamaro, Kurtz & Gökçe (ESEC/FSE 2016), \"Analyzing the Validity of Selective Mutation with Dominator Mutants\"](https://doi.org/10.1145/2950290.2950322)."
             }
           ]
@@ -9666,19 +9739,19 @@
             {
               "file": "docs/releases/v0.36.0.md",
               "line": 59,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.36.0.md#L59",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.36.0.md#L59",
               "excerpt": "- [openai/math](https://github.com/openai/math) (commit `3344da59`, Apache-2.0) — reused Reference Atlas source (previously used by `agentic-vault` `v0.59.0` for Markdown note lifecycle, release-claim bundles, and covera"
             },
             {
               "file": "THIRD_PARTY.md",
               "line": 334,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L334",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L334",
               "excerpt": "All v0.36.0 additions are original Python standard-library implementations with zero new runtime dependencies. They selectively adapt three non-redundant verification patterns informed by [openai/math](https://github.com"
             },
             {
               "file": "docs/paired-release.md",
               "line": 65,
-              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/paired-release.md#L65",
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/paired-release.md#L65",
               "excerpt": "v0.36.0부터 [`openai/math`](https://github.com/openai/math)(커밋 `3344da59`, Apache-2.0)의 `check_records.py`(`check_tree_membership`)와 `portability_check.py` 패턴을 Python 표준 라이브러리만으로 선택 반영했다(새 런타임 의존성 0개)."
             }
           ]
@@ -10502,6 +10575,325 @@
               "line": 60,
               "url": "https://github.com/Technoetic/node-pg-defense/blob/3677b4bf1e2974c7f51515c78ca62021eeb6cc76/docs/references.md#L60",
               "excerpt": "| 34 | [PostgreSQL 17 Documentation — ALTER SYSTEM](https://www.postgresql.org/docs/17/sql-altersystem.html) | `ALTER SYSTEM` 및 `GRANT ... ON PARAMETER` 매개변수 권한 위임 제한 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/xfunc-volatility.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 36.7. Function Volatility Categories",
+      "url": "https://www.postgresql.org/docs/17/xfunc-volatility.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/xfunc-volatility.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 Function Volatility",
+        "VOLATILE function",
+        "xfunc-volatility"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 documentation defining IMMUTABLE, STABLE, and VOLATILE function volatility categories and explaining that VOLATILE functions can observe data changes even within a REPEATABLE READ snapshot. Semantic Crosscheck v0.37.0 cites it for disclosing unpinned VOLATILE functions referenced transitively by source views (view_volatile_functions) in doctor.py and report.py.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 59,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L59",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html) — `VOLATILE` function behavior inside `REPEATABLE READ` snapshots disclosed for source view"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/catalog-pg-proc.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 51.39. pg_proc",
+      "url": "https://www.postgresql.org/docs/17/catalog-pg-proc.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/catalog-pg-proc.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 pg_proc",
+        "provolatile"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 system catalog documentation for pg_proc (provolatile function volatility classification). Semantic Crosscheck v0.37.0 joins pg_proc inside doctor._privileges_sql() with zero extra per-entity SQL round trips to count unpinned provolatile='v' functions referenced by source views (view_volatile_functions) and disclose them in not_proven.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 60,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L60",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html) — `provolatile = 'v'` catalog classification used in `doctor._privileges_sql()`."
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/catalog-pg-rewrite.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 51.45. pg_rewrite",
+      "url": "https://www.postgresql.org/docs/17/catalog-pg-rewrite.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/catalog-pg-rewrite.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 pg_rewrite",
+        "ev_class",
+        "ev_type"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 system catalog documentation for pg_rewrite (rewrite rules backing views, ev_class and ev_type='1' SELECT rules). Semantic Crosscheck v0.37.0 traverses SELECT rewrite rules recursively inside doctor._privileges_sql() (LEFT JOIN LATERAL on relkind='v') to uncover transitive base-table and function dependencies hidden behind source views.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 61,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L61",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.45. `pg_rewrite`](https://www.postgresql.org/docs/17/catalog-pg-rewrite.html) and [51.18. `pg_depend`](https://www.postgresql.org/docs/17/catalog-pg-depend.html) — recursive `SELECT` v"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/catalog-pg-depend.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 51.18. pg_depend",
+      "url": "https://www.postgresql.org/docs/17/catalog-pg-depend.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/catalog-pg-depend.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 pg_depend",
+        "deptype",
+        "view dependency graph"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 system catalog documentation for pg_depend (normal object dependencies deptype='n' and pinned built-in pg_catalog omissions). Semantic Crosscheck v0.37.0 uses pg_depend alongside pg_rewrite and pg_inherits inside doctor._privileges_sql() to detect transitive view dependencies on RLS tables, UNLOGGED tables, foreign tables, and unpinned VOLATILE functions, explicitly documenting the pinned pg_catalog boundary.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 61,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L61",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.45. `pg_rewrite`](https://www.postgresql.org/docs/17/catalog-pg-rewrite.html) and [51.18. `pg_depend`](https://www.postgresql.org/docs/17/catalog-pg-depend.html) — recursive `SELECT` v"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/catalog-pg-attribute.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 51.7. pg_attribute",
+      "url": "https://www.postgresql.org/docs/17/catalog-pg-attribute.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/catalog-pg-attribute.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 pg_attribute",
+        "attgenerated",
+        "generated columns"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 system catalog documentation for pg_attribute (attgenerated for stored generated columns). Semantic Crosscheck v0.37.0 inspects attgenerated <> '' with zero extra round trips in doctor._privileges_sql() and grain.evaluate() (preserving grain's five-statement budget), recording generated_columns and surfacing explicit not_proven disclosures without leaking column names.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 62,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L62",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.7. `pg_attribute`](https://www.postgresql.org/docs/17/catalog-pg-attribute.html) — `attgenerated` generated-column detection in `doctor.py` and `grain.py`."
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:mfvanek/pg-index-health",
+      "kind": "project",
+      "title": "mfvanek/pg-index-health — PostgreSQL Index and Schema Health Checks",
+      "url": "https://github.com/mfvanek/pg-index-health",
+      "year": 2026,
+      "keys": [
+        "github:mfvanek/pg-index-health"
+      ],
+      "aliases": [
+        "pg-index-health",
+        "mfvanek/pg-index-health"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성",
+        "검증"
+      ],
+      "note": "Ivan Vakhrushev (Apache-2.0). Open-source Java/SQL diagnostic suite checking PostgreSQL index and schema health including invalid indexes left behind by failed CONCURRENTLY builds. Referenced conceptually in Semantic Crosscheck v0.37.0 for invalid/unready index catalog checks (NOT indisvalid OR NOT indisready) across parent relations and recursive pg_inherits child partitions in doctor.py and grain.py; no Java/JVM library or external SQL code is copied or bundled.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 63,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L63",
+              "excerpt": "- [PostgreSQL 17 Documentation — 51.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) and [mfvanek/pg-index-health](https://github.com/mfvanek/pg-index-health) (`Apache-2.0`) — `NOT indisvalid OR "
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 346,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L346",
+              "excerpt": "- [PostgreSQL 17 Documentation — 36.7. Function Volatility Categories](https://www.postgresql.org/docs/17/xfunc-volatility.html), [51.39. `pg_proc`](https://www.postgresql.org/docs/17/catalog-pg-proc.html), [51.45. `pg_r"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1109/32.988498",
+      "kind": "paper",
+      "title": "Simplifying and Isolating Failure-Inducing Input",
+      "url": "https://doi.org/10.1109/32.988498",
+      "year": 2002,
+      "keys": [
+        "doi:10.1109/32.988498"
+      ],
+      "aliases": [
+        "Zeller & Hildebrandt (IEEE TSE 2002)",
+        "Delta Debugging",
+        "ddmin"
+      ],
+      "tags": [
+        "검증",
+        "평가·테스트"
+      ],
+      "note": "Andreas Zeller & Ralf Hildebrandt (IEEE Transactions on Software Engineering, 2002, doi:10.1109/32.988498). Introduces the ddmin binary-partition delta debugging algorithm for minimizing failure-inducing inputs. Semantic Crosscheck v0.37.0 implements a bounded, deterministic DDMIN binary-chunk deletion prelude (chunk_deletion) in reduction.py for FK-free tables with len(rows) >= 4 ahead of the existing 1-minimal single-row pass, preserving trial budgets, replay trace validation, and TLP reduction compatibility.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 64,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L64",
+              "excerpt": "- [Zeller & Hildebrandt (IEEE TSE 2002), \"Simplifying and Isolating Failure-Inducing Input\"](https://doi.org/10.1109/32.988498) and [Kapugama (2026), \"Extending Delta Debugging Minimization for Spectrum-Based Fault Local"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 347,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L347",
+              "excerpt": "- [Zeller & Hildebrandt (IEEE TSE 2002), \"Simplifying and Isolating Failure-Inducing Input\"](https://doi.org/10.1109/32.988498) and [Kapugama (2026), \"Extending Delta Debugging Minimization for Spectrum-Based Fault Local"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2601.04689",
+      "kind": "paper",
+      "title": "Extending Delta Debugging Minimization for Spectrum-Based Fault Localization",
+      "url": "https://arxiv.org/abs/2601.04689",
+      "year": 2026,
+      "keys": [
+        "arxiv:2601.04689"
+      ],
+      "aliases": [
+        "DDMIN-LOC",
+        "Kapugama (2026)",
+        "arXiv:2601.04689"
+      ],
+      "tags": [
+        "검증",
+        "평가·테스트"
+      ],
+      "note": "Kapugama (2026, arXiv:2601.04689). Examines structured extensions to ddmin chunk-based minimization for fault isolation. Referenced in Semantic Crosscheck v0.37.0 alongside Zeller & Hildebrandt (2002) for the pure-stdlib bounded DDMIN binary-chunk deletion prelude (chunk_deletion) in reduction.py; no external artifact or solver plugin is copied.",
+      "uses": [
+        {
+          "plugin": "semantic-crosscheck",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/releases/v0.37.0.md",
+              "line": 64,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/docs/releases/v0.37.0.md#L64",
+              "excerpt": "- [Zeller & Hildebrandt (IEEE TSE 2002), \"Simplifying and Isolating Failure-Inducing Input\"](https://doi.org/10.1109/32.988498) and [Kapugama (2026), \"Extending Delta Debugging Minimization for Spectrum-Based Fault Local"
+            },
+            {
+              "file": "THIRD_PARTY.md",
+              "line": 347,
+              "url": "https://github.com/Technoetic/semantic-crosscheck/blob/4b1c08e0f763d0e2405b1c701503f10701457454/THIRD_PARTY.md#L347",
+              "excerpt": "- [Zeller & Hildebrandt (IEEE TSE 2002), \"Simplifying and Isolating Failure-Inducing Input\"](https://doi.org/10.1109/32.988498) and [Kapugama (2026), \"Extending Delta Debugging Minimization for Spectrum-Based Fault Local"
             }
           ]
         }

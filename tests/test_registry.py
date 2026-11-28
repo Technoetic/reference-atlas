@@ -271,7 +271,7 @@ class IdentityTests(unittest.TestCase):
             ('https://github.com/rhysd/actionlint','github:rhysd/actionlint',['agentic-vault','semantic-crosscheck','node-pg-defense']),
             ('https://www.unicode.org/reports/tr39/','url:https://www.unicode.org/reports/tr39',['agentic-vault','semantic-crosscheck','node-pg-defense']),
             ('https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets','url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets',['agentic-vault','semantic-crosscheck','node-pg-defense']),
-            ('https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai','url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',['agentic-vault','node-pg-defense']),
+            ('https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai','url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',['agentic-vault','semantic-crosscheck','node-pg-defense']),
             ('https://doi.org/10.1145/3689031.3696064','doi:10.1145/3689031.3696064',['semantic-crosscheck','node-pg-defense']),
             ('https://www.postgresql.org/docs/17/ddl-partitioning.html','url:https://www.postgresql.org/docs/17/ddl-partitioning.html',['semantic-crosscheck','node-pg-defense']),
             ('https://github.com/zizmorcore/zizmor','github:zizmorcore/zizmor',['semantic-crosscheck','node-pg-defense']),
@@ -308,6 +308,30 @@ class IdentityTests(unittest.TestCase):
             ('https://www.postgresql.org/docs/17/rules-privileges.html','url:https://www.postgresql.org/docs/17/rules-privileges.html','article',['semantic-crosscheck','node-pg-defense']),
             ('https://www.postgresql.org/support/versioning/','url:https://www.postgresql.org/support/versioning','article',['semantic-crosscheck','node-pg-defense']),
         ]:
+            with self.subTest(url=url):
+                result=find_matches(catalog,url)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(sid,kind))
+                self.assertCountEqual([u['plugin'] for u in source['uses']],plugins)
+
+    def test_sxc0370_eight_new_and_three_shared_references_resolve_as_known(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        cases=[
+            ('https://www.postgresql.org/docs/17/xfunc-volatility.html','url:https://www.postgresql.org/docs/17/xfunc-volatility.html','article',['semantic-crosscheck']),
+            ('https://www.postgresql.org/docs/17/catalog-pg-proc.html','url:https://www.postgresql.org/docs/17/catalog-pg-proc.html','article',['semantic-crosscheck']),
+            ('https://www.postgresql.org/docs/17/catalog-pg-rewrite.html','url:https://www.postgresql.org/docs/17/catalog-pg-rewrite.html','article',['semantic-crosscheck']),
+            ('https://www.postgresql.org/docs/17/catalog-pg-depend.html','url:https://www.postgresql.org/docs/17/catalog-pg-depend.html','article',['semantic-crosscheck']),
+            ('https://www.postgresql.org/docs/17/catalog-pg-attribute.html','url:https://www.postgresql.org/docs/17/catalog-pg-attribute.html','article',['semantic-crosscheck']),
+            ('https://github.com/mfvanek/pg-index-health','github:mfvanek/pg-index-health','project',['semantic-crosscheck']),
+            ('https://doi.org/10.1109/32.988498','doi:10.1109/32.988498','paper',['semantic-crosscheck']),
+            ('https://arxiv.org/abs/2601.04689v1','arxiv:2601.04689','paper',['semantic-crosscheck']),
+            ('https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai','url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai','paper',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://github.com/madthanu/alice','github:madthanu/alice','project',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://www.jstor.org/stable/4615733','doi:10.2307/4615733','paper',['agentic-vault','semantic-crosscheck']),
+            ('https://doi.org/10.2307/4615733','doi:10.2307/4615733','paper',['agentic-vault','semantic-crosscheck']),
+        ]
+        for url,sid,kind,plugins in cases:
             with self.subTest(url=url):
                 result=find_matches(catalog,url)
                 self.assertEqual(result['status'],'known')
