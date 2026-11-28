@@ -247,6 +247,22 @@ class IdentityTests(unittest.TestCase):
         self.assertEqual((source['id'],source['kind']),('github:openai/math','project'))
         self.assertCountEqual([u['plugin'] for u in source['uses']],['agentic-vault','semantic-crosscheck'])
 
+    def test_av0600_five_new_references_resolve_as_known(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for url,sid,kind in [
+            ('https://arxiv.org/abs/2602.10498v1','arxiv:2602.10498','paper'),
+            ('https://arxiv.org/pdf/2611.32195v1.pdf','arxiv:2611.32195','paper'),
+            ('https://arxiv.org/abs/2611.01976','arxiv:2611.01976','paper'),
+            ('https://arxiv.org/abs/2605.14478','arxiv:2605.14478','paper'),
+            ('https://github.com/ccf/agentcairn','github:ccf/agentcairn','project'),
+        ]:
+            with self.subTest(url=url):
+                result=find_matches(catalog,url)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(sid,kind))
+                self.assertEqual([u['plugin'] for u in source['uses']],['agentic-vault'])
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):

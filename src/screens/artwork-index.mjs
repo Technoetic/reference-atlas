@@ -246,4 +246,9 @@ export const artworkIndex = Object.freeze({
   "doi:10.1609/aaai.v39i11.33217": Object.freeze({key: "card-244-danco-symmetry-breaking", src: new URL("../../media/cards/card-244-danco-symmetry-breaking.webp", import.meta.url).href, label: "LEXICOGRAPHIC SYMMETRY", word: "LEXICOGRAPHIC SYMMETRY"}),
   "doi:10.1145/2950290.2950322": Object.freeze({key: "card-245-kurtz-dominator-mutants", src: new URL("../../media/cards/card-245-kurtz-dominator-mutants.webp", import.meta.url).href, label: "DOMINATOR SUBSUMPTION", word: "DOMINATOR SUBSUMPTION"}),
   "github:openai/math": Object.freeze({key: "card-246-openai-math", src: new URL("../../media/cards/card-246-openai-math.webp", import.meta.url).href, label: "PROOF ARTIFACT LIFECYCLE", word: "PROOF ARTIFACT LIFECYCLE"}),
+  "arxiv:2602.10498": Object.freeze({key: "card-247-when-skills-lie", src: new URL("../../media/cards/card-247-when-skills-lie.webp", import.meta.url).href, label: "HIDDEN COMMENT FILTERING", word: "HIDDEN COMMENT FILTERING"}),
+  "arxiv:2611.32195": Object.freeze({key: "card-248-when-answering-is-administering", src: new URL("../../media/cards/card-248-when-answering-is-administering.webp", import.meta.url).href, label: "DENY RULE MONOTONICITY", word: "DENY RULE MONOTONICITY"}),
+  "arxiv:2611.01976": Object.freeze({key: "card-249-tool-update-gap", src: new URL("../../media/cards/card-249-tool-update-gap.webp", import.meta.url).href, label: "POST-TRUST HOOK HASH DRIFT", word: "POST-TRUST HOOK HASH DRIFT"}),
+  "arxiv:2605.14478": Object.freeze({key: "card-250-stale-repository-context", src: new URL("../../media/cards/card-250-stale-repository-context.webp", import.meta.url).href, label: "STALE RETRIEVAL EXCLUSION", word: "STALE RETRIEVAL EXCLUSION"}),
+  "github:ccf/agentcairn": Object.freeze({key: "card-251-ccf-agentcairn", src: new URL("../../media/cards/card-251-ccf-agentcairn.webp", import.meta.url).href, label: "VAULT CAIRN RETIREMENT", word: "VAULT CAIRN RETIREMENT"}),
 });
