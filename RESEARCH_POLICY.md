@@ -1,7 +1,7 @@
 # Check existing references before new plugin research
 
-This workflow applies to improvement research for Agentic Vault and Semantic
-Crosscheck. It is a duplication check, not a prohibition on reading or revisiting research.
+This workflow applies to improvement research for Agentic Vault, Semantic
+Crosscheck, and Node PG Defense. It is a duplication check, not a prohibition on reading or revisiting research.
 
 1. Check the [published registry](https://technoetic.github.io/reference-atlas/data/catalog.json)
    or an explicitly dated local snapshot before presenting a source as a new reference.

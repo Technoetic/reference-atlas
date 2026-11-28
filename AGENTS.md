@@ -1,7 +1,7 @@
 # Reference Atlas
 
-Build and publish the public research/reference catalog for Technoetic/agentic-vault
-and Technoetic/semantic-crosscheck. Public GitHub Pages only. No Sites hosting.
+Build and publish the public research/reference catalog for Technoetic/agentic-vault,
+Technoetic/semantic-crosscheck, and Technoetic/node-pg-defense. Public GitHub Pages only. No Sites hosting.
 
 - Use only published repository citations. No company data, secrets, credentials or
   local source paths in generated public data. All citations point to pinned GitHub commits.
@@ -21,7 +21,7 @@ and Technoetic/semantic-crosscheck. Public GitHub Pages only. No Sites hosting.
 - Keep JS responsibilities separated, CSS tokens/base/components, async load/error
   states, query-based URLs/history, and safe detection of changed builds in open tabs.
 - User explicitly authorized creating the site and publishing it to GitHub Pages.
-  Do not publish or modify either source plugin as part of this work.
+  Do not publish or modify any source plugin as part of this work.
 
 Commands: `node --test`, `python -m unittest discover -s tests -p 'test_*.py'`,
 `python scripts/build_catalog.py`, `node scripts/build.mjs`.

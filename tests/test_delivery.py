@@ -49,6 +49,7 @@ EXPECTED_COVERAGE={
     ('v0.59.0','v0.35.0'):(70,68,29,246,491),
     ('v0.59.0','v0.36.0'):(70,68,29,246,494),
     ('v0.60.0','v0.36.0'):(74,69,29,251,506),
+    ('v0.60.0','v0.36.0','v0.2.0+docs'):(74,69,29,268,527),
 }
 
 class DeliveryTests(unittest.TestCase):
@@ -71,7 +72,8 @@ class DeliveryTests(unittest.TestCase):
             uses = [use for source in catalog['sources'] for use in source['uses'] if use['plugin'] == plugin]
             self.assertEqual(counts['total'], source_count)
             self.assertEqual(counts['citations'], sum(len(use['evidence']) for use in uses))
-        versions=tuple(catalog['snapshots'][plugin]['version'] for plugin in ('agentic-vault','semantic-crosscheck'))
+        has_npd='node-pg-defense' in catalog['snapshots']
+        versions=tuple(catalog['snapshots'][plugin]['version'] for plugin in (('agentic-vault','semantic-crosscheck','node-pg-defense') if has_npd else ('agentic-vault','semantic-crosscheck')))
         expected=EXPECTED_COVERAGE[versions]
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['paper'],expected[0])
         self.assertEqual(catalog['countsByPlugin']['agentic-vault']['project']+catalog['countsByPlugin']['agentic-vault']['format'],expected[1])
@@ -91,13 +93,20 @@ class DeliveryTests(unittest.TestCase):
                       'v0.33.0':(28,77,159,11),
                       'v0.34.0':(28,80,167,11),
                       'v0.35.0':(30,86,180,11),
-                      'v0.36.0':(30,87,183,12)}
+                      'v0.36.0':(30,87,183,16 if has_npd else 12)}
         sxc_withheld = [s for s in withheld if any(u['plugin'] == 'semantic-crosscheck' for u in s['uses'])]
         sxc_withheld_rows = sum(len(u['evidence']) for s in sxc_withheld for u in s['uses']
                                 if u['plugin'] == 'semantic-crosscheck')
         audit_shared = catalog['counts']['shared'] + metrics(withheld)['shared']
         self.assertEqual((sxc['paper'], sxc['total'] + len(sxc_withheld),
                           sxc['citations'] + sxc_withheld_rows, audit_shared), sxc_coverage[versions[1]])
+        if has_npd:
+            npd=catalog['countsByPlugin']['node-pg-defense']
+            npd_coverage={'v0.2.0+docs':(2,5,14,21,21,4)}
+            self.assertEqual(
+                (npd['paper'], npd['project']+npd['format'], npd['article'], npd['total'], npd['citations'], npd['shared']),
+                npd_coverage[versions[2]],
+            )
         self.assertEqual(sum(x['citations'] for x in catalog['countsByPlugin'].values()),catalog['counts']['citations'])
 
     def test_v042_coverage_adds_two_papers_three_projects_and_eight_citations_without_rewriting_history(self):
@@ -511,5 +520,53 @@ class DeliveryTests(unittest.TestCase):
                 av_use=next(u for u in src['uses'] if u['plugin']=='agentic-vault')
                 self.assertEqual(av_use['role'],'reference')
                 self.assertCountEqual([row['file'] for row in av_use['evidence']],files)
+
+    def test_npd020_references_cover_34_controls_and_four_shared_pg_docs(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        snap=catalog['snapshots'].get('node-pg-defense')
+        self.assertIsNotNone(snap)
+        if snap['version']!='v0.2.0+docs':
+            self.skipTest('These citation locations describe the v0.2.0+docs snapshot')
+        indexed={source['id']:source for source in catalog['sources']}
+        shared_ids=[
+            'url:https://www.postgresql.org/docs/17/rules-privileges.html',
+            'url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html',
+            'url:https://www.postgresql.org/docs/17/sql-createview.html',
+            'url:https://www.postgresql.org/support/versioning',
+        ]
+        for sid in shared_ids:
+            with self.subTest(shared=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],'article')
+                self.assertCountEqual([u['plugin'] for u in src['uses']],['semantic-crosscheck','node-pg-defense'])
+                npd_use=next(u for u in src['uses'] if u['plugin']=='node-pg-defense')
+                self.assertEqual(npd_use['role'],'reference')
+                self.assertEqual([row['file'] for row in npd_use['evidence']],['docs/references.md'])
+        new_items=[
+            ('doi:10.1145/1111037.1111070','paper'),
+            ('arxiv:2604.01131','paper'),
+            ('github:owasp/asvs','project'),
+            ('github:brianc/node-postgres','project'),
+            ('github:pgbouncer/pgbouncer','project'),
+            ('github:ts-safeql/safeql','project'),
+            ('github:pgaudit/pgaudit','project'),
+            ('url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html','article'),
+            ('url:https://www.postgresql.org/docs/17/protocol-flow.html','article'),
+            ('url:https://www.postgresql.org/docs/17/plpgsql-statements.html','article'),
+            ('url:https://www.postgresql.org/docs/17/sql-createfunction.html','article'),
+            ('url:https://www.postgresql.org/support/security/CVE-2024-4317','article'),
+            ('url:https://www.postgresql.org/docs/17/sql-copy.html','article'),
+            ('url:https://www.postgresql.org/docs/17/dblink.html','article'),
+            ('url:https://www.postgresql.org/docs/17/role-attributes.html','article'),
+            ('url:https://www.postgresql.org/docs/17/predefined-roles.html','article'),
+            ('url:https://www.postgresql.org/docs/17/sql-altersystem.html','article'),
+        ]
+        for sid,kind in new_items:
+            with self.subTest(new_source=sid):
+                src=indexed[sid]
+                self.assertEqual(src['kind'],kind)
+                npd_use,=src['uses']
+                self.assertEqual((npd_use['plugin'],npd_use['role']),('node-pg-defense','reference'))
+                self.assertEqual([row['file'] for row in npd_use['evidence']],['docs/references.md'])
 
 if __name__=='__main__':unittest.main()

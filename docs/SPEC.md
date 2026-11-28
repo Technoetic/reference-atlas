@@ -2,16 +2,16 @@
 
 ## Intent
 
-A visually assertive, Korean-first public catalog of the papers and public
-projects and official articles referenced by two plugins. Publish to
+A visually assertive, Korean-first public catalog of the papers, public
+projects and official articles referenced by three plugins (`Agentic Vault`, `Semantic Crosscheck`, `Node PG Defense`). Publish to
 `https://technoetic.github.io/reference-atlas/`. Future improvement research must
 check the registry before describing a source as newly referenced.
 
 ## Experience
 
 An ink-dark, full-screen hero with oversized editorial typography and a living
-constellation drawn from the real catalog. Two central plugin nodes connect to
-their cited sources; shared references have two connections. Lime/lavender accents,
+constellation drawn from the real catalog. Three central plugin nodes connect to
+their cited sources; shared references connect across two or more plugins. Lime, lavender, and warm amber accents,
 responsive typography, restrained lower sections, reduced-motion support.
 
 The application has query-addressed views `?view=atlas` and `?view=sources`.
@@ -28,8 +28,8 @@ Never invent statistics, citations, adoption levels or publication years.
 Each source: `{id,kind,title,url,year,tags,keys,aliases,uses,note?}`.
 Published kinds: `paper`, `project`, `article`, `format`. Official articles
 have their own facet and counts; they do not inflate paper/project/format totals. A use has
-`{plugin,role,evidence:[{file,line,url,excerpt}]}`; plugin is `agentic-vault` or
-`semantic-crosscheck`, role is `reference`, `background`, or `unresolved`.
+`{plugin,role,evidence:[{file,line,url,excerpt}]}`; plugin is `agentic-vault`,
+`semantic-crosscheck`, or `node-pg-defense`, role is `reference`, `background`, or `unresolved`.
 Evidence URLs pin the source plugin commit. `year` may be null. An arXiv-derived
 year is a registration-year hint, not a journal publication claim.
 
@@ -52,7 +52,7 @@ Snapshot updates do not rewrite original prompts or regenerate prior images.
 `findMatches(catalog,input)` returning `{status,key,matches}` where status is
 `known`, `possible`, `not_found`, or `invalid`, and
 `filterSources(catalog,{plugin,kind,query,sort,tag})` returning an array.
-Plugin and kind filter `all` means no restriction; plugin `shared` means both.
+Plugin and kind filter `all` means no restriction; plugin `shared` means two or more plugins.
 
 ## Scope and safeguards
 

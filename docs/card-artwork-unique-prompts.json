@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generationMode": "built-in image_gen",
   "policy": "Every image is generated separately for one catalog source; no topic-image reuse. A source without commissioned artwork uses a text fallback. Unresolved research names depict only their recorded context.",
-  "count": 251,
+  "count": 268,
   "assets": [
     {
       "index": 1,
@@ -5006,7 +5006,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/cf620038d33cae5cf81d8f2e2fc0e16d5f7a424f/docs/releases/v0.27.0.md#L108",
@@ -5014,7 +5015,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.27.0.md#L108",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/README.md#L186",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33"
       ],
       "delivery": {
         "sourceSha256": "f815f859c75bec0553be64fd1089b0f1ae23811841ea2325ff3f16c9e36105d2",
@@ -6914,7 +6916,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/ad335c06b27abf8608a209a4f3b967805b7a8888/docs/releases/v0.32.0.md#L61",
@@ -6922,7 +6925,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.32.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L293",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31"
       ],
       "delivery": {
         "sourceSha256": "b69bd654300606213c028700a29b06d44d064c093ba9da7347f2c66776b1eb00",
@@ -7756,7 +7760,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L60",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/9e91c7a38973863c9e5ce2d137f422d13a5af7f5/docs/releases/v0.35.0.md#L60",
@@ -7764,7 +7769,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L60",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32"
       ],
       "delivery": {
         "sourceSha256": "3c4b38dfc33f4bc8512573c6a94fea6161d6da423eefa97afb6a28664eaad061",
@@ -7799,7 +7805,8 @@
       ],
       "evidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30"
       ],
       "generationEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/9e91c7a38973863c9e5ce2d137f422d13a5af7f5/docs/releases/v0.35.0.md#L61",
@@ -7807,7 +7814,8 @@
       ],
       "currentEvidenceUrls": [
         "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/docs/releases/v0.35.0.md#L61",
-        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325"
+        "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30"
       ],
       "delivery": {
         "sourceSha256": "bac83df3d7afabc55e4d81c62963f9986f52720a48c784a74d60e76ae8d35b9d",
@@ -8272,6 +8280,686 @@
       },
       "generationReferenceUrls": [
         "https://github.com/ccf/agentcairn"
+      ]
+    },
+    {
+      "index": 252,
+      "sourceId": "doi:10.1145/1111037.1111070",
+      "title": "The Essence of Command Injection Attacks in Web Applications",
+      "kind": "paper",
+      "label": "SYNTACTIC VALUE ISOLATION",
+      "factualConcept": "Su and Wassermann (POPL 2006) formalize command and SQL injection as untrusted input altering syntactic grammar structure; Node PG Defense grounds controls 01 and 04-06 in isolating fixed SQL query text from bound parameter arrays.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision machined brushed-graphite and crystal syntax bridge: an unbroken clear optical-glass structural arch spans the upper rail cleanly untouched, while three smooth warm-amber (#ffbf83) glass parameter capsules travel inside sealed recessed titanium slots underneath so data capsules stay physically isolated from the upper crystal grammar rail; museum-grade architectural still-life photography, crisp glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-252-su-wassermann-sqli.webp",
+      "sha256": "b482db51f78992f5aa7a200b89ff7cca41f16f40ee7fe25ba495da91f71d80a1",
+      "bytes": 45702,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9"
+      ],
+      "delivery": {
+        "sourceSha256": "c7cd00e2b8ecd119f9d4330c5f1fb4415447b538493dfca859d69371c08771d6",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://doi.org/10.1145/1111037.1111070"
+      ]
+    },
+    {
+      "index": 253,
+      "sourceId": "arxiv:2604.01131",
+      "title": "Obfuscating Code Vulnerabilities against Static Analysis in JavaScript Code",
+      "kind": "paper",
+      "label": "STATIC BLIND SPOT AUDIT",
+      "factualConcept": "arXiv:2604.01131 shows how obfuscated JavaScript constructs evade standalone static analysis; Node PG Defense controls 23-26 pair static lint rules with service-specific taint modeling, fixed-SQL regression tests, and ephemeral PostgreSQL integration checks.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision optical prism inspection rig: a shallow pale-silver surface light glides smoothly across a frosted smoked-glass prism shell, while a deeper angled warm-amber (#ffbf83) and soft-lavender (#c3b0f6) cross-beam illuminates a hidden tangled dark-steel fault coil suspended inside the translucent prism core; refined scientific miniature still-life photography, realistic refraction and dark matte metal texture, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-253-js-obfuscation-static-analysis.webp",
+      "sha256": "48fb9ad6d6bfae849d08e15688103df038ec8846cf58604ed89101dc278c14d3",
+      "bytes": 24246,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10"
+      ],
+      "delivery": {
+        "sourceSha256": "bb7a3493b4752b52d6fd6b0b7048fefb4158be3618138178fe7d8e2199d9aa57",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://arxiv.org/abs/2604.01131"
+      ]
+    },
+    {
+      "index": 254,
+      "sourceId": "github:owasp/asvs",
+      "title": "OWASP Application Security Verification Standard (ASVS)",
+      "kind": "project",
+      "label": "VERIFICATION STANDARD TIERS",
+      "factualConcept": "OWASP ASVS defines tiered application security verification requirements across input validation, parameterized queries, access control, and logging; Node PG Defense maps controls 01-30 to concrete Node.js and PostgreSQL review and verification steps.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing three concentric stepped architectural verification rings crafted from matte brushed graphite and optical glass rising like a precision terraced calibration monument, each ascending tier edged with a slender luminous warm-amber (#ffbf83) and subtle lime (#d3fc70) glass verification band marking progressive assurance depth; museum-grade studio product photography, tactile machined metal and crisp glass edges, soft cinematic rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-254-owasp-asvs.webp",
+      "sha256": "b9f85a0cea8db1062aa6887ff7bfa6eaddff3cb0913ec7fe0b9ab4de462ccddb",
+      "bytes": 45632,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16"
+      ],
+      "delivery": {
+        "sourceSha256": "6e551ec3850d1d2edda7b7af06eb60a56e900b5b86d77ce5e6a2f34f1ceb34c8",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/OWASP/ASVS"
+      ]
+    },
+    {
+      "index": 255,
+      "sourceId": "github:brianc/node-postgres",
+      "title": "node-postgres (pg)",
+      "kind": "project",
+      "label": "PARAMETERIZED WIRE CLIENT",
+      "factualConcept": "brianc/node-postgres provides pg.Pool and pg.Client positional $1 query binding and dedicated transaction clients; Node PG Defense controls 01, 02, and 15 target verified pg calls for bounded parameterization and transaction-scoped session cleanup.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision twin-conduit brushed-aluminum and optical-glass bridge connecting a matte-graphite manifold block to a tall translucent cylindrical crystal vessel: the upper clear glass tube holds a rigid unbroken optical query rod, while a distinct lower conduit carries evenly spaced warm-amber (#ffbf83) glass parameter spheres in strict alignment; refined industrial design miniature still-life, crisp glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-255-node-postgres.webp",
+      "sha256": "0dc4712af65388b9ad95cfdc657a303c5d4f6932449ce07edd8e5692814d3680",
+      "bytes": 24690,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17"
+      ],
+      "delivery": {
+        "sourceSha256": "96923fefff11306d31071ea1bf0f1ab2aca2d30d82ff345456085bc1e59fa88d",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/brianc/node-postgres"
+      ]
+    },
+    {
+      "index": 256,
+      "sourceId": "github:pgbouncer/pgbouncer",
+      "title": "PgBouncer",
+      "kind": "project",
+      "label": "TRANSACTION POOL RELAY",
+      "factualConcept": "PgBouncer transaction pooling multiplexes client sessions across backend PostgreSQL connections, governing prepared-statement compatibility (max_prepared_statements) and session-state isolation; Node PG Defense control 03 requires verifying pooler mode and driver settings against a real pooler.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision mechanical rotary pooling valve crafted from dark anodized graphite, satin steel, and optical glass: nine slender incoming glass fibers converge gracefully into a central circular warm-amber (#ffbf83) rotary shutter ring that routes pulses cleanly into three wider backend crystal conduits with crisp resettable gate blades; museum-grade engineering still-life photography, realistic metallic sheen and glass refraction, soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-256-pgbouncer.webp",
+      "sha256": "30889026dfe8aa7e6f34b00fe8f8f753b024e28c033d98b46ca239c928a87f93",
+      "bytes": 39770,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18"
+      ],
+      "delivery": {
+        "sourceSha256": "f344ceba7a175ce1ab3e8a6ed55422e9f35c5c347f7184605fbbfae5154c6a14",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/pgbouncer/pgbouncer"
+      ]
+    },
+    {
+      "index": 257,
+      "sourceId": "github:ts-safeql/safeql",
+      "title": "SafeQL",
+      "kind": "project",
+      "label": "SCHEMA-CHECKED SQL TYPES",
+      "factualConcept": "ts-safeql/safeql validates raw SQL queries and column types against an actual PostgreSQL schema; Node PG Defense control 22 uses schema-backed query type checking in CI alongside an ephemeral migrated PostgreSQL instance.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision machined graphite vernier template gauge: three smooth warm-amber (#ffbf83) optical glass column blocks lock seamlessly into exact milled notches on a slim luminous-lime (#d3fc70) reference schema comb, while one mismatched oversized smoked-glass block is stopped cleanly at the brushed-steel inspection threshold; refined studio product still-life photography, crisp glass refraction, dramatic soft rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-257-ts-safeql.webp",
+      "sha256": "88be05a8bc916171681c1863569f5606de8b8fa10351318d0a4895ff8c3591fb",
+      "bytes": 30138,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19"
+      ],
+      "delivery": {
+        "sourceSha256": "28c1764f2954ef6c28b2307f0820c5589e0627527ef3781268534fc681f6f721",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/ts-safeql/safeql"
+      ]
+    },
+    {
+      "index": 258,
+      "sourceId": "github:pgaudit/pgaudit",
+      "title": "pgAudit — PostgreSQL Audit Extension",
+      "kind": "project",
+      "label": "SESSION AUDIT LEDGER",
+      "factualConcept": "pgaudit/pgaudit provides detailed session and object audit logging for PostgreSQL; Node PG Defense control 28 checks audit collection scope, log retention, access controls, and exclusion of sensitive bound data.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing an architectural miniature optical audit tape instrument crafted from matte charcoal anodized aluminum: a smooth continuous ribbon of smoked optical glass glides beneath a warm-amber (#ffbf83) precision crystal stylus lens that etches delicate luminous hairline grooves onto an immaculate sealed glass archive spool; museum-grade studio still-life photography, crisp optical glass and brushed steel detail, dramatic soft rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-258-pgaudit.webp",
+      "sha256": "d2a5fce29babf22bba6786fbde3ddead89351996dc0b5c1914cb564cf7369c0c",
+      "bytes": 37410,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20"
+      ],
+      "delivery": {
+        "sourceSha256": "9288de8876b9fcf405dea4fdef969dd21deff8e318033508fedaf24404eb7079",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://github.com/pgaudit/pgaudit"
+      ]
+    },
+    {
+      "index": 259,
+      "sourceId": "url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "title": "OWASP SQL Injection Prevention Cheat Sheet",
+      "kind": "article",
+      "label": "DEFENSE-IN-DEPTH LAYERS",
+      "factualConcept": "The OWASP SQL Injection Prevention Cheat Sheet specifies defense-in-depth controls including parameterized queries, allowlists for dynamic identifiers, safe pattern escaping, and least privilege; Node PG Defense maps these principles across controls 01-16.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing four parallel vertical optical-glass defense baffle plates standing in precision machined graphite rails, each glass shield rimmed with a fine warm-amber (#ffbf83) edge bevel and brushed-silver alignment pins as a single calibrated luminous beam passes cleanly straight through the aligned central apertures while stray amber light reflections are stopped at the outer plates; minimalist architectural still-life photography, crisp refraction, soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-259-owasp-sqli-cheatsheet.webp",
+      "sha256": "20c4010719949b8a3e3c05dc44777bf12a9e1517ed3bcb0edb49d0766793c2e2",
+      "bytes": 45868,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26"
+      ],
+      "delivery": {
+        "sourceSha256": "5d1206338d0d4771eae3cb7df9b2515290d8cf611c3a9639ab6e4f088cf56240",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+      ]
+    },
+    {
+      "index": 260,
+      "sourceId": "url:https://www.postgresql.org/docs/17/protocol-flow.html",
+      "title": "PostgreSQL 17 Documentation — 53.2. Message Flow (Extended Query Protocol)",
+      "kind": "article",
+      "label": "EXTENDED QUERY PROTOCOL",
+      "factualConcept": "PostgreSQL 17 section 53.2 documents the Extended Query wire protocol separating Parse, Bind, and Execute phases; Node PG Defense controls 01-02 rely on server-side parameter binding rather than client-side string interpolation.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing three sequential crystal optical chambers mounted along a slender brushed-graphite optical bench—a clear faceted triangular parsing prism, a warm-amber (#ffbf83) cylindrical binding coupler chamber, and a luminous-lime (#d3fc70) plano-convex execution lens—separated by crisp satin-steel framing bulkheads illustrating three distinct wire-protocol stages; museum-grade scientific still-life photography, crisp glass refraction, soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-260-postgres-protocol-flow.webp",
+      "sha256": "a061cb763e05d392661e370d7d740a6127049b3c6fff578ef81aadeb981d7e6b",
+      "bytes": 35694,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27"
+      ],
+      "delivery": {
+        "sourceSha256": "ce4703cb23b715601f9723923f49ddf41f2bf444bc1465b06872aca4557fddae",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/protocol-flow.html"
+      ]
+    },
+    {
+      "index": 261,
+      "sourceId": "url:https://www.postgresql.org/docs/17/plpgsql-statements.html",
+      "title": "PostgreSQL 17 Documentation — 41.5. Basic Statements (Executing Dynamic Commands)",
+      "kind": "article",
+      "label": "DYNAMIC FORMAT BINDING",
+      "factualConcept": "PostgreSQL 17 section 41.5 specifies constructing dynamic PL/pgSQL statements safely with format(%I) for identifiers and EXECUTE ... USING for values; Node PG Defense control 16 checks stored functions for safe dynamic SQL composition.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision machined brushed-graphite modular assembly rail: two crisp faceted clear-crystal identifier blocks sit firmly locked inside beveled titanium sockets on top, while a smooth warm-amber (#ffbf83) optical glass value capsule glides cleanly underneath along a physically isolated brushed-steel carriage track; museum-grade architectural still-life photography, realistic glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-261-postgres-plpgsql-dynamic.webp",
+      "sha256": "16eac026145ff37becef3e6ec7af08d291e9cea59c5a9e4d4f0483b87b2d5358",
+      "bytes": 51644,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28"
+      ],
+      "delivery": {
+        "sourceSha256": "57ac05112d16c246fda343738c43e25f0c12e80ec6d7f8a56f5a0fd0a3ac811d",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/plpgsql-statements.html"
+      ]
+    },
+    {
+      "index": 262,
+      "sourceId": "url:https://www.postgresql.org/docs/17/sql-createfunction.html",
+      "title": "PostgreSQL 17 Documentation — CREATE FUNCTION (SECURITY DEFINER)",
+      "kind": "article",
+      "label": "DEFINER SEARCH PATH LOCK",
+      "factualConcept": "PostgreSQL 17 CREATE FUNCTION documentation explains hardening SECURITY DEFINER functions by pinning SET search_path with pg_temp last and revoking PUBLIC EXECUTE within the creating transaction; Node PG Defense control 16 enforces this review checklist.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision cylindrical dark-graphite vault chamber: a luminous warm-amber (#ffbf83) optical glass core is encircled by two locked concentric satin-titanium alignment collars and a closed outer brushed-steel mechanical iris aperture sealing off stray exterior paths; refined engineering miniature still-life photography, crisp metal and translucent glass detail, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-262-postgres-create-function.webp",
+      "sha256": "8797869cf218939d4979aea892cc7edbdb3578e38584c07270625b686f77d105",
+      "bytes": 27516,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29"
+      ],
+      "delivery": {
+        "sourceSha256": "82f995f71246a9498be76e76e905f3e8184d93b9214f6a8942378b9b06fa507b",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/sql-createfunction.html"
+      ]
+    },
+    {
+      "index": 263,
+      "sourceId": "url:https://www.postgresql.org/support/security/CVE-2024-4317",
+      "title": "PostgreSQL Security Information — CVE-2024-4317 (pg_stats_ext / pg_stats_ext_exprs)",
+      "kind": "article",
+      "label": "POST-UPGRADE SQL REMEDIATION",
+      "factualConcept": "PostgreSQL CVE-2024-4317 requires running post-upgrade SQL remediation across all databases plus template0 and template1 after installing patched binaries; Node PG Defense control 30 requires verifying both binary versions and post-patch SQL remediation.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision brushed-graphite specimen plinth holding two frosted crystal catalog trays beside a pair of smaller matching template glass vessels: an upper silver lid rests lifted, while a crisp warm-amber (#ffbf83) optical shutter strip slides directly across all four glass chambers to veil their recessed interiors completely; museum-grade architectural still-life photography, crisp glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-263-postgres-cve-2024-4317.webp",
+      "sha256": "b2c6895d3efce6245e4982d7394ba9f4444e8e05d38de967ad9164ef3e81091c",
+      "bytes": 38076,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34"
+      ],
+      "delivery": {
+        "sourceSha256": "88c9345bc16f1f611e3ba20bcd0166ce675258b0125289a47d9208de53852683",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/support/security/CVE-2024-4317/"
+      ]
+    },
+    {
+      "index": 264,
+      "sourceId": "url:https://www.postgresql.org/docs/17/sql-copy.html",
+      "title": "PostgreSQL 17 Documentation — COPY (Server File Access & COPY ... PROGRAM)",
+      "kind": "article",
+      "label": "SERVER FILE & PROGRAM GATE",
+      "factualConcept": "PostgreSQL 17 COPY documentation distinguishes privileged server-side filesystem paths and COPY ... PROGRAM shell execution from safe client-side FROM STDIN streaming; Node PG Defense control 31 flags server-side file and program execution SQL for removal and runtime denial checks.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a thick machined dark-graphite bulkhead wall separating a glowing crystal database chamber on the left from a matte dark-titanium host rack on the right: a heavy warm-amber (#ffbf83) optical glass locking bolt seals the interior server conduit completely shut, while a slender clear-glass client stream tube smoothly feeds into the left chamber from the foreground; museum-grade industrial still-life photography, crisp refraction, soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-264-postgres-copy-program.webp",
+      "sha256": "7ec21c4952b038119324a83408c991b79e4ed25f94625e625e150e28d3dc579f",
+      "bytes": 47226,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35"
+      ],
+      "delivery": {
+        "sourceSha256": "96d76ca0c94f3bc99e7bb7978b9543f9f2e5da60d5801203ce719cda18d43e4d",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/sql-copy.html"
+      ]
+    },
+    {
+      "index": 265,
+      "sourceId": "url:https://www.postgresql.org/docs/17/dblink.html",
+      "title": "PostgreSQL 17 Documentation — F.11. dblink",
+      "kind": "article",
+      "label": "OUTBOUND EXTENSION BOUNDARY",
+      "factualConcept": "PostgreSQL 17 dblink documentation details outbound database connectivity and dblink_connect_u privilege risks; Node PG Defense control 32 audits outbound extensions, untrusted procedural languages, and PUBLIC user mappings against an explicit approval list.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing two separate cylindrical brushed-graphite database towers standing across a dark empty channel: a delicate curved smoked-glass outbound bridge arch spanning toward the distant tower is cleanly intercepted at midpoint by an upright warm-amber (#ffbf83) optical isolation shutter blade anchored in a satin-steel socket; refined architectural miniature still-life photography, crisp glass and brushed metal textures, soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-265-postgres-dblink.webp",
+      "sha256": "6031fa145a31ee51b4d5d2cae1ad006338f2260fa6ef65ae166824f2c0b12758",
+      "bytes": 19276,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36"
+      ],
+      "delivery": {
+        "sourceSha256": "8958365cc0ccfbdf5129b6f1aaa127627ab57c253886eee36ce6fa65bc8f2f5e",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/dblink.html"
+      ]
+    },
+    {
+      "index": 266,
+      "sourceId": "url:https://www.postgresql.org/docs/17/role-attributes.html",
+      "title": "PostgreSQL 17 Documentation — 21.2. Role Attributes",
+      "kind": "article",
+      "label": "PRIVILEGED ROLE ATTRIBUTES",
+      "factualConcept": "PostgreSQL 17 section 21.2 specifies high-impact role attributes (SUPERUSER, BYPASSRLS, CREATEROLE, REPLICATION, VALID UNTIL); Node PG Defense controls 17 and 33 flag privileged role attributes and require checking effective login role counts against an approved baseline.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a precision machined matte-graphite tumbler lock block: four tall smoked-glass privilege pins ringed with restrained warm-amber (#ffbf83) metal collars sit locked down flush beneath a solid clear optical-glass retainer bar, while one compact luminous-lime (#d3fc70) low-privilege glass pin rests cleanly active in a separate front channel; museum-grade studio product photography, tactile metal and crystal refraction, soft rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-266-postgres-role-attributes.webp",
+      "sha256": "ab3740a35fb22a68274efa99cc92ae0c6358629b5315fb99fba4b6c5cd368364",
+      "bytes": 42280,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37"
+      ],
+      "delivery": {
+        "sourceSha256": "8f1117d1e0e4089d46e945e3aac3b11c303539238e52563259045f1bd0ad3e23",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/role-attributes.html"
+      ]
+    },
+    {
+      "index": 267,
+      "sourceId": "url:https://www.postgresql.org/docs/17/predefined-roles.html",
+      "title": "PostgreSQL 17 Documentation — 21.5. Predefined Roles",
+      "kind": "article",
+      "label": "PREDEFINED ROLE CAPABILITIES",
+      "factualConcept": "PostgreSQL 17 section 21.5 defines server-access and global-data predefined roles including pg_read_server_files, pg_write_server_files, pg_execute_server_program, and pg_read/write_all_data; Node PG Defense controls 18 and 33 audit direct and inherited memberships in these roles.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a radial constellation of five faceted smoked-glass capability discs arranged around a brushed-graphite central hub linked by hairline silver spokes: the high-impact outer glass discs sit cleanly partitioned behind curved warm-amber (#ffbf83) optical shield arcs so elevated server capabilities stay bounded from the quiet central glass lens; refined scientific still-life photography, crisp glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-267-postgres-predefined-roles.webp",
+      "sha256": "5b76842708de5c7946a79c4559be00bf0a98058d8fc77556652ef4564ef52e39",
+      "bytes": 41966,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38"
+      ],
+      "delivery": {
+        "sourceSha256": "267fba0b9c35404aa1f75d565c138584ec8a6020ccf617fecc381724f78f21e7",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/predefined-roles.html"
+      ]
+    },
+    {
+      "index": 268,
+      "sourceId": "url:https://www.postgresql.org/docs/17/sql-altersystem.html",
+      "title": "PostgreSQL 17 Documentation — ALTER SYSTEM",
+      "kind": "article",
+      "label": "PARAMETER DELEGATION LOCK",
+      "factualConcept": "PostgreSQL 17 ALTER SYSTEM documentation covers persistent server parameter modification and parameter privilege delegation; Node PG Defense control 34 flags ALTER SYSTEM and GRANT ... ON PARAMETER to protect command-executing and shared-library parameters.",
+      "prompt": "Macro isometric three-quarter studio product photograph on a near-black olive seamless tabletop (#10130f) showing a miniature architectural precision control console milled from matte dark graphite: three critical system rotary dials on the left sit completely sealed beneath a thick clear optical-glass safety hood edged in luminous warm amber (#ffbf83), while two modest tuning micro-dials on the right rest accessible inside an approved brushed-silver recess; museum-grade industrial design still-life photography, crisp glass refraction, dramatic soft studio rim lighting, shallow depth of field, centered crop-safe composition with generous dark olive margins, zero text, zero letters, zero digits, zero logos, zero icons, zero borders.",
+      "output": "media/cards/card-268-postgres-alter-system.webp",
+      "sha256": "a0d87a34f5bd8818034469899b86800b1916c22705af4565928269d77466640a",
+      "bytes": 34582,
+      "dimensions": [
+        960,
+        640
+      ],
+      "evidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
+      ],
+      "generationEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
+      ],
+      "currentEvidenceUrls": [
+        "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39"
+      ],
+      "delivery": {
+        "sourceSha256": "dfd659933a7d7e4826e11c79554137611074ef7a8e012074d116d0946e8fe602",
+        "sourceDimensions": [
+          1264,
+          848
+        ],
+        "operation": "Full-frame Lanczos resize and WebP encoding only; no crop, compositing or semantic edit",
+        "tool": "Pillow 12.3.0 (Python WebP encoder)",
+        "quality": 90,
+        "compressionLevel": 6,
+        "commandTemplate": "python -c \"from PIL import Image; Image.open('INPUT').convert('RGB').resize((960, 640), Image.Resampling.LANCZOS).save('OUTPUT.webp', format='WEBP', quality=90, method=6)\""
+      },
+      "generationReferenceUrls": [
+        "https://www.postgresql.org/docs/17/sql-altersystem.html"
       ]
     }
   ],

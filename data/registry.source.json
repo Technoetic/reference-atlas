@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-28T03:55:31.232716+00:00",
+  "updatedAt": "2026-11-28T04:50:29.124652+00:00",
   "snapshots": {
     "agentic-vault": {
       "name": "Agentic Vault",
@@ -13,6 +13,12 @@
       "version": "v0.36.0",
       "commit": "0cebbe4257fbe7e2f10fa184c25cde8e92831066",
       "url": "https://github.com/Technoetic/semantic-crosscheck/tree/0cebbe4257fbe7e2f10fa184c25cde8e92831066"
+    },
+    "node-pg-defense": {
+      "name": "Node PG Defense",
+      "version": "v0.2.0+docs",
+      "commit": "fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401",
+      "url": "https://github.com/Technoetic/node-pg-defense/tree/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401"
     }
   },
   "method": {
@@ -6439,6 +6445,18 @@
               "excerpt": "| PostgreSQL | DB를 사용하는 단계 | **PostgreSQL 17 이상** · `MERGE ... WHEN NOT MATCHED BY SOURCE`, `merge_action()`, `COPY ... ON_ERROR` 사용 | 2029-11-08(마지막 판) · [PostgreSQL 버전 정책](https://www.postgresql.org/support/versioning/"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 33,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L33",
+              "excerpt": "| 30 | [PostgreSQL: Versioning Policy](https://www.postgresql.org/support/versioning/) | PostgreSQL 메이저·마이너 지원 주기와 배포 서버 패치 버전 대조 기준 |"
+            }
+          ]
         }
       ]
     },
@@ -8271,6 +8289,18 @@
               "excerpt": "- [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html) and [52.26. `pg_index`](https://www.postgresql.org/docs/17/catalog-pg-index.html) for `relrowsecurity`"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 31,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L31",
+              "excerpt": "| 19–20 | [PostgreSQL 17 Documentation — 5.9. Row Security Policies](https://www.postgresql.org/docs/17/ddl-rowsecurity.html) | RLS `USING`·`WITH CHECK` 정책, 소유자 대상 `FORCE ROW LEVEL SECURITY` 및 `BYPASSRLS` |"
+            }
+          ]
         }
       ]
     },
@@ -9088,6 +9118,18 @@
               "excerpt": "- [PostgreSQL 17 Documentation — `CREATE VIEW`](https://www.postgresql.org/docs/17/sql-createview.html) and [39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) for inspecting `security_"
             }
           ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 32,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L32",
+              "excerpt": "| 19 | [PostgreSQL 17 Documentation — CREATE VIEW](https://www.postgresql.org/docs/17/sql-createview.html) | RLS 테이블 조회 뷰의 `security_invoker = true` 옵션 적용 기준 |"
+            }
+          ]
         }
       ]
     },
@@ -9126,6 +9168,18 @@
               "line": 325,
               "url": "https://github.com/Technoetic/semantic-crosscheck/blob/0cebbe4257fbe7e2f10fa184c25cde8e92831066/THIRD_PARTY.md#L325",
               "excerpt": "- [PostgreSQL 17 Documentation — `CREATE VIEW`](https://www.postgresql.org/docs/17/sql-createview.html) and [39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) for inspecting `security_"
+            }
+          ]
+        },
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 30,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L30",
+              "excerpt": "| 18–19 | [PostgreSQL 17 Documentation — 39.5. Rules and Privileges](https://www.postgresql.org/docs/17/rules-privileges.html) | 뷰 소유자 대 호출자 권한 평가 및 RLS 경계 검토 기준 |"
             }
           ]
         }
@@ -9576,6 +9630,578 @@
               "line": 115,
               "url": "https://github.com/Technoetic/agentic-vault/blob/6c472d41ec15c5a304ee67361a408188a12718c2/README.md#L115",
               "excerpt": "공개 v0.59.0을 바탕으로 Python 표준 라이브러리만으로 세 가지 보안·무결성·수명주기 연동을 구현했다. `hooks/session_start.py`와 `skills/agentic-vault/scripts/vault_doctor.py`의 선형 시간 `_strip_hidden_markup()`에 **Obsidian `%% ... %%` 단일행·다중행·미닫힘 주석**과 **크기 0 `<s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1145/1111037.1111070",
+      "kind": "paper",
+      "title": "The Essence of Command Injection Attacks in Web Applications",
+      "url": "https://doi.org/10.1145/1111037.1111070",
+      "year": 2006,
+      "keys": [
+        "doi:10.1145/1111037.1111070"
+      ],
+      "aliases": [
+        "Su and Wassermann 2006",
+        "POPL 2006 Command Injection"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "Zhendong Su and Gary Wassermann (POPL 2006). Formalizes SQL and command injection as untrusted input altering syntactic grammar structure. Referenced by Node PG Defense (controls 01, 04-06) as the theoretical basis for separating fixed SQL query text from bound parameter values.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 9,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L9",
+              "excerpt": "| 01, 04–06 | [The Essence of Command Injection Attacks in Web Applications (Su & Wassermann, POPL 2006)](https://doi.org/10.1145/1111037.1111070) | 사용자 입력이 SQL 구문 구조를 바꾸지 못하도록 본문과 값을 엄격히 분리하는 형식적 근거 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2604.01131",
+      "kind": "paper",
+      "title": "Obfuscating Code Vulnerabilities against Static Analysis in JavaScript Code",
+      "url": "https://arxiv.org/abs/2604.01131",
+      "year": 2026,
+      "keys": [
+        "arxiv:2604.01131"
+      ],
+      "aliases": [
+        "arXiv:2604.01131",
+        "JavaScript Static Analysis Obfuscation"
+      ],
+      "tags": [
+        "보안·안전",
+        "평가·테스트",
+        "신뢰성"
+      ],
+      "note": "Examines how obfuscation and indirect constructs evade standalone JavaScript static analysis. Referenced by Node PG Defense (controls 23-26) to justify pairing static linting with custom dataflow rules, fixed-SQL mock regression tests, and real PostgreSQL integration checks.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 10,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L10",
+              "excerpt": "| 23–26 | [Obfuscating Code Vulnerabilities against Static Analysis in JavaScript Code (arXiv:2604.01131)](https://arxiv.org/abs/2604.01131) | JavaScript 정적 패턴 검사 단독의 한계와 데이터 흐름·회귀·실 DB 통합 검증 병행 근거 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:owasp/asvs",
+      "kind": "project",
+      "title": "OWASP Application Security Verification Standard (ASVS)",
+      "url": "https://github.com/OWASP/ASVS",
+      "year": null,
+      "keys": [
+        "github:owasp/asvs"
+      ],
+      "aliases": [
+        "OWASP ASVS",
+        "Application Security Verification Standard"
+      ],
+      "tags": [
+        "보안·안전",
+        "검증",
+        "신뢰성"
+      ],
+      "note": "Public OWASP verification standard repository covering input validation, parameterized database queries, access control, error handling, and security logging. Referenced across Node PG Defense controls 01-30 for verifiable application-level security review criteria.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 16,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L16",
+              "excerpt": "| 01–30 | [OWASP Application Security Verification Standard (ASVS)](https://github.com/OWASP/ASVS) | 데이터 검증, 매개변수화 쿼리, 접근 통제, 오류 처리·감사 로그 검증 기준 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:brianc/node-postgres",
+      "kind": "project",
+      "title": "node-postgres (pg)",
+      "url": "https://github.com/brianc/node-postgres",
+      "year": null,
+      "keys": [
+        "github:brianc/node-postgres"
+      ],
+      "aliases": [
+        "node-postgres",
+        "pg"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "Official Node.js PostgreSQL driver (pg.Pool and pg.Client) supporting positional $1 parameterized queries and dedicated transaction clients. Referenced by Node PG Defense (controls 01, 02, 15) as the primary target API for bounded automatic query parameterization and transaction-local settings.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 17,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L17",
+              "excerpt": "| 01–02, 15 | [node-postgres (`brianc/node-postgres`)](https://github.com/brianc/node-postgres) | `pg.Pool`·`pg.Client` 위치 매개변수 `$1` 바인딩과 트랜잭션 클라이언트 생명주기 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:pgbouncer/pgbouncer",
+      "kind": "project",
+      "title": "PgBouncer",
+      "url": "https://github.com/pgbouncer/pgbouncer",
+      "year": null,
+      "keys": [
+        "github:pgbouncer/pgbouncer"
+      ],
+      "aliases": [
+        "PgBouncer",
+        "pgbouncer"
+      ],
+      "tags": [
+        "SQL",
+        "신뢰성"
+      ],
+      "note": "Lightweight PostgreSQL connection pooler whose transaction pooling mode interacts with prepared statements (max_prepared_statements) and session-scoped state. Referenced by Node PG Defense (control 03) for verifying pooler mode and driver compatibility.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 18,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L18",
+              "excerpt": "| 03 | [PgBouncer (`pgbouncer/pgbouncer`)](https://github.com/pgbouncer/pgbouncer) | 트랜잭션 풀링 모드에서의 준비된 문장(`max_prepared_statements`) 및 연결 재사용 제약 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:ts-safeql/safeql",
+      "kind": "project",
+      "title": "SafeQL",
+      "url": "https://github.com/ts-safeql/safeql",
+      "year": null,
+      "keys": [
+        "github:ts-safeql/safeql"
+      ],
+      "aliases": [
+        "SafeQL",
+        "ts-safeql"
+      ],
+      "tags": [
+        "SQL·데이터 검증",
+        "평가·테스트"
+      ],
+      "note": "Open-source tool that validates raw SQL queries and generates TypeScript types against a live PostgreSQL schema during linting and CI. Referenced by Node PG Defense (control 22) for checking application SQL against migrated database schemas before deployment.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 19,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L19",
+              "excerpt": "| 22 | [SafeQL (`ts-safeql/safeql`)](https://github.com/ts-safeql/safeql) | 실제 PostgreSQL 스키마 대비 원시 SQL 열·타입 정적 검증 모델 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github:pgaudit/pgaudit",
+      "kind": "project",
+      "title": "pgAudit — PostgreSQL Audit Extension",
+      "url": "https://github.com/pgaudit/pgaudit",
+      "year": null,
+      "keys": [
+        "github:pgaudit/pgaudit"
+      ],
+      "aliases": [
+        "pgAudit",
+        "pgaudit"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "Official PostgreSQL session and object audit logging extension. Referenced by Node PG Defense (control 28) for establishing auditable database operation scope, retention, and sensitive-value exclusion policies.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 20,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L20",
+              "excerpt": "| 28 | [pgAudit (`pgaudit/pgaudit`)](https://github.com/pgaudit/pgaudit) | PostgreSQL 세션·객체 단위 감사 로그 수집 및 검토 범위 기준 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "kind": "article",
+      "title": "OWASP SQL Injection Prevention Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "year": null,
+      "keys": [
+        "url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+      ],
+      "aliases": [
+        "OWASP SQL Injection Prevention Cheat Sheet",
+        "OWASP SQLi Cheat Sheet"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "OWASP defense-in-depth guide covering parameterized queries, allowlist validation for dynamic SQL identifiers, safe LIKE escaping, and least-privilege database roles. Referenced across Node PG Defense controls 01-16.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 26,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L26",
+              "excerpt": "| 01–16 | [OWASP SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) | 매개변수화 쿼리, 식별자 허용 목록, 패턴 검색 및 최소 권한 방어 지침 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/protocol-flow.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 53.2. Message Flow (Extended Query Protocol)",
+      "url": "https://www.postgresql.org/docs/17/protocol-flow.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/protocol-flow.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 Message Flow",
+        "PostgreSQL Extended Query Protocol"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 wire-protocol reference detailing the Extended Query cycle (Parse, Bind, Execute) that transmits SQL templates and parameter values in separate protocol messages. Referenced by Node PG Defense (controls 01-02).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 27,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L27",
+              "excerpt": "| 01–02 | [PostgreSQL 17 Documentation — 53.2. Message Flow](https://www.postgresql.org/docs/17/protocol-flow.html) | Extended Query 프로토콜(Parse/Bind/Execute)과 서버 측 매개변수 바인딩 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/plpgsql-statements.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 41.5. Basic Statements (Executing Dynamic Commands)",
+      "url": "https://www.postgresql.org/docs/17/plpgsql-statements.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/plpgsql-statements.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 PL/pgSQL Basic Statements",
+        "EXECUTE USING format %I"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "PostgreSQL 17 PL/pgSQL reference specifying safe dynamic SQL construction with format(%I) for allowlisted identifiers and EXECUTE ... USING for parameter values. Referenced by Node PG Defense (control 16).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 28,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L28",
+              "excerpt": "| 16 | [PostgreSQL 17 Documentation — 41.5. Basic Statements](https://www.postgresql.org/docs/17/plpgsql-statements.html) | PL/pgSQL 동적 SQL의 `format('%I', ...)` 식별자 조합과 `EXECUTE ... USING` 값 분리 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/sql-createfunction.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — CREATE FUNCTION (SECURITY DEFINER)",
+      "url": "https://www.postgresql.org/docs/17/sql-createfunction.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/sql-createfunction.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 CREATE FUNCTION",
+        "SECURITY DEFINER search_path"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 SQL reference documenting how to write SECURITY DEFINER functions safely by pinning SET search_path to trusted schemas (with pg_temp last) and revoking PUBLIC EXECUTE privileges. Referenced by Node PG Defense (control 16).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 29,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L29",
+              "excerpt": "| 16 | [PostgreSQL 17 Documentation — CREATE FUNCTION](https://www.postgresql.org/docs/17/sql-createfunction.html) | `SECURITY DEFINER` 함수의 `SET search_path` 고정과 `PUBLIC` `EXECUTE` 회수 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/support/security/CVE-2024-4317",
+      "kind": "article",
+      "title": "PostgreSQL Security Information — CVE-2024-4317 (pg_stats_ext / pg_stats_ext_exprs)",
+      "url": "https://www.postgresql.org/support/security/CVE-2024-4317/",
+      "year": 2024,
+      "keys": [
+        "url:https://www.postgresql.org/support/security/CVE-2024-4317"
+      ],
+      "aliases": [
+        "CVE-2024-4317",
+        "PostgreSQL CVE-2024-4317"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL security advisory illustrating an authorization bug where installing minor binaries alone is insufficient: administrators must also run post-upgrade remediation SQL across all existing databases including template0 and template1. Referenced by Node PG Defense (control 30).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 34,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L34",
+              "excerpt": "| 30 | [PostgreSQL Security Information — CVE-2024-4317](https://www.postgresql.org/support/security/CVE-2024-4317/) | 마이너 수정판 설치 뒤 클러스터 모든 DB·템플릿에 보정 SQL 실행이 필요한 사례 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/sql-copy.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — COPY (Server File Access & COPY ... PROGRAM)",
+      "url": "https://www.postgresql.org/docs/17/sql-copy.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/sql-copy.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 COPY",
+        "COPY TO PROGRAM",
+        "COPY FROM PROGRAM"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "PostgreSQL 17 SQL reference detailing server-side file paths and shell command execution via COPY ... PROGRAM versus safe client-side STDIN/STDOUT streaming. Referenced by Node PG Defense (control 31).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 35,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L35",
+              "excerpt": "| 31 | [PostgreSQL 17 Documentation — COPY](https://www.postgresql.org/docs/17/sql-copy.html) | `COPY ... PROGRAM` 및 서버 파일 경로 접근 제한과 `FROM STDIN` 대안 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/dblink.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — F.11. dblink",
+      "url": "https://www.postgresql.org/docs/17/dblink.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/dblink.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 dblink",
+        "dblink_connect_u"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "PostgreSQL 17 extension documentation covering outbound database connections, dblink_connect_u, and remote credential handling. Referenced by Node PG Defense (control 32) for inventorying and restricting extensions and untrusted languages that reach outside the database server.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 36,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L36",
+              "excerpt": "| 32 | [PostgreSQL 17 Documentation — F.11. dblink](https://www.postgresql.org/docs/17/dblink.html) | 서버 밖 외부 DB 연결 확장, `dblink_connect_u` 및 `PUBLIC` 사용자 매핑 위험 통제 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/role-attributes.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 21.2. Role Attributes",
+      "url": "https://www.postgresql.org/docs/17/role-attributes.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/role-attributes.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 Role Attributes",
+        "SUPERUSER BYPASSRLS CREATEROLE"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 documentation covering high-impact role attributes (SUPERUSER, BYPASSRLS, CREATEROLE, REPLICATION, LOGIN, VALID UNTIL). Referenced by Node PG Defense (controls 17 and 33) to audit effective role privileges and dormant login accounts.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 37,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L37",
+              "excerpt": "| 17, 33 | [PostgreSQL 17 Documentation — 21.2. Role Attributes](https://www.postgresql.org/docs/17/role-attributes.html) | `SUPERUSER`·`BYPASSRLS`·`CREATEROLE`·`REPLICATION`·`VALID UNTIL` 역할 속성 점검 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/predefined-roles.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — 21.5. Predefined Roles",
+      "url": "https://www.postgresql.org/docs/17/predefined-roles.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/predefined-roles.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 Predefined Roles",
+        "pg_execute_server_program",
+        "pg_read_server_files"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전",
+        "신뢰성"
+      ],
+      "note": "PostgreSQL 17 documentation enumerating predefined server-access and global-data roles (pg_read_server_files, pg_write_server_files, pg_execute_server_program, pg_read_all_data, pg_write_all_data). Referenced by Node PG Defense (controls 18 and 33).",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 38,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L38",
+              "excerpt": "| 18, 33 | [PostgreSQL 17 Documentation — 21.5. Predefined Roles](https://www.postgresql.org/docs/17/predefined-roles.html) | `pg_read/write_server_files`·`pg_execute_server_program`·`pg_read/write_all_data` 권한 범위 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "url:https://www.postgresql.org/docs/17/sql-altersystem.html",
+      "kind": "article",
+      "title": "PostgreSQL 17 Documentation — ALTER SYSTEM",
+      "url": "https://www.postgresql.org/docs/17/sql-altersystem.html",
+      "year": 2026,
+      "keys": [
+        "url:https://www.postgresql.org/docs/17/sql-altersystem.html"
+      ],
+      "aliases": [
+        "PostgreSQL 17 ALTER SYSTEM",
+        "GRANT ALTER SYSTEM ON PARAMETER"
+      ],
+      "tags": [
+        "SQL",
+        "보안·안전"
+      ],
+      "note": "PostgreSQL 17 SQL reference for server configuration changes via ALTER SYSTEM and parameter-level privilege delegation. Referenced by Node PG Defense (control 34) to block ALTER SYSTEM in app code and restrict parameter delegation on command-executing or library-loading parameters.",
+      "uses": [
+        {
+          "plugin": "node-pg-defense",
+          "role": "reference",
+          "evidence": [
+            {
+              "file": "docs/references.md",
+              "line": 39,
+              "url": "https://github.com/Technoetic/node-pg-defense/blob/fcf5b73fb7cc6d8095d26cdaaeff2feb81c1d401/docs/references.md#L39",
+              "excerpt": "| 34 | [PostgreSQL 17 Documentation — ALTER SYSTEM](https://www.postgresql.org/docs/17/sql-altersystem.html) | `ALTER SYSTEM` 및 `GRANT ... ON PARAMETER` 매개변수 권한 위임 제한 |"
             }
           ]
         }
