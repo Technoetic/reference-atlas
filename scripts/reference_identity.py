@@ -5,7 +5,7 @@ from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode,unquote
 
 ARXIV=re.compile(r'^(\d{4}\.\d{4,5})(?:v[1-9]\d*)?(?:\.pdf)?$',re.I)
 DOI=re.compile(r'^10\.\d{4,9}/\S+$',re.I)
-PLUGINS={'agentic-vault','semantic-crosscheck'}
+PLUGINS={'agentic-vault','semantic-crosscheck','node-pg-defense'}
 
 def name_key(value):
     value=unicodedata.normalize('NFKC',value).lower()

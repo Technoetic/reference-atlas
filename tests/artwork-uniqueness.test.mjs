@@ -502,9 +502,13 @@ test('the eight formerly unillustrated v0.27.0 and v0.51.0 references render the
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    // Generation records keep the citations the image was made from; agentic-vault rows move with each release.
+    // Generation records keep the citations the image was made from; agentic-vault rows move with each release,
+    // and later cross-plugin uses (e.g. node-pg-defense) append to currentEvidenceUrls without rewriting generation history.
     if(avCatalogVersion==='v0.51.0') assert.deepEqual(record.generationEvidenceUrls,citations);
-    else assert.deepEqual(record.generationEvidenceUrls.map(pinnedFile),citations.map(pinnedFile));
+    else {
+      const priorCitations=source.uses.filter(use=>use.plugin!=='node-pg-defense').flatMap(use=>use.evidence.map(row=>row.url));
+      assert.deepEqual(record.generationEvidenceUrls.map(pinnedFile),priorCitations.map(pinnedFile));
+    }
     for(const detail of [false,true]){
       const html=artworkCover(source,{detail});
       assert.ok(html.includes(detail?'detail-art':'source-art'));
@@ -809,6 +813,56 @@ test('the five v0.60.0 agentic-vault covers retain their dedicated artwork and p
     [251,'github:ccf/agentcairn','project','ccf-agentcairn','VAULT CAIRN RETIREMENT']
   ];
   const previousOriginals=new Set(manifest.assets.slice(0,246).map(asset=>asset.delivery?.sourceSha256));
+  const newOriginals=new Set();
+  for(const [index,id,kind,slug,label] of commissioned){
+    const source=catalog.sources.find(item=>item.id===id);
+    assert.ok(source,`Missing catalog source: ${id}`);
+    assert.equal(source.kind,kind);
+    const record=manifest.assets.find(asset=>asset.sourceId===id);
+    assert.ok(record,`Missing commissioned artwork: ${id}`);
+    assert.equal(record.index,index);
+    assert.equal(record.output,`media/cards/card-${index}-${slug}.webp`);
+    assert.equal(record.label,label);
+    assert.deepEqual(record.dimensions,[960,640]);
+    assert.deepEqual(record.delivery.sourceDimensions,[1264,848]);
+    assert.match(record.delivery.sourceSha256,/^[0-9a-f]{64}$/);
+    assert.ok(!previousOriginals.has(record.delivery.sourceSha256),`Reused original: ${id}`);
+    newOriginals.add(record.delivery.sourceSha256);
+    assert.ok(record.generationReferenceUrls.includes(source.url));
+    const expected=new URL(`../${record.output}`,import.meta.url).href;
+    assert.equal(sourceArtwork(source).src,expected);
+    assert.equal(sourceArtwork(source).label,label);
+    for(const detail of [false,true]){
+      const html=artworkCover(source,{detail});
+      assert.ok(!html.includes('is-art-fallback'));
+      assert.ok(html.includes('<img data-source-artwork'));
+      assert.ok(html.includes(`src="${expected}"`));
+    }
+  }
+  assert.equal(newOriginals.size,commissioned.length);
+});
+
+test('the seventeen v0.2.0+docs node-pg-defense covers retain their dedicated artwork and provenance',()=>{
+  const commissioned=[
+    [252,'doi:10.1145/1111037.1111070','paper','su-wassermann-sqli','SYNTACTIC VALUE ISOLATION'],
+    [253,'arxiv:2604.01131','paper','js-obfuscation-static-analysis','STATIC BLIND SPOT AUDIT'],
+    [254,'github:owasp/asvs','project','owasp-asvs','VERIFICATION STANDARD TIERS'],
+    [255,'github:brianc/node-postgres','project','node-postgres','PARAMETERIZED WIRE CLIENT'],
+    [256,'github:pgbouncer/pgbouncer','project','pgbouncer','TRANSACTION POOL RELAY'],
+    [257,'github:ts-safeql/safeql','project','ts-safeql','SCHEMA-CHECKED SQL TYPES'],
+    [258,'github:pgaudit/pgaudit','project','pgaudit','SESSION AUDIT LEDGER'],
+    [259,'url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html','article','owasp-sqli-cheatsheet','DEFENSE-IN-DEPTH LAYERS'],
+    [260,'url:https://www.postgresql.org/docs/17/protocol-flow.html','article','postgres-protocol-flow','EXTENDED QUERY PROTOCOL'],
+    [261,'url:https://www.postgresql.org/docs/17/plpgsql-statements.html','article','postgres-plpgsql-dynamic','DYNAMIC FORMAT BINDING'],
+    [262,'url:https://www.postgresql.org/docs/17/sql-createfunction.html','article','postgres-create-function','DEFINER SEARCH PATH LOCK'],
+    [263,'url:https://www.postgresql.org/support/security/CVE-2024-4317','article','postgres-cve-2024-4317','POST-UPGRADE SQL REMEDIATION'],
+    [264,'url:https://www.postgresql.org/docs/17/sql-copy.html','article','postgres-copy-program','SERVER FILE & PROGRAM GATE'],
+    [265,'url:https://www.postgresql.org/docs/17/dblink.html','article','postgres-dblink','OUTBOUND EXTENSION BOUNDARY'],
+    [266,'url:https://www.postgresql.org/docs/17/role-attributes.html','article','postgres-role-attributes','PRIVILEGED ROLE ATTRIBUTES'],
+    [267,'url:https://www.postgresql.org/docs/17/predefined-roles.html','article','postgres-predefined-roles','PREDEFINED ROLE CAPABILITIES'],
+    [268,'url:https://www.postgresql.org/docs/17/sql-altersystem.html','article','postgres-alter-system','PARAMETER DELEGATION LOCK']
+  ];
+  const previousOriginals=new Set(manifest.assets.slice(0,251).map(asset=>asset.delivery?.sourceSha256));
   const newOriginals=new Set();
   for(const [index,id,kind,slug,label] of commissioned){
     const source=catalog.sources.find(item=>item.id===id);

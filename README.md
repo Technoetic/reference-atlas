@@ -1,8 +1,9 @@
 # REFERENCE ATLAS
 
 **Built on research.** A visual, source-bound map of the papers, public projects and official articles
-referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault) and
-[Semantic Crosscheck](https://github.com/Technoetic/semantic-crosscheck).
+referenced by [Agentic Vault](https://github.com/Technoetic/agentic-vault),
+[Semantic Crosscheck](https://github.com/Technoetic/semantic-crosscheck), and
+[Node PG Defense](https://github.com/Technoetic/node-pg-defense).
 
 **Live:** https://technoetic.github.io/reference-atlas/
 

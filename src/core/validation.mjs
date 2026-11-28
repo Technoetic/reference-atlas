@@ -14,7 +14,7 @@ export function validateCatalog(catalog){
     for(const key of source.keys)if(!key.startsWith('name:')){if(strong.has(key))fail();strong.add(key);}
     if(!Array.isArray(source.uses)||!source.uses.length)fail();
     for(const use of source.uses){
-      if(!use||!['agentic-vault','semantic-crosscheck'].includes(use.plugin)||!['reference','background','unresolved'].includes(use.role)||!Array.isArray(use.evidence)||!use.evidence.length)fail();
+      if(!use||!['agentic-vault','semantic-crosscheck','node-pg-defense'].includes(use.plugin)||!['reference','background','unresolved'].includes(use.role)||!Array.isArray(use.evidence)||!use.evidence.length)fail();
       for(const row of use.evidence){
         if(!row||typeof row.file!=='string'||!row.file||row.file.startsWith('/')||row.file.includes('\\')||row.file.includes(':')||row.file.split('/').some(x=>x==='..'||x==='.')||!Number.isInteger(row.line)||row.line<1||typeof row.excerpt!=='string'||!row.excerpt.trim()||typeof row.url!=='string')fail();
         const prefix=`https://github.com/Technoetic/${use.plugin}/blob/`,suffix=`/${row.file}#L${row.line}`;

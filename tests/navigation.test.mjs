@@ -85,10 +85,16 @@ test('public header and home expose research exploration without the removed che
   const element = { innerHTML: '', querySelector: () => graph, addEventListener() {}, removeEventListener() {} };
   new AtlasScreen({ element, catalog: { sources: [] }, onSource() {} }).mount();
   for (const html of [header, element.innerHTML]) assert.doesNotMatch(html, /view=check|기존 참조 확인|이미 참고한 자료일까|check-callout|로컬 중복 확인|다음 참고 자료의 중복/);
+  assert.match(header, /Technoetic\/node-pg-defense/);
   assert.match(header, /view=sources/);
   assert.match(header, /data\/catalog\.json/);
   assert.match(header, /data\/catalog\.csv/);
+  assert.match(element.innerHTML, /THREE PLUGINS\. ONE KNOWLEDGE GRAPH\./);
   assert.match(element.innerHTML, /hero-map/);
+  assert.match(element.innerHTML, /hub-npd/);
+  assert.match(element.innerHTML, /system-npd/);
+  assert.match(element.innerHTML, /view=sources&plugin=node-pg-defense/);
+  assert.match(element.innerHTML, /id="three-systems"/);
   assert.match(element.innerHTML, /연구 탐색하기/);
   assert.match(element.innerHTML, /featured-section/);
   assert.doesNotMatch(element.innerHTML, /이름만 기록된 자료|kind=research-name/);

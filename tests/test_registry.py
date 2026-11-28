@@ -263,6 +263,38 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual((source['id'],source['kind']),(sid,kind))
                 self.assertEqual([u['plugin'] for u in source['uses']],['agentic-vault'])
 
+    def test_npd020_new_and_shared_references_resolve_as_known(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for url,sid,kind,plugins in [
+            ('https://doi.org/10.1145/1111037.1111070','doi:10.1145/1111037.1111070','paper',['node-pg-defense']),
+            ('https://arxiv.org/pdf/2604.01131v1.pdf','arxiv:2604.01131','paper',['node-pg-defense']),
+            ('https://github.com/OWASP/ASVS','github:owasp/asvs','project',['node-pg-defense']),
+            ('https://github.com/brianc/node-postgres','github:brianc/node-postgres','project',['node-pg-defense']),
+            ('https://github.com/pgbouncer/pgbouncer','github:pgbouncer/pgbouncer','project',['node-pg-defense']),
+            ('https://github.com/ts-safeql/safeql','github:ts-safeql/safeql','project',['node-pg-defense']),
+            ('https://github.com/pgaudit/pgaudit','github:pgaudit/pgaudit','project',['node-pg-defense']),
+            ('https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html','url:https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/protocol-flow.html','url:https://www.postgresql.org/docs/17/protocol-flow.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/plpgsql-statements.html','url:https://www.postgresql.org/docs/17/plpgsql-statements.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/sql-createfunction.html','url:https://www.postgresql.org/docs/17/sql-createfunction.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/support/security/CVE-2024-4317/','url:https://www.postgresql.org/support/security/CVE-2024-4317','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/sql-copy.html','url:https://www.postgresql.org/docs/17/sql-copy.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/dblink.html','url:https://www.postgresql.org/docs/17/dblink.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/role-attributes.html','url:https://www.postgresql.org/docs/17/role-attributes.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/predefined-roles.html','url:https://www.postgresql.org/docs/17/predefined-roles.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/sql-altersystem.html','url:https://www.postgresql.org/docs/17/sql-altersystem.html','article',['node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/ddl-rowsecurity.html','url:https://www.postgresql.org/docs/17/ddl-rowsecurity.html','article',['semantic-crosscheck','node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/sql-createview.html','url:https://www.postgresql.org/docs/17/sql-createview.html','article',['semantic-crosscheck','node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/rules-privileges.html','url:https://www.postgresql.org/docs/17/rules-privileges.html','article',['semantic-crosscheck','node-pg-defense']),
+            ('https://www.postgresql.org/support/versioning/','url:https://www.postgresql.org/support/versioning','article',['semantic-crosscheck','node-pg-defense']),
+        ]:
+            with self.subTest(url=url):
+                result=find_matches(catalog,url)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual((source['id'],source['kind']),(sid,kind))
+                self.assertCountEqual([u['plugin'] for u in source['uses']],plugins)
+
     def test_cross_language_contract_cases(self):
         for case in json.loads((ROOT/'tests/fixtures/identity-cases.json').read_text(encoding='utf8')):
             with self.subTest(input=case['input']):
