@@ -245,7 +245,7 @@ class IdentityTests(unittest.TestCase):
         self.assertEqual(result['status'],'known')
         source,=result['matches']
         self.assertEqual((source['id'],source['kind']),('github:openai/math','project'))
-        self.assertCountEqual([u['plugin'] for u in source['uses']],['agentic-vault','semantic-crosscheck'])
+        self.assertTrue({'agentic-vault','semantic-crosscheck'}.issubset({u['plugin'] for u in source['uses']}))
 
     def test_av0600_five_new_references_resolve_as_known(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
@@ -261,7 +261,27 @@ class IdentityTests(unittest.TestCase):
                 self.assertEqual(result['status'],'known')
                 source,=result['matches']
                 self.assertEqual((source['id'],source['kind']),(sid,kind))
-                self.assertEqual([u['plugin'] for u in source['uses']],['agentic-vault'])
+                self.assertIn('agentic-vault',[u['plugin'] for u in source['uses']])
+
+    def test_npd030_tri_shared_and_cross_linked_references_resolve_as_known(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))
+        for url,sid,expected_plugins in [
+            ('https://www.usenix.org/conference/usenixsecurity23/presentation/boucher','url:https://www.usenix.org/conference/usenixsecurity23/presentation/boucher',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://github.com/openai/math','github:openai/math',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://github.com/rhysd/actionlint','github:rhysd/actionlint',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://www.unicode.org/reports/tr39/','url:https://www.unicode.org/reports/tr39',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets','url:https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets',['agentic-vault','semantic-crosscheck','node-pg-defense']),
+            ('https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai','url:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/pillai',['agentic-vault','node-pg-defense']),
+            ('https://doi.org/10.1145/3689031.3696064','doi:10.1145/3689031.3696064',['semantic-crosscheck','node-pg-defense']),
+            ('https://www.postgresql.org/docs/17/ddl-partitioning.html','url:https://www.postgresql.org/docs/17/ddl-partitioning.html',['semantic-crosscheck','node-pg-defense']),
+            ('https://github.com/zizmorcore/zizmor','github:zizmorcore/zizmor',['semantic-crosscheck','node-pg-defense']),
+        ]:
+            with self.subTest(url=url):
+                result=find_matches(catalog,url)
+                self.assertEqual(result['status'],'known')
+                source,=result['matches']
+                self.assertEqual(source['id'],sid)
+                self.assertCountEqual([u['plugin'] for u in source['uses']],expected_plugins)
 
     def test_npd020_new_and_shared_references_resolve_as_known(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf8'))

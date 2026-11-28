@@ -427,8 +427,9 @@ test('the ten formerly unillustrated v0.52.0 and v0.28.0 references render their
     const citations=source.uses.flatMap(use=>use.evidence.map(row=>row.url));
     assert.deepEqual(record.evidenceUrls,citations);
     assert.deepEqual(record.currentEvidenceUrls,citations);
-    const avCitations=source.uses.filter(use=>use.plugin==='agentic-vault').flatMap(use=>use.evidence.map(row=>row.url));
-    const baseCitations=id.includes('about-rulesets')?avCitations:citations;
+    const baseCitations=source.uses
+      .filter(use=>use.plugin!=='node-pg-defense'&&(!id.includes('about-rulesets')||use.plugin==='agentic-vault'))
+      .flatMap(use=>use.evidence.map(row=>row.url));
     if(avCatalogVersion==='v0.52.0') assert.deepEqual(record.generationEvidenceUrls,baseCitations);
     else assert.deepEqual(record.generationEvidenceUrls.map(releasedFile),baseCitations.map(releasedFile));
     assert.deepEqual(record.delivery.sourceDimensions,[1536,1024]);
