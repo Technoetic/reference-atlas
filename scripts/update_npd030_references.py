@@ -54,16 +54,19 @@ CROSS_LINK_NOTES = {
         'skills/node-pg-defense/SKILL.md so target comments, READMEs, and hidden markup are treated strictly as data.'
     ),
     'arxiv:2602.10498': (
-        'Node PG Defense v0.3.0 cites hidden-comment injection risks in skills/node-pg-defense/SKILL.md and requires '
-        'raw code-point inspection whenever unicodeFindings are reported.'
+        'Node PG Defense v0.3.0 cites hidden-comment injection risks in docs/references.md for '
+        'skills/node-pg-defense/SKILL.md, which treats target comments as untrusted data and requires raw code-point '
+        'inspection whenever unicodeFindings are reported.'
     ),
     'arxiv:2403.14720': (
-        'Node PG Defense v0.3.0 references Spotlighting boundary separation in skills/node-pg-defense/SKILL.md to keep '
-        'untrusted repository text isolated from agent execution authority.'
+        'Node PG Defense v0.3.0 cites Spotlighting conceptually in docs/references.md for the untrusted-data versus '
+        'execution-instruction boundary guidance in skills/node-pg-defense/SKILL.md (without claiming datamarking or '
+        'encoding).'
     ),
     'arxiv:2510.09023': (
-        'Node PG Defense v0.3.0 cites adaptive prompt-injection limits in SECURITY.md and SKILL.md, documenting that '
-        'write safety relies on deterministic engine checks rather than prompt wording alone.'
+        'Node PG Defense v0.3.0 cites adaptive prompt-injection limits in SECURITY.md and docs/references.md, and '
+        'documents in skills/node-pg-defense/SKILL.md that write safety relies on deterministic engine checks rather '
+        'than prompt wording alone.'
     ),
     'github:madthanu/alice': (
         'Node PG Defense v0.3.0 references ALICE conceptually alongside Pillai et al. (OSDI 2014) for backup-file and '
@@ -114,8 +117,9 @@ CROSS_LINK_NOTES = {
         'ruleset documented in SECURITY.md.'
     ),
     'url:https://slsa.dev/spec/v1.2/source-requirements': (
-        'Node PG Defense v0.3.0 cites SLSA v1.2 Source tag-immutability principles in SECURITY.md and docs/references.md '
-        'without claiming formal SLSA certification.'
+        'Node PG Defense v0.3.0 cites SLSA v1.2 Source tag-immutability principles in docs/references.md alongside '
+        'the refs/tags/v* ruleset and admin-override limit disclosure in SECURITY.md, without claiming formal SLSA '
+        'certification.'
     ),
     'url:https://reproducible-builds.org/specs/source-date-epoch': (
         'Node PG Defense v0.3.0 builds its published release archive deterministically from git archive using '
@@ -155,13 +159,12 @@ def make_evidence(commit: str, line_no: int, excerpt: str) -> dict:
 def apply_update(plugin_root: Path, commit: str, apply: bool, public_ref: str) -> dict:
     if not re.fullmatch(r'[0-9a-f]{40}', commit):
         raise ValueError('Expected 40-hex commit SHA')
-    if apply:
-        resolved = subprocess.check_output(
-            ['git', '-C', str(plugin_root), 'rev-parse', '--verify', '--end-of-options', f'{public_ref}^{{commit}}'],
-            stderr=subprocess.PIPE,
-        ).decode('utf8').strip()
-        if resolved != commit:
-            raise ValueError(f'Public ref {public_ref} resolves to {resolved}, expected {commit}')
+    resolved = subprocess.check_output(
+        ['git', '-C', str(plugin_root), 'rev-parse', '--verify', '--end-of-options', f'{public_ref}^{{commit}}'],
+        stderr=subprocess.PIPE,
+    ).decode('utf8').strip()
+    if resolved != commit:
+        raise ValueError(f'Public ref {public_ref} resolves to {resolved}, expected {commit}')
 
     lines = read_blob_lines(plugin_root, commit, REF_FILE)
     all_urls = re.findall(r'\((https?://[^)\s]+)\)', '\n'.join(lines))
